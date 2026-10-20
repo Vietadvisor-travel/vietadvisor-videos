@@ -4,7 +4,7 @@
 import { launch } from './browser.mjs'; import fs from 'fs'; import path from 'path';
 const [ep] = process.argv.slice(2); const opt = k => { const i = process.argv.indexOf('--' + k); return i > 0 ? process.argv[i + 1] : undefined; };
 const max = +(opt('max') || 64); const [b0, b1] = (opt('beats') || '1-9999').split('-').map(Number); const base = 'out/' + path.basename(ep).replace(/\.\w+$/, '');
-const browser = await launch(); const page = await browser.newPage(); page.on('pageerror', e => console.log('ERR:', e.message));
+fs.mkdirSync('out', { recursive: true }); const browser = await launch(); const page = await browser.newPage(); page.on('pageerror', e => console.log('ERR:', e.message));
 await page.goto('file://' + process.cwd() + '/studio.html'); await page.evaluate(() => window.READY);
 const sheets = await page.evaluate(([txt, max, b0, b1]) => { const ep = SB.compile(txt); const c = document.getElementById('c'); c.width = 960; c.height = 540; W = 960; H = 540; ctx = c.getContext('2d'); loadEpisode(ep);
   const T = []; ep.scenes.forEach((s, i) => { const s0 = _starts[i]; if (i + 1 >= b0 && i + 1 <= b1) { T.push([s0 + .05, `b${i + 1} start`]); ((s.pp && s.pp.ev) || []).forEach(t => { if (t < s.dur) T.push([s0 + Math.min(s.dur - .05, t + .45), `b${i + 1} +${t.toFixed(1)}s`]); }); } });

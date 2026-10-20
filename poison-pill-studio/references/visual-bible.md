@@ -1,3 +1,6 @@
+> **v4 note:** the default look is now the DOSSIER (`look.md`): manila, kraft, newsprint, warm prints, ink type. Navy/black values below apply
+> to `look: noir`. Format is 16:9 only. For WHAT to show, `visual-modes.md` overrides the collage-only advice here.
+
 # Visual Bible — the 8 elements of a Poison Pill frame
 
 Derived from the MagnatesMedia "Rockefeller" thumbnail/edit language and the owner's brief:

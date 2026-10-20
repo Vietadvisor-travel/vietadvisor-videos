@@ -9,6 +9,8 @@ Two halves. **Automatic** (`pp_lint` DIRECTOR SCORE, per act and for the joined 
 | 1 | **Thesis & story** | one surprising truth, every act turns it, the last line lands it; open loop paid | a chronological summary of events |
 | 2 | **Research** | specific dated numbers, verbatim quotes, primary documents on screen, 0 errors | round numbers, Wikipedia-level, a quote paraphrased |
 | 3 | **Hook (0–30 s)** | the end first, a number burns, case-file sting by 0:20, a question we must answer | "In this video we'll look at…" |
+| 4a | **Ideas, not collage (v4)** | every sentence's picture explains it: set pieces, screen modes, 3D shots, maps; ≥ 8 different scene types from ≥ 3 families; collage ≤ 35 % | photo + slammed word + stamp + shake, again and again |
+| 4b | **Camera (v4)** | every shot has a size, an angle and a move with a reason; scale changes across cuts; bridges by meaning | the same slow push everywhere, or random shakes |
 | 4 | **Real-image richness** | real faces, places, documents, headlines, footage, maps — different every few beats | the same 3 photos recycled, or props/type carrying the film |
 | 5 | **Composition & depth** | thumbnail-worthy frames: 3 planes, thirds, negative space, colour per act | centred subjects, flat frames, busy collages |
 | 6 | **Motion & rhythm** | something lands on every stressed word; bursts and silences; never two similar shots in a row | a picture per paragraph, zooms only |
