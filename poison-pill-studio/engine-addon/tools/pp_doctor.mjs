@@ -9,9 +9,9 @@ ok('node ≥ 18', +process.versions.node.split('.')[0] >= 18, 'install Node 18+'
 ok('ffmpeg', !!sh('ffmpeg -version'), 'install ffmpeg (apt install ffmpeg / brew install ffmpeg)');
 ok('python3 + numpy + scipy', sh(`python3 -c "import numpy, scipy; print(1)"`) === '1', 'pip install numpy scipy');
 if (sh(`python3 -c "import rembg; print(1)"`) !== '1') warn('rembg (cut-out background removal)', 'pip install rembg — without it role=cut photos keep their background');
-const idx = fs.readFileSync('engine/library/index.js', 'utf8'); const ORDER = ['three.min', 'pp_cine', 'pp_world', 'pp_cine2', 'pp_cine3', 'pp_cam', 'pp_sets', 'pp_3d', 'pp_modes'];
+const idx = fs.readFileSync('engine/library/index.js', 'utf8'); const ORDER = ['three.min', 'pp_cine', 'pp_world', 'pp_cine2', 'pp_cine3', 'pp_cam', 'pp_sets', 'pp_3d', 'pp_modes', 'pp_modes2'];
 const pos = ORDER.map(n => idx.indexOf(`'${n}'`)); ok('add-on files exist', ORDER.slice(1).every(n => fs.existsSync(`engine/library/${n}.js`)), 'copy engine-addon/engine/library/*.js into engine/library/');
-ok('add-on registered in index.js, in order, LAST', pos.every(p => p >= 0) && pos.every((p, i) => !i || p > pos[i - 1]) && /'pp_modes'\s*\]/.test(idx), `window.LIBRARY must end with: ${ORDER.slice(1).map(n => `'${n}'`).join(', ')}  (three.min before them)`);
+ok('add-on registered in index.js, in order, LAST', pos.every(p => p >= 0) && pos.every((p, i) => !i || p > pos[i - 1]) && /'pp_modes2'\s*\]/.test(idx), `window.LIBRARY must end with: ${ORDER.slice(1).map(n => `'${n}'`).join(', ')}  (three.min before them)`);
 const reg = fs.existsSync('engine/library/images.json') ? JSON.parse(fs.readFileSync('engine/library/images.json', 'utf8')) : {}; const js = fs.existsSync('engine/library/images.js') ? fs.readFileSync('engine/library/images.js', 'utf8') : ''; const stale = Object.keys(reg).filter(k => !js.includes(`"${k}":`));
 ok(`image bundle in sync (${Object.keys(reg).length} registered)`, !stale.length, `${stale.length} image(s) registered but not embedded (${stale.slice(0, 5).join(', ')}) → python3 tools/pp_img.py sync`);
 const sfx = sh(`python3 -c "
