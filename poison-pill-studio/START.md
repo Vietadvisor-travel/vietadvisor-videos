@@ -88,6 +88,41 @@ Report back with:
 If a gate fails and you can't fix it within the rules, stop and show me the exact command and output.
 
 ---------------------------------------------------------------------------------------------------------------------
+## PART E: MONTHLY TOPIC & SEO RESEARCH (Muse does it, Claude decides)
+**Muse, when the owner says "nghiên cứu chủ đề tháng":** research and deliver ONE file `TOPICS_<yyyy-mm>.md` with 60 candidate
+topics. Use web search, YouTube search and any SEO tool you have (Google Trends, YouTube autocomplete, Semrush/Ubersuggest/
+vidIQ if available). For each candidate, give one row:
+| # | topic | main keyword | monthly search volume (YouTube/Google) | competition | top 3 existing videos (channel · views ·
+age · length) | gap/angle they missed | trend (rising/stable/seasonal + why now) | real images & documents available
+(yes/partly/no) | rise-fall clarity (1–5) | score /100 (script-and-story.md §1) |
+
+Also include:
+- **5 competitor channels:** their last 10 titles + views. What performs?
+- **20 high-value keywords and phrasings:** exact phrasing as people search them ("what happened to …", "why … failed",
+  "rise and fall of …").
+- **Title patterns** that win in this niche now.
+
+**Claude, when the owner says "lịch 30 ngày" and attaches TOPICS_<yyyy-mm>.md:**
+1. Pick 30 topics, balancing eras, industries and archetypes, and alternating big names with hidden gems.
+2. Order them: the strongest search demand early, to build the channel.
+3. For each day, write: topic · main keyword · angle/thesis · hook · archetype · 3 signature shots · title (keyword
+   first, ≤ 60 chars) · thumbnail idea.
+
+Output: `lich-30-ngay.md` (store it in the Project).
+
+**Per-episode SEO (Claude, inside every director package §0 META):**
+- primary keyword;
+- 3 secondary keywords;
+- 3 titles (keyword in the first 40 chars);
+- description first 2 lines (keyword plus a hook);
+- 15 tags;
+- chapter titles (keyword-rich);
+- thumbnail text of ≤ 3 words.
+
+**After publishing (Muse, weekly):** add views at 48 h and 7 d, CTR, average view duration and retention drop points to
+`nhat-ky.md`. **Claude** reads the log when writing the next packages: it repeats what worked and changes what didn't.
+
+---------------------------------------------------------------------------------------------------------------------
 ## PART C: CHANNEL BIBLE (both)
 - **Promise:** "Why great companies rise, and why they fall." Business and history case studies, 8–10 min, 16:9, English.
 - **Audience:** curious adults 18–45 (founders, investors, students) who want the real reason, not a summary.

@@ -16,6 +16,7 @@ with these exact headings, because Muse's instructions parse them.
 - signature shots: a0 <mode> · a2 <mode> · a3 <mode> · a4 <mode> · a6 <mode>
 - titles: 1) … 2) … 3) …          - thumbnail brief: <face id + number + red word, ≤ 3 elements>
 - pinned comment: "<the open question>"
+- SEO: primary keyword · 3 secondary · 15 tags · description lines 1–2 (keyword + hook) · chapter titles
 
 ## 1. FACTS TO VERIFY
 | id | claim exactly as used | value in the script | where to verify (suggested sources) | beats |
