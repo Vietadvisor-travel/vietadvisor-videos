@@ -19,7 +19,23 @@ const DOWN = /\b(fell|fall|crash\w*|dropp\w*|plung\w*|collaps\w*|lost|losing|san
 const DEATH = /\b(shut\w*|bankrupt\w*|died|dead|gone|closed|over|ended|killed)\b/i, LIE = /\b(blam\w*|denied|deny|excuse\w*|claimed|insisted|promised|lied)\b/i, SAID = /\b(said|wrote|told|announced|tweeted|declared)\b/i;
 const MONEY = /\b(money|cash|dollars|funding|raised|invest\w*|paid|profit\w*|revenue)\b/i, DOC = /\b(memo|letter|report|document|filing|contract|email|lawsuit|court)\b/i, PHONE = /\b(app|phone|download\w*|users|subscri\w*)\b/i, PRESS = /\b(headline\w*|press|papers|media|journalists|news)\b/i;
 // v4: the IDEA of a sentence → a set piece (references/set-pieces.md). First match wins; at most one set per beat.
+// v4 modes & 3D shots come first (evidence and places beat metaphors when the sentence names them); then the set pieces
+const placesIn = t => Object.keys(PLACES).filter(p => t.toLowerCase().includes(p)).sort((a, b) => t.toLowerCase().indexOf(a) - t.toLowerCase().indexOf(b));
+const routeOf = t => { const ps = placesIn(t); const ll = ps.map(p => PLACES[p]); const lo = ll.map(q => q[0]), la = ll.map(q => q[1]); const spread = Math.max(...lo) - Math.min(...lo); return { ps, ll, far: spread > 45, box: [Math.min(...lo) - 10, Math.min(...la) - 8, Math.max(...lo) + 10, Math.max(...la) + 8].map(v => Math.round(v)) }; };
 const CONCEPTS = [
+  ['post', /\b(tweet\w*|posted|wrote on (twitter|x|linkedin|facebook|instagram)|announced on)\b/i, (t, w) => `post:x;name:?;handle:@?;img:?;text:?;likes:?;date:?`],
+  ['chat', /\b(messages?|texted|text(s|ed)? (to|from)|slack|chat logs?|leaked emails?)\b/i, (t, w) => `chat:x;msgs:A>?~B>?~A>?;names:A=?,B=?;rate:1`],
+  ['browser', /\b(reported|report|article|headlines?|wrote that|investigation (found|revealed)|filing|press release|the (times|journal|post|verge|ft))\b/i, (t, w) => `browser:x;title:?;src:?;hl:.42,.5;scroll:${w}`],
+  ['trend', /\b(stock|shares?|share price|price (fell|rose|crashed|collapsed)|market (fell|crashed)|ipo)\b/i, (t, w, dw) => `trend:x;pts:?;lab:?;marks:?;pre:$;unit:B;reveal:${dw}`],
+  ['map3d', t => { const r = routeOf(t); return r.ps.length >= 2 && !r.far; }, t => { const r = routeOf(t); return `map3d:x;box:${r.box.join(',')};route:${r.ll.map(q => q.join(',')).join('>')};by:plane;pins:${r.ps.map((p, i) => r.ll[i].join(',') + ',' + p.toUpperCase()).join('~')};go:${r.ps[1].split(' ')[0]};dur:3.5`; }],
+  ['globe3d', t => { const r = routeOf(t); return r.ps.length >= 2 && r.far; }, t => { const r = routeOf(t); return `globe3d:x;pins:${r.ps.map((p, i) => r.ll[i].join(',') + ',' + p.toUpperCase()).join('~')};go:${r.ps.slice(1).map(p => p.split(' ')[0]).join('~')}`; }],
+  ['timeline3d', /\b(19|20)\d\d\b[^.]*\b(19|20)\d\d\b[^.]*\b(19|20)\d\d\b/, t => { const ys = [...t.matchAll(/\b((19|20)\d\d)\b/g)].map(m => m[1]); return `timeline3d:x;years:${ys.join(',')};img:?;go:${ys.slice(1).map(y => y).join('~')}`; }],
+  ['desk3d', /\b(files?|documents?|records|dossier|the case|investigat\w*|evidence|paper trail)\b/i, (t, w) => `desk3d:x;img:?,?,?,?;lab:CASE FILE;open:${w};spread:${w}+1.2`],
+  ['money3d', /\b(raised|spent|burn(ed|ing|t)? through|poured in|lost|wiped out|torched) (\$|\d|one|two|three|four|five|six|seven|eight|nine|ten|a (billion|million))/i, (t, w, dw) => `money3d:x;to:1;rain:${w};burn:${DEATH.test(t) || /\b(burn|lost|wiped|torched)/i.test(t) ? dw : '?'}`],
+  ['phone3d', /\b(the app|an app|apps?|smartphone|download\w*)\b/i, (t, w, dw) => `phone3d:x;img:?;lab:?;turn:${w}`],
+  ['profile', /\b(ceo|founder|co-?founder|chief executive|chairman|chairwoman|cfo|president)\b/i, (t, w) => `profile:x;img:?;name:?;role:?;stats:?=?~?=?~?=?`],
+  ['zoomchain', /\b(inside (it|that|the)|look closer|zoom in|deeper|hidden inside)\b/i, (t, w) => `zoomchain:x;img:?,?,?;pts:.5,.5~.5,.5;go:${w}~${w}+1.6`],
+  ['panels', t => (t.match(/(^|\.\s)[A-Z][^.]{2,24}\./g) || []).length >= 3, t => `panels:x;img:?,?,?,?;lab:?,?,?,?;rate:.6`],
   ['domino', /\b(chain reaction|domino|knock-on|one after another|cascade|triggered|led to|which led|set off)\b/i, (t, w) => `domino:x;n:5;lab:?,?,?,?,?;fall:${w}`],
   ['scale', /\b(versus|vs\.?|compared|outweigh\w*|heavier|lighter|balance|trade-?off|instead of|more than)\b/i, (t, w) => `scale:x;left:?;right:?;tip:${w};to:1`],
   ['iceberg', /\b(hidden|underneath|beneath|below the surface|surface|nobody saw|no one saw|behind the scenes|secret\w*)\b/i, (t, w) => `iceberg:x;tip:?;deep:?,?,?;dive:${w}`],
@@ -33,10 +49,11 @@ const CONCEPTS = [
   ['ladder', /\b(promot\w*|climb\w*|rose to|rise to|from intern|to the top|career|top job)\b/i, (t, w) => `ladder:x;steps:5;img:?;lab:?,?,?,?,?;slip:${w}`],
   ['tower', /\b(depend\w* on|relied on|rested on|held up by|house of cards|fragile|one (block|pillar))\b/i, (t, w) => `tower:x;rows:9;lab:?,?,?,?;block:2;pull:${w}`]];
 // v4: camera grammar per set (opening frame → the move on the key word) and for collage beats (scale changes every cut)
+const OWN_CAM = /3d$/; const MODE_SHOT = w => `ws|1.25:pt:.5,.45@${w}/dolly`;
 const SET_SHOTS = { domino: w => `1.8:pt:.2,.62|1.4:pt:.6,.6@${w}/truck|ws@${w}+1.2/dolly`, scale: w => `ws;angle:low|1.6:pt:.68,.5@${w}/dolly`, iceberg: w => `1.7:pt:.5,.3|ws/glide|2:pt:.5,.78@${w}/drop`,
   mania: (w, dw) => `ws|1.5:pt:.5,.46/glide|ws@${dw}/crash`, chess: w => `ws;angle:high|cu:pt:.55,.62@${w}/dolly;angle:low;dutch:-5`, city: w => `1.5:pt:.3,.75|ws@${w}/glide`, hourglass: w => `ms:pt:.5,.47|1.5:pt:.5,.55@${w}/dolly`,
   strings: w => `1.4:pt:.5,.55|ws@${w}/rise`, crack: w => `ws|1.6:pt:.5,.72@${w}/drop`, pipes: w => `1.6:pt:.2,.46|ws@${w}/truck`, ladder: w => `1.5:pt:.42,.8|1.5:pt:.42,.2/glide|ws@${w}/crash`, tower: w => `1.5:pt:.5,.5|ws@${w}/dolly` };
-const SIZES = ['ws', 'mcu', 'ms', 'cu']; const MOVES = ['dolly', 'rack', 'truck', 'dolly', 'glide']; let lastOpen = '', shakes = 0;
+const SIZES = ['ws', 'mcu', 'ms', 'cu']; const MOVES = ['dolly', 'rack', 'truck', 'dolly', 'glide']; let lastOpen = '', shakes = 0; const recentKinds = []; let profiled = 0;
 const CAMS = ['push', 'panR', 'pull', 'drift', 'panL', 'vertigo', 'orbit', 'tiltU', 'hand']; const BGS = { setup: ['navy', 'paper'], rise: ['navy', 'chart'], doubt: ['news', 'navy', 'chart'], fall: ['black', 'chart'], after: ['navy', 'paper'], flash: ['paper'], lesson: ['spot'] };
 const lines = fs.readFileSync(scriptF, 'utf8').split(/\r?\n/); const out = []; const files = {}; let act = 'setup', file = 'draft', n = 0, lastCam = '', lastBg = '', usedMid = {};
 const firstWord = (s, re) => { const m = s.match(re); return m ? m[0].toLowerCase().replace(/[^a-z0-9$%']/g, '') : null; };
@@ -71,8 +88,9 @@ for (const raw of lines) { const L = raw.trim(); if (!L) continue;
   if (fgA) fgs.push(`${fgA.id};x:.86;y:.99;h:.26;at:${keysOf(fgA).find(k => low.includes(k)).split(' ')[0]};style:polaroid;rot:-6`);
   else if (MONEY.test(text)) fgs.push(`@cash;x:.84;y:.97;h:.16;at:${firstWord(text, MONEY)}`); else if (DOC.test(text)) fgs.push(`@doc;x:.85;y:.98;h:.26;at:${firstWord(text, DOC)}`); else if (PHONE.test(text)) fgs.push(`@phone;x:.86;y:.9;h:.3;at:${firstWord(text, PHONE)}`); else fgs.push(`@doc;x:.88;y:.99;h:.22;at:${W[1] || 'c1'}`);
   // v4: does the sentence carry an idea a set piece can ACT? then the set replaces the collage (photos go onto the set)
-  const con = CONCEPTS.find(([, re]) => re.test(text)); let setName = null;
-  if (con) { setName = con[0]; const clean = x => x.toLowerCase().replace(/[^a-z0-9$%']/g, ''); const w = clean(text.match(con[1])[0].split(/\s+/)[0]); const last = clean(text.split(/\s+/).filter(x => x.replace(/\W/g, '').length > 2).pop() || w); const occ = (text.toLowerCase().match(new RegExp('\\b' + last + '\\b', 'g')) || []).length; const dw = DEATH.test(text) ? clean(firstWord(text, DEATH)) : last + (occ > 1 ? '#' + occ : ''); fx.length = 0; fx.push(con[2](text, w, dw)); mids.length = 0; fgs.length = 0; delete o.hero; delete o.date; o.solo = 1; o.shot = SET_SHOTS[setName](w, dw); }
+  const hit = c => typeof c[1] === 'function' ? c[1](text) : c[1].test(text); const cands = CONCEPTS.filter(hit); const con = cands.find(c => !recentKinds.slice(-4).includes(c[0]) && (c[0] !== 'profile' || !profiled++)) || null; let setName = null;
+  if (con) recentKinds.push(con[0]); else recentKinds.push('-');
+  if (con) { setName = con[0]; const clean = x => x.toLowerCase().replace(/[^a-z0-9$%']/g, ''); const m0 = typeof con[1] === 'function' ? null : text.match(con[1]); const STOP = /^(the|a|an|its|his|her|their|of|to|on|in|and|that|was|were)$/; const w = m0 ? clean(m0[0].split(/\s+/).find(x => !STOP.test(clean(x)) && clean(x).length > 1) || m0[0].split(/\s+/)[0]) : 'c1'; const last = clean(text.split(/\s+/).filter(x => x.replace(/\W/g, '').length > 2).pop() || w); const occ = (text.toLowerCase().match(new RegExp('\\b' + last + '\\b', 'g')) || []).length; const dw = DEATH.test(text) ? clean(firstWord(text, DEATH)) : last + (occ > 1 ? '#' + occ : ''); fx.length = 0; fx.push(con[2](text, w, dw)); mids.length = 0; fgs.length = 0; delete o.hero; delete o.date; o.solo = 1; o.shot = OWN_CAM.test(setName) ? undefined : (SET_SHOTS[setName] || MODE_SHOT)(w, dw); if (!o.shot) delete o.shot; }
   if (hints.length) hints.forEach(([k, v]) => { if (k === 'fx') fx.push(v); else if (k === 'mid') mids.unshift(v); else if (k === 'fg') fgs.unshift(v); else o[k] = v; });
   if (!setName) { // collage beat: open on a different scale than the last beat, move on the stressed word; crash only on a real number, ≤ 1 per ~6 beats
     const open = SIZES.find((z, i) => z !== lastOpen && (n + i) % 2 === 0) || 'ws'; const key = (o.hero && (o.hero.match(/at:([^;]+)/) || [])[1]) || (W[0] || '').toLowerCase(); const tgt = mids.length ? '1' : 'pt:.5,.45';
