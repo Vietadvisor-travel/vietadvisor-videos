@@ -3,7 +3,7 @@ name: "poison-pill-studio"
 description: "Produce ANY Poison Pill episode end to end: long-form 16:9 YouTube documentaries (8–12 min, English) on why companies, founders and empires rise and fall. The look is a matte dossier (manila, kraft, newsprint, real archive prints), and every sentence gets the picture that EXPLAINS it, chosen from 46 scene types across 5 families: collage of real photos with a real 2.5D camera rig; 17 acted set pieces (domino, scale, iceberg, bubble, chess, sinking ship, bet…); 14 screen and diagram modes (browser article, post, chat, chased stock chart, infinite zoom, org chart, funnel, waterfall, napkin, TV bulletin…); 15 real-3D shots (case-file desk, map table with flying plane, globe, boardroom, HQ tower, data skyline, money pile, phone, timeline road…); and paper maps. Includes the engine add-on, a script linter, a per-second visual-script tool, an auto-director that picks modes by meaning, a lint that punishes collage, shake and repetition, beat contact sheets, a doctor that proves the install, and a builder-is-not-the-judge critic loop for multi-agent platforms (Muse). Ships only at Director Score ≥ 9/10."
 ---
 
-# Poison Pill Studio v4: the complete production system
+# Poison Pill Studio v4.1: the complete production system
 
 **Channel:** Poison Pill · @poisonpill.channel · "Why great companies rise, and why they fall."
 **Format:** **16:9 only**, 8–12 min, English VO + English on screen, SFX only (no music), the dossier look (`references/look.md`).
@@ -21,6 +21,12 @@ MagnatesMedia collage × LEMMiNO 3D atmosphere.
    `references/shot-script.md` (how to plan it), and `references/script-and-story.md` (how to write it).
 3. **Follow the pipeline** below. On a multi-agent platform use `references/multi-agent.md`, and always the critic loop in
    `references/gauntlet.md`.
+
+## Director package mode (Claude = brain, Muse = hands)
+When the director is asked for **"gói đạo diễn"** / a director package, it produces ONE file `EPISODE_<nn>_<slug>.md` exactly as
+defined in `references/director-package.md`: META · FACTS TO VERIFY · ASSETS · SCRIPT · VISUAL SCRIPT · STORYBOARD (exact syntax)
+· INSTRUCTIONS FOR MUSE · SELF-CHECK. No web search; every checkable fact goes to the verify list. The production agent builds
+the film from it without redesigning anything.
 
 ## The 12 non-negotiables
 1. **Ideas, not collage.** At least 70 % of beats show the idea through a set piece, a screen or diagram mode, a 3D shot,
@@ -91,6 +97,7 @@ Pick the one that best serves this moment of the film and its neighbours (variet
 ## Reference index
 | File | Read when |
 |---|---|
+| `references/director-package.md` | **director package mode**: the one-file brain of an episode + the standard production instructions |
 | `references/visual-modes.md` | **always**: the 46 scene types, the content→mode decision table, the variety budget, sequencing |
 | `references/camera.md` | **always**: shot sizes, angles, moves, rack focus, grammar, recipes |
 | `references/shot-script.md` | **always**: the per-second visual script, bridges, a worked example |

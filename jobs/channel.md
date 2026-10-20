@@ -1,0 +1,21 @@
+# POISON PILL: channel bible (Project file)
+- **Promise:** "Why great companies rise, and why they fall." Business and history case studies, 8–10 min, 16:9, English.
+- **Audience:** curious adults 18–45 (founders, investors, students) who want the real reason, not a summary.
+- **Voice:**
+  - a sharp analyst: dry, specific, a little ironic;
+  - no hype words, no "let's dive in";
+  - numbers spoken in full;
+  - BUT/THEREFORE storytelling.
+- **Look:**
+  - the dossier: manila, kraft, newsprint, warm archive prints, ink type, red only for crisis;
+  - every sentence gets the picture that explains it (set pieces, screen modes, 3D shots, maps, collage ≤ 35 %).
+- **Signature:**
+  - a cold open with the end first;
+  - the case-file opening (desk3d);
+  - the thesis on black at the end;
+  - the end card.
+- **Never:**
+  - AI images of real people or documents;
+  - unverified numbers;
+  - shake/flash as decoration;
+  - vertical/Shorts from this skill.
