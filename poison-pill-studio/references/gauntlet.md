@@ -70,3 +70,17 @@ Never stop after a fixed number of rounds.
 - `node tools/pp_review.mjs stories/<slug>-aN.story`: a frame after every event.
 - Frozen time on the final: `ffmpeg -i final.mp4 -vf "select='gt(scene,0.002)',showinfo" -f null -` (long gaps
   between selected frames mean frozen picture).
+
+## v5: what the critic scores (in addition to the above)
+1. **Script:** apply the line-by-line codes (S P R B/T E L J Q) and the 40-point scorecard from `script-masterclass.md` §7.
+   Ship at ≥ 32/40. List the 5 weakest lines with a rewrite for each.
+2. **Edit and sync:** apply the per-beat and per-minute checklist from `editing.md` §8 to the contact sheets and the draft
+   render:
+   - Does every hit word land on its picture?
+   - Is there a picture event every 2–4 s?
+   - Does text stay up long enough to read?
+   - Are stylised transitions ≤ 2/min?
+3. **Cohesion:** does any shot look like it comes from another film (a 3D shot, an AI image, a raw screenshot)? Name it
+   and give the fix: use the look's colours, put it inside a `scene`, or replace it with a fast mode.
+4. **Alive:** list beats where nothing moves for more than 4 s, and beats that are plain collage where a living picture
+   (`scene` + air + light) would carry the moment.

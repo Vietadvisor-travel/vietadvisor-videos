@@ -11,9 +11,10 @@ line the camera chases down. A hidden problem is an iceberg the camera dives und
 This file is the full vocabulary of the engine, organised by the kind of content each mode shows. Each line gives what the
 mode is, when to use it, and its syntax. Full parameter lists are in the header comment of each engine file.
 
-## 0. The six families (70 scene types)
+## 0. The seven families (71 scene types + atmosphere)
 | Family | What it is | Files |
 |---|---|---|
+| **LIVING PICTURE (v5)** | a sharp real photo with the subject lifted onto its own plane (rim light, contact shadow, breathing), a foreground element, depth-aware atmosphere and light; the camera rig flies through the planes | `pp_art.js` (`scene`, `air`) |
 | **COLLAGE** | real photos as cut-outs and prints on 3 planes, with type, stamps, marker annotations and the v3 devices on top | `pp_cine*.js` (`device-catalog.md`) |
 | **SET PIECE** | a 2D paper-cut world that *acts out* the idea: objects fall, tip, sink, pull, explode | `pp_sets.js`, `pp_modes2.js` |
 | **SCREEN / DIAGRAM MODE** | the real artefact or the mechanism: a browser page, a post, a chat, an org chart, a funnel, a chased chart | `pp_modes.js`, `pp_modes2.js` |
@@ -22,11 +23,12 @@ mode is, when to use it, and its syntax. Full parameter lists are in the header 
 | **FAST (v4.2)** | depth and motion drawn in 2D: isometric cities and bars, perspective cards, rollers, liquids, boards. They look 3D or animated and render 3–8× faster than real 3D | `pp_modes3.js` |
 
 **Variety budget for a 10-minute episode (≈ 120–160 beats):**
-- **COLLAGE:** at most 35 % of beats. That's the connective tissue, so it isn't the main show.
+- **LIVING PICTURES:** ≥ 20 % of beats. This is the default for a person, a place or a moment: real photo + depth + air.
+- **COLLAGE:** at most 25 % of beats. That's the connective tissue, so it isn't the main show.
 - **SET PIECES:** at least 6 different ones.
 - **SCREEN/DIAGRAM MODES:** at least 6 different ones.
 - **FAST MODES:** at least 6 different ones. They are the default way to give a beat depth or motion.
-- **3D SHOTS:** 3–5 signature moments only (the opening, an act turn, the climax), **at most 20 % of beats**. A CPU-only
+- **3D SHOTS:** 2–4 signature moments only (the opening, an act turn, the climax), **at most 10 % of beats**. A CPU-only
   render machine draws a 3D frame 3–8× slower than a 2D one; one 3D-heavy act can take an hour to render. Where a fast
   mode says the same thing, use it: `isocity` instead of `city3d`, `isobars` instead of `stacks3d`, `coverflow` instead
   of `gallery3d`, `spinpaper` instead of `title3d`, `candles` instead of `monitors3d`.
@@ -43,6 +45,10 @@ Two more limits:
 
 | The sentence is about… | Show it as… | Mode(s) |
 |---|---|---|
+| **a person at a moment** (the founder on launch day, the CEO the night it fell) | their real photo, lifted off its background, the camera pushing in, air and light of the moment | `scene` (plate + subj + air + light) |
+| **a place / a mood** (the office, the city, the factory at night) | the real place photo with depth and atmosphere (rain, smoke, dust in light) | `scene` · `air` |
+| **money pouring in / burning** | bills raining, embers, smoke over the real photo | `air:bills` · `air:embers,smoke` |
+| **paper chaos / leaked documents** | papers flying over the document plate | `air:papers` |
 | **a percentage / "X out of 100"** | an icon array, the share turning red | `units` |
 | **one huge number** (raised, valued, paid) | mechanical rollers spinning to it | `rollnum` · `title3d` |
 | **cash running out** | a glass tank draining | `tank` · `hourglass` |
@@ -190,6 +196,15 @@ devices only when they serve the beat. Inside a mode, `~` separates list items. 
 | `calendar` | `from:2019-10;n:12;at:<word>` | months tear off and fly |
 | `papercut` | `lab:<title>;sub:<line>;rise:<word>` | paper hills rise in layers with parallax, the sun comes up |
 | `flapboard` | `title:DEPARTURES;rows:QUIBI=CANCELLED~VINE=CLOSED;at:<word>` | letters flip into place; failures in red |
+
+### Living pictures & atmosphere (`pp_art.js`): real photos made alive (~150–220 ms a frame with camera)
+| Mode | Key params | Showpiece moment |
+|---|---|---|
+| `scene` | `plate:<photo>;clean:<photo without subject>;subj:<cutout>@x,y,h~…;in:<word>;fg:<element>@x,y,h;air:dust,rays;light:sweep@<word>\|sun@.7,.2\|flicker\|neon` | the subject floats off the photo with rim light; air drifts at three depths; light sweeps on the word |
+| `air` (overlay, any beat) | `kind:dust\|bokeh\|smoke\|fog\|rays\|rain\|snow\|embers\|ash\|sparks\|papers\|bills\|confetti\|leak\|lightning;dens:1;at:<word>` | atmosphere with depth over collage, sets or modes |
+
+Recipe: `shot="ms|mcu:pt:.5,.4@<word>/dolly"` + `scene` gives the classic documentary 2.5D push. Use 2–3 planes, keep the
+subject-to-background parallax at about 2–3:1, and use one light idea per shot (motion.md §5).
 
 ### Comedy tools (`pp_fun.js`): real photos and edit timing only, never cartoon characters (`humor.md`)
 | Mode | Key params | The laugh |

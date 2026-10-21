@@ -1,5 +1,48 @@
 # Poison Pill Studio: changelog
 
+## v5 "Ultimate" (Oct 2026): wow script, living pictures, one film, locked to the voice
+- **Research-backed craft references:**
+  - `script-masterclass.md`: hooks, reveal ladder, scenes, line craft, humor, endings, the A/V script, the critic's
+    scorecard.
+  - `editing.md`: cut rhythm, word sync, layering, transitions, camera, sound, text, per-beat and per-minute checklists.
+  - `motion.md`: easing, idle motion, parallax, atmosphere, light, grain, the cohesion grade, AI imagery.
+  - `ai-images.md`: what may be generated, a style bible per look, disclosure.
+- **Living pictures** (`pp_art.js`):
+  - `scene`: a sharp real photo, the subject lifted with a halo and contact shadow, breathing, a foreground element,
+    light sweep, sun, flicker and neon.
+  - `air`: atmosphere at three depths (dust, bokeh, smoke, fog, rays, rain, snow, embers, ash, sparks, papers, bills,
+    confetti, leak, lightning). The camera rig parallaxes every plane.
+- **One film:**
+  - every frame gets the same finish: a raised, tinted black floor, one shared key light from the top left, and animated
+    grain (about 15 ms a frame);
+  - the 3D desk and materials follow the look;
+  - real 3D is capped at 10 % of beats, signature moments only.
+- **Locked to the voice:**
+  - `voice.py` writes `words.json` (real word times from the sentence audio, with phoneme weights and pauses snapped);
+  - the engine times every `at:`/`@word` on it, and pictures land 3 frames before the word;
+  - `[BEAT]` makes a real pause, and `(J)` marks a laugh.
+- **Speed:**
+  - removed the per-draw CPU blur (`ctx.filter`) from the camera rig. It made every beat with a slight defocus 3–5×
+    slower, so light blur now uses the fast downscale path.
+  - subject shadows are pre-baked.
+- **Script lint:**
+  - promise in 30 s, something new every 40 s, laughs `(J)`, ≥ 2 scenes;
+  - final line ≤ 15 words, thesis ≤ 25 words;
+  - no filler or hype words; lines ≤ 20 words.
+- **Lint:**
+  - knows `scene` and `air`, and checks their images;
+  - asks for ≥ 20 % living pictures;
+  - 3D ≤ 10 %.
+- **Auto-director:** suggests `scene` for moments.
+- **Images:** `pp_img.py add --gen` and `gen-list`, with AI images credited automatically by `make.mjs`.
+- **Director package:**
+  - THESIS, master loop, best fact, reveal ladder, callback plant and scenes in META;
+  - A/V script marks;
+  - generated-image rows;
+  - an extended self-check;
+  - Muse rules for generating images.
+
+
 ## v4.2 (Oct 2026): the look follows the content, a funnier tone, fast rendering
 - **11 looks chosen by the content** (`pp_looks.js`, `look.md`):
   - dossier, noir, editorial, tech, luxury, vintage, retro, broadcast, eastern, ledger, blueprint;

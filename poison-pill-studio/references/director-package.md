@@ -12,7 +12,12 @@ with these exact headings, because Muse's instructions parse them.
 - archetype: <story-archetypes.md>   - format: 16:9 only
 - look: <one of the 11 looks, chosen by the CONTENT: look.md table> (+ a second look for a flashback act, if any)
 - tone: playful | dry   (playful by default: humor.md; dry only for tragedies)
-- thesis: "<one surprising, arguable, provable sentence>"
+- thesis (≤ 25 words): "<X rose/fell because Y, which means Z>"
+- master loop (the question the whole film answers): "<…>"
+- best fact (held for the midpoint / ~6:00): "<…>" · second-best fact (the hook): "<…>"
+- reveal ladder (least → most shocking, one rung every 60–90 s): 1) … 2) … 3) … 4) … 5) …
+- callback plant (object/joke in act 1 paid off at the end): "<…>"
+- scenes "in the room" (≥ 2, at turning points): a?: <time + room + people + detail> · a?: <…>
 - open loop (planted ≤ 0:45): "<line>" → paid off at <act/beat>: "<line>"
 - midpoint twist (≈ 50 %): "<the fact that reframes everything>"
 - signature shots: a0 <mode> · a2 <mode> · a3 <mode> · a4 <mode> · a6 <mode>
@@ -24,6 +29,7 @@ with these exact headings, because Muse's instructions parse them.
 | id | claim exactly as used | value in the script | where to verify (suggested sources) | beats |
 |---|---|---|---|---|
 | F01 | Quibi raised before launch | $1.75 billion | WSJ/Variety Mar 2020, Wikipedia refs | a0-1, a2-4 |
+| F02 | comparison: "$1.75B = a 10-minute show every day for 4,000 years" | arithmetic | recompute from F01 + stated assumptions | a2-5 |
 Every number, date, name spelling and quote the film states, with nothing missing.
 
 ## 2. ASSETS
@@ -31,12 +37,20 @@ Every number, date, name spelling and quote the film states, with nothing missin
 |---|---|---|---|---|
 | katzenberg | cut | Jeffrey Katzenberg, waist-up, 2018–2020, neutral background | "Jeffrey Katzenberg 2019 portrait" Wikimedia | a1-3, a1-7 |
 | quibi_letter | screenshot | Medium post "A Letter from Jeffrey & Meg", Oct 21 2020, top paragraph | medium.com/@quibi | a4-5 |
-Roles: cut (person/object cut-out) · plate (background photo) · prop (document/object print) · screenshot (for browser/post/
-phone3d) · clip (footage, give start time). Ids are lowercase_underscores and must match the storyboard.
+Roles for real images: cut (person/object cut-out) · plate (background photo) · prop (document/object print) · screenshot (for
+browser/post/phone3d) · clip (footage, give start time).
+Roles for GENERATED images (ai-images.md; only where no real image can do the job, ≤ 1 per 4 beats, never a real person,
+document, logo or event): clean (a real photo with the subject removed) · env (environment) · prop (generic object) ·
+texture · fg (foreground element). For those, fill the column "exactly what it must show" AND add `gen: "<subject prompt>"`.
+Ids are lowercase_underscores and must match the storyboard.
 
-## 3. SCRIPT (VO, verbatim, one sentence per line)
+## 3. SCRIPT: an A/V script (script-masterclass.md §6), one sentence per line
+- `**hit word**` (one per sentence): where the picture or the hit lands.
+- `[BEAT]`: a held pause (the voice really pauses) before a punchline or reveal.
+- `(J)`: an intended laugh. Aim for 15–25 per 10 min in playful tone.
+- `[SFX: …]` / `[TEXT: …]`: notes for the storyboard. They are not spoken.
 ## a0 COLD act=fall
-<sentence>
+<sentence with one **hit word**> [BEAT] <punchline> (J)
 …
 ## a1 ORIGIN act=setup
 …
@@ -67,6 +81,9 @@ endcard: off
 ## 7. DIRECTOR'S SELF-CHECK
 - beats: <n> · scene types: <n> (list) · families: set <n> / mode <n> / fast <n> / 3d <n> (≤ 20 %) / map <n> / collage <n> (<%>)
 - look chosen because: <one line> · laughs marked (J): <n> (15–25 per 10 min) · no cartoon characters ✓
+- pp_scriptlint-style self-score: hook + promise ≤ 30 s ✓ · something new every 20–40 s ✓ · re-hooks ≈ 3:00 and 6:00 ✓ · midpoint twist ✓
+  · ≥ 2 scenes ✓ · final line ≤ 15 words ✓ · no filler / hype words ✓ · every sentence has a **hit word** and a picture ✓
+- living pictures (`scene`) ≥ 20 % of beats ✓ · real-3D ≤ 10 % ✓ · generated images ≤ 1 per 4 beats, all allowed roles ✓
 - no mode 3× in a row ✓ · every beat ≥ 3 s has shot= or a *3d mode ✓ · every at:/@word exists in its sentence ✓
 - every asset id in §5 is listed in §2 ✓ · every number in §3 is listed in §1 ✓
 ````
@@ -84,14 +101,18 @@ endcard: off
    - ≥ 8 scene types from ≥ 3 families;
    - collage ≤ 35 %;
    - no mode 3× in a row;
-   - real-3D shots only at signature moments (the cold open, the act turns, the climax), **≤ 20 % of beats**, because
-     they render slowly on the production machine. Everywhere else, use the FAST modes (`isocity`, `isobars`,
+   - real-3D shots only at signature moments (the cold open, an act turn, the climax), **≤ 10 % of beats**: overused
+     they read as a different film, and they render slowly.
+   - **living pictures** (`scene`: sharp real photo, the subject lifted onto its own plane, atmosphere and light) replace
+     plain collage for people, places and moments, on ≥ 20 % of beats (motion.md, visual-modes.md). Everywhere else, use the FAST modes (`isocity`, `isobars`,
      `coverflow`, `spinpaper`, `units`, `tank`, `race`, `rollnum`, `faceoff`, `invoice`, `candles`, `vault`, `slots`,
      `outbreak`, `meter`, `calendar`, `papercut`, `flapboard`).
 4. **Pick the look from the content** (`look.md`). Write it in META and in every act header.
-5. **Tone playful** (`humor.md`): mark intended laughs `(J)` in §3, and use the photo-based comedy tools (`freeze`,
+5. **Write the script like script-masterclass.md:** thesis first, a hook in 30 s, a reveal ladder, scenes in the room,
+   but/therefore, specific numbers made physical, the punch word last, a final line ≤ 15 words.
+6. **Tone playful** (`humor.md`): mark intended laughs `(J)` in §3, and use the photo-based comedy tools (`freeze`,
    `expect`, `cutaway`, `dramatic`, `math`, `meme`, `aside`) within their caps. **Never cartoon characters or mascots.**
-6. **Length:** 8–10 min is about 110–150 beats. The file is long, so write it as a downloadable file if your interface
+7. **Length:** 8–10 min is about 110–150 beats. The file is long, so write it as a downloadable file if your interface
    can. If a single reply would be cut off, split it into `PART 1/3`, `PART 2/3`… at section or act boundaries. Each part
    ends with `— CONTINUES IN PART k —`. Muse joins the parts.
 
@@ -103,6 +124,8 @@ changing what a beat shows; replace a number/date/name in BOTH §3 and §5 if §
 replace an unobtainable asset with the closest real equivalent (log it).
 FORBIDDEN: rewriting sentences, changing modes/cameras/order, adding or removing beats, AI images of real people/documents,
 approving your own work.
+GENERATED IMAGES: only the §2 rows with role clean/env/prop/texture/fg and a gen: prompt. Prompt = the look's prefix from
+ai-images.md §3 + the gen: text + the suffix. Import with pp_img.py add … --gen "<tool>". Never generate anything else.
 STEPS: 1) pp_doctor ALL PASS  2) verify §1 → research/<slug>_factcheck.md (✓/✗ + source)  3) import §2 → pp_assets.py report
 0 problems (no PHOTO NEEDED anywhere)  4) save §5 blocks to stories/  5) pp_lint every act: 0 errors, ≥ 9.0 (syntax fixes
 only)  6) pp_sheet + pp_review every act; a SEPARATE fresh critic agent compares the sheets with §4 and lists beats whose

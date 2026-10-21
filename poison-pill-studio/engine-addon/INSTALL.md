@@ -1,15 +1,15 @@
-# Install the Poison Pill add-on (v4.2) into the engine (Vietadvisor Motion Studio, or the fork local-empire-files-studio)
+# Install the Poison Pill add-on (v5) into the engine (Vietadvisor Motion Studio, or the fork local-empire-files-studio)
 
 1. **Copy the files:**
    ```bash
    cp engine-addon/engine/library/pp_*.js  <engine>/engine/library/
    cp engine-addon/tools/pp_*              <engine>/tools/
-   cp engine-addon/tools/render.mjs engine-addon/tools/make.mjs <engine>/tools/   # v4.2 chunked, resumable, parallel renderer
+   cp engine-addon/tools/render.mjs engine-addon/tools/make.mjs engine-addon/tools/voice.py <engine>/tools/   # renderer + word-level voice timing
    ```
 2. **Register them LAST, in this order,** in `<engine>/engine/library/index.js`. `three.min` must already be in the list,
    before these:
    ```js
-   window.LIBRARY = [ …existing…, 'pp_cine', 'pp_looks', 'pp_world', 'pp_cine2', 'pp_cine3', 'pp_cam', 'pp_sets', 'pp_3d', 'pp_modes', 'pp_modes2', 'pp_modes3', 'pp_fun'];
+   window.LIBRARY = [ …existing…, 'pp_cine', 'pp_looks', 'pp_world', 'pp_cine2', 'pp_cine3', 'pp_cam', 'pp_sets', 'pp_3d', 'pp_modes', 'pp_modes2', 'pp_modes3', 'pp_fun', 'pp_art'];
    ```
 3. **Install dependencies and rebuild the image bundle:**
    ```bash
@@ -34,6 +34,8 @@
    node tools/pp_sheet.mjs stories/fun_demo.story       # v4.2: comedy tools
    node tools/pp_looksheet.mjs stories/looks_demo.story # v4.2: the same beats in all 11 looks → out/pp_looks.jpg
    node tools/pp_speed.mjs stories/fast_demo.story      # ms per frame per beat
+   node tools/pp_sheet.mjs stories/scene_demo.story     # v5: living pictures + atmosphere
+   node tools/make.mjs stories/v5_demo.story --fmt 16x9 --jobs 2   # v5: full voiced demo (word-synced)
    ```
 6. **Start a new episode:** `node tools/pp_new.mjs <slug> "<Subject>" --archetype rise-fall --min 10`, then follow SKILL.md.
 

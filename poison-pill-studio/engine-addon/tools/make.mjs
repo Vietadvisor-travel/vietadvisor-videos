@@ -46,8 +46,8 @@ for (const f of fmts) { const silent = `${base}_${f}_v.mp4`, out = `${base}_${f}
   if (!has('draft') && !has('no-deliver')) py(['tools/deliver.py', out]);
   else if (!mixWav) fs.renameSync(silent, out); }
 // 5) credits for real photos used (paste into the description)
-if (isStory && fs.existsSync('engine/library/images.json')) { const reg = JSON.parse(fs.readFileSync('engine/library/images.json', 'utf8')); const ids = new Set([...story.matchAll(/(?:photo|img)=(\w+)/g)].map(m => m[1]).concat([...story.matchAll(/photos="([^"]+)"/g)].flatMap(m => m[1].split('|').map(s => s.trim()))));
-  const lines = [...ids].filter(i => reg[i]).map(i => `${i}: ${reg[i].credit || 'own photo'}${reg[i].license ? ' (' + reg[i].license + ')' : ''}`); if (lines.length) fs.writeFileSync(`${base}_credits.txt`, 'Photo credits\n' + lines.join('\n') + '\nAnimation & music: Vietadvisor Motion Studio\n'); }
+if (isStory && fs.existsSync('engine/library/images.json')) { const reg = JSON.parse(fs.readFileSync('engine/library/images.json', 'utf8')); const ids = new Set(Object.keys(reg).filter(k => new RegExp('(^|[^a-z0-9_])' + k + '([^a-z0-9_]|$)').test(story)));
+  const lines = [...ids].filter(i => reg[i]).map(i => `${i}: ${reg[i].credit || 'own photo'}${reg[i].license ? ' (' + reg[i].license + ')' : ''}`); const ai = [...ids].filter(i => reg[i] && reg[i].gen); if (ai.length) lines.push(`AI-generated illustrations (not archival): ${ai.join(', ')} — tick YouTube's "altered or synthetic content" box if any of them is photorealistic`); if (lines.length) fs.writeFileSync(`${base}_credits.txt`, 'Photo credits\n' + lines.join('\n') + '\nAnimation & music: Vietadvisor Motion Studio\n'); }
 // 6) subtitles / script
 fs.writeFileSync(`${base}.srt`, execFileSync('python3', ['tools/srt.py', `${base}_cues.json`], { encoding: 'utf8' }));
 console.log('\nDONE →', fmts.map(f => `${base}_${f}.mp4`).join(', '), `+ ${base}.srt`);

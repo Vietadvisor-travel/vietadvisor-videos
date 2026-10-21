@@ -1,9 +1,9 @@
 ---
 name: "poison-pill-studio"
-description: "Produce Poison Pill episodes end to end: 8–12 min 16:9 English YouTube documentaries on why companies rise and fall, funny and clear, where every sentence gets the picture that explains it. 11 looks chosen by content; 70 scene types: photo collage with a camera rig, set pieces, screen/diagram modes, 19 fast pseudo-3D modes, 15 real-3D shots, maps, photo-based comedy tools. Resumable chunked renderer for weak machines. Linters, auto-director, contact sheets, install doctor, critic loop, director-package mode. Start with START.md."
+description: "Produce Poison Pill episodes end to end: 8–12 min 16:9 English YouTube documentaries on why companies rise and fall: wow scripts (A/V script, hit words, beats, laughs), real photos brought alive (2.5D living pictures, depth atmosphere, light), one grade/light/grain over every frame, word-level voice sync, 11 looks by content, 71 scene types, fast resumable rendering. Linters, auto-director, critic loop, director-package mode. Start with START.md."
 ---
 
-# Poison Pill Studio v4.2: the complete production system
+# Poison Pill Studio v5 "Ultimate": the complete production system
 
 **Channel:** Poison Pill · @poisonpill.channel · "Why great companies rise, and why they fall."
 **Format:** **16:9 only**, 8–12 min, English VO + English on screen, SFX only (no music). **The look follows the content**
@@ -15,6 +15,19 @@ MagnatesMedia collage × LEMMiNO 3D atmosphere.
 > direction is thin and shallow, whatever comes out of the engine will be bad too.")
 > The engine only executes direction; it can't invent it. **Every sentence gets the picture that explains it.** A film
 > made of photo + slammed word + stamp + shake is a slideshow, and it does not ship.
+
+## What makes v5 different (read first)
+1. **The script carries the film.** Write an A/V script with a THESIS of 25 words or fewer, a reveal ladder, scenes "in
+   the room", one **hit word** per sentence, `[BEAT]` pauses and `(J)` laughs (`script-masterclass.md`). Gate:
+   `pp_scriptlint --long` ≥ 8.5.
+2. **Real photos, alive.** `scene` lifts the subject off a sharp real photo, adds depth atmosphere and light, and the
+   camera flies through the planes. Use it on ≥ 20 % of beats (`motion.md`).
+3. **One film, not a collage of sources.** One grade, one light direction and one grain go over every frame, including
+   3D, diagrams and AI fills. Real-3D stays ≤ 10 %, for signature moments only.
+4. **Locked to the voice.** Word-level timing comes from the voice-over. Pictures land 3 frames before the stressed
+   word (`editing.md`).
+5. **Generated images only fill gaps:** clean plates, environments, props, textures. Never a real person, document,
+   logo or event (`ai-images.md`).
 
 ## START HERE (in this order, no skipping)
 1. **Install and prove it:** `engine-addon/INSTALL.md`, then `node tools/pp_doctor.mjs` → ALL PASS. Open `out/pp_doctor.jpg`.
@@ -100,6 +113,10 @@ Pick the one that best serves this moment of the film and its neighbours (variet
 ## Reference index
 | File | Read when |
 |---|---|
+| `references/script-masterclass.md` | **always (writing)**: hooks, reveal ladder, scenes, line craft, humor, endings, the A/V script, the critic's scorecard |
+| `references/editing.md` | **always (directing)**: cut rhythm, word sync, layering, transitions, camera, sound layers, text, per-beat/per-minute critic checklist |
+| `references/motion.md` | **always (visuals)**: easing, idle motion, parallax, atmosphere, light, grain, the cohesion grade, AI imagery |
+| `references/ai-images.md` | when an image is missing: what may be generated, the style bible per look, disclosure |
 | `references/director-package.md` | **director package mode**: the one-file brain of an episode + the standard production instructions |
 | `references/visual-modes.md` | **always**: the 70 scene types, the content→mode decision table, the variety budget, sequencing |
 | `references/humor.md` | **always**: playful tone, 10 comedy techniques, the photo-based comedy tools and their caps, where not to joke |
