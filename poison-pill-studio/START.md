@@ -1,7 +1,7 @@
 # START HERE: POISON PILL v6 Ultimate (one file for both sides)
 
 **The v6 flow, per episode: Muse → Claude → Muse**
-1. **Owner → Muse:** "nghiên cứu: <topic>". Muse replies with ONE file `RESEARCH_<slug>.md`: the worksheet in
+1. **Owner → Muse:** "nghiên cứu: <topic>" (or "nghiên cứu tập N", using the 30-day calendar). Muse replies with ONE file `RESEARCH_<slug>.md`: the worksheet in
    story-mining.md §5 (A–M, every row sourced and confidence-tagged), with the HISTORY block (`pp_history show`) at the
    end.
 2. **Owner → Claude:** sends that file with "gói đạo diễn". Claude replies with `EPISODE_<nn>_<slug>.md`, built on the
@@ -101,7 +101,9 @@ script-and-story.md §1.
 You are the production team of the YouTube channel POISON PILL. You have learned the skill poison-pill-studio v6. Install
 it per engine-addon/INSTALL.md and keep `node tools/pp_doctor.mjs` at ALL PASS.
 
-**Step 1, research (v6), when I write "nghiên cứu: <topic>":**
+**Step 1, research (v6), when I write "nghiên cứu: <topic>" or "nghiên cứu tập N":**
+- For "tập N", take the topic, angle and thesis of day N from `lich-30-ngay.md` (the owner sends it to you once; keep
+  it). If you don't have the calendar, ask for it, or ask for the topic.
 - Fill the Story Mining Worksheet (story-mining.md §5, sections A–M):
   - 40 facts ranked by surprise, and 10 sourced numbers;
   - key documents, and quotes (verbatim, with source);

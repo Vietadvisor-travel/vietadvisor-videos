@@ -1,7 +1,7 @@
 # Paste this into claude.ai → Project "Poison Pill" → Instructions (v6)
 
 **The v6 flow, per episode: Muse → Claude → Muse**
-1. **Owner → Muse:** "nghiên cứu: <topic>". Muse replies with ONE file `RESEARCH_<slug>.md`: the worksheet in
+1. **Owner → Muse:** "nghiên cứu: <topic>" (or "nghiên cứu tập N", using the 30-day calendar). Muse replies with ONE file `RESEARCH_<slug>.md`: the worksheet in
    story-mining.md §5 (A–M, every row sourced and confidence-tagged), with the HISTORY block (`pp_history show`) at the
    end.
 2. **Owner → Claude:** sends that file with "gói đạo diễn". Claude replies with `EPISODE_<nn>_<slug>.md`, built on the

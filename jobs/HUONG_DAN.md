@@ -10,9 +10,12 @@
 
 **Bước 1. Gửi Muse:**
 ```
-nghiên cứu: Theranos
+nghiên cứu tập 3
 ```
-→ Muse gửi lại 1 file `RESEARCH_theranos.md`.
+(hoặc ghi thẳng tên chủ đề: `nghiên cứu: Nokia`)
+→ Muse gửi lại 1 file `RESEARCH_….md`.
+
+*Muốn dùng "tập 3" thì làm 1 lần trước: bảo Claude "lịch 30 ngày", rồi gửi file `lich-30-ngay.md` cho Muse kèm câu "đây là lịch 30 ngày, giữ lại".*
 
 **Bước 2. Gửi Claude** (chat mới trong Project): đính kèm file đó, gõ:
 ```
