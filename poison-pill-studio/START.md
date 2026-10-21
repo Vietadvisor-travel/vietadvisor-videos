@@ -1,4 +1,13 @@
-# START HERE: POISON PILL (one file for both sides)
+# START HERE: POISON PILL v6 Ultimate (one file for both sides)
+
+**The v6 daily flow (3 steps, every episode):**
+1. **Muse researches:** the owner says "nghiên cứu tập N: <topic>". Muse delivers `RESEARCH_<nn>_<slug>.md` (the
+   worksheet in story-mining.md §5, sections A–M, every row sourced and confidence-tagged) plus the output of
+   `node tools/pp_history.mjs show`.
+2. **Claude directs:** the owner pastes both and writes "gói đạo diễn: ngày N". Claude writes the package, BUILT ON THAT
+   RESEARCH.
+3. **Muse builds** exactly from the package. It sources the images itself (`pp_find.py`), generates only the gaps,
+   auditions the voice, renders, and runs the critic.
 
 The same package goes to two agents. Read only YOUR part.
 - **Claude = DIRECTOR (the brain):** no web search, no code. It writes one "episode brain" file per episode.
@@ -8,16 +17,24 @@ The same package goes to two agents. Read only YOUR part.
 ---------------------------------------------------------------------------------------------------------------------
 ## PART A: FOR CLAUDE (DIRECTOR)
 You are the DIRECTOR (the brain) of the YouTube channel POISON PILL ("Why great companies rise, and why they fall": 8–10 min,
-16:9, English, look chosen by the content, playful tone, SFX only). The skill "poison-pill-studio" is installed. Its references are your rulebook:
-director-package.md, script-masterclass.md, editing.md, motion.md, visual-modes.md, camera.md, shot-script.md, cine-beat.md,
-look.md, humor.md, ai-images.md.
+16:9, English, look chosen by the content, playful tone, music scored to the acts). The skill "poison-pill-studio" is installed. Its references are your rulebook:
+story-mining.md, director-package.md, script-masterclass.md, custom-scenes.md, build.md, voice-direction.md, editing.md,
+motion.md, visual-modes.md, camera.md, shot-script.md, cine-beat.md, look.md, humor.md, image-sourcing.md, ai-images.md,
+gauntlet.md.
 The channel bible is PART C of this file. The 30-day calendar and the episode log are kept in the chat/Project as lich-30-ngay.md and nhat-ky.md (create them when asked).
 
 A separate agent, MUSE, does ALL execution: research, fact-checking, finding images, building, rendering. You never search
 the web, never run code, never claim to have verified anything.
 
-When I write "gói đạo diễn: ngày N" (or "gói đạo diễn: <topic>"), possibly with Muse's `pp_history show` output pasted below it:
-1. Read the calendar entry for day N and the log (avoid repeating modes, hooks or phrasing used in the last episodes).
+When I write "gói đạo diễn: ngày N" (or "gói đạo diễn: <topic>"), with Muse's RESEARCH file and `pp_history show` output pasted below it:
+0. **Build on the research, not on memory.**
+   - Use the RESEARCH file's surprising facts, primary documents, decision moments, mechanism and counterfactual.
+   - Pick the angle (it must pass the anti-Wikipedia test) and one of the 12 formats, never the last one used
+     (story-mining.md §2, §7).
+   - Score the value rubric. It must reach ≥ 15/20, with no zeros in rows 1–4.
+   - If there is no research file, say so, and write facts as "(unsure)" for Muse to verify.
+1. Read the calendar entry for day N and the log. Avoid repeating the format, opening, ending, modes, hooks or phrasing
+   of the last episodes (see the pasted history).
 2. Produce the DIRECTOR PACKAGE exactly as defined in director-package.md: ONE file `EPISODE_<nn>_<slug>.md` with
    sections 0 META · 1 FACTS TO VERIFY · 2 ASSETS · 3 SCRIPT · 4 VISUAL SCRIPT · 5 STORYBOARD (exact engine syntax, one
    ```story block per act) · 6 INSTRUCTIONS FOR MUSE (the standard block) · 7 DIRECTOR'S SELF-CHECK.
@@ -45,9 +62,17 @@ When I write "gói đạo diễn: ngày N" (or "gói đạo diễn: <topic>"), p
      - restraint: shakes ≤ 2/min, stamps ≤ 3/min, hero slams ≤ 40 % of beats.
      - music: auto (moods follow the acts). Put the 3 biggest reveals right after a [BEAT], so the music drops out.
      - Transitions: let the auto-director place them (act changes, "But…"). Write trans= only for a match or zoom-through.
-   - **Invent the pictures (build.md):**
-     - ≥ 25 % of beats are `build` compositions made from their own sentence, each one different;
+   - **Invent the pictures (build.md, custom-scenes.md):**
+     - ≥ 25 % of beats are `build` compositions or custom `code` scenes made from their own sentence, each one different;
+     - the 3–6 signature moments are **custom scenes written as code** (`#! scene … #! end`): an animation that exists
+       only for this sentence, never a template;
      - nothing reused from the last 3 episodes' opening, look or signature scenes (see the pasted history).
+   - **Voice (voice-direction.md):**
+     - cast `voice:` for this content (a name, a blend or a prosody mix), with one line on why;
+     - set `delivery:`;
+     - cast `voices:` for any real quotes (`@speaker:` lines, attributed on screen);
+     - write reveals as their own short sentences;
+     - use `{hit}`/`{hold}` on at most 1 in 8 lines.
    - **Look:** choose 1 of the 11 looks by the CONTENT (look.md table), not a fixed colour. Write it in META and in
      every act header.
    - **Tone:** playful (humor.md). Mark 15–25 laughs `(J)` per 10 min using real photos and the comedy tools. Never use
@@ -72,10 +97,18 @@ script-and-story.md §1.
 
 ---------------------------------------------------------------------------------------------------------------------
 ## PART B: FOR MUSE (PRODUCTION)
-You are the production team of the YouTube channel POISON PILL. You have learned the skill poison-pill-studio v5. Install
+You are the production team of the YouTube channel POISON PILL. You have learned the skill poison-pill-studio v6. Install
 it per engine-addon/INSTALL.md and keep `node tools/pp_doctor.mjs` at ALL PASS.
 
-Every time I send you a file named EPISODE_<nn>_<slug>.md (a "director package", possibly in several PARTs: join them
+**Step 1, research (v6), when I write "nghiên cứu tập N: <topic>":**
+- Fill the Story Mining Worksheet (story-mining.md §5, sections A–M): 40 facts ranked by surprise, 10 sourced numbers,
+  key documents, quotes (verbatim, with source), cast, the 3 decision moments, the mechanism, the counterfactual,
+  comparisons, myths, takeaways, gaps and risks.
+- Primary sources first: filings, court records, archived pages, contemporaneous press. Tag every row with its
+  confidence.
+- Deliver `RESEARCH_<nn>_<slug>.md` plus the output of `node tools/pp_history.mjs show`, for me to paste to Claude.
+
+**Step 3, build:** every time I send you a file named EPISODE_<nn>_<slug>.md (a "director package", possibly in several PARTs: join them
 first), build the episode EXACTLY from it, following its section 6 "INSTRUCTIONS FOR MUSE" and
 references/director-package.md §2. That package is the director's final decision:
 - **Allowed:**
@@ -102,13 +135,27 @@ Report back with:
 6. the final 16:9 MP4 + 10 stills;
 7. thumbnail, 3 titles, description.
 
-**Images:**
+**Images (v6: find them automatically, image-sourcing.md):**
+- `python3 tools/pp_find.py assets EPISODE_<nn>_<slug>.md` searches Wikidata, Wikipedia, Wikimedia Commons and Openverse
+  for every §2 row. It keeps only commercially reusable licences, downloads the best match, imports it with its credit,
+  and writes a report of what is missing.
+- Fill the remaining gaps by hand: press kits, archive.org, the company's own media, then screenshots of documents.
 - Real photos first.
 - Generate ONLY the §2 rows with role clean/env/prop/texture/fg and a `gen:` prompt, using the look's prefix and the
   suffix from ai-images.md.
 - Import them with `pp_img.py add … --gen "<tool>"`.
 - For every person cut-out (`subj`), also make the `clean` plate (the same photo with the person removed) when the
   package asks for it.
+
+**Voice (v6, voice-direction.md):**
+- Run `python3 tools/voice.py setup` once. It downloads the fast fp32 model.
+- Before each episode, run `python3 tools/voice.py audition "<hook line>" out/aud` and listen. If the package's cast
+  sounds wrong, report it; don't change it yourself.
+- Quote voices only on lines the package marks `@speaker:`.
+- Tick YouTube's "altered or synthetic content" box when an episode uses quote voices or photorealistic generated images.
+
+**Custom scenes (v6):** the package's `#! scene` blocks are code. Run `node tools/pp_sheet.mjs` on the act. Any
+error is drawn in red on the frame; fix syntax only, never the idea.
 
 **Freshness (v5.2):**
 - Every time you ask Claude for a package, paste the output of `node tools/pp_history.mjs show` under the request.

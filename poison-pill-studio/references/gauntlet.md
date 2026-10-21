@@ -71,6 +71,16 @@ Never stop after a fixed number of rounds.
 - Frozen time on the final: `ffmpeg -i final.mp4 -vf "select='gt(scene,0.002)',showinfo" -f null -` (long gaps
   between selected frames mean frozen picture).
 
+## v6: the WOW gate (a fresh critic, on the contact sheets + the draft render)
+Score each beat 0–2 on: **originality** (could this picture belong to any other sentence or episode? 0 = yes) · **clarity**
+(is the idea understood in 2 s?) · **life** (does something meaningful move on the hit word?) · **craft** (composition,
+type, colour, sync). A beat scoring ≤ 3/8 is listed for REDESIGN with a concrete new idea (custom scene sketch). The
+episode ships when ≥ 85 % of beats score ≥ 5/8 and the value rubric (story-mining.md §6) is ≥ 15/20.
+
+**The voice check:** the critic listens to the draft render. It plays one line from the rise and one from the fall
+back to back: do they sound different? It also checks that every reveal has its silence before it, and that quote
+voices are attributed on screen. Any "no" is a fix (voice-direction.md).
+
 ## v5: what the critic scores (in addition to the above)
 1. **Script:** apply the line-by-line codes (S P R B/T E L J Q) and the 40-point scorecard from `script-masterclass.md` §7.
    Ship at ≥ 32/40. List the 5 weakest lines with a rewrite for each.

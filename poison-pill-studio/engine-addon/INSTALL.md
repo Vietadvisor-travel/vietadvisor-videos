@@ -1,19 +1,24 @@
-# Install the Poison Pill add-on (v5.2) into the engine (Vietadvisor Motion Studio, or the fork local-empire-files-studio)
+# Install the Poison Pill add-on (v6) into the engine (Vietadvisor Motion Studio, or the fork local-empire-files-studio)
 
 1. **Copy the files:**
    ```bash
    cp engine-addon/engine/library/pp_*.js  <engine>/engine/library/
    cp engine-addon/tools/pp_*              <engine>/tools/
-   cp engine-addon/tools/render.mjs engine-addon/tools/make.mjs engine-addon/tools/voice.py engine-addon/tools/sound_design.py <engine>/tools/   # renderer, word-level voice timing, music mixing
+   cp engine-addon/tools/render.mjs engine-addon/tools/make.mjs engine-addon/tools/voice.py engine-addon/tools/sound_design.py <engine>/tools/   # renderer, directed voice + word timing, music mixing
    ```
+   **Upgrading from v5.x:** copy the same files over the old ones, add `'pp_custom'` at the end of the list (step 2), and
+   run `python3 tools/voice.py setup` once. It downloads the fast fp32 voice model (326 MB). Set `PP_VOICE_INT8=1` to
+   keep the old int8 file instead.
 2. **Register them LAST, in this order,** in `<engine>/engine/library/index.js`. `three.min` must already be in the list,
    before these:
    ```js
-   window.LIBRARY = [ …existing…, 'pp_cine', 'pp_looks', 'pp_world', 'pp_cine2', 'pp_cine3', 'pp_cam', 'pp_sets', 'pp_3d', 'pp_modes', 'pp_modes2', 'pp_modes3', 'pp_fun', 'pp_art', 'pp_build'];
+   window.LIBRARY = [ …existing…, 'pp_cine', 'pp_looks', 'pp_world', 'pp_cine2', 'pp_cine3', 'pp_cam', 'pp_sets', 'pp_3d', 'pp_modes', 'pp_modes2', 'pp_modes3', 'pp_fun', 'pp_art', 'pp_build', 'pp_custom'];
    ```
 3. **Install dependencies and rebuild the image bundle:**
    ```bash
    cd <engine> && npm install --no-audit --no-fund && pip install numpy scipy pillow rembg && python3 tools/pp_img.py sync
+   python3 tools/voice.py setup                     # Kokoro voice (fp32, offline) — ffmpeg with rubberband is used for pitch
+   export PP_CONTACT=you@example.com                # pp_find.py identifies itself to Wikimedia/Openverse (their API policy)
    ```
 4. **Prove it.** Fix every FAIL before anything else, then look at the picture it writes.
    ```bash
@@ -36,6 +41,10 @@
    node tools/pp_speed.mjs stories/fast_demo.story      # ms per frame per beat
    node tools/pp_sheet.mjs stories/scene_demo.story     # v5: living pictures + atmosphere
    node tools/pp_sheet.mjs stories/build_demo.story     # v5.2: free-form compositions
+   node tools/pp_sheet.mjs stories/custom_demo.story    # v6: custom scenes written as code
+   python3 tools/pp_find.py search "Theranos headquarters" --kind place   # v6: licensed real-image search (needs internet)
+   python3 tools/voice.py audition "They raised one point seven five billion dollars." out/aud   # v6: 8 narrator casts
+   node tools/make.mjs stories/voice_demo.story --fmt 16x9 --jobs 2   # v6: directed voice, quote voice, per-act read
    node tools/make.mjs stories/v5_demo.story --fmt 16x9 --jobs 2   # v5: full voiced demo (word-synced)
    ```
 6. **Start a new episode:** `node tools/pp_new.mjs <slug> "<Subject>" --archetype rise-fall --min 10`, then follow SKILL.md.

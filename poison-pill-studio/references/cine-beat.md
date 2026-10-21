@@ -8,7 +8,7 @@ is spoken by the VO and shown as the caption). The add-on activates only when th
 title: <working title>
 channel: poisonpill        # REQUIRED — switches on the channel mode (cuts, captions, grade, end card)
 voice: am_michael          # Kokoro voice; bm_george for a heavier British tone
-music: none                # SFX only
+music: auto                # scored to the acts (music.md)
 length: long               # lint checks 8–12 min across… one file; per-act files: omit
 endcard: off               # every act file except the last
 sources: <url> — <url> — checked Oct 2026

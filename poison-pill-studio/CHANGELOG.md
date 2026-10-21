@@ -1,5 +1,39 @@
 # Poison Pill Studio: changelog
 
+## v6 "Ultimate" (Oct 2026): research-built, written as code, found by itself, directed voice
+- **Content with real value (`story-mining.md`):**
+  - Muse researches first, using a 13-section Story Mining Worksheet: 40 facts ranked by surprise, sourced numbers,
+    primary documents, quotes, the 3 decision moments, the mechanism, the counterfactual, myths, takeaways, and risks.
+  - Claude writes the package from that research.
+  - 7 angle types and the anti-Wikipedia test; a 20-point value rubric (≥ 15 to publish); 12 episode formats that rotate.
+  - `pp_history` tracks format, opening and ending, and lint warns on repeats.
+- **Custom scenes as code (`pp_custom.js`, `custom-scenes.md`):**
+  - The director writes a beat's animation as a function of time, in the story file (`#! scene … #! end`).
+  - API: word timing `at()`/`p()`, layers with depth and camera, real images, icons, text, counters, lines, atmosphere,
+    seeded randomness and noise.
+  - Anything the sentence needs, no template. Errors are drawn on the frame.
+- **Images that find themselves (`pp_find.py`, `image-sourcing.md`):**
+  - Searches Wikidata, Wikipedia lead images, Wikimedia Commons and Openverse.
+  - Keeps only commercially reusable licences (CC0/PD/CC BY/CC BY-SA), scores the candidates, and downloads and imports
+    them with credit.
+  - `assets <package.md>` sources the whole §2 list and reports the gaps. Only the gaps may be generated.
+- **Voice direction (`voice.py`, `voice-direction.md`):**
+  - fp32 Kokoro, about 4× faster on CPU.
+  - Narrator casting: names, blends (`a*.7+b*.3`), prosody mixes (`a~b*.2`), and `audition` to choose by ear.
+  - Each act reads differently (the rise is quicker and brighter, the fall slower and lower, with formant-preserving
+    pitch).
+  - Each sentence is read by its role (a silence before reveals, a hanging question, a momentum build), with seeded
+    human jitter.
+  - `delivery:` sets the episode's read; `{hit}`/`{hold}`/`{low}`/`{archive}`… tags fine-tune a line.
+  - Quote voices: `@speaker:` lines cast with `voices:`, with an automatic on-screen "WORDS OF … · VOICED" tag and lint
+    rules for attribution.
+  - Room tone and a narrator EQ on the voice track.
+- **Fixes:**
+  - `[BEAT]` at the end of a line no longer merges that line with the next one; the pause is kept at the line end.
+  - Act files and channel endings pass the engine lint without `--skip-lint`.
+- **The WOW gate (`gauntlet.md`):** a fresh critic scores every beat on originality, clarity, life and craft. Weak beats
+  get a redesign with a custom-scene sketch. The critic also checks the voice.
+
 ## v5.2 (Oct 2026): invent, don't assemble; never repeat
 - **`build`** (`pp_build.js`, `build.md`): the free-form composer.
   - Elements: real images, 24 icons (singles or crowds/piles), kinetic text, counters, tags, self-drawing arrows and lines.

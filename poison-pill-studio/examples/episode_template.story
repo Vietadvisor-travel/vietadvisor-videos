@@ -1,8 +1,12 @@
 title: <Company> — <the number + the conflict>
 channel: poisonpill
-look: dossier            # pick by CONTENT: dossier noir editorial tech luxury vintage retro broadcast eastern ledger blueprint (references/look.md)
-tone: playful            # playful (default) | dry — references/humor.md
-voice: am_michael
+look: dossier
+tone: playful
+format: investigation
+opening: document
+ending: verdict
+voice: am_michael*.7+bm_george*.3
+delivery: wry
 music: auto
 endcard: off
 sources: <primary url> — <press url> — checked <Mon YYYY>

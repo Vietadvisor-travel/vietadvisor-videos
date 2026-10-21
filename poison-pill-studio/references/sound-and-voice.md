@@ -1,4 +1,4 @@
-# Sound & voice — SFX only, no music
+# Sound & voice: SFX (music: music.md · voice direction: voice-direction.md)
 
 ## 1. Automatic SFX per event (pp_cine sends cues; the sound pass mixes them with the VO)
 | Event | Cue (sfx_pro name) |

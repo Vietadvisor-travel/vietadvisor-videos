@@ -12,7 +12,13 @@ with these exact headings, because Muse's instructions parse them.
 - archetype: <story-archetypes.md>   - format: 16:9 only
 - look: <one of the 11 looks, chosen by the CONTENT: look.md table> (+ a second look for a flashback act, if any)
 - tone: playful | dry   (playful by default: humor.md; dry only for tragedies)
+- voice (voice-direction.md): `voice:` <name | blend a*.7+b*.3 | prosody mix a~b*.2> — why this voice suits THIS story · `delivery:` <calm|lively|tense|wry|warm> · `voices:` <speaker=voice; …> for real quotes only (≤ 3 voices in total)
 - music: auto (moods follow the acts: music.md) · optional `score:` override · the 3 biggest reveals sit right after a [BEAT] (music drops out)
+- built on: RESEARCH_<nn>_<slug>.md (Muse's story-mining worksheet). Every fact used comes from it or goes to §1.
+- format: <1 of 12 (story-mining.md §7), not the last episode's> · opening: <type> · ending: <type> (rotate against pp_history)
+- angle type: <contrarian | mechanism | second-order | human decision | the number | paradox | hidden system> — passes the anti-Wikipedia test because: <…>
+- mental models taught (1–3): <name — where it shows up> · original analysis/chart: <what we computed from the sources>
+- value rubric self-score (story-mining.md §6): angle _/2 · evidence _/2 · accuracy _/2 · mechanism _/2 · novelty _/2 · original analysis _/2 · decision & character _/2 · dramatic engine _/2 · takeaway _/2 · freshness _/2 = _/20 (≥ 15, no zero in the first four)
 - thesis (≤ 25 words): "<X rose/fell because Y, which means Z>"
 - master loop (the question the whole film answers): "<…>"
 - best fact (held for the midpoint / ~6:00): "<…>" · second-best fact (the hook): "<…>"
@@ -48,6 +54,10 @@ Ids are lowercase_underscores and must match the storyboard.
 ## 3. SCRIPT: an A/V script (script-masterclass.md §6), one sentence per line
 - `**hit word**` (one per sentence): where the picture or the hit lands.
 - `[BEAT]`: a held pause (the voice really pauses) before a punchline or reveal.
+- `{hit}` / `{hold}` / `{low}` / `{slow}`…: delivery tags (voice-direction.md §5), on at most 1 in 8 lines. The act and
+  sentence role already direct the read.
+- `@speaker: <verbatim quote>`: a real person's sourced words, read by a cast quote voice. Use it only with a quote fx
+  `by:` on the same beat.
 - `(J)`: an intended laugh. Aim for 15–25 per 10 min in playful tone.
 - `[SFX: …]` / `[TEXT: …]`: notes for the storyboard. They are not spoken.
 ## a0 COLD act=fall
@@ -62,12 +72,15 @@ Ids are lowercase_underscores and must match the storyboard.
 
 ## 5. STORYBOARD
 ### stories/<slug>-a0.story
+(custom scenes of this act go first, as `#! scene <name>` … `#! end` blocks — custom-scenes.md)
 ```story
 title: <slug> a0
 channel: poisonpill
 look: <look>
 tone: playful
-voice: am_michael
+voice: <cast>
+delivery: <read>
+voices: <speaker=voice; … or leave the line out>
 music: auto
 endcard: off
 # cine …
@@ -109,7 +122,10 @@ endcard: off
      plain collage for people, places and moments, on ≥ 20 % of beats (motion.md, visual-modes.md). Everywhere else, use the FAST modes (`isocity`, `isobars`,
      `coverflow`, `spinpaper`, `units`, `tank`, `race`, `rollnum`, `faceoff`, `invoice`, `candles`, `vault`, `slots`,
      `outbreak`, `meter`, `calendar`, `papercut`, `flapboard`).
-4. **Invent the pictures** (`build.md`).
+4. **Write the signature pictures as code** (`custom-scenes.md`): 10–20 custom scenes per episode, one for each beat
+   that matters: the cold open, every act turn, each top-3 fact, and the original chart(s). Use `build` for quick
+   compositions, and templates only when they fit exactly.
+4b. **Invent the pictures** (`build.md`).
    - At least 25 % of beats are `build` compositions made from their own sentence. No two beats share a composition.
    - Templates (sets, modes, 3D) are used only when they fit exactly.
    - Read the `pp_history show` output Muse pasted into the request. Do not reuse the last 3 episodes' opening, look or
@@ -135,6 +151,9 @@ MUSIC: keep the library at ≥ 3 tracks per mood (music.md; safe sources only, l
 the description.
 GENERATED IMAGES: only the §2 rows with role clean/env/prop/texture/fg and a gen: prompt. Prompt = the look's prefix from
 ai-images.md §3 + the gen: text + the suffix. Import with pp_img.py add … --gen "<tool>". Never generate anything else.
+IMAGES: run `python3 tools/pp_find.py assets <this file>` first (real images, licensed, credited). Generate only the rows it
+could not fill AND whose role allows generation.
+CUSTOM SCENES: render pp_sheet for every act; fix only errors (red text) — never change a scene's idea.
 STEPS: 1) pp_doctor ALL PASS  2) verify §1 → research/<slug>_factcheck.md (✓/✗ + source)  3) import §2 → pp_assets.py report
 0 problems (no PHOTO NEEDED anywhere)  4) save §5 blocks to stories/  5) pp_lint every act: 0 errors, ≥ 9.0 (syntax fixes
 only)  6) pp_sheet + pp_review every act; a SEPARATE fresh critic agent compares the sheets with §4 and lists beats whose

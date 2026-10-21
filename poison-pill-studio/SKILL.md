@@ -1,12 +1,12 @@
 ---
 name: "poison-pill-studio"
-description: "Produce Poison Pill episodes end to end: 8–12 min 16:9 English YouTube documentaries on why companies rise and fall: wow scripts (A/V script, hit words, beats, laughs), real photos brought alive (2.5D living pictures, depth atmosphere, light), one grade/light/grain over every frame, word-level voice sync, 11 looks by content, 71 scene types, fast resumable rendering. Linters, auto-director, critic loop, director-package mode. Start with START.md."
+description: "Produce Poison Pill episodes end to end: 8–12 min 16:9 English YouTube documentaries on why companies rise and fall. v6: built on deep research (story mining, value rubric, 12 formats), signature beats written as code (custom scenes), real images found and licensed automatically, a cast and directed voice (blends, per-act reads, quote voices); wow scripts (A/V script, hit words, beats, laughs), real photos brought alive (2.5D living pictures, depth atmosphere, light), one grade/light/grain over every frame, word-level voice sync, 11 looks by content, 71 scene types, fast resumable rendering. Linters, auto-director, critic loop, director-package mode. Start with START.md."
 ---
 
-# Poison Pill Studio v5.2 "Ultimate": the complete production system
+# Poison Pill Studio v6 "Ultimate": the complete production system
 
 **Channel:** Poison Pill · @poisonpill.channel · "Why great companies rise, and why they fall."
-**Format:** **16:9 only**, 8–12 min, English VO + English on screen, SFX only (no music). **The look follows the content**
+**Format:** **16:9 only**, 8–12 min, English VO + English on screen, music scored to the acts + SFX. **The look follows the content**
 (11 looks, `references/look.md`), and **the tone is playful**: clear first, then a laugh (`references/humor.md`). No cartoon characters, ever.
 **Standard:** Kurzgesagt-level clarity × Johnny Harris maps & paper × Vox evidence × Coffeezilla receipts ×
 MagnatesMedia collage × LEMMiNO 3D atmosphere.
@@ -17,6 +17,13 @@ MagnatesMedia collage × LEMMiNO 3D atmosphere.
 > made of photo + slammed word + stamp + shake is a slideshow, and it does not ship.
 
 ## What makes v5 different (read first)
+00. **v6 Ultimate:**
+    - Content starts from Muse's deep research (`story-mining.md`: 40 facts, primary documents, decisions, mechanism,
+      12 rotating formats, a value rubric of 20 points).
+    - Signature pictures are written as code per beat (`custom-scenes.md`).
+    - Real images are found and licensed automatically (`pp_find.py`, `image-sourcing.md`).
+    - The voice is cast and paced to the content (`voice-direction.md`).
+    - A WOW gate is scored per beat (`gauntlet.md`).
 0. **Invent, don't assemble (v5.2).**
    - `build` composes each picture from the sentence: real images, 24 icons, text, numbers and arrows, with 30 verbs
      timed to words (`build.md`). Use it on ≥ 25 % of beats.
@@ -126,6 +133,10 @@ Pick the one that best serves this moment of the film and its neighbours (variet
 | `references/script-masterclass.md` | **always (writing)**: hooks, reveal ladder, scenes, line craft, humor, endings, the A/V script, the critic's scorecard |
 | `references/editing.md` | **always (directing)**: cut rhythm, word sync, layering, transitions, camera, sound layers, text, per-beat/per-minute critic checklist |
 | `references/motion.md` | **always (visuals)**: easing, idle motion, parallax, atmosphere, light, grain, the cohesion grade, AI imagery |
+| `references/story-mining.md` | **always**: research worksheet, angle types, anti-Wikipedia test, insight density, 12 formats, value rubric |
+| `references/custom-scenes.md` | **always**: write a beat's animation as code, the API, worked examples |
+| `references/image-sourcing.md` | finding licensed real images automatically (`pp_find.py`) |
+| `references/voice-direction.md` | **always**: cast the narrator (blends, prosody mixes, audition), per-act reads, sentence roles, `{tags}`, quote voices and their rules |
 | `references/build.md` | **always**: the free-form composer, how to turn any sentence into its own picture, 25 examples, freshness rules |
 | `references/music.md` | music library (safe sources, moods), how the score is cut to the acts automatically |
 | `references/ai-images.md` | when an image is missing: what may be generated, the style bible per look, disclosure |

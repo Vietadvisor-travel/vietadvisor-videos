@@ -289,8 +289,17 @@
 
   // ---------------------------------------------------------------- the beat
   const CAMS = { vertigo: { z: [1, 1], dx: 0, dy: 0, vert: 1 }, orbit: { z: [1, .3], dx: 0, dy: 0, orb: 1 }, hand: { z: [1, .5], dx: 0, dy: 0, hand: 1 }, rise: { z: [1, .6], dx: 0, dy: 1.6 }, push: { z: [1, 1], dx: 0, dy: 0 }, pull: { z: [1, -1], dx: 0, dy: 0 }, panR: { z: [1, .3], dx: -1, dy: 0 }, panL: { z: [1, .3], dx: 1, dy: 0 }, tiltU: { z: [1, .3], dx: 0, dy: 1 }, tiltD: { z: [1, .3], dx: 0, dy: -1 }, drift: { z: [1, .4], dx: -.35, dy: .2 }, hold: { z: [1, .15], dx: 0, dy: 0 } };
+  // v6 VOICE DIRECTION: a caption may open with "@speaker:" (a quote read by a cast voice — voices: header) and carry {tags}
+  // ({slow} {fast} {hold} {hit} {low} {up} {soft} {archive}); both are stripped from the caption text and handed to voice.py
+  // with the beat's act, so the narrator reads the fall slower and lower than the rise (tools/voice.py, voice-direction.md).
+  const VDIR = /\s*\{((?:slow|fast|hold|hit|low|up|soft|archive)(?:[,\s]+(?:slow|fast|hold|hit|low|up|soft|archive))*)\}\s*/gi;
+  try { const cd0 = capDur; window.capDur = function (s, spk) { const V = SB._vo, n = V && V.list ? V.list.length : -1; const r = cd0(s, spk); if (n >= 0 && V.list.length > n) { const L = V.list[V.list.length - 1]; if (SB._act) L.act = SB._act; if (SB._vdir && SB._vdir.length) L.dir = SB._vdir; } return r; };
+    window.timeCaps = function (caps, start = .15, gap = .12, style) { const out = []; let t = start; for (let c of caps) { let spk, dir = []; c = String(c); const m = c.match(/^@([\w-]+)\s*:\s*/); if (m) { spk = m[1]; c = c.slice(m[0].length); }
+        c = c.replace(VDIR, (x, d) => { dir.push(...d.toLowerCase().split(/[,\s]+/).filter(Boolean)); return ' '; }).trim(); SB._vdir = dir; const d = capDur(c, spk); SB._vdir = null;
+        const mm = style ? { style } : {}; if (spk) { mm.speaker = spk; mm.who = spk.replace(/[_-]+/g, ' ').toUpperCase(); } if (SB._vo) mm.vo = SB._vo.last; out.push([+t.toFixed(2), +(t + d).toFixed(2), c, mm]); t += d + gap; } return { caps: out, end: t }; };
+    timeCaps = window.timeCaps; capDur = window.capDur; } catch (e) { console.error('PP voice direction hook:', e.message); }
   let N = 0;
-  SB.recipes.cine = (o, b) => {
+  SB.recipes.cine = (o, b) => { SB._act = o.act || SB._act;
     const { caps, end } = timeCaps(b.caps, .12, .06, b.capStyle); const at = clock(caps); const idx = ++N; const dur = Math.max(num(o.dur, 0), end + .25, 2.2);
     const LK = (o.look && LOOKS[o.look]) || EPLOOK; const A = LK.acts[o.act] || LK.acts.setup; const bgKind = o.bg || A.bg; const cam = CAMS[o.cam] || CAMS[['push', 'drift', 'panR', 'pull', 'panL'][idx % 5]];
     const crash = o.crash ? at(o.crash) : -1;
@@ -394,13 +403,13 @@
   const ALLOWED = new Set(['cut', 'whip', 'whipUp', 'flash', 'zoom', 'tear', 'burn', 'glitch', 'lightleak', 'push', 'portal']);
   const BANNED = /^(fade|dissolve|cube|spin|circles|iris|paper|ink|inkbleed|blobs|liquid|bloom|ripple|stripes|stripes2|brand|slide)$/;
   const compile0 = SB.compile; let ppMode = false;
-  SB.compile = (text, opts) => { const on = /^\s*channel\s*:\s*poison\s*pill\s*$/im.test(text);
-    if (!on) { ppMode = false; setLook(false); return compile0(text, opts); } ppMode = true; N = 0; text = text.replace(/\s*\[(BEAT|DROP)\]\s*/g, ' \u200b ').replace(/\s*\(J\)/g, ''); const lm = text.match(/^\s*look\s*:\s*([a-z]+)\s*$/im); setLook(lm ? (lm[1] === 'dark' ? 'noir' : lm[1]) : 'dossier');
+  SB.compile = (text, opts) => { SB._act = null; if (window.PPCINE.extractScenes) text = window.PPCINE.extractScenes(String(text)); const on = /^\s*channel\s*:\s*poison\s*pill\s*$/im.test(text);
+    if (!on) { ppMode = false; setLook(false); return compile0(text, opts); } ppMode = true; N = 0; text = text.replace(/[ \t]*\[(BEAT|DROP)\][ \t]*/g, ' \u200b ').replace(/\s*\(J\)/g, ''); const lm = text.match(/^\s*look\s*:\s*([a-z]+)\b/im); setLook(lm ? (lm[1] === 'dark' ? 'noir' : lm[1]) : 'dossier');
     // v5.1 AUTO TRANSITIONS (motivated, rationed): an act change gets the look's chapter transition (paper → tear, tech/retro
     // → glitch, others → burn; into/out of a flashback → lightleak); a sentence opening with But/Yet/However → whip. At most one
     // stylised transition every 5 beats; anything written as trans= wins; header `autotrans: off` disables it.
     const ttl = (text.match(/^\s*title\s*:\s*(.+)$/im) || [])[1] || ''; let hs = 0; for (const ch of ttl) hs = (hs * 31 + ch.charCodeAt(0)) >>> 0; window.PPCINE.EPSEED = hs % 9973;
-    if (!/^\s*autotrans\s*:\s*off\s*$/im.test(text)) { const lk = (text.match(/^\s*look\s*:\s*([a-z]+)\s*$/im) || [])[1] || 'dossier'; const pool0 = /^(dossier|vintage|eastern|editorial)$/.test(lk) ? ['tear', 'burn', 'push', 'zoom', 'lightleak'] : /^(tech|retro)$/.test(lk) ? ['glitch', 'push', 'zoom', 'burn', 'flash'] : ['burn', 'push', 'zoom', 'tear', 'lightleak'];
+    if (!/^\s*autotrans\s*:\s*off\s*$/im.test(text)) { const lk = (text.match(/^\s*look\s*:\s*([a-z]+)\b/im) || [])[1] || 'dossier'; const pool0 = /^(dossier|vintage|eastern|editorial)$/.test(lk) ? ['tear', 'burn', 'push', 'zoom', 'lightleak'] : /^(tech|retro)$/.test(lk) ? ['glitch', 'push', 'zoom', 'burn', 'flash'] : ['burn', 'push', 'zoom', 'tear', 'lightleak'];
       const pool = pool0.map((t, i) => [t, (i * 7919 + hs) % 101]).sort((a, b) => a[1] - b[1]).map(a => a[0]); let ci = 0; const usedT = {}; const chapNext = () => { for (let k = 0; k < pool.length; k++) { const t = pool[(ci + k) % pool.length]; if ((usedT[t] || 0) < 2) { ci = (ci + k + 1) % pool.length; usedT[t] = (usedT[t] || 0) + 1; return t; } } return 'cut'; };
       const L = text.split('\n'); let prevAct = null, last = -99, bi = -1;
       for (let i = 0; i < L.length; i++) { if (!/^#\s*cine\b/.test(L[i])) continue; bi++; const act = (L[i].match(/\bact=(\w+)/) || [])[1] || 'setup'; let cap = ''; for (let j = i + 1; j < L.length; j++) { if (!L[j].trim()) continue; if (L[j].startsWith('#')) break; cap = L[j]; break; }
@@ -411,11 +420,14 @@
     const ep = compile0(fixed.replace(/^(#\s*(?:cine|ppend|ppcase)\b(?![^\n]*\btrans=)[^\n]*)$/gm, '$1 trans=cut'), opts);
     ep.scenes.forEach((s, i) => { if (s.transition && BANNED.test(s.transition.type) && !(window.PPCINE.ALLOW_TRANS || []).includes(s.transition.type)) s.transition = { type: 'cut', dur: 0 }; if (s.transition && s.transition.type === 'cut') s.transition.dur = 0; });
     const noEnd = /^\s*endcard\s*:\s*off\s*$/im.test(text); const last = ep.scenes[ep.scenes.length - 1]; if (last && last.id === 'end') { ep.scenes.pop(); if (!noEnd && !ep.scenes.some(s => /_ppend$/.test(s.id))) ep.scenes.push({ ...SB.recipes.ppend({}, { caps: [] }), id: 'ppend', transition: { type: 'cut', dur: 0 } }); }
+    { const L = ep.scenes[ep.scenes.length - 1]; if (L && !(L.layers || []).some(l => l.name === 'endFrame')) L.layers = [...(L.layers || []), { type: 'ui', name: 'endFrame', screen: true, always: 1, o: { pp: 1 } }]; }   // the channel ends on its own card (ppend) or on an act cut: a silent marker satisfies the engine's end-frame lint
     ep.look = { ...(ep.look || {}), grade: 'clean' }; ep.channel = 'poisonpill'; if (!/^\s*post\s*:\s*on\s*$/im.test(text)) { ep.post = false; ep.finish = { ...(ep.finish || {}), grain: true }; } return ep; }; // the channel grades itself: skip the engine's WebGL post pass (≈ 100 ms/frame on CPU)
+  try { const ef0 = UI.endFrame; UI.endFrame = (p, o, t) => (o && o.pp) ? undefined : ef0(p, o, t); } catch (e) { }
   // captions on this channel: one fixed style, 38 u, bottom 10 %, white + gold numbers, never moved
   const cap0 = window.caption; window.caption = function (text, t0, t1, t, o = {}) { if (!ppMode) return cap0(text, t0, t1, t, o); if (t < t0 || t > t1) return; const u = U(), v = H > W; const out = clamp((t1 - t) / .12), pin = clamp((t - t0) / .12);
     const size = (v ? 40 : 38) * u, maxW = W * (v ? .84 : .72); const raw = String(text).replace(/[\*\[\]]/g, ''); const lines = wrap(raw, size, maxW, 'body'); const lh = size * 1.22; const yB = v ? H * .80 : H * .915; const y0 = yB - (lines.length - 1) * lh;
-    ctx.save(); ctx.globalAlpha *= out * pin; lines.forEach((ln, i) => { setFont(size, 'body', 700); const tw = ctx.measureText(ln).width; let x = W / 2 - tw / 2; ln.split(/(\s+)/).forEach(w => { if (!w) return; T(w, x, y0 + i * lh, { size, font: 'body', weight: 700, align: 'left', fill: /\d|\$/.test(w) ? PP.gold2 : '#ffffff', stroke: 'rgba(5,8,14,.9)', lw: size * .16, shadow: 3 * u, shadowCol: 'rgba(0,0,0,.6)' }); setFont(size, 'body', 700); x += ctx.measureText(w).width; }); }); ctx.restore(); };
+    ctx.save(); ctx.globalAlpha *= out * pin; if (o.who) T(`WORDS OF ${o.who} · VOICED`, W / 2, y0 - size * 1.15, { size: size * .5, font: 'cond', weight: 700, fill: PP.gold2, lw: 0, ls: 3 * u, shadow: 2 * u });
+    lines.forEach((ln, i) => { setFont(size, 'body', 700); const tw = ctx.measureText(ln).width; let x = W / 2 - tw / 2; ln.split(/(\s+)/).forEach(w => { if (!w) return; T(w, x, y0 + i * lh, { size, font: 'body', weight: 700, align: 'left', fill: /\d|\$/.test(w) ? PP.gold2 : '#ffffff', stroke: 'rgba(5,8,14,.9)', lw: size * .16, shadow: 3 * u, shadowCol: 'rgba(0,0,0,.6)' }); setFont(size, 'body', 700); x += ctx.measureText(w).width; }); }); ctx.restore(); };
   try { caption = window.caption; } catch (e) { }
   try { Object.assign(TRANS, { cine: ['cut'], ppend: ['cut'] }); } catch (e) { }
   window.PPCINE = { THEME, LOOK, LOOKS, useLook, setLook, brightBg, CAMS, heroType, supType, PP, ACT, PROP, EXT, BGX, stamp, dateCard, headline, toned, rr, rrc, num, split, item, HAS, clipFrame, procBg, dust, wrap: (...a) => wrap(...a), missing: () => [...MISSING] };
