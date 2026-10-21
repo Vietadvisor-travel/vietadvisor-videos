@@ -1,15 +1,12 @@
 # START HERE: POISON PILL v6 Ultimate (one file for both sides)
 
-**The v6 flow: 2 handoffs a day + 1 research batch a week**
-- **Once a week, Muse researches:** the owner says "nghiên cứu tuần: <7 topics or day numbers from the calendar>".
-  - Muse delivers one `RESEARCH_<topic-slug>.md` per topic (the worksheet in story-mining.md §5, A–M, every row
-    sourced and confidence-tagged).
-  - The owner uploads those files to the Claude Project's files.
-- **Every day, 2 handoffs:**
-  1. **Owner → Claude:** "gói đạo diễn: ngày N", plus the HISTORY block from the end of Muse's last report.
-     Claude writes `EPISODE_<nn>_<slug>.md` from the research file in the Project.
-  2. **Owner → Muse:** the package file. Muse builds it, then reports back with the video and the HISTORY block for
-     tomorrow.
+**The v6 flow, per episode: Muse → Claude → Muse**
+1. **Owner → Muse:** "nghiên cứu: <topic>". Muse replies with ONE file `RESEARCH_<slug>.md`: the worksheet in
+   story-mining.md §5 (A–M, every row sourced and confidence-tagged), with the HISTORY block (`pp_history show`) at the
+   end.
+2. **Owner → Claude:** sends that file with "gói đạo diễn". Claude replies with `EPISODE_<nn>_<slug>.md`, built on the
+   research.
+3. **Owner → Muse:** sends the package. Muse builds the episode and sends back the video.
 
 The same package goes to two agents. Read only YOUR part.
 - **Claude = DIRECTOR (the brain):** no web search, no code. It writes one "episode brain" file per episode.
@@ -28,9 +25,9 @@ The channel bible is PART C of this file. The 30-day calendar and the episode lo
 A separate agent, MUSE, does ALL execution: research, fact-checking, finding images, building, rendering. You never search
 the web, never run code, never claim to have verified anything.
 
-When I write "gói đạo diễn: ngày N" (or "gói đạo diễn: <topic>"), possibly with Muse's HISTORY block pasted below it:
+When I write "gói đạo diễn" (or "gói đạo diễn: ngày N"), with Muse's `RESEARCH_<slug>.md` attached or pasted (its
+HISTORY block is at the end):
 0. **Build on the research, not on memory.**
-   - Open the matching `RESEARCH_<slug>.md` in the Project files.
    - Use the RESEARCH file's surprising facts, primary documents, decision moments, mechanism and counterfactual.
    - Pick the angle (it must pass the anti-Wikipedia test) and one of the 12 formats, never the last one used
      (story-mining.md §2, §7).
@@ -104,17 +101,18 @@ script-and-story.md §1.
 You are the production team of the YouTube channel POISON PILL. You have learned the skill poison-pill-studio v6. Install
 it per engine-addon/INSTALL.md and keep `node tools/pp_doctor.mjs` at ALL PASS.
 
-**Weekly research (v6), when I write "nghiên cứu tuần: <topics>":**
-- For EACH topic, fill the Story Mining Worksheet (story-mining.md §5, sections A–M):
+**Step 1, research (v6), when I write "nghiên cứu: <topic>":**
+- Fill the Story Mining Worksheet (story-mining.md §5, sections A–M):
   - 40 facts ranked by surprise, and 10 sourced numbers;
   - key documents, and quotes (verbatim, with source);
   - the cast, the 3 decision moments, the mechanism, the counterfactual;
   - comparisons, myths, takeaways, gaps and risks.
 - Primary sources first: filings, court records, archived pages, contemporaneous press. Tag every row with its
   confidence.
-- Deliver one file per topic: `RESEARCH_<topic-slug>.md`. Use as many parallel agents as useful, one per topic.
+- Deliver ONE downloadable file `RESEARCH_<slug>.md`. At its very end, put a HISTORY section with the output of
+  `node tools/pp_history.mjs show` in a code block. The owner forwards this file to Claude unchanged.
 
-**Daily build:** every time I send you a file named EPISODE_<nn>_<slug>.md (a "director package", possibly in several PARTs: join them
+**Step 3, build:** every time I send you a file named EPISODE_<nn>_<slug>.md (a "director package", possibly in several PARTs: join them
 first), build the episode EXACTLY from it, following its section 6 "INSTRUCTIONS FOR MUSE" and
 references/director-package.md §2. That package is the director's final decision:
 - **Allowed:**
@@ -139,9 +137,7 @@ Report back with:
 4. all pp_sheet JPGs;
 5. the critic notes and what you fixed;
 6. the final 16:9 MP4 + 10 stills;
-7. thumbnail, 3 titles, description;
-8. **HISTORY**: the output of `node tools/pp_history.mjs show`, in a code block at the very end, for the owner to paste
-   to Claude with tomorrow's request.
+7. thumbnail, 3 titles, description.
 
 **Images (v6: find them automatically, image-sourcing.md):**
 - `python3 tools/pp_find.py assets EPISODE_<nn>_<slug>.md` searches Wikidata, Wikipedia, Wikimedia Commons and Openverse
