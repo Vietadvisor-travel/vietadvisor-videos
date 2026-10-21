@@ -2,7 +2,7 @@ title: living pictures demo (v5 — scene + air)
 channel: poisonpill
 look: tech
 voice: am_michael
-music: none
+music: auto
 endcard: off
 
 # cine act=setup shot="ws|ms:pt:.5,.45@launch/dolly" fx="scene:x;plate:t_rocket;subj:t_astro@.3,1.02,.82;in:she;air:dust,rays;light:sweep@launch"

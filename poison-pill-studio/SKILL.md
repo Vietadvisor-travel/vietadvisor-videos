@@ -3,7 +3,7 @@ name: "poison-pill-studio"
 description: "Produce Poison Pill episodes end to end: 8–12 min 16:9 English YouTube documentaries on why companies rise and fall: wow scripts (A/V script, hit words, beats, laughs), real photos brought alive (2.5D living pictures, depth atmosphere, light), one grade/light/grain over every frame, word-level voice sync, 11 looks by content, 71 scene types, fast resumable rendering. Linters, auto-director, critic loop, director-package mode. Start with START.md."
 ---
 
-# Poison Pill Studio v5 "Ultimate": the complete production system
+# Poison Pill Studio v5.1 "Ultimate": the complete production system
 
 **Channel:** Poison Pill · @poisonpill.channel · "Why great companies rise, and why they fall."
 **Format:** **16:9 only**, 8–12 min, English VO + English on screen, SFX only (no music). **The look follows the content**
@@ -26,7 +26,12 @@ MagnatesMedia collage × LEMMiNO 3D atmosphere.
    3D, diagrams and AI fills. Real-3D stays ≤ 10 %, for signature moments only.
 4. **Locked to the voice.** Word-level timing comes from the voice-over. Pictures land 3 frames before the stressed
    word (`editing.md`).
-5. **Generated images only fill gaps:** clean plates, environments, props, textures. Never a real person, document,
+5. **Music and edit life (v5.1):**
+   - Real tracks from a curated library, cut to the acts on bar lines, dropping out under every `[BEAT]` (`music.md`).
+   - A camera punch on every **hit word**.
+   - Automatic re-frames on long beats.
+   - Motivated transitions at act changes and on "But…" lines.
+6. **Generated images only fill gaps:** clean plates, environments, props, textures. Never a real person, document,
    logo or event (`ai-images.md`).
 
 ## START HERE (in this order, no skipping)
@@ -116,6 +121,7 @@ Pick the one that best serves this moment of the film and its neighbours (variet
 | `references/script-masterclass.md` | **always (writing)**: hooks, reveal ladder, scenes, line craft, humor, endings, the A/V script, the critic's scorecard |
 | `references/editing.md` | **always (directing)**: cut rhythm, word sync, layering, transitions, camera, sound layers, text, per-beat/per-minute critic checklist |
 | `references/motion.md` | **always (visuals)**: easing, idle motion, parallax, atmosphere, light, grain, the cohesion grade, AI imagery |
+| `references/music.md` | music library (safe sources, moods), how the score is cut to the acts automatically |
 | `references/ai-images.md` | when an image is missing: what may be generated, the style bible per look, disclosure |
 | `references/director-package.md` | **director package mode**: the one-file brain of an episode + the standard production instructions |
 | `references/visual-modes.md` | **always**: the 70 scene types, the content→mode decision table, the variety budget, sequencing |

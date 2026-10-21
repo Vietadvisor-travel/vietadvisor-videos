@@ -1,5 +1,23 @@
 # Poison Pill Studio: changelog
 
+## v5.1 (Oct 2026): music, and an edit that moves
+- **Music** (`pp_music.py`, `music.md`, `sound_design.py`):
+  - a library of real royalty-free tracks, analysed for tempo, bar grid, energy, intro and peak;
+  - `music: auto` gives each act its mood, picks a track per mood run, enters on a bar line at the cut, loops on bar
+    lines, crossfades between moods, ducks under the voice, and drops out under every `[BEAT]`;
+  - credits are written to `<slug>_music_used.json`;
+  - the procedural score fills any mood the library lacks.
+- **Hit-word punches:** every `**hit word**` in the caption gets a camera punch and a soft hit, on the word.
+- **Auto re-frame:** long collage beats "cut" to a new angle at clause breaks.
+- **Motivated auto-transitions:**
+  - an act change gets the look's chapter transition (tear, glitch or burn; lightleak around flashbacks);
+  - "But / Yet / However" lines get a whip;
+  - at most one every 5 beats;
+  - tear, burn, glitch, lightleak, push and portal are now allowed, while iris, slide and fade stay refused.
+- **Lint:** warns when written stylised transitions exceed 2/min.
+- **Grain:** now changes at 12 fps (filmic), which lets still frames be reused more often.
+
+
 ## v5 "Ultimate" (Oct 2026): wow script, living pictures, one film, locked to the voice
 - **Research-backed craft references:**
   - `script-masterclass.md`: hooks, reveal ladder, scenes, line craft, humor, endings, the A/V script, the critic's

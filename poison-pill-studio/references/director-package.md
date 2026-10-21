@@ -12,6 +12,7 @@ with these exact headings, because Muse's instructions parse them.
 - archetype: <story-archetypes.md>   - format: 16:9 only
 - look: <one of the 11 looks, chosen by the CONTENT: look.md table> (+ a second look for a flashback act, if any)
 - tone: playful | dry   (playful by default: humor.md; dry only for tragedies)
+- music: auto (moods follow the acts: music.md) · optional `score:` override · the 3 biggest reveals sit right after a [BEAT] (music drops out)
 - thesis (≤ 25 words): "<X rose/fell because Y, which means Z>"
 - master loop (the question the whole film answers): "<…>"
 - best fact (held for the midpoint / ~6:00): "<…>" · second-best fact (the hook): "<…>"
@@ -67,7 +68,7 @@ channel: poisonpill
 look: <look>
 tone: playful
 voice: am_michael
-music: none
+music: auto
 endcard: off
 # cine …
 <the VO sentence>
@@ -124,6 +125,8 @@ changing what a beat shows; replace a number/date/name in BOTH §3 and §5 if §
 replace an unobtainable asset with the closest real equivalent (log it).
 FORBIDDEN: rewriting sentences, changing modes/cameras/order, adding or removing beats, AI images of real people/documents,
 approving your own work.
+MUSIC: keep the library at ≥ 3 tracks per mood (music.md; safe sources only, licence kept); paste pp_music.py credits into
+the description.
 GENERATED IMAGES: only the §2 rows with role clean/env/prop/texture/fg and a gen: prompt. Prompt = the look's prefix from
 ai-images.md §3 + the gen: text + the suffix. Import with pp_img.py add … --gen "<tool>". Never generate anything else.
 STEPS: 1) pp_doctor ALL PASS  2) verify §1 → research/<slug>_factcheck.md (✓/✗ + source)  3) import §2 → pp_assets.py report

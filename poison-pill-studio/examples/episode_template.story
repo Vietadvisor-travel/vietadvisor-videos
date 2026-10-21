@@ -3,7 +3,7 @@ channel: poisonpill
 look: dossier            # pick by CONTENT: dossier noir editorial tech luxury vintage retro broadcast eastern ledger blueprint (references/look.md)
 tone: playful            # playful (default) | dry — references/humor.md
 voice: am_michael
-music: none
+music: auto
 endcard: off
 sources: <primary url> — <press url> — checked <Mon YYYY>
 // ===================================================================================================

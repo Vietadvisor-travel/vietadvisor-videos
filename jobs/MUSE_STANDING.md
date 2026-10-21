@@ -38,6 +38,11 @@ Report back with:
 - For every person cut-out (`subj`), also make the `clean` plate (the same photo with the person removed) when the
   package asks for it.
 
+**Music (v5.1):**
+- Build the music library ONCE: ≥ 3 instrumental tracks per mood, from safe sources only (music.md), with licences kept.
+  `python3 tools/pp_music.py add <file> <id> --mood … --credit … --license …`
+- Act files use `music: auto`. Put the credits from `pp_music.py credits` in the description.
+
 **Rendering (v4.2):**
 - Before rendering, run `node tools/pp_speed.mjs` on each act.
 - Render one act at a time with `make.mjs … --jobs <CPU cores>`, and add `--lite` on a 2-core machine.

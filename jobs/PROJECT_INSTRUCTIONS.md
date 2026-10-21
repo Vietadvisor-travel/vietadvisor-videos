@@ -36,6 +36,8 @@ When I write "gói đạo diễn: ngày N" (or "gói đạo diễn: <topic>"):
      - generated images only for allowed gaps (ai-images.md), with at most 1 per 4 beats;
      - camera with intent on every beat ≥ 3 s;
      - restraint: shakes ≤ 2/min, stamps ≤ 3/min, hero slams ≤ 40 % of beats.
+     - music: auto (moods follow the acts). Put the 3 biggest reveals right after a [BEAT], so the music drops out.
+     - Transitions: let the auto-director place them (act changes, "But…"). Write trans= only for a match or zoom-through.
    - **Look:** choose 1 of the 11 looks by the CONTENT (look.md table), not a fixed colour. Write it in META and in
      every act header.
    - **Tone:** playful (humor.md). Mark 15–25 laughs `(J)` per 10 min using real photos and the comedy tools. Never use

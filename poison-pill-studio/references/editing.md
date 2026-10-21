@@ -13,6 +13,21 @@
 | One grade, one light, one grain over everything | the v5 finish pass on every frame |
 | Read-time for on-screen text | `pp_lint` (≤ 8 words on screen; hold rules) |
 
+## v5.1: the edit comes alive automatically
+- **Hit words.** Every `**word**` in the caption makes a camera punch on the word: +3.5 % with a 0.12 s attack, easing to
+  a 35 % hold. A soft hit sounds under it. Turn it off for one beat with `hits=off`.
+- **Auto re-frame.** A collage beat of 4.5 s or more without a `shot=` and without a world mode "cuts" to a tighter or
+  wider angle at each clause break (comma, semicolon or colon), like a two-camera interview edit. Turn it off with
+  `reframe=off`.
+- **Motivated transitions, rationed to at most one every 5 beats:**
+  - an act change gets the look's chapter transition: `tear` for paper looks, `glitch` for tech and retro, `burn`
+    otherwise, and `lightleak` into or out of a flashback;
+  - a line starting with **But / Yet / However** gets a `whip`.
+
+  A written `trans=` always wins. Header `autotrans: off` disables this.
+- **Allowed transitions:** cut, whip, whipUp, flash, zoom, tear, burn, glitch, lightleak, push, portal.
+  **Refused:** fade, dissolve, iris, slide, cube, spin, page curls.
+
 ## What you must still decide (director)
 - The **hit word** of each sentence, written `**bold**` in the A/V script.
 - **Cut motivation:** the new picture must answer or advance what was just said.

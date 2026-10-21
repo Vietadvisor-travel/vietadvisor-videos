@@ -68,7 +68,7 @@
   function finish(lt, A) { const L = LOOK.cur || LOOKS.dossier; if (window.PP_NOFINISH) return; const F = { ...(L.family === 'light' ? FIN.light : FIN.dark), ...(L.finish || {}) };
     ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = F.liftA; ctx.globalCompositeOperation = 'lighten'; ctx.fillStyle = F.lift; ctx.fillRect(0, 0, W, H);   // raised, tinted black floor (3D, photos & diagrams share it)
     ctx.globalAlpha = 1; ctx.globalCompositeOperation = 'source-over'; ctx.drawImage(finLight(F, L.name), 0, 0);                                                                  // one shared key light (top-left) + soft edges
-    const G = grainFrames(), f = Math.floor(lt * 24); ctx.globalAlpha = F.grain * (A && A.sepia ? 1.6 : 1); ctx.drawImage(G[f % G.length], -((f * 37) % 128), -((f * 53) % 128)); ctx.restore(); }  // animated grain on every frame
+    const G = grainFrames(), f = Math.floor(lt * 12); ctx.globalAlpha = F.grain * (A && A.sepia ? 1.6 : 1); ctx.drawImage(G[f % G.length], -((f * 37) % 128), -((f * 53) % 128)); ctx.restore(); }  // animated grain on every frame
   const midTone = act => { const M = LOOK.cur.mid; return M[act] || M.tone; };
   const split = (s, d = '|') => String(s || '').split(d).map(x => x.trim()).filter(Boolean);
   const num = (v, d) => (v === undefined || v === '' || isNaN(+v)) ? d : +v;
@@ -313,7 +313,16 @@
     const fgNeg = (o.neg || '') === 'off';
     const rig = window.PPCAM && o.shot ? window.PPCAM.build(o, at, dur, { mids, fgs, hero }) : null; // v4 camera rig (pp_cam.js)
 
-    const render = (lt) => { useLook(LK); const u = U(), v = V(); const k = clamp(lt / dur); const kk = E.sine(k);
+    // v5.1 EDIT LIFE: **hit words** in the caption → a camera punch (+3.5 %, 0.12 s attack) and a soft hit, on the word;
+    // long collage beats without a directed camera → an automatic re-frame (a "cut" to a tighter angle) at each clause break
+    const capTxt = (b.caps || []).map(c => String(c)).join(' '); const hitWords = [...capTxt.matchAll(/\*\*([^*]+)\*\*/g)].map(m => m[1].trim().split(/\s+/)[0]).filter(Boolean);
+    const hitT = o.hits === 'off' ? [] : hitWords.map(w => at(w.replace(/[^A-Za-z0-9$%€£.'-]/g, ''), -1)).filter(t => t >= 0);
+    const worldFx = fx.some(e => EXT[e.type] && EXT[e.type].world); const reframes = [];
+    if (!o.shot && !worldFx && o.reframe !== 'off' && dur >= 4.5) { const toks = capTxt.replace(/\*\*/g, '').split(/\s+/); toks.forEach((w, i) => { if (/[,;:]$/.test(w) && i < toks.length - 2) { const t = at(toks[i + 1].replace(/[^A-Za-z0-9$%€£.'-]/g, ''), -1); if (t > .8 && t < dur - .8) reframes.push(t); } }); }
+    hitT.forEach(t => sfx.push([Math.max(0, t - .02), 'hit_soft', .35]));
+    const punch = lt => { let z = 1, dx = 0; hitT.forEach(th => { const x = lt - th; if (x < 0) return; z += .035 * (x < .12 ? E.out(x / .12) : Math.max(.35, 1 - (x - .12) / 1.4 * .65)); }); reframes.forEach((tr, i) => { if (lt >= tr) { z += (i % 2 ? -.06 : .07); dx = i % 2 ? 0 : (i % 4 ? -.02 : .02); } }); return [Math.max(1, z), dx]; };
+    const render = (lt) => { const [pz, pdx] = punch(lt); if (pz === 1 && !pdx) return render0(lt); ctx.save(); ctx.translate(W / 2 + pdx * W, H * .45); ctx.scale(pz, pz); ctx.translate(-W / 2, -H * .45); render0(lt); ctx.restore(); };
+    const render0 = (lt) => { useLook(LK); const u = U(), v = V(); const k = clamp(lt / dur); const kk = E.sine(k);
       let sh = 0; shakes.forEach(([t, a]) => { const p = lt - t; if (p >= 0 && p < .3) sh = Math.max(sh, a * (1 - p / .3)); }); const sx = sh ? (Math.random() - .5) * 18 * u * sh : 0, sy = sh ? (Math.random() - .5) * 18 * u * sh : 0;
       let cz = 0; if (crash >= 0 && lt > crash) cz = .22 * E.out5(clamp((lt - crash) / .18));
       const hx = cam.hand || o.hand ? fbm(lt * 1.3 + 3) * 9 * u : 0, hy = cam.hand || o.hand ? fbm(lt * 1.1 + 9) * 7 * u : 0; const cs = rig ? rig.state(lt, v) : null; const layer = rig ? (depth, fn) => { const bl = rig.blurOf(cs, depth, u); if (bl > .6 && !window.PP_SLOWBLUR) { softLayer(bl, () => { ctx.translate(sx * depth * .6, sy * depth * .6); rig.apply(cs, depth, lt, u); fn(); }); return; } ctx.save(); ctx.translate(sx * depth * .6, sy * depth * .6); rig.apply(cs, depth, lt, u); if (bl > .4 && window.PP_SLOWBLUR) ctx.filter = `blur(${bl.toFixed(1)}px)`; fn(); ctx.restore(); } : (depth, fn) => { let z = 1 + (cam.z[1] > 0 ? kk : 1 - kk) * .05 * depth * Math.abs(cam.z[1]) + cz * depth * .5; if (cam.vert) z = depth < 1.9 ? 1.2 - kk * .18 : 1 + kk * .12 * (depth - 1.4); let dx = cam.dx * (kk - .5) * W * .025 * depth, dy = cam.dy * (kk - .5) * H * .025 * depth; if (cam.orb) dx = (kk - .5) * W * .05 * (depth - 2); dx += hx * depth * .5; dy += hy * depth * .5; ctx.save(); ctx.translate(W / 2 + dx + sx * depth * .6, H / 2 + dy + sy * depth * .6); ctx.scale(z, z); ctx.translate(-W / 2, -H / 2); fn(); ctx.restore(); };
@@ -376,12 +385,20 @@
     return { dur, render, captions: caps, sfx: [[.1, 'whoosh_down', .7], [.55, 'impact_cinematic', .9], [1.1, 'ui_text_reveal', .5]], look: { grade: 'clean' } }; };
 
   // ---------------------------------------------------------------- channel mode: header `channel: poisonpill`
-  const ALLOWED = new Set(['cut', 'whip', 'whipUp', 'flash', 'zoom']);
-  const BANNED = /^(fade|dissolve|cube|spin|circles|iris|paper|ink|inkbleed|blobs|liquid|bloom|ripple|stripes|stripes2|lightleak|brand|slide|push)$/;
+  const ALLOWED = new Set(['cut', 'whip', 'whipUp', 'flash', 'zoom', 'tear', 'burn', 'glitch', 'lightleak', 'push', 'portal']);
+  const BANNED = /^(fade|dissolve|cube|spin|circles|iris|paper|ink|inkbleed|blobs|liquid|bloom|ripple|stripes|stripes2|brand|slide)$/;
   const compile0 = SB.compile; let ppMode = false;
   SB.compile = (text, opts) => { const on = /^\s*channel\s*:\s*poison\s*pill\s*$/im.test(text);
     if (!on) { ppMode = false; setLook(false); return compile0(text, opts); } ppMode = true; N = 0; text = text.replace(/\s*\[(BEAT|DROP)\]\s*/g, ' \u200b ').replace(/\s*\(J\)/g, ''); const lm = text.match(/^\s*look\s*:\s*([a-z]+)\s*$/im); setLook(lm ? (lm[1] === 'dark' ? 'noir' : lm[1]) : 'dossier');
-    // transitions: default hard cut; only cut/whip/flash/zoom(match) allowed — fades & 3D are refused
+    // v5.1 AUTO TRANSITIONS (motivated, rationed): an act change gets the look's chapter transition (paper → tear, tech/retro
+    // → glitch, others → burn; into/out of a flashback → lightleak); a sentence opening with But/Yet/However → whip. At most one
+    // stylised transition every 5 beats; anything written as trans= wins; header `autotrans: off` disables it.
+    if (!/^\s*autotrans\s*:\s*off\s*$/im.test(text)) { const lk = (text.match(/^\s*look\s*:\s*([a-z]+)\s*$/im) || [])[1] || 'dossier'; const chap = /^(dossier|vintage|eastern|editorial)$/.test(lk) ? 'tear' : /^(tech|retro)$/.test(lk) ? 'glitch' : 'burn';
+      const L = text.split('\n'); let prevAct = null, last = -99, bi = -1;
+      for (let i = 0; i < L.length; i++) { if (!/^#\s*cine\b/.test(L[i])) continue; bi++; const act = (L[i].match(/\bact=(\w+)/) || [])[1] || 'setup'; let cap = ''; for (let j = i + 1; j < L.length; j++) { if (!L[j].trim()) continue; if (L[j].startsWith('#')) break; cap = L[j]; break; }
+        if (bi > 0 && !/\btrans=/.test(L[i]) && bi - last >= 5) { let t = null; if (prevAct && act !== prevAct) t = (act === 'flash' || prevAct === 'flash') ? 'lightleak' : chap; else if (/^\s*(\*\*)?(but|yet|however)\b/i.test(cap)) t = 'whip'; if (t) { L[i] += ' trans=' + t; last = bi; } }
+        prevAct = act; } text = L.join('\n'); }
+    // transitions: default hard cut; only motivated ones are allowed — fades, iris, slides & 3D flips are refused
     const fixed = String(text).replace(/\btrans=(\w+)/g, (m, t) => (ALLOWED.has(t) || (window.PPCINE.ALLOW_TRANS || []).includes(t)) ? m : (t === 'match' ? 'trans=zoom' : 'trans=cut'));
     const ep = compile0(fixed.replace(/^(#\s*(?:cine|ppend|ppcase)\b(?![^\n]*\btrans=)[^\n]*)$/gm, '$1 trans=cut'), opts);
     ep.scenes.forEach((s, i) => { if (s.transition && BANNED.test(s.transition.type) && !(window.PPCINE.ALLOW_TRANS || []).includes(s.transition.type)) s.transition = { type: 'cut', dur: 0 }; if (s.transition && s.transition.type === 'cut') s.transition.dur = 0; });

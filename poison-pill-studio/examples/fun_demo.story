@@ -3,7 +3,7 @@ tone: playful
 channel: poisonpill
 look: editorial
 voice: am_michael
-music: none
+music: auto
 endcard: off
 
 # cine act=doubt fx="freeze:x;img:t_cameraman;pt:.42,.3;cap:Yep. That's Jeff.;sub:You're probably wondering how he got here.;at:jeff"

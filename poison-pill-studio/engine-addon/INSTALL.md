@@ -1,10 +1,10 @@
-# Install the Poison Pill add-on (v5) into the engine (Vietadvisor Motion Studio, or the fork local-empire-files-studio)
+# Install the Poison Pill add-on (v5.1) into the engine (Vietadvisor Motion Studio, or the fork local-empire-files-studio)
 
 1. **Copy the files:**
    ```bash
    cp engine-addon/engine/library/pp_*.js  <engine>/engine/library/
    cp engine-addon/tools/pp_*              <engine>/tools/
-   cp engine-addon/tools/render.mjs engine-addon/tools/make.mjs engine-addon/tools/voice.py <engine>/tools/   # renderer + word-level voice timing
+   cp engine-addon/tools/render.mjs engine-addon/tools/make.mjs engine-addon/tools/voice.py engine-addon/tools/sound_design.py <engine>/tools/   # renderer, word-level voice timing, music mixing
    ```
 2. **Register them LAST, in this order,** in `<engine>/engine/library/index.js`. `three.min` must already be in the list,
    before these:

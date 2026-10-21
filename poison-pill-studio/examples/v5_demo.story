@@ -3,7 +3,7 @@ channel: poisonpill
 look: tech
 tone: playful
 voice: am_michael
-music: none
+music: auto
 endcard: off
 
 # cine act=setup shot="ws|mcu:pt:.5,.42@bet/dolly" fx="scene:x;plate:t_rocket;subj:t_astro@.5,1.02,.8;in:she;air:dust;light:sweep@bet"
