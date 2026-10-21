@@ -7,7 +7,7 @@
   - numbers spoken in full;
   - BUT/THEREFORE storytelling.
 - **Look:**
-  - the dossier: manila, kraft, newsprint, warm archive prints, ink type, red only for crisis;
+  - chosen per episode by the content (11 looks in look.md); red only for crisis; no cartoon characters, ever;
   - every sentence gets the picture that explains it (set pieces, screen modes, 3D shots, maps, collage ≤ 35 %).
 - **Signature:**
   - a cold open with the end first;

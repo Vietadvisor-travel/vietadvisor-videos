@@ -17,18 +17,18 @@
    ladder    steps:6 · img:<id> · lab:… · slip:<word> (climb, ranks, fall from the top) */
 (function () {
   if (!window.PPCINE) return; const { EXT, num, split, toned, HAS, PP } = window.PPCINE;
-  const INK = '#14213d', RED = '#c0392b', KRAFT = '#c9a46b', CREAM = '#efe5d0', CARD = '#f6efdf', TEAL = '#2a6b5e', SH = 'rgba(40,25,10,.38)';
+  let INK = '#14213d', RED = '#c0392b', KRAFT = '#c9a46b', CREAM = '#efe5d0', CARD = '#f6efdf', TEAL = '#2a6b5e', SH = 'rgba(40,25,10,.38)'; let DK = 0; const IA = a => DK ? `rgba(232,238,248,${a})` : `rgba(20,33,61,${a})`; const thm = () => { DK = window.PPCINE.THEME().dark; const t = window.PPCINE.THEME(); INK = t.ink; RED = t.red; CARD = t.card; SH = t.sh; CREAM = t.cream; };
   const gold = () => PP.gold;
   const cut = (fn, u, k = 1) => { ctx.save(); ctx.shadowColor = SH; ctx.shadowBlur = 16 * u * k; ctx.shadowOffsetY = 9 * u * k; ctx.shadowOffsetX = 3 * u * k; fn(); ctx.restore(); };
   const poly = (pts) => { ctx.beginPath(); pts.forEach(([x, y], i) => i ? ctx.lineTo(x, y) : ctx.moveTo(x, y)); ctx.closePath(); };
   const lab = (s, x, y, size, col = INK, o = {}) => T(String(s).toUpperCase(), x, y, { size, font: o.font || 'cond', weight: o.weight || 700, fill: col, lw: 0, ls: (o.ls ?? 2) * U(), rot: o.rot || 0 });
   // a real photo, cropped to cover a rect (clipped), warm archive print by default; '@' prefix accepted
-  function photo(id, x, y, w, h, o = {}) { id = String(id || '').replace(/^@/, ''); if (!id || !HAS(id)) { ctx.save(); ctx.fillStyle = 'rgba(20,33,61,.12)'; ctx.fillRect(x, y, w, h); ctx.restore(); return false; }
+  function photo(id, x, y, w, h, o = {}) { id = String(id || '').replace(/^@/, ''); if (!id || !HAS(id)) { ctx.save(); ctx.fillStyle = IA(.12); ctx.fillRect(x, y, w, h); ctx.restore(); return false; }
     const tc = toned(id, o.tone || 'aged', 0, 'print'); const im = tc.c; const s = Math.max(w / im.width, h / im.height) * (o.zoom || 1); ctx.save(); ctx.beginPath(); o.round ? ctx.arc(x + w / 2, y + h / 2, Math.min(w, h) / 2, 0, TAU) : ctx.rect(x, y, w, h); ctx.clip(); ctx.drawImage(im, x + (w - im.width * s) / 2, y + (h - im.height * s) * (o.top ? .15 : .5), im.width * s, im.height * s); ctx.restore(); return true; }
   const P = (e, lt) => lt - e.t;
   const spring = (x, k = 9, d = 4.2) => x <= 0 ? 0 : 1 - Math.exp(-d * x) * Math.cos(k * x); // damped overshoot to 1
   const groundShadow = (x, y, w, u, a = .25) => { ctx.save(); const g = ctx.createRadialGradient(x, y, 0, x, y, w); g.addColorStop(0, `rgba(40,25,10,${a})`); g.addColorStop(1, 'rgba(40,25,10,0)'); ctx.fillStyle = g; ctx.scale(1, .22); ctx.beginPath(); ctx.arc(x, y / .22, w, 0, TAU); ctx.fill(); ctx.restore(); };
-  const world = (draw, sfx) => ({ world: true, sfx, draw });
+  const world = (draw, sfx) => ({ world: true, sfx, draw: (e, lt, X) => { thm(); draw(e, lt, X); } });
 
   // ---------------------------------------------------------------- DOMINO: chain reaction in depth
   EXT.domino = world((e, lt, X) => { const u = X.u, v = H > W; const n = num(e.n, 6); const labs = split(e.lab, ','), imgs = split(e.img, ','); const tf = X.at(e.fall, e.t + 1.2); const p = P(e, lt); if (p < 0) return;
@@ -83,7 +83,7 @@
   // ---------------------------------------------------------------- MANIA: valuation inflating, then pop
   EXT.mania = world((e, lt, X) => { const u = X.u, v = H > W; const p = P(e, lt); if (p < 0) return; const tp = X.at(e.pop, 1e9); const a = num(e.from, 1), b = num(e.to, 40); const k = E.inOut(clamp(p / num(e.dur, Math.max(1.2, tp - e.t - .1))));
     const val = a + (b - a) * k; const R = Math.min(W, H) * lerp(.08, v ? .36 : .34, Math.sqrt(k)); const cx = W * .5, cy = H * .46; const wob = 1 + Math.sin(lt * 7) * .015 * k;
-    X.layer(1.8, () => { ctx.save(); ctx.strokeStyle = 'rgba(20,33,61,.35)'; ctx.lineWidth = 3 * u; ctx.setLineDash([8 * u, 8 * u]); ctx.beginPath(); ctx.moveTo(W * .08, H * .84); ctx.lineTo(W * .92, H * .84); ctx.stroke(); ctx.restore(); });
+    X.layer(1.8, () => { ctx.save(); ctx.strokeStyle = IA(.35); ctx.lineWidth = 3 * u; ctx.setLineDash([8 * u, 8 * u]); ctx.beginPath(); ctx.moveTo(W * .08, H * .84); ctx.lineTo(W * .92, H * .84); ctx.stroke(); ctx.restore(); });
     X.layer(2, () => { if (lt < tp) { ctx.save(); ctx.translate(cx, cy); ctx.scale(wob, 2 - wob); const g = ctx.createRadialGradient(-R * .3, -R * .35, R * .05, 0, 0, R); g.addColorStop(0, 'rgba(255,255,255,.75)'); g.addColorStop(.5, 'rgba(210,180,120,.22)'); g.addColorStop(.92, 'rgba(184,134,11,.4)'); g.addColorStop(1, 'rgba(120,80,20,.55)'); ctx.fillStyle = g; ctx.beginPath(); ctx.arc(0, 0, R, 0, TAU); ctx.fill(); ctx.strokeStyle = 'rgba(120,80,20,.5)'; ctx.lineWidth = 2 * u; ctx.stroke();
         ctx.fillStyle = 'rgba(255,255,255,.8)'; ctx.beginPath(); ctx.ellipse(-R * .42, -R * .45, R * .16, R * .07, -.7, 0, TAU); ctx.fill(); ctx.restore();
         const txt = (e.pre || '$') + (val >= 10 ? Math.round(val) : val.toFixed(1)) + (e.unit || 'B'); T(txt, cx, cy, { size: Math.max(30 * u, R * .42), font: 'impact', fill: INK, lw: 0 }); if (e.lab) lab(e.lab, cx, cy + R * .38, Math.max(18 * u, R * .12), '#7a5a10'); }
@@ -159,7 +159,7 @@
   EXT.ladder = world((e, lt, X) => { const u = X.u, v = H > W; const p = P(e, lt); if (p < 0) return; const n = num(e.steps, 6); const labs = split(e.lab, ','); const ts = X.at(e.slip, 1e9); const lx = W * (v ? .5 : .42), top = H * .1, bot = H * .9, lw = W * (v ? .3 : .16);
     const climb = E.inOut(clamp(p / num(e.dur, Math.max(1.5, Math.min(4, ts - e.t - .2))))); const step = climb * (n - 1);
     X.layer(2, () => { cut(() => { ctx.fillStyle = '#5a4128'; ctx.fillRect(lx - lw / 2, top, 12 * u, bot - top); ctx.fillRect(lx + lw / 2 - 12 * u, top, 12 * u, bot - top); for (let i = 0; i < n; i++) { const y = lerp(bot - 30 * u, top + 30 * u, i / (n - 1)); ctx.fillRect(lx - lw / 2, y - 6 * u, lw, 12 * u); } }, u);
-      labs.forEach((L, i) => { const y = lerp(bot - 30 * u, top + 30 * u, i / (n - 1)); T(String(L).toUpperCase(), lx + lw / 2 + 28 * u, y, { size: (v ? 26 : 30) * u, font: 'cond', weight: 700, fill: i <= step + .01 ? INK : 'rgba(20,33,61,.35)', lw: 0, align: 'left', ls: 2 * u }); });
+      labs.forEach((L, i) => { const y = lerp(bot - 30 * u, top + 30 * u, i / (n - 1)); T(String(L).toUpperCase(), lx + lw / 2 + 28 * u, y, { size: (v ? 26 : 30) * u, font: 'cond', weight: 700, fill: i <= step + .01 ? INK : IA(.35), lw: 0, align: 'left', ls: 2 * u }); });
       const fall = lt > ts ? lt - ts : 0; const y = lerp(bot - 30 * u, top + 30 * u, step / (n - 1)) + Math.min(H, fall * fall * H * 1.4); const ph = H * .2, pw = ph * .78; ctx.save(); ctx.translate(lx + Math.sin(lt * 3) * 3 * u + fall * W * .1, y - ph * .55); ctx.rotate(fall * 2.2); cut(() => { ctx.fillStyle = CARD; ctx.fillRect(-pw / 2 - 6 * u, -ph / 2 - 6 * u, pw + 12 * u, ph + 12 * u); }, u); photo(e.img, -pw / 2, -ph / 2, pw, ph, { top: 1 }); ctx.restore(); });
   }, (e, at) => [[at(e.slip, 1e9), 'whoosh_down', .8]]);
 

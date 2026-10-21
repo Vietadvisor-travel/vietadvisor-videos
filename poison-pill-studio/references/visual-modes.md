@@ -11,7 +11,7 @@ line the camera chases down. A hidden problem is an iceberg the camera dives und
 This file is the full vocabulary of the engine, organised by the kind of content each mode shows. Each line gives what the
 mode is, when to use it, and its syntax. Full parameter lists are in the header comment of each engine file.
 
-## 0. The five families
+## 0. The six families (70 scene types)
 | Family | What it is | Files |
 |---|---|---|
 | **COLLAGE** | real photos as cut-outs and prints on 3 planes, with type, stamps, marker annotations and the v3 devices on top | `pp_cine*.js` (`device-catalog.md`) |
@@ -19,13 +19,18 @@ mode is, when to use it, and its syntax. Full parameter lists are in the header 
 | **SCREEN / DIAGRAM MODE** | the real artefact or the mechanism: a browser page, a post, a chat, an org chart, a funnel, a chased chart | `pp_modes.js`, `pp_modes2.js` |
 | **3D SHOT** | a real perspective world with light and its own flying camera: desk, map table, globe, boardroom, skyline | `pp_3d.js` |
 | **MAP (2D)** | the flat paper map with pins, routes and highlighted countries | `pp_cine2.js` (`bg=world`) |
+| **FAST (v4.2)** | depth and motion drawn in 2D: isometric cities and bars, perspective cards, rollers, liquids, boards. They look 3D or animated and render 3–8× faster than real 3D | `pp_modes3.js` |
 
 **Variety budget for a 10-minute episode (≈ 120–160 beats):**
 - **COLLAGE:** at most 35 % of beats. That's the connective tissue, so it isn't the main show.
 - **SET PIECES:** at least 6 different ones.
 - **SCREEN/DIAGRAM MODES:** at least 6 different ones.
-- **3D SHOTS:** at least 5 different ones. Use them for signature moments: the opening, each act turn, the climax.
-- **MAPS:** wherever a place or a journey matters.
+- **FAST MODES:** at least 6 different ones. They are the default way to give a beat depth or motion.
+- **3D SHOTS:** 3–5 signature moments only (the opening, an act turn, the climax), **at most 20 % of beats**. A CPU-only
+  render machine draws a 3D frame 3–8× slower than a 2D one; one 3D-heavy act can take an hour to render. Where a fast
+  mode says the same thing, use it: `isocity` instead of `city3d`, `isobars` instead of `stacks3d`, `coverflow` instead
+  of `gallery3d`, `spinpaper` instead of `title3d`, `candles` instead of `monitors3d`.
+- **MAPS:** wherever a place or a journey matters. The 2D map (`bg=world`) is cached and fast; `map3d`/`globe3d` are 3D.
 
 Two more limits:
 - No single mode may appear in more than about 15 % of beats.
@@ -34,8 +39,29 @@ Two more limits:
 `pp_lint` and `pp_shotscript check` enforce these limits.
 
 ## 1. Choose by content (the decision table)
+**The fast modes come first in each row.** Use a 3D shot only when the moment is a signature moment.
+
 | The sentence is about… | Show it as… | Mode(s) |
 |---|---|---|
+| **a percentage / "X out of 100"** | an icon array, the share turning red | `units` |
+| **one huge number** (raised, valued, paid) | mechanical rollers spinning to it | `rollnum` · `title3d` |
+| **cash running out** | a glass tank draining | `tank` · `hourglass` |
+| **who led, year by year** | a bar-chart race | `race` |
+| **two people / companies head to head** | split-screen VERSUS; the loser goes grey | `faceoff` · `tugwar` |
+| **what it all cost** | a receipt prints, the total gets stamped | `invoice` · `waterfall` |
+| **a share price crash** | candlesticks and a ticker tape | `candles` · `trend` |
+| **reserves / the war chest** | the vault door spins open, empty | `vault` · `stacks3d` |
+| **a gamble / luck** | a slot machine decides | `slots` · `bet` |
+| **viral growth / contagion** | a grid of dots catching it from neighbours | `outbreak` |
+| **risk / pressure rising** | a gauge needle swinging into red | `meter` |
+| **time passing** ("a year later") | desk-calendar pages tearing away | `calendar` · `days` |
+| **launches cancelled / a slate of results** | an airport split-flap board | `flapboard` |
+| **"it made the front page"** | the spinning newspaper lands | `spinpaper` · `headline` |
+| **who is to blame** | a dark stage, the spotlight picks one | `spotlight` |
+| **the options / the lineup of rivals** | photo cards in perspective, one steps forward | `coverflow` · `logos` |
+| **expansion: stores, branches, a city of assets** | an isometric city rises block by block, then sinks | `isocity` · `city3d` |
+| **a number over the years** | isometric 3D bars | `isobars` · `city` |
+| **a new chapter / a breather** | layered paper landscape with the title | `papercut` |
 | **a person** entering the story | their file, typed in, verdict stamped later | `profile` · collage cut-out + `lower` |
 | a **group of people / hierarchy** | who reports to whom, who gets cut | `org` · `boardroom3d` |
 | **a decision by a board / resignations** | the table, chairs emptying | `boardroom3d` |
@@ -139,6 +165,43 @@ devices only when they serve the beat. Inside a mode, `~` separates list items. 
 | `stacks3d` | `vals;lab;pre;unit` | low pan along coin towers |
 | `monitors3d` | `img:…;tick:A,B;crash:<word>` | push into the trading wall; it turns red |
 
+### Fast modes (`pp_modes3.js`): depth and motion at 2D speed (~40–110 ms a frame)
+`at:<word>` is when the mode starts (default: the beat start). `go:<word>` is its payoff moment. Add `shot=` like any
+2D mode; the camera rig moves them.
+
+| Mode | Key params | Showpiece moment |
+|---|---|---|
+| `isocity` | `n:16;hi:<n>;lab:<label on hi>;grow:<word>;fall:<word>` | isometric blocks spring up; on the word they sink, back to front, in red |
+| `isobars` | `bars:2019=12~2020=30~2021=80~2022=20;pre:$;unit:B` | isometric 3D bars rise; a final drop goes red |
+| `coverflow` | `img:a,b,c,d,e;lab:…;pick:3;go:<word>` | cards slide past in perspective; the pick steps forward |
+| `spinpaper` | `head:…;sub:…;img:<photo>;name:THE DAILY;date:…;at:<word>` | the newspaper spins in, flash on landing |
+| `spotlight` | `img:a,b,c,d;lab:…;pick:2;go:<word>` | dark stage; the light sweeps and lands on one |
+| `units` | `n:100;hit:37;lab:<what>;icon:person\|coin\|house;go:<word>` | 37 of 100 icons turn red, the % counts up |
+| `tank` | `from:1750;to:120;pre:$;unit:M;lab:CASH LEFT;go:<word>` | the liquid drains through the tap; red below 25 % |
+| `race` | `years:2017,2018,2019;rows:A=1,5,9~B=3,4,2;pre:$;unit:B` | bars re-rank across the years |
+| `rollnum` | `to:1750000000;pre:$;lab:…;at:<word>` | odometer rollers spin, right to left, and lock |
+| `faceoff` | `left:<img>,<LABEL>,<stat>;right:…;win:left\|right;go:<word>` | panels slide in, VS slams; the loser goes grey |
+| `invoice` | `items:Content=1100000000~Ads=400000000;total:SPENT;stamp:LOST;go:<word>` | the receipt prints line by line; the stamp hits |
+| `candles` | `pts:10,12,15,20,8,3;lab:<ticker>;crash:<word>` | candlesticks build; red after the crash; ticker tape |
+| `vault` | `lab:…;open:<word>;inside:empty\|gold\|<img>` | the wheel spins, the door swings open |
+| `slots` | `reels:A~B~C;lab:<what is gambled>;go:<word>` | the reels spin and stop one by one |
+| `outbreak` | `seeds:3;lab:USERS;to:1000000;at:<word>;speed:9` | it spreads dot to dot; the counter climbs |
+| `meter` | `from:20;to:96;lab:RISK;at:<word>` | the needle swings into red and trembles |
+| `calendar` | `from:2019-10;n:12;at:<word>` | months tear off and fly |
+| `papercut` | `lab:<title>;sub:<line>;rise:<word>` | paper hills rise in layers with parallax, the sun comes up |
+| `flapboard` | `title:DEPARTURES;rows:QUIBI=CANCELLED~VINE=CLOSED;at:<word>` | letters flip into place; failures in red |
+
+### Comedy tools (`pp_fun.js`): real photos and edit timing only, never cartoon characters (`humor.md`)
+| Mode | Key params | The laugh |
+|---|---|---|
+| `freeze` | `img;pt:.42,.35;cap:Yep. That's Jeff.;sub:…;at:<word>` | record scratch, freeze-frame, red circle |
+| `expect` | `left:<img>,EXPECTATION;right:<img>,REALITY;go:<word>` | the sad reality drops in |
+| `cutaway` | `text:MEANWHILE…;sub:AT NETFLIX` | the comic title card |
+| `dramatic` | `img:<face>;pt:.5,.35` | three punch-ins: dun… dun… DUN |
+| `math` | `eq:STARS+SHORT SHOWS=$0;go:<word>` | the silly equation |
+| `meme` (overlay) | `text:EVERYTHING IS FINE;at:<word>` | the bold caption |
+| `aside` (overlay) | `text:(It was not fine.);at:<word>` | the deadpan narrator |
+
 ### Collage and overlay devices (v3, still the glue): `device-catalog.md`
 Real cut-outs (`mid=`), prints (`fg=`), plates (`bg=`), and these overlays:
 - **Marker on documents:** `circle`, `arrow`, `underline`, `scribble`, `redact`, `scan`, `mark`, `lens`
@@ -166,7 +229,7 @@ Real cut-outs (`mid=`), prints (`fg=`), plates (`bg=`), and these overlays:
    or a change in a number.
 2. If that's a mechanism, use a diagram mode (`napkin`, `org`, `pipes`, `waterfall`).
 3. If it's a feeling or a judgement, use a set-piece metaphor.
-4. If the moment is grand, use a 3D shot.
+4. If the moment needs depth, use a fast mode; if it is a signature moment of the film, use a 3D shot.
 5. If it's a person or a plain fact, use the collage with a real camera move (`camera.md`).
 
 Write the choice in the visual script (`shot-script.md`) before storyboarding.

@@ -9,7 +9,9 @@ with these exact headings, because Muse's instructions parse them.
 
 ## 0. META
 - slug: <lowercase-hyphen>          - length: <8–10 min ≈ 1,300–1,600 words>   - acts: a0 … a6
-- archetype: <story-archetypes.md>   - look: dossier                            - format: 16:9 only
+- archetype: <story-archetypes.md>   - format: 16:9 only
+- look: <one of the 11 looks, chosen by the CONTENT: look.md table> (+ a second look for a flashback act, if any)
+- tone: playful | dry   (playful by default: humor.md; dry only for tragedies)
 - thesis: "<one surprising, arguable, provable sentence>"
 - open loop (planted ≤ 0:45): "<line>" → paid off at <act/beat>: "<line>"
 - midpoint twist (≈ 50 %): "<the fact that reframes everything>"
@@ -48,6 +50,8 @@ phone3d) · clip (footage, give start time). Ids are lowercase_underscores and m
 ```story
 title: <slug> a0
 channel: poisonpill
+look: <look>
+tone: playful
 voice: am_michael
 music: none
 endcard: off
@@ -61,7 +65,8 @@ endcard: off
 (copy the standard block from director-package.md §2; add any episode-specific notes below it)
 
 ## 7. DIRECTOR'S SELF-CHECK
-- beats: <n> · scene types: <n> (list) · families: set <n> / mode <n> / 3d <n> / map <n> / collage <n> (<%>)
+- beats: <n> · scene types: <n> (list) · families: set <n> / mode <n> / fast <n> / 3d <n> (≤ 20 %) / map <n> / collage <n> (<%>)
+- look chosen because: <one line> · laughs marked (J): <n> (15–25 per 10 min) · no cartoon characters ✓
 - no mode 3× in a row ✓ · every beat ≥ 3 s has shot= or a *3d mode ✓ · every at:/@word exists in its sentence ✓
 - every asset id in §5 is listed in §2 ✓ · every number in §3 is listed in §1 ✓
 ````
@@ -79,8 +84,14 @@ endcard: off
    - ≥ 8 scene types from ≥ 3 families;
    - collage ≤ 35 %;
    - no mode 3× in a row;
-   - signature 3D shots at the cold open and at the act turns.
-4. **Length:** 8–10 min is about 110–150 beats. The file is long, so write it as a downloadable file if your interface
+   - real-3D shots only at signature moments (the cold open, the act turns, the climax), **≤ 20 % of beats**, because
+     they render slowly on the production machine. Everywhere else, use the FAST modes (`isocity`, `isobars`,
+     `coverflow`, `spinpaper`, `units`, `tank`, `race`, `rollnum`, `faceoff`, `invoice`, `candles`, `vault`, `slots`,
+     `outbreak`, `meter`, `calendar`, `papercut`, `flapboard`).
+4. **Pick the look from the content** (`look.md`). Write it in META and in every act header.
+5. **Tone playful** (`humor.md`): mark intended laughs `(J)` in §3, and use the photo-based comedy tools (`freeze`,
+   `expect`, `cutaway`, `dramatic`, `math`, `meme`, `aside`) within their caps. **Never cartoon characters or mascots.**
+6. **Length:** 8–10 min is about 110–150 beats. The file is long, so write it as a downloadable file if your interface
    can. If a single reply would be cut off, split it into `PART 1/3`, `PART 2/3`… at section or act boundaries. Each part
    ends with `— CONTINUES IN PART k —`. Muse joins the parts.
 
@@ -95,8 +106,11 @@ approving your own work.
 STEPS: 1) pp_doctor ALL PASS  2) verify §1 → research/<slug>_factcheck.md (✓/✗ + source)  3) import §2 → pp_assets.py report
 0 problems (no PHOTO NEEDED anywhere)  4) save §5 blocks to stories/  5) pp_lint every act: 0 errors, ≥ 9.0 (syntax fixes
 only)  6) pp_sheet + pp_review every act; a SEPARATE fresh critic agent compares the sheets with §4 and lists beats whose
-picture doesn't match its IDEA; fix only execution (assets, framing, timing), re-sheet  7) make.mjs per act (16:9) → join →
+picture doesn't match its IDEA; fix only execution (assets, framing, timing), re-sheet  7) make.mjs per act (16:9) with --jobs <CPU cores>; add --lite on a 2-core machine; if anything
+crashes or the machine reboots, run the SAME command again with --resume (finished chunks are kept); watch
+out/<act>_16x9_v.chunks/progress.json (if 'updated' is older than 15 min, the job is stuck: restart it with --resume) → join →
 −14 LUFS → 15 stills checked  8) thumbnail per §0, titles, description with sources and credits.
+BEFORE RENDERING: node tools/pp_speed.mjs stories/<act>.story → any beat marked SLOW: report it, don't redesign it.
 REPORT: pp_doctor output · factcheck table (with every change) · pp_lint score per act · all pp_sheet JPGs · critic notes
 and fixes · final MP4 + 10 stills.
 ```

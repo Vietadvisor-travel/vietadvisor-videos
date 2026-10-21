@@ -1,14 +1,15 @@
-# Install the Poison Pill add-on (v4) into the engine (Vietadvisor Motion Studio, or the fork local-empire-files-studio)
+# Install the Poison Pill add-on (v4.2) into the engine (Vietadvisor Motion Studio, or the fork local-empire-files-studio)
 
 1. **Copy the files:**
    ```bash
    cp engine-addon/engine/library/pp_*.js  <engine>/engine/library/
    cp engine-addon/tools/pp_*              <engine>/tools/
+   cp engine-addon/tools/render.mjs engine-addon/tools/make.mjs <engine>/tools/   # v4.2 chunked, resumable, parallel renderer
    ```
 2. **Register them LAST, in this order,** in `<engine>/engine/library/index.js`. `three.min` must already be in the list,
    before these:
    ```js
-   window.LIBRARY = [ …existing…, 'pp_cine', 'pp_world', 'pp_cine2', 'pp_cine3', 'pp_cam', 'pp_sets', 'pp_3d', 'pp_modes', 'pp_modes2'];
+   window.LIBRARY = [ …existing…, 'pp_cine', 'pp_looks', 'pp_world', 'pp_cine2', 'pp_cine3', 'pp_cam', 'pp_sets', 'pp_3d', 'pp_modes', 'pp_modes2', 'pp_modes3', 'pp_fun'];
    ```
 3. **Install dependencies and rebuild the image bundle:**
    ```bash
@@ -29,12 +30,17 @@
    node tools/pp_sheet.mjs stories/3d_demo.story        # 3D shots (WebGL)
    node tools/pp_sheet.mjs stories/3d2_demo.story       # 3D batch 2
    node tools/pp_sheet.mjs stories/map3d_demo.story     # the map table
+   node tools/pp_sheet.mjs stories/fast_demo.story      # v4.2: 19 fast modes
+   node tools/pp_sheet.mjs stories/fun_demo.story       # v4.2: comedy tools
+   node tools/pp_looksheet.mjs stories/looks_demo.story # v4.2: the same beats in all 11 looks → out/pp_looks.jpg
+   node tools/pp_speed.mjs stories/fast_demo.story      # ms per frame per beat
    ```
 6. **Start a new episode:** `node tools/pp_new.mjs <slug> "<Subject>" --archetype rise-fall --min 10`, then follow SKILL.md.
 
 Tested on the base engine with Node 22, Playwright Chromium (SwiftShader WebGL) and Python 3.13. The tests covered
-`pp_doctor` ALL PASS, every demo sheet, lint and autodirect. 3D shots render at 0.7× and are upscaled (set
-`window.PP3D_SCALE = 1` for a final at full resolution if your machine is fast).
+`pp_doctor` ALL PASS, every demo sheet, lint and autodirect, and a full `make.mjs` run with voice. 3D shots render at
+0.62× and 15 fps and are upscaled. On a fast machine, set `window.PP3D_SCALE = 1` and `window.PP3D_FPS = 30` for full
+quality. On a weak machine, pass `--lite` (see `references/production.md` §7).
 
 **Fork note (local-empire-files-studio):** if the fork renamed `SB.recipes`, `timeCaps`, `renderEpisode` or `_starts`,
 `pp_doctor` fails on "engine loads the add-on" or "renders". See `references/engine-fixes.md`.

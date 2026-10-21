@@ -86,13 +86,14 @@
       const hw = W / (2 * zz), hh = H / (2 * zz); if (depth < 1.9) { px = clamp(px, Math.min(W / 2, hw), Math.max(W / 2, W - hw)); py = clamp(py, Math.min(H / 2, hh), Math.max(H / 2, H - hh)); }
       let hx = 0, hy = 0, hr = 0; const hand = s.hand + (s.shake || 0) * 2.2; if (hand > 0) { hx = fbm(lt * 1.3 + 3) * 7 * u * hand; hy = fbm(lt * 1.1 + 9) * 6 * u * hand; hr = fbm(lt * .7 + 21) * .004 * hand; }
       ctx.translate(W / 2 + hx * pf, H / 2 + hy * pf); ctx.rotate(s.roll * (.85 + .15 * pf) + hr); const angS = 1 + s.ang * .04 * (pf - 1); ctx.scale(zz, zz * angS); ctx.translate(-px, -py);
-      if (s.focusOff) return 0; const dd = Math.abs(depth - s.fd); return dd < .35 ? 0 : Math.min(9, (dd - .35) * 4.2 * Math.min(2, .7 + (s.z - 1) * .5)) * u;
+      return blurOf(s, depth, u);
     }
+    function blurOf(s, depth, u) { if (s.focusOff) return 0; const dd = Math.abs(depth - s.fd); return dd < .35 ? 0 : Math.min(9, (dd - .35) * 4.2 * Math.min(2, .7 + (s.z - 1) * .5)) * u; }
     // directional motion blur for whips/crashes: accumulate shifted copies of the finished frame
     let SNAP = null; function post(s, s0) { if (!s.mblur) return; const dx = (s.cx - s0.cx) * W * s.z, dy = (s.cy - s0.cy) * H * s.z, dz = Math.log(s.z / s0.z); const amt = Math.hypot(dx, dy) + Math.abs(dz) * W * .5; if (amt < 2) return;
       if (!SNAP || SNAP.width !== W || SNAP.height !== H) SNAP = mkCanvas(W, H); const g = SNAP.getContext('2d'); g.clearRect(0, 0, W, H); g.drawImage(ctx.canvas, 0, 0);
       const n = 7; ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0); for (let i = 1; i <= n; i++) { const f = i / n * s.mblur * 1.6; ctx.globalAlpha = .5 / i + .08; if (Math.abs(dz) * W > Math.hypot(dx, dy)) { const sc = 1 + dz * f * .5; ctx.drawImage(SNAP, W / 2 - W * sc / 2, H / 2 - H * sc / 2, W * sc, H * sc); } else ctx.drawImage(SNAP, -dx * f, -dy * f); } ctx.restore(); }
-    return { kfs, state, apply, post, shots: kfs.length };
+    return { kfs, state, apply, blurOf, post, shots: kfs.length };
   }
   window.PPCAM = { build, SIZE, MOVE, parseKf };
 })();

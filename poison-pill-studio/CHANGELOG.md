@@ -1,5 +1,40 @@
 # Poison Pill Studio: changelog
 
+## v4.2 (Oct 2026): the look follows the content, a funnier tone, fast rendering
+- **11 looks chosen by the content** (`pp_looks.js`, `look.md`):
+  - dossier, noir, editorial, tech, luxury, vintage, retro, broadcast, eastern, ledger, blueprint;
+  - per episode (`look:`), per act file, or per beat (`look=`);
+  - each sets the backdrops, photo treatment, accent palette, act grades, vignette, map colours, the ink and card colours
+    of every set piece and mode, and the 3D world light;
+  - `pp_looksheet` compares looks side by side.
+- **19 FAST modes** (`pp_modes3.js`, 40–110 ms a frame): isocity, isobars, coverflow, spinpaper, spotlight, units, tank,
+  race, rollnum, faceoff, invoice, candles, vault, slots, outbreak, meter, calendar, papercut, flapboard.
+- **Tone playful** (`humor.md`, `pp_fun.js`):
+  - 10 comedy techniques for explainers;
+  - photo-based comedy tools: freeze, expect, cutaway, dramatic, math, meme, aside, with caps checked by lint;
+  - cartoon characters are forbidden by lint (owner rule).
+- **Render speed on weak machines:**
+  - the post pass is off by default;
+  - frame reuse on still frames;
+  - fast depth-of-field blur;
+  - the world map is cached;
+  - 3D at 15 fps and 0.62× (`--lite`: 12 fps and 0.5×);
+  - chunked rendering on a shared queue (`--jobs`), resumable after a crash or reboot (`--resume`);
+  - a watchdog per frame, `progress.json`, x264 veryfast;
+  - `pp_speed` estimates render time per beat.
+- **Lint and auto-director:**
+  - know all 70 scene types;
+  - prefer fast modes;
+  - cap real 3D at 20 % (auto-director `--fast` uses none);
+  - validate look names;
+  - add the `depth` family.
+- **Docs:**
+  - new: `humor.md`, `production.md` §7;
+  - rewritten: `look.md`;
+  - updated: `visual-modes.md` (fast and comedy sections, decision table), `director-package.md` (look, tone, 3D cap,
+    render rules), START.md, SKILL.md, INSTALL.
+
+
 ## v4 (Oct 2026): ideas, not collage
 - **The dossier look** is the default: manila, kraft, newsprint, graph paper, warm archive prints, ink type. `look: noir` keeps the v3
   dark style. **16:9 only.**

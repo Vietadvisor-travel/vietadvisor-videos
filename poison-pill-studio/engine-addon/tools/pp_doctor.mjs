@@ -9,9 +9,9 @@ ok('node ≥ 18', +process.versions.node.split('.')[0] >= 18, 'install Node 18+'
 ok('ffmpeg', !!sh('ffmpeg -version'), 'install ffmpeg (apt install ffmpeg / brew install ffmpeg)');
 ok('python3 + numpy + scipy', sh(`python3 -c "import numpy, scipy; print(1)"`) === '1', 'pip install numpy scipy');
 if (sh(`python3 -c "import rembg; print(1)"`) !== '1') warn('rembg (cut-out background removal)', 'pip install rembg — without it role=cut photos keep their background');
-const idx = fs.readFileSync('engine/library/index.js', 'utf8'); const ORDER = ['three.min', 'pp_cine', 'pp_world', 'pp_cine2', 'pp_cine3', 'pp_cam', 'pp_sets', 'pp_3d', 'pp_modes', 'pp_modes2'];
+const idx = fs.readFileSync('engine/library/index.js', 'utf8'); const ORDER = ['three.min', 'pp_cine', 'pp_looks', 'pp_world', 'pp_cine2', 'pp_cine3', 'pp_cam', 'pp_sets', 'pp_3d', 'pp_modes', 'pp_modes2', 'pp_modes3', 'pp_fun'];
 const pos = ORDER.map(n => idx.indexOf(`'${n}'`)); ok('add-on files exist', ORDER.slice(1).every(n => fs.existsSync(`engine/library/${n}.js`)), 'copy engine-addon/engine/library/*.js into engine/library/');
-ok('add-on registered in index.js, in order, LAST', pos.every(p => p >= 0) && pos.every((p, i) => !i || p > pos[i - 1]) && /'pp_modes2'\s*\]/.test(idx), `window.LIBRARY must end with: ${ORDER.slice(1).map(n => `'${n}'`).join(', ')}  (three.min before them)`);
+ok('add-on registered in index.js, in order, LAST', pos.every(p => p >= 0) && pos.every((p, i) => !i || p > pos[i - 1]) && /'pp_fun'\s*\]/.test(idx), `window.LIBRARY must end with: ${ORDER.slice(1).map(n => `'${n}'`).join(', ')}  (three.min before them)`);
 const reg = fs.existsSync('engine/library/images.json') ? JSON.parse(fs.readFileSync('engine/library/images.json', 'utf8')) : {}; const js = fs.existsSync('engine/library/images.js') ? fs.readFileSync('engine/library/images.js', 'utf8') : ''; const stale = Object.keys(reg).filter(k => !js.includes(`"${k}":`));
 ok(`image bundle in sync (${Object.keys(reg).length} registered)`, !stale.length, `${stale.length} image(s) registered but not embedded (${stale.slice(0, 5).join(', ')}) → python3 tools/pp_img.py sync`);
 const sfx = sh(`python3 -c "
@@ -32,13 +32,13 @@ The page scrolls to the line.\n
 From New York to Tokyo.\n`;
 const browser = await launch(); const page = await browser.newPage(); const errs = []; page.on('pageerror', e => errs.push(e.message));
 await page.goto('file://' + process.cwd() + '/studio.html'); await page.evaluate(() => window.READY);
-const res = await page.evaluate((txt) => { const out = { libs: {}, frames: [] }; out.libs = { cine: !!window.PPCINE, cam: !!window.PPCAM, sets: !!window.PPSETS, modes: !!window.PPMODES, d3: !!window.PP3D, three: typeof THREE !== 'undefined', world: !!(window.PP_WORLD && window.PP_WORLD.length) };
+const res = await page.evaluate((txt) => { const out = { libs: {}, frames: [] }; out.libs = { cine: !!window.PPCINE, cam: !!window.PPCAM, sets: !!window.PPSETS, modes: !!window.PPMODES, d3: !!window.PP3D, three: typeof THREE !== 'undefined', world: !!(window.PP_WORLD && window.PP_WORLD.length), looks: !!(window.PPLOOKS && window.PPLOOKS.length >= 11), fast: !!(window.PPCINE && window.PPCINE.EXT.isocity && window.PPCINE.EXT.flapboard) };
   let gl = false; try { const c = document.createElement('canvas'); gl = !!(c.getContext('webgl2') || c.getContext('webgl')); } catch (e) { } out.gl = gl;
   const ep = SB.compile(txt); const c = document.getElementById('c'); c.width = 960; c.height = 540; W = 960; H = 540; ctx = c.getContext('2d'); loadEpisode(ep); out.beats = ep.scenes.length; out.channel = ep.channel;
   const sheet = mkCanvas(960 * 2, 540 * 2), g = sheet.getContext('2d'); ep.scenes.slice(0, 4).forEach((s, i) => { renderEpisode(_starts[i] + s.dur * .75); g.drawImage(c, (i % 2) * 960, Math.floor(i / 2) * 540); const d = ctx.getImageData(0, 0, 960, 540).data; let mn = 255, mx = 0; for (let k = 0; k < d.length; k += 4 * 97) { const L = d[k] * .3 + d[k + 1] * .59 + d[k + 2] * .11; mn = Math.min(mn, L); mx = Math.max(mx, L); } out.frames.push(mx - mn); });
   out.jpg = sheet.toDataURL('image/jpeg', .8); return out; }, story);
 fs.mkdirSync('out', { recursive: true }); fs.writeFileSync('out/pp_doctor.jpg', Buffer.from(res.jpg.split(',')[1], 'base64')); await browser.close();
-ok('engine loads the add-on (PPCINE, camera, sets, modes, 3D, world map)', Object.values(res.libs).every(Boolean), 'missing: ' + Object.entries(res.libs).filter(([, v]) => !v).map(([k]) => k).join(', ') + ' — check index.js order and the console');
+ok('engine loads the add-on (PPCINE, looks, camera, sets, modes, fast modes, 3D, world map)', Object.values(res.libs).every(Boolean), 'missing: ' + Object.entries(res.libs).filter(([, v]) => !v).map(([k]) => k).join(', ') + ' — check index.js order and the console');
 ok('channel mode on (header `channel: poisonpill`)', res.channel === 'poisonpill', 'SB.compile did not switch to the channel — is pp_cine.js loaded?');
 ok('WebGL available (3D shots)', res.gl, 'Chromium has no WebGL — run with SwiftShader (default in Playwright) or a GPU; 3D shots render black otherwise');
 ['collage + camera rig', 'set piece', 'screen mode', '3D shot'].forEach((n, i) => ok(`renders: ${n}`, (res.frames[i] || 0) > 40, 'frame is (almost) flat — open out/pp_doctor.jpg and the console errors below'));
