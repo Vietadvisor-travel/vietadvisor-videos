@@ -11,9 +11,10 @@ line the camera chases down. A hidden problem is an iceberg the camera dives und
 This file is the full vocabulary of the engine, organised by the kind of content each mode shows. Each line gives what the
 mode is, when to use it, and its syntax. Full parameter lists are in the header comment of each engine file.
 
-## 0. The seven families (71 scene types + atmosphere)
+## 0. The eight families (71 scene types + the free composer + atmosphere)
 | Family | What it is | Files |
 |---|---|---|
+| **BUILD (v5.2)** | the picture invented for this sentence: real images, icons, text, numbers, arrows + verbs on words (`build.md`) — **≥ 25 % of beats; invent first, use a template second** | `pp_build.js` |
 | **LIVING PICTURE (v5)** | a sharp real photo with the subject lifted onto its own plane (rim light, contact shadow, breathing), a foreground element, depth-aware atmosphere and light; the camera rig flies through the planes | `pp_art.js` (`scene`, `air`) |
 | **COLLAGE** | real photos as cut-outs and prints on 3 planes, with type, stamps, marker annotations and the v3 devices on top | `pp_cine*.js` (`device-catalog.md`) |
 | **SET PIECE** | a 2D paper-cut world that *acts out* the idea: objects fall, tip, sink, pull, explode | `pp_sets.js`, `pp_modes2.js` |

@@ -84,6 +84,7 @@ endcard: off
 - look chosen because: <one line> · laughs marked (J): <n> (15–25 per 10 min) · no cartoon characters ✓
 - pp_scriptlint-style self-score: hook + promise ≤ 30 s ✓ · something new every 20–40 s ✓ · re-hooks ≈ 3:00 and 6:00 ✓ · midpoint twist ✓
   · ≥ 2 scenes ✓ · final line ≤ 15 words ✓ · no filler / hype words ✓ · every sentence has a **hit word** and a picture ✓
+- build compositions ≥ 25 % of beats, each different ✓ · nothing reused from the last 3 episodes' opening/look/signature scenes ✓
 - living pictures (`scene`) ≥ 20 % of beats ✓ · real-3D ≤ 10 % ✓ · generated images ≤ 1 per 4 beats, all allowed roles ✓
 - no mode 3× in a row ✓ · every beat ≥ 3 s has shot= or a *3d mode ✓ · every at:/@word exists in its sentence ✓
 - every asset id in §5 is listed in §2 ✓ · every number in §3 is listed in §1 ✓
@@ -108,7 +109,12 @@ endcard: off
      plain collage for people, places and moments, on ≥ 20 % of beats (motion.md, visual-modes.md). Everywhere else, use the FAST modes (`isocity`, `isobars`,
      `coverflow`, `spinpaper`, `units`, `tank`, `race`, `rollnum`, `faceoff`, `invoice`, `candles`, `vault`, `slots`,
      `outbreak`, `meter`, `calendar`, `papercut`, `flapboard`).
-4. **Pick the look from the content** (`look.md`). Write it in META and in every act header.
+4. **Invent the pictures** (`build.md`).
+   - At least 25 % of beats are `build` compositions made from their own sentence. No two beats share a composition.
+   - Templates (sets, modes, 3D) are used only when they fit exactly.
+   - Read the `pp_history show` output Muse pasted into the request. Do not reuse the last 3 episodes' opening, look or
+     signature template scenes.
+5. **Pick the look from the content** (`look.md`). Write it in META and in every act header.
 5. **Write the script like script-masterclass.md:** thesis first, a hook in 30 s, a reveal ladder, scenes in the room,
    but/therefore, specific numbers made physical, the punch word last, a final line ≤ 15 words.
 6. **Tone playful** (`humor.md`): mark intended laughs `(J)` in §3, and use the photo-based comedy tools (`freeze`,

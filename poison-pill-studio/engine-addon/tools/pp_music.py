@@ -60,6 +60,10 @@ ACT_MOOD = {'setup': 'curious', 'rise': 'rise', 'doubt': 'tension', 'fall': 'dar
 FALLBACK = {'curious': 'wonder', 'rise': 'upbeat', 'tension': 'tension', 'dark': 'mystery', 'sad': 'emotional', 'reflective': 'emotional', 'epic': 'epic', 'comedy': 'sneaky', 'archive': 'chill', 'tech': 'night'}
 def pick(mood, used, seed):
     L = load(); c = [k for k, v in L.items() if mood in v.get('moods', [])]
+    try:   # v5.2: avoid tracks the last 3 OTHER episodes used, when the mood has alternatives
+        H = [h for h in json.load(open(os.path.join(ROOT, 'history.json'))) if not seed.startswith(h.get('ep', '#'))][-3:]; recent = {t for h in H for t in h.get('tracks', [])}
+        if [k for k in c if k not in recent]: c = [k for k in c if k not in recent]
+    except Exception: pass
     if not c: return None
     c.sort(key=lambda k: (used.count(k), hashlib.md5((seed + k).encode()).hexdigest())); return c[0]
 def read_track(tid):

@@ -38,6 +38,10 @@ Report back with:
 - For every person cut-out (`subj`), also make the `clean` plate (the same photo with the person removed) when the
   package asks for it.
 
+**Freshness (v5.2):**
+- Every time you ask Claude for a package, paste the output of `node tools/pp_history.mjs show` under the request.
+- `make.mjs` records each episode automatically.
+
 **Music (v5.1):**
 - Build the music library ONCE: ≥ 3 instrumental tracks per mood, from safe sources only (music.md), with licences kept.
   `python3 tools/pp_music.py add <file> <id> --mood … --credit … --license …`

@@ -320,8 +320,14 @@
     const worldFx = fx.some(e => EXT[e.type] && EXT[e.type].world); const reframes = [];
     if (!o.shot && !worldFx && o.reframe !== 'off' && dur >= 4.5) { const toks = capTxt.replace(/\*\*/g, '').split(/\s+/); toks.forEach((w, i) => { if (/[,;:]$/.test(w) && i < toks.length - 2) { const t = at(toks[i + 1].replace(/[^A-Za-z0-9$%€£.'-]/g, ''), -1); if (t > .8 && t < dur - .8) reframes.push(t); } }); }
     hitT.forEach(t => sfx.push([Math.max(0, t - .02), 'hit_soft', .35]));
-    const punch = lt => { let z = 1, dx = 0; hitT.forEach(th => { const x = lt - th; if (x < 0) return; z += .035 * (x < .12 ? E.out(x / .12) : Math.max(.35, 1 - (x - .12) / 1.4 * .65)); }); reframes.forEach((tr, i) => { if (lt >= tr) { z += (i % 2 ? -.06 : .07); dx = i % 2 ? 0 : (i % 4 ? -.02 : .02); } }); return [Math.max(1, z), dx]; };
-    const render = (lt) => { const [pz, pdx] = punch(lt); if (pz === 1 && !pdx) return render0(lt); ctx.save(); ctx.translate(W / 2 + pdx * W, H * .45); ctx.scale(pz, pz); ctx.translate(-W / 2, -H * .45); render0(lt); ctx.restore(); };
+    // v5.2 freshness: each hit gets one of 7 accent styles, in an order that differs per EPISODE (seed) and never repeats
+    // back-to-back; ~40 % of hits get no accent at all, so the rhythm breathes instead of ticking like a metronome
+    const STY = ['in', 'tiltL', 'panR', 'out', 'in', 'tiltR', 'panL']; const seed = window.PPCINE.EPSEED || 0;
+    const hitSty = hitT.map((t, i) => { const g = (idx * 7 + i * 3 + seed) % 97; return g % 5 < 2 ? 'none' : STY[(idx * 3 + i * 5 + seed) % STY.length]; });
+    const punch = lt => { let z = 1, dx = 0, rot = 0; hitT.forEach((th, i) => { const x = lt - th; const st = hitSty[i]; if (x < 0 || st === 'none') return; const e1 = x < .12 ? E.out(x / .12) : Math.max(.35, 1 - (x - .12) / 1.4 * .65);
+        if (st === 'in') z += .035 * e1; else if (st === 'out') z -= .03 * e1; else if (st === 'tiltL' || st === 'tiltR') { rot += (st === 'tiltL' ? -1 : 1) * .012 * e1; z += .02 * e1; } else { dx += (st === 'panL' ? -1 : 1) * .018 * e1; z += .02 * e1; } });
+      reframes.forEach((tr, i) => { if (lt >= tr) { z += (i % 2 ? -.06 : .07); dx += i % 2 ? 0 : ((i + seed) % 4 ? -.02 : .02); } }); return [Math.max(.97, z), dx, rot]; };
+    const render = (lt) => { const [pz, pdx, prot] = punch(lt); if (pz === 1 && !pdx && !prot) return render0(lt); const zz = Math.max(pz, 1 + Math.abs(pdx) * 2.2 + Math.abs(prot) * 1.8); ctx.save(); ctx.translate(W / 2 + pdx * W, H * .45); ctx.rotate(prot); ctx.scale(zz, zz); ctx.translate(-W / 2, -H * .45); render0(lt); ctx.restore(); };
     const render0 = (lt) => { useLook(LK); const u = U(), v = V(); const k = clamp(lt / dur); const kk = E.sine(k);
       let sh = 0; shakes.forEach(([t, a]) => { const p = lt - t; if (p >= 0 && p < .3) sh = Math.max(sh, a * (1 - p / .3)); }); const sx = sh ? (Math.random() - .5) * 18 * u * sh : 0, sy = sh ? (Math.random() - .5) * 18 * u * sh : 0;
       let cz = 0; if (crash >= 0 && lt > crash) cz = .22 * E.out5(clamp((lt - crash) / .18));
@@ -393,10 +399,12 @@
     // v5.1 AUTO TRANSITIONS (motivated, rationed): an act change gets the look's chapter transition (paper → tear, tech/retro
     // → glitch, others → burn; into/out of a flashback → lightleak); a sentence opening with But/Yet/However → whip. At most one
     // stylised transition every 5 beats; anything written as trans= wins; header `autotrans: off` disables it.
-    if (!/^\s*autotrans\s*:\s*off\s*$/im.test(text)) { const lk = (text.match(/^\s*look\s*:\s*([a-z]+)\s*$/im) || [])[1] || 'dossier'; const chap = /^(dossier|vintage|eastern|editorial)$/.test(lk) ? 'tear' : /^(tech|retro)$/.test(lk) ? 'glitch' : 'burn';
+    const ttl = (text.match(/^\s*title\s*:\s*(.+)$/im) || [])[1] || ''; let hs = 0; for (const ch of ttl) hs = (hs * 31 + ch.charCodeAt(0)) >>> 0; window.PPCINE.EPSEED = hs % 9973;
+    if (!/^\s*autotrans\s*:\s*off\s*$/im.test(text)) { const lk = (text.match(/^\s*look\s*:\s*([a-z]+)\s*$/im) || [])[1] || 'dossier'; const pool0 = /^(dossier|vintage|eastern|editorial)$/.test(lk) ? ['tear', 'burn', 'push', 'zoom', 'lightleak'] : /^(tech|retro)$/.test(lk) ? ['glitch', 'push', 'zoom', 'burn', 'flash'] : ['burn', 'push', 'zoom', 'tear', 'lightleak'];
+      const pool = pool0.map((t, i) => [t, (i * 7919 + hs) % 101]).sort((a, b) => a[1] - b[1]).map(a => a[0]); let ci = 0; const usedT = {}; const chapNext = () => { for (let k = 0; k < pool.length; k++) { const t = pool[(ci + k) % pool.length]; if ((usedT[t] || 0) < 2) { ci = (ci + k + 1) % pool.length; usedT[t] = (usedT[t] || 0) + 1; return t; } } return 'cut'; };
       const L = text.split('\n'); let prevAct = null, last = -99, bi = -1;
       for (let i = 0; i < L.length; i++) { if (!/^#\s*cine\b/.test(L[i])) continue; bi++; const act = (L[i].match(/\bact=(\w+)/) || [])[1] || 'setup'; let cap = ''; for (let j = i + 1; j < L.length; j++) { if (!L[j].trim()) continue; if (L[j].startsWith('#')) break; cap = L[j]; break; }
-        if (bi > 0 && !/\btrans=/.test(L[i]) && bi - last >= 5) { let t = null; if (prevAct && act !== prevAct) t = (act === 'flash' || prevAct === 'flash') ? 'lightleak' : chap; else if (/^\s*(\*\*)?(but|yet|however)\b/i.test(cap)) t = 'whip'; if (t) { L[i] += ' trans=' + t; last = bi; } }
+        if (bi > 0 && !/\btrans=/.test(L[i]) && bi - last >= 5) { let t = null; if (prevAct && act !== prevAct) t = (act === 'flash' || prevAct === 'flash') ? 'lightleak' : chapNext(); else if (/^\s*(\*\*)?(but|yet|however)\b/i.test(cap)) t = 'whip'; if (t) { L[i] += ' trans=' + t; last = bi; } }
         prevAct = act; } text = L.join('\n'); }
     // transitions: default hard cut; only motivated ones are allowed — fades, iris, slides & 3D flips are refused
     const fixed = String(text).replace(/\btrans=(\w+)/g, (m, t) => (ALLOWED.has(t) || (window.PPCINE.ALLOW_TRANS || []).includes(t)) ? m : (t === 'match' ? 'trans=zoom' : 'trans=cut'));

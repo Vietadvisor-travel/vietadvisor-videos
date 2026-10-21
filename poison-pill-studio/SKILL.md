@@ -3,7 +3,7 @@ name: "poison-pill-studio"
 description: "Produce Poison Pill episodes end to end: 8–12 min 16:9 English YouTube documentaries on why companies rise and fall: wow scripts (A/V script, hit words, beats, laughs), real photos brought alive (2.5D living pictures, depth atmosphere, light), one grade/light/grain over every frame, word-level voice sync, 11 looks by content, 71 scene types, fast resumable rendering. Linters, auto-director, critic loop, director-package mode. Start with START.md."
 ---
 
-# Poison Pill Studio v5.1 "Ultimate": the complete production system
+# Poison Pill Studio v5.2 "Ultimate": the complete production system
 
 **Channel:** Poison Pill · @poisonpill.channel · "Why great companies rise, and why they fall."
 **Format:** **16:9 only**, 8–12 min, English VO + English on screen, SFX only (no music). **The look follows the content**
@@ -17,6 +17,11 @@ MagnatesMedia collage × LEMMiNO 3D atmosphere.
 > made of photo + slammed word + stamp + shake is a slideshow, and it does not ship.
 
 ## What makes v5 different (read first)
+0. **Invent, don't assemble (v5.2).**
+   - `build` composes each picture from the sentence: real images, 24 icons, text, numbers and arrows, with 30 verbs
+     timed to words (`build.md`). Use it on ≥ 25 % of beats.
+   - Accents and transitions vary per episode.
+   - `pp_history` stops episodes repeating each other.
 1. **The script carries the film.** Write an A/V script with a THESIS of 25 words or fewer, a reveal ladder, scenes "in
    the room", one **hit word** per sentence, `[BEAT]` pauses and `(J)` laughs (`script-masterclass.md`). Gate:
    `pp_scriptlint --long` ≥ 8.5.
@@ -121,6 +126,7 @@ Pick the one that best serves this moment of the film and its neighbours (variet
 | `references/script-masterclass.md` | **always (writing)**: hooks, reveal ladder, scenes, line craft, humor, endings, the A/V script, the critic's scorecard |
 | `references/editing.md` | **always (directing)**: cut rhythm, word sync, layering, transitions, camera, sound layers, text, per-beat/per-minute critic checklist |
 | `references/motion.md` | **always (visuals)**: easing, idle motion, parallax, atmosphere, light, grain, the cohesion grade, AI imagery |
+| `references/build.md` | **always**: the free-form composer, how to turn any sentence into its own picture, 25 examples, freshness rules |
 | `references/music.md` | music library (safe sources, moods), how the score is cut to the acts automatically |
 | `references/ai-images.md` | when an image is missing: what may be generated, the style bible per look, disclosure |
 | `references/director-package.md` | **director package mode**: the one-file brain of an episode + the standard production instructions |

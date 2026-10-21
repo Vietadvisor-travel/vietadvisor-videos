@@ -1,5 +1,24 @@
 # Poison Pill Studio: changelog
 
+## v5.2 (Oct 2026): invent, don't assemble; never repeat
+- **`build`** (`pp_build.js`, `build.md`): the free-form composer.
+  - Elements: real images, 24 icons (singles or crowds/piles), kinetic text, counters, tags, self-drawing arrows and lines.
+  - About 30 verbs on spoken words: grow, multiply, follow, crack, burn (charred, embers), explode, stamp, gray, red, spin,
+    swing, fall…
+  - Idle life on everything, and a sound per verb.
+  - Every picture is invented from its own sentence; lint asks for ≥ 25 % of beats.
+- **Per-episode motion signature:**
+  - hit-word accents rotate among 7 styles (push, pull, tilt, pan) in an episode-seeded order; ~40 % of hits are left
+    alone;
+  - chapter transitions rotate through a look-specific pool, each at most twice per episode.
+- **`pp_history.mjs`:**
+  - remembers each episode's look, opening, scene types, build verbs, transitions and tracks;
+  - lint warns on reused openings, looks or signature template scenes from the last 3 episodes;
+  - the music picker avoids their tracks;
+  - `make.mjs` records automatically.
+- **Lint:** flags duplicate compositions inside an episode.
+
+
 ## v5.1 (Oct 2026): music, and an edit that moves
 - **Music** (`pp_music.py`, `music.md`, `sound_design.py`):
   - a library of real royalty-free tracks, analysed for tempo, bar grid, energy, intro and peak;

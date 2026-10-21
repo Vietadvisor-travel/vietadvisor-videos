@@ -50,4 +50,5 @@ if (isStory && fs.existsSync('engine/library/images.json')) { const reg = JSON.p
   const lines = [...ids].filter(i => reg[i]).map(i => `${i}: ${reg[i].credit || 'own photo'}${reg[i].license ? ' (' + reg[i].license + ')' : ''}`); const ai = [...ids].filter(i => reg[i] && reg[i].gen); if (ai.length) lines.push(`AI-generated illustrations (not archival): ${ai.join(', ')} — tick YouTube's "altered or synthetic content" box if any of them is photorealistic`); if (lines.length) fs.writeFileSync(`${base}_credits.txt`, 'Photo credits\n' + lines.join('\n') + '\nAnimation & music: Vietadvisor Motion Studio\n'); }
 // 6) subtitles / script
 fs.writeFileSync(`${base}.srt`, execFileSync('python3', ['tools/srt.py', `${base}_cues.json`], { encoding: 'utf8' }));
+if (isStory) { try { node(['tools/pp_history.mjs', 'record', ep]); } catch (e) { console.warn('history not recorded:', e.message.split('\n')[0]); } }
 console.log('\nDONE →', fmts.map(f => `${base}_${f}.mp4`).join(', '), `+ ${base}.srt`);
