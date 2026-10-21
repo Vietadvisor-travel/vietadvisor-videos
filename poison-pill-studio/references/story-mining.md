@@ -6,13 +6,14 @@ The film is only as good as what was found. **Before Claude writes a word, Muse 
   the hook, the turn and the climax.
 - The value rubric (§6) is the gate: **publish at ≥ 15/20, with no zero in rows 1–4.**
 
-**Daily flow (v6):**
-1. Muse: "nghiên cứu tập N" → `RESEARCH_<nn>_<slug>.md` (worksheet A–M, every row sourced and confidence-tagged) plus
-   the output of `pp_history show`.
-2. Owner: pastes both to Claude: "gói đạo diễn: ngày N".
-3. Claude writes the package. It includes the format (one of the 12, not the last one used), the angle (it must pass the
-   anti-Wikipedia test), custom scenes and the rubric self-score.
-4. Muse builds it.
+**The flow (v6):**
+- **Weekly:** Muse runs "nghiên cứu tuần" and delivers one `RESEARCH_<slug>.md` per topic (worksheet A–M, every row
+  sourced and confidence-tagged). The owner uploads them to the Claude Project.
+- **Daily:**
+  1. The owner asks Claude "gói đạo diễn: ngày N" and pastes Muse's last HISTORY block. Claude writes the package from
+     the research file. It includes the format (one of the 12, not the last one used), the angle (it must pass the
+     anti-Wikipedia test), custom scenes and the rubric self-score.
+  2. Muse builds it.
 
 ---
 ## 0. The core thesis in one paragraph
