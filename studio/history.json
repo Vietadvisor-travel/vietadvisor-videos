@@ -7,31 +7,33 @@
   "looks": [
    "luxury"
   ],
-  "open": "lower",
+  "open": "scene",
   "modes": {
-   "lower": 1,
-   "scene": 4,
-   "quote": 2,
-   "strike": 1,
+   "scene": 7,
+   "date": 1,
    "build": 4,
-   "collage": 1,
-   "code": 2
+   "tally": 1,
+   "map": 1,
+   "quote": 1,
+   "code": 3
   },
   "verbs": {
-   "1": 1,
-   "zoom": 1,
-   "drop": 1,
-   "slideL": 1,
+   "12": 1,
+   "15": 1,
+   "18": 1,
    "count": 1,
-   "rise": 1,
-   "red": 1
+   "rise": 5,
+   "drop": 5,
+   "zoom": 1,
+   "stamp": 1,
+   "08": 1,
+   "type": 1
   },
-  "trans": {
-   "whip": 1
-  },
+  "trans": {},
   "tracks": [
-   "km_deep_haze",
-   "km_unseen_horrors"
+   "km_perspectives",
+   "km_reawakening",
+   "km_clean_soul"
   ],
   "date": "2026-10-22"
  }
