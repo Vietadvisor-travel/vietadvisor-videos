@@ -41,7 +41,7 @@ endcard: off
   const rows = ['TAKE THE MONEY', 'AND RUN', 'AND BLAME SOMEONE ELSE'];
   layer(2, () => rows.forEach((r, i) => {
     const k = stagger(i, 3, 'did', .35, .45), y = H * (.28 + i * .18), tk = i < 2 ? spring(at('three') + i * .25) : spring('word');
-    text(r, W * .2 + (1 - k) * -60 * u, y, { size: 92 * u, font: 'serif', weight: 900, col: '#efe2c4', align: 'left', a: k });
+    text(r, W * .2 + (1 - k) * -60 * u, y, { size: 84 * u, font: 'serif', weight: 900, col: '#efe2c4', align: 'left', a: k });
     ctx.save(); ctx.translate(W * .14, y - 6 * u); ctx.scale(tk, tk); ctx.strokeStyle = col.gold; ctx.lineWidth = 9 * u; ctx.lineCap = 'round';
     ctx.beginPath(); ctx.moveTo(-26 * u, 0); ctx.lineTo(-6 * u, 22 * u); ctx.lineTo(30 * u, -28 * u); ctx.stroke(); ctx.restore();
   }));
@@ -63,19 +63,19 @@ She was selling investors the coin that would kill it. [BEAT]
 # cine act=doubt shot="1.22:pt:.5,.45|1.4:pt:.5,.45@exist/cut" fx="scene:x;plate:onecoin_art_empty_stage;air:dust|build:x;el:C=@onecoin_el_gold_coin,.5,.42,.42;do:C.float@coin~C.vanish@exist"
 That coin did not **exist**.
 
-# cine act=doubt shot="ws|1.22:pt:.5,.55@billion/dolly" fx="scene:x;plate:onecoin_art_vault_glow;air:dust,rays;light:sweep@billion|build:x;el:N=num:4000000000:$,.5,.2,130~T=tag:RAISED · 2014–2016 AND BEYOND,.5,.33,34;do:N.count@raised~T.rise@billion~N.glow@billion"
+# cine act=doubt shot="ws|1.22:pt:.5,.55@billion/dolly" fx="scene:x;plate:onecoin_art_vault_glow;air:dust,rays;light:sweep@billion|build:x;el:N=num:4000000000:$,.5,.2,130~T=txt:RAISED · 2014–2016 AND BEYOND,.5,.33,44;do:N.count@raised~T.rise@billion~N.glow@billion"
 This is the story of how a product that never existed raised more than four **billion** dollars.
 
-# cine act=doubt bg=clip:onecoin_clip_datacenter bgBlur=0 bgDim=.35 fx="build:x;el:T=txt:NO BLOCKCHAIN,.5,.42,130,paper;do:T.zoom@blockchain"
+# cine act=doubt bg=clip:onecoin_clip_datacenter bgBlur=0 bgDim=.2 fx="build:x;el:T=txt:NO BLOCKCHAIN,.5,.42,140,gold;do:T.zoom@blockchain"
 No **blockchain**.
 
-# cine act=doubt bg=clip:onecoin_clip_mining_asic bgBlur=0 bgDim=.35 fx="build:x;el:T=txt:NO MINING,.62,.4,130,paper;do:T.drop@mining"
+# cine act=doubt bg=clip:onecoin_clip_mining_asic bgBlur=0 bgDim=.2 fx="build:x;el:T=txt:NO MINING,.62,.4,140,gold;do:T.drop@mining"
 No **mining**.
 
-# cine act=doubt bg=onecoin_art_mood_trading_floor bgBlur=0 bgDim=.25 fx="build:x;el:T=txt:NO MARKET,.38,.4,130,paper;do:T.slideL@market"
+# cine act=doubt bg=onecoin_art_mood_trading_floor bgBlur=0 bgDim=.25 fx="build:x;el:T=txt:NO MARKET,.38,.4,140,gold;do:T.slideL@market"
 No **market**.
 
-# cine act=doubt shot="ws|1.4:pt:.62,.42@database/dolly" fx="scene:x;plate:onecoin_art_database_room;air:dust;light:flicker|build:x;el:D=tag:A DATABASE,.62,.24,40~O=tag:OWNED BY ONECOIN,.62,.32,30;do:D.drop@database~O.rise@company"
+# cine act=doubt shot="ws|1.4:pt:.62,.42@database/dolly" fx="scene:x;plate:onecoin_art_database_room;air:dust|build:x;el:D=txt:A DATABASE,.36,.24,100,gold~O=txt:OWNED BY ONECOIN,.36,.36,45;do:D.drop@database~O.rise@company"
 Just a **database** her own company controlled.
 
 # cine act=doubt bg=onecoin_art_mood_fog bgBlur=6 bgDim=.55 trans=whip fg="onecoin_wembley_night;x:.78;y:.5;h:.42;style:polaroid;tape;at:c1;rot:5" shot="ws|1.15:pt:.35,.45@ending/dolly" hero="2016;at:whole;to:2014;toAt:before;font:serif;size:200;pos:l;x:.32;y:.42" sup="SHE WROTE THE ENDING;at:ending;x:.32;y:.6"
@@ -85,14 +85,14 @@ Two years before Wembley, she had already written the **ending**.
 # cine act=flash shot="ms|1.4:pt:.42,.5@strategy/dolly;dutch:-3" fx="code:exit_email;sfx:foley_paper@email~foley_marker@strategy"
 An email from August 2014, listing her exit **strategy**.
 
-# cine act=flash bg=onecoin_art_recruit_call bgBlur=16 bgDim=.7 shot="ws|1.08:pt:.5,.45@blame/glide" fx="quote:Take the money and run and blame someone else for this . . . .;at:Take;by:Ruja Ignatova, email to Greenwood, 9 Aug 2014 (via DOJ);x:.5;y:.46;rate:.2|underline:.25,.58,.75;at:blame;col:gold"
+# cine act=flash bg=onecoin_art_recruit_call bgBlur=5 bgDim=.4 shot="ws|1.08:pt:.5,.45@blame/glide" fx="quote:Take the money and run and blame someone else for this . . . .;at:Take;by:Ruja Ignatova, email to Greenwood, 9 Aug 2014 (via DOJ);x:.5;y:.46;rate:.2|underline:.25,.58,.75;at:blame;col:gold"
 Option one:
 @ruja: Take the money and run and blame someone else for this.
 
-# cine act=fall shot="ws|1.22:pt:.4,.5@word/dolly" fx="code:three_ticks;sfx:foley_marker@three~impact_cinematic@word"
+# cine act=fall shot="1|1.04:pt:.45,.5@word/glide" fx="code:three_ticks;sfx:foley_marker@three~impact_cinematic@word"
 She did all **three**. [BEAT] Almost to the word.
 
-# cine act=fall shot="ws|1.4:pt:.38,.55@missing/dolly" fx="scene:x;plate:onecoin_art_victim_kitchen;air:dust;light:sun@.7,.2|build:x;el:N=num:3500000,.7,.24,120~T=tag:VICTIMS · 175 COUNTRIES,.7,.36,36;do:N.count@million~T.rise@investors~N.red@missing"
+# cine act=fall bg=world map="15,20,1.2" map2="15,25,1.4" mapAt=paid mapDur=3 shot="ws|1.1:pt:.5,.45@missing/dolly" fx="build:x;el:N=num:3500000,.5,.3,150~T=txt:VICTIMS · A REPORTED 175 COUNTRIES,.5,.44,45;do:N.count@million~T.rise@investors~N.red@missing"
 So who paid for it? Three and a half million investors, and the money is still **missing**.
 
 # ppcase n=04 title="OneCoin" sub="The exit strategy" photo=onecoin_ruja_fbi stamp=OPEN stampAt=2.2

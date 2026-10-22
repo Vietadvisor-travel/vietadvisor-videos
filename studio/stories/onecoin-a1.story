@@ -47,36 +47,36 @@ On paper, the founder was the most **credible** person in any room.
 # cine act=setup shot="ms|1.4:pt:.32,.5@doctorate/dolly" fx="code:cv;step:1;go:doctorate;plate:onecoin_konstanz;pic:onecoin_konstanz;picAt:Konstanz;cap:KONSTANZ · 2005;sfx:foley_paper@doctorate~foley_marker@Konstanz"
 A real law **doctorate** from the University of Konstanz.
 
-# cine act=setup shot="1.4:pt:.32,.55|1.22:pt:.4,.5@McKinsey/rack" fx="code:cv;step:2;go:McKinsey;plate:onecoin_art_mood_city;pic:onecoin_art_mood_lobby;picAt:McKinsey;cap:McKINSEY · SOFIA;sfx:foley_marker@McKinsey"
+# cine act=setup shot="1.4:pt:.32,.55|1.22:pt:.4,.5@McKinsey/rack" fx="code:cv;step:2;go:McKinsey;plate:onecoin_art_mood_city;pic:onecoin_sofia;picAt:McKinsey;cap:SOFIA;sfx:foley_marker@McKinsey"
 A job at **McKinsey**.
 
 # cine act=setup shot="1.22:pt:.5,.5|1.4:pt:.4,.55@master/dolly" fx="code:cv;step:3;go:Oxford;fix:master;plate:onecoin_oxford;pic:onecoin_oxford;picAt:Oxford;cap:OXFORD;sfx:foley_paper@Oxford~foley_marker@master"
 Her marketing added **Oxford**. [BEAT] Her Oxford degree was a master's.
 
-# cine act=doubt shot="ms|1.6:pt:.32,.62@fraud/dolly;dutch:-4" fx="code:cv;step:4;go:convicted;plate:onecoin_courtroom_photo;pic:onecoin_gavel;picAt:court;cap:GERMANY · 2012;sfx:impact_cinematic@fraud"
+# cine act=doubt shot="ms|1.6:pt:.32,.62@fraud/dolly;dutch:-4" fx="code:cv;step:4;go:convicted;plate:onecoin_prison;pic:onecoin_gavel;picAt:court;cap:GERMANY · 2012;sfx:impact_cinematic@fraud"
 What the marketing left out: in 2012, a German court convicted her of **fraud**.
 
-# cine act=doubt bg=onecoin_courtroom_photo bgBlur=10 bgDim=.6 fg="onecoin_gavel;x:.24;y:.7;h:.4;style:print;at:c1+.3;rot:-6" shot="ws|1.22:pt:.62,.4@suspended/dolly" hero="14 MONTHS;at:fourteen;pos:r;y:.36" sup="SUSPENDED;at:suspended" fx="lower:GERMANY · 2012~A foundry, stripped;at:father|stamp:BANKRUPT;at:bankrupt;x:.62;y:.62;col:grey;size:90;rot:-8"
+# cine act=doubt bg=onecoin_prison bgBlur=4 bgDim=.35 fg="onecoin_gavel;x:.24;y:.7;h:.4;style:print;at:c1+.3;rot:-6" shot="ws|1.22:pt:.62,.4@suspended/dolly" hero="14 MONTHS;at:fourteen;pos:r;y:.36;col:#c9a85a" sup="SUSPENDED;at:suspended" fx="lower:GERMANY · 2012~A foundry, stripped;at:father|stamp:BANKRUPT;at:bankrupt;x:.62;y:.62;col:grey;size:90;rot:-8"
 She and her father had stripped a foundry until it went **bankrupt**. Her sentence: fourteen months, suspended.
 
-# cine act=setup shot="ws|1.22:pt:.36,.45@BigCoin/dolly|1.22:pt:.68,.45@Greenwood/truck" fx="scene:x;plate:onecoin_art_mood_city;air:dust|build:x;el:C=@onecoin_el_gold_coin,.32,.46,.36~B=tag:BIGCOIN · 2013,.32,.75,40~G=tag:SEBASTIAN GREENWOOD,.7,.4,44~S=tag:SALESMAN · SWEDEN,.7,.5,30~L=line:C-G;do:C.spin@BigCoin~B.rise@BigCoin~G.slideR@Greenwood~S.rise@salesman~L.draw@alongside"
+# cine act=setup shot="ws|1.22:pt:.36,.45@BigCoin/dolly|1.22:pt:.68,.45@Greenwood/truck" fx="scene:x;plate:onecoin_art_mood_city;air:dust|build:x;el:C=@onecoin_el_gold_coin,.32,.46,.36~B=txt:BIGCOIN · 2013,.32,.75,49~G=txt:SEBASTIAN GREENWOOD,.68,.4,70,gold~S=txt:THE SALESMAN · SWEDEN,.68,.52,44~L=line:C-G;do:C.spin@BigCoin~B.rise@BigCoin~G.slideR@Greenwood~S.rise@salesman~L.draw@alongside"
 Then, in 2013, she tried a first crypto scheme, **BigCoin**, alongside a Swedish salesman named Sebastian Greenwood.
 
-# cine act=rise date="JUNE 2014" shot="ews|1.08:pt:.4,.5@deal/dolly" fx="scene:x;plate:onecoin_art_salon_pitch;tone:color;air:dust,rays;light:sweep@deal"
+# cine act=rise date="JUNE 2014" shot="ews|1.08:pt:.4,.5@deal/dolly" fx="scene:x;plate:onecoin_art_salon_pitch;tone:color;air:dust,rays;light:sweep@deal|build:x;el:E=txt:EMAIL · 11 JUNE 2014 · TO GREENWOOD,.66,.18,47~D=txt:A BIGGER DEAL,.66,.3,90,gold;do:E.drop@email~D.type@deal"
 In June 2014 she sent Greenwood an email pitching a bigger **deal**.
 
-# cine act=rise bg=onecoin_art_split_champagne bgBlur=18 bgDim=.72 shot="ms|1.06:pt:.5,.45@numbers/glide" fx="seal:R.I.;at:words;x:.86;y:.2|quote:you as the magic sales machine - and me as someone who really can work with numbers;at:magic;by:Ruja Ignatova, email to Greenwood, 11 June 2014 (via DOJ);x:.5;y:.4;rate:.17"
+# cine act=rise bg=onecoin_art_split_champagne bgBlur=6 bgDim=.42 shot="ms|1.06:pt:.5,.45@numbers/glide" fx="seal:R.I.;at:words;x:.86;y:.2|quote:you as the magic sales machine - and me as someone who really can work with numbers;at:magic;by:Ruja Ignatova, email to Greenwood, 11 June 2014 (via DOJ);x:.5;y:.4;rate:.17"
 In her words:
 @ruja: You as the magic sales machine, and me as someone who really can work with numbers…
 
-# cine act=rise bg=onecoin_art_mood_trading_floor bgBlur=6 bgDim=.6 shot="ws|1.22:pt:.5,.42@street/dolly" fx="quote:like MLM meets bitch of wall street ;-);at:MLM;by:same email, 11 June 2014;x:.5;y:.42;rate:.2|underline:.28,.52,.72;at:street;col:gold"
+# cine act=rise bg=onecoin_art_mood_trading_floor bgBlur=3 bgDim=.35 shot="ws|1.22:pt:.5,.42@street/dolly" fx="quote:like MLM meets bitch of wall street ;-);at:MLM;by:same email, 11 June 2014;x:.5;y:.42;rate:.2|underline:.28,.52,.72;at:street;col:gold"
 @ruja: …like MLM meets bitch of wall street.
 
-# cine act=rise bg=onecoin_hq_office bgBlur=14 bgDim=.6 mid="onecoin_hq_door;x:.36;h:.7;style:print;tape;at:c1+.2;rot:-3" shot="ms|mcu:1@trashy/dolly" fx="lens:1;r:.5,.42;z:2.2;at:emails;x:.72;y:.3;size:150|stamp:TRASHY COIN;at:trashy;x:.66;y:.42;col:gold;size:100;rot:-9|lower:THE PRODUCT~The founders' own nickname, 2014;at:nickname"
+# cine act=rise bg=onecoin_hq_office bgBlur=14 bgDim=.6 mid="onecoin_hq_door;x:.36;h:.7;style:print;tape;at:c1+.2;rot:-3" shot="ms|mcu:1@trashy/dolly" fx="lens:1;r:.5,.42;z:2.2;at:emails;x:.72;y:.3;size:150|stamp:TRASHY COIN;at:trashy;x:.68;y:.4;col:gold;size:130;rot:-9|lower:THE PRODUCT~The founders' own nickname, 2014;at:nickname"
 In their private emails, the two founders even had a nickname for their product: "trashy **coin**."
 
-# cine act=doubt shot="ws|1.22:pt:.5,.45@email/whip" fx="calendar:x;from:2014-06;n:2;at:months|build:x;el:E=tag:9 AUGUST 2014 · THE EXIT EMAIL,.5,.84,40;do:E.rise@email"
+# cine act=doubt shot="ws|1.22:pt:.5,.45@email/whip" fx="calendar:x;from:2014-06;n:2;at:months|build:x;el:E=txt:9 AUGUST 2014 · THE EXIT EMAIL,.5,.84,44;do:E.rise@email"
 Two months later came the exit **email**.
 
-# cine act=doubt shot="ws|1.22:pt:.62,.48@blame/dolly" fx="scene:x;plate:onecoin_art_mood_city;air:dust|build:x;el:O=@onecoin_hq_office,.17,.5,.78~T=txt:TAKE,.45,.3,110,paper~R=txt:RUN,.63,.5,110,paper~B=txt:BLAME,.82,.7,110,gold;do:O.rise@plan~T.drop@take~R.drop@run~B.drop@blame"
+# cine act=doubt shot="ws|1.22:pt:.62,.48@blame/dolly" fx="scene:x;plate:onecoin_art_mood_city;air:dust|build:x;el:O=@onecoin_hq_office,.17,.5,.78~T=txt:TAKE,.45,.3,110,gold~R=txt:RUN,.63,.5,110,gold~B=txt:BLAME,.8,.7,110,red;do:O.rise@plan~T.drop@take~R.drop@run~B.drop@blame"
 So before a single coin was sold, the plan had three **steps**: take, run, blame.

@@ -46,40 +46,40 @@ music: auto
 }
 #! end
 
-# cine act=lesson shot="1.3:pt:.62,.45|1:pt:.6,.45@she/glide" fx="scene:x;plate:onecoin_art_poster_wall;air:rain,dust;light:flicker|build:x;el:Q=txt:WHERE IS SHE?,.32,.3,90,gold;do:Q.type@where"
+# cine act=lesson shot="1.3:pt:.62,.45|1:pt:.6,.45@she/glide" fx="scene:x;plate:onecoin_art_poster_wall;air:rain,dust;light:flicker|build:x;el:Q=txt:WHERE IS SHE?,.36,.3,96,gold;do:Q.type@where"
 So where is **she**?
 
 # cine act=lesson bg=onecoin_fbi_hq bgBlur=12 bgDim=.6 mid="onecoin_doc_fbi_wanted;x:.4;h:.86;style:print;at:c1" shot="1|1.5:1@woman/dolly" fx="date:30 JUNE 2022;at:FBI;x:.06;y:.12|mark:1;r:.05,.13,.6,.2;at:Wanted|lower:FUGITIVE NO. 527~the only woman on the list;at:woman"
 In 2022, the FBI put her on its Ten Most Wanted list, the only **woman** on it at the time.
 
-# cine act=lesson bg=onecoin_art_poster_wall bgBlur=10 bgDim=.6 mid="onecoin_ruja_fbi;x:.32;h:.62;style:print;tape;at:c1;rot:-3" shot="ws|1.18:pt:.68,.45@dollars/dolly" fx="build:x;el:N=num:5000000:$,.72,.44,130~T=tag:REWARD · JUNE 2024,.72,.56,40~O=tag:WAS $100,000 IN 2022,.72,.64,30;do:N.count@raised~T.rise@reward~O.rise@dollars"
+# cine act=lesson bg=onecoin_art_poster_wall bgBlur=10 bgDim=.6 mid="onecoin_ruja_fbi;x:.32;h:.62;style:print;tape;at:c1;rot:-3" shot="ws|1.18:pt:.68,.45@dollars/dolly" fx="build:x;el:N=num:5000000:$,.72,.44,130~T=txt:REWARD · JUNE 2024,.72,.56,44~O=txt:WAS $100K IN 2022,.72,.64,46;do:N.count@raised~T.rise@reward~O.rise@dollars"
 In 2024, the United States raised the reward to five million **dollars**.
 
-# cine act=lesson shot="1.25:pt:.5,.55|ws@killed/drop" fx="scene:x;plate:onecoin_art_raid_office;air:dust,rays;light:flicker|build:x;el:M=tag:LEAKED BULGARIAN POLICE MEMO,.5,.22,44~K=txt:CLAIM: KILLED IN 2018,.5,.36,80,gold;do:M.drop@memo~K.type@killed"
+# cine act=lesson shot="1.25:pt:.5,.55|ws@killed/drop" fx="scene:x;plate:onecoin_art_raid_office;air:dust,rays;light:flicker|build:x;el:M=txt:LEAKED BULGARIAN POLICE MEMO,.5,.22,44~K=txt:CLAIM: KILLED IN 2018,.5,.36,80,gold;do:M.drop@memo~K.type@killed"
 A leaked Bulgarian police memo claims she was killed in **2018**.
 
-# cine act=lesson bg=onecoin_art_raid_office bgBlur=10 bgDim=.6 shot="ws|1.12:pt:.5,.45@unverified/dolly" fx="build:x;el:D=tag:THE DOCUMENT,.3,.32,44~R=txt:REAL,.3,.46,110,gold~C=tag:THE CLAIM INSIDE,.7,.32,44~U=txt:UNVERIFIED,.7,.46,90,red;do:D.drop@document~R.zoom@real~C.drop@claim~U.stamp:UNVERIFIED@unverified"
+# cine act=lesson bg=onecoin_art_raid_office bgBlur=4 bgDim=.3 shot="ws|1.12:pt:.5,.45@unverified/dolly" fx="build:x;el:D=txt:THE DOCUMENT,.3,.32,44~R=txt:REAL,.3,.46,110,gold~C=txt:THE CLAIM INSIDE,.7,.32,44~U=txt:UNVERIFIED,.7,.46,90,red;do:D.drop@document~R.zoom@real~C.drop@claim~U.stamp:UNVERIFIED@unverified"
 The document is real. But the claim inside it is second-hand, and **unverified**.
 
 # cine act=lesson shot="ews|1.2:pt:.5,.45@alive/rise" fx="scene:x;plate:onecoin_fbi_hq;air:dust;light:sweep@hunts|lower:THE FBI'S WORKING ASSUMPTION~she is alive;at:alive"
 So the FBI still hunts her as if she's **alive**.
 
-# cine act=lesson shot="1.6:pt:.5,.5|1.1:pt:.5,.5@Athens/glide" fx="scene:x;plate:onecoin_art_athens_light;air:dust,rays;light:sun@.5,.3|build:x;el:A=tag:ATHENS · 25 OCT 2017,.5,.16,44;do:A.type@confirmed"
+# cine act=lesson shot="1.6:pt:.5,.5|1.1:pt:.5,.5@Athens/glide" fx="scene:x;plate:onecoin_art_athens_light;air:dust,rays;light:sun@.5,.3|build:x;el:A=txt:ATHENS · 25 OCT 2017,.5,.16,44;do:A.type@confirmed"
 Nobody has confirmed seeing her since **Athens**.
 
-# cine act=after bg=onecoin_art_victim_kitchen bgBlur=6 bgDim=.45 shot="1.25:pt:.5,.55|1:pt:.5,.5@bill/dolly" fx="tally:VICTIMS=3.5 MILLION+~COUNTRIES=175 (REPORTED)~LOST=MORE THAN $4 BILLION;at:confirm;rate:.6;x:.66;y:.3;w:.36"
+# cine act=after bg=onecoin_art_victim_kitchen bgBlur=6 bgDim=.45 shot="1.25:pt:.5,.55|1:pt:.5,.5@bill/dolly" fx="tally:VICTIMS=3.5 MILLION+~COUNTRIES=175 (REPORTED)~LOST=MORE THAN $4 BILLION;at:confirm;rate:.6;x:.6;y:.3;w:.5"
 What we can confirm is the **bill**.
 
 # cine act=after date="UGANDA" shot="1.3:pt:.6,.6|1:pt:.55,.55@livestock/glide" fx="scene:x;plate:onecoin_art_uganda_plot;air:dust;light:sun@.85,.2|lower:UGANDA~farmers sold land to buy in (BBC);at:farmers"
 In Uganda, the BBC found farmers who had sold land and **livestock** to buy in.
 
-# cine act=after bg=world map="10.4,51.2,5.6" hl="Germany" hlAt=Germany shot="ws|1.15:pt:.5,.5@processor/dolly" fx="build:x;el:N=txt:17,552,.72,.4,130,gold~T=tag:VICTIMS · ONE PAYMENT PROCESSOR,.72,.52,34~S=tag:DEC 2015 – AUG 2016,.72,.6,30;do:N.zoom@victims~T.rise@processor~S.rise@single"
+# cine act=after bg=world map="10.4,51.2,5.6" hl="Germany" hlAt=Germany shot="ws|1.15:pt:.5,.5@processor/dolly" hero="17,552;at:victims;font:impact;size:180;pos:r;x:.72;y:.38;col:#c9a85a" sup="VICTIMS · ONE PAYMENT PROCESSOR · DEC 2015 – AUG 2016;at:processor;x:.72;y:.52"
 In Germany, investigators traced the money of 17,552 victims through a single payment **processor**.
 
 # cine act=after shot="1.2:pt:.4,.5|1:pt:.45,.5@family/truck" fx="scene:x;plate:onecoin_art_victim_kitchen;air:dust;light:sun@.75,.2|lower:JEN McADAM~victim and campaigner, Glasgow;at:McAdam"
 In Glasgow, Jen McAdam had brought in friends and **family**.
 
-# cine act=after bg=onecoin_euro_cash bgBlur=14 bgDim=.7 shot="ws|1.12:pt:.5,.45@away/dolly" fx="quote:thrown a quarter of a million euros away;at:thrown;by:Jen McAdam to the BBC, 2019;x:.5;y:.42;rate:.2"
+# cine act=after bg=onecoin_gold_bars bgBlur=4 bgDim=.4 shot="ws|1.08:pt:.5,.45@away/dolly" fx="quote:thrown a quarter of a million euros away;at:thrown;by:Jen McAdam to the BBC, 2019;x:.5;y:.42;rate:.2"
 Together, she said, they had "thrown a quarter of a million euros **away**."
 
 # cine act=after shot="1|1.06:pt:.6,.45@forty/dolly" fx="code:one_cent;step:1;sfx:ui_pop@opened~magic_reveal@forty"
@@ -88,16 +88,16 @@ In 2026, the US opened a fund for victims: just over forty million **dollars**.
 # cine act=after shot="1.06:pt:.6,.45|1.15:pt:.62,.55@cent/dolly" fx="code:one_cent;step:2;sfx:glitch_power_down@cent"
 Against more than four billion lost, that's about one **cent** on the dollar. [BEAT]
 
-# cine act=lesson shot="ws|1.3:pt:.6,.42@database/dolly" fx="scene:x;plate:onecoin_art_database_room;air:dust,rays;light:sweep@database|build:x;el:R=tag:THE REAL REASON,.3,.22,44~O=txt:ONE INSPECTION,.3,.34,90,gold;do:R.drop@reason~O.type@person"
+# cine act=lesson shot="ws|1.1:pt:.6,.42@database/dolly" fx="scene:x;plate:onecoin_art_database_room;air:dust,rays;light:sweep@database|build:x;el:R=txt:THE REAL REASON,.36,.22,53~O=txt:ONE INSPECTION,.36,.34,96,gold;do:R.drop@reason~O.type@person"
 Here's the real reason it worked: the fraud never needed smarter victims. It needed one person to open the **database**.
 
-# cine act=lesson bg=onecoin_art_database_room bgBlur=10 bgDim=.6 shot="1.2:pt:.5,.5|ws@everywhere/drop" fx="build:x;el:P=tag:A PRIVATE BLOCKCHAIN,.22,.36,48~F=tag:SALESMEN = FAMILY,.5,.36,48~E=tag:MONEY: EVERYWHERE,.78,.36,48~L1=@onecoin_el_vault_wheel,.22,.64,.34~L2=@onecoin_el_champagne,.5,.66,.36~L3=@onecoin_euro_cash,.78,.66,.32;do:P.drop@private~L1.rise@private~F.drop@salesmen~L2.rise@family~E.drop@money~L3.rise@everywhere"
+# cine act=lesson bg=onecoin_art_database_room bgBlur=10 bgDim=.6 shot="1.2:pt:.5,.5|ws@everywhere/drop" fx="build:x;el:P=txt:A PRIVATE BLOCKCHAIN,.22,.36,45~F=txt:SALESMEN = FAMILY,.5,.36,45~E=txt:MONEY: EVERYWHERE,.78,.36,45~L1=@onecoin_el_vault_wheel,.22,.64,.34~L2=@onecoin_el_champagne,.5,.66,.36~L3=@onecoin_euro_cut,.78,.66,.34;do:P.drop@private~L1.rise@private~F.drop@salesmen~L2.rise@family~E.drop@money~L3.rise@everywhere"
 Nobody could, because the "blockchain" was **private**, the salesmen were family, and the money was everywhere.
 
 # cine act=lesson shot="1|1.08:pt:.45,.5@wrote/dolly" fx="code:exit_email;sfx:foley_marker@Take~foley_marker@Run~impact_cinematic@Blame"
 Take the money. Run. Blame someone else. She wrote it in **2014**.
 
-# cine act=lesson bg=black solo=1 shot="1|1.12:pt:.5,.45@did/dolly" fx="build:x;el:C=@onecoin_el_gold_coin,.5,.36,.32~A=txt:THE COIN NEVER EXISTED.,.5,.66,64,ink~B=txt:THE EXIT STRATEGY DID.,.5,.78,76,gold;do:C.vanish@existed~A.type@coin~B.type@exit"
+# cine act=lesson shot="1.1:pt:.5,.4|1:pt:.5,.45@did/glide" fx="scene:x;plate:onecoin_art_empty_stage;air:dust,rays;light:sweep@exit|build:x;el:C=@onecoin_el_gold_coin,.5,.34,.3~A=txt:THE COIN NEVER EXISTED.,.5,.66,70,ink~B=txt:THE EXIT STRATEGY DID.,.5,.78,84,gold;do:C.float@coin~C.vanish@existed~A.type@coin~B.type@exit"
 The coin never existed. The exit strategy **did**.
 
 # ppend

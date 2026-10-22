@@ -87,12 +87,12 @@ endcard: off
   // one coin on the left; the pile of tokens it costs on the right grows from 44 to 359 as the narrator says "rose"
   layer(1, () => { draw(img('onecoin_art_split_champagne'), W * .5, H * .5, H * 1.12, { a: .3 }); ctx.fillStyle = 'rgba(8,6,4,.6)'; ctx.fillRect(0, 0, W, H); });
   const r = p('rose', 1.8, 'inOut'), n = Math.round(lerp(44, 359, r));
-  layer(2, () => { draw(img('onecoin_el_gold_coin'), W * .2, H * .46, H * .4); text('1 COIN', W * .2, H * .76, { size: 44 * u, font: 'impact', col: col.gold });
+  layer(2, () => { draw(img('onecoin_el_gold_coin'), W * .2, H * .46, H * .4); text('1 COIN', W * .2, H * .7, { size: 44 * u, font: 'impact', col: col.gold });
     text('=', W * .35, H * .46, { size: 110 * u, font: 'impact', col: '#efe2c4' });
-    for (let i = 0; i < n; i++) { const c = i % 24, row = Math.floor(i / 24), R = rng(i + 3); const x = W * (.43 + c * .021), y = H * (.18 + row * .038);
+    for (let i = 0; i < n; i++) { const c = i % 24, row = Math.floor(i / 24), R = rng(i + 3); const x = W * (.43 + c * .021), y = H * (.12 + row * .034);
       ctx.fillStyle = i < 44 ? '#efe2c4' : col.gold; ctx.globalAlpha = i < 44 ? .9 : clamp((r * 359 - i) / 20) * .9; ctx.beginPath(); ctx.arc(x, y, 7 * u, 0, 7); ctx.fill(); }
-    ctx.globalAlpha = 1; text(n + ' TOKENS', W * .68, H * .84, { size: 64 * u, font: 'impact', col: n > 44 ? col.gold : '#efe2c4' });
-    text('"MINING DIFFICULTY"', W * .68, H * .92, { size: 24 * u, font: 'cond', weight: 700, ls: 6 * u, col: '#b9a57d', a: p('difficulty', .5) }); });
+    ctx.globalAlpha = 1; text(n + ' TOKENS', W * .68, H * .74, { size: 64 * u, font: 'impact', col: n > 44 ? col.gold : '#efe2c4' });
+    text('"MINING DIFFICULTY"', W * .68, H * .82, { size: 24 * u, font: 'cond', weight: 700, ls: 6 * u, col: '#b9a57d', a: p('difficulty', .5) }); });
 }
 #! end
 
@@ -100,7 +100,7 @@ endcard: off
 ({ t, at, p, spring, stagger, wobble, W, H, u, layer, img, draw, text, ease, lerp, clamp, col, ctx }) => {
   // a real stack of euro notes is cut 60/40: the 60 comes to you, the 40 slides into a vault that shuts
   layer(1, () => { draw(img('onecoin_art_vault_glow'), W * .5, H * .5, H * 1.1, { a: .3 }); ctx.fillStyle = 'rgba(8,6,4,.6)'; ctx.fillRect(0, 0, W, H); });
-  const cash = img('onecoin_euro_cash'); if (!cash) return; const ch = H * .5, cw = ch * cash.width / cash.height, cx = W * .44, cy = H * .45;
+  const cash = img('onecoin_euro_cut'); if (!cash) return; const ch = H * .56, cw = ch * cash.width / cash.height, cx = W * .44, cy = H * .45;
   const a = spring('Sixty', { stiff: 140, damp: 14 }), b = spring('locked', { stiff: 90, damp: 12 }), cut = cw * .6;
   layer(2, () => {
     ctx.save(); ctx.translate(-a * W * .12, 0); ctx.drawImage(cash, 0, 0, cash.width * .6, cash.height, cx - cw / 2, cy - ch / 2, cut, ch); ctx.restore();
@@ -108,7 +108,7 @@ endcard: off
     const dx = b * W * .26; ctx.save(); ctx.translate(dx, 0); ctx.drawImage(cash, cash.width * .6, 0, cash.width * .4, cash.height, cx - cw / 2 + cut + 10 * u, cy - ch / 2, cw - cut, ch); ctx.restore();
     text('40% LOCKED', cx + cw / 2 - (cw - cut) / 2 + dx, cy + ch / 2 + 46 * u, { size: 48 * u, font: 'impact', col: col.gold, a: clamp(p('Forty', .4)) });
   });
-  layer(2.5, () => { const v = img('onecoin_el_vault_wheel'); if (!v) return; const shut = p('system', .6, 'out5'); draw(v, W * .86, H * .45, H * .62 * (1 + .04 * shut), { a: clamp(b * 1.4) });
+  layer(2.5, () => { const v = img('onecoin_el_vault_wheel'); if (!v) return; const shut = p('system', .6, 'out5'); draw(v, W * .84, H * .45, H * .48 * (1 + .04 * shut), { a: clamp(b * 1.4) });
     text('"TRADING ACCOUNT"', W * .86, H * .84, { size: 26 * u, font: 'cond', weight: 700, col: '#b9a57d', ls: 4 * u, a: clamp(b) }); });
 }
 #! end
@@ -134,13 +134,13 @@ endcard: off
 # cine act=rise bg=clip:onecoin_clip_city_night bgBlur=3 bgDim=.45 shot="1|1.12:pt:.5,.45@coin/dolly" fx="build:x;el:S=txt:STEP 1,.5,.3,40,gold~T=txt:TAKE THE MONEY,.5,.42,120,gold~C=@onecoin_el_gold_coin,.5,.7,.2;do:S.type@Step~T.rise@trick~C.vanish@coin"
 Step one. Here's the trick: investors never actually bought a **coin**.
 
-# cine act=rise shot="ws|1.15:pt:.6,.45@Wikipedia/dolly" fx="scene:x;plate:onecoin_art_mood_lobby;air:dust|build:x;el:P=tag:ONEACADEMY PACKAGE,.32,.3,44~D=icon:doc*6,.32,.55,.16~W=txt:COPIED FROM WIKIPEDIA?,.7,.55,54,gold~L=arrow:W>D;do:P.drop@package~D.multiply:6@notes~W.type@lawsuit~L.draw@copied"
+# cine act=rise shot="ws|1.15:pt:.6,.45@Wikipedia/dolly" fx="scene:x;plate:onecoin_art_mood_lobby;air:dust|build:x;el:P=txt:ONEACADEMY PACKAGE,.32,.3,53~D=icon:doc*6,.32,.55,.16~W=txt:COPIED FROM WIKIPEDIA?,.66,.55,72,gold~L=arrow:W>D;do:P.drop@package~D.multiply:6@notes~W.type@lawsuit~L.draw@copied"
 They bought an education **package**: course notes that a US lawsuit says were copied from free sources like Wikipedia.
 
 # cine act=rise shot="1|1.1:pt:.85,.35@118,000/rise" fx="code:package_ladder;sfx:ui_pop@started~impact_cinematic@118,000"
 Package prices started at one hundred euros and went up to **118,000**.
 
-# cine act=rise shot="ws|1.2:pt:.6,.5@coins/dolly" fx="scene:x;plate:onecoin_art_server_glow;fg:onecoin_el_server@.84,1.02,.9;air:smoke,dust;light:flicker|build:x;el:K=tag:TOKENS,.28,.4,50~C=@onecoin_el_gold_coin,.5,.42,.22~A=arrow:K>C;do:K.pop@tokens~A.draw@mined~C.spin@coins"
+# cine act=rise shot="ws|1.2:pt:.6,.5@coins/dolly" fx="scene:x;plate:onecoin_art_server_glow;fg:onecoin_el_server@.84,1.02,.9;air:smoke,dust;light:flicker|build:x;el:K=txt:TOKENS,.28,.4,47~C=@onecoin_el_gold_coin,.5,.42,.22~A=arrow:K>C;do:K.pop@tokens~A.draw@mined~C.spin@coins"
 Each package came with tokens, and you "**mined**" the tokens into coins.
 
 # cine act=rise shot="1|1.1:pt:.6,.5@number/dolly" fx="code:back_office;mode:timer;plate:onecoin_art_database_room;go:Mining;sfx:ui_tick@timer~ui_notification@number"
@@ -155,7 +155,7 @@ Fifty euro cents at launch. Twenty-nine ninety-five by **2019**.
 # cine act=doubt bg=onecoin_departures bgBlur=12 bgDim=.7 shot="ws|1.15:pt:.5,.5@market/dolly" fx="flapboard:x;title:PUBLIC EXCHANGES;rows:COINBASE=NOT LISTED~KRAKEN=NOT LISTED~BITSTAMP=NOT LISTED~ANY PUBLIC MARKET=NEVER;at:traded"
 Yet the coin never traded on a single public **market**.
 
-# cine act=rise shot="ws|1.2:pt:.6,.45@doubled/dolly" fx="scene:x;plate:onecoin_art_split_champagne;tone:color;air:dust,bokeh;light:sweep@splits|build:x;el:T=tag:YOUR TOKENS,.62,.3,40~X=txt:× 2,.62,.45,150,gold~C=@onecoin_el_gold_coin,.84,.5,.2;do:T.rise@tokens~X.zoom@doubled~C.multiply:2@overnight"
+# cine act=rise shot="ws|1.2:pt:.6,.45@doubled/dolly" fx="scene:x;plate:onecoin_art_split_champagne;tone:color;air:dust,bokeh;light:sweep@splits|build:x;el:T=txt:YOUR TOKENS,.62,.3,44~X=txt:× 2,.62,.45,150,gold~C=@onecoin_el_gold_coin,.84,.5,.2;do:T.rise@tokens~X.zoom@doubled~C.multiply:2@overnight"
 Then came the **splits**: every few months, your tokens doubled overnight.
 
 # cine act=doubt shot="1|1.08:pt:.68,.5@quietly/dolly" fx="code:difficulty;sfx:ui_pop@rose~impact_cinematic@tokens"
@@ -164,40 +164,40 @@ But each time, the "mining difficulty" quietly **rose**: from 44 tokens per coin
 # cine act=rise shot="1|1.15:pt:.55,.45@grew/dolly" fx="code:back_office;mode:balance;plate:onecoin_art_mood_rain;title:MEMBER BACK OFFICE;go:screen;x:.55;sfx:ui_notification@screen~ui_counter@grew"
 So on screen, your balance only ever **grew**.
 
-# cine act=rise bg=onecoin_art_mood_city bgBlur=8 bgDim=.6 shot="ws|1.15:pt:.7,.5@million/dolly" fx="build:x;el:G=@onecoin_el_gold_coin,.28,.4,.46~N=txt:120 BILLION,.28,.72,64,gold~B=@onecoin_bitcoin_coins,.72,.42,.07~M=txt:21 MILLION,.72,.56,52~R=tag:≈ 5,700 × MORE COINS,.72,.22,40;do:G.grow:1.1@promised~N.type@billion~B.pop@Bitcoin~M.type@million~R.drop@million"
+# cine act=rise bg=onecoin_art_mood_city bgBlur=8 bgDim=.6 shot="ws|1.15:pt:.7,.5@million/dolly" fx="build:x;el:G=@onecoin_el_gold_coin,.28,.4,.46~N=txt:120 BILLION,.28,.72,64,gold~B=@onecoin_bitcoin_coins,.72,.42,.1~M=txt:21 MILLION,.72,.56,52~R=txt:≈ 5 700 × MORE COINS,.72,.22,49;do:G.grow:1.1@promised~N.type@billion~B.pop@Bitcoin~M.type@million~R.drop@million"
 The company promised 120 billion coins. Bitcoin will only ever have twenty-one **million**.
 
 # cine act=rise shot="ews|ws:pt:.5,.5@salesman/rise" fx="scene:x;plate:onecoin_macau;air:dust,bokeh;light:sweep@buyer|lower:MACAU~OneCoin promoter events;at:salesman"
 And every buyer was also a **salesman**.
 
-# cine act=rise bg=onecoin_art_gala_table bgBlur=14 bgDim=.65 shot="1|1.12:pt:.5,.6@recruits#2/dolly" fx="org:x;nodes:YOU>RECRUIT A,RECRUIT B;RECRUIT A>A1,A2;RECRUIT B>B1,B2;at:paid"
+# cine act=rise bg=onecoin_art_gala_table bgBlur=8 bgDim=.45 shot="1|1.12:pt:.5,.6@recruits#2/dolly" fx="build:x;el:Y=txt:YOU,.5,.18,80,gold~R=icon:person*3,.5,.42,.13~Q=icon:person*9,.5,.7,.1~L1=arrow:Y>R~L2=arrow:R>Q~T=txt:+ BONUS,.82,.42,56,gold~U=txt:+ BONUS,.82,.7,56,gold;do:L1.draw@paid~R.multiply:3@recruits~T.pop@recruits~L2.draw@recruits#2~Q.multiply:9@recruits#2~U.pop@recruits#2"
 You got paid on your recruits, and on your recruits' **recruits**.
 
-# cine act=rise shot="ws|1.2:pt:.3,.4@dollars/dolly" fx="scene:x;plate:onecoin_art_thailand_villa;air:dust;light:sun@.7,.2|build:x;el:P=txt:5%,.3,.3,150,gold~S=tag:OF ALL SALES WORLDWIDE,.3,.44,34~N=num:300000000:$,.3,.6,100;do:P.zoom@five~S.rise@sales~N.count@three"
+# cine act=rise shot="ws|1.2:pt:.3,.4@dollars/dolly" fx="scene:x;plate:onecoin_art_thailand_villa;air:dust;light:sun@.7,.2|build:x;el:P=txt:5%,.3,.3,150,gold~S=txt:OF ALL SALES WORLDWIDE,.3,.44,44~N=num:300000000:$,.3,.6,100;do:P.zoom@five~S.rise@sales~N.count@three"
 At the very top, Greenwood took five percent of all sales worldwide: over three hundred million **dollars**.
 
 # cine act=doubt shot="1|1.08:pt:.7,.45@locked/dolly" fx="code:bonus_split;sfx:foley_paper_cut@Sixty~foley_door_close@system"
 But your own bonus? Sixty percent cash. Forty percent locked inside the **system**.
 
-# cine act=doubt bg=onecoin_art_frosted_doors bgBlur=8 bgDim=.55 shot="ws|1.18:pt:.5,.42@out/dolly" fx="receipt:WITHDRAWAL REQUEST=YOUR CASH~STATUS=PENDING~STATUS=PENDING~STATUS=PENDING;at:cash;x:.5;y:.42"
+# cine act=doubt bg=onecoin_art_frosted_doors bgBlur=4 bgDim=.3 shot="ws|1.12:pt:.5,.42@out/dolly" fx="receipt:WITHDRAWAL REQUEST=YOUR CASH~STATUS=PENDING~STATUS=PENDING~STATUS=PENDING;at:cash;x:.5;y:.42"
 And even the cash was hard to get **out**.
 
-# cine act=doubt bg=clip:onecoin_clip_datacenter bgBlur=4 bgDim=.6 shot="1|1.12:pt:.5,.45@offline/cut" fx="build:x;el:E=tag:ONECOIN'S OWN EXCHANGE,.5,.32,50~L=tag:DAILY SELL LIMIT,.5,.44,36~O=txt:OFFLINE,.5,.6,130,red;do:E.drop@exchange~L.rise@limits~O.stamp:OFFLINE@offline|flicker;at:offline"
+# cine act=doubt bg=clip:onecoin_clip_datacenter bgBlur=2 bgDim=.4 shot="1|1.12:pt:.5,.45@offline/cut" fx="build:x;el:E=txt:ONECOIN'S OWN EXCHANGE,.5,.3,60~L=txt:DAILY SELL LIMITS,.5,.42,47~O=txt:OFFLINE,.5,.6,130,red;do:E.drop@exchange~L.rise@limits~O.stamp:OFFLINE@offline|flicker;at:offline"
 The only exchange was OneCoin's own, with daily selling limits, and it kept going **offline**.
 
-# cine act=rise bg=onecoin_euro_cash bgBlur=18 bgDim=.7 shot="ws|1.15:pt:.5,.5@in/dolly" fx="flow:INVESTORS>ONECOIN>!WAY OUT;at:money"
+# cine act=rise bg=onecoin_euro_cash bgBlur=10 bgDim=.5 shot="ws|1.04:pt:.5,.5@in/glide" fx="flow:INVESTORS>ONECOIN>!WAY OUT;at:money"
 Which meant the money flowed one **way**: in.
 
 # cine act=rise bg=onecoin_court_sdny bgBlur=12 bgDim=.6 mid="onecoin_doc_doj_greenwood;x:.42;h:.82;style:print;at:files" shot="ms:1|1.6:pt:.4,.38@2016/dolly" fx="scan:1;at:obtained;dur:1.4|lower:U.S. DEPARTMENT OF JUSTICE~Greenwood plea release, Dec 2022;at:prosecutors"
 OneCoin's own files, later obtained by US prosecutors, cover late 2014 to late **2016**.
 
-# cine act=rise bg=onecoin_art_vault_glow bgBlur=10 bgDim=.6 fg="onecoin_euro_cash;x:.86;y:.84;h:.28;style:print;at:Sales;rot:8" shot="1.05|1.2:pt:.45,.42@euros/dolly" hero="€4.037 BILLION;at:four;fx:count;pos:c;y:.4" sup="SALES · Q4 2014 – Q4 2016;at:euros"
+# cine act=rise bg=onecoin_art_vault_glow bgBlur=10 bgDim=.6 fg="onecoin_euro_cut;x:.84;y:.86;h:.34;at:Sales;rot:8" shot="1|1.08:pt:.45,.42@euros/dolly" hero="€4.037 BILLION;at:four;fx:count;pos:c;y:.4" sup="SALES · Q4 2014 – Q4 2016;at:euros"
 Sales: four point zero three seven billion **euros**.
 
-# cine act=rise bg=onecoin_art_split_champagne bgBlur=10 bgDim=.6 shot="1.05|1.25:pt:.45,.42@billion/dolly" hero="€2.735 BILLION;at:two;fx:count;pos:c;y:.4;col:#c9a85a" sup="BOOKED AS PROFIT;at:profit" fx="stamp:PROFIT;at:billion;x:.74;y:.66;col:gold;size:90;rot:-8"
+# cine act=rise bg=onecoin_art_split_champagne bgBlur=3 bgDim=.35 fg="onecoin_el_champagne;x:.84;y:.8;h:.5;at:profit" shot="1.15:pt:.4,.4|1:pt:.4,.45@billion/dolly" hero="€2.735 BILLION;at:two;fx:count;pos:l;x:.38;y:.36;col:#c9a85a" sup="BOOKED AS PROFIT;at:profit" fx="stamp:PROFIT;at:billion;x:.74;y:.66;col:gold;size:90;rot:-8"
 Booked as profit: two point seven three five **billion**.
 
-# cine act=doubt shot="ws|1.2:pt:.5,.45@make/dolly" fx="scene:x;plate:onecoin_art_database_room;air:dust;light:flicker|build:x;el:A=@onecoin_euro_cash,.26,.5,.3~B=@onecoin_euro_cash,.5,.5,.3~C=@onecoin_euro_cash,.74,.5,.3~T=txt:COST ≈ 0,.74,.78,60,gold;do:A.glow@two~B.glow@three~C.shrink:.3@cost~T.type@make"
+# cine act=doubt shot="ws|1.2:pt:.5,.45@make/dolly" fx="scene:x;plate:onecoin_art_mood_lobby;air:dust|build:x;el:A=@onecoin_euro_cut,.24,.48,.4~B=@onecoin_euro_cut,.5,.48,.4~C=@onecoin_euro_cut,.76,.48,.4~T=txt:COST ≈ 0,.76,.8,80,gold;do:A.glow@two~B.glow@three~C.shrink:.3@cost~T.type@make"
 That's two of every three euros, because the product cost almost nothing to **make**.
 
 # cine act=rise shot="1|1.08:pt:.38,.48@billion/dolly" fx="code:bitcoin_quarter;step:1;go:Bitcoin;num:billion;sfx:foley_coin_drop@Bitcoin"
@@ -206,9 +206,9 @@ For scale: at the end of 2016, all the Bitcoin in the world was worth about fift
 # cine act=fall shot="1.08:pt:.38,.48|1.25:pt:.4,.4@database/dolly" fx="code:bitcoin_quarter;step:2;go:c1;num:c1;sfx:foley_paper_cut@quarter~impact_cinematic@database"
 OneCoin had already raised more than a **quarter** of that. For rows in a database.
 
-# cine act=rise bg=onecoin_wembley_night bgBlur=6 bgDim=.45 mid="clip:onecoin_clip_ruja_stage;x:.62;h:.62;style:tv;at:stage" shot="ws|1.2:1@Wembley/dolly" fx="date:JUNE 2016;at:June;x:.06;y:.12|air:x;kind:confetti;dens:.5;at:Wembley"
+# cine act=rise bg=onecoin_wembley_night bgBlur=3 bgDim=.2 mid="clip:onecoin_clip_ruja_stage;x:.6;h:.72;style:print;at:c1" shot="ws|1.2:1@Wembley/dolly" fx="date:JUNE 2016;at:June;x:.06;y:.12|air:x;kind:confetti;dens:.5;at:Wembley"
 In June 2016, at the height of the money, she took the stage at **Wembley**.
 
-# cine act=doubt bg=onecoin_art_mood_lobby bgBlur=12 bgDim=.65 shot="ws|1.15:pt:.5,.5@people/dolly" fx="chat:x;msgs:G>These ppl are idiots~K>as you told me, the network would not work with intelligent people ;);names:G=Sebastian Greenwood,K=Konstantin Ignatov;rate:1.6|lower:REAL MESSAGES~11 Sept 2016, via U.S. DOJ;at:September"
+# cine act=doubt bg=onecoin_art_split_champagne bgBlur=8 bgDim=.45 shot="ws|1.1:pt:.5,.5@people/dolly" fx="chat:x;msgs:G>These ppl are idiots~K>as you told me, the network would not work with intelligent people ;);names:G=Sebastian Greenwood,K=Konstantin Ignatov;rate:1.6|lower:REAL MESSAGES~11 Sept 2016, via U.S. DOJ;at:September"
 And that September, Greenwood sent her brother a message about the members: "These ppl are **idiots**."
 Her brother's message back: "the network would not work with intelligent **people**."
