@@ -1,4 +1,11 @@
-# Generated images: only where real ones can't do the job (v5)
+# Generated images (v5 rules, widened in v6.1)
+
+> **v6.1: AI moment art is welcome.** Muse illustrates the episode's key moments (25–40 images) in one style bible, and
+> the film may use AI art on up to ~40 % of beats (final-cut.md §5). Two things are unchanged:
+> - Real people, documents, logos, events and evidence stay real.
+> - Art never pretends to be archive.
+>
+> The table below lists what must never be generated.
 
 The owner's rule: **"ảnh vẫn cần lấy ảnh thật"**, meaning real images first. The production agent can generate images,
 but it uses them only to fill gaps and add life. They never replace evidence.

@@ -46,7 +46,7 @@ Every number, date, name spelling and quote the film states, with nothing missin
 | quibi_letter | screenshot | Medium post "A Letter from Jeffrey & Meg", Oct 21 2020, top paragraph | medium.com/@quibi | a4-5 |
 Roles for real images: cut (person/object cut-out) · plate (background photo) · prop (document/object print) · screenshot (for
 browser/post/phone3d) · clip (footage, give start time).
-Roles for GENERATED images (ai-images.md; only where no real image can do the job, ≤ 1 per 4 beats, never a real person,
+Roles for GENERATED images (ai-images.md; AI moment art welcome on up to ~40 % of beats (final-cut.md §5), never a real person,
 document, logo or event): clean (a real photo with the subject removed) · env (environment) · prop (generic object) ·
 texture · fg (foreground element). For those, fill the column "exactly what it must show" AND add `gen: "<subject prompt>"`.
 Ids are lowercase_underscores and must match the storyboard.
@@ -98,7 +98,7 @@ endcard: off
 - pp_scriptlint-style self-score: hook + promise ≤ 30 s ✓ · something new every 20–40 s ✓ · re-hooks ≈ 3:00 and 6:00 ✓ · midpoint twist ✓
   · ≥ 2 scenes ✓ · final line ≤ 15 words ✓ · no filler / hype words ✓ · every sentence has a **hit word** and a picture ✓
 - build compositions ≥ 25 % of beats, each different ✓ · nothing reused from the last 3 episodes' opening/look/signature scenes ✓
-- living pictures (`scene`) ≥ 20 % of beats ✓ · real-3D ≤ 10 % ✓ · generated images ≤ 1 per 4 beats, all allowed roles ✓
+- living pictures (`scene`) ≥ 20 % of beats ✓ · real-3D ≤ 10 % ✓ · invented beats ≥ 60 %, templates ≤ 2× each, rhythm variation ≥ 35 %, AI art ≤ ~40 % in allowed roles (final-cut.md) ✓
 - no mode 3× in a row ✓ · every beat ≥ 3 s has shot= or a *3d mode ✓ · every at:/@word exists in its sentence ✓
 - every asset id in §5 is listed in §2 ✓ · every number in §3 is listed in §1 ✓
 ````

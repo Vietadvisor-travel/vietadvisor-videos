@@ -20,21 +20,29 @@ The rulebook is `poison-pill-studio/` (SKILL.md and references/). The engine wit
    - Run `cd studio && python3 tools/pp_pack.py import ../jobs/<slug>/<slug>_assets.zip`.
    - Read `jobs/<slug>/RESEARCH_<slug>.md` and the printed image catalogue (also saved as
      `studio/research/<slug>_catalog.md`).
-   - **Use only catalogue ids.** Where no image exists, invent the picture with `build` or a custom scene. Never draw a
+   - **Use only catalogue ids.** Where no image exists, use AI moment art from the pack, or a custom scene over a picture. Never draw a
      real person.
 3. **Direct:**
    - Write the director package exactly as `poison-pill-studio/references/director-package.md` defines, built on the
      research: angle (anti-Wikipedia test), format (not the last one), value rubric ≥ 15/20, thesis, reveal ladder,
-     A/V script with hit words, voice cast (`voice-direction.md`), 3–6 custom scenes (`custom-scenes.md`), ≥ 25 % build.
+     A/V script with hit words, voice cast (`voice-direction.md`), 6–12 custom scenes (`custom-scenes.md`), invented beats ≥ 50 %.
    - Check history first: `cd studio && node tools/pp_history.mjs show`.
+   - **Follow `poison-pill-studio/references/final-cut.md`:**
+     - pictures lead: ≥ 75 % of beats are real photos, clips or AI art; drawn-only graphics ≤ 15 %; 3D at most 0–2
+       shots;
+     - fill the BEAT TABLE, with the swap test, for every sentence, and stay on the content (§2b);
+     - vary the rhythm (punches, montage runs, breaths), and use one motif per episode;
+     - write custom scenes built ON images, with spring and stagger motion.
    - Save it as `jobs/<slug>/EPISODE_<slug>.md`.
 4. **Build:**
    - Write `studio/stories/<slug>-a0.story … -aN.story`.
    - Run `node tools/pp_scriptlint.mjs` (≥ 8.5) and `node tools/pp_lint.mjs` on each act: 0 errors and ≥ 9.0.
    - Run `node tools/pp_sheet.mjs` on each act.
 5. **Critic (a fresh agent, never the builder):**
-   - Spawn a separate agent with the WOW gate from `references/gauntlet.md` on the sheets.
-   - Redesign every beat it scores ≤ 3/8. At most 3 rounds.
+   - Spawn a separate agent with the WOW gate from `references/gauntlet.md` plus the swap test (final-cut.md §6). It
+     must OPEN the sheet images and judge the pixels.
+   - Redesign every beat it scores ≤ 3/8 or that fails the swap test. At most 3 rounds.
+   - After a `--lite` draft render, repeat the check on 1 frame per beat taken from the real video.
 6. **Render:**
    - Run `node tools/make.mjs stories/<slug>-aN.story --fmt 16x9 --jobs <cores>` per act, in the background. Use
      `--resume` after any interruption.

@@ -1,5 +1,21 @@
 # Poison Pill Studio: changelog
 
+## v6.1 "Final cut" (Oct 2026): nothing mechanical
+- **`final-cut.md`:**
+  - Visual mix targets: ≥ 60 % invented, templates ≤ 20 % and each ≤ 2×, AI moment art 20–40 %, real b-roll 8–15 %.
+  - The BEAT TABLE with the swap test.
+  - Rhythm rules: punches, montage runs, breaths.
+  - The Remotion motion standard, and one motif per episode.
+  - The critic watches rendered frames.
+- **Custom scenes:** `spring()` (physical overshoot), `stagger()` (cascades), `wobble()` (organic drift), `mblur()`
+  (motion trails).
+- **Lint:**
+  - rhythm variation ≥ 35 %, and no 5 equal beats in a row;
+  - each template ≤ 2× per episode;
+  - invented beats ≥ 60 %.
+- **AI images:** moment art is allowed on up to ~40 % of beats. Real people, documents and logos stay real.
+- **Muse sourcing:** 25–40 moment-art images plus element cut-outs, and 10–20 licensed b-roll clips, all in the pack.
+
 ## v6 "Ultimate" (Oct 2026): research-built, written as code, found by itself, directed voice
 - **Content with real value (`story-mining.md`):**
   - Muse researches first, using a 13-section Story Mining Worksheet: 40 facts ranked by surprise, sourced numbers,

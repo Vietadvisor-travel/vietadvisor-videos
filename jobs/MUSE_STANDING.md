@@ -24,7 +24,7 @@ Choose a slug: lowercase-hyphen, e.g. `nokia`. Every image id starts with the sl
 - At the end, add 3 candidate angles and 3 candidate hooks. Claude chooses.
 - Go deep: use as many parallel agents as useful. Depth is the point.
 
-### 2. Images: 40–80 per episode, real first
+### 2. Images and clips: 40–80 real images, 25–40 moment art, 10–20 clips
 For every person, place, product, document and moment in the research:
 - **Real images:**
   - `python3 tools/pp_find.py get "<query>" <slug>_<what> --kind person|place|product|document|event --role cut|plate|prop`
@@ -38,13 +38,31 @@ For every person, place, product, document and moment in the research:
   - products, logos (identification only) and documents (`prop`);
   - 5–10 headline or document screenshots;
   - charts of key numbers if a source has them.
-- **AI images only for gaps:**
-  - clean plates, environments, empty rooms, objects, textures;
-  - never a real person, document, logo or event;
-  - import with `pp_img.py add … --gen "<tool>"`.
-  - Use the look prefixes in ai-images.md. Generate 5–15 per episode, for the moods the story needs (boardroom at
-    night, empty factory, rain on glass…).
-- **Describe every image**, because Claude can't see it before building:
+- **AI MOMENT ART (v6.1): 25–40 illustrations per episode.** This is what makes the film rich instead of a
+  slideshow.
+  - Read the research and list the 25–40 strongest moments: the founding room, the first big deal, the factory at full
+    speed, the crowd at launch, the boardroom the night it broke, the empty office after.
+  - Make one 16:9 illustration per moment (≥ 1920×1080), all in ONE style bible. Use the look prefix from ai-images.md
+    §3 so the whole episode matches.
+  - Ids: `<slug>_art_<moment>` (role `plate`).
+  - For 10–15 of them, also make 1–3 **separate element cut-outs** on a plain background (an object, a vehicle, a
+    product shape, a pile of money, a silhouette seen from behind). Ids: `<slug>_el_<object>` (role `cut`). Claude
+    animates these in front of the art for parallax.
+  - Add 5–10 generic mood plates (rain on glass, city at night from above, an empty trading floor, a server room,
+    textures).
+  - **Never** draw a real, identifiable person, a real document, logo or headline, or anything that pretends to be
+    archive. People appear only as silhouettes, from behind, as hands, or as crowds.
+  - Import each with `pp_img.py add <file> <id> --role plate|cut --gen "<tool>"`.
+- **REAL B-ROLL CLIPS (v6.1): 10–20 per episode, 2–4 s each.** Factories, streets, crowds, products in use, stock
+  tickers, archive TV.
+  - Sources:
+    - Pexels and Pixabay videos (their licences allow commercial use);
+    - Wikimedia Commons video;
+    - archive.org public domain;
+    - the company's own press videos, as editorial excerpts only, with credit.
+  - Import with `python3 tools/pp_clip.py add <video> <slug>_clip_<what> --start <s> --dur 3 --fps 12 --width 720 --credit "…" --license "…"`.
+  - Keep the whole pack under 90 MB: lower `--width` to 640 if needed.
+- **Describe every image and clip.** It makes directing faster and more precise:
   - write `jobs/<slug>/desc.json` as `{"<id>": "what it shows, who, when, orientation, notable details"}`;
   - mention where the subject sits ("CEO left third, looking right").
 

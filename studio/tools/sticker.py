@@ -19,7 +19,7 @@ def load_reg(): return json.load(open(REG, encoding='utf-8')) if os.path.exists(
 def save_reg(r):
     json.dump(r, open(REG, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     import base64   # images.js embeds data URLs so the render canvas is never tainted (file:// images would be)
-    out = {k: {**v, 'data': 'data:image/png;base64,' + base64.b64encode(open(os.path.join(ROOT, v['src']), 'rb').read()).decode()} for k, v in r.items() if os.path.exists(os.path.join(ROOT, v['src']))}
+    out = {k: {**v, 'data': ('data:image/jpeg;base64,' if v['src'].lower().endswith(('.jpg', '.jpeg')) else 'data:image/png;base64,') + base64.b64encode(open(os.path.join(ROOT, v['src']), 'rb').read()).decode()} for k, v in r.items() if os.path.exists(os.path.join(ROOT, v['src']))}
     open(os.path.join(LIB, 'images.js'), 'w').write('window.IMAGES = ' + json.dumps(out) + ';\n')
 
 def fetch(src):
@@ -47,8 +47,13 @@ def make(src, id_, cut='auto', credit='', license_=''):
     if cut == 'auto' and not has_alpha: im = cutout(im)
     bbox = im.getbbox() if (cut != 'none' or has_alpha) else None
     if bbox: im = im.crop(bbox)
-    im.thumbnail((1000, 1000), Image.LANCZOS); p = os.path.join(IMG, id_ + '.png'); im.save(p, optimize=True)
-    r = load_reg(); r[id_] = { 'src': f'engine/library/img/{id_}.png', 'w': im.width, 'h': im.height, 'cut': cut != 'none' or has_alpha, 'credit': credit, 'license': license_, 'from': src if re.match(r'^https?://', src) else os.path.basename(src) }
+    # v6.1: full-frame plates stay sharp at 1920×1080 (JPEG q90, small); cut-outs keep alpha (PNG ≤ 1400 px)
+    cutl = cut != 'none' or has_alpha
+    for ext in ('.png', '.jpg'):
+        if os.path.exists(os.path.join(IMG, id_ + ext)): os.remove(os.path.join(IMG, id_ + ext))
+    if cutl: im.thumbnail((1400, 1400), Image.LANCZOS); ext = '.png'; p = os.path.join(IMG, id_ + ext); im.save(p, optimize=True)
+    else: im.thumbnail((1920, 1920), Image.LANCZOS); ext = '.jpg'; p = os.path.join(IMG, id_ + ext); im.convert('RGB').save(p, quality=90, optimize=True)
+    r = load_reg(); r[id_] = { 'src': f'engine/library/img/{id_}{ext}', 'w': im.width, 'h': im.height, 'cut': cut != 'none' or has_alpha, 'credit': credit, 'license': license_, 'from': src if re.match(r'^https?://', src) else os.path.basename(src) }
     save_reg(r); print(f'sticker {id_}: {im.width}x{im.height} → {p}', '' if credit or not re.match(r'^https?://', src) else '  ⚠ add --credit/--license')
 
 def plate(src, id_, credit='', license_='', k=14):

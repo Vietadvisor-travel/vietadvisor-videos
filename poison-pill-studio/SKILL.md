@@ -17,6 +17,7 @@ MagnatesMedia collage × LEMMiNO 3D atmosphere.
 > made of photo + slammed word + stamp + shake is a slideshow, and it does not ship.
 
 ## What makes v5 different (read first)
+00. **v6.1 Final cut (`final-cut.md`, which OVERRIDES older shares and caps in this file):** pictures lead (≥ 75 % real photos, clips or AI art; drawn-only ≤ 15 %; 3D at most 0–2 shots); stay on the content; ≥ 60 % invented beats, templates ≤ 2× each, a beat table with the swap test, varied rhythm, spring and stagger motion, AI moment art and real b-roll clips, and a critic that watches rendered frames.
 00. **v6 Ultimate:**
     - Content starts from Muse's deep research (`story-mining.md`: 40 facts, primary documents, decisions, mechanism,
       12 rotating formats, a value rubric of 20 points).
@@ -136,6 +137,7 @@ Pick the one that best serves this moment of the film and its neighbours (variet
 | `references/story-mining.md` | **always**: research worksheet, angle types, anti-Wikipedia test, insight density, 12 formats, value rubric |
 | `references/custom-scenes.md` | **always**: write a beat's animation as code, the API, worked examples |
 | `references/image-sourcing.md` | finding licensed real images automatically (`pp_find.py`) |
+| `references/final-cut.md` | **always (v6.1)**: the anti-mechanical method: visual mix targets, the BEAT TABLE + swap test, rhythm, Remotion-standard motion, AI moment art, the critic on real frames |
 | `references/voice-direction.md` | **always**: cast the narrator (blends, prosody mixes, audition), per-act reads, sentence roles, `{tags}`, quote voices and their rules |
 | `references/build.md` | **always**: the free-form composer, how to turn any sentence into its own picture, 25 examples, freshness rules |
 | `references/music.md` | music library (safe sources, moods), how the score is cut to the acts automatically |
