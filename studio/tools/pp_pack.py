@@ -9,8 +9,8 @@
         → images copied into engine/library/img, registry merged (credits and AI flags kept), images.js rebuilt.
           Prints CATALOG.md. Ids already present are replaced by the pack's version.
   python3 tools/pp_pack.py list packs/<slug>_assets.zip
-  python3 tools/pp_pack.py music-export          → packs/music_library.zip (the whole music/ library: tracks + library.json)
-  python3 tools/pp_pack.py music-import packs/music_library.zip   → music/ merged (tracks added, library.json entries merged)
+  python3 tools/pp_pack.py music-export          → packs/music_library_1.zip, _2.zip … (MP3 128 kb/s, each ≤ 90 MB)
+  python3 tools/pp_pack.py music-import <zip> [<zip> …]   → music/ merged (tracks added, library.json entries merged)
 Only PNG/JPG/WEBP images and the two metadata files are read from a pack; ids must be lowercase_underscores."""
 import sys, os, json, re, zipfile, shutil, subprocess
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); LIB = os.path.join(ROOT, 'engine', 'library'); REG = os.path.join(LIB, 'images.json')
@@ -67,14 +67,35 @@ def imp(zp):
     print(f'imported {n} images from {zp}'); print(cat)
 
 AUD = ('.mp3', '.wav', '.ogg', '.flac', '.m4a', '.json')
-def music_export():
-    d = os.path.join(ROOT, 'music'); zp = os.path.join(ROOT, 'packs', 'music_library.zip'); os.makedirs(os.path.dirname(zp), exist_ok=True)
-    if not os.path.exists(os.path.join(d, 'library.json')): sys.exit('no music/library.json — build the library with pp_music.py add first')
-    with zipfile.ZipFile(zp, 'w', zipfile.ZIP_STORED) as z:
-        for base, _, fs in os.walk(d):
-            for f in fs:
-                if f.lower().endswith(AUD): full = os.path.join(base, f); z.write(full, os.path.relpath(full, ROOT).replace(os.sep, '/'))
-    print(f'music library → {zp} ({os.path.getsize(zp) / 1e6:.1f} MB)')
+def music_export(kbps=128, max_mb=90):
+    """Tracks are transcoded to MP3 (WAV masters would be ~10x bigger; the score is mixed under the voice, 128 kb/s is
+    transparent there) and split into parts of ≤ 90 MB each (GitHub refuses files over 100 MB)."""
+    import tempfile
+    d = os.path.join(ROOT, 'music'); lj = os.path.join(d, 'library.json'); os.makedirs(os.path.join(ROOT, 'packs'), exist_ok=True)
+    if not os.path.exists(lj): sys.exit('no music/library.json — build the library with pp_music.py add first')
+    L = json.load(open(lj, encoding='utf-8')); tmp = tempfile.mkdtemp(); items = []
+    for tid, v in L.items():
+        src = os.path.join(ROOT, v['file'])
+        if not os.path.exists(src): print('missing, skipped:', tid); continue
+        arc = 'music/' + tid + '.mp3'; out = os.path.join(tmp, tid + '.mp3')
+        if src.lower().endswith('.mp3'): shutil.copy(src, out)
+        else: subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', src, '-c:a', 'libmp3lame', '-b:a', f'{kbps}k', out], check=True)
+        items.append((tid, arc, out, {**v, 'file': arc}))
+    for f in os.listdir(os.path.join(ROOT, 'packs')):
+        if f.startswith('music_library') and f.endswith('.zip'): os.remove(os.path.join(ROOT, 'packs', f))
+    parts, cur, size = [], [], 0
+    for it in items:
+        sz = os.path.getsize(it[2])
+        if cur and size + sz > max_mb * 1e6: parts.append(cur); cur, size = [], 0
+        cur.append(it); size += sz
+    if cur: parts.append(cur)
+    for k, part in enumerate(parts, 1):
+        zp = os.path.join(ROOT, 'packs', f'music_library_{k}.zip')
+        with zipfile.ZipFile(zp, 'w', zipfile.ZIP_STORED) as z:
+            for tid, arc, out, meta in part: z.write(out, arc)
+            z.writestr('music/library.json', json.dumps({tid: meta for tid, arc, out, meta in part}, ensure_ascii=False, indent=1))
+        print(f'  {zp}  {len(part)} tracks  {os.path.getsize(zp) / 1e6:.1f} MB')
+    shutil.rmtree(tmp); print(f'music library: {len(items)} tracks in {len(parts)} part(s) → copy packs/music_library_*.zip to jobs/_music/')
 def music_import(zp):
     z = zipfile.ZipFile(zp); old = {}; lj = os.path.join(ROOT, 'music', 'library.json')
     if os.path.exists(lj): old = json.load(open(lj, encoding='utf-8'))
@@ -93,6 +114,6 @@ if __name__ == '__main__':
     elif a[0] == 'export': export(a[1], opt('ids').split(',') if opt('ids') else None, opt('prefix'), opt('desc'), opt('research'))
     elif a[0] == 'import': imp(a[1])
     elif a[0] == 'music-export': music_export()
-    elif a[0] == 'music-import': music_import(a[1])
+    elif a[0] == 'music-import': [music_import(z) for z in a[1:]]
     elif a[0] == 'list': z, P = read_pack(a[1]); print(z.read('CATALOG.md').decode('utf-8'))
     else: print(__doc__)

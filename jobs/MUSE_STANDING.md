@@ -61,8 +61,9 @@ cd .. && git add jobs/<slug> && git commit -m "[<slug>] research + assets pack" 
 
 ### Music library (once, and again when you add tracks)
 - Build it with `pp_music.py add` (references/music.md: ≥ 3 instrumental tracks per mood, safe licences only).
-- Pack it: `cd studio && python3 tools/pp_pack.py music-export && mkdir -p ../jobs/_music && cp packs/music_library.zip ../jobs/_music/`
-- Commit and push it the same way.
+- Pack it. The tool transcodes to MP3 128 kb/s and splits into parts of ≤ 90 MB each:
+  `cd studio && git pull --rebase && python3 tools/pp_pack.py music-export && mkdir -p ../jobs/_music && rm -f ../jobs/_music/music_library*.zip && cp packs/music_library_*.zip ../jobs/_music/`
+- Commit and push `jobs/_music/`. Never commit WAV files, and never commit any file over 95 MB.
 
 ## Monthly: "nghiên cứu chủ đề tháng"
 Deliver `jobs/TOPICS_<yyyy-mm>.md` with 60 candidate topics. For each candidate:

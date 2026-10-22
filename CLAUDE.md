@@ -6,7 +6,7 @@
   - `RESEARCH_<slug>.md`: the story-mining worksheet, sections A–M;
   - `<slug>_assets.zip`: real photos (already cut out), AI fills for gaps only, a catalogue of what each image shows, and
     credits;
-  - once only: `jobs/_music/music_library.zip`.
+  - once only: `jobs/_music/music_library_*.zip` (MP3, split into parts of ≤ 90 MB; `setup.sh` imports them).
 - **Claude Code** (you, in this repo): everything else. Direction, script, storyboard, custom scenes, voice, render,
   critic. The owner sends a single line.
 
