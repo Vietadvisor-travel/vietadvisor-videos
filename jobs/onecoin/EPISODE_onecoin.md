@@ -366,3 +366,12 @@ Not applicable: Claude Code builds and renders this episode itself (studio mode,
 - no cartoon characters; AI art never shows a real person's face (silhouettes from behind only)
 - every number in §3 is in §1 with its research row; derived numbers (≈ 5,700×, "more than a quarter", ≈ 1¢) are arithmetic on sourced figures
 - on-screen illustrations are labelled: the member back-office screens ("ILLUSTRATION"), the price staircase ("steps illustrative")
+
+### Critic results (independent fresh agents, WOW gate + swap test)
+| round | judged | beats ≥ 5/8 | swap pass | verdict | main fixes after it |
+|---|---|---|---|---|---|
+| 1 | contact sheets | 34 % | — | REJECT | contrast, readable type, quote cards on images, misleading plates (ECHR room, "McKinsey" lobby, private jet), euro cut-out, sentence ladder 7→4 beats |
+| 2 | contact sheets | 52 % | — | ONE MORE PASS | 12 flagged beats, edge-safe type, short lower thirds, fewer reused plates |
+| 3 | frames of the rendered film | 71 % | 81 % | ONE MORE PASS | type finishes early, edge cuts, DOJ/IRS-CI label, Armenta silhouette (then final re-render) |
+Gate (85 % ≥ 5/8, 90 % swap) NOT met after the 3 allowed rounds. Weakest act: a3.
+Final: 10:05, 1920×1080, −14.0 LUFS integrated, −1.9 dBFS peak.
