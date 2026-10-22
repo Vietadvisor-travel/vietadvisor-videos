@@ -45,44 +45,44 @@ endcard: off
 # cine act=fall date="SAT 7 OCTOBER 2017 · LISBON" shot="ews|1.18:pt:.5,.45@Lisbon/dolly" fx="scene:x;plate:onecoin_art_lisbon_chair;air:dust;light:sweep@event|build:x;el:S=txt:STEP 2 · RUN,.5,.16,46,gold;do:S.type@Step"
 Step two. On Saturday, the seventh of October, 2017, OneCoin opened a big event in **Lisbon**.
 
-# cine act=fall shot="1.35:pt:.5,.45|1.05:pt:.5,.5@showed/glide" fx="scene:x;plate:onecoin_art_lisbon_chair;air:dust;light:flicker|stamp:NO-SHOW;at:showed;x:.5;y:.3;col:grey;size:120;rot:-8"
+# cine act=fall shot="1.15:pt:.5,.45|1.05:pt:.5,.5@showed/glide" fx="scene:x;plate:onecoin_art_lisbon_chair;air:dust;light:flicker|stamp:NO-SHOW;at:showed;x:.5;y:.3;col:grey;size:120;rot:-8"
 Its founder never **showed**.
 
-# cine act=fall bg=onecoin_court_sdny bgBlur=0 bgDim=.35 shot="ws;angle:low|1.2:pt:.5,.35@warrant/rise" fx="date:12 OCT 2017;at:Five;x:.06;y:.12|build:x;el:W=txt:U.S. ARREST WARRANT,.5,.5,68~R=txt:RUJA IGNATOVA,.5,.62,44;do:W.drop@issued~R.rise@arrest"
+# cine act=fall bg=onecoin_court_sdny bgBlur=0 bgDim=.35 shot="ws;angle:low|1.15:pt:.5,.35@warrant/rise" fx="date:12 OCT 2017;at:Five;x:.06;y:.12|build:x;el:W=txt:U.S. ARREST WARRANT,.5,.5,68~R=txt:RUJA IGNATOVA,.5,.62,44;do:W.drop@issued~R.rise@arrest"
 Five days later, the United States issued a **warrant** for her arrest.
 
-# cine act=fall bg=clip:onecoin_clip_rain_window bgBlur=0 bgDim=.05 shot="1.2:pt:.5,.5|1:pt:.5,.5@tired/glide" fx="lower:KONSTANTIN IGNATOV~her brother, in court testimony;at:brother"
+# cine act=fall bg=clip:onecoin_clip_rain_window bgBlur=0 bgDim=.05 shot="1.15:pt:.5,.5|1:pt:.5,.5@tired/glide" fx="lower:KONSTANTIN IGNATOV~Trial testimony;at:brother|build:x;el:T=txt:VERY TIRED,.5,.4,130,gold;do:T.type@tired"
 She told her brother she was very **tired**.
 
 # cine act=fall shot="1|1.08:pt:.62,.55@Athens/dolly" fx="code:two_tickets;sfx:foley_book_close@passport~foley_paper@Vienna~foley_paper@Athens"
 She had what he called a "big **passport**", and he bought her tickets to Vienna and to Athens.
 
-# cine act=fall bg=world map="23.4,41.8,8" map2="23.6,39.8,8.6" mapAt=Ryanair mapDur=2.4 date="WED 25 OCTOBER 2017" fg="clip:onecoin_clip_takeoff;x:.78;y:.74;h:.3;style:polaroid;at:boarded" shot="ws|1.12:pt:.5,.5@Athens/glide" fx="pin:SOFIA;ll:23.32,42.7;at:Sofia|route:23.32,42.7>23.73,37.98;at:Ryanair;dur:2|pin:ATHENS;ll:23.73,37.98;at:Athens;col:red"
+# cine act=fall bg=world map="23.4,41.8,8" map2="23.6,39.8,8.6" mapAt=Ryanair mapDur=2.4 date="WED 25 OCTOBER 2017" fg="clip:onecoin_clip_takeoff;x:.74;y:.72;h:.28;style:polaroid;at:boarded" shot="ws|1.12:pt:.5,.5@Athens/glide" fx="pin:SOFIA;ll:23.32,42.7;at:Sofia|route:23.32,42.7>23.73,37.98;at:Ryanair;dur:2|pin:ATHENS;ll:23.73,37.98;at:Athens;col:red"
 On Wednesday, the twenty-fifth of October, 2017, she boarded a **Ryanair** plane from Sofia to Athens.
 
-# cine act=fall shot="1.3:pt:.36,.5|1.05:pt:.4,.5@bodyguard/drop" fx="scene:x;plate:onecoin_art_airport_dawn;air:dust,rays;light:sun@.8,.25|build:x;el:B=txt:ONE BAG,.72,.3,44~G=txt:ONE BODYGUARD,.72,.4,44;do:B.drop@bag~G.drop@bodyguard"
+# cine act=fall shot="1.15:pt:.36,.5|1.05:pt:.4,.5@bodyguard/drop" fx="scene:x;plate:onecoin_art_airport_dawn;air:dust,rays;light:sun@.8,.25|build:x;el:B=txt:ONE BAG,.72,.3,44~G=txt:ONE BODYGUARD,.72,.4,44;do:B.drop@bag~G.drop@bodyguard"
 One bag. One **bodyguard**. [BEAT]
 
-# cine act=fall bg=onecoin_athens_airport bgBlur=0 bgDim=0 bgTone=color shot="ews|1.25:pt:.42,.6@Athens/dolly" fx="pin:ATHENS AIRPORT;ll:23.95,37.94;at:landed|lower:ATHENS INTERNATIONAL AIRPORT~25 October 2017;at:Athens"
+# cine act=fall bg=onecoin_athens_airport bgBlur=0 bgDim=0 bgTone=color shot="ews|1.15:pt:.42,.6@Athens/dolly" fx="pin:ATHENS AIRPORT;ll:23.95,37.94;at:landed|lower:ATHENS INTERNATIONAL AIRPORT~25 October 2017;at:Athens"
 She landed in **Athens**.
 
-# cine act=fall shot="ws|1.6:pt:.5,.5@Ignatova/glide" fx="scene:x;plate:onecoin_art_athens_light;air:dust,rays;light:sun@.5,.3|build:x;el:L=txt:LAST CONFIRMED SIGHTING,.5,.16,44;do:L.type@last~L.dim@Ignatova"
+# cine act=fall shot="ws|1.15:pt:.5,.5@Ignatova/glide" fx="scene:x;plate:onecoin_art_athens_light;air:dust,rays;light:sun@.5,.3|build:x;el:L=txt:LAST CONFIRMED SIGHTING,.5,.16,44;do:L.type@last~L.dim@Ignatova"
 And that is the last confirmed sighting of Ruja Ignatova. {hold}
 
 # cine act=after bg=onecoin_art_mood_rain bgBlur=4 bgDim=.5 mid="onecoin_ruja;x:.32;h:.66;tone:bw;at:c1" shot="ws|1.1:1@again/dolly" fx="build:x;el:B=txt:HER BROTHER,.68,.36,49~T=txt:NO CONTACT,.68,.5,96,gold~S=txt:SINCE OCTOBER 2017,.68,.62,44;do:B.drop@brother~T.type@contacted~S.rise@again"
 She never contacted her brother **again**.
 
-# cine act=after bg=onecoin_sofia bgBlur=8 bgDim=.4 mid="onecoin_hq_office;x:.66;h:.8;style:print;tape;at:c1;rot:3" shot="1.12:1|1:1@pause/rack" fx="stamp:BUSINESS AS USUAL;at:pause;x:.32;y:.45;col:gold;size:70;rot:-8"
+# cine act=after bg=onecoin_sofia bgBlur=8 bgDim=.4 mid="onecoin_hq_office;x:.66;h:.8;style:print;tape;at:c1;rot:3" shot="1.12:1|1:1@pause/rack" fx="stamp:BUSINESS AS USUAL;at:pause;x:.36;y:.45;col:gold;size:60;rot:-8"
 But the company didn't even **pause**.
 
 # cine act=after bg=onecoin_art_mood_lobby bgBlur=6 bgDim=.45 shot="ws|1.06:pt:.5,.45@months/dolly" fx="calendar:x;from:2017-11;n:16;at:ran|build:x;el:F=txt:KONSTANTIN · FORMER FORKLIFT DRIVER,.5,.14,49;do:F.drop@forklift"
 Her brother, a former forklift driver, ran it for sixteen more **months**.
 
-# cine act=after shot="ws|1.25:pt:.5,.5@coins/dolly" fx="scene:x;plate:onecoin_art_mood_city;air:bokeh|build:x;el:C=@onecoin_el_gold_coin,.5,.45,.2~Y=txt:INTO 2019,.5,.72,90,gold;do:C.multiply:9@buying~Y.type@coins"
+# cine act=after shot="ws|1.15:pt:.5,.5@coins/dolly" fx="scene:x;plate:onecoin_art_mood_city;air:bokeh|build:x;el:C=@onecoin_el_gold_coin,.5,.45,.2~Y=txt:INTO 2019,.5,.72,90,gold;do:C.multiply:9@buying~Y.type@coins"
 Members kept buying coins into **2019**.
 
 # cine act=after shot="1|1.08:pt:.4,.5@done#2/dolly" fx="code:three_ticks;sfx:foley_marker@money~foley_marker@Run"
 Take the money: done. Run: **done**.
 
-# cine act=after bg=onecoin_art_courtroom bgBlur=4 bgDim=.35 shot="1.2:pt:.5,.45|ws@else/whip" hero="BLAME SOMEONE ELSE;at:blame;font:serif;size:96;pos:c;y:.42;col:#c9a85a" sup="STEP 3;at:One"
+# cine act=after bg=onecoin_art_courtroom bgBlur=4 bgDim=.35 shot="1.15:pt:.5,.45|ws@else/whip" hero="BLAME SOMEONE ELSE;at:blame;font:serif;size:96;pos:c;y:.42;col:#e2c27a" sup="STEP 3;at:One;col:#e2c27a"
 One step left: blame someone **else**.

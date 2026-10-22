@@ -28,31 +28,31 @@ endcard: off
 }
 #! end
 
-# cine act=after shot="1.3:pt:.5,.5|ws@fast/whip" fx="scene:x;plate:onecoin_art_courtroom;air:dust;light:sweep@blame|build:x;el:H=@onecoin_el_handcuffs,.5,.62,.16;do:H.drop@fast"
+# cine act=after shot="1.15:pt:.5,.5|ws@fast/whip" fx="scene:x;plate:onecoin_art_courtroom;air:dust;light:sweep@blame|build:x;el:H=@onecoin_el_handcuffs,.5,.62,.16;do:H.drop@fast"
 The blame arrived **fast**.
 
-# cine act=after bg=world map="100.5,13,4.5" map2="100,9.5,7" mapAt=arrested mapDur=1.8 fg="onecoin_art_thailand_villa;x:.74;y:.66;h:.32;style:polaroid;tape;at:Greenwood;rot:4" shot="ws|1.06:pt:.45,.5@Samui/glide" fx="date:JULY 2018;at:July;x:.06;y:.12|pin:KOH SAMUI;ll:100.0,9.5;at:Samui;col:red"
+# cine act=after bg=world map="100.5,13,4.5" map2="100,9.5,7" mapAt=arrested mapDur=1.8 fg="onecoin_art_thailand_villa;x:.72;y:.64;h:.28;style:polaroid;tape;at:Greenwood;rot:4" shot="ws|1.06:pt:.45,.5@Samui/glide" fx="date:JULY 2018;at:July;x:.06;y:.12|pin:KOH SAMUI;ll:100.0,9.5;at:Samui;col:red"
 In July 2018, Greenwood was arrested on the Thai island of Koh **Samui**.
 
-# cine act=after bg=onecoin_lax bgBlur=0 bgDim=.15 fg="onecoin_el_handcuffs;x:.5;y:.8;h:.16;at:arrested;in:drop" shot="ews|1.2:pt:.55,.5@arrested/dolly" fx="pin:LAX;ll:-118.4,33.94;at:Angeles|date:6 MARCH 2019 · LAX;at:March;x:.06;y:.12|lower:KONSTANTIN IGNATOV~arrested on arrival;at:arrested"
+# cine act=after bg=onecoin_lax bgBlur=0 bgDim=.15 fg="onecoin_el_handcuffs;x:.5;y:.8;h:.16;at:arrested;in:drop" shot="ews|1.15:pt:.55,.5@arrested/dolly" fx="pin:LAX;ll:-118.4,33.94;at:Angeles|date:6 MARCH 2019 · LAX;at:March;x:.06;y:.12|lower:KONSTANTIN IGNATOV~Arrested at LAX;at:arrested"
 In March 2019, her brother's plane landed in Los Angeles, and he was **arrested** on arrival.
 
 # cine act=after bg=onecoin_court_sdny bgBlur=0 bgDim=.4 shot="ws;angle:low|1.15:pt:.5,.4@ones/rise" fx="quote:a pyramid scheme based on smoke and mirrors more than zeroes and ones;at:pyramid;by:Geoffrey Berman, U.S. Attorney (SDNY), March 2019;x:.5;y:.36;rate:.17|smoke;at:smoke"
 New York's top federal prosecutor called OneCoin "a pyramid scheme based on smoke and mirrors more than zeroes and **ones**."
 
-# cine act=after shot="ews|1.2:pt:.5,.45@firm/dolly" fx="scene:x;plate:onecoin_art_frosted_doors;air:dust;light:sweep@washed|lower:MARK SCOTT~former Locke Lord partner;at:Scott"
+# cine act=after shot="ews|1.15:pt:.5,.45@firm/dolly" fx="scene:x;plate:onecoin_art_frosted_doors;air:dust;light:sweep@washed|lower:MARK SCOTT~Locke Lord lawyer;at:Scott"
 Then came the man who washed the money: Mark Scott, a partner at a major law **firm**.
 
 # cine act=after bg=onecoin_art_vault_glow bgBlur=3 bgDim=.3 shot="1|1.08:pt:.5,.5@dollars/dolly" fx="build:x;el:F=txt:FENERO FUNDS · BVI · CAYMAN,.5,.2,57~C=@onecoin_euro_cut,.2,.55,.4~N=num:400000000:$,.6,.55,150~A=arrow:C>N;do:F.drop@funds~A.draw@moved~C.slideR@moved~N.count@four"
 His fake investment funds moved about four hundred million **dollars**.
 
-# cine act=after shot="1.2:pt:.4,.5|1:pt:.45,.5@million/truck" fx="scene:x;plate:onecoin_yacht;air:dust;light:sun@.8,.2|build:x;el:N=txt:$50M+,.3,.32,150,gold~T=txt:HIS FEE,.3,.46,53~F=txt:LATER FORFEITED: A YACHT · TWO PORSCHES,.3,.56,44;do:T.drop@fee~N.zoom@million~F.rise@million"
+# cine act=after shot="1.15:pt:.4,.5|1:pt:.45,.5@million/truck" bg=onecoin_art_mood_city bgBlur=4 bgDim=.35 fx="build:x;el:Y=@onecoin_el_yacht,.68,.66,.3~N=txt:$50M+,.3,.32,150,gold~T=txt:HIS FEE,.3,.46,53~F=txt:LATER FORFEITED: A YACHT · TWO PORSCHES,.3,.56,44;do:T.drop@fee~N.zoom@million~Y.slideL@million~F.rise@million"
 His fee: more than fifty **million**.
 
-# cine act=after bg=onecoin_art_courtroom bgBlur=4 bgDim=.3 shot="1.2:pt:.5,.45|ws@scam/dolly" fx="build:x;el:D=txt:THE DEFENCE,.5,.32,44~Q=txt:HE DIDN'T KNOW,.5,.46,100,gold;do:D.drop@defence~Q.type@know"
+# cine act=after bg=onecoin_art_frosted_doors bgBlur=2 bgDim=.3 shot="1.15:pt:.5,.45|ws@scam/dolly" fx="build:x;el:D=txt:THE DEFENCE,.5,.3,56~Q=txt:HE DIDN'T KNOW,.5,.46,100,gold;do:D.drop@defence~Q.type@know"
 His defence: he didn't know it was a **scam**.
 
-# cine act=after bg=onecoin_gavel bgBlur=3 bgDim=.45 shot="ws|1.1:pt:.4,.42@hours/crash" hero="≈ 4 HOURS;at:four;font:impact;size:170;pos:l;x:.38;y:.42" sup="GUILTY ON BOTH COUNTS · NOV 2019;at:hours"
+# cine act=after bg=onecoin_art_mood_lobby bgBlur=4 bgDim=.4 shot="ws|1.1:pt:.4,.42@hours/crash" hero="≈ 4 HOURS;at:four;font:impact;size:170;pos:l;x:.38;y:.42" sup="GUILTY ON BOTH COUNTS · NOV 2019;at:hours"
 The jury took about four **hours**.
 
 # cine act=after shot="1|1.04:pt:.5,.4@twenty/glide" fx="code:sentence_ladder;step:1;keys:twenty;sfx:impact_cinematic@sentences~impact_cinematic@twenty"
@@ -70,14 +70,14 @@ Konstantin, who testified about his sister's escape: time served, and **free**.
 # cine act=lesson shot="1.04:pt:.5,.55|1:pt:.5,.5@never/dolly" fx="code:sentence_ladder;step:6;keys:never;sfx:impact_cinematic@never"
 And Ruja? Charged on five counts, never **tried**. In law, she is presumed innocent.
 
-# cine act=after trans=whip shot="1.3:pt:.4,.6|1.05:pt:.45,.55@sequel/dolly" fx="scene:x;plate:onecoin_art_airport_dawn;air:dust,rays;light:sweep@escape|build:x;el:S=txt:THE SEQUEL,.3,.25,100,gold;do:S.type@sequel"
+# cine act=after trans=whip shot="1.15:pt:.4,.6|1.05:pt:.45,.55@sequel/dolly" fx="scene:x;plate:onecoin_art_mood_fog;air:fog,dust;light:sweep@escape|build:x;el:A=@onecoin_el_ankle_tag,.5,.62,.2~S=txt:THE SEQUEL,.5,.3,110,gold;do:A.drop@escape~S.type@sequel"
 Then even her escape got a **sequel**.
 
-# cine act=after shot="ews|1.2:pt:.5,.45@spy/dolly" fx="scene:x;plate:onecoin_luxembourg;air:dust;light:sweep@Luxembourg|lower:FRANK SCHNEIDER~ex-deputy ops director, Luxembourg intelligence;at:Schneider|date:APRIL 2021 · FRANCE;at:arrested;x:.06;y:.12"
+# cine act=after shot="ews|1.15:pt:.5,.45@spy/dolly" fx="scene:x;plate:onecoin_luxembourg;air:dust;light:sweep@Luxembourg|lower:FRANK SCHNEIDER~Ex-Luxembourg spy;at:Schneider|date:APRIL 2021 · FRANCE;at:arrested;x:.06;y:.12"
 Frank Schneider, a former Luxembourg spy and OneCoin's security adviser, was arrested in France in **2021**.
 
-# cine act=after shot="1.25:pt:.4,.55|1:pt:.5,.5@vanished/dolly" fx="scene:x;plate:onecoin_art_ankle_desk;fg:onecoin_el_ankle_tag@.3,.9,.2;air:dust,rays;light:sweep@house|build:x;el:G=txt:GPS TAG · HOUSE ARREST,.72,.3,44~L=txt:SIGNAL LOST,.72,.44,96,red~M=txt:MAY 2023,.72,.56,44;do:G.drop@tag~L.zoom@vanished~M.rise@May"
+# cine act=after shot="1.15:pt:.4,.55|1:pt:.5,.5@vanished/dolly" fx="scene:x;plate:onecoin_art_ankle_desk;fg:onecoin_el_ankle_tag@.3,.9,.2;air:dust,rays;light:sweep@house|build:x;el:G=txt:GPS TAG · HOUSE ARREST,.72,.3,44~L=txt:SIGNAL LOST,.72,.44,96,red~M=txt:MAY 2023,.72,.56,44;do:G.drop@tag~L.zoom@vanished~M.rise@May"
 Under house arrest, with a GPS tag on his ankle, he **vanished** in May 2023.
 
-# cine act=after shot="ws|1.3:pt:.5,.5@fugitive/drop" fx="scene:x;plate:onecoin_art_mansion_sea;air:fog,rain;light:flicker|stamp:FUGITIVE;at:fugitive;x:.5;y:.42;col:red;size:120;rot:-6"
+# cine act=after shot="ws|1.15:pt:.5,.5@fugitive/drop" bg=clip:onecoin_clip_airport bgBlur=2 bgDim=.35 fx="stamp:FUGITIVE;at:fugitive;x:.5;y:.42;col:red;size:120;rot:-6"
 He is still a **fugitive**.

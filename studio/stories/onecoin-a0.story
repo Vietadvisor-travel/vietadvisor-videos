@@ -48,7 +48,7 @@ endcard: off
 }
 #! end
 
-# cine act=setup bg=clip:onecoin_clip_ruja_stage bgBlur=0 bgDim=.1 bgTone=color date="11 JUNE 2016 · WEMBLEY ARENA, LONDON" shot="ws|1.22:pt:.42,.5@gown/glide" fx="lower:FBI release footage~Public domain;at:stage"
+# cine act=setup bg=clip:onecoin_clip_ruja_stage bgBlur=0 bgDim=.1 bgTone=color date="11 JUNE 2016 · WEMBLEY ARENA, LONDON" shot="ws|1.15:pt:.42,.5@gown/glide" fx="lower:FBI release footage~Public domain;at:stage"
 On Saturday, the eleventh of June, 2016, a woman in a red **gown** walked onto the stage at Wembley Arena.
 
 # cine act=rise shot="ews;angle:low|1.08:pt:.5,.42@arena/rise" fx="scene:x;plate:onecoin_art_wembley_gown;tone:color;air:dust,rays;light:sweep@arena"
@@ -57,13 +57,13 @@ Thousands of her investors filled the **arena**.
 # cine act=rise bg=onecoin_wembley_interior bgBlur=14 bgDim=.55 mid="clip:onecoin_clip_ruja_close;x:.3;h:.66;style:raw;border:off" shot="ms|mcu:1@Bitcoin/dolly" fx="quote:In two years, nobody will speak about Bitcoin anymore.;at:promised;by:Ruja Ignatova, Wembley, June 2016;x:.7;y:.36;rate:.17"
 She promised them that in two years, nobody would speak about **Bitcoin** anymore.
 
-# cine act=rise bg=onecoin_wembley_night bgBlur=12 bgDim=.6 mid="onecoin_el_gold_coin;x:.3;h:.56;in:rise;at:selling;tone:gold|onecoin_bitcoin_coins;x:.71;h:.46;style:polaroid;tape;at:coin;rot:4" shot="ws|ms:2@kill/whip" fx="strike:2;at:kill|lower:ONECOIN vs BITCOIN~The pitch: the Bitcoin killer;at:selling"
+# cine act=rise bg=onecoin_wembley_night bgBlur=12 bgDim=.6 mid="onecoin_el_gold_coin;x:.3;h:.56;in:rise;at:selling;tone:gold|onecoin_bitcoin_coins;x:.71;h:.46;style:polaroid;tape;at:coin;rot:4" shot="ws|ms:2@kill/whip" fx="strike:2;at:kill|lower:ONECOIN vs BITCOIN~"Bitcoin killer";at:selling"
 She was selling investors the coin that would kill it. [BEAT]
 
-# cine act=doubt shot="1.22:pt:.5,.45|1.4:pt:.5,.45@exist/cut" fx="scene:x;plate:onecoin_art_empty_stage;air:dust|build:x;el:C=@onecoin_el_gold_coin,.5,.42,.42;do:C.float@coin~C.vanish@exist"
+# cine act=doubt shot="1.15:pt:.5,.45|1.15:pt:.5,.45@exist/cut" fx="scene:x;plate:onecoin_art_empty_stage;air:dust|build:x;el:C=@onecoin_el_gold_coin,.5,.42,.42;do:C.float@coin~C.vanish@exist"
 That coin did not **exist**.
 
-# cine act=doubt shot="ws|1.22:pt:.5,.55@billion/dolly" fx="scene:x;plate:onecoin_art_vault_glow;air:dust,rays;light:sweep@billion|build:x;el:N=num:4000000000:$,.5,.2,130~T=txt:RAISED · 2014–2016 AND BEYOND,.5,.33,44;do:N.count@raised~T.rise@billion~N.glow@billion"
+# cine act=doubt shot="ws|1.15:pt:.5,.55@billion/dolly" fx="scene:x;plate:onecoin_art_vault_glow;air:dust,rays;light:sweep@billion|build:x;el:N=num:4000000000:$,.5,.2,130~T=txt:RAISED · 2014–2016 AND BEYOND,.5,.33,44;do:N.count@raised~T.rise@billion~N.glow@billion"
 This is the story of how a product that never existed raised more than four **billion** dollars.
 
 # cine act=doubt bg=clip:onecoin_clip_datacenter bgBlur=0 bgDim=.2 fx="build:x;el:T=txt:NO BLOCKCHAIN,.5,.42,140,gold;do:T.zoom@blockchain"
@@ -75,14 +75,14 @@ No **mining**.
 # cine act=doubt bg=onecoin_art_mood_trading_floor bgBlur=0 bgDim=.25 fx="build:x;el:T=txt:NO MARKET,.38,.4,140,gold;do:T.slideL@market"
 No **market**.
 
-# cine act=doubt shot="ws|1.4:pt:.62,.42@database/dolly" fx="scene:x;plate:onecoin_art_database_room;air:dust|build:x;el:D=txt:A DATABASE,.36,.24,100,gold~O=txt:OWNED BY ONECOIN,.36,.36,45;do:D.drop@database~O.rise@company"
+# cine act=doubt shot="ws|1.15:pt:.62,.42@database/dolly" fx="scene:x;plate:onecoin_art_database_room;air:dust|build:x;el:D=txt:A DATABASE,.42,.24,90,gold~O=txt:OWNED BY ONECOIN,.42,.36,45;do:D.drop@database~O.rise@company"
 Just a **database** her own company controlled.
 
-# cine act=doubt bg=onecoin_art_mood_fog bgBlur=6 bgDim=.55 trans=whip fg="onecoin_wembley_night;x:.78;y:.5;h:.42;style:polaroid;tape;at:c1;rot:5" shot="ws|1.15:pt:.35,.45@ending/dolly" hero="2016;at:whole;to:2014;toAt:before;font:serif;size:200;pos:l;x:.32;y:.42" sup="SHE WROTE THE ENDING;at:ending;x:.32;y:.6"
+# cine act=doubt bg=onecoin_art_mood_fog bgBlur=6 bgDim=.55 trans=whip fg="onecoin_wembley_night;x:.73;y:.5;h:.38;style:polaroid;tape;at:c1;rot:5" shot="ws|1.15:pt:.35,.45@ending/dolly" hero="2016;at:whole;to:2014;toAt:before;font:serif;size:200;pos:l;x:.32;y:.42" sup="SHE WROTE THE ENDING;at:ending;x:.32;y:.6"
 But that's not the whole story.
 Two years before Wembley, she had already written the **ending**.
 
-# cine act=flash shot="ms|1.4:pt:.42,.5@strategy/dolly;dutch:-3" fx="code:exit_email;sfx:foley_paper@email~foley_marker@strategy"
+# cine act=flash shot="ms|1.15:pt:.42,.5@strategy/dolly;dutch:-3" fx="code:exit_email;sfx:foley_paper@email~foley_marker@strategy"
 An email from August 2014, listing her exit **strategy**.
 
 # cine act=flash bg=onecoin_art_recruit_call bgBlur=5 bgDim=.4 shot="ws|1.08:pt:.5,.45@blame/glide" fx="quote:Take the money and run and blame someone else for this . . . .;at:Take;by:Ruja Ignatova, email to Greenwood, 9 Aug 2014 (via DOJ);x:.5;y:.46;rate:.2|underline:.25,.58,.75;at:blame;col:gold"
