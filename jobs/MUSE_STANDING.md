@@ -5,7 +5,7 @@ fall": 8–12 min, 16:9, English). **You do not write scripts and you do not ren
 deliver. Your work decides how true, deep and beautiful it can be.
 
 **Setup, once:**
-- Clone the GitHub repo `Vietadvisor-travel/vietadvisor-videos` (branch `main`). Run `bash studio/setup.sh`; it must
+- Clone the GitHub repo `Vietadvisor-travel/vietadvisor-videos` (its default branch; always push back to that same branch, never create another). Run `bash studio/setup.sh`; it must
   end with ALL PASS.
 - Set `export PP_CONTACT=<the owner's email>` (Wikimedia and Openverse require a contact).
 - Read `poison-pill-studio/references/story-mining.md`, `image-sourcing.md` and `ai-images.md`.
@@ -53,7 +53,7 @@ For every person, place, product, document and moment in the research:
 cd studio
 python3 tools/pp_pack.py export <slug> --desc ../jobs/<slug>/desc.json --research ../jobs/<slug>/RESEARCH_<slug>.md
 cp packs/<slug>_assets.zip ../jobs/<slug>/
-cd .. && git add jobs/<slug> && git commit -m "[<slug>] research + assets pack" && git push origin main
+cd .. && git add jobs/<slug> && git commit -m "[<slug>] research + assets pack" && git pull --rebase && git push
 ```
 - Keep the zip under 90 MB. If it is bigger, re-save large photos at 2000 px on the long side.
 - Do NOT commit `studio/engine/library/img` or `images.json` changes. Only `jobs/<slug>/` goes in.

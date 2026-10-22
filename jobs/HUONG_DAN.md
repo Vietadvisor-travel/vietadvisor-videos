@@ -4,7 +4,7 @@
 **Claude Code:** đạo diễn, viết kịch bản, dựng cảnh, đọc giọng, render, tự chấm điểm, rồi gửi video cho anh.
 
 ## CÀI ĐẶT (1 lần)
-1. **Gộp nhánh vào `main`** trên GitHub, để Muse và các phiên Claude Code mới đều thấy bộ dựng phim (anh bảo em làm cũng được).
+1. (Không cần làm gì với GitHub: nhánh mặc định của repo đã có sẵn bộ dựng phim.)
 2. **Muse:** gửi file `MUSE_STANDING.md`, nhắn:
    > Đây là hướng dẫn thường trực mới của em. Làm phần "Setup, once", sau đó dựng thư viện nhạc theo mục "Music library" và đẩy lên. Báo lại cho anh.
 3. **Claude Code:** không cần cài gì. Mỗi phiên mới tự đọc `CLAUDE.md` trong repo và tự cài.
