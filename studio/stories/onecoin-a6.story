@@ -55,7 +55,7 @@ In 2022, the FBI put her on its Ten Most Wanted list, the only **woman** on it a
 # cine act=lesson bg=onecoin_art_poster_wall bgBlur=10 bgDim=.6 mid="onecoin_ruja_fbi;x:.32;h:.62;style:print;tape;at:c1;rot:-3" shot="ws|1.18:pt:.68,.45@dollars/dolly" fx="build:x;el:N=num:5000000:$,.72,.44,130~T=txt:REWARD · JUNE 2024,.72,.56,44~O=txt:WAS $100K IN 2022,.72,.64,46;do:N.count@raised~T.rise@reward~O.rise@dollars"
 In 2024, the United States raised the reward to five million **dollars**.
 
-# cine act=lesson shot="1.15:pt:.5,.55|ws@killed/drop" fx="scene:x;plate:onecoin_art_raid_office;air:dust,rays;light:flicker|build:x;el:M=txt:LEAKED BULGARIAN POLICE MEMO,.5,.22,44~K=txt:CLAIM: KILLED IN 2018,.5,.36,80,gold;do:M.drop@memo~K.type@killed"
+# cine act=lesson shot="1.15:pt:.5,.55|ws@killed/drop" fx="scene:x;plate:onecoin_art_raid_office;air:dust,rays;light:flicker|build:x;el:M=txt:LEAKED BULGARIAN POLICE MEMO,.5,.22,44~K=txt:CLAIM: KILLED IN 2018,.5,.36,72,gold;do:M.drop@memo~K.zoom@claims"
 A leaked Bulgarian police memo claims she was killed in **2018**.
 
 # cine act=lesson bg=onecoin_art_raid_office bgBlur=4 bgDim=.3 shot="ws|1.12:pt:.5,.45@unverified/dolly" fx="build:x;el:D=txt:THE DOCUMENT,.3,.32,44~R=txt:REAL,.3,.46,110,gold~C=txt:THE CLAIM INSIDE,.7,.32,44~U=txt:UNVERIFIED,.7,.46,90,red;do:D.drop@document~R.zoom@real~C.drop@claim~U.stamp:UNVERIFIED@unverified"
@@ -97,7 +97,7 @@ Nobody could, because the "blockchain" was **private**, the salesmen were family
 # cine act=lesson shot="1|1.08:pt:.45,.5@wrote/dolly" fx="code:exit_email;sfx:foley_marker@Take~foley_marker@Run~impact_cinematic@Blame"
 Take the money. Run. Blame someone else. She wrote it in **2014**.
 
-# cine act=lesson shot="1.1:pt:.5,.4|1:pt:.5,.45@did/glide" fx="scene:x;plate:onecoin_art_empty_stage;air:dust,rays;light:sweep@exit|build:x;el:C=@onecoin_el_gold_coin,.5,.34,.3~A=txt:THE COIN NEVER EXISTED.,.5,.6,70,ink~B=txt:THE EXIT STRATEGY DID.,.5,.72,84,gold;do:C.float@coin~C.vanish@existed~A.type@coin~B.type@exit"
+# cine act=lesson shot="1.1:pt:.5,.4|1:pt:.5,.45@did/glide" fx="scene:x;plate:onecoin_art_empty_stage;air:dust,rays;light:sweep@exit|build:x;el:C=@onecoin_el_gold_coin,.5,.34,.3~A=txt:THE COIN NEVER EXISTED.,.5,.56,70,ink~B=txt:THE EXIT STRATEGY DID.,.5,.68,84,gold;do:C.float@coin~C.vanish@existed~A.zoom@coin~B.zoom@exit"
 The coin never existed. The exit strategy **did**.
 
 # ppend

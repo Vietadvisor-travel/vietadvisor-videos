@@ -40,7 +40,7 @@ In March 2019, her brother's plane landed in Los Angeles, and he was **arrested*
 # cine act=after bg=onecoin_court_sdny bgBlur=0 bgDim=.4 shot="ws;angle:low|1.15:pt:.5,.4@ones/rise" fx="quote:a pyramid scheme based on smoke and mirrors more than zeroes and ones;at:pyramid;by:Geoffrey Berman, U.S. Attorney (SDNY), March 2019;x:.5;y:.36;rate:.17|smoke;at:smoke"
 New York's top federal prosecutor called OneCoin "a pyramid scheme based on smoke and mirrors more than zeroes and **ones**."
 
-# cine act=after shot="ews|1.15:pt:.5,.45@firm/dolly" fx="scene:x;plate:onecoin_art_frosted_doors;air:dust;light:sweep@washed|lower:MARK SCOTT~Locke Lord lawyer;at:Scott"
+# cine act=after shot="ews|1.15:pt:.5,.45@firm/dolly" fx="scene:x;plate:onecoin_art_frosted_doors;air:dust;light:sweep@washed|lower:MARK SCOTT~Lawyer;at:Scott"
 Then came the man who washed the money: Mark Scott, a partner at a major law **firm**.
 
 # cine act=after bg=onecoin_art_vault_glow bgBlur=3 bgDim=.3 shot="1|1.08:pt:.5,.5@dollars/dolly" fx="build:x;el:F=txt:FENERO FUNDS · BVI · CAYMAN,.5,.2,57~C=@onecoin_euro_cut,.2,.55,.4~N=num:400000000:$,.6,.55,150~A=arrow:C>N;do:F.drop@funds~A.draw@moved~C.slideR@moved~N.count@four"
@@ -70,7 +70,7 @@ Konstantin, who testified about his sister's escape: time served, and **free**.
 # cine act=lesson shot="1.04:pt:.5,.55|1:pt:.5,.5@never/dolly" fx="code:sentence_ladder;step:6;keys:never;sfx:impact_cinematic@never"
 And Ruja? Charged on five counts, never **tried**. In law, she is presumed innocent.
 
-# cine act=after trans=whip shot="1.15:pt:.4,.6|1.05:pt:.45,.55@sequel/dolly" fx="scene:x;plate:onecoin_art_mood_fog;air:fog,dust;light:sweep@escape|build:x;el:A=@onecoin_el_ankle_tag,.5,.62,.2~S=txt:THE SEQUEL,.5,.3,110,gold;do:A.drop@escape~S.type@sequel"
+# cine act=after trans=whip shot="1.15:pt:.4,.6|1.05:pt:.45,.55@sequel/dolly" fx="scene:x;plate:onecoin_art_mood_fog;air:fog,dust;light:sweep@escape|build:x;el:A=@onecoin_el_ankle_tag,.5,.62,.2~S=txt:THE SEQUEL,.5,.3,110,gold;do:A.drop@escape~S.zoom@sequel"
 Then even her escape got a **sequel**.
 
 # cine act=after shot="ews|1.15:pt:.5,.45@spy/dolly" fx="scene:x;plate:onecoin_luxembourg;air:dust;light:sweep@Luxembourg|lower:FRANK SCHNEIDER~Ex-Luxembourg spy;at:Schneider|date:APRIL 2021 · FRANCE;at:arrested;x:.06;y:.12"

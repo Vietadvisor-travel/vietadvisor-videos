@@ -173,7 +173,7 @@ And every buyer was also a **salesman**.
 # cine act=rise bg=onecoin_art_gala_table bgBlur=8 bgDim=.45 shot="1|1.12:pt:.5,.6@recruits#2/dolly" fx="build:x;el:Y=txt:YOU,.5,.18,80,gold~R=icon:person*3,.5,.42,.13~Q=icon:person*9,.5,.7,.1~L1=arrow:Y>R~L2=arrow:R>Q~T=txt:+ BONUS,.82,.42,56,gold~U=txt:+ BONUS,.82,.7,56,gold;do:L1.draw@paid~R.multiply:3@recruits~T.pop@recruits~L2.draw@recruits#2~Q.multiply:9@recruits#2~U.pop@recruits#2"
 You got paid on your recruits, and on your recruits' **recruits**.
 
-# cine act=rise shot="ws|1.15:pt:.3,.4@dollars/dolly" fx="scene:x;plate:onecoin_art_thailand_villa;air:dust;light:sun@.7,.2|build:x;el:P=txt:5%,.3,.3,150,gold~S=txt:OF ALL SALES WORLDWIDE,.3,.44,44~N=num:300000000:$,.3,.6,100;do:P.zoom@five~S.rise@sales~N.count@three"
+# cine act=rise shot="ws|1.15:pt:.3,.4@dollars/dolly" fx="scene:x;plate:onecoin_art_thailand_villa;air:dust;light:sun@.7,.2|build:x;el:P=txt:5%,.3,.3,150,gold~S=txt:OF ALL SALES WORLDWIDE,.3,.44,44~N=num:300000000:$,.3,.6,100;do:P.zoom@top~S.rise@five~N.count@five"
 At the very top, Greenwood took five percent of all sales worldwide: over three hundred million **dollars**.
 
 # cine act=doubt shot="1|1.08:pt:.7,.45@locked/dolly" fx="code:bonus_split;sfx:foley_paper_cut@Sixty~foley_door_close@system"
@@ -188,7 +188,7 @@ The only exchange was OneCoin's own, with daily selling limits, and it kept goin
 # cine act=rise bg=onecoin_euro_cash bgBlur=10 bgDim=.5 shot="ws|1.04:pt:.5,.5@in/glide" fx="flow:INVESTORS>ONECOIN>!NO WAY OUT;at:money"
 Which meant the money flowed one **way**: in.
 
-# cine act=rise bg=onecoin_court_sdny bgBlur=12 bgDim=.6 mid="onecoin_doc_doj_greenwood;x:.42;h:.82;style:print;at:files" shot="ms:1|1.6:pt:.4,.38@2016/dolly" fx="scan:1;at:obtained;dur:1.4|lower:U.S. DEPARTMENT OF JUSTICE~Plea release 2022;at:prosecutors"
+# cine act=rise bg=onecoin_court_sdny bgBlur=12 bgDim=.6 mid="onecoin_doc_doj_greenwood;x:.42;h:.82;style:print;at:files" shot="ms:1|1.6:pt:.4,.38@2016/dolly" fx="scan:1;at:obtained;dur:1.4|lower:DOJ / IRS-CI~Plea release 2022;at:prosecutors"
 OneCoin's own files, later obtained by US prosecutors, cover late 2014 to late **2016**.
 
 # cine act=rise bg=onecoin_art_vault_glow bgBlur=10 bgDim=.6 fg="onecoin_euro_cut;x:.84;y:.86;h:.34;at:Sales;rot:8" shot="1|1.08:pt:.45,.42@euros/dolly" hero="€4.037 BILLION;at:four;fx:count;pos:c;y:.4;size:130" sup="SALES · Q4 2014 – Q4 2016;at:euros"

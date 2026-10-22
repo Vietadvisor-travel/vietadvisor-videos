@@ -63,7 +63,7 @@ She was selling investors the coin that would kill it. [BEAT]
 # cine act=doubt shot="1.15:pt:.5,.45|1.15:pt:.5,.45@exist/cut" fx="scene:x;plate:onecoin_art_empty_stage;air:dust|build:x;el:C=@onecoin_el_gold_coin,.5,.42,.42;do:C.float@coin~C.vanish@exist"
 That coin did not **exist**.
 
-# cine act=doubt shot="ws|1.15:pt:.5,.55@billion/dolly" fx="scene:x;plate:onecoin_art_vault_glow;air:dust,rays;light:sweep@billion|build:x;el:N=num:4000000000:$,.5,.2,130~T=txt:RAISED · 2014–2016 AND BEYOND,.5,.33,44;do:N.count@raised~T.rise@billion~N.glow@billion"
+# cine act=doubt shot="ws|1.15:pt:.5,.55@billion/dolly" fx="scene:x;plate:onecoin_art_vault_glow;air:dust,rays;light:sweep@billion|build:x;el:N=num:4000000000:$,.5,.2,130~T=txt:RAISED · 2014–2016 AND BEYOND,.5,.33,44;do:N.count@story~T.rise@billion~N.glow@billion"
 This is the story of how a product that never existed raised more than four **billion** dollars.
 
 # cine act=doubt bg=clip:onecoin_clip_datacenter bgBlur=0 bgDim=.2 fx="build:x;el:T=txt:NO BLOCKCHAIN,.5,.42,140,gold;do:T.zoom@blockchain"

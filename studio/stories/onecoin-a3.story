@@ -23,7 +23,7 @@ The job: build a blockchain for a cryptocurrency **company**.
 # cine act=doubt bg=clip:onecoin_clip_mining_asic bgBlur=4 bgDim=.45 shot="ws|1.08:pt:.5,.45@today/dolly" fx="quote:Well, first of all, they need a blockchain. They don't have a blockchain today.;at:Well;by:The recruiter, as recalled by Bjørn Bjercke (BBC);x:.5;y:.42;rate:.16|seal:BBC;at:today;x:.84;y:.24"
 "Well, first of all, they need a blockchain," the recruiter said. "They don't have a blockchain **today**."
 
-# cine act=doubt shot="1.15:pt:.3,.5|1.15:pt:.6,.45@talking/truck" fx="scene:x;plate:onecoin_art_podcast_wall;air:dust;light:sweep@talking|build:x;el:N=txt:NO,.7,.3,150,gold~T=txt:ON THE RECORD,.7,.45,52;do:N.zoom@no~T.rise@talking"
+# cine act=doubt shot="1.15:pt:.3,.5|1.15:pt:.6,.45@talking/truck" fx="scene:x;plate:onecoin_art_podcast_wall;air:dust;light:sweep@talking|build:x;el:N=txt:NO,.6,.3,150,gold~T=txt:ON THE RECORD,.6,.45,52;do:N.zoom@no~T.rise@talking"
 Bjercke said no. Then he started **talking**.
 
 # cine act=doubt bg=world map="12,55,2.6" map2="10,56,3" hl="Norway,Germany,United Kingdom" hlAt=regulators shot="ws|1.1:pt:.45,.4@it/glide" fx="pin:NORWAY;ll:10.7,59.9;at:Norway|pin:GERMANY;ll:8.7,50.1;at:Germany|pin:BRITAIN;ll:-0.1,51.5;at:Britain"
@@ -44,7 +44,7 @@ So who could stop a scheme that its own investors **protected**?
 # cine act=doubt shot="1.05:pt:.6,.5|1.18:pt:.6,.5@boyfriend/crash" fx="scene:x;plate:onecoin_art_penthouse;air:dust|build:x;el:N=txt:NOT A REGULATOR,.38,.24,53~B=txt:HER BOYFRIEND,.38,.4,100,gold;do:N.drop@regulator~N.gray@boyfriend~B.zoom@boyfriend"
 It wasn't a regulator. [BEAT] It was her **boyfriend**.
 
-# cine act=doubt bg=onecoin_art_dubai_fountain bgBlur=2 bgDim=.25 shot="ws|1.08:pt:.5,.42@OneCoin/dolly" hero="GILBERT ARMENTA;at:Armenta;font:serif;size:100;pos:c;y:.3" sup="MOVED MONEY FOR ONECOIN;at:money" fx="build:x;el:C=@onecoin_euro_cut,.18,.66,.3~D=txt:THE MONEY MAN,.7,.66,64,gold;do:C.slideR@moved~D.type@OneCoin"
+# cine act=doubt bg=onecoin_art_london_door bgBlur=2 bgDim=.3 shot="ws|1.08:pt:.5,.42@OneCoin/dolly" hero="GILBERT ARMENTA;at:Armenta;font:serif;size:100;pos:c;y:.3" sup="MOVED MONEY FOR ONECOIN;at:money" fx="build:x;el:C=@onecoin_euro_cut,.18,.66,.3~D=txt:THE MONEY MAN,.66,.62,64,gold;do:C.slideR@moved~D.zoom@moved"
 Gilbert **Armenta** moved money for OneCoin.
 
 # cine act=fall shot="1.15:pt:.5,.4|ws@FBI/whip" fx="scene:x;plate:onecoin_fbi_hq;air:dust;light:sweep@cooperating|build:x;el:S=txt:SECRET COOPERATOR,.5,.28,84,red~D=txt:FROM 2017,.5,.39,44;do:S.stamp:SECRET COOPERATOR@FBI~D.rise@secretly"

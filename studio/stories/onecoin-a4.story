@@ -51,7 +51,7 @@ Its founder never **showed**.
 # cine act=fall bg=onecoin_court_sdny bgBlur=0 bgDim=.35 shot="ws;angle:low|1.15:pt:.5,.35@warrant/rise" fx="date:12 OCT 2017;at:Five;x:.06;y:.12|build:x;el:W=txt:U.S. ARREST WARRANT,.5,.5,68~R=txt:RUJA IGNATOVA,.5,.62,44;do:W.drop@issued~R.rise@arrest"
 Five days later, the United States issued a **warrant** for her arrest.
 
-# cine act=fall bg=clip:onecoin_clip_rain_window bgBlur=0 bgDim=.05 shot="1.15:pt:.5,.5|1:pt:.5,.5@tired/glide" fx="lower:KONSTANTIN IGNATOV~Trial testimony;at:brother|build:x;el:T=txt:VERY TIRED,.5,.4,130,gold;do:T.type@tired"
+# cine act=fall bg=clip:onecoin_clip_rain_window bgBlur=0 bgDim=.05 shot="1.15:pt:.5,.5|1:pt:.5,.5@tired/glide" fx="lower:KONSTANTIN IGNATOV~Trial testimony;at:brother|build:x;el:T=txt:VERY TIRED,.5,.4,130,gold;do:T.zoom@tired"
 She told her brother she was very **tired**.
 
 # cine act=fall shot="1|1.08:pt:.62,.55@Athens/dolly" fx="code:two_tickets;sfx:foley_book_close@passport~foley_paper@Vienna~foley_paper@Athens"
@@ -72,7 +72,7 @@ And that is the last confirmed sighting of Ruja Ignatova. {hold}
 # cine act=after bg=onecoin_art_mood_rain bgBlur=4 bgDim=.5 mid="onecoin_ruja;x:.32;h:.66;tone:bw;at:c1" shot="ws|1.1:1@again/dolly" fx="build:x;el:B=txt:HER BROTHER,.68,.36,49~T=txt:NO CONTACT,.68,.5,96,gold~S=txt:SINCE OCTOBER 2017,.68,.62,44;do:B.drop@brother~T.type@contacted~S.rise@again"
 She never contacted her brother **again**.
 
-# cine act=after bg=onecoin_sofia bgBlur=8 bgDim=.4 mid="onecoin_hq_office;x:.66;h:.8;style:print;tape;at:c1;rot:3" shot="1.12:1|1:1@pause/rack" fx="stamp:BUSINESS AS USUAL;at:pause;x:.36;y:.45;col:gold;size:60;rot:-8"
+# cine act=after bg=onecoin_sofia bgBlur=8 bgDim=.4 mid="onecoin_hq_office;x:.66;h:.8;style:print;tape;at:c1;rot:3" shot="1.12:1|1:1@pause/rack" fx="stamp:BUSINESS AS USUAL;at:pause;x:.4;y:.4;col:gold;size:52;rot:-8"
 But the company didn't even **pause**.
 
 # cine act=after bg=onecoin_art_mood_lobby bgBlur=6 bgDim=.45 shot="ws|1.06:pt:.5,.45@months/dolly" fx="calendar:x;from:2017-11;n:16;at:ran|build:x;el:F=txt:KONSTANTIN · FORMER FORKLIFT DRIVER,.5,.14,49;do:F.drop@forklift"

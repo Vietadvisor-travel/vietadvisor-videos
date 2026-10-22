@@ -56,7 +56,7 @@ Her marketing added **Oxford**. [BEAT] Her Oxford degree was a master's.
 # cine act=doubt shot="ms|1.15:pt:.32,.62@fraud/dolly;dutch:-4" fx="code:cv;step:4;go:convicted;plate:onecoin_prison;pic:onecoin_gavel;picAt:court;cap:GERMANY · 2012;sfx:impact_cinematic@fraud"
 What the marketing left out: in 2012, a German court convicted her of **fraud**.
 
-# cine act=doubt bg=onecoin_prison bgBlur=4 bgDim=.35 fg="onecoin_gavel;x:.24;y:.7;h:.4;style:print;at:c1+.3;rot:-6" shot="ws|1.15:pt:.62,.4@suspended/dolly" hero="14 MONTHS;at:fourteen;pos:r;y:.36;col:#c9a85a" sup="SUSPENDED;at:suspended" fx="lower:GERMANY · 2012~Foundry stripped;at:father|stamp:BANKRUPT;at:bankrupt;x:.62;y:.62;col:grey;size:90;rot:-8"
+# cine act=doubt bg=onecoin_prison bgBlur=4 bgDim=.35 fg="onecoin_gavel;x:.24;y:.7;h:.4;style:print;at:c1+.3;rot:-6" shot="ws|1.15:pt:.62,.4@suspended/dolly" hero="14 MONTHS;at:fourteen;pos:r;x:.64;y:.36;size:120;col:#c9a85a" sup="SUSPENDED;at:suspended" fx="lower:GERMANY · 2012~Foundry stripped;at:father|stamp:BANKRUPT;at:bankrupt;x:.62;y:.62;col:grey;size:90;rot:-8"
 She and her father had stripped a foundry until it went **bankrupt**. Her sentence: fourteen months, suspended.
 
 # cine act=setup shot="ws|1.15:pt:.36,.45@BigCoin/dolly|1.15:pt:.68,.45@Greenwood/truck" fx="scene:x;plate:onecoin_art_mood_city;air:dust|build:x;el:C=@onecoin_el_gold_coin,.32,.46,.36~B=txt:BIGCOIN · 2013,.32,.75,49~G=txt:SEBASTIAN GREENWOOD,.66,.4,62,gold~S=txt:SALESMAN · SWEDEN,.66,.52,44~L=line:C-G;do:C.spin@BigCoin~B.rise@BigCoin~G.slideR@Greenwood~S.rise@salesman~L.draw@alongside"
