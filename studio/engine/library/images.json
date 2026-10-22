@@ -1,0 +1,92 @@
+{
+ "t_astro": {
+  "src": "engine/library/img/t_astro.png",
+  "w": 494,
+  "h": 497,
+  "cut": true,
+  "credit": "",
+  "license": "",
+  "from": "astronaut.png",
+  "role": "cut"
+ },
+ "t_cameraman": {
+  "src": "engine/library/img/t_cameraman.png",
+  "w": 407,
+  "h": 449,
+  "cut": true,
+  "credit": "",
+  "license": "",
+  "from": "camera.png",
+  "role": "cut"
+ },
+ "t_coffee": {
+  "src": "engine/library/img/t_coffee.png",
+  "w": 600,
+  "h": 400,
+  "cut": false,
+  "credit": "",
+  "license": "",
+  "from": "coffee.png",
+  "role": "prop"
+ },
+ "t_rocket": {
+  "src": "engine/library/img/t_rocket.png",
+  "w": 640,
+  "h": 427,
+  "cut": false,
+  "credit": "",
+  "license": "",
+  "from": "rocket.jpg",
+  "role": "plate"
+ },
+ "t_page": {
+  "src": "engine/library/img/t_page.png",
+  "w": 384,
+  "h": 191,
+  "cut": false,
+  "credit": "",
+  "license": "",
+  "from": "page.png",
+  "role": "prop"
+ },
+ "t_space": {
+  "src": "engine/library/img/t_space.png",
+  "w": 1000,
+  "h": 872,
+  "cut": false,
+  "credit": "",
+  "license": "",
+  "from": "hubble_deep_field.jpg",
+  "role": "plate"
+ },
+ "t_garage": {
+  "src": "engine/library/img/t_garage.png",
+  "w": 741,
+  "h": 500,
+  "cut": false,
+  "credit": "",
+  "license": "",
+  "from": "motorcycle_left.png",
+  "role": "plate"
+ },
+ "t_coins": {
+  "src": "engine/library/img/t_coins.png",
+  "w": 384,
+  "h": 303,
+  "cut": false,
+  "credit": "",
+  "license": "",
+  "from": "coins.png",
+  "role": "prop"
+ },
+ "t_cat": {
+  "src": "engine/library/img/t_cat.png",
+  "w": 380,
+  "h": 300,
+  "cut": true,
+  "credit": "",
+  "license": "",
+  "from": "chelsea.png",
+  "role": "cut"
+ }
+}

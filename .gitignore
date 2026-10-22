@@ -1,0 +1,6 @@
+studio/node_modules/
+studio/out/
+studio/packs/
+studio/research/
+studio/music/
+__pycache__/

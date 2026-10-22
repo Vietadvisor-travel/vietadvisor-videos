@@ -28,6 +28,10 @@
   - Quote voices: `@speaker:` lines cast with `voices:`, with an automatic on-screen "WORDS OF … · VOICED" tag and lint
     rules for attribution.
   - Room tone and a narrator EQ on the voice track.
+- **Claude Code studio mode:**
+  - The installed engine is now in the repo (`studio/`), set up in about 1.5 min by `setup.sh`.
+  - `pp_pack.py` moves Muse's sourced images (with catalogue and credits) and the music library to Claude.
+  - `CLAUDE.md` holds the "làm tập <slug>" procedure.
 - **Fixes:**
   - `[BEAT]` at the end of a line no longer merges that line with the next one; the pause is kept at the line end.
   - Act files and channel endings pass the engine lint without `--skip-lint`.

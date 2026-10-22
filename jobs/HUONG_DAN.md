@@ -1,32 +1,29 @@
-# HƯỚNG DẪN POISON PILL v6
+# HƯỚNG DẪN POISON PILL v6: Claude làm phim, Muse nghiên cứu và gom nguồn
+
+**Muse:** nghiên cứu sâu, tìm ảnh thật, tạo ảnh AI cho chỗ thiếu, gom nhạc, rồi đóng gói và đẩy lên GitHub.
+**Claude Code:** đạo diễn, viết kịch bản, dựng cảnh, đọc giọng, render, tự chấm điểm, rồi gửi video cho anh.
 
 ## CÀI ĐẶT (1 lần)
-1. **Claude:** vào Project "Poison Pill" → Instructions → xóa nội dung cũ → dán file `PROJECT_INSTRUCTIONS.md`.
-   Thay skill cũ bằng `POISON_PILL_v6.zip`.
-2. **Muse:** gửi `POISON_PILL_v6.zip` + `MUSE_STANDING.md`, kèm câu:
-   > Đây là hướng dẫn thường trực và skill v6. Cài theo engine-addon/INSTALL.md, chạy `python3 tools/voice.py setup` rồi `node tools/pp_doctor.mjs` đến khi ALL PASS. Báo lại cho anh.
+1. **Gộp nhánh vào `main`** trên GitHub, để Muse và các phiên Claude Code mới đều thấy bộ dựng phim (anh bảo em làm cũng được).
+2. **Muse:** gửi file `MUSE_STANDING.md`, nhắn:
+   > Đây là hướng dẫn thường trực mới của em. Làm phần "Setup, once", sau đó dựng thư viện nhạc theo mục "Music library" và đẩy lên. Báo lại cho anh.
+3. **Claude Code:** không cần cài gì. Mỗi phiên mới tự đọc `CLAUDE.md` trong repo và tự cài.
 
-## MỖI TẬP: 3 bước
+## MỖI TẬP: 2 câu
+**Câu 1, nhắn Muse:**
+```
+nghiên cứu và đóng gói: Nokia
+```
+Muse làm xong sẽ báo slug (ví dụ `nokia`), số ảnh và 5 sự thật bất ngờ nhất.
 
-**Bước 1. Gửi Muse:**
+**Câu 2, mở phiên Claude Code mới với repo `vietadvisor-videos`, nhắn:**
 ```
-nghiên cứu tập 3
+làm tập nokia
 ```
-(hoặc ghi thẳng tên chủ đề: `nghiên cứu: Nokia`)
-→ Muse gửi lại 1 file `RESEARCH_….md`.
+Claude tự làm hết, rồi gửi anh video, thumbnail, 3 tiêu đề, phần mô tả kèm ghi công ảnh và nhạc, và tag SEO.
+Một tập 10 phút mất khoảng 1–2 tiếng, phần lớn là thời gian render. Anh không cần ngồi chờ.
 
-*Muốn dùng "tập 3" thì làm 1 lần trước: bảo Claude "lịch 30 ngày", rồi gửi file `lich-30-ngay.md` cho Muse kèm câu "đây là lịch 30 ngày, giữ lại".*
-
-**Bước 2. Gửi Claude** (chat mới trong Project): đính kèm file đó, gõ:
-```
-gói đạo diễn
-```
-→ Claude gửi lại file `EPISODE_xx_theranos.md`. Nếu Claude chia thành nhiều phần, anh gõ "tiếp" cho đến hết.
-
-**Bước 3. Gửi Muse:** đính kèm file `EPISODE_…`, gõ:
-```
-dựng tập này
-```
-→ Muse gửi lại video, thumbnail, tiêu đề và phần mô tả.
-
-Xong. Tập sau làm lại từ bước 1.
+## KHÁC (khi cần)
+- **Lên lịch tháng:** nhắn Muse `nghiên cứu chủ đề tháng`, rồi nhắn Claude Code `lịch 30 ngày từ jobs/TOPICS_<tháng>.md`.
+- **Muốn sửa video:** trong cùng phiên Claude Code, nhắn chỗ chưa ưng (kèm ảnh chụp càng tốt).
+- **Khi đăng YouTube:** nếu tập có giọng trích lời người thật hoặc ảnh AI trông như thật, nhớ tích ô "altered or synthetic content".

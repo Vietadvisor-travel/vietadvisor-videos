@@ -1,0 +1,41 @@
+{
+  "name": "vietadvisor-motion-studio",
+  "version": "5.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Vietadvisor animated explainer engine — storyboard to voiced, scored 16:9 and 9:16 MP4.",
+  "scripts": {
+    "render:hg:16x9": "node tools/render.mjs episodes/ha-giang-loop.js --fmt 16x9 --out out/ha-giang-loop_16x9.mp4",
+    "render:hg:9x16": "node tools/render.mjs episodes/ha-giang-loop.js --fmt 9x16 --out out/ha-giang-loop_9x16.mp4",
+    "assets": "node tools/export_assets.mjs assets",
+    "player": "node tools/build_player.mjs player.html",
+    "voice:setup": "python3 tools/voice.py setup",
+    "make": "node tools/make.mjs"
+  },
+  "dependencies": {
+    "@fontsource/anton": "^5.3.0",
+    "@fontsource/baloo-2": "^5.2.0",
+    "@fontsource/bangers": "^5.3.0",
+    "@fontsource/be-vietnam-pro": "^5.2.0",
+    "@fontsource/bowlby-one-sc": "^5.3.0",
+    "@fontsource/bungee": "^5.3.0",
+    "@fontsource/coiny": "^5.3.0",
+    "@fontsource/kanit": "^5.2.0",
+    "@fontsource/lilita-one": "^5.3.0",
+    "@fontsource/luckiest-guy": "^5.3.0",
+    "@fontsource/noto-sans-jp": "^5.2.0",
+    "@fontsource/noto-sans-kr": "^5.2.0",
+    "@fontsource/noto-sans-sc": "^5.2.0",
+    "@fontsource/oswald": "^5.3.0",
+    "@fontsource/pacifico": "^5.3.0",
+    "@fontsource/patrick-hand": "^5.3.0",
+    "@fontsource/paytone-one": "^5.3.0",
+    "@fontsource/playfair-display": "^5.3.0",
+    "@fontsource/sigmar-one": "^5.3.0",
+    "@fontsource/titan-one": "^5.3.0",
+    "playwright": "1.56.0",
+    "three": "^0.160.0",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2"
+  }
+}

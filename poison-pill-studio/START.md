@@ -1,5 +1,11 @@
 # START HERE: POISON PILL v6 Ultimate (one file for both sides)
 
+> **Current setup (recommended): Claude Code makes the film, and Muse only researches and sources.** See `CLAUDE.md` at
+> the repo root and `jobs/MUSE_STANDING.md`. The engine with the add-on installed lives in `studio/`
+> (`bash studio/setup.sh`). Muse delivers `jobs/<slug>/RESEARCH_<slug>.md` plus `<slug>_assets.zip` (`pp_pack.py`).
+> The owner then says "làm tập <slug>" to Claude Code. The Claude-Project → Muse flow below still works as the
+> alternative.
+
 **The v6 flow, per episode: Muse → Claude → Muse**
 1. **Owner → Muse:** "nghiên cứu: <topic>" (or "nghiên cứu tập N", using the 30-day calendar). Muse replies with ONE file `RESEARCH_<slug>.md`: the worksheet in
    story-mining.md §5 (A–M, every row sourced and confidence-tagged), with the HISTORY block (`pp_history show`) at the
