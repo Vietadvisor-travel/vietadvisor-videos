@@ -107,6 +107,16 @@ those frames? If not, rewrite the card. Never patch it with a stamp or a shake.
   the same shape (a ratio, an escape, a document that lies). Adapt when it almost fits. The library is a memory, not a
   menu: a new film still needs at least one effect per act that did not exist before it.
 
+## 4b. The craft tools a card can ask for (v6.5 FX kit, `custom-scenes.md`)
+- Perspective and 3D cards: footage on a tilted screen, a document turning over, words printed on a wall.
+- Thickness and solids: photos become objects with depth.
+- Gravity, stacking and shattering.
+- Paper tears, fire burns, ink spreads.
+- Speed blur and RGB hits.
+- Real 3D shots (`desk3d`, `globe3d`, `city3d`, `money3d`…) for the one or two moments a film needs a true 3D world.
+
+Write the card first, then reach for the tool. A tool is never the idea.
+
 ## 5. The seams: one camera through the whole film (from `motion-doctrine.md`)
 - Choose the film's current (default: left to right) and the reserved moves with their meanings:
   - up: a reveal;

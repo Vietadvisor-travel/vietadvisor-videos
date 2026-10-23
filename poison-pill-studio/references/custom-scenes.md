@@ -41,6 +41,15 @@ randomness only through `rng(seed)`.
 | `ease, lerp, clamp, rng(seed), noise(x)` | helpers |
 | `ctx` | the raw Canvas2D context, for clips, gradients and anything else |
 | `params` | the fx parameters of the beat (to reuse one scene with different data) |
+| **FX kit (v6.5, `pp_fxkit.js`)** | all pure functions of the beat time; full reference in the header of `engine/library/pp_fxkit.js` |
+| `cover(src, {z, ox, oy, filter})` | fill the frame edge to edge (never pillar-boxed); use it for every full-frame still |
+| `quad(src, [[x,y]×4])` · `card(src, {x,y,w,h,rx,ry,rz,z,shadow,shade,back})` | true perspective: footage on a tilted screen, a document turning in 3D, a label printed on a wall |
+| `label(text, {size,font,col,bg})` | text as a canvas, to put ON a surface with `quad`/`card` (type inside the world) |
+| `extrude(src, x, y, h, {depth, ang})` · `block(src, x, y, w, h)` | a cut-out with thickness; a solid block with the photo on its face |
+| `drop(t0, from, to, {bounce})` · `shatter(src, {x,y,w,h,t0,origin,force,floor})` | gravity with bounces (stacking); breaking into shards that fly and land |
+| `grab()` then `tear(snapA, k)` · `burn(snapA, k)` | transitions on the frame itself: draw scene A, grab it, draw scene B, then tear or burn A away |
+| `blob(cx, cy, r, {seed, wob, flow})` | an organic ink or stain path: fill it, or `ctx.clip()` to reveal through it |
+| `zoomBlur(snap, amt)` · `chroma(snap, px)` | radial speed blur; an RGB-split hit |
 | `sfx:` in the fx | sound effects on words: `sfx:foley_coins@raised~impact_heavy@gone` |
 
 ## 3. Craft rules

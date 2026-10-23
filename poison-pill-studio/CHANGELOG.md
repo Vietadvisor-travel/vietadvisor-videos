@@ -1,5 +1,19 @@
 # Poison Pill Studio: changelog
 
+## v6.5 (Oct 2026): the FX kit, craft tools for impressive 2D/2.5D scenes
+The owner wants visuals that are truly creative and beautiful: photos as objects (cut, stacked, torn, burnt), footage as
+material, and 2D/3D used with reason, never sparse.
+- **`engine/library/pp_fxkit.js`**, available inside every custom scene:
+  - `cover` (no pillar-box), `quad`/`card` (true perspective and 3D cards), `label` (type on surfaces);
+  - `extrude`/`block` (thickness, solids), `drop` (gravity and bounce), `shatter` (shards with physics);
+  - `grab` with `tear` (paper tear with fibre edges) and `burn` (fire edge with char and glow);
+  - `blob` (ink and stain), `zoomBlur`, `chroma`.
+  - All are deterministic in the beat time.
+- **Showcases:** `stories/demo-stock.story` (footage as material) and `stories/demo-kit.story` (the kit). 9 new
+  effects saved to the library: `footage_split`, `word_cut_montage`, `ramp_freeze`, `framed_insert`, `photo_tower`,
+  `doc_flip`, `tear_reveal`, `burn_away`, `gold_ink`.
+- `pp_doctor` expects `pp_fxkit` last in `window.LIBRARY`. `custom-scenes.md` lists the kit.
+
 ## v6.4 (Oct 2026): big media on Google Drive, not git
 Muse's stock and episode footage reaches several GB; git and GitHub (100 MB per file) cannot hold it.
 - **`tools/pp_drive.py`** (Drive API v3, stdlib only):
