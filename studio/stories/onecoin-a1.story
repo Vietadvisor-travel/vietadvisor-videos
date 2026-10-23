@@ -28,7 +28,7 @@ A job at **McKinsey**.
 Her marketing added **Oxford**. [BEAT] Her Oxford degree was a master's. (J)
 
 // CARD a1-06 · SEE: the hidden fourth row arrives last, in red — the 2012 fraud conviction — and the marker rings it · SEAM out down
-# cine act=doubt fx="code:@cv_card;name:Dr. Ruja Ignatova;rows:LAW DOCTORATE/University of Konstanz~CONSULTANT/McKinsey & Company~OXFORD/as marketed~2012/convicted of fraud, Germany;step:4;go:fraud;fix:A MASTER'S;fixrow:2;fixat:0;red:3;ring:fraud;out:down"
+# cine act=doubt fx="code:@cv_card;name:Dr. Ruja Ignatova;rows:LAW DOCTORATE/University of Konstanz~CONSULTANT/McKinsey & Company~OXFORD/as marketed~2012/convicted of fraud, Germany;step:4;go:2012;fix:A MASTER'S;fixrow:2;fixat:0;red:3;ring:fraud;out:down"
 What the marketing left out: in 2012, a German court convicted her of **fraud**.
 
 // CARD a1-07 · SEE: foreshadowing the film's ending: a single case card drops onto the desk — RUJA IGNATOVA, Germany 2012, 14 MONTHS — and the title notes it was suspended · SEAM in down, out right
