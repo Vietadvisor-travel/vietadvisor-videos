@@ -44,7 +44,7 @@ She landed in **Athens**.
 {grave} And that is the last confirmed sighting of Ruja Ignatova. {hold}
 
 // CARD a4-10 · SEE: her portrait print alone on the desk; it drains to grey on "never" · SEAM in right
-# cine act=after fx="code:@table;items:onecoin_ruja@.5,.5,-2,.6;pan:0,0;mono:never;txt:NO CONTACT SINCE OCTOBER 2017;tat:She;sub:per her brother's testimony;in:right"
+# cine act=after fx="code:@table;items:onecoin_ruja@.5,.6,-2,.52;pan:0,0;mono:never;txt:NO CONTACT SINCE OCTOBER 2017;tat:She;sub:per her brother's testimony;in:right"
 {sad} She never contacted her brother **again**.
 
 // CARD a4-11 · SEE: the company screen: FOUNDER — ABSENT, PACKAGE SALES — CONTINUING; the status stays OPEN · SEAM in right, out right

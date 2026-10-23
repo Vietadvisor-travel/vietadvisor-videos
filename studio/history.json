@@ -9,14 +9,12 @@
   ],
   "open": "code",
   "modes": {
-   "code": 17
+   "code": 14
   },
   "verbs": {},
   "trans": {},
   "tracks": [
-   "km_unseen_horrors",
-   "km_the_descent",
-   "km_darkest_child"
+   "km_the_descent"
   ],
   "date": "2026-10-23"
  }
