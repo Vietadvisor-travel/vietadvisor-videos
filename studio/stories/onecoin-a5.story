@@ -14,8 +14,8 @@ endcard: off
 # cine act=fall fx="code:@email_page;head:FROM  Ruja Ignatova · TO  Sebastian Greenwood · 9 AUGUST 2014 (excerpt);lines:My exit strategy, option one:~Take the money and run and~blame someone else for this . . . .;src:Quoted in a US Justice Department release, 16 December 2022;zoom:2;zat:0;circle:blame@blame;rot:-1;in:right;out:right"
 {urgent} The blame arrived **fast**.
 
-// CARD a5-02 · SEE: the DOJ release about Greenwood lifts off the desk and fills the frame; the place and date of his arrest set over it · SEAM in right
-# cine act=fall fx="code:@table;items:onecoin_doc_doj_greenwood@.5,.46,-3,.56;pan:0,0;lift:0;at:arrested;txt:KOH SAMUI, THAILAND · JULY 2018;tat:In;ty:.74;sub:Greenwood arrested (US Justice Department);in:right"
+// CARD a5-02 · SEE: the DOJ release about Greenwood on the desk; the place and date of his arrest set under it · SEAM in right
+# cine act=fall fx="code:@table;items:onecoin_doc_doj_greenwood@.5,.36,-3,.46;pan:0,0;txt:KOH SAMUI, THAILAND · JULY 2018;tat:In;ty:.74;sub:Greenwood arrested (US Justice Department);in:right"
 In July 2018, Greenwood was arrested on the Thai island of Koh **Samui**.
 
 // CARD a5-03 · SEE: the real aerial of Los Angeles airport lifts and fills the frame, then drains to grey on "arrested" · SEAM out right
@@ -87,5 +87,5 @@ Frank Schneider, a former Luxembourg spy and OneCoin's security adviser, was arr
 {tense} Under house arrest, with a GPS tag on his ankle, he vanished in May **2023**.
 
 // CARD a5-20 · SEE: a seventh case file, but empty and dashed: FRANK SCHNEIDER — FUGITIVE · SEAM out right
-# cine act=fall fx="code:@case_cards;rows:FRANK SCHNEIDER/fled house arrest, May 2023/FUGITIVE;empty:0;show:0;go:He;title:STILL OPEN;out:right"
+# cine act=fall fx="code:@case_cards;rows:FRANK SCHNEIDER/fled, May 2023/FUGITIVE;empty:0;show:0;go:He;title:STILL OPEN;out:right"
 He is still a **fugitive**.
