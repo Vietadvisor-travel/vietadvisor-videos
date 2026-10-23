@@ -27,7 +27,7 @@ In 2024, the United States raised the reward to five million **dollars**.
 {grave} A leaked Bulgarian police memo claims she was killed in **2018**.
 
 // CARD a6-05 · SEE: the same sheet; the marker circles "real" in the margin note, then crosses through the claim on "unverified" · SEAM out right
-# cine act=after fx="code:@email_page;head:BULGARIAN POLICE MEMO · leaked, reported February 2023;lines:Claim: she was killed~in November 2018~Document: genuine~Claim: second-hand, unverified;src:Reconstruction of the reported claim (BIRD) · not a copy of the memo;circle:genuine@real,unverified@unverified;zoom:2;zat:But;rot:1.2;out:right"
+# cine act=after fx="code:@email_page;head:BULGARIAN POLICE MEMO · leaked, reported February 2023;lines:Claim: she was killed~in November 2018~Memo: real, BIRD reports~Claim: second-hand, unverified;src:Reconstruction of the reported claim (BIRD) · not a copy of the memo;circle:real@real,unverified@unverified;zoom:2;zat:But;rot:1.2;out:right"
 The document is real. But the claim inside it is second-hand, and **unverified**.
 
 // CARD a6-06 · SEE: prints of every place she has been rumoured to be — Sofia, Dubai, Cape Town, the Black Sea — slide past under the lamp; none confirmed · SEAM in right
@@ -38,8 +38,8 @@ So the FBI still hunts her as if she's **alive**.
 # cine act=after fx="code:@table;items:onecoin_athens_airport@.5,.5,-3,.56;pan:0,0;lift:0;at:Nobody;mono:Athens;txt:LAST CONFIRMED: ATHENS;tat:Nobody;sub:25 October 2017;out:right"
 Nobody has confirmed seeing her since **Athens**.
 
-// CARD a6-08 · SEE: a printing press running sheet after sheet — the bill being printed · SEAM in right
-# cine act=lesson fx="code:@reel;clip:stock_documents_printing_press_02;move:in;z:.1;in:right;txt:THE BILL;tsize:110;tfont:impact;tat:What;ty:.16"
+// CARD a6-08 · SEE: hands at a calculator over papers — the bill being added up · SEAM in right
+# cine act=lesson fx="code:@reel;clip:stock_screen_spreadsheet_11;move:in;z:.1;in:right;txt:THE BILL;tsize:110;tfont:impact;tat:What;ty:.16"
 What we can confirm is the **bill**.
 
 // CARD a6-09 · SEE: an AI plate of a small farm plot at dusk (illustration, not archive) lifts from the desk and fills the frame; the place and the BBC finding set over it · SEAM in right

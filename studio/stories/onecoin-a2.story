@@ -76,7 +76,7 @@ At the very top, Greenwood took five percent of all sales worldwide: over three 
 And even the cash was hard to get **out**.
 
 // CARD a2-18 · SEE: the company's own exchange screen: sell orders PENDING type in; ONLINE flips to OFFLINE on "offline" · SEAM out right
-# cine act=doubt fx="code:@backoffice;bg:stock_screen_ticker_29;title:ONECOIN EXCHANGE (INTERNAL ONLY);ry:.12;rows:Sell order=PENDING~Sell order=PENDING~Daily limit=REACHED;go:exchange;gap:.5;hero:ONLINE;hlab:STATUS;hat:exchange;to:OFFLINE;toat:offline;accent:#e5484d;out:right"
+# cine act=doubt fx="code:@backoffice;bg:stock_screen_ticker_29;title:ONECOIN EXCHANGE (INTERNAL ONLY);ry:.12;rows:Sell order=PENDING~Sell order=PENDING~Daily limit=REACHED;go:exchange;gap:.5;hero:ONLINE;hlab:STATUS;hat:exchange;to:OFFLINE;toat:kept;accent:#e5484d;out:right"
 The only exchange was OneCoin's own, with daily selling limits, and it kept going **offline**.
 
 // CARD a2-19 · SEE: the pyramid again, but the gold only flows up — every line a one-way pipe into the top node · SEAM in down, out right

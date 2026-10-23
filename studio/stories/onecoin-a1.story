@@ -10,8 +10,8 @@ captions: off
 autotrans: off
 endcard: off
 
-// CARD a1-01 · SEE: back on the desk; her portrait print lies centre with Sofia and the company door beside it; the camera keeps travelling right; on "Germany" the marker rings her photo · SEAM in right, out right
-# cine act=setup fx="code:@table;items:onecoin_sofia@.08,.36,6,.3~onecoin_ruja@.48,.5,-3,.62~onecoin_hq_door@.88,.6,-5,.32;pan:-.06,.1;mark:1@Germany;in:right;out:right"
+// CARD a1-01 · SEE: back on the desk; her portrait print lies centre with the company door beside it; the camera keeps travelling right; on "Germany" the marker rings her photo · SEAM in right, out right
+# cine act=setup fx="code:@table;items:onecoin_ruja@.4,.5,-3,.62~onecoin_hq_door@.82,.58,-5,.34;pan:-.06,.1;mark:0@Germany;in:right;out:right"
 Ruja Ignatova was born in **Ruse**, Bulgaria, in 1980, and grew up in Germany.
 
 // CARD a1-03 · SEE: the first row springs onto the CV on "doctorate" and the camera rides down to it
@@ -35,8 +35,8 @@ What the marketing left out: in 2012, a German court convicted her of **fraud**.
 # cine act=doubt fx="code:@case_cards;rows:RUJA IGNATOVA/Germany, 2012 · fraud/14 MONTHS;show:0;go:She;title:SUSPENDED SENTENCE;in:down;out:right"
 She and her father had stripped a foundry until it went **bankrupt**. Her sentence: fourteen months, suspended.
 
-// CARD a1-08 · SEE: the desk: a print of crypto tokens (her first coin) and the DOJ release naming Greenwood; the marker circles the coin on "BigCoin" and the partner on "Greenwood" · SEAM in right, out right
-# cine act=rise fx="code:@table;items:onecoin_bitcoin_coins@.3,.5,-4,.46~onecoin_doc_doj_greenwood@.72,.48,3,.5;pan:0,.06;mark:0@BigCoin,1@Greenwood;txt:BIGCOIN · 2013;tat:Then;ty:.74;sub:her first crypto scheme · with Sebastian Greenwood;in:right;out:right"
+// CARD a1-08 · SEE: the desk: the DOJ release naming Greenwood; the marker circles it on "Greenwood" · SEAM in right, out right
+# cine act=rise fx="code:@table;items:onecoin_doc_doj_greenwood@.5,.4,3,.5;pan:0,.06;mark:0@Greenwood;txt:BIGCOIN · 2013;tat:Then;ty:.74;sub:her first crypto scheme · with Sebastian Greenwood;in:right;out:right"
 Then, in 2013, she tried a first crypto scheme, **BigCoin**, alongside a Swedish salesman named Sebastian Greenwood.
 
 // CARD a1-09 · SEE: the June email itself, whole, on the desk under the lamp — before anyone reads it · SEAM in right, out in

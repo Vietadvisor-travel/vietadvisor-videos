@@ -50,8 +50,8 @@ An email from August 2014, listing her exit **strategy**.
 # cine act=doubt fx="code:@email_page;head:FROM  Ruja Ignatova · TO  Sebastian Greenwood · 9 AUGUST 2014 (excerpt);lines:My exit strategy, option one:~Take the money and run and~blame someone else for this . . . .;src:Quoted in a US Justice Department release, 16 December 2022;zoom:1;zat:0;circle:take@Take,run@run,blame@blame;out:right"
 @ruja: Option one: "Take the money and run and blame someone else for this."
 
-// CARD a0-11 · SEE: black smoke; three panels slide in from the right on "she", "all", "three": counted cash, a jet taking off, hands in cuffs · SEAM in right
-# cine act=fall fx="code:@footage_split;base:stock_texture_smoke_black_07;clips:stock_money_wallet_10,stock_airplane_united_airlines_n75858_757_3_01,stock_law_handcuffs_06;keys:did,all,three"
+// CARD a0-11 · SEE: black smoke; three panels slide in from the right on "she", "all", "three": counted cash, an airport apron, a judge's gavel (the blame landed on others) · SEAM in right
+# cine act=fall fx="code:@footage_split;base:stock_texture_smoke_black_07;clips:stock_money_wallet_10,onecoin_clip_airport,stock_law_gavel_14;keys:did,all,three"
 She did all **three**. [BEAT] Almost to the word.
 
 // CARD a0-12 · SEE: the dark frame fills with gold points spreading outward faster and faster — one point per few hundred people — while the count sets; too many to film · SEAM in right, out in

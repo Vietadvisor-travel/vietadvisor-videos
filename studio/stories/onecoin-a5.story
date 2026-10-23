@@ -15,7 +15,7 @@ endcard: off
 {urgent} The blame arrived **fast**.
 
 // CARD a5-02 · SEE: the DOJ release about Greenwood on the desk; the place and date of his arrest set under it · SEAM in right
-# cine act=fall fx="code:@table;items:onecoin_doc_doj_greenwood@.5,.36,-3,.46;pan:0,0;txt:KOH SAMUI, THAILAND · JULY 2018;tat:In;ty:.74;sub:Greenwood arrested (US Justice Department);in:right"
+# cine act=fall fx="code:@table;items:onecoin_doc_doj_greenwood@.5,.36,-3,.46;pan:0,0;txt:KOH SAMUI, THAILAND · JULY 2018;tat:In;ty:.74;sub:Greenwood arrested;in:right"
 In July 2018, Greenwood was arrested on the Thai island of Koh **Samui**.
 
 // CARD a5-03 · SEE: the real aerial of Los Angeles airport lifts and fills the frame, then drains to grey on "arrested" · SEAM out right
@@ -47,31 +47,31 @@ His defence: he didn't know it was a **scam**.
 {wry} The jury took about four **hours**. (J)
 
 // CARD a5-10 · SEE: six empty dashed places on the desk, each with a name — the line-up before anyone is called · SEAM in down
-# cine act=after fx="code:@case_cards;rows:GREENWOOD/the salesman/20 YEARS~SCOTT/the lawyer/10 YEARS~ARMENTA/the boyfriend/5 YEARS~DILKINSKA/head of compliance/4 YEARS~KONSTANTIN/the brother/34 MONTHS~RUJA IGNATOVA/charged, never tried/NEVER TRIED;empty:5;title:THE SENTENCES;show:0;go:99;in:down"
+# cine act=after fx="code:@case_cards;rows:GREENWOOD/the salesman/20 YEARS~SCOTT/the lawyer/10 YEARS~ARMENTA/the boyfriend/5 YEARS~DILKINSKA/head of compliance/4 YEARS~KONSTANTIN/the brother · 34 months/TIME SERVED~RUJA IGNATOVA/charged, never tried/NEVER TRIED;empty:5;title:THE SENTENCES;show:0;go:99;in:down"
 So line up the **sentences**.
 
 // CARD a5-11 · SEE: Greenwood's case card drops onto the desk with weight: 20 YEARS
-# cine act=after fx="code:@case_cards;rows:GREENWOOD/the salesman/20 YEARS~SCOTT/the lawyer/10 YEARS~ARMENTA/the boyfriend/5 YEARS~DILKINSKA/head of compliance/4 YEARS~KONSTANTIN/the brother/34 MONTHS~RUJA IGNATOVA/charged, never tried/NEVER TRIED;empty:5;title:THE SENTENCES;show:0;go:Greenwood"
+# cine act=after fx="code:@case_cards;rows:GREENWOOD/the salesman/20 YEARS~SCOTT/the lawyer/10 YEARS~ARMENTA/the boyfriend/5 YEARS~DILKINSKA/head of compliance/4 YEARS~KONSTANTIN/the brother · 34 months/TIME SERVED~RUJA IGNATOVA/charged, never tried/NEVER TRIED;empty:5;title:THE SENTENCES;show:0;go:Greenwood"
 {grave} Greenwood, the salesman: twenty **years**.
 
 // CARD a5-12 · SEE: Scott's card drops beside it: 10 YEARS
-# cine act=after fx="code:@case_cards;rows:GREENWOOD/the salesman/20 YEARS~SCOTT/the lawyer/10 YEARS~ARMENTA/the boyfriend/5 YEARS~DILKINSKA/head of compliance/4 YEARS~KONSTANTIN/the brother/34 MONTHS~RUJA IGNATOVA/charged, never tried/NEVER TRIED;empty:5;title:THE SENTENCES;show:1;go:Scott"
+# cine act=after fx="code:@case_cards;rows:GREENWOOD/the salesman/20 YEARS~SCOTT/the lawyer/10 YEARS~ARMENTA/the boyfriend/5 YEARS~DILKINSKA/head of compliance/4 YEARS~KONSTANTIN/the brother · 34 months/TIME SERVED~RUJA IGNATOVA/charged, never tried/NEVER TRIED;empty:5;title:THE SENTENCES;show:1;go:Scott"
 Scott, the lawyer: ten **years**.
 
 // CARD a5-13 · SEE: Armenta's card: 5 YEARS
-# cine act=after fx="code:@case_cards;rows:GREENWOOD/the salesman/20 YEARS~SCOTT/the lawyer/10 YEARS~ARMENTA/the boyfriend/5 YEARS~DILKINSKA/head of compliance/4 YEARS~KONSTANTIN/the brother/34 MONTHS~RUJA IGNATOVA/charged, never tried/NEVER TRIED;empty:5;title:THE SENTENCES;show:2;go:Armenta"
+# cine act=after fx="code:@case_cards;rows:GREENWOOD/the salesman/20 YEARS~SCOTT/the lawyer/10 YEARS~ARMENTA/the boyfriend/5 YEARS~DILKINSKA/head of compliance/4 YEARS~KONSTANTIN/the brother · 34 months/TIME SERVED~RUJA IGNATOVA/charged, never tried/NEVER TRIED;empty:5;title:THE SENTENCES;show:2;go:Armenta"
 Armenta, the boyfriend who flipped, then broke his own deal: five **years**.
 
 // CARD a5-14 · SEE: Dilkinska's card, "head of compliance": 4 YEARS (the irony is the role line)
-# cine act=after fx="code:@case_cards;rows:GREENWOOD/the salesman/20 YEARS~SCOTT/the lawyer/10 YEARS~ARMENTA/the boyfriend/5 YEARS~DILKINSKA/head of compliance/4 YEARS~KONSTANTIN/the brother/34 MONTHS~RUJA IGNATOVA/charged, never tried/NEVER TRIED;empty:5;title:THE SENTENCES;show:3;go:Irina"
+# cine act=after fx="code:@case_cards;rows:GREENWOOD/the salesman/20 YEARS~SCOTT/the lawyer/10 YEARS~ARMENTA/the boyfriend/5 YEARS~DILKINSKA/head of compliance/4 YEARS~KONSTANTIN/the brother · 34 months/TIME SERVED~RUJA IGNATOVA/charged, never tried/NEVER TRIED;empty:5;title:THE SENTENCES;show:3;go:Irina"
 {wry} Irina Dilkinska, head of legal and **compliance**: four years. (J)
 
-// CARD a5-15 · SEE: Konstantin's card: 34 MONTHS — time served
-# cine act=after fx="code:@case_cards;rows:GREENWOOD/the salesman/20 YEARS~SCOTT/the lawyer/10 YEARS~ARMENTA/the boyfriend/5 YEARS~DILKINSKA/head of compliance/4 YEARS~KONSTANTIN/the brother/34 MONTHS~RUJA IGNATOVA/charged, never tried/NEVER TRIED;empty:5;title:THE SENTENCES;show:4;go:Konstantin"
+// CARD a5-15 · SEE: Konstantin's card: TIME SERVED (34 months)
+# cine act=after fx="code:@case_cards;rows:GREENWOOD/the salesman/20 YEARS~SCOTT/the lawyer/10 YEARS~ARMENTA/the boyfriend/5 YEARS~DILKINSKA/head of compliance/4 YEARS~KONSTANTIN/the brother · 34 months/TIME SERVED~RUJA IGNATOVA/charged, never tried/NEVER TRIED;empty:5;title:THE SENTENCES;show:4;go:Konstantin"
 Konstantin, who testified about his sister's escape: time served, and **free**.
 
 // CARD a5-16 · SEE: the last place lights as a dashed empty card: RUJA IGNATOVA — NEVER TRIED · SEAM out right
-# cine act=after fx="code:@case_cards;rows:GREENWOOD/the salesman/20 YEARS~SCOTT/the lawyer/10 YEARS~ARMENTA/the boyfriend/5 YEARS~DILKINSKA/head of compliance/4 YEARS~KONSTANTIN/the brother/34 MONTHS~RUJA IGNATOVA/charged, never tried/NEVER TRIED;empty:5;title:THE SENTENCES;show:5;go:Ruja;out:right"
+# cine act=after fx="code:@case_cards;rows:GREENWOOD/the salesman/20 YEARS~SCOTT/the lawyer/10 YEARS~ARMENTA/the boyfriend/5 YEARS~DILKINSKA/head of compliance/4 YEARS~KONSTANTIN/the brother · 34 months/TIME SERVED~RUJA IGNATOVA/charged, never tried/NEVER TRIED;empty:5;title:THE SENTENCES;show:5;go:Ruja;out:right"
 {grave} And Ruja? Charged on five counts, never **tried**. In law, she is presumed innocent.
 
 // CARD a5-17 · SEE: two prints on the desk: Athens airport (her escape) and Luxembourg (his) — circled one after the other · SEAM in right

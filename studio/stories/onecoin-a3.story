@@ -18,8 +18,8 @@ endcard: off
 # cine act=rise fx="code:@blocks;vals:1,2;labs:BEFORE,AFTER THE 'NEW BLOCKCHAIN';txts:×1,×2;go:In;gap:1.6;hl:1;hlat:doubled;note:October 2016;in:right"
 In October 2016, OneCoin launched a brand new **blockchain**, and doubled every member's balance.
 
-// CARD a3-03 · SEE: the desk; a print of a hand holding a phone receiver lies among papers; on "call" it lifts and becomes the frame · SEAM in right, out in
-# cine act=doubt fx="code:@table;items:onecoin_doc_doj_greenwood@.2,.42,6,.5~onecoin_art_recruit_call@.6,.5,-4,.46;pan:0,.12;lift:1;at:call;in:right;out:in"
+// CARD a3-03 · SEE: a phone in a hand, close, lighting up — the recruiter's call · SEAM in right
+# cine act=doubt fx="code:@reel;clip:stock_screen_phone_02;move:in;z:.1;in:right"
 That same season, a Norwegian developer named Bjørn **Bjercke** took a recruiter's phone call.
 
 // CARD a3-04 · SEE: the job as he described it, typed on a sheet: role, client, task; the marker underlines "build" · SEAM in Z
