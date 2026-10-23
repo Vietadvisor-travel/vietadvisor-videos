@@ -127,9 +127,10 @@ cd studio && python3 tools/pp_drive.py check && python3 tools/pp_drive.py ls && 
   number of stock clips indexed.
 - If the credentials are missing: say which variable is missing and point to `jobs/DRIVE_SETUP.md` step 3. The
   variables only reach a session opened after they were saved.
-- If there is no folder yet (`jobs/_drive.json` missing): login can still be proven with
-  `python3 -c "import sys; sys.path.insert(0, 'tools'); import pp_drive; pp_drive.auth(); print('login OK')"`, and Muse's
-  first upload will create the folder.
+- If there is no folder yet (`jobs/_drive.json` missing): run `python3 tools/pp_drive.py selftest`. It creates
+  `PoisonPill_Media/_stock`, writes `jobs/_drive.json`, and proves upload, list, range read and delete with a tiny
+  file it then removes. Commit and push `jobs/_drive.json` so Muse uploads into the same folder.
+- Never point `GDRIVE_FOLDER` at a folder the owner made by hand: the `drive.file` scope cannot see it.
 
 **Missing sources:** if `jobs/<slug>/` has no research or no pack, say so and stop. Tell the owner the exact sentence
 to send Muse: `nghiên cứu và đóng gói: <topic>`.

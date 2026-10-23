@@ -15,6 +15,8 @@ The folder id lives in jobs/_drive.json (written by the first upload) or GDRIVE_
 requests, so a catalogue costs a few KB and a story pulls only the clips it uses, never the whole GB zip.
 
   python3 tools/pp_drive.py put <files…> --to _stock      → Muse: resumable upload (skips files already there, same md5)
+  python3 tools/pp_drive.py init                          → create PoisonPill_Media/_stock once (writes jobs/_drive.json)
+  python3 tools/pp_drive.py selftest                      → real round trip: upload, list, range read, delete
   python3 tools/pp_drive.py share                         → optional: anyone with the link can view (API-key mode)
 
   python3 tools/pp_drive.py check                 → key + folder reachable? lists the top level
@@ -127,6 +129,30 @@ def put(paths, dest):
                 print(f'\r{dest}/{name}: {sent / 1e6:,.0f} / {size / 1e6:,.0f} MB', end='', flush=True)
         print(' ✓')
     if os.path.exists(FILES): os.remove(FILES)
+
+
+def init():
+    """Create PoisonPill_Media (+ _stock) once and record the id in jobs/_drive.json: commit and push it afterwards."""
+    root = folder(create=True); mkdir('_stock', root); print(f'Drive folder ready: {root} (PoisonPill_Media/_stock) → jobs/_drive.json')
+
+
+def selftest():
+    """The real round trip: upload a tiny pack, read its catalogue and one clip back over range requests, delete it."""
+    import tempfile
+    init()
+    with tempfile.TemporaryDirectory() as d:
+        z = os.path.join(d, 'selftest_pack.zip'); blob = os.urandom(3 << 20)
+        with zipfile.ZipFile(z, 'w', zipfile.ZIP_STORED) as w:
+            w.writestr('clips/selftest_clip.bin', blob); w.writestr('pack.json', json.dumps({'slug': 'selftest', 'clips': {'selftest_clip': {'file': 'clips/selftest_clip.bin'}}}))
+        put([z], '_selftest')
+    F = files(True); assert '_selftest/selftest_pack.zip' in F, 'uploaded file not listed'
+    with open_zip('drive:_selftest/selftest_pack.zip') as zz:
+        ok = json.loads(zz.read('pack.json'))['slug'] == 'selftest' and zz.read('clips/selftest_clip.bin') == blob
+    for p in [p for p in F if p.startswith('_selftest/')]: call(f"files/{F[p]['id']}", method='DELETE').read()
+    sub = [f for f in children(folder()) if f['name'] == '_selftest']
+    for f in sub: call(f"files/{f['id']}", method='DELETE').read()
+    if os.path.exists(FILES): os.remove(FILES)
+    print('SELFTEST PASS: upload, list, range read and delete all work' if ok else 'SELFTEST FAIL: read-back differs'); sys.exit(0 if ok else 1)
 
 
 def share():
@@ -245,7 +271,9 @@ def get(pattern, to=None):
 
 if __name__ == '__main__':
     a = sys.argv[1:]; opt = lambda k: a[a.index('--' + k) + 1] if '--' + k in a else None
-    if not a or a[0] not in ('check', 'ls', 'get', 'put', 'share'): print(__doc__); sys.exit(1)
+    if not a or a[0] not in ('check', 'ls', 'get', 'put', 'share', 'init', 'selftest'): print(__doc__); sys.exit(1)
+    if a[0] == 'init': init(); sys.exit()
+    if a[0] == 'selftest': selftest()
     if a[0] == 'put': put([x for x in a[1:] if not x.startswith('--') and x != opt('to')], opt('to') or ''); sys.exit()
     if a[0] == 'share': share(); sys.exit()
     if a[0] == 'check':
