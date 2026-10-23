@@ -10,12 +10,12 @@ captions: off
 autotrans: off
 endcard: off
 
-// CARD a5-01 · SEE: punch — handcuffs lying on stacked banknotes under coloured light; a fast push · SEAM in right, out right
-# cine act=fall fx="code:@reel;clip:stock_money_cash_stack_04;move:in;z:.16;in:right;out:right"
+// CARD a5-01 · SEE: act turn: the exit email again, close on the last line; BLAME is circled on "blame" — step three begins · SEAM in right, out right
+# cine act=fall fx="code:@email_page;head:FROM  Ruja Ignatova · TO  Sebastian Greenwood · 9 AUGUST 2014 (excerpt);lines:My exit strategy, option one:~Take the money and run and~blame someone else for this . . . .;src:Quoted in a US Justice Department release, 16 December 2022;zoom:2;zat:0;circle:blame@blame;rot:-1;in:right;out:right"
 {urgent} The blame arrived **fast**.
 
 // CARD a5-02 · SEE: the DOJ release about Greenwood lifts off the desk and fills the frame; the place and date of his arrest set over it · SEAM in right
-# cine act=fall fx="code:@table;items:onecoin_doc_doj_greenwood@.5,.5,-3,.62;pan:0,0;lift:0;at:arrested;txt:KOH SAMUI, THAILAND · JULY 2018;tat:In;sub:Greenwood arrested (US Justice Department);in:right"
+# cine act=fall fx="code:@table;items:onecoin_doc_doj_greenwood@.5,.46,-3,.56;pan:0,0;lift:0;at:arrested;txt:KOH SAMUI, THAILAND · JULY 2018;tat:In;ty:.74;sub:Greenwood arrested (US Justice Department);in:right"
 In July 2018, Greenwood was arrested on the Thai island of Koh **Samui**.
 
 // CARD a5-03 · SEE: the real aerial of Los Angeles airport lifts and fills the frame, then drains to grey on "arrested" · SEAM out right
@@ -26,8 +26,8 @@ In March 2019, her brother's plane landed in Los Angeles, and he was **arrested*
 # cine act=fall fx="code:@reel;clip:stock_texture_smoke_black_04;move:in;z:.1;in:right;txt:“smoke and mirrors more than zeroes and ones”;tsize:58;tfont:serif;tat:prosecutor;ty:.44;sub:US Attorney Geoffrey Berman · 8 March 2019"
 {wry} New York's top federal prosecutor called OneCoin "a pyramid scheme based on smoke and mirrors more than zeroes and **ones**." (J)
 
-// CARD a5-05 · SEE: an orderly lawyer's desk — papers squared, glasses folded; his name and role set above it (no face: we have no licensed picture of him) · SEAM in right, out right
-# cine act=fall fx="code:@reel;clip:stock_documents_files_06;move:right;z:.1;in:right;out:right;txt:MARK SCOTT;tsize:84;tfont:impact;tat:Then;ty:.16;sub:partner at a major law firm"
+// CARD a5-05 · SEE: a single case card drops onto the desk: MARK SCOTT, former law-firm partner — THE LAWYER · SEAM in right, out right
+# cine act=fall fx="code:@case_cards;rows:MARK SCOTT/former law-firm partner/THE LAWYER;show:0;go:Mark;title:THE MAN WHO WASHED THE MONEY;in:right;out:right"
 Then came the man who washed the money: Mark Scott, a partner at a major law **firm**.
 
 // CARD a5-06 · SEE: his fund structure typed on a sheet: fake funds, two island jurisdictions, the sum; the marker underlines "fake" and the total · SEAM in right
@@ -86,6 +86,6 @@ Frank Schneider, a former Luxembourg spy and OneCoin's security adviser, was arr
 # cine act=fall fx="code:@table;items:onecoin_art_ankle_desk@.5,.5,2,.56;pan:0,0;lift:0;at:ankle;mono:vanished;txt:MAY 2023: GONE;tat:vanished;sub:the GPS monitor disabled or evaded;in:right"
 {tense} Under house arrest, with a GPS tag on his ankle, he vanished in May **2023**.
 
-// CARD a5-20 · SEE: police lights at night, slow; grey; the status sets and holds · SEAM out right
-# cine act=fall fx="code:@reel;clip:stock_law_police_car_07;move:in;z:.08;mono:still;txt:STILL A FUGITIVE;tsize:84;tfont:impact;tat:He;ty:.16;out:right"
+// CARD a5-20 · SEE: a seventh case file, but empty and dashed: FRANK SCHNEIDER — FUGITIVE · SEAM out right
+# cine act=fall fx="code:@case_cards;rows:FRANK SCHNEIDER/fled house arrest, May 2023/FUGITIVE;empty:0;show:0;go:He;title:STILL OPEN;out:right"
 He is still a **fugitive**.

@@ -38,8 +38,8 @@ This is the story of how a product that never existed raised more than four **bi
 # cine act=doubt fx="code:@word_cut_montage;clips:onecoin_clip_datacenter,onecoin_clip_mining_asic,stock_screen_ticker_18,stock_screen_terminal_05;keys:blockchain,mining,market,database"
 No blockchain. No mining. No market. Just a **database** her own company controlled.
 
-// CARD a0-08 · SEE: hands typing on a laptop at night, lit by the screen; the date lands on "years" · SEAM in right, out in
-# cine act=doubt fx="code:@reel;clip:stock_screen_laptop_night_07;move:in;z:.1;in:right;out:in;txt:AUGUST 2014;tsize:72;ty:.16;tat:But;sub:two years before Wembley"
+// CARD a0-08 · SEE: the email lies on the desk under the lamp, seen whole for the first time — the ending, already written — before the camera reads into it · SEAM in right, out in
+# cine act=doubt fx="code:@email_page;head:FROM  Ruja Ignatova · TO  Sebastian Greenwood · 9 AUGUST 2014 (excerpt);lines:My exit strategy, option one:~Take the money and run and~blame someone else for this . . . .;src:Quoted in a US Justice Department release, 16 December 2022;rot:3;in:right;out:in"
 But that's not the whole story. Two years before Wembley, she had already written the **ending**.
 
 // CARD a0-09 · SEE: the email itself on the desk under the lamp; the camera reads down into it on "strategy" · SEAM in Z
@@ -54,6 +54,6 @@ An email from August 2014, listing her exit **strategy**.
 # cine act=fall fx="code:@footage_split;base:stock_texture_smoke_black_07;clips:stock_money_wallet_10,stock_airplane_united_airlines_n75858_757_3_01,stock_law_handcuffs_06;keys:did,all,three"
 She did all **three**. [BEAT] Almost to the word.
 
-// CARD a0-12 · SEE: a crowd crossing a city street from above, people as dots; on "million" the number sets above them; the camera keeps pushing (Z forward into the film) · SEAM in right, out in
-# cine act=fall fx="code:@reel;clip:stock_crowds_street_scramble_crossing_at_robinso_01;move:in;z:.12;in:right;out:in;txt:3.5 MILLION INVESTORS;tsize:80;tfont:impact;ty:.16;tat:paid;sub:at least, by the US count;mono:missing"
+// CARD a0-12 · SEE: the dark frame fills with gold points spreading outward faster and faster — one point per few hundred people — while the count sets; too many to film · SEAM in right, out in
+# cine act=fall fx="code:@dots;n:11000;go:paid;lab:3.5 MILLION INVESTORS;sub:at least, by the US count"
 {tense} So who paid for it? Three and a half million investors, and the money is still **missing**.

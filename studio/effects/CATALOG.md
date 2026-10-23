@@ -1,4 +1,4 @@
-# Effects library (35)
+# Effects library (36)
 
 Every effect was invented for one moment of one film. Use it as `fx="code:@<name>;<param>:<value>…"`, adapt a copy under a new name, or invent a new one and save it (`node tools/pp_fx.mjs save …`).
 
@@ -18,6 +18,7 @@ Every effect was invented for one moment of one film. Use it as `fx="code:@<name
 | — | `@cv_card` | a CV card fills the frame under the lamp and fills in row by row on the beat while the camera rides to the newest row; a yellow correction sticker can fix an inflated claim; the last row can arrive in red and be circled by the marker | name, rows, step, go, fix, fixrow, fixat, red, ring, in, out | biography, cv, credentials, correction, record, founder | onecoin v2 (the most credible person in any room) |
 | ![](previews/doc_flip.jpg) | `@doc_flip` | a real document flies in from deep space turning over in 3D (paper back first), lands with a shadow, a highlighter runs across one line | doc, land, bg, mark, line | document,3d,card,evidence,highlight | demo-kit (fx kit showcase) |
 | ![](previews/document_verdict_stamps.jpg) | `@document_verdict_stamps` | the opening document returns; each clause is highlighted on its word and gets what really happened stamped beside it | — | callback,document,verdict,ending,stamps | onecoin a6: Take the money. Run. Blame someone else. She wrote it in 2014. |
+| — | `@dots` | a vast number becomes a field of gold points that fills the dark frame in waves from one point outward, faster and faster, while the count sets in large type — a crowd too big to film | n, go, lab, sub, cx, cy, in, out | scale, crowd, victims, count, millions, data | onecoin v2 (three and a half million investors) |
 | ![](previews/email_page.jpg) | `@email_page` | a quoted email as a printed page on the desk under the lamp; the camera reads into it and red marker circles (or underlines) chosen words on their cue words; a source line keeps it honest | head, lines, src, circle, under, zoom, zat, rot, in, out | document, email, evidence, quote, marker, motif | onecoin v2 (the exit-strategy email, re-read at every act turn) |
 | ![](previews/evidence_email_drop.jpg) | `@evidence_email_drop` | a real email printed as evidence drops onto a dark desk with a spring; header lines stagger in; the key phrase gets a gold marker on its spoken word; the next lines are redacted bars | — | document,email,evidence,quote,reveal,desk | onecoin a0: An email from August 2014, listing her exit strategy |
 | ![](previews/footage_split.jpg) | `@footage_split` | one full-frame shot is sliced into panels on spoken words, each new panel sliding in from the right with its own footage | base, clips, keys, close | footage,split-screen,montage,stock,list | demo-stock (stock-as-material test) |

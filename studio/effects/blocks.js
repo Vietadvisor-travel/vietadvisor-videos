@@ -9,7 +9,7 @@
   ctx.save(); seam(P.in || 'none', P.out || 'none');
   const bg = P.bg ? clip(P.bg, 0, 1) : null; if (bg) cover(bg, { z: 1.1, filter: 'blur(10px) brightness(.3)' }); else { ctx.fillStyle = '#0a0907'; ctx.fillRect(0, 0, W, H); }
   const vals = String(P.vals).split(',').map(Number), labs = String(P.labs || '').split(','), txts = String(P.txts || '').split(','), n = vals.length;
-  const base = (+P.base || .84) * H, maxH = H * .64, log = P.scale === 'log', mx = Math.max(...vals.map(v => log ? Math.log10(v + 1) : v)), gw = W * .8 / n, bw = Math.min(gw * .7, W * .2);
+  const base = (+P.base || .78) * H, maxH = H * .58, log = P.scale === 'log', mx = Math.max(...vals.map(v => log ? Math.log10(v + 1) : v)), gw = W * .8 / n, bw = Math.min(gw * .7, W * .2);
   const fl = ctx.createLinearGradient(0, base, 0, H); fl.addColorStop(0, '#1b1611'); fl.addColorStop(1, '#060504'); ctx.fillStyle = fl; ctx.fillRect(0, base, W, H - base);
   const t0 = P.go ? at(P.go) : .3, gap = +(P.gap || .5), hl = P.hl !== undefined ? +P.hl : -1, hk = P.hlat ? clamp(p(P.hlat, .5, 'out')) : 0, face = P.img ? img(P.img) : null;
   const show = +(P.show || 0); vals.forEach((v, i) => { const x = W * .1 + gw * (i + .5), ti = i < show ? -9 : t0 + (i - show) * gap, isEmpty = String(P.empty) === String(i);

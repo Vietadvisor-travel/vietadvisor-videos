@@ -31,12 +31,12 @@ Her marketing added **Oxford**. [BEAT] Her Oxford degree was a master's. (J)
 # cine act=doubt fx="code:@cv_card;name:Dr. Ruja Ignatova;rows:LAW DOCTORATE/University of Konstanz~CONSULTANT/McKinsey & Company~OXFORD/as marketed~2012/convicted of fraud, Germany;step:4;go:fraud;fix:A MASTER'S;fixrow:2;fixat:0;red:3;ring:fraud;out:down"
 What the marketing left out: in 2012, a German court convicted her of **fraud**.
 
-// CARD a1-07 · SEE: a steel door with a padlock in a hard shaft of light — a business stripped and shut; the sentence sets beside the lock on "fourteen"; the picture drains to grey on "suspended" · SEAM in down, out right
-# cine act=doubt fx="code:@reel;clip:stock_money_vault_02;move:in;z:.1;in:down;out:right;txt:14 MONTHS · SUSPENDED;tsize:72;tfont:impact;ty:.18;tat:She;mono:suspended"
+// CARD a1-07 · SEE: foreshadowing the film's ending: a single case card drops onto the desk — RUJA IGNATOVA, Germany 2012, 14 MONTHS — and the title notes it was suspended · SEAM in down, out right
+# cine act=doubt fx="code:@case_cards;rows:RUJA IGNATOVA/Germany, 2012 · fraud/14 MONTHS;show:0;go:She;title:SUSPENDED SENTENCE;in:down;out:right"
 She and her father had stripped a foundry until it went **bankrupt**. Her sentence: fourteen months, suspended.
 
-// CARD a1-08 · SEE: coins dropping into a glass jar, one by one — a small first scheme; the name of it sets above the jar on "BigCoin" · SEAM in right, out right
-# cine act=rise fx="code:@reel;clip:stock_money_coins_falling_06;move:in;z:.08;in:right;out:right;txt:BIGCOIN · 2013;tsize:76;tfont:impact;ty:.16;tat:BigCoin;tcol:#2a2219;sub:her first crypto scheme;grade:warm"
+// CARD a1-08 · SEE: the desk: a print of crypto tokens (her first coin) and the DOJ release naming Greenwood; the marker circles the coin on "BigCoin" and the partner on "Greenwood" · SEAM in right, out right
+# cine act=rise fx="code:@table;items:onecoin_bitcoin_coins@.3,.5,-4,.46~onecoin_doc_doj_greenwood@.72,.48,3,.5;pan:0,.06;mark:0@BigCoin,1@Greenwood;txt:BIGCOIN · 2013;tat:Then;ty:.74;sub:her first crypto scheme · with Sebastian Greenwood;in:right;out:right"
 Then, in 2013, she tried a first crypto scheme, **BigCoin**, alongside a Swedish salesman named Sebastian Greenwood.
 
 // CARD a1-09 · SEE: the June email itself, whole, on the desk under the lamp — before anyone reads it · SEAM in right, out in
@@ -53,7 +53,7 @@ In her words:
 @ruja: "…like MLM meets bitch of wall **street**." (J)
 
 // CARD a1-12 · SEE: the real OneCoin logo on the company's glass door lifts off the desk and fills the frame; their own nickname sets over it and the picture drains to grey on "trashy" · SEAM in right
-# cine act=rise fx="code:@table;items:onecoin_hq_door@.5,.5,-3,.6;pan:0,0;lift:0;at:nickname;mono:trashy;txt:“TRASHY COIN”;tat:nickname;sub:the founders' private nickname, 2014 emails (DOJ);in:right"
+# cine act=rise fx="code:@table;items:onecoin_hq_door@.5,.46,-3,.56;pan:0,0;lift:0;at:nickname;mono:trashy;txt:“TRASHY COIN”;tat:nickname;ty:.74;sub:the founders' private nickname, 2014 emails (DOJ);in:right"
 In their private emails, the two founders even had a nickname for their product: "trashy **coin**." (J)
 
 // CARD a1-13 · SEE: the exit-strategy email again, the motif, seen whole on the desk; the camera pushes in on "exit" · SEAM in right, out in

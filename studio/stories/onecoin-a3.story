@@ -35,7 +35,7 @@ The job: build a blockchain for a cryptocurrency **company**.
 Bjercke said no. Then he started **talking**.
 
 // CARD a3-07 · SEE: the warnings typed one per line on a sheet under the lamp — Norway, Germany, Britain — each underlined as its name is said · SEAM in right
-# cine act=doubt fx="code:@email_page;head:THE WARNINGS · 2016–2017 (summary);lines:Norway: called a pyramid scheme, March 2016~Germany: BaFin moves against payments~Britain: FCA warning, September 2016;src:Summary of regulator actions from the research file;under:norway@Norway,germany@Germany,britain@Britain;rot:-1;in:right"
+# cine act=doubt fx="code:@email_page;head:THE WARNINGS · 2016–2017 (summary);lines:Norway: “a pyramid”, March 2016~Germany: BaFin acts, 2016–17~Britain: FCA warning, Sept 2016;src:Summary of regulator actions from the research file;under:norway@Norway,germany@Germany,britain@Britain;rot:-1;in:right"
 By then, regulators in Norway, Germany and Britain had already moved against **it**.
 
 // CARD a3-08 · SEE: the company exchange screen, last time: on "good" the hero reads CLOSED and the whole panel drains to grey · SEAM out down

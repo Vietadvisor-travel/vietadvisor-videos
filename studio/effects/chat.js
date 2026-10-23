@@ -20,8 +20,8 @@
     if (typing) { for (let d = 0; d < 3; d++) { g.fillStyle = `rgba(255,255,255,${.4 + .5 * Math.max(0, Math.sin(t * 8 - d))})`; g.beginPath(); g.arc(x + 35 + d * 25, y + 35, 7, 0, 7); g.fill(); } }
     else { g.fillStyle = '#f2ece0'; lines.forEach((l, j) => g.fillText(l, x + 25, y + 56 + j * 74)); }
     g.globalAlpha = 1; y += bh + 34; });
-  const k = clamp(t / Math.max(1, dur)), w = H * .62, h = w * ph / pw;
-  card(S, { x: W * .5, y: H * .62, w, h, rx: .62 - .05 * k, ry: -.06, rz: .05, z: 0, shadow: true, n: 14 });
-  if (P.src) text(P.src, W * .5, H * .93, { size: 34 * u, font: 'serif', col: '#a99a82', lw: 0 });
+  const k = clamp(t / Math.max(1, dur)), w = H * .44, h = w * ph / pw;
+  card(S, { x: W * .5, y: H * .5, w, h, rx: .5 - .05 * k, ry: -.06, rz: .05, z: 0, shadow: true, n: 14 });
+  if (P.src) text(P.src, W * .5, H * .08, { size: 34 * u, font: 'serif', col: '#a99a82', lw: 0 });
   ctx.restore();
 }

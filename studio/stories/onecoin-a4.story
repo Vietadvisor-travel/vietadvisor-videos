@@ -22,8 +22,8 @@ Its founder never **showed**.
 # cine act=fall fx="code:@email_page;head:UNITED STATES DISTRICT COURT · SOUTHERN DISTRICT OF NEW YORK;lines:Arrest warrant~Ruja Ignatova~Issued: 12 October 2017;src:Reconstruction · date from FBI and IRS statements;under:october@warrant;rot:-1.6;in:right"
 Five days later, the United States issued a **warrant** for her arrest.
 
-// CARD a4-04 · SEE: a real print of Sofia lifts off the desk and fills the frame; her two words to her brother set over it, attributed · SEAM in right, out right
-# cine act=fall fx="code:@table;items:onecoin_sofia@.5,.5,-3,.56;pan:0,0;lift:0;at:She;txt:“VERY TIRED”;tat:She;sub:what she told her brother, in his court testimony;in:right;out:right"
+// CARD a4-04 · SEE: her portrait seen through rain on a window, cold; her two words to her brother set low in the frame, attributed · SEAM in right, out right
+# cine act=fall fx="code:@reel;clip:stock_texture_rain_glass_01;under:onecoin_ruja;ua:.5;move:in;z:.08;in:right;out:right;grade:cold;txt:“very tired”;tsize:84;tfont:serif;tat:She;ty:.74;sub:what she told her brother, in his court testimony"
 {sad} She told her brother she was very **tired**.
 
 // CARD a4-05 · SEE: a passport lands on the desk; two boarding passes slide out of it, one per city spoken — Vienna, Athens — and only Athens stays lit · SEAM in right
@@ -39,7 +39,7 @@ She had what he called a "big **passport**", and he bought her tickets to Vienna
 One bag. One **bodyguard**. [BEAT]
 
 // CARD a4-09 · SEE: the real Athens airport photo lifts off the desk and fills the frame on "landed"; it drains to grey on "sighting" and the date holds in the silence · SEAM hold
-# cine act=fall fx="code:@table;items:onecoin_athens_airport@.5,.5,-3,.5;pan:0,0;lift:0;at:landed;mono:sighting;txt:LAST CONFIRMED SIGHTING;tsize:70;tat:sighting;ty:.16;sub:Athens airport · 25 October 2017"
+# cine act=fall fx="code:@table;items:onecoin_athens_airport@.5,.48,-3,.5;pan:0,0;lift:0;at:landed;mono:sighting;txt:LAST CONFIRMED SIGHTING;tsize:70;tat:sighting;ty:.74;sub:Athens airport · 25 October 2017"
 She landed in **Athens**.
 {grave} And that is the last confirmed sighting of Ruja Ignatova. {hold}
 

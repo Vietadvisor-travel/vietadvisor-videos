@@ -79,12 +79,12 @@ And even the cash was hard to get **out**.
 # cine act=doubt fx="code:@backoffice;bg:stock_screen_ticker_29;title:ONECOIN EXCHANGE (INTERNAL ONLY);ry:.12;rows:Sell order=PENDING~Sell order=PENDING~Daily limit=REACHED;go:exchange;gap:.5;hero:ONLINE;hlab:STATUS;hat:exchange;to:OFFLINE;toat:offline;accent:#e5484d;out:right"
 The only exchange was OneCoin's own, with daily selling limits, and it kept going **offline**.
 
-// CARD a2-19 · SEE: dollars and coins piling up, seen from above; the camera falls into the pile (down) as the line lands · SEAM in down, out right
-# cine act=doubt fx="code:@reel;clip:stock_money_raining_07;move:in;z:.14;in:down;out:right;txt:ONE WAY: IN;tsize:96;tfont:impact;tat:way;ty:.18;tcol:#e8c77e"
+// CARD a2-19 · SEE: the pyramid again, but the gold only flows up — every line a one-way pipe into the top node · SEAM in down, out right
+# cine act=doubt fx="code:@network;clips:stock_people_night_crowd_02,stock_people_applause_09;levels:3;go:Which,money;flow:money;top:ONE WAY: IN;toplab:no exit for the buyers;in:down;out:right"
 Which meant the money flowed one **way**: in.
 
-// CARD a2-20 · SEE: a magnifying glass moving over handwriting — investigators reading the company's own books; the window sets on "cover" · SEAM in right, out right
-# cine act=fall fx="code:@reel;clip:stock_documents_magnifying_04;move:right;z:.1;in:right;out:right;txt:Q4 2014 – Q4 2016;tsize:72;tfont:impact;tat:files;ty:.16;sub:OneCoin's own books, obtained by US prosecutors"
+// CARD a2-20 · SEE: the DOJ release that quotes OneCoin's own books lifts off the desk and fills the frame; the window of the books sets under it · SEAM in right, out right
+# cine act=fall fx="code:@table;items:onecoin_doc_doj_greenwood@.5,.5,-3,.62;pan:0,0;lift:0;at:files;txt:Q4 2014 – Q4 2016;tat:OneCoin's;ty:.74;sub:OneCoin's own books, obtained by US prosecutors;in:right;out:right"
 OneCoin's own files, later obtained by US prosecutors, cover late 2014 to late **2016**.
 
 // CARD a2-21 · SEE: the company's own books on its own screen: the window, then the sales row; the hero figure sets in gold · SEAM in right

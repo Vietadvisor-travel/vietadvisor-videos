@@ -10,8 +10,8 @@ captions: off
 autotrans: off
 endcard: off
 
-// CARD a6-01 · SEE: an old globe turning slowly under warm light; the question sets above it and holds · SEAM in right, out in
-# cine act=after fx="code:@reel;clip:stock_world_globe_04;move:in;z:.1;in:right;out:in;txt:WHERE IS SHE?;tsize:96;tfont:impact;tat:So;ty:.16"
+// CARD a6-01 · SEE: callback to the line-up: her empty dashed case card alone on the desk, NEVER TRIED; the question above it · SEAM in right, out in
+# cine act=after fx="code:@case_cards;rows:RUJA IGNATOVA/charged on five counts/NEVER TRIED;empty:0;show:0;go:So;title:WHERE IS SHE?;in:right;out:in"
 {tense} So where is **she**?
 
 // CARD a6-02 · SEE: the FBI's real Ten Most Wanted page flies in from deep space turning over, lands with a shadow; a highlighter runs across her name on "FBI" · SEAM in Z

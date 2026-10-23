@@ -19,6 +19,6 @@
   if (tk <= 0) card(S, { x: cx, y: cy, w, h, ry: (1 - k) * 2.6, rx: (1 - k) * .5 + .12, rz: -.03, z: (1 - k) * 2200 * u, shadow: true, back: '#e3ddd0', n: 12 });
   else { const cut = .74, L = document.createElement('canvas'), Rr = document.createElement('canvas'); L.width = Math.round(bw * cut); L.height = bh; Rr.width = bw - L.width; Rr.height = bh; L.getContext('2d').drawImage(S, 0, 0); Rr.getContext('2d').drawImage(S, -L.width, 0);
     card(L, { x: cx - w / 2 + w * cut / 2, y: cy, w: w * cut, h, rx: .12, rz: -.03, shadow: true, n: 10 }); card(Rr, { x: cx - w / 2 + w * cut + w * (1 - cut) / 2 + tk * W * .25, y: cy + tk * H * .25, w: w * (1 - cut), h, rx: .12 + tk * .5, rz: -.03 + tk * .6, z: tk * 300 * u, shadow: true, n: 8 }); }
-  if (P.recon) text(P.recon, W * .5, H * .92, { size: 32 * u, font: 'serif', col: '#a99a82', lw: 0 });
+  if (P.recon) text(P.recon, W * .5, H * .84, { size: 32 * u, font: 'serif', col: '#a99a82', lw: 0 });
   ctx.restore();
 }
