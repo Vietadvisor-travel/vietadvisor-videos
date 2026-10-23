@@ -84,7 +84,7 @@ The only exchange was OneCoin's own, with daily selling limits, and it kept goin
 Which meant the money flowed one **way**: in.
 
 // CARD a2-20 · SEE: the DOJ release that quotes OneCoin's own books lifts off the desk and fills the frame; the window of the books sets under it · SEAM in right, out right
-# cine act=fall fx="code:@table;items:onecoin_doc_doj_greenwood@.5,.5,-3,.62;pan:0,0;lift:0;at:files;txt:Q4 2014 – Q4 2016;tat:OneCoin's;ty:.74;sub:OneCoin's own books, obtained by US prosecutors;in:right;out:right"
+# cine act=fall fx="code:@table;items:onecoin_doc_doj_greenwood@.5,.5,-3,.62;pan:0,0;lift:0;at:files;in:right;out:right"
 OneCoin's own files, later obtained by US prosecutors, cover late 2014 to late **2016**.
 
 // CARD a2-21 · SEE: the company's own books on its own screen: the window, then the sales row; the hero figure sets in gold · SEAM in right
@@ -112,7 +112,7 @@ OneCoin had already raised more than a **quarter** of that. For rows in a databa
 {excited} In June 2016, at the height of the money, she took the stage at **Wembley**.
 
 // CARD a2-27 · SEE: a phone lies tilted under the lamp; a message from Greenwood types, then lands: "These ppl are idiots" · SEAM in right
-# cine act=doubt fx="code:@chat;msgs:L:These ppl are idiots;cues:idiots;left:Greenwood;right:Konstantin Ignatov;src:Message of 11 September 2016, quoted by the US Justice Department;in:right"
+# cine act=doubt fx="code:@chat;msgs:L:These ppl are idiots;cues:message;left:Greenwood;right:Konstantin Ignatov;src:Message of 11 September 2016, quoted by the US Justice Department;in:right"
 {wry} And that September, Greenwood sent her brother a message about the members: "These ppl are **idiots**." (J)
 
 // CARD a2-28 · SEE: the reply types in under it: "as you told me, the network would not work with intelligent people ;)" · SEAM out right
