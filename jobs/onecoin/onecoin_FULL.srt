@@ -1,737 +1,721 @@
 1
-00:00:00,120 --> 00:00:03,126
+00:00:00,120 --> 00:00:03,130
 On Saturday, the eleventh of June, 2016,
 
 2
-00:00:03,193 --> 00:00:07,880
+00:00:03,197 --> 00:00:07,890
 a woman in a red gown walked
 onto the stage at Wembley Arena.
 
 3
-00:00:08,310 --> 00:00:10,630
+00:00:08,320 --> 00:00:10,760
 Thousands of her investors
 filled the arena.
 
 4
-00:00:11,060 --> 00:00:15,120
+00:00:11,200 --> 00:00:15,450
 She promised them that in two years,
 nobody would speak about Bitcoin anymore.
 
 5
-00:00:15,550 --> 00:00:18,690
+00:00:15,880 --> 00:00:19,020
 She was selling investors
 the coin that would kill it.
 
 6
-00:00:19,120 --> 00:00:20,900
+00:00:19,450 --> 00:00:21,250
 That coin did not exist.
 
 7
-00:00:21,330 --> 00:00:23,299
+00:00:21,680 --> 00:00:23,548
 This is the story of how a product
 
 8
-00:00:23,366 --> 00:00:26,780
+00:00:23,615 --> 00:00:26,860
 that never existed raised more
 than four billion dollars.
 
 9
-00:00:27,210 --> 00:00:28,470
-No blockchain.
+00:00:27,290 --> 00:00:35,500
+No blockchain. No mining. No market. Just
+a database her own company controlled.
 
 10
-00:00:29,410 --> 00:00:30,480
-No mining.
+00:00:35,930 --> 00:00:38,862
+But that's not the whole story.
+Two years before Wembley,
 
 11
-00:00:31,610 --> 00:00:32,730
-No market.
-
-12
-00:00:33,810 --> 00:00:36,840
-Just a database her
-own company controlled.
-
-13
-00:00:37,270 --> 00:00:38,913
-But that's not the whole story.
-
-14
-00:00:38,980 --> 00:00:42,130
-Two years before Wembley,
+00:00:38,929 --> 00:00:40,770
 she had already written the ending.
 
-15
-00:00:42,560 --> 00:00:47,090
+12
+00:00:41,200 --> 00:00:45,780
 An email from August 2014,
 listing her exit strategy.
 
-16
-00:00:47,520 --> 00:00:48,543
-Option one:
+13
+00:00:46,210 --> 00:00:49,530
+RUJA: Option one: "Take the money and
+run and blame someone else for this."
 
-17
-00:00:48,610 --> 00:00:51,310
-RUJA: Take the money and run
-and blame someone else for this.
-
-18
-00:00:51,740 --> 00:00:55,460
+14
+00:00:49,960 --> 00:00:53,680
 She did all three. Almost to the word.
 
-19
-00:00:55,890 --> 00:00:59,315
+15
+00:00:54,110 --> 00:00:57,765
 So who paid for it? Three
 and a half million investors,
 
-20
-00:00:59,382 --> 00:01:01,350
+16
+00:00:57,832 --> 00:00:59,930
 and the money is still missing.
 
-21
-00:01:05,987 --> 00:01:12,127
+17
+00:01:00,353 --> 00:01:06,493
 Ruja Ignatova was born in Ruse, Bulgaria,
 in 1980, and grew up in Germany.
 
-22
-00:01:12,557 --> 00:01:16,037
+18
+00:01:06,923 --> 00:01:10,396
 On paper, the founder was the
 most credible person in any room.
 
-23
-00:01:16,467 --> 00:01:19,937
+19
+00:01:10,463 --> 00:01:13,933
 A real law doctorate from
 the University of Konstanz.
 
-24
-00:01:20,367 --> 00:01:21,897
+20
+00:01:14,363 --> 00:01:15,893
 A job at McKinsey.
 
-25
-00:01:22,567 --> 00:01:27,097
+21
+00:01:16,563 --> 00:01:21,093
 Her marketing added Oxford. Her
 Oxford degree was a master's.
 
-26
-00:01:27,527 --> 00:01:33,097
+22
+00:01:21,523 --> 00:01:27,093
 What the marketing left out: in 2012,
 a German court convicted her of fraud.
 
-27
-00:01:33,527 --> 00:01:38,356
+23
+00:01:27,523 --> 00:01:32,360
 She and her father had stripped a foundry
 until it went bankrupt. Her sentence:
 
-28
-00:01:38,423 --> 00:01:40,097
+24
+00:01:32,427 --> 00:01:34,103
 fourteen months, suspended.
 
-29
-00:01:40,537 --> 00:01:44,375
+25
+00:01:34,533 --> 00:01:38,200
 Then, in 2013, she tried a
 first crypto scheme, BigCoin,
 
-30
-00:01:44,442 --> 00:01:48,277
+26
+00:01:38,267 --> 00:01:41,933
 alongside a Swedish salesman
 named Sebastian Greenwood.
 
-31
-00:01:48,707 --> 00:01:52,907
+27
+00:01:42,363 --> 00:01:46,563
 In June 2014 she sent Greenwood
 an email pitching a bigger deal.
 
-32
-00:01:53,337 --> 00:01:54,400
+28
+00:01:46,983 --> 00:01:48,046
 In her words:
 
-33
-00:01:54,467 --> 00:01:56,060
-RUJA: You as the magic sales machine,
+29
+00:01:48,113 --> 00:01:49,693
+RUJA: "you as the magic sales machine,
 
-34
-00:01:56,127 --> 00:01:58,417
+30
+00:01:49,760 --> 00:01:52,013
 and me as someone who really
-can work with numbers…
+can work with numbers…"
 
-35
-00:01:58,847 --> 00:02:00,967
-RUJA: …like MLM meets
-bitch of wall street.
+31
+00:01:52,443 --> 00:01:54,563
+RUJA: "…like MLM meets
+bitch of wall street."
 
-36
-00:02:01,387 --> 00:02:05,532
+32
+00:01:54,993 --> 00:01:59,139
 In their private emails, the two founders
 even had a nickname for their product:
 
-37
-00:02:05,599 --> 00:02:06,337
+33
+00:01:59,206 --> 00:01:59,943
 "trashy coin."
 
-38
-00:02:06,767 --> 00:02:09,007
+34
+00:02:00,373 --> 00:02:02,613
 Two months later came the exit email.
 
-39
-00:02:09,437 --> 00:02:14,237
+35
+00:02:03,033 --> 00:02:07,843
 So before a single coin was sold, the
 plan had three steps: take, run, blame.
 
-40
-00:02:14,653 --> 00:02:18,623
+36
+00:02:08,253 --> 00:02:11,813
 Step one. Here's the trick:
 investors never actually bought a coin.
 
-41
-00:02:19,053 --> 00:02:20,848
+37
+00:02:12,243 --> 00:02:14,038
 They bought an education package:
 
-42
-00:02:20,915 --> 00:02:25,483
+38
+00:02:14,105 --> 00:02:18,673
 course notes that a US lawsuit says were
 copied from free sources like Wikipedia.
 
-43
-00:02:25,923 --> 00:02:30,693
+39
+00:02:19,103 --> 00:02:23,873
 Package prices started at one
 hundred euros and went up to 118,000.
 
-44
-00:02:31,123 --> 00:02:34,983
+40
+00:02:24,303 --> 00:02:28,163
 Each package came with tokens,
 and you "mined" the tokens into coins.
 
-45
-00:02:35,413 --> 00:02:39,673
+41
+00:02:28,593 --> 00:02:32,853
 Mining meant a timer. When it ran out,
 a number appeared in your account.
 
-46
-00:02:40,103 --> 00:02:44,123
+42
+00:02:33,283 --> 00:02:36,996
 And the price of that number?
 The office in Sofia typed it in.
 
-47
-00:02:44,553 --> 00:02:50,093
+43
+00:02:37,063 --> 00:02:42,603
 Fifty euro cents at launch.
 Twenty-nine ninety-five by 2019.
 
-48
-00:02:50,513 --> 00:02:53,783
+44
+00:02:43,033 --> 00:02:46,303
 Yet the coin never traded
 on a single public market.
 
-49
-00:02:54,223 --> 00:02:57,943
+45
+00:02:46,733 --> 00:02:49,693
 Then came the splits: every few months,
 your tokens doubled overnight.
 
-50
-00:02:58,373 --> 00:03:02,792
+46
+00:02:50,133 --> 00:02:54,646
 But each time, the "mining
 difficulty" quietly rose:
 
-51
-00:03:02,859 --> 00:03:05,533
+47
+00:02:54,713 --> 00:02:57,443
 from 44 tokens per coin to 359.
 
-52
-00:03:05,963 --> 00:03:08,483
+48
+00:02:57,863 --> 00:03:00,383
 So on screen, your balance only ever grew.
 
-53
-00:03:08,903 --> 00:03:11,326
+49
+00:03:00,813 --> 00:03:03,236
 The company promised 120 billion coins.
 
-54
-00:03:11,393 --> 00:03:14,393
+50
+00:03:03,303 --> 00:03:06,303
 Bitcoin will only ever
 have twenty-one million.
 
-55
-00:03:14,833 --> 00:03:16,813
+51
+00:03:06,733 --> 00:03:08,463
 And every buyer was also a salesman.
 
-56
-00:03:17,243 --> 00:03:20,243
+52
+00:03:08,933 --> 00:03:11,933
 You got paid on your recruits,
 and on your recruits' recruits.
 
-57
-00:03:20,673 --> 00:03:24,396
+53
+00:03:12,373 --> 00:03:16,096
 At the very top, Greenwood took
 five percent of all sales worldwide:
 
-58
-00:03:24,463 --> 00:03:26,413
+54
+00:03:16,163 --> 00:03:18,113
 over three hundred million dollars.
 
-59
-00:03:26,853 --> 00:03:33,523
+55
+00:03:18,543 --> 00:03:25,243
 But your own bonus? Sixty percent cash.
 Forty percent locked inside the system.
 
-60
-00:03:33,943 --> 00:03:36,013
+56
+00:03:25,673 --> 00:03:27,743
 And even the cash was hard to get out.
 
-61
-00:03:36,443 --> 00:03:40,326
+57
+00:03:28,173 --> 00:03:32,056
 The only exchange was OneCoin's
 own, with daily selling limits,
 
-62
-00:03:40,393 --> 00:03:42,023
+58
+00:03:32,123 --> 00:03:33,753
 and it kept going offline.
 
-63
-00:03:42,453 --> 00:03:44,593
+59
+00:03:34,183 --> 00:03:36,403
 Which meant the money flowed one way: in.
 
-64
-00:03:45,033 --> 00:03:52,203
+60
+00:03:36,823 --> 00:03:44,903
 OneCoin's own files, later obtained by US
 prosecutors, cover late 2014 to late 2016.
 
-65
-00:03:52,633 --> 00:03:55,683
+61
+00:03:45,333 --> 00:03:48,383
 Sales: four point zero
 three seven billion euros.
 
-66
-00:03:56,113 --> 00:03:58,903
+62
+00:03:48,813 --> 00:03:51,603
 Booked as profit: two point
 seven three five billion.
 
-67
-00:03:59,333 --> 00:04:03,793
+63
+00:03:52,033 --> 00:03:56,083
 That's two of every three euros, because
 the product cost almost nothing to make.
 
-68
-00:04:04,223 --> 00:04:06,055
+64
+00:03:56,513 --> 00:03:58,345
 For scale: at the end of 2016,
 
-69
-00:04:06,122 --> 00:04:11,183
+65
+00:03:58,412 --> 00:04:03,473
 all the Bitcoin in the world was worth
 about fifteen and a half billion dollars.
 
-70
-00:04:11,603 --> 00:04:17,143
+66
+00:04:03,893 --> 00:04:08,693
 OneCoin had already raised more than a
 quarter of that. For rows in a database.
 
-71
-00:04:17,573 --> 00:04:22,143
+67
+00:04:09,123 --> 00:04:13,183
 In June 2016, at the height of the
 money, she took the stage at Wembley.
 
-72
-00:04:22,573 --> 00:04:26,830
+68
+00:04:13,613 --> 00:04:17,954
 And that September, Greenwood sent her
 brother a message about the members:
 
-73
-00:04:26,897 --> 00:04:28,216
+69
+00:04:18,021 --> 00:04:19,373
 "These ppl are idiots."
 
-74
-00:04:28,283 --> 00:04:32,323
+70
+00:04:19,813 --> 00:04:23,853
 Her brother's message back: "the network
 would not work with intelligent people."
 
-75
-00:04:32,753 --> 00:04:37,203
+71
+00:04:24,287 --> 00:04:29,037
 But a fake blockchain has one weakness:
 one day, you need a real programmer.
 
-76
-00:04:37,633 --> 00:04:41,420
+72
+00:04:29,467 --> 00:04:33,253
 In October 2016, OneCoin
 launched a brand new blockchain,
 
-77
-00:04:41,487 --> 00:04:43,853
+73
+00:04:33,320 --> 00:04:35,687
 and doubled every member's balance.
 
-78
-00:04:44,283 --> 00:04:45,219
+74
+00:04:36,117 --> 00:04:37,052
 That same season,
 
-79
-00:04:45,286 --> 00:04:49,533
+75
+00:04:37,119 --> 00:04:41,367
 a Norwegian developer named Bjørn
 Bjercke took a recruiter's phone call.
 
-80
-00:04:49,963 --> 00:04:53,433
+76
+00:04:41,797 --> 00:04:45,257
 The job: build a blockchain
 for a cryptocurrency company.
 
-81
-00:04:53,853 --> 00:04:57,081
+77
+00:04:45,687 --> 00:04:49,086
 "Well, first of all, they need a
 blockchain," the recruiter said.
 
-82
-00:04:57,148 --> 00:04:59,023
+78
+00:04:49,153 --> 00:04:51,127
 "They don't have a blockchain today."
 
-83
-00:04:59,453 --> 00:05:02,873
+79
+00:04:51,557 --> 00:04:54,977
 Bjercke said no. Then he started talking.
 
-84
-00:05:03,303 --> 00:05:08,023
+80
+00:04:55,407 --> 00:05:00,127
 By then, regulators in Norway, Germany
 and Britain had already moved against it.
 
-85
-00:05:08,453 --> 00:05:14,093
+81
+00:05:00,557 --> 00:05:06,267
 In January 2017, OneCoin's internal
 exchange shut down for good.
 
-86
-00:05:14,513 --> 00:05:16,423
+82
+00:05:06,697 --> 00:05:08,647
 And still, the selling didn't stop.
 
-87
-00:05:16,843 --> 00:05:19,661
+83
+00:05:09,077 --> 00:05:12,205
 Because the sales team was
 the victims themselves,
 
-88
-00:05:19,728 --> 00:05:22,613
+84
+00:05:12,272 --> 00:05:15,467
 and doubting meant calling
 your own family a fool.
 
-89
-00:05:23,043 --> 00:05:26,603
+85
+00:05:15,887 --> 00:05:19,497
 So who could stop a scheme that
 its own investors protected?
 
-90
-00:05:27,033 --> 00:05:31,083
+86
+00:05:19,927 --> 00:05:24,787
 It wasn't a regulator.
 It was her boyfriend.
 
-91
-00:05:31,513 --> 00:05:34,263
+87
+00:05:25,217 --> 00:05:27,967
 Gilbert Armenta moved money for OneCoin.
 
-92
-00:05:34,693 --> 00:05:39,573
+88
+00:05:28,397 --> 00:05:33,277
 But from 2017, he was secretly
 cooperating with the FBI.
 
-93
-00:05:40,003 --> 00:05:42,956
+89
+00:05:33,707 --> 00:05:36,659
 Prosecutors later called
 his help "extraordinary":
 
-94
-00:05:43,023 --> 00:05:46,103
+90
+00:05:36,726 --> 00:05:39,807
 it led to charges against
 at least fourteen people.
 
-95
-00:05:46,533 --> 00:05:49,413
+91
+00:05:40,227 --> 00:05:43,697
 She was afraid someone close
 to her would give her up.
 
-96
-00:05:49,833 --> 00:05:50,923
+92
+00:05:44,127 --> 00:05:45,217
 She was right.
 
-97
-00:05:52,020 --> 00:05:56,534
+93
+00:05:46,320 --> 00:05:51,237
 Step two. On Saturday,
 the seventh of October, 2017,
 
-98
-00:05:56,601 --> 00:05:59,860
+94
+00:05:51,304 --> 00:05:54,850
 OneCoin opened a big event in Lisbon.
 
-99
-00:06:00,290 --> 00:06:02,050
+95
+00:05:55,280 --> 00:05:57,040
 Its founder never showed.
 
-100
-00:06:02,490 --> 00:06:06,610
+96
+00:05:57,480 --> 00:06:01,600
 Five days later, the United States
 issued a warrant for her arrest.
 
-101
-00:06:07,050 --> 00:06:09,470
+97
+00:06:02,040 --> 00:06:04,860
 She told her brother she was very tired.
 
-102
-00:06:09,900 --> 00:06:12,153
+98
+00:06:05,280 --> 00:06:07,533
 She had what he called a "big passport",
 
-103
-00:06:12,220 --> 00:06:15,120
+99
+00:06:07,600 --> 00:06:10,500
 and he bought her tickets
 to Vienna and to Athens.
 
-104
-00:06:15,550 --> 00:06:19,209
+100
+00:06:10,930 --> 00:06:14,233
 On Wednesday,
 the twenty-fifth of October, 2017,
 
-105
-00:06:19,276 --> 00:06:23,080
+101
+00:06:14,300 --> 00:06:17,740
 she boarded a Ryanair
 plane from Sofia to Athens.
 
-106
-00:06:23,510 --> 00:06:27,180
+102
+00:06:18,170 --> 00:06:21,840
 One bag. One bodyguard.
 
-107
-00:06:27,610 --> 00:06:29,350
+103
+00:06:22,280 --> 00:06:24,013
 She landed in Athens.
 
-108
-00:06:29,810 --> 00:06:34,230
+104
+00:06:24,080 --> 00:06:28,760
 And that is the last confirmed
 sighting of Ruja Ignatova.
 
-109
-00:06:34,660 --> 00:06:36,930
+105
+00:06:29,180 --> 00:06:31,870
 She never contacted her brother again.
 
-110
-00:06:37,360 --> 00:06:39,440
+106
+00:06:32,300 --> 00:06:34,090
 But the company didn't even pause.
 
-111
-00:06:39,870 --> 00:06:44,040
+107
+00:06:34,520 --> 00:06:38,420
 Her brother, a former forklift driver,
 ran it for sixteen more months.
 
-112
-00:06:44,470 --> 00:06:47,690
+108
+00:06:38,850 --> 00:06:41,770
 Members kept buying coins into 2019.
 
-113
-00:06:48,130 --> 00:06:51,590
+109
+00:06:42,200 --> 00:06:45,560
 Take the money: done. Run: done.
 
-114
-00:06:52,020 --> 00:06:54,320
+110
+00:06:45,000 --> 00:06:48,300
 One step left: blame someone else.
 
-115
-00:06:54,753 --> 00:06:56,503
+111
+00:06:48,720 --> 00:06:50,320
 The blame arrived fast.
 
-116
-00:06:56,953 --> 00:07:02,483
+112
+00:06:50,920 --> 00:06:56,480
 In July 2018, Greenwood was arrested
 on the Thai island of Koh Samui.
 
-117
-00:07:02,913 --> 00:07:07,115
+113
+00:06:56,910 --> 00:07:01,040
 In March 2019, her brother's
 plane landed in Los Angeles,
 
-118
-00:07:07,182 --> 00:07:09,503
+114
+00:07:01,107 --> 00:07:03,390
 and he was arrested on arrival.
 
-119
-00:07:09,943 --> 00:07:14,139
+115
+00:07:03,810 --> 00:07:08,088
 New York's top federal prosecutor
 called OneCoin "a pyramid scheme
 
-120
-00:07:14,206 --> 00:07:17,693
+116
+00:07:08,155 --> 00:07:11,710
 based on smoke and mirrors
 more than zeroes and ones."
 
-121
-00:07:18,123 --> 00:07:23,183
+117
+00:07:12,150 --> 00:07:17,150
 Then came the man who washed the money:
 Mark Scott, a partner at a major law firm.
 
-122
-00:07:23,613 --> 00:07:27,893
+118
+00:07:17,580 --> 00:07:21,720
 His fake investment funds moved
 about four hundred million dollars.
 
-123
-00:07:28,323 --> 00:07:30,283
+119
+00:07:22,150 --> 00:07:24,050
 His fee: more than fifty million.
 
-124
-00:07:30,713 --> 00:07:33,153
+120
+00:07:24,480 --> 00:07:26,890
 His defence: he didn't know it was a scam.
 
-125
-00:07:33,583 --> 00:07:35,653
+121
+00:07:27,320 --> 00:07:29,500
 The jury took about four hours.
 
-126
-00:07:36,083 --> 00:07:38,056
+122
+00:07:29,930 --> 00:07:31,910
 So line up the sentences.
 
-127
-00:07:38,123 --> 00:07:40,693
+123
+00:07:32,340 --> 00:07:35,740
 Greenwood, the salesman: twenty years.
 
-128
-00:07:41,123 --> 00:07:43,206
+124
+00:07:36,170 --> 00:07:38,260
 Scott, the lawyer: ten years.
 
-129
-00:07:43,273 --> 00:07:47,673
+125
+00:07:38,690 --> 00:07:43,090
 Armenta, the boyfriend who flipped,
 then broke his own deal: five years.
 
-130
-00:07:48,103 --> 00:07:52,136
+126
+00:07:43,520 --> 00:07:47,750
 Irina Dilkinska, head of legal
 and compliance: four years.
 
-131
-00:07:52,203 --> 00:07:56,893
+127
+00:07:48,180 --> 00:07:52,870
 Konstantin, who testified about his
 sister's escape: time served, and free.
 
-132
-00:07:57,323 --> 00:08:03,323
+128
+00:07:53,300 --> 00:07:59,770
 And Ruja? Charged on five counts, never
 tried. In law, she is presumed innocent.
 
-133
-00:08:03,753 --> 00:08:05,893
+129
+00:08:00,200 --> 00:08:02,330
 Then even her escape got a sequel.
 
-134
-00:08:06,323 --> 00:08:12,100
+130
+00:08:02,770 --> 00:08:08,421
 Frank Schneider, a former Luxembourg
 spy and OneCoin's security adviser,
 
-135
-00:08:12,167 --> 00:08:14,683
+131
+00:08:08,488 --> 00:08:10,950
 was arrested in France in 2021.
 
-136
-00:08:15,113 --> 00:08:21,463
+132
+00:08:11,380 --> 00:08:17,870
 Under house arrest, with a GPS tag on
 his ankle, he vanished in May 2023.
 
-137
-00:08:21,883 --> 00:08:23,713
+133
+00:08:18,300 --> 00:08:20,130
 He is still a fugitive.
 
-138
-00:08:24,153 --> 00:08:25,363
+134
+00:08:20,553 --> 00:08:21,913
 So where is she?
 
-139
-00:08:26,353 --> 00:08:30,680
+135
+00:08:22,753 --> 00:08:27,117
 In 2022, the FBI put her on
 its Ten Most Wanted list,
 
-140
-00:08:30,747 --> 00:08:33,483
+136
+00:08:27,184 --> 00:08:29,943
 the only woman on it at the time.
 
-141
-00:08:33,913 --> 00:08:39,353
+137
+00:08:30,373 --> 00:08:35,843
 In 2024, the United States raised
 the reward to five million dollars.
 
-142
-00:08:39,783 --> 00:08:44,493
+138
+00:08:36,273 --> 00:08:41,363
 A leaked Bulgarian police memo
 claims she was killed in 2018.
 
-143
-00:08:44,923 --> 00:08:50,423
+139
+00:08:41,783 --> 00:08:47,363
 The document is real. But the claim
 inside it is second-hand, and unverified.
 
-144
-00:08:50,853 --> 00:08:53,873
+140
+00:08:47,793 --> 00:08:50,813
 So the FBI still hunts
 her as if she's alive.
 
-145
-00:08:54,303 --> 00:08:56,983
+141
+00:08:51,233 --> 00:08:53,983
 Nobody has confirmed
 seeing her since Athens.
 
-146
-00:08:57,403 --> 00:08:59,303
+142
+00:08:54,413 --> 00:08:56,313
 What we can confirm is the bill.
 
-147
-00:08:59,733 --> 00:09:04,913
+143
+00:08:56,743 --> 00:09:02,533
 In Uganda, the BBC found farmers who
 had sold land and livestock to buy in.
 
-148
-00:09:05,343 --> 00:09:06,211
+144
+00:09:02,963 --> 00:09:03,837
 In Germany,
 
-149
-00:09:06,278 --> 00:09:09,611
+145
+00:09:03,904 --> 00:09:07,258
 investigators traced the money of 17,552
 
-150
-00:09:09,678 --> 00:09:13,333
+146
+00:09:07,325 --> 00:09:11,003
 victims through a single
 payment processor.
 
-151
-00:09:13,763 --> 00:09:17,373
+147
+00:09:11,433 --> 00:09:15,023
 In Glasgow, Jen McAdam had
 brought in friends and family.
 
-152
-00:09:17,803 --> 00:09:21,843
+148
+00:09:15,453 --> 00:09:20,043
 Together, she said, they had "thrown
 a quarter of a million euros away."
 
-153
-00:09:22,273 --> 00:09:28,783
+149
+00:09:20,473 --> 00:09:26,983
 In 2026, the US opened a fund for victims:
 just over forty million dollars.
 
-154
-00:09:29,213 --> 00:09:34,103
+150
+00:09:27,403 --> 00:09:32,643
 Against more than four billion lost,
 that's about one cent on the dollar.
 
-155
-00:09:34,523 --> 00:09:39,027
+151
+00:09:33,083 --> 00:09:37,587
 Here's the real reason it worked:
 the fraud never needed smarter victims.
 
-156
-00:09:39,094 --> 00:09:41,723
+152
+00:09:37,654 --> 00:09:40,283
 It needed one person to open the database.
 
-157
-00:09:42,153 --> 00:09:46,503
+153
+00:09:40,713 --> 00:09:45,063
 Nobody could, because the "blockchain"
 was private, the salesmen were family,
 
-158
-00:09:46,570 --> 00:09:48,233
+154
+00:09:45,130 --> 00:09:46,793
 and the money was everywhere.
 
-159
-00:09:48,663 --> 00:09:56,553
+155
+00:09:47,223 --> 00:09:55,113
 Take the money. Run. Blame someone
 else. She wrote it in 2014.
 
-160
-00:09:56,983 --> 00:10:01,333
+156
+00:09:55,543 --> 00:10:00,673
 The coin never existed.
 The exit strategy did.
 
