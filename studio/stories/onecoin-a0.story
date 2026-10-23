@@ -1,4 +1,4 @@
-title: onecoin a0 · the exit strategy
+title: onecoin a0 · cold open
 channel: poisonpill
 look: luxury
 tone: playful
@@ -7,93 +7,53 @@ delivery: wry
 voices: ruja=bf_emma
 music: auto
 captions: off
+autotrans: off
 endcard: off
 
-#! scene exit_email
-({ t, at, p, spring, stagger, wobble, W, H, u, layer, img, draw, text, air, line, ease, lerp, clamp, col, ctx }) => {
-  // the 2014 email lands on a dark desk like evidence; the words EXIT STRATEGY get a gold marker on the spoken word
-  layer(1, () => { draw(img('onecoin_art_recruit_call'), W * .5, H * .5, H * 1.08, { a: .42 }); ctx.fillStyle = 'rgba(8,6,4,.45)'; ctx.fillRect(0, 0, W, H); });
-  const s = spring('email', { stiff: 120, damp: 13 }), x = W * .5 + wobble(3, 4 * u), y = lerp(-H * .6, H * .47, s);
-  layer(2, () => {
-    ctx.save(); ctx.translate(x, y); ctx.rotate(lerp(-.2, -.025, s));
-    ctx.fillStyle = 'rgba(0,0,0,.45)'; ctx.fillRect(-W * .3 + 14 * u, -H * .36 + 18 * u, W * .6, H * .72);
-    ctx.fillStyle = '#f3ecdc'; ctx.fillRect(-W * .3, -H * .36, W * .6, H * .72);
-    ctx.fillStyle = '#d9cfb8'; ctx.fillRect(-W * .3, -H * .36, W * .6, 64 * u);
-    ctx.restore();
-    const L = (s2, dx, dy, o = {}) => text(s2, x + dx, y + dy, Object.assign({ size: 30 * u, font: 'cond', col: '#2a2420', lw: 0, align: 'left' }, o));
-    L('EMAIL  ·  9 AUGUST 2014', -W * .27, -H * .36 + 34 * u, { size: 28 * u, weight: 700, ls: 4 * u, col: '#5b4d3c' });
-    L('From: Ruja Ignatova', -W * .27, -H * .22, { a: stagger(0, 3, 'email', .5) });
-    L('To: Karl Sebastian Greenwood', -W * .27, -H * .16, { a: stagger(1, 3, 'email', .5) });
-    L('As quoted by the U.S. Department of Justice', -W * .27, -H * .10, { size: 24 * u, col: '#7a6a55', a: stagger(2, 3, 'email', .5) });
-    const hk = p('strategy', .5, 'inOut');
-    ctx.save(); ctx.globalCompositeOperation = 'multiply'; ctx.fillStyle = 'rgba(214,170,60,.85)'; ctx.fillRect(x - W * .27 - 8 * u, y - H * .015 - 34 * u, 480 * u * hk, 62 * u); ctx.restore();
-    L('"EXIT STRATEGY"', -W * .27, -H * .015, { size: 58 * u, font: 'serif', weight: 900, col: '#1d1712' });
-    L('Option 1:', -W * .27, H * .1, { size: 34 * u, font: 'serif', weight: 700, col: '#1d1712', a: p('strategy', .4) });
-    ctx.fillStyle = '#16120e'; [0, 1].forEach(i => ctx.fillRect(x - W * .27, y + H * (.16 + i * .075), W * (.5 - i * .14) * p('strategy', .7, 'out5'), 34 * u));
-  });
-  air('dust', { dens: .7 });
-}
-#! end
+// CARD a0-01 · SEE: the investigator's desk under one lamp; the camera travels right across real prints (the arena at night, the FBI poster, the stage photo); on "stage" the stage print lifts, grows past the frame and comes alive as the FBI's own footage of her walking out · SEAM out right
+# cine act=setup fx="code:@table;items:onecoin_wembley_night@.22,.42,-5,.36~onecoin_doc_fbi_wanted@.52,.55,4,.5~onecoin_ruja_stage@.86,.45,-3,.42;pan:0,.3;lift:2;at:stage;live:onecoin_clip_ruja_stage;out:right"
+On Saturday, the eleventh of June, 2016, a woman in a red gown walked onto the stage at Wembley Arena.
 
-#! scene three_ticks
-({ t, at, p, spring, stagger, W, H, u, layer, img, draw, text, ctx, col, lerp }) => {
-  // the three clauses of the email become a checklist; each one gets its tick on "three", the last lands on "word"
-  layer(1, () => { draw(img('onecoin_art_mood_runway'), W * .5, H * .5, H * 1.1, { a: .5 }); ctx.fillStyle = 'rgba(6,5,4,.5)'; ctx.fillRect(0, 0, W, H); });
-  const rows = ['TAKE THE MONEY', 'AND RUN', 'AND BLAME SOMEONE ELSE'];
-  layer(2, () => rows.forEach((r, i) => {
-    const k = stagger(i, 3, 'did', .35, .45), y = H * (.28 + i * .18), tk = i < 2 ? spring(at('three') + i * .25) : spring('word');
-    text(r, W * .2 + (1 - k) * -60 * u, y, { size: 84 * u, font: 'serif', weight: 900, col: '#efe2c4', align: 'left', a: k });
-    ctx.save(); ctx.translate(W * .14, y - 6 * u); ctx.scale(tk, tk); ctx.strokeStyle = col.gold; ctx.lineWidth = 9 * u; ctx.lineCap = 'round';
-    ctx.beginPath(); ctx.moveTo(-26 * u, 0); ctx.lineTo(-6 * u, 22 * u); ctx.lineTo(30 * u, -28 * u); ctx.stroke(); ctx.restore();
-  }));
-}
-#! end
+// CARD a0-02 · SEE: the arena from the back of the crowd, heads and phones raised toward a blue stage; we arrive already travelling right · SEAM in right, out in
+# cine act=setup fx="code:@reel;clip:stock_people_applause_02;move:right;z:.1;in:right;out:in"
+Thousands of her investors filled the arena.
 
-# cine act=setup bg=clip:onecoin_clip_ruja_stage bgBlur=0 bgDim=.1 bgTone=color date="11 JUNE 2016 · WEMBLEY ARENA, LONDON" shot="ws|1.15:pt:.42,.5@gown/glide" fx="lower:FBI release footage~Public domain;at:stage"
-On Saturday, the eleventh of June, 2016, a woman in a red **gown** walked onto the stage at Wembley Arena.
-
-# cine act=rise shot="ews;angle:low|1.08:pt:.5,.42@arena/rise" fx="scene:x;plate:onecoin_art_wembley_gown;tone:color;air:dust,rays;light:sweep@arena"
-Thousands of her investors filled the **arena**.
-
-# cine act=rise bg=onecoin_wembley_interior bgBlur=14 bgDim=.55 mid="clip:onecoin_clip_ruja_close;x:.3;h:.66;style:raw;border:off" shot="ms|mcu:1@Bitcoin/dolly" fx="quote:In two years, nobody will speak about Bitcoin anymore.;at:promised;by:Ruja Ignatova, Wembley, June 2016;x:.7;y:.36;rate:.17"
+// CARD a0-03 · SEE: the real close shot of her at the microphone (FBI footage); her verbatim promise sits above her, attributed, and lands dead still · SEAM in Z, out right
+# cine act=setup fx="code:@reel;clip:onecoin_clip_ruja_close;move:in;z:.06;in:in;out:right;txt:“In two years, nobody will speak about Bitcoin anymore.”;tsize:54;ty:.13;tat:promised;tfont:serif;sub:Ruja Ignatova · Wembley Arena · 11 June 2016"
 She promised them that in two years, nobody would speak about **Bitcoin** anymore.
 
-# cine act=rise bg=onecoin_wembley_night bgBlur=12 bgDim=.6 mid="onecoin_el_gold_coin;x:.3;h:.56;in:rise;at:selling;tone:gold|onecoin_bitcoin_coins;x:.71;h:.46;style:polaroid;tape;at:coin;rot:4" shot="ws|ms:2@kill/whip" fx="strike:2;at:kill|lower:ONECOIN vs BITCOIN~"Bitcoin killer";at:selling"
-She was selling investors the coin that would kill it. [BEAT]
+// CARD a0-04 · SEE: a glowing Bitcoin turning in the dark; on "kill" the footage slows to a crawl and drains to grey · SEAM in right
+# cine act=rise fx="code:@reel;clip:stock_screen_chart_up_19;move:in;z:.12;slow:kill;mono:kill;in:right"
+She was selling investors the coin that would **kill** it. [BEAT]
 
-# cine act=doubt shot="1.15:pt:.5,.45|1.15:pt:.5,.45@exist/cut" fx="scene:x;plate:onecoin_art_empty_stage;air:dust|build:x;el:C=@onecoin_el_gold_coin,.5,.42,.42;do:C.float@coin~C.vanish@exist"
+// CARD a0-05 · SEE: the stage photo fills the frame; on "exist" the whole picture tears in two like paper and behind it there is only code scrolling on black · SEAM hard cut on the tear
+# cine act=fall fx="code:@tear_reveal;a:onecoin_ruja_stage;b:stock_screen_terminal_05;go:exist"
 That coin did not **exist**.
 
-# cine act=doubt shot="ws|1.15:pt:.5,.55@billion/dolly" fx="scene:x;plate:onecoin_art_vault_glow;air:dust,rays;light:sweep@billion|build:x;el:N=num:4000000000:$,.5,.2,130~T=txt:RAISED · 2014–2016 AND BEYOND,.5,.33,44;do:N.count@story~T.rise@billion~N.glow@billion"
+// CARD a0-06 · SEE: hands counting euro notes on a desk, the camera creeping in; the sum sets itself in the empty top of the frame on "billion" · SEAM in right, out right
+# cine act=rise fx="code:@reel;clip:stock_money_wallet_10;move:in;z:.1;in:right;out:right;txt:$4,000,000,000+;tsize:110;tfont:impact;ty:.18;tat:billion;tcol:#e8c77e;sub:taken from investors (US Justice Department)"
 This is the story of how a product that never existed raised more than four **billion** dollars.
 
-# cine act=doubt bg=clip:onecoin_clip_datacenter bgBlur=0 bgDim=.2 fx="build:x;el:T=txt:NO BLOCKCHAIN,.5,.42,140,gold;do:T.zoom@blockchain"
-No **blockchain**.
+// CARD a0-07 · SEE: four hard cuts on four words: a data centre (blockchain), mining rigs (mining), a trading screen (market), and then raw code (database), each shot arriving already pushing in · SEAM cuts on words
+# cine act=doubt fx="code:@word_cut_montage;clips:onecoin_clip_datacenter,onecoin_clip_mining_asic,stock_screen_ticker_18,stock_screen_terminal_05;keys:blockchain,mining,market,database"
+No blockchain. No mining. No market. Just a **database** her own company controlled.
 
-# cine act=doubt bg=clip:onecoin_clip_mining_asic bgBlur=0 bgDim=.2 fx="build:x;el:T=txt:NO MINING,.62,.4,140,gold;do:T.drop@mining"
-No **mining**.
+// CARD a0-08 · SEE: hands typing on a laptop at night, lit by the screen; the date lands on "years" · SEAM in right, out in
+# cine act=doubt fx="code:@reel;clip:stock_screen_laptop_night_07;move:in;z:.1;in:right;out:in;txt:AUGUST 2014;tsize:72;ty:.16;tat:years;sub:two years before Wembley"
+But that's not the whole story. Two years before Wembley, she had already written the **ending**.
 
-# cine act=doubt bg=onecoin_art_mood_trading_floor bgBlur=0 bgDim=.25 fx="build:x;el:T=txt:NO MARKET,.38,.4,140,gold;do:T.slideL@market"
-No **market**.
-
-# cine act=doubt shot="ws|1.15:pt:.62,.42@database/dolly" fx="scene:x;plate:onecoin_art_database_room;air:dust|build:x;el:D=txt:A DATABASE,.42,.24,90,gold~O=txt:OWNED BY ONECOIN,.42,.36,45;do:D.drop@database~O.rise@company"
-Just a **database** her own company controlled.
-
-# cine act=doubt bg=onecoin_art_mood_fog bgBlur=6 bgDim=.55 trans=whip fg="onecoin_wembley_night;x:.73;y:.5;h:.38;style:polaroid;tape;at:c1;rot:5" shot="ws|1.15:pt:.35,.45@ending/dolly" hero="2016;at:whole;to:2014;toAt:before;font:serif;size:200;pos:l;x:.32;y:.42" sup="SHE WROTE THE ENDING;at:ending;x:.32;y:.6"
-But that's not the whole story.
-Two years before Wembley, she had already written the **ending**.
-
-# cine act=flash shot="ms|1.15:pt:.42,.5@strategy/dolly;dutch:-3" fx="code:exit_email;sfx:foley_paper@email~foley_marker@strategy"
+// CARD a0-09 · SEE: the email itself on the desk under the lamp; the camera reads down into it on "strategy" · SEAM in Z
+# cine act=doubt fx="code:@email_page;head:FROM  Ruja Ignatova · TO  Sebastian Greenwood · 9 AUGUST 2014 (excerpt);lines:My exit strategy, option one:~Take the money and run and~blame someone else for this . . . .;src:Quoted in a US Justice Department release, 16 December 2022;zoom:1;zat:strategy;in:in"
 An email from August 2014, listing her exit **strategy**.
 
-# cine act=flash bg=onecoin_art_recruit_call bgBlur=5 bgDim=.4 shot="ws|1.08:pt:.5,.45@blame/glide" fx="quote:Take the money and run and blame someone else for this . . . .;at:Take;by:Ruja Ignatova, email to Greenwood, 9 Aug 2014 (via DOJ);x:.5;y:.46;rate:.2|underline:.25,.58,.75;at:blame;col:gold"
-Option one:
-@ruja: Take the money and run and blame someone else for this.
+// CARD a0-10 · SEE: the same page, close; as her voice reads, a red marker circles TAKE, RUN and BLAME on their words · SEAM hold, then out right
+# cine act=doubt fx="code:@email_page;head:FROM  Ruja Ignatova · TO  Sebastian Greenwood · 9 AUGUST 2014 (excerpt);lines:My exit strategy, option one:~Take the money and run and~blame someone else for this . . . .;src:Quoted in a US Justice Department release, 16 December 2022;zoom:1;zat:0;circle:take@Take,run@run,blame@blame;out:right"
+@ruja: Option one: "Take the money and run and blame someone else for this."
 
-# cine act=fall shot="1|1.04:pt:.45,.5@word/glide" fx="code:three_ticks;sfx:foley_marker@three~impact_cinematic@word"
+// CARD a0-11 · SEE: black smoke; three panels slide in from the right on "she", "all", "three": counted cash, a jet taking off, hands in cuffs · SEAM in right
+# cine act=fall fx="code:@footage_split;base:stock_texture_smoke_black_07;clips:stock_money_wallet_10,stock_airplane_united_airlines_n75858_757_3_01,stock_law_handcuffs_06;keys:did,all,three"
 She did all **three**. [BEAT] Almost to the word.
 
-# cine act=fall bg=world map="15,20,1.2" map2="15,25,1.4" mapAt=paid mapDur=3 shot="ws|1.1:pt:.5,.45@missing/dolly" fx="build:x;el:N=num:3500000,.5,.3,150~T=txt:VICTIMS · A REPORTED 175 COUNTRIES,.5,.44,45;do:N.count@million~T.rise@investors~N.red@missing"
-So who paid for it? Three and a half million investors, and the money is still **missing**.
-
-# ppcase n=04 title="OneCoin" sub="The exit strategy" photo=onecoin_ruja_fbi stamp=OPEN stampAt=2.2
+// CARD a0-12 · SEE: a crowd crossing a city street from above, people as dots; on "million" the number sets above them; the camera keeps pushing (Z forward into the film) · SEAM in right, out in
+# cine act=fall fx="code:@reel;clip:stock_crowds_street_scramble_crossing_at_robinso_01;move:in;z:.12;in:right;out:in;txt:3.5 MILLION INVESTORS;tsize:80;tfont:impact;ty:.16;tat:million;sub:at least, by the US count;mono:missing"
+{tense} So who paid for it? Three and a half million investors, and the money is still **missing**.

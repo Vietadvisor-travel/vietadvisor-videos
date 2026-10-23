@@ -7,78 +7,85 @@ delivery: wry
 voices: ruja=bf_emma
 music: auto
 captions: off
+autotrans: off
 endcard: off
 
-#! scene sentence_ladder
-({ t, at, p, spring, stagger, wobble, W, H, u, layer, img, draw, text, air, ease, lerp, clamp, col, ctx, params }) => {
-  // the sentences line up as bars of prison time over a real prison fence; new rows land on their spoken words; the founder's row stays empty
-  const step = +params.step, keys = String(params.keys || 'c1').split(','), first = step - keys.length;
-  layer(1, () => { draw(img('onecoin_prison'), W * .5, H * .5, H * 1.15, { a: .5 }); ctx.fillStyle = 'rgba(8,6,4,.5)'; ctx.fillRect(0, 0, W, H); });
-  const rows = [['GREENWOOD', 'the salesman', 20, '20 YEARS'], ['SCOTT', 'the lawyer', 10, '10 YEARS'], ['ARMENTA', 'the boyfriend', 5, '5 YEARS'], ['DILKINSKA', 'head of compliance', 4, '4 YEARS'], ['KONSTANTIN', 'the brother', 34 / 12, 'TIME SERVED'], ['RUJA', 'the founder', 0, 'NEVER TRIED']];
-  const x0 = W * .32, full = W * .5, y0 = H * .13, dy = H * .128;
-  layer(2, () => rows.forEach(([name, role, yrs, lab], i) => { if (i >= step) return; const y = y0 + i * dy, cur = i >= first, go = cur ? keys[i - first] : 0, k = cur ? spring(go, { stiff: 70, damp: 12 }) : 1, a = cur ? clamp(p(go, .3) * 2) : (step === 6 ? .5 : .85);
-    text(name, x0 - 26 * u, y, { size: 50 * u, font: 'impact', col: i === 5 ? col.gold : '#efe2c4', align: 'right', a: cur ? Math.max(a, .25) : a });
-    text(role, x0 - 26 * u, y + 36 * u, { size: 28 * u, font: 'serif', col: '#d1bd93', align: 'right', a: cur ? Math.max(a, .25) : a });
-    if (i < 5) { const w = full * yrs / 20 * k; ctx.save(); ctx.globalAlpha = cur ? 1 : a; const g = ctx.createLinearGradient(x0, 0, x0 + w, 0); g.addColorStop(0, '#7a6432'); g.addColorStop(1, cur ? '#f0d28a' : '#b8995a'); ctx.fillStyle = g; ctx.fillRect(x0, y - 26 * u, w, 52 * u);
-      for (let b = 1; b < yrs; b++) { ctx.fillStyle = 'rgba(8,6,4,.5)'; ctx.fillRect(x0 + full * b / 20 - 1.5 * u, y - 26 * u, 3 * u, 52 * u * clamp(k * 1.2)); } ctx.restore();
-      text(lab, x0 + w + 22 * u, y + 2 * u, { size: 44 * u, font: 'impact', col: cur ? col.gold : '#e6d6b2', align: 'left', a: cur ? clamp(k) : a }); }
-    else { const e = spring(go, { stiff: 160, damp: 12 }); ctx.save(); ctx.setLineDash([12 * u, 10 * u]); ctx.strokeStyle = col.gold; ctx.lineWidth = 4 * u; ctx.strokeRect(x0, y - 26 * u, full, 52 * u); ctx.restore();
-      text(lab, x0 + full / 2, y + 2 * u, { size: 52 * u * (.7 + .3 * clamp(e)), font: 'impact', col: col.gold, a: clamp(e) }); }
-  }));
-  if (step === 6) text('5 COUNTS · PRESUMED INNOCENT IN LAW', W * .57, H * .9, { size: 32 * u, font: 'cond', weight: 700, ls: 5 * u, col: '#e0cfa8', a: p('law', .6) });
-}
-#! end
+// CARD a5-01 · SEE: punch — handcuffs lying on stacked banknotes under coloured light; a fast push · SEAM in right, out right
+# cine act=fall fx="code:@reel;clip:stock_money_cash_stack_04;move:in;z:.16;in:right;out:right"
+{urgent} The blame arrived **fast**.
 
-# cine act=after shot="1.15:pt:.5,.5|ws@fast/whip" fx="scene:x;plate:onecoin_art_courtroom;air:dust;light:sweep@blame|build:x;el:H=@onecoin_el_handcuffs,.5,.62,.16;do:H.drop@fast"
-The blame arrived **fast**.
-
-# cine act=after bg=world map="100.5,13,4.5" map2="100,9.5,7" mapAt=arrested mapDur=1.8 fg="onecoin_art_thailand_villa;x:.72;y:.64;h:.28;style:polaroid;tape;at:Greenwood;rot:4" shot="ws|1.06:pt:.45,.5@Samui/glide" fx="date:JULY 2018;at:July;x:.06;y:.12|pin:KOH SAMUI;ll:100.0,9.5;at:Samui;col:red"
+// CARD a5-02 · SEE: the desk; the real Koh Samui beach print lifts and fills the frame on "arrested"; place and date set over it · SEAM in right
+# cine act=fall fx="code:@table;items:onecoin_koh_samui@.42,.5,-4,.5~onecoin_doc_doj_greenwood@.82,.45,5,.46;pan:0,.08;lift:0;at:arrested;txt:KOH SAMUI · JULY 2018;tat:island;sub:Greenwood arrested;in:right"
 In July 2018, Greenwood was arrested on the Thai island of Koh **Samui**.
 
-# cine act=after bg=onecoin_lax bgBlur=0 bgDim=.15 fg="onecoin_el_handcuffs;x:.5;y:.8;h:.16;at:arrested;in:drop" shot="ews|1.15:pt:.55,.5@arrested/dolly" fx="pin:LAX;ll:-118.4,33.94;at:Angeles|date:6 MARCH 2019 · LAX;at:March;x:.06;y:.12|lower:KONSTANTIN IGNATOV~Arrested at LAX;at:arrested"
+// CARD a5-03 · SEE: the real aerial of Los Angeles airport lifts and fills the frame, then drains to grey on "arrested" · SEAM out right
+# cine act=fall fx="code:@table;items:onecoin_lax@.55,.48,3,.5;pan:.04,0;lift:0;at:plane;mono:arrested;txt:LOS ANGELES · 6 MARCH 2019;tat:arrested;sub:her brother arrested on arrival;out:right"
 In March 2019, her brother's plane landed in Los Angeles, and he was **arrested** on arrival.
 
-# cine act=after bg=onecoin_court_sdny bgBlur=0 bgDim=.4 shot="ws;angle:low|1.15:pt:.5,.4@ones/rise" fx="quote:a pyramid scheme based on smoke and mirrors more than zeroes and ones;at:pyramid;by:Geoffrey Berman, U.S. Attorney (SDNY), March 2019;x:.5;y:.36;rate:.17|smoke;at:smoke"
-New York's top federal prosecutor called OneCoin "a pyramid scheme based on smoke and mirrors more than zeroes and **ones**."
+// CARD a5-04 · SEE: white vapour churning on black — smoke and mirrors; the prosecutor's verbatim line sets in it, attributed · SEAM in right
+# cine act=fall fx="code:@reel;clip:stock_texture_smoke_black_04;move:in;z:.1;in:right;txt:“smoke and mirrors more than zeroes and ones”;tsize:58;tfont:serif;tat:smoke;ty:.44;sub:US Attorney Geoffrey Berman · 8 March 2019"
+{wry} New York's top federal prosecutor called OneCoin "a pyramid scheme based on smoke and mirrors more than zeroes and **ones**." (J)
 
-# cine act=after shot="ews|1.15:pt:.5,.45@firm/dolly" fx="scene:x;plate:onecoin_art_frosted_doors;air:dust;light:sweep@washed|lower:MARK SCOTT~Lawyer;at:Scott"
+// CARD a5-05 · SEE: an orderly lawyer's desk — papers squared, glasses folded; his name and role set above it (no face: we have no licensed picture of him) · SEAM in right, out right
+# cine act=fall fx="code:@reel;clip:stock_documents_files_06;move:right;z:.1;in:right;out:right;txt:MARK SCOTT;tsize:84;tfont:impact;tat:Scott;ty:.16;sub:partner at a major law firm"
 Then came the man who washed the money: Mark Scott, a partner at a major law **firm**.
 
-# cine act=after bg=onecoin_art_vault_glow bgBlur=3 bgDim=.3 shot="1|1.08:pt:.5,.5@dollars/dolly" fx="build:x;el:F=txt:FENERO FUNDS · BVI · CAYMAN,.5,.2,57~C=@onecoin_euro_cut,.2,.55,.4~N=num:400000000:$,.6,.55,150~A=arrow:C>N;do:F.drop@funds~A.draw@moved~C.slideR@moved~N.count@four"
+// CARD a5-06 · SEE: hands counting money beside a calculator and laptop; the sum moved sets above · SEAM in right
+# cine act=fall fx="code:@reel;clip:stock_money_broll_09;move:in;z:.1;in:right;txt:≈ $400 MILLION;tsize:110;tfont:impact;tat:four;ty:.17;tcol:#e8c77e;sub:moved through his fake investment funds"
 His fake investment funds moved about four hundred million **dollars**.
 
-# cine act=after shot="1.15:pt:.4,.5|1:pt:.45,.5@million/truck" bg=onecoin_art_mood_city bgBlur=4 bgDim=.35 fx="build:x;el:Y=@onecoin_el_yacht,.68,.66,.3~N=txt:$50M+,.3,.32,150,gold~T=txt:HIS FEE,.3,.46,53~F=txt:LATER FORFEITED: A YACHT · TWO PORSCHES,.3,.56,44;do:T.drop@fee~N.zoom@million~Y.slideL@million~F.rise@million"
+// CARD a5-07 · SEE: two blocks: what he moved, and what he kept — his fee rises gold on "fifty" · SEAM out right
+# cine act=fall fx="code:@blocks;vals:400,50;labs:MOVED,HIS FEE;txts:$400M,$50M+;go:fee;gap:.5;hl:1;hlat:fifty;out:right"
 His fee: more than fifty **million**.
 
-# cine act=after bg=onecoin_art_frosted_doors bgBlur=2 bgDim=.3 shot="1.15:pt:.5,.45|ws@scam/dolly" fx="build:x;el:D=txt:THE DEFENCE,.5,.3,56~Q=txt:HE DIDN'T KNOW,.5,.46,100,gold;do:D.drop@defence~Q.type@know"
+// CARD a5-08 · SEE: a grand empty court hallway, marble and light; the defence sets in it, and the picture greys on "scam" · SEAM in right
+# cine act=fall fx="code:@reel;clip:stock_law_courtroom_12;move:in;z:.1;in:right;mono:scam;txt:HIS DEFENCE: HE DIDN'T KNOW;tsize:66;tfont:impact;tat:defence;ty:.16"
 His defence: he didn't know it was a **scam**.
 
-# cine act=after bg=onecoin_art_mood_lobby bgBlur=4 bgDim=.4 shot="ws|1.1:pt:.4,.42@hours/crash" hero="≈ 4 HOURS;at:four;font:impact;size:170;pos:l;x:.38;y:.42" sup="GUILTY ON BOTH COUNTS · NOV 2019;at:hours"
-The jury took about four **hours**.
+// CARD a5-09 · SEE: an empty judge's bench; the jury's time sets on "four" — a quick verdict, the beat of the joke · SEAM out down
+# cine act=fall fx="code:@reel;clip:stock_emotion_empty_chair_03;move:in;z:.08;out:down;txt:THE JURY: ≈ 4 HOURS;tsize:80;tfont:impact;tat:four;ty:.16;sub:guilty on both counts · November 2019"
+{wry} The jury took about four **hours**. (J)
 
-# cine act=after shot="1|1.04:pt:.5,.4@twenty/glide" fx="code:sentence_ladder;step:1;keys:twenty;sfx:impact_cinematic@sentences~impact_cinematic@twenty"
+// CARD a5-10 · SEE: a dark floor and six empty places in a row, names beneath — the line-up before anyone is called · SEAM in down
+# cine act=after fx="code:@blocks;vals:20,10,5,4,2.83,0;labs:GREENWOOD,SCOTT,ARMENTA,DILKINSKA,KONSTANTIN,RUJA;txts:20 YRS,10 YRS,5 YRS,4 YRS,34 MO.,NEVER TRIED;empty:5;show:0;go:99;note:the sentences;in:down"
 So line up the **sentences**.
-Greenwood, the salesman: twenty **years**.
 
-# cine act=after shot="1.04:pt:.5,.4|1.06:pt:.5,.45@five/glide" fx="code:sentence_ladder;step:3;keys:ten,five;sfx:impact_cinematic@ten~impact_cinematic@five"
+// CARD a5-11 · SEE: the first block rises tall and gold on "twenty": Greenwood, 20 years
+# cine act=after fx="code:@blocks;vals:20,10,5,4,2.83,0;labs:GREENWOOD,SCOTT,ARMENTA,DILKINSKA,KONSTANTIN,RUJA;txts:20 YRS,10 YRS,5 YRS,4 YRS,34 MO.,NEVER TRIED;empty:5;show:0;go:Greenwood;gap:99;hl:0;hlat:twenty"
+{grave} Greenwood, the salesman: twenty **years**.
+
+// CARD a5-12 · SEE: the second block rises to half its height on "ten": Scott
+# cine act=after fx="code:@blocks;vals:20,10,5,4,2.83,0;labs:GREENWOOD,SCOTT,ARMENTA,DILKINSKA,KONSTANTIN,RUJA;txts:20 YRS,10 YRS,5 YRS,4 YRS,34 MO.,NEVER TRIED;empty:5;show:1;go:Scott;gap:99;hl:1;hlat:ten"
 Scott, the lawyer: ten **years**.
+
+// CARD a5-13 · SEE: the third block: Armenta, five years
+# cine act=after fx="code:@blocks;vals:20,10,5,4,2.83,0;labs:GREENWOOD,SCOTT,ARMENTA,DILKINSKA,KONSTANTIN,RUJA;txts:20 YRS,10 YRS,5 YRS,4 YRS,34 MO.,NEVER TRIED;empty:5;show:2;go:Armenta;gap:99;hl:2;hlat:five"
 Armenta, the boyfriend who flipped, then broke his own deal: five **years**.
 
-# cine act=after shot="1.06:pt:.5,.45|1.04:pt:.5,.55@time/glide" fx="code:sentence_ladder;step:5;keys:four,time;sfx:impact_cinematic@four~impact_cinematic@time"
-Irina Dilkinska, head of legal and **compliance**: four years.
+// CARD a5-14 · SEE: the fourth block: Dilkinska, the head of compliance, four years (the irony is the label)
+# cine act=after fx="code:@blocks;vals:20,10,5,4,2.83,0;labs:GREENWOOD,SCOTT,ARMENTA,DILKINSKA,KONSTANTIN,RUJA;txts:20 YRS,10 YRS,5 YRS,4 YRS,34 MO.,NEVER TRIED;empty:5;show:3;go:Irina;gap:99;hl:3;hlat:four"
+{wry} Irina Dilkinska, head of legal and **compliance**: four years. (J)
+
+// CARD a5-15 · SEE: the fifth block, barely off the floor: Konstantin, 34 months, time served
+# cine act=after fx="code:@blocks;vals:20,10,5,4,2.83,0;labs:GREENWOOD,SCOTT,ARMENTA,DILKINSKA,KONSTANTIN,RUJA;txts:20 YRS,10 YRS,5 YRS,4 YRS,34 MO.,NEVER TRIED;empty:5;show:4;go:Konstantin;gap:99;hl:4;hlat:free"
 Konstantin, who testified about his sister's escape: time served, and **free**.
 
-# cine act=lesson shot="1.04:pt:.5,.55|1:pt:.5,.5@never/dolly" fx="code:sentence_ladder;step:6;keys:never;sfx:impact_cinematic@never"
-And Ruja? Charged on five counts, never **tried**. In law, she is presumed innocent.
+// CARD a5-16 · SEE: the sixth place stays an empty dashed plinth on "Ruja": NEVER TRIED — the whole line-up dims around it · SEAM out right
+# cine act=after fx="code:@blocks;vals:20,10,5,4,2.83,0;labs:GREENWOOD,SCOTT,ARMENTA,DILKINSKA,KONSTANTIN,RUJA;txts:20 YRS,10 YRS,5 YRS,4 YRS,34 MO.,NEVER TRIED;empty:5;show:5;go:Ruja;gap:99;hl:5;hlat:Ruja;note:charged on five counts · presumed innocent in law;out:right"
+{grave} And Ruja? Charged on five counts, never **tried**. In law, she is presumed innocent.
 
-# cine act=after trans=whip shot="1.15:pt:.4,.6|1.05:pt:.45,.55@sequel/dolly" fx="scene:x;plate:onecoin_art_mood_fog;air:fog,dust;light:sweep@escape|build:x;el:A=@onecoin_el_ankle_tag,.5,.62,.2~S=txt:THE SEQUEL,.5,.3,110,gold;do:A.drop@escape~S.zoom@sequel"
+// CARD a5-17 · SEE: a city at dusk seen while landing — Luxembourg — the sequel arrives on a plane · SEAM in right
+# cine act=fall fx="code:@reel;clip:stock_city_night_landing_time_over_luxembourg_01;move:in;z:.1;in:right;txt:THE SEQUEL;tsize:84;tfont:impact;tat:sequel;ty:.16"
 Then even her escape got a **sequel**.
 
-# cine act=after shot="ews|1.15:pt:.5,.45@spy/dolly" fx="scene:x;plate:onecoin_luxembourg;air:dust;light:sweep@Luxembourg|lower:FRANK SCHNEIDER~Ex-Luxembourg spy;at:Schneider|date:APRIL 2021 · FRANCE;at:arrested;x:.06;y:.12"
+// CARD a5-18 · SEE: the desk: a real print of Luxembourg's old town at night; his name and role set over it as it lifts · SEAM out right
+# cine act=fall fx="code:@table;items:onecoin_luxembourg@.5,.5,-3,.5;pan:0,.05;lift:0;at:spy;txt:FRANK SCHNEIDER;tat:Schneider;sub:ex-Luxembourg intelligence · arrested in France 2021;out:right"
 Frank Schneider, a former Luxembourg spy and OneCoin's security adviser, was arrested in France in **2021**.
 
-# cine act=after shot="1.15:pt:.4,.55|1:pt:.5,.5@vanished/dolly" fx="scene:x;plate:onecoin_art_ankle_desk;fg:onecoin_el_ankle_tag@.3,.9,.2;air:dust,rays;light:sweep@house|build:x;el:G=txt:GPS TAG · HOUSE ARREST,.72,.3,44~L=txt:SIGNAL LOST,.72,.44,96,red~M=txt:MAY 2023,.72,.56,44;do:G.drop@tag~L.zoom@vanished~M.rise@May"
-Under house arrest, with a GPS tag on his ankle, he **vanished** in May 2023.
+// CARD a5-19 · SEE: an AI plate (a room seen through a window, an ankle monitor on the desk) lifts and fills the frame; it drains to grey on "vanished" · SEAM in right
+# cine act=fall fx="code:@table;items:onecoin_art_ankle_desk@.5,.5,2,.56;pan:0,0;lift:0;at:ankle;mono:vanished;txt:MAY 2023: GONE;tat:vanished;sub:the GPS monitor disabled or evaded;in:right"
+{tense} Under house arrest, with a GPS tag on his ankle, he vanished in May **2023**.
 
-# cine act=after shot="ws|1.15:pt:.5,.5@fugitive/drop" bg=clip:onecoin_clip_airport bgBlur=2 bgDim=.35 fx="stamp:FUGITIVE;at:fugitive;x:.5;y:.42;col:red;size:120;rot:-6"
+// CARD a5-20 · SEE: police lights at night, slow; grey; the status sets and holds · SEAM out right
+# cine act=fall fx="code:@reel;clip:stock_law_police_car_07;move:in;z:.08;mono:still;txt:STILL A FUGITIVE;tsize:84;tfont:impact;tat:fugitive;ty:.16;out:right"
 He is still a **fugitive**.

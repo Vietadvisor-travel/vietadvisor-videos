@@ -7,98 +7,77 @@ delivery: wry
 voices: ruja=bf_emma
 music: auto
 captions: off
+autotrans: off
+endcard: off
 
-#! scene one_cent
-({ t, at, p, spring, stagger, wobble, W, H, u, layer, img, draw, text, air, ease, lerp, clamp, col, ctx, params }) => {
-  // more than $4 billion lost as 100 stacks of real notes; the 2026 victim fund is one stack; on "cent" the other 99 go dark
-  layer(1, () => { draw(img('onecoin_art_victim_kitchen'), W * .5, H * .5, H * 1.12, { a: .3 }); ctx.fillStyle = 'rgba(8,6,4,.6)'; ctx.fillRect(0, 0, W, H); });
-  const cash = img('onecoin_euro_cash'), step = +params.step, gx = W * .08, gy = H * .16, cw = W * .045, chh = cw * (cash ? cash.height / cash.width : 1.1), sp = W * .052;
-  const fund = step === 1 ? spring('forty', { stiff: 140, damp: 12 }) : 1, dark = step === 2 ? p('cent', .9, 'inOut') : 0;
-  layer(2, () => { for (let i = 0; i < 100; i++) { const c = i % 10, r = Math.floor(i / 10), k = step === 1 ? stagger(c + r, 19, 'opened', .9, .4) : 1, me = i === 99;
-      const x = gx + c * sp, y = gy + r * (chh * .62); if (!cash) break; ctx.globalAlpha = clamp(k) * (me ? 1 : 1 - dark * .85);
-      ctx.drawImage(cash, x, y + (1 - k) * -30 * u, cw, chh * .55); if (me && fund > .05) { ctx.strokeStyle = col.gold; ctx.lineWidth = 4 * u * fund; ctx.strokeRect(x - 4 * u, y - 4 * u, cw + 8 * u, chh * .55 + 8 * u); } }
-    ctx.globalAlpha = 1; });
-  layer(2.4, () => { const tx = W * .78;
-    text('> $4 BILLION', tx, H * .3, { size: 72 * u, font: 'impact', col: '#efe2c4', a: step === 1 ? p('fund', .5) : 1 - dark * .6 });
-    text('LOST · 100 STACKS', tx, H * .38, { size: 26 * u, font: 'cond', weight: 700, ls: 5 * u, col: '#b9a57d', a: step === 1 ? p('fund', .5) : 1 });
-    text('$40 MILLION+', tx, H * .56, { size: 72 * u * (.7 + .3 * clamp(fund)), font: 'impact', col: col.gold, a: clamp(fund) });
-    text('THE 2026 VICTIM FUND · 1 STACK', tx, H * .64, { size: 26 * u, font: 'cond', weight: 700, ls: 4 * u, col: '#b9a57d', a: clamp(fund) });
-    if (step === 2) { const e = spring('cent', { stiff: 160, damp: 12 }); text('≈ 1¢ ON THE $', tx, H * .82, { size: 84 * u * (.6 + .4 * clamp(e)), font: 'impact', col: col.gold, a: clamp(e) }); } });
-}
-#! end
+// CARD a6-01 · SEE: an old globe turning slowly under warm light; the question sets above it and holds · SEAM in right, out in
+# cine act=after fx="code:@reel;clip:stock_world_globe_04;move:in;z:.1;in:right;out:in;txt:WHERE IS SHE?;tsize:96;tfont:impact;tat:where;ty:.16"
+{tense} So where is **she**?
 
-#! scene exit_email
-({ t, at, p, spring, stagger, wobble, W, H, u, layer, img, draw, text, air, line, ease, lerp, clamp, col, ctx }) => {
-  // the 2014 email returns; each clause of option one gets what actually happened stamped beside it
-  layer(1, () => { draw(img('onecoin_art_recruit_call'), W * .5, H * .5, H * 1.08, { a: .35 }); ctx.fillStyle = 'rgba(8,6,4,.5)'; ctx.fillRect(0, 0, W, H); });
-  const s = spring('c1', { stiff: 120, damp: 13 }), x = W * .38 + wobble(3, 3 * u), y = lerp(-H * .6, H * .48, s);
-  layer(2, () => { ctx.save(); ctx.translate(x, y); ctx.rotate(-.02); ctx.fillStyle = 'rgba(0,0,0,.45)'; ctx.fillRect(-W * .3 + 14 * u, -H * .36 + 18 * u, W * .6, H * .72);
-    ctx.fillStyle = '#efe6d2'; ctx.fillRect(-W * .3, -H * .36, W * .6, H * .72); ctx.fillStyle = '#d9cfb8'; ctx.fillRect(-W * .3, -H * .36, W * .6, 60 * u); ctx.restore();
-    text('EMAIL  ·  9 AUGUST 2014  ·  OPTION 1', x - W * .27, y - H * .36 + 32 * u, { size: 26 * u, font: 'cond', weight: 700, ls: 4 * u, col: '#5b4d3c', lw: 0, align: 'left' });
-    const cl = [['Take the money', 'Take', '> $4 BILLION'], ['and run', 'Run', 'ATHENS · 2017'], ['and blame someone else', 'Blame', 'OTHERS: 20 + 10 + 5 + 4 YRS']];
-    cl.forEach(([s2, key, out], i) => { const yy = y - H * .16 + i * H * .17, k = p(key, .45, 'inOut'), st = spring(at(key) + .25, { stiff: 200, damp: 12 });
-      ctx.save(); ctx.globalCompositeOperation = 'multiply'; ctx.fillStyle = 'rgba(214,170,60,.85)'; ctx.fillRect(x - W * .27 - 6 * u, yy - 34 * u, W * .3 * k, 62 * u); ctx.restore();
-      text(s2, x - W * .27, yy, { size: 52 * u, font: 'serif', weight: 900, col: '#1d1712', lw: 0, align: 'left' });
-      ctx.save(); ctx.translate(x + W * .14, yy); ctx.rotate(-.08); ctx.scale(lerp(1.6, 1, clamp(st)), lerp(1.6, 1, clamp(st))); ctx.globalAlpha = clamp(st * 2);
-      ctx.strokeStyle = '#8f1d1d'; ctx.lineWidth = 4 * u; ctx.strokeRect(-W * .1, -30 * u, W * .2, 60 * u); ctx.restore();
-      text(out, x + W * .14, yy + 2 * u, { size: 30 * u, font: 'impact', col: '#8f1d1d', lw: 0, rot: -.08, a: clamp(st * 2) }); });
-    text('she wrote it in 2014', x, y + H * .3, { size: 30 * u, font: 'serif', col: '#5b4d3c', lw: 0, a: p('wrote', .6) }); });
-  air('dust', { dens: .5 });
-}
-#! end
-
-# cine act=lesson shot="1.15:pt:.62,.45|1:pt:.6,.45@she/glide" fx="scene:x;plate:onecoin_art_poster_wall;air:rain,dust;light:flicker|build:x;el:Q=txt:WHERE IS SHE?,.42,.3,96,gold;do:Q.type@where"
-So where is **she**?
-
-# cine act=lesson bg=onecoin_fbi_hq bgBlur=12 bgDim=.6 mid="onecoin_doc_fbi_wanted;x:.56;h:.84;style:print;at:c1" shot="1|1.5:1@woman/dolly" fx="date:30 JUNE 2022;at:FBI;x:.06;y:.12|mark:1;r:.05,.13,.6,.2;at:Wanted|lower:FUGITIVE NO. 527~Only woman listed;at:woman"
+// CARD a6-02 · SEE: the FBI's real Ten Most Wanted page flies in from deep space turning over, lands with a shadow; a highlighter runs across her name on "FBI" · SEAM in Z
+# cine act=after fx="code:@doc_flip;doc:onecoin_doc_fbi_wanted;bg:onecoin_art_investigation_wall;land:FBI;mark:woman;line:.3;in:in"
 In 2022, the FBI put her on its Ten Most Wanted list, the only **woman** on it at the time.
 
-# cine act=lesson bg=onecoin_art_poster_wall bgBlur=10 bgDim=.6 mid="onecoin_ruja_fbi;x:.32;h:.62;style:print;tape;at:c1;rot:-3" shot="ws|1.18:pt:.68,.45@dollars/dolly" fx="build:x;el:N=num:5000000:$,.72,.44,130~T=txt:REWARD · JUNE 2024,.72,.56,44~O=txt:WAS $100K IN 2022,.72,.64,46;do:N.count@raised~T.rise@reward~O.rise@dollars"
+// CARD a6-03 · SEE: three blocks: the reward over time, $100K, $250K, then the State Department's $5M towers on "five" · SEAM out right
+# cine act=after fx="code:@blocks;vals:100000,250000,5000000;labs:FBI 2022,FBI 2023,US STATE DEPT 2024;txts:$100K,$250K,$5M;go:raised;gap:.4;hl:2;hlat:five;out:right"
 In 2024, the United States raised the reward to five million **dollars**.
 
-# cine act=lesson shot="1.15:pt:.5,.55|ws@killed/drop" fx="scene:x;plate:onecoin_art_raid_office;air:dust,rays;light:flicker|build:x;el:M=txt:LEAKED BULGARIAN POLICE MEMO,.5,.22,44~K=txt:CLAIM: KILLED IN 2018,.5,.36,72,gold;do:M.drop@memo~K.zoom@claims"
-A leaked Bulgarian police memo claims she was killed in **2018**.
+// CARD a6-04 · SEE: a typed sheet under the lamp, marked as a reconstruction: the reported claim from the leaked police memo · SEAM in right
+# cine act=after fx="code:@email_page;head:BULGARIAN POLICE MEMO · leaked, reported February 2023;lines:Claim: she was killed~in November 2018;src:Reconstruction of the reported claim (BIRD) · not a copy of the memo;rot:1.2;in:right"
+{grave} A leaked Bulgarian police memo claims she was killed in **2018**.
 
-# cine act=lesson bg=onecoin_art_raid_office bgBlur=4 bgDim=.3 shot="ws|1.12:pt:.5,.45@unverified/dolly" fx="build:x;el:D=txt:THE DOCUMENT,.3,.32,44~R=txt:REAL,.3,.46,110,gold~C=txt:THE CLAIM INSIDE,.7,.32,44~U=txt:UNVERIFIED,.7,.46,90,red;do:D.drop@document~R.zoom@real~C.drop@claim~U.stamp:UNVERIFIED@unverified"
+// CARD a6-05 · SEE: the same sheet; the marker circles "real" in the margin note, then crosses through the claim on "unverified" · SEAM out right
+# cine act=after fx="code:@email_page;head:BULGARIAN POLICE MEMO · leaked, reported February 2023;lines:Claim: she was killed~in November 2018~Document: genuine~Claim: second-hand, unverified;src:Reconstruction of the reported claim (BIRD) · not a copy of the memo;circle:genuine@real,unverified@unverified;zoom:2;zat:But;rot:1.2;out:right"
 The document is real. But the claim inside it is second-hand, and **unverified**.
 
-# cine act=lesson bg=onecoin_doc_fbi_wanted bgBlur=8 bgDim=.55 fg="onecoin_dubai;x:.28;y:.56;h:.34;style:polaroid;tape;at:hunts;rot:-5|onecoin_cape_town;x:.7;y:.56;h:.34;style:polaroid;tape;at:alive;rot:4" shot="ws|1.08:pt:.5,.5@alive/dolly" fx="build:x;el:T=txt:REPORTED SIGHTINGS · UNCONFIRMED,.5,.2,52,gold;do:T.type@FBI"
+// CARD a6-06 · SEE: a globe in extreme close-up, place names gliding past — the search still on · SEAM in right
+# cine act=after fx="code:@reel;clip:stock_world_globe_06;move:right;z:.1;in:right"
 So the FBI still hunts her as if she's **alive**.
 
-# cine act=lesson shot="1.15:pt:.5,.5|1.1:pt:.5,.5@Athens/glide" fx="scene:x;plate:onecoin_art_athens_light;air:dust,rays;light:sun@.5,.3|build:x;el:A=txt:ATHENS · 25 OCT 2017,.5,.16,44;do:A.type@confirmed"
+// CARD a6-07 · SEE: a plane climbing away (her own footage pack); it slows and greys on "Athens" — the trail ends there · SEAM out right
+# cine act=after fx="code:@reel;clip:onecoin_clip_takeoff;move:in;z:.08;slow:seeing;mono:Athens;txt:NO CONFIRMED SIGHTING SINCE;tsize:60;tfont:impact;tat:confirmed;ty:.16;sub:Athens · 25 October 2017;out:right"
 Nobody has confirmed seeing her since **Athens**.
 
-# cine act=after bg=onecoin_art_victim_kitchen bgBlur=6 bgDim=.45 shot="1.15:pt:.5,.55|1:pt:.5,.5@bill/dolly" fx="tally:VICTIMS=3.5 MILLION+~COUNTRIES=175 (REPORTED)~LOST=MORE THAN $4 BILLION;at:confirm;rate:.6;x:.6;y:.3;w:.5"
+// CARD a6-08 · SEE: a printing press running sheet after sheet — the bill being printed · SEAM in right
+# cine act=lesson fx="code:@reel;clip:stock_documents_printing_press_02;move:in;z:.1;in:right;txt:THE BILL;tsize:110;tfont:impact;tat:bill;ty:.16"
 What we can confirm is the **bill**.
 
-# cine act=after date="UGANDA" shot="1.15:pt:.6,.6|1:pt:.55,.55@livestock/glide" fx="scene:x;plate:onecoin_art_uganda_plot;air:dust;light:sun@.85,.2|lower:UGANDA~BBC report;at:farmers"
-In Uganda, the BBC found farmers who had sold land and **livestock** to buy in.
+// CARD a6-09 · SEE: an AI plate of a small farm plot at dusk (illustration, not archive) lifts from the desk and fills the frame; the place and the BBC finding set over it · SEAM in right
+# cine act=lesson fx="code:@table;items:onecoin_art_uganda_plot@.5,.5,-3,.56;pan:0,0;lift:0;at:Uganda;txt:UGANDA;tat:BBC;sub:farmers sold land and livestock to buy in (BBC);in:right"
+{sad} In Uganda, the BBC found farmers who had sold land and **livestock** to buy in.
 
-# cine act=after bg=world map="10.4,51.2,5.6" hl="Germany" hlAt=Germany shot="ws|1.15:pt:.5,.5@processor/dolly" hero="17,552;at:victims;font:impact;size:180;pos:r;x:.72;y:.38;col:#c9a85a" sup="VICTIMS · ONE PROCESSOR · 2015–16;at:processor;x:.72;y:.52"
+// CARD a6-10 · SEE: a phone tapped on a payment terminal; the German count sets above it · SEAM in right, out right
+# cine act=lesson fx="code:@reel;clip:stock_money_card_payment_05;move:in;z:.1;in:right;out:right;txt:17,552 VICTIMS · ONE PROCESSOR;tsize:70;tfont:impact;tat:investigators;ty:.16;sub:Germany · Bielefeld prosecutors"
 In Germany, investigators traced the money of 17,552 victims through a single payment **processor**.
 
-# cine act=after shot="1.15:pt:.4,.5|1:pt:.45,.5@family/truck" fx="scene:x;plate:onecoin_art_victim_kitchen;air:dust;light:sun@.75,.2|lower:JEN McADAM~Victim · Glasgow;at:McAdam"
-In Glasgow, Jen McAdam had brought in friends and **family**.
+// CARD a6-11 · SEE: the shadows of a crowd walking at sunset — friends and family, no faces; the place sets above · SEAM in right
+# cine act=lesson fx="code:@reel;clip:stock_people_silhouette_06;move:right;z:.1;in:right;txt:GLASGOW;tsize:90;tfont:impact;tat:Glasgow;ty:.16;sub:Jen McAdam brought in friends and family"
+In Glasgow, Jen McAdam had brought in friends and family.
 
-# cine act=after bg=onecoin_gold_bars bgBlur=4 bgDim=.4 shot="ws|1.08:pt:.5,.45@away/dolly" fx="quote:thrown a quarter of a million euros away;at:thrown;by:Jen McAdam to the BBC, 2019;x:.5;y:.42;rate:.2"
-Together, she said, they had "thrown a quarter of a million euros **away**."
+// CARD a6-12 · SEE: a real photo of euro notes burns away from the centre with a glowing edge, leaving a rain-dark window behind it · SEAM out right
+# cine act=lesson fx="code:@burn_away;a:onecoin_euro_cash;b:onecoin_art_mood_rain;go:quarter"
+{sad} Together, she said, they had "thrown a quarter of a million euros **away**."
 
-# cine act=after shot="1|1.06:pt:.6,.45@forty/dolly" fx="code:one_cent;step:1;sfx:ui_pop@opened~magic_reveal@forty"
+// CARD a6-13 · SEE: two blocks: lost (more than $4 billion) and returned ($40 million), the second barely a line on the floor · SEAM in right
+# cine act=lesson fx="code:@blocks;vals:4000,40;labs:LOST,FUND FOR VICTIMS 2026;txts:$4B+,$40M;go:fund;gap:.8;hl:1;hlat:forty;in:right"
 In 2026, the US opened a fund for victims: just over forty million **dollars**.
 
-# cine act=after shot="1.06:pt:.6,.45|1.15:pt:.62,.55@cent/dolly" fx="code:one_cent;step:2;sfx:glitch_power_down@cent"
-Against more than four billion lost, that's about one **cent** on the dollar. [BEAT]
+// CARD a6-14 · SEE: a hundred notes in a grid stand for the whole sum; ninety-nine fall away on "billion" and one is left in the light · SEAM hold, then out in
+# cine act=lesson fx="code:@cent_grid;at:billion;lab:≈ 1 CENT ON THE DOLLAR;sub:$40 million returned · $4 billion+ lost;out:in"
+{grave} Against more than four billion lost, that's about one **cent** on the dollar. [BEAT]
 
-# cine act=lesson shot="ws|1.1:pt:.6,.42@database/dolly" fx="scene:x;plate:onecoin_art_database_room;air:dust,rays;light:sweep@database|build:x;el:R=txt:THE REAL REASON,.36,.22,53~O=txt:ONE INSPECTION,.36,.34,96,gold;do:R.drop@reason~O.type@person"
+// CARD a6-15 · SEE: the company database one last time: no blockchain, no mining, fewer coins on the ledger than sold; ACCESS: DENIED flips to OPENED on "open" — the inspection that never happened · SEAM in Z
+# cine act=lesson fx="code:@backoffice;bg:stock_screen_code_16;title:ONECOIN · DATABASE;ry:.08;rows:Blockchain=NONE~Mining=NONE~Coins on ledger=FEWER THAN SOLD;go:reason;gap:.6;hero:ACCESS DENIED;hlab:THE ONE INSPECTION;hat:reason;to:OPENED;toat:open;note:US Justice Department, Sept 2023;in:in"
 Here's the real reason it worked: the fraud never needed smarter victims. It needed one person to open the **database**.
 
-# cine act=lesson bg=onecoin_art_database_room bgBlur=10 bgDim=.6 shot="1.15:pt:.5,.5|ws@everywhere/drop" fx="build:x;el:P=txt:A PRIVATE BLOCKCHAIN,.22,.36,45~F=txt:SALESMEN = FAMILY,.5,.36,45~E=txt:MONEY: EVERYWHERE,.78,.36,45~L1=@onecoin_el_vault_wheel,.22,.64,.34~L2=icon:person*4,.5,.66,.12~L3=@onecoin_euro_cut,.78,.66,.34;do:P.drop@private~L1.rise@private~F.drop@salesmen~L2.rise@family~E.drop@money~L3.rise@everywhere"
+// CARD a6-16 · SEE: three prints on the desk — a glowing server corridor (private), a gala table set for many (family), Dubai's skyline (everywhere) — circled on each word · SEAM out right
+# cine act=lesson fx="code:@table;items:onecoin_art_server_glow@.2,.5,-4,.42~onecoin_art_gala_table@.5,.46,3,.4~onecoin_dubai@.8,.52,-2,.4;pan:0,0;mark:0@private,1@family,2@everywhere;out:right"
 Nobody could, because the "blockchain" was **private**, the salesmen were family, and the money was everywhere.
 
-# cine act=lesson shot="1|1.08:pt:.45,.5@wrote/dolly" fx="code:exit_email;sfx:foley_marker@Take~foley_marker@Run~impact_cinematic@Blame"
+// CARD a6-17 · SEE: the exit email, whole, one last time; the three circles return on Take, Run, Blame as the narrator says them · SEAM in right
+# cine act=lesson fx="code:@email_page;head:FROM  Ruja Ignatova · TO  Sebastian Greenwood · 9 AUGUST 2014 (excerpt);lines:My exit strategy, option one:~Take the money and run and~blame someone else for this . . . .;src:Quoted in a US Justice Department release, 16 December 2022;circle:take@Take,run@Run,blame@Blame;rot:-1.8;in:right"
 Take the money. Run. Blame someone else. She wrote it in **2014**.
 
-# cine act=lesson shot="1.1:pt:.5,.4|1:pt:.5,.45@did/glide" fx="scene:x;plate:onecoin_art_empty_stage;air:dust,rays;light:sweep@exit|build:x;el:C=@onecoin_el_gold_coin,.5,.34,.3~A=txt:THE COIN NEVER EXISTED.,.5,.56,70,ink~B=txt:THE EXIT STRATEGY DID.,.5,.68,84,gold;do:C.float@coin~C.vanish@existed~A.zoom@coin~B.zoom@exit"
-The coin never existed. The exit strategy **did**.
-
-# ppend
+// CARD a6-18 · SEE: callback to the opening — her FBI wanted page tears in two like paper on "did", and behind it only embers rising in the dark · SEAM end
+# cine act=lesson fx="code:@tear_reveal;a:onecoin_doc_fbi_wanted;b:stock_texture_sparks_05;go:did"
+{grave} The coin never existed. The exit strategy **did**.

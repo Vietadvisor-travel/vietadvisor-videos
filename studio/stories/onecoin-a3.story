@@ -7,55 +7,73 @@ delivery: wry
 voices: ruja=bf_emma
 music: auto
 captions: off
+autotrans: off
 endcard: off
 
-# cine act=doubt shot="ws|1.12:pt:.6,.45@programmer/dolly" fx="scene:x;plate:onecoin_hq_office;air:dust;light:sweep@weakness|build:x;el:W=txt:WANTED · SOFIA,.66,.3,53~P=txt:ONE REAL PROGRAMMER,.66,.44,84,gold;do:W.drop@weakness~P.type@programmer"
-But a fake blockchain has one weakness: one day, you need a real **programmer**.
+// CARD a3-01 · SEE: hands typing real code on a keyboard, screen glow on the fingers; the line lands over it · SEAM in right, out right
+# cine act=doubt fx="code:@reel;clip:stock_screen_code_27;move:in;z:.1;in:right;out:right;txt:WANTED: ONE REAL PROGRAMMER;tsize:72;tfont:impact;tat:real;ty:.16"
+{tense} But a fake blockchain has one weakness: one day, you need a real **programmer**.
 
-# cine act=rise date="OCTOBER 2016" shot="ews|1.15:pt:.5,.4@doubled/rise" fx="scene:x;plate:onecoin_art_press_table;air:dust;light:sweep@launched|build:x;el:B=txt:THE NEW BLOCKCHAIN,.5,.26,51~N=txt:EVERY BALANCE × 2,.5,.4,90,gold;do:B.drop@blockchain~N.zoom@doubled"
+// CARD a3-02 · SEE: two blocks: every balance before and after the October 2016 "new blockchain"; the second doubles out of the floor on "doubled" · SEAM in right
+# cine act=rise fx="code:@blocks;vals:1,2;labs:BEFORE,AFTER THE 'NEW BLOCKCHAIN';txts:×1,×2;go:launched;gap:1.6;hl:1;hlat:doubled;note:October 2016;in:right"
 In October 2016, OneCoin launched a brand new **blockchain**, and doubled every member's balance.
 
-# cine act=doubt shot="1.15:pt:.62,.4|1.05:pt:.55,.45@call/truck" fx="scene:x;plate:onecoin_art_recruit_call;air:dust;light:sweep@phone|lower:BJØRN BJERCKE~Developer · Norway;at:Bjercke"
+// CARD a3-03 · SEE: the desk; a print of a hand holding a phone receiver lies among papers; on "call" it lifts and becomes the frame · SEAM in right, out in
+# cine act=doubt fx="code:@table;items:onecoin_doc_doj_greenwood@.2,.42,6,.5~onecoin_art_recruit_call@.6,.5,-4,.46;pan:0,.12;lift:1;at:call;in:right;out:in"
 That same season, a Norwegian developer named Bjørn **Bjercke** took a recruiter's phone call.
 
-# cine act=doubt bg=onecoin_art_recruit_call bgBlur=0 bgDim=.3 shot="1.15:pt:.3,.7|1.1:pt:.35,.6@company/glide" fx="build:x;el:J=txt:WANTED,.5,.26,56~B=txt:BLOCKCHAIN DEVELOPER,.5,.4,80,gold~F=txt:FOR A CRYPTO COMPANY,.5,.53,48;do:J.drop@job~B.type@build~F.rise@company"
+// CARD a3-04 · SEE: the job as he described it, typed on a sheet: role, client, task; the marker underlines "build" · SEAM in Z
+# cine act=doubt fx="code:@email_page;head:THE JOB · 2016 (as Bjercke described it to the BBC);lines:Role: blockchain developer~Client: a cryptocurrency company~Task: build a blockchain;src:Reconstruction from Bjercke's account;under:build@build;rot:1.4;in:in"
 The job: build a blockchain for a cryptocurrency **company**.
 
-# cine act=doubt bg=clip:onecoin_clip_mining_asic bgBlur=4 bgDim=.45 shot="ws|1.08:pt:.5,.45@today/dolly" fx="quote:Well, first of all, they need a blockchain. They don't have a blockchain today.;at:Well;by:The recruiter, as recalled by Bjørn Bjercke (BBC);x:.5;y:.42;rate:.16|seal:BBC;at:today;x:.84;y:.24"
-"Well, first of all, they need a blockchain," the recruiter said. "They don't have a blockchain **today**."
+// CARD a3-05 · SEE: rain running down a window over a night city; the recruiter's words appear in the dark glass, verbatim, attributed; the second sentence lands on "today" · SEAM hard cut out
+# cine act=doubt fx="code:@reel;clip:stock_weather_sea_raindrops_against_the_window_01;move:in;z:.08;txt:“They don't have a blockchain today.”;tsize:66;tfont:serif;tat:today;ty:.45;sub:the recruiter, in Bjercke's account to the BBC"
+{tense} "Well, first of all, they need a blockchain," the recruiter said. "They don't have a blockchain **today**."
 
-# cine act=doubt shot="1.15:pt:.3,.5|1.15:pt:.6,.45@talking/truck" fx="scene:x;plate:onecoin_art_podcast_wall;air:dust;light:sweep@talking|build:x;el:N=txt:NO,.6,.3,150,gold~T=txt:ON THE RECORD,.6,.45,52;do:N.zoom@no~T.rise@talking"
+// CARD a3-06 · SEE: an empty room set with microphones — no face (we have no licensed picture of him), just the place where the truth goes public · SEAM in right, out right
+# cine act=doubt fx="code:@reel;clip:stock_office_empty_office_day_05;move:in;z:.12;in:right;out:right;txt:HE WENT PUBLIC;tsize:72;tfont:impact;tat:talking;ty:.16"
 Bjercke said no. Then he started **talking**.
 
-# cine act=doubt bg=world map="12,55,2.6" map2="10,56,3" hl="Norway,Germany,United Kingdom" hlAt=regulators shot="ws|1.1:pt:.45,.4@it/glide" fx="pin:NORWAY;ll:10.7,59.9;at:Norway|pin:GERMANY;ll:8.7,50.1;at:Germany|pin:BRITAIN;ll:-0.1,51.5;at:Britain"
+// CARD a3-07 · SEE: Lady Justice on a courthouse dome beside a flag; three countries set below her in sequence on their names · SEAM in right
+# cine act=doubt fx="code:@reel;clip:stock_law_courthouse_19;move:up;z:.1;in:right;txt:NORWAY · GERMANY · BRITAIN;tsize:66;tfont:impact;tat:Norway;ty:.84;sub:regulators had already moved"
 By then, regulators in Norway, Germany and Britain had already moved against **it**.
 
-# cine act=doubt bg=onecoin_departures bgBlur=10 bgDim=.5 date="JANUARY 2017" shot="ws|1.1:pt:.5,.5@good/dolly" fx="flapboard:x;title:ONECOIN EXCHANGE;rows:STATUS=CLOSED~REOPENS=NEVER;at:exchange"
+// CARD a3-08 · SEE: the company exchange screen, last time: on "good" the hero reads CLOSED and the whole panel drains to grey · SEAM out down
+# cine act=fall fx="code:@backoffice;bg:stock_screen_spreadsheet_17;title:ONECOIN EXCHANGE (INTERNAL ONLY);ry:-.14;rows:January 2017=SHUT DOWN;go:January;hero:OFFLINE;hlab:STATUS;hat:January;to:CLOSED FOR GOOD;toat:good;accent:#e5484d;out:down"
 In January 2017, OneCoin's internal exchange shut down for **good**.
 
-# cine act=doubt bg=onecoin_dubai bgBlur=0 bgDim=.25 shot="ews|1.12:pt:.5,.45@stop/glide" fx="build:x;el:S=txt:SALES CONTINUE,.5,.4,110,gold~R=txt:2017 · 2018 · 2019,.5,.53,49;do:S.type@selling~R.rise@stop"
+// CARD a3-09 · SEE: a conference room on its feet, applauding — the selling goes on as if nothing happened · SEAM in down, out right
+# cine act=fall fx="code:@reel;clip:stock_people_applause_04;move:right;z:.1;in:down;out:right;slow:stop"
 And still, the selling didn't **stop**.
 
-# cine act=doubt shot="1.15:pt:.5,.6|ws@fool/drop" fx="scene:x;plate:onecoin_art_gala_table;air:dust;light:flicker|build:x;el:F=txt:FAMILY · FRIENDS · NEIGHBOURS,.5,.27,44~Q=txt:DOUBT = BETRAYAL,.5,.34,80,gold;do:F.drop@victims~Q.type@doubting"
-Because the sales team was the victims themselves, and doubting meant calling your own family a **fool**.
+// CARD a3-10 · SEE: the recruitment pyramid again, but now every circle is a crowd at night and the lines glow red on "family" — the network was the family · SEAM in right
+# cine act=fall fx="code:@network;clips:stock_people_night_crowd_02,stock_people_applause_04;levels:3;go:victims,family;flow:fool;top:THE SALES TEAM;toplab:= THE VICTIMS;in:right"
+{grave} Because the sales team was the victims themselves, and doubting meant calling your own family a **fool**.
 
-# cine act=doubt shot="ws|1.15:pt:.5,.4@protected/dolly;dutch:-3" fx="scene:x;plate:onecoin_art_investigation_wall;air:dust;light:flicker|build:x;el:Q=txt:WHO COULD STOP IT?,.5,.16,96,gold;do:Q.type@stop"
+// CARD a3-11 · SEE: a crowded night street, people shoulder to shoulder; the question sits over them · SEAM in right, out in
+# cine act=fall fx="code:@reel;clip:stock_people_night_crowd_02;move:in;z:.12;in:right;out:in;txt:WHO COULD STOP IT?;tsize:80;tfont:impact;tat:stop;ty:.16"
 So who could stop a scheme that its own investors **protected**?
 
-# cine act=doubt shot="1.05:pt:.6,.5|1.18:pt:.6,.5@boyfriend/crash" fx="scene:x;plate:onecoin_art_penthouse;air:dust|build:x;el:N=txt:NOT A REGULATOR,.38,.24,53~B=txt:HER BOYFRIEND,.38,.4,100,gold;do:N.drop@regulator~N.gray@boyfriend~B.zoom@boyfriend"
-It wasn't a regulator. [BEAT] It was her **boyfriend**.
+// CARD a3-12 · SEE: a recording studio's dials and meters in close-up, live — someone is listening; the twist word sets on "boyfriend" · SEAM in Z, hard cut on the twist
+# cine act=fall fx="code:@reel;clip:stock_screen_wall_09;move:in;z:.14;in:in;slow:regulator;txt:HER BOYFRIEND;tsize:96;tfont:impact;tat:boyfriend;ty:.18;tcol:#e5484d"
+{tense} It wasn't a regulator. [BEAT] It was her **boyfriend**.
 
-# cine act=doubt bg=onecoin_art_london_door bgBlur=2 bgDim=.3 shot="ws|1.08:pt:.5,.42@OneCoin/dolly" hero="GILBERT ARMENTA;at:Armenta;font:serif;size:100;pos:c;y:.3" sup="MOVED MONEY FOR ONECOIN;at:money" fx="build:x;el:C=@onecoin_euro_cut,.18,.66,.3~D=txt:THE MONEY MAN,.66,.62,64,gold;do:C.slideR@moved~D.zoom@moved"
+// CARD a3-13 · SEE: hands counting dollar stacks seen from above; his name sets over the money · SEAM in right, out right
+# cine act=fall fx="code:@reel;clip:stock_money_broll_02;move:right;z:.1;in:right;out:right;txt:GILBERT ARMENTA;tsize:80;tfont:impact;tat:Armenta;ty:.16;sub:moved money for OneCoin"
 Gilbert **Armenta** moved money for OneCoin.
 
-# cine act=fall shot="1.15:pt:.5,.4|ws@FBI/whip" fx="scene:x;plate:onecoin_fbi_hq;air:dust;light:sweep@cooperating|build:x;el:S=txt:SECRET COOPERATOR,.5,.28,84,red~D=txt:FROM 2017,.5,.39,44;do:S.stamp:SECRET COOPERATOR@FBI~D.rise@secretly"
+// CARD a3-14 · SEE: police lights washing a street at night; the frame drains to grey on "FBI" as the label lands · SEAM in right
+# cine act=fall fx="code:@reel;clip:stock_law_police_car_06;move:in;z:.1;in:right;mono:FBI;txt:COOPERATING WITH THE FBI · 2017;tsize:64;tfont:impact;tat:FBI;ty:.16"
 But from 2017, he was secretly cooperating with the **FBI**.
 
-# cine act=fall bg=onecoin_court_sdny bgBlur=3 bgDim=.4 shot="ws|1.06:pt:.6,.5@fourteen/dolly" fx="quote:extraordinary;at:extraordinary;by:federal prosecutors on Armenta;x:.34;y:.22;rate:.2|build:x;el:P=icon:person*14,.66,.62,.1~N=txt:14+ CHARGED,.66,.48,80,gold;do:P.multiply:14@charges~N.count@fourteen"
+// CARD a3-15 · SEE: fourteen small dark blocks rise in a row, one per person charged, fast as a drumroll; the prosecutors' word sits above them · SEAM out right
+# cine act=fall fx="code:@blocks;vals:1,1,1,1,1,1,1,1,1,1,1,1,1,1;go:led;gap:.12;note:“extraordinary” — US prosecutors on his cooperation;txts:,,,,,,,,,,,,,14;hl:13;hlat:fourteen;out:right"
 Prosecutors later called his help "**extraordinary**": it led to charges against at least fourteen people.
 
-# cine act=fall shot="1.1:pt:.62,.4|1.15:pt:.62,.36@up/vertigo;dutch:-4" fx="scene:x;plate:onecoin_art_mansion_sea;subj:onecoin_ruja@.66,1.02,.84;in:afraid;air:fog,dust;light:flicker"
-She was afraid someone close to her would give her **up**.
+// CARD a3-16 · SEE: rain sliding down glass at dusk, everything behind it blurred; slow push · SEAM in right
+# cine act=fall fx="code:@reel;clip:stock_texture_rain_glass_03;move:in;z:.1;in:right;grade:cold"
+{sad} She was afraid someone close to her would give her **up**.
 
-# cine act=fall bg=black mid="onecoin_ruja_fbi;x:.5;h:.6;style:print;at:c1" shot="1|1.06:1@right/glide" hero="SHE WAS RIGHT.;at:right;font:serif;size:100;pos:c;y:.86;col:#c9a85a"
+// CARD a3-17 · SEE: punch — the desk, her FBI photo print alone under the lamp; the marker rings it on "right" · SEAM out right (into the escape)
+# cine act=fall fx="code:@table;items:onecoin_ruja_fbi@.5,.5,-2,.6;pan:0,0;mark:0@right;out:right"
 She was right.

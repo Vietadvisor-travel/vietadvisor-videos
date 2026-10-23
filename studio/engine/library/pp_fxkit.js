@@ -47,7 +47,7 @@
   }
 
   window.PPKIT = function (A) {
-    const { ctx, W, H, u, t } = A;
+    const { ctx, W, H, u, t } = A; const dur = A.dur || 4;
     function tri(src, s, d) {
       const M = inv3([s[0][0], s[0][1], 1, s[1][0], s[1][1], 1, s[2][0], s[2][1], 1]); if (!M) return;
       const mul = v => [M[0] * v[0] + M[1] * v[1] + M[2] * v[2], M[3] * v[0] + M[4] * v[1] + M[5] * v[2], M[6] * v[0] + M[7] * v[1] + M[8] * v[2]];
@@ -178,6 +178,26 @@
       if (src) quad(src, [[x - w / 2 + sx, y - h / 2 - d], [x + w / 2 + sx, y - h / 2 - d], [x + w / 2, y - h / 2], [x - w / 2, y - h / 2]], { a: .55, n: 4 });
       ctx.fillStyle = 'rgba(255,240,210,.12)'; ctx.beginPath(); ctx.moveTo(x - w / 2, y - h / 2); ctx.lineTo(x - w / 2 + sx, y - h / 2 - d); ctx.lineTo(x + w / 2 + sx, y - h / 2 - d); ctx.lineTo(x + w / 2, y - h / 2); ctx.fill();
       if (src) ctx.drawImage(src, x - w / 2, y - h / 2, w, h); ctx.strokeStyle = 'rgba(255,235,200,.25)'; ctx.lineWidth = 1.5 * u; ctx.strokeRect(x - w / 2, y - h / 2, w, h); ctx.restore(); }
-    return { cover, block, quad, card, project, label, extrude, drop, shatter, grab, tear, burn, blob, zoomBlur, chroma };
+    function seam(inDir, outDir, o = {}) { // the motion doctrine's seams: arrive already moving (power4.out), leave accelerating (power4.in);
+      // call once at the top of a scene (inside ctx.save/restore); dirs: left right up down in out none
+      const D = (o.dist ?? .14) * W, ti = o.tin ?? .45, to = o.tout ?? .3; let dx = 0, dy = 0, s = 1, bl = 0; const pin = clamp(t / ti), pout = clamp((t - (dur - to)) / to);
+      const ei = 1 - Math.pow(1 - pin, 4), eo = Math.pow(pout, 4); const v = { left: [-1, 0], right: [1, 0], up: [0, -1], down: [0, 1] };
+      if (v[inDir]) { dx -= v[inDir][0] * D * (1 - ei); dy -= v[inDir][1] * D * (1 - ei); bl += (1 - ei) * 8; } if (inDir === 'in') { s *= .8 + .2 * ei; bl += (1 - ei) * 10; } if (inDir === 'out') { s *= 1.22 - .22 * ei; bl += (1 - ei) * 10; }
+      if (v[outDir]) { dx += v[outDir][0] * D * eo; dy += v[outDir][1] * D * eo; bl += eo * 8; } if (outDir === 'in') { s *= 1 + .22 * eo; bl += eo * 10; } if (outDir === 'out') { s *= 1 - .18 * eo; bl += eo * 10; }
+      ctx.translate(W / 2 + dx * u / u, H / 2 + dy); ctx.scale(s, s); ctx.translate(-W / 2, -H / 2); if (bl > .4) ctx.filter = `blur(${(bl * u).toFixed(1)}px)`; return { dx, dy, s, bl }; }
+    function paperDesk(o = {}) { // a dark investigator's desk lit by one lamp: leather/wood gradient, lamp pool, vignette, fine grain (procedural, no image)
+      const lx = (o.lx ?? .5) * W, ly = (o.ly ?? .45) * H; ctx.fillStyle = o.col || '#1a140e'; ctx.fillRect(-W, -H, W * 3, H * 3);
+      const g = ctx.createRadialGradient(lx, ly, 0, lx, ly, W * .75); g.addColorStop(0, 'rgba(255,214,150,.22)'); g.addColorStop(.45, 'rgba(255,190,120,.07)'); g.addColorStop(1, 'rgba(0,0,0,.55)'); ctx.fillStyle = g; ctx.fillRect(-W, -H, W * 3, H * 3);
+      const r = R(o.seed ?? 21); ctx.save(); ctx.globalAlpha = .05; ctx.strokeStyle = '#000'; ctx.lineWidth = 1.2 * u; for (let i = 0; i < 70; i++) { const y = r() * H * 1.4 - H * .2; ctx.beginPath(); ctx.moveTo(-W * .2, y); ctx.bezierCurveTo(W * .3, y + (r() - .5) * 40 * u, W * .7, y + (r() - .5) * 40 * u, W * 1.2, y + (r() - .5) * 20 * u); ctx.stroke(); } ctx.restore(); }
+    function paper(w, h, o = {}) { // a sheet of paper as a canvas (off-white, faint fibres, soft edge shading) to type or draw on
+      const key = 'paper:' + w + 'x' + h + (o.tint || ''); if (C[key] && C[key].__ok) return C[key]; const c = cv(key, w, h), g = c.getContext('2d'); g.fillStyle = o.tint || '#f1ece1'; g.fillRect(0, 0, w, h);
+      const r = R(77); g.globalAlpha = .05; for (let i = 0; i < 400; i++) { g.fillStyle = r() < .5 ? '#000' : '#fff'; g.fillRect(r() * w, r() * h, 1 + r() * 2, 1 + r() * 2); } g.globalAlpha = 1;
+      const e = g.createLinearGradient(0, 0, w, 0); e.addColorStop(0, 'rgba(0,0,0,.06)'); e.addColorStop(.1, 'rgba(0,0,0,0)'); e.addColorStop(.9, 'rgba(0,0,0,0)'); e.addColorStop(1, 'rgba(0,0,0,.08)'); g.fillStyle = e; g.fillRect(0, 0, w, h); c.__ok = 1; return c; }
+    function marker(pts, k, o = {}) { // a hand-drawn marker stroke (circle, underline, tick) drawn up to fraction k; pts in px
+      if (k <= 0 || pts.length < 2) return; const r = R(o.seed ?? 5); ctx.save(); ctx.strokeStyle = o.col || 'rgba(200,30,30,.85)'; ctx.lineWidth = (o.w ?? 7) * u; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+      let L = 0; const seg = []; for (let i = 1; i < pts.length; i++) { const l = Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]); seg.push(l); L += l; } let left = L * clamp(k);
+      ctx.beginPath(); ctx.moveTo(pts[0][0], pts[0][1]); for (let i = 1; i < pts.length && left > 0; i++) { const f = Math.min(1, left / seg[i - 1]); ctx.lineTo(pts[i - 1][0] + (pts[i][0] - pts[i - 1][0]) * f, pts[i - 1][1] + (pts[i][1] - pts[i - 1][1]) * f); left -= seg[i - 1]; } ctx.stroke(); ctx.restore(); }
+    function ellipsePts(cx, cy, rx, ry, seed = 3) { const r = R(seed), n = 40, P = []; const a0 = -2.4 + r() * .3; for (let i = 0; i <= n * 1.12; i++) { const a = a0 + i / n * Math.PI * 2, w = 1 + (r() - .5) * .06; P.push([cx + Math.cos(a) * rx * w * (1 + i / n * .04), cy + Math.sin(a) * ry * w]); } return P; }
+    return { seam, paperDesk, paper, marker, ellipsePts, cover, block, quad, card, project, label, extrude, drop, shatter, grab, tear, burn, blob, zoomBlur, chroma };
   };
 })();

@@ -128,6 +128,9 @@ Write the card first, then reach for the tool. A tool is never the idea.
 - Carry an object across the cut whenever you can: the gold line becomes the runway light; the coin becomes the
   spotlight; the email's highlighter becomes the courtroom bar.
 
+Every act header carries `autotrans: off`. The cards own every seam; the engine's automatic stylised transitions
+(tear, burn, whip every 5 beats) would cut across them.
+
 ## 6. What a weak card looks like (rewrite it)
 | Weak card says | Why it fails | A strong card says instead |
 |---|---|---|

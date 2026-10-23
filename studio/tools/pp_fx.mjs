@@ -38,6 +38,11 @@ if (cmd === 'save') {
   const beats = txt.split(/^(?=#\s*(?:cine|ppcase|ppend)\b)/m).filter(b => /^#\s*(cine|ppcase|ppend)\b/.test(b)); const k = beats.findIndex(b => new RegExp('code:@?' + scene + '\\b').test(b.split('\n')[0]));
   if (k >= 0) { try { const out = execFileSync('node', [path.join(ROOT, 'tools', 'pp_sheet.mjs'), story, '--beats', `${k + 1}-${k + 1}`, '--at', '.25,.55,.9'], { cwd: ROOT }).toString(); const f = out.split('\n').find(l => l.endsWith('.jpg')); if (f) fs.copyFileSync(path.join(ROOT, f.trim()), path.join(PREV, name + '.jpg')); } catch (e) { console.log('preview failed:', e.message.split('\n')[0]); } }
   build(true); console.log(`saved @${name} (${params.length} params) → effects/${name}.js${fs.existsSync(path.join(PREV, name + '.jpg')) ? ' + preview' : ''}`);
+} else if (cmd === 'preview') {   // a preview strip for an effect written straight into effects/ (no #! scene block): from a beat that uses it
+  const [story, name] = rest; const txt = fs.readFileSync(story, 'utf8'); const beats = txt.split(/^(?=#\s*(?:cine|ppcase|ppend)\b)/m).filter(b => /^#\s*(cine|ppcase|ppend)\b/.test(b));
+  const k = beats.findIndex(b => new RegExp('code:@?' + name + '\\b').test(b.split('\n')[0])); if (k < 0) { console.log(`no beat in ${story} uses ${name}`); process.exit(1); }
+  const out = execFileSync('node', [path.join(ROOT, 'tools', 'pp_sheet.mjs'), story, '--beats', `${k + 1}-${k + 1}`, '--at', '.25,.55,.9'], { cwd: ROOT }).toString(); const f = out.split('\n').find(l => l.endsWith('.jpg'));
+  if (f) { fs.copyFileSync(path.join(ROOT, f.trim()), path.join(PREV, name + '.jpg')); build(true); console.log(`preview → effects/previews/${name}.jpg`); }
 } else if (cmd === 'list') {
   const q = rest.map(w => w.toLowerCase()); all().map(e => ({ e, s: q.reduce((a, w) => a + ((e.name + ' ' + Object.values(e.m).join(' ')).toLowerCase().includes(w) ? 1 : 0), 0) })).filter(x => !q.length || x.s).sort((a, b) => b.s - a.s)
     .forEach(({ e }) => console.log(`@${e.name.padEnd(22)} ${e.m.does || ''}\n${' '.repeat(24)}params: ${e.m.params || '—'} · tags: ${e.m.tags || ''} · born: ${e.m.born || ''}`));

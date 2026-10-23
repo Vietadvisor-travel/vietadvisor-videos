@@ -11,7 +11,7 @@
   layer(1, () => { draw(img(params.plate), W * .5, H * .5, H * 1.15, { a: .35 }); ctx.fillStyle = 'rgba(10,8,6,.55)'; ctx.fillRect(0, 0, W, H); });
   const cx = W * .3, cy = H * .47, cw = W * .4, ch = H * .66;
   layer(2, () => {
-    ctx.save(); ctx.translate(cx + wobble(2, 3 * u), cy); ctx.rotate(-.02);
+    ctx.save(); ctx.translate(cx, cy); ctx.rotate(-.02);
     ctx.fillStyle = 'rgba(0,0,0,.4)'; ctx.fillRect(-cw / 2 + 12 * u, -ch / 2 + 16 * u, cw, ch);
     ctx.fillStyle = '#f2ead7'; ctx.fillRect(-cw / 2, -ch / 2, cw, ch); ctx.fillStyle = '#c9a85a'; ctx.fillRect(-cw / 2, -ch / 2, cw, 10 * u); ctx.restore();
     text('CURRICULUM VITAE', cx - cw * .42, cy - ch * .38, { size: 26 * u, font: 'cond', weight: 700, ls: 6 * u, col: '#7a6448', lw: 0, align: 'left' });

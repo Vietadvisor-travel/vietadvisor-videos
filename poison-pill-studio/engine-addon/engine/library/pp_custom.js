@@ -25,7 +25,7 @@
     // director makes. Any direct drawing flushes the queue first, so draw order stays exactly as written.
     let Q = [], inL = false; const flush = () => { if (!Q.length || inL) return; const G = new Map(); Q.forEach(([d, f]) => { if (!G.has(d)) G.set(d, []); G.get(d).push(f); }); Q = []; [...G.keys()].sort((a, b) => a - b).forEach(d => { inL = true; try { X.layer(d, () => G.get(d).forEach(f => f())); } finally { inL = false; } }); };
     const layer = (d, fn) => { if (inL) return fn(); Q.push([Math.round(d * 4) / 4, fn]); }; const guard = f => (...a) => { if (!inL) flush(); return f(...a); };
-    const at = (w, d) => X.at(w, d === undefined ? e.t : d);
+    const at = (w, d) => /^\d*\.?\d+$/.test(String(w).trim()) ? +w : X.at(w, d === undefined ? e.t : d);   // a number is a time in seconds, a word is its spoken moment
     const p = (w, dur = .6, ez = 'out5') => { const s = typeof w === 'number' ? w : at(w); return (E[ez] || E.out5)(clamp((lt - s) / dur)); };
     const draw = (c, x, y, h, o = {}) => { if (!c) return; const hh = h, ww = hh * c.width / c.height; ctx.save(); ctx.globalAlpha *= o.a ?? 1; ctx.translate(x, y); if (o.rot) ctx.rotate(o.rot); const s = o.s ?? 1; ctx.scale(s * (o.sx ?? 1), s);
       if (o.shadow) { ctx.shadowColor = 'rgba(0,0,0,.4)'; ctx.shadowBlur = 20 * u; ctx.shadowOffsetY = 10 * u; } if (o.blend) ctx.globalCompositeOperation = o.blend; ctx.drawImage(c, -ww * (o.ax ?? .5), -hh * (o.ay ?? .5), ww, hh); ctx.restore(); return [ww, hh]; };
@@ -46,7 +46,7 @@
     const _cn = {}; const clipOf = (id, from = 0, speed = 1) => { id = String(id || '').replace(/^@|^clip:/g, ''); let n = _cn[id]; if (n === undefined) { n = 0; while (window.IMAGES[id + '__' + String(n).padStart(3, '0')]) n++; _cn[id] = n; } if (!n) return null;
       const fps = (window.IMAGES[id + '__000'] || {}).fps || 12; const t0 = typeof from === 'number' ? from : at(from); let f = Math.floor(Math.max(0, lt - t0) * fps * speed); const per = Math.max(1, 2 * n - 2); f = f % per; if (f >= n) f = per - f; const im = IMG[id + '__' + String(f).padStart(3, '0')]; return im && im.naturalWidth ? im : null; };
     const mblur = (n, dt, f) => { const a0 = ctx.globalAlpha; for (let k = n; k >= 0; k--) { ctx.globalAlpha = a0 * (k ? .5 * (1 - k / (n + 1)) : 1); f(-k * dt); } ctx.globalAlpha = a0; };
-    const K = window.PPKIT ? window.PPKIT({ ctx, W, H, u, t: lt }) : {}; Object.keys(K).forEach(k => { K[k] = guard(K[k]); });   // v6.5 FX kit (pp_fxkit.js)
+    const K = window.PPKIT ? window.PPKIT({ ctx, W, H, u, t: lt, dur: X.dur }) : {}; Object.keys(K).forEach(k => { K[k] = guard(K[k]); });   // v6.5 FX kit (pp_fxkit.js)
     return { ...K, _flush: flush, t: lt, dur: X.dur, at, p, spring, stagger, wobble, clip: clipOf, mblur: guard(mblur), W, H, u, layer, img: imgOf, draw: guard(draw), text: guard(text), icon: guard(icon), air: guard(air), line: guard(line), ease: E, lerp, clamp, rng, noise, num: fmt, col: { ink: T0.ink, red: T0.red, gold: PP.gold, card: T0.card, dark: T0.dark }, params: e, ctx, look: LOOK.name };
   }
   EXT.code = { world: true, sfx: (e, at) => split(e.sfx, '~').map(s => { const [n, w] = s.split('@'); return [w ? at(w.trim(), e.t) : e.t, n.trim(), .5]; }).filter(x => x[1]),

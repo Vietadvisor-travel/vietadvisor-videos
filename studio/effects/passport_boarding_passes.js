@@ -11,7 +11,7 @@
   const pk = spring('passport', { stiff: 130, damp: 13 });
   layer(2, () => { draw(img('onecoin_el_passport'), W * .3, H * .5 + (1 - pk) * H * .4, H * .5, { a: clamp(pk), rot: -.08 });
     text('"BIG PASSPORT"', W * .3, H * .82, { size: 34 * u, font: 'cond', weight: 700, ls: 6 * u, col: '#d9c7a0', a: p('passport', .5) }); });
-  const pass = (k, y, code, city, lit) => { const x = lerp(W * .3, W * .68, k); ctx.save(); ctx.translate(x + wobble(y, 3 * u), y); ctx.rotate(lerp(-.08, .02, k)); ctx.globalAlpha = clamp(k * 2) * (lit ? 1 : lerp(1, .35, p('Athens', .6)));
+  const pass = (k, y, code, city, lit) => { const x = lerp(W * .3, W * .68, k); ctx.save(); ctx.translate(x, y); ctx.rotate(lerp(-.08, .02, k)); ctx.globalAlpha = clamp(k * 2) * (lit ? 1 : lerp(1, .35, p('Athens', .6)));
     ctx.fillStyle = 'rgba(0,0,0,.45)'; ctx.fillRect(-W * .17 + 10 * u, -H * .09 + 12 * u, W * .34, H * .18);
     ctx.fillStyle = '#f2ead7'; ctx.fillRect(-W * .17, -H * .09, W * .34, H * .18); ctx.fillStyle = lit ? '#c9a85a' : '#9a8e78'; ctx.fillRect(-W * .17, -H * .09, 18 * u, H * .18);
     ctx.setLineDash([6 * u, 6 * u]); ctx.strokeStyle = '#b5a888'; ctx.lineWidth = 2 * u; ctx.beginPath(); ctx.moveTo(W * .09, -H * .08); ctx.lineTo(W * .09, H * .08); ctx.stroke(); ctx.restore();
