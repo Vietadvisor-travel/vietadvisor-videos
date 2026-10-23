@@ -15,7 +15,10 @@ const IMG = new Proxy(_IMG, { get(o, id) { if (id in o || typeof id !== 'string'
   if (!m || !m.stream || !m.src) return undefined; const im = new Image(); const p = new Promise(res => { im.onload = im.onerror = () => { _ppPend.delete(p); res(); }; }); _ppPend.add(p); im.src = m.src; o[id] = im;
   _ppLRU.push(id); if (_ppLRU.length > 900) { const old = _ppLRU.shift(); delete o[old]; } return im; } });
 window.renderReady = async t => { renderEpisode(t); if (!_ppPend.size) return; for (let k = 0; k < 3 && _ppPend.size; k++) await Promise.all([..._ppPend]); renderEpisode(t); };
-function loadImages() { const ps = []; for (const [id, m] of Object.entries(window.IMAGES)) { if (IMG[id] || !m.data) continue; const im = new Image(); im.src = m.data; IMG[id] = im; ps.push(im.decode().catch(() => console.warn('image failed', id))); } return Promise.all(ps); }
+function loadImages() { // decode a few at a time and retry: hundreds of parallel decodes make Chromium drop some (seen on ep. 4)
+  const todo = Object.entries(window.IMAGES).filter(([id, m]) => !IMG[id] && m.data);
+  const one = async ([id, m]) => { for (let k = 0; k < 4; k++) { const im = new Image(); im.src = m.data; try { await im.decode(); IMG[id] = im; return; } catch (e) { await new Promise(r => setTimeout(r, 150 * (k + 1))); } } const im = new Image(); im.src = m.data; IMG[id] = im; console.warn('image failed', id); };
+  let i = 0; const worker = async () => { while (i < todo.length) await one(todo[i++]); }; return Promise.all(Array.from({ length: 6 }, worker)); }
 const _stk = {};
 function stickerCanvas(id, style) {
   const key = id + '|' + style; if (_stk[key]) return _stk[key]; const im = IMG[id]; if (!im || !im.naturalWidth) return null;

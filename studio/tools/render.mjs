@@ -11,7 +11,7 @@ const voi = process.argv.indexOf('--vo'); const VO = voi > 0 && fs.existsSync(pr
 const ENVP = voi > 0 ? path.join(path.dirname(process.argv[voi + 1]), 'envs.json') : null; const ENV = ENVP && fs.existsSync(ENVP) ? JSON.parse(fs.readFileSync(ENVP, 'utf8')) : null; const VISP = ENVP && ENVP.replace(/envs\.json$/, 'visemes.json'); const VIS = VISP && fs.existsSync(VISP) ? JSON.parse(fs.readFileSync(VISP, 'utf8')) : null; const WRDP = ENVP && ENVP.replace(/envs\.json$/, 'words.json'); const WRD = WRDP && fs.existsSync(WRDP) ? JSON.parse(fs.readFileSync(WRDP, 'utf8')) : null;
 async function openPage() { const page = await browser.newPage({ viewport: { width: 1280, height: 720 } });
   page.on('console', m => { const t = m.text(); if (!/ERR_FILE|missing|GL Driver|swiftshader|GroupMarker/i.test(t)) console.log('PAGE:', t); }); page.on('pageerror', e => console.log('ERR:', e.message));
-  await page.goto('file://' + process.cwd() + '/studio.html' + (isStory ? '' : '?ep=' + encodeURIComponent(ep))); await page.evaluate(() => window.READY);
+  await page.goto('file://' + process.cwd() + '/studio.html' + (isStory ? '' : '?ep=' + encodeURIComponent(ep)), { timeout: 180000 }); await page.evaluate(() => window.READY);
   if (LITE) await page.evaluate(() => { window.PP3D_SCALE = .5; window.PP3D_FPS = 12; window.PP3D_SHADOW = 256; });
   if (isStory) await page.evaluate(([t, vo, env, vis, wrd]) => { window.VOENV = env; window.VOVIS = vis; window.VOWORDS = wrd; window.EPISODE = SB.compile(t, vo ? { vo } : {}); }, [fs.readFileSync(ep, 'utf8'), VO, ENV, VIS, WRD]);
   const d = await page.evaluate(([w, h]) => { const c = document.getElementById('c'); c.width = w; c.height = h; W = w; H = h; ctx = c.getContext('2d'); return loadEpisode(window.EPISODE); }, [w, h]);
