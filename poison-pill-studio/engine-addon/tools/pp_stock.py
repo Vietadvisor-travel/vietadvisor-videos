@@ -13,6 +13,7 @@ The library can hold hundreds of clips, so nothing is extracted until a story us
   python3 tools/pp_stock.py pull <slug> stories/<slug>-a*.story
                                                          → extracts ONLY the stock_* clips the stories use (24 fps, 1280 px, streamed),
                                                            and records them as used by <slug> in stock_used.json
+  python3 tools/pp_stock.py coverage                    → progress against jobs/STOCK_PLAN.md (have / target per category)
 Rules (CLAUDE.md): prefer the episode's own clips for named people, places and events; use the library for generic
 action, mood and texture. Avoid a library clip used in the last 3 episodes unless it is the declared motif."""
 import sys, os, re, json, zipfile, glob, shutil, subprocess
@@ -112,9 +113,29 @@ def pull(slug, stories):
     if again: print('note: also used in the last 3 episodes (OK only for the declared motif):', ', '.join(again))
 
 
+def coverage():
+    """Library progress against jobs/STOCK_PLAN.md: have / target per category (id prefix stock_<category>_)."""
+    idx = json.load(open(IDX)) if os.path.exists(IDX) else index(True)
+    plan = [r for r in (re.match(r'\|\s*([a-z]+)\s*\|\s*(\d+)\s*\|', l) for l in open(os.path.join(REPO, 'jobs', 'STOCK_PLAN.md'), encoding='utf-8')) if r]
+    al = re.search(r'^aliases:\s*(.+)$', open(os.path.join(REPO, 'jobs', 'STOCK_PLAN.md'), encoding='utf-8').read(), re.M)
+    A = dict(x.strip().split('=') for x in al.group(1).split(',')) if al else {}
+    cat_of = lambda i: A.get(i.split('_')[1], i.split('_')[1])
+    tot_h = tot_t = 0; rows = []
+    for r in plan:
+        cat, tgt = r.group(1), int(r.group(2)); have = sum(1 for i in idx if cat_of(i) == cat)
+        rows.append((cat, have, tgt)); tot_h += min(have, tgt); tot_t += tgt
+    known = {c for c, _, _ in rows}; other = sorted({i.split('_')[1] for i in idx if cat_of(i) not in known})
+    for cat, have, tgt in sorted(rows, key=lambda x: x[1] / x[2]):
+        bar = '█' * int(10 * min(1, have / tgt)) + '·' * (10 - int(10 * min(1, have / tgt)))
+        print(f'{cat:13s} {bar} {have:4d} / {tgt:<4d} {"✓" if have >= tgt else "need " + str(tgt - have)}')
+    print(f'\nlibrary {len(idx)} clips · plan {tot_h} / {tot_t} ({100 * tot_h // max(1, tot_t)} %)')
+    if other: print('categories not in the plan (rename the ids or add a row):', ', '.join(other))
+
+
 if __name__ == '__main__':
     a = sys.argv[1:]
-    if not a or a[0] not in ('index', 'find', 'pull'): print(__doc__); sys.exit(1)
+    if not a or a[0] not in ('index', 'find', 'pull', 'coverage'): print(__doc__); sys.exit(1)
+    if a[0] == 'coverage': coverage(); sys.exit()
     if a[0] == 'index': index()
     elif a[0] == 'find': find(a[1:])
     else: pull(a[1], a[2:])

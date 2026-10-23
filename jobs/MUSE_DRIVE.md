@@ -55,6 +55,10 @@ cd .. && git add jobs/_drive.json && git commit -m "stock library: +<n> clips (D
 - **Each clip** is 2–8 s, H.264, no audio, 1280–1920 px wide.
 - **Zip size:** each zip ≤ 1.9 GB (`--max-mb 1900`). Smaller zips upload and resume more easily.
 
+## 3b. What to collect: `jobs/STOCK_PLAN.md`
+The library's target shape: about 30 categories and about 1,500 clips. Work the biggest gaps first
+(`python3 tools/pp_stock.py coverage`) and use the category names exactly as id prefixes.
+
 ## 4. If something goes wrong
 - An upload breaks off: run the same `put` again. It resumes, and skips any file already on Drive with the same content.
 - A file with the same name but new content replaces the old one. So **never reuse a stock_library number**: the old
