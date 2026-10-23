@@ -7,3 +7,5 @@ __pycache__/
 # v6.4: big media lives on Google Drive (studio/tools/pp_drive.py), never in git
 jobs/_stock/*.zip
 jobs/*/*_clips_*.zip
+studio/engine/library/img/stock_*
+studio/stock_used.json

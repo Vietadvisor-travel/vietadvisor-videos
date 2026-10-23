@@ -34,6 +34,19 @@ angles, places, light and actions, never near-duplicates.
   `stock_money_cash_counting_03` or `stock_screen_stock_ticker_02`.
 - **`clips.json` per clip:** `desc` (what, shot size, direction of movement, where the subject sits), `tags`, `author`,
   `source`, `source_url`, `license`. No author, no entry.
+- **`desc` describes what the 2–8 s actually SHOW, after watching them, never the source video's title:**
+  - Bad: "2014-06-21 President Obama's Weekly Address. Use for beats about workplaces…".
+  - Good: "slow push along an empty open-plan office at night, monitors glowing, no people; light from the left".
+  - The director picks clips from the catalogue by this text, so a title-only desc makes the clip unfindable.
+- **The generic library holds NO identifiable real people or real named events:**
+  - no politicians, CEOs or celebrities;
+  - no real trials or hearings of named people;
+  - no conference talks;
+  - no product-launch or expo videos.
+  - A generic clip reused in another story would put a real person into a story that is not theirs (misleading and a
+    legal risk).
+  - Crowds, hands, backs, silhouettes and distant people are fine.
+  - Real people belong only in an episode's own clips pack, for that episode's story.
 - **Variety inside a category:** every subject in 3–4 shot sizes (wide / medium / close / macro), moving in different
   directions, day and night, different countries. Never 5 clips that look the same.
 - **Sources:**
