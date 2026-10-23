@@ -136,6 +136,19 @@ DELIV = {'calm': (.96, 1.15, -.1), 'lively': (1.04, .85, .2), 'tense': (.97, 1.1
 # sentence role → (speed ×, pause before, pause after) — the silence BEFORE a reveal is the device (research/voice.md §2.1)
 ROLE = {'set': (.95, 0, .26), 'fact': (.99, 0, .18), 'build': (1.03, 0, .1), 'reveal': (.88, .32, .3), 'q': (.95, 0, .42), 'quote': (.95, .12, .22)}
 DIR = {'slow': (.9, 0, 0), 'fast': (1.08, 0, 0), 'hold': (1, .7, 0), 'hit': (.87, .5, .45), 'soft': (.94, 0, .1)}
+# v6.3 emotions → (speed ×, pause before, pause after, semitones, prosody donor per voice gender, donor weight).
+# The donor lends only the prosody half of its style (pitch contour + pacing); the narrator keeps their timbre.
+EMO = {'sad': (.9, .25, .35, -.5, {'m': 'am_onyx', 'f': 'af_sky'}, .3), 'grave': (.92, .2, .3, -.4, {'m': 'bm_george', 'f': 'bf_emma'}, .2),
+       'excited': (1.08, 0, .06, .45, {'m': 'am_puck', 'f': 'af_bella'}, .3), 'urgent': (1.1, 0, .04, .2, {'m': 'am_fenrir', 'f': 'af_nicole'}, .2),
+       'tense': (.97, .12, .14, -.2, {'m': 'am_onyx', 'f': 'af_kore'}, .2), 'warm': (.96, 0, .2, .1, {'m': 'am_adam', 'f': 'af_heart'}, .25),
+       'wry': (1.0, .15, .2, .25, {'m': 'am_puck', 'f': 'af_jessica'}, .2), 'awe': (.9, .3, .35, .2, {'m': 'am_echo', 'f': 'af_aoede'}, .25)}
+for _em, _e in EMO.items(): DIR[_em] = _e[:3]
+def emo_voice(v, dirs):
+    """A plain narrator voice + an emotion tag → narrator~donor*w (same person, a different read). Blends are left alone."""
+    e = next((EMO[d] for d in dirs if d in EMO), None)
+    if not e or not re.fullmatch(r'[a-z]{2}_\w+', v or ''): return v
+    d = e[4]['f' if v[1] == 'f' else 'm']
+    return v if d == v else f'{v}~{d}*{e[5]}'
 def role_of(s, spk=None):
     w = len(re.sub(r'[*\[\]]', '', s).split())
     if spk and spk != 'narrator': return 'quote'
@@ -177,7 +190,7 @@ def tts_expr(text, voice, speed=1.0, act=None, dirs=(), delivery=None, spk=None)
         if o[0] in ('gap', 'beat'): n = int(sr0 * max(0, o[1])); parts.append(np.zeros(n, np.float32)); t += n / sr0
         else: parts.append(o[1]); words += align_chunk(o[2], o[1], sr0, t, voice); t += len(o[1]) / sr0
     x = np.concatenate(parts)
-    st = A[2] + Dl[2] + (-.5 if 'low' in dirs else 0) + (.4 if 'up' in dirs else 0) + R.uniform(-.12, .12)
+    st = A[2] + Dl[2] + (-.5 if 'low' in dirs else 0) + (.4 if 'up' in dirs else 0) + sum(EMO[d][3] for d in dirs if d in EMO) + R.uniform(-.12, .12)
     if abs(st) >= .1 or 'archive' in dirs: x = colour(x, sr0, st, 'archive' in dirs)
     return x, sr0, words
 
@@ -260,7 +273,7 @@ def synth(lines_path, outdir, voice=None, speed=1.0):
         print(f'  narrator {narr}: {wps:.2f} words/s at speed 1.0 → speed {speed}' + (f' · delivery {delivery}' if delivery else '') + (f' · cast {cast}' if cast else ''))
     speed = float(speed)
     for ln in L['lines']:
-        v = voice_for(ln.get('spk'), narr, cast); act = ln.get('act'); dirs = tuple(ln.get('dir') or ())
+        act = ln.get('act'); dirs = tuple(ln.get('dir') or ()); v = emo_voice(voice_for(ln.get('spk'), narr, cast), dirs)
         key = hashlib.md5(f"{ln['text']}|{v}|{speed}|{act}|{dirs}|{delivery}|{ln.get('spk')}|x3".encode()).hexdigest()[:12]
         cp = os.path.join(outdir, f'c_{key}.wav'); out = os.path.join(outdir, f"vo_{ln['k']}.wav"); cw = cp.replace('.wav', '.words.json')
         if not os.path.exists(cp) or not os.path.exists(cw):
@@ -321,7 +334,7 @@ if __name__ == '__main__':
     elif cmd == 'voices': print(' '.join(sorted(kokoro().get_voices())))
     elif cmd == 'synth': synth(a[1], a[2], opt('voice'), opt('speed', 'auto'))
     elif cmd == 'place': place(a[1], a[2], a[3])
-    elif cmd == 'say': x, sr, _ = tts_expr(a[1], opt('voice', 'am_michael'), float(opt('speed', 1.0)), opt('act'), tuple((opt('dir') or '').split(',')) if opt('dir') else ()); write_wav(a[2], resample(x, sr), SR_OUT); print(speakable(a[1]))
+    elif cmd == 'say': _d = tuple((opt('dir') or '').split(',')) if opt('dir') else (); x, sr, _ = tts_expr(a[1], emo_voice(opt('voice', 'am_michael'), _d), float(opt('speed', 1.0)), opt('act'), tuple((opt('dir') or '').split(',')) if opt('dir') else ()); write_wav(a[2], resample(x, sr), SR_OUT); print(speakable(a[1]))
     elif cmd == 'audition': audition(a[1], a[2], opt('casts').split(',') if opt('casts') else None)
     elif cmd == 'text': print(speakable(a[1]))
     else: print(__doc__)

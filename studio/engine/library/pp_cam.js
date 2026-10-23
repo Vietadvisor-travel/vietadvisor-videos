@@ -52,7 +52,7 @@
     // the target lives on its own plane: convert "centre this plane point at this plane zoom" into mid-plane camera values
     const pf = b ? PF(b.d) : 1; z = clamp(z, 1, 4.5); z = 1 + (z - 1) / pf; cx = .5 + (cx - .5) / pf; cy = .5 + (cy - .5) / pf;
     cx += num(k.ox, 0) / z; cy += num(k.oy, 0) / z;
-    return { cx, cy, z, roll: num(k.dutch, 0) * Math.PI / 180, ang: k.angle === 'low' ? 1 : k.angle === 'high' ? -1 : 0, fd: b ? b.d : 2, hand: num(k.hand, 0), breathe: num(k.breathe, 3) / 100 };
+    return { cx, cy, z, roll: num(k.dutch, 0) * Math.PI / 180, ang: k.angle === 'low' ? 1 : k.angle === 'high' ? -1 : 0, fd: b ? b.d : 2, hand: num(k.hand, 0), breathe: num(k.breathe, (window.PP_IDLE ?? 1) ? 3 : 0) / 100 }; // v6.3: no slow creeping push after landing unless idle: on or breathe:<%> asked
   }
   const mix = (a, b, t) => ({ cx: lerp(a.cx, b.cx, t), cy: lerp(a.cy, b.cy, t), z: a.z * Math.pow(b.z / a.z, t), roll: lerp(a.roll, b.roll, t), ang: lerp(a.ang, b.ang, t), fd: lerp(a.fd, b.fd, t), hand: lerp(a.hand, b.hand, t), breathe: b.breathe });
 

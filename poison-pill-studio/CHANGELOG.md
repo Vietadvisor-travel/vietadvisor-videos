@@ -1,5 +1,29 @@
 # Poison Pill Studio: changelog
 
+## v6.3 (Oct 2026): the scene script, an effects library that grows, motion like a film
+Owner verdict on ep. 4: "desperately simple: text sliding and shaking, a few repeated effects, a few 2D scenes", and
+the v6.2 quotas were "mechanical". Creativity must come second by second from the content, and every effect invented
+must be kept for later.
+- **`references/scene-script.md`:** three storylines (world · device · form); a SCENE CARD per sentence (MEANS · SEE ·
+  WORLD · SECONDS · LAYERS · CAMERA · MOTION · SEAM · SOUND · TEXT · EFFECT); weak vs strong cards; the tells.
+- **`references/motion-doctrine.md`:** distilled from HeyGen HyperFrames (motion-doctrine, cut-the-curve, story, film)
+  and Remotion's agent skills: the seam law, a cut catalogue with numbers, no idle wobble, timing, type entrances,
+  footage as a material, Johnny Harris texture, effects to port.
+- **Effects library** (`studio/effects/`, `tools/pp_fx.mjs save | list | build`): every custom scene can be saved with
+  what it does, its params, the ids it used, a preview strip and where it was born; bundled into
+  `engine/library/effects.js` and used as `fx="code:@name;param:…"` with no scene block. `pp_lint` knows the library.
+  13 starter effects saved from ep. 4.
+- **Idle breathing off by default** (`window.PP_IDLE`; header `idle: on` brings it back) in build, art, cine and camera.
+- **`final-cut.md` §A/§C rewritten:** no shares or counts; scene cards decide the picture; the critic uses the
+  SECONDS, swap and pause tests. `director-package.md` §4 is now SCENE CARDS + the effects ledger.
+- **`references/content-and-audience.md`:** content, SEO and emotion run in parallel with the picture. The order is
+  packaging first (keyword connector or autocomplete research, competing videos, the gap), then the listen-only test,
+  then channel character, then what viewers and the platform reward, then the emotional arc.
+- **Emotion tags in `voice.py`:** `{excited}` `{urgent}` `{tense}` `{grave}` `{sad}` `{warm}` `{wry}` `{awe}`. Each
+  sets speed, pauses and pitch, and adds a prosody donor (the narrator keeps their timbre). The parser and `pp_lint`
+  know them; emotion tags are not capped at 1 in 8.
+- **`pp_scriptlint`:** flags lines that only make sense with the picture ("as you can see"…).
+
 ## v6.2 (Oct 2026): footage leads, a clean frame, the YouTube kit
 Owner feedback on ep. 4 (OneCoin): elements in odd places and sometimes overlapping, no burned-in captions wanted, and
 not "wow" enough (sparse, not polished). Creativity matters most. Muse now sources a lot of stock video.

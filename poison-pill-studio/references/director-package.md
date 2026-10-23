@@ -16,8 +16,7 @@ with these exact headings, because Muse's instructions parse them.
 - music: auto (moods follow the acts: music.md) · optional `score:` override · the 3 biggest reveals sit right after a [BEAT] (music drops out)
 - built on: RESEARCH_<nn>_<slug>.md (Muse's story-mining worksheet). Every fact used comes from it or goes to §1.
 - format: <1 of 12 (story-mining.md §7), not the last episode's> · opening: <type> · ending: <type> (rotate against pp_history)
-- **visual concept (v6.2, final-cut.md §C):** <the one world/device that carries the whole film, never used by another channel for this story> · motif inside it: <object + how it changes state per act> · hero sequence per act: a1 <…> · a2 <…> · … (8–20 s each, footage-led)
-- footage plan (v6.2): <n> clips from the clips pack, ≥ 45 % of beats footage-led · montage runs at: <act/beat> ×≥ 3
+- **storylines (v6.3, scene-script.md §1):** A <world · device · form · first 2 s> / B <…> / C <…> → chose <X> because <…> · the film's current: <direction> · motif: <object + how it changes state per act>
 - angle type: <contrarian | mechanism | second-order | human decision | the number | paradox | hidden system> — passes the anti-Wikipedia test because: <…>
 - mental models taught (1–3): <name — where it shows up> · original analysis/chart: <what we computed from the sources>
 - value rubric self-score (story-mining.md §6): angle _/2 · evidence _/2 · accuracy _/2 · mechanism _/2 · novelty _/2 · original analysis _/2 · decision & character _/2 · dramatic engine _/2 · takeaway _/2 · freshness _/2 = _/20 (≥ 15, no zero in the first four)
@@ -32,7 +31,8 @@ with these exact headings, because Muse's instructions parse them.
 - signature shots: a0 <mode> · a2 <mode> · a3 <mode> · a4 <mode> · a6 <mode>
 - titles: 1) … 2) … 3) …          - thumbnail brief: <face id + number + red word, ≤ 3 elements>
 - pinned comment: "<the open question>"
-- SEO: primary keyword · 3 secondary · 15 tags · description lines 1–2 (keyword + hook) · chapter titles
+- SEO (v6.3, content-and-audience.md §1, done BEFORE the script): primary keyword (what people type) · 3 secondary · top 3 audience questions · 3 competing videos + their angle · "Everyone says X. The real story is Y." · 15 tags · description lines 1–2 (keyword + hook) · chapter titles
+- emotional arc (v6.3, §5): a0 <emotion> · a1 <…> · … · the 3 strongest moments: <line → {tag}> ×3 · listen-only test passed ✓
 
 ## 1. FACTS TO VERIFY
 | id | claim exactly as used | value in the script | where to verify (suggested sources) | beats |
@@ -68,16 +68,25 @@ Ids are lowercase_underscores and must match the storyboard.
 ## a1 ORIGIN act=setup
 …
 
-## 4. VISUAL SCRIPT
-(v6.2) For the hook, every act turn, the 3 reveals and the ending, add a row "ideas: A / B / C → chose B because…" under the beat.
+## 4. SCENE CARDS (v6.3: the per-second script, `scene-script.md` §2)
+One card per sentence, written BEFORE the storyboard: MEANS · SEE · WORLD · SECONDS (timed lines, each caused by a word
+or the previous motion) · LAYERS · CAMERA · MOTION · SEAM in/out · SOUND · TEXT · EFFECT (REUSE @name / ADAPT @name → new
+/ NEW name). Find existing effects first: `node tools/pp_fx.mjs list <words>`.
 
-| # | act | VO | MEANING | IDEA (what we see) | MODE | CAMERA | ON WORD | BRIDGE → next |
-|---|---|---|---|---|---|---|---|---|
+### a0-01 · "<sentence>" (≈ <s> s)
+MEANS …
+SEE …
+SECONDS
+  0.0 …
+
+**Effects ledger:**
+| effect | NEW / REUSE / ADAPT | cards | saved as |
+|---|---|---|---|
 
 ## 5. STORYBOARD
 (v6.2: every act header has `captions: off`; YouTube gets the .srt, publish.md)
 ### stories/<slug>-a0.story
-(custom scenes of this act go first, as `#! scene <name>` … `#! end` blocks — custom-scenes.md)
+(custom scenes of this act go first, as `#! scene <name>` … `#! end` blocks — custom-scenes.md; library effects need no block: `fx="code:@name;param:…"`. After the act is built, save every NEW effect: `node tools/pp_fx.mjs save stories/<slug>-aN.story <scene> --does "…" --tags … --born "…"`)
 ```story
 title: <slug> a0
 channel: poisonpill
@@ -104,7 +113,7 @@ endcard: off
 - pp_scriptlint-style self-score: hook + promise ≤ 30 s ✓ · something new every 20–40 s ✓ · re-hooks ≈ 3:00 and 6:00 ✓ · midpoint twist ✓
   · ≥ 2 scenes ✓ · final line ≤ 15 words ✓ · no filler / hype words ✓ · every sentence has a **hit word** and a picture ✓
 - build compositions ≥ 25 % of beats, each different ✓ · nothing reused from the last 3 episodes' opening/look/signature scenes ✓
-- living pictures (`scene`) ≥ 20 % of beats ✓ · real-3D ≤ 10 % ✓ · invented beats ≥ 60 %, templates ≤ 2× each, rhythm variation ≥ 35 %, AI art ≤ ~40 % in allowed roles (final-cut.md) ✓
+- (v6.3) a SCENE CARD for every sentence ✓ · the SECONDS lines tell the story with the sound off ✓ · every seam has a direction and a carrier ✓ · no tells (scene-script.md §7) ✓ · effects ledger filled; ≥ 1 NEW effect per act, each saved with pp_fx ✓
 - no mode 3× in a row ✓ · every beat ≥ 3 s has shot= or a *3d mode ✓ · every at:/@word exists in its sentence ✓
 - every asset id in §5 is listed in §2 ✓ · every number in §3 is listed in §1 ✓
 ````

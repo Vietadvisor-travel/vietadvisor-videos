@@ -53,7 +53,7 @@ For every person, place, product, document and moment in the research:
   - **Never** draw a real, identifiable person, a real document, logo or headline, or anything that pretends to be
     archive. People appear only as silhouettes, from behind, as hands, or as crowds.
   - Import each with `pp_img.py add <file> <id> --role plate|cut --gen "<tool>"`.
-- **STOCK + ARCHIVAL FOOTAGE (v6.2): 60–150 clips per episode. Footage now leads the film (≥ 45 % of beats).**
+- **STOCK + ARCHIVAL FOOTAGE (v6.2): 60–150 clips per episode. Footage is the main material of the film; the more real moving footage of the named people, places and events, the better.**
   - **What to find, for every beat-worthy moment in the research:**
     - the places (city aerials, the HQ street, the airport, the courthouse);
     - the activity (trading floors, servers, factories, crowds at events, cash counting, people on phones, typing,

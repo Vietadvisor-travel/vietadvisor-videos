@@ -87,6 +87,13 @@ is already directed.
 | `{soft}` | A gentler, slower read |
 | `{archive}` | A band-limited "read document" colour, for letters, memos and court filings |
 
+**v6.3 emotions** (`content-and-audience.md` §5): `{excited}` `{urgent}` `{tense}` `{grave}` `{sad}` `{warm}`
+`{wry}` `{awe}`.
+- Each one sets speed, pauses and pitch, and lends the narrator the prosody of a matching voice (`narrator~donor*w`).
+  The narrator's timbre stays.
+- They are not capped at 1 in 8. They follow the emotional arc; `pp_lint` warns only above 60 %.
+- Combine with a device: `{sad,hold}`.
+
 ```
 # cine act=fall fx="build:x;el:N=num:0;do:N.count@zero~N.red@zero"
 And the company's value? {hit} Zero.

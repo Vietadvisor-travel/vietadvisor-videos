@@ -61,3 +61,8 @@ quality. On a weak machine, pass `--lite` (see `references/production.md` §7).
 `engine/stickers.js` (footage frames stream from disk + `renderReady(t)`) and `engine/storyboard.js` (`captions: off`
 header) are copied here because v6.2 changed them. Copy both over the base engine, then run `python3 tools/pp_img.py sync`
 so footage frames are no longer embedded.
+
+## v6.3: effects library and emotion tags
+- Copy `tools/pp_fx.mjs`, then run `node tools/pp_fx.mjs build`. It writes `engine/library/effects.js` from `studio/effects/*.js`.
+- `studio.html` must load `engine/library/effects.js` before `images.js`.
+- `voice.py` adds the emotion tags (`{sad}`, `{excited}`, …). `pp_cine.js` and `pp_lint.mjs` recognise them.

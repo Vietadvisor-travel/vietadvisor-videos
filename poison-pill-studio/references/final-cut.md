@@ -1,19 +1,22 @@
-# FINAL CUT v6.2: footage leads, a clean frame, a concept you have never seen
+# FINAL CUT v6.3: the scene script leads, a clean frame, an effects library that grows
 
-**v6.2 overrides the shares and rules below wherever they disagree.** Owner feedback on ep. 4 (OneCoin): elements sat
-in odd places and sometimes collided, burned-in captions were not wanted, and the film did not feel "wow". It felt
-sparse and not polished enough. The most important quality is creativity. Muse now sources a lot of stock video, and
-an episode may use more footage than stills.
+**v6.3 overrides everything below where they disagree.** The owner's verdict on ep. 4 (OneCoin): "desperately simple,
+mostly text sliding and shaking, a few repeated effects, a few 2D scenes". Quotas ("≥ 45 % footage", "≤ 8 % drawn",
+"≥ 3 montages") made it mechanical, and they are gone. Creativity now comes from **writing every second first**
+(`scene-script.md`), moving it like a film (`motion-doctrine.md`), and saving every effect we invent (`pp_fx.mjs`).
 
-## A. The mix (replaces the §1 table)
-| Kind | Share of beats | Notes |
-|---|---|---|
-| **Moving footage leads**: archival or stock clips are the main picture | **≥ 45 %** | clips stream from disk (v6.2), so 60–150 clips per episode is fine; 2–8 s each. Two sources: the episode's clips pack (the named people, places and events) and the shared library `stock_*` (`pp_stock.py find` / `pull`; generic action, mood, texture) |
-| Real stills brought alive (scene, parallax, rack focus) | 15–30 % | people, documents, places without footage |
-| AI moment art | ≤ 20 % | only for moments with no footage and no photo |
-| Custom code scenes | 8–14 beats | built ON footage or photos: masks, split screens, screen inserts, data drawn onto the real picture |
-| Drawn-only graphics (maps, diagrams, flapboards…) | ≤ 8 % | only when a mechanism needs a diagram |
-| Text-only frames | **0**, except one deliberate black-card punch per film | a sentence never "becomes" a word on a dark plate |
+## A. How the picture is decided (replaces every share, cap and count in this file)
+1. **Three storylines, one chosen** (world · device · form), in META. `scene-script.md` §1.
+2. **A SCENE CARD for every sentence:** MEANS · SEE · WORLD · SECONDS (a timed line for each change, caused by a word
+   or by the previous motion) · LAYERS · CAMERA · MOTION route · SEAM in/out · SOUND · TEXT · EFFECT. `scene-script.md` §2.
+3. **Pictures in this order:** real footage of the thing named → the shared stock library as a material (masked,
+   split, ramped, frozen, match-cut) → real photos in depth → AI moment art (no real people) → drawn graphics on a
+   real picture. A sentence never "becomes" a word on a dark plate.
+4. **Each card's EFFECT is built for that moment,** generic (content in params), checked (`pp_sheet`, `pp_layout`) and
+   saved: `node tools/pp_fx.mjs save …`. Before inventing, `pp_fx.mjs list <words>`; reuse only when the moment has
+   the same shape. Every act adds at least one effect that did not exist before.
+5. **One camera through the film:** seams cut mid-motion along the film's current, carriers handed across cuts, no
+   fades, no idle wobble (the engine no longer breathes by default; `idle: on` only by choice). `motion-doctrine.md`.
 
 ## B. The clean frame (every beat; gate: `node tools/pp_layout.mjs` = 0 flags on every act)
 1. **No burned-in captions.** Every act header has `captions: off`; YouTube gets `<slug>_FULL.srt` (`publish.md`).
@@ -41,32 +44,16 @@ an episode may use more footage than stills.
    type blocks colliding). Fix every flag: move the type, shrink it, or reduce the camera's end zoom. Rendering with a
    flag is not allowed.
 
-## C. Creativity is the first gate, not the last
-1. **One visual concept per episode,** written in META before any beat:
-   - a world or device that carries the whole film and that no other channel would use for this story;
-   - examples: "the film is a forensic audit of one email", "every act is a floor of the same empty hotel", "the
-     money is always shown as one physical object that changes state".
-   - The motif (final-cut §4) lives inside this concept.
-2. **Three ideas per key beat.** For the hook, every act turn, the 3 reveals and the ending, write 3 picture ideas in the
-   beat table and pick the one an informed viewer would least expect but understand in 2 seconds. Keep the losing two
-   in the package, so the critic can see the choice.
-3. **Each act has one hero sequence of 8–20 s,** designed as a mini film across 3–6 beats:
-   - footage, match cuts, a custom scene over the footage, and a sound hit, with one camera language;
-   - examples: the money's route as real streets seen from a plane window, with the sums burned onto the glass; the
-     price typed into the database while real trading-floor footage freezes.
-4. **Footage is composed, not pasted.** Use clips as layers:
-   - masked into a phone or a window;
-   - split screens that answer each other;
-   - a clip playing inside a document's photo;
-   - match cuts on shape (a coin → a spotlight → a camera lens);
-   - speed ramps on the hit word;
-   - rack focus from footage to a document.
-5. **Montage runs carry the energy:** at least 3 per episode, of 4–8 clips at 0.8–1.5 s each, cut on the music's beat.
-6. **The critic scores "never seen before" explicitly.** A beat that any channel would make for this sentence is
-   swap-FAIL, even when it is clean.
+## C. What the critic looks for (instead of counts)
+- **The SECONDS test:** read only the card's SECONDS lines with the sound off. Does the picture tell the story?
+- **The swap test:** could this picture sit under another sentence, or in another channel's film of this story? Then
+  it fails.
+- **The pause test:** freeze any frame. Is something meaningful mid-flight, and is it worth a screenshot?
+- **The tells** (`scene-script.md` §7): text as the picture, stamps and shakes, floating cards, everything sliding up,
+  breathing titles, the same plate twice. Each one is a fail on its beat.
 
 ## D. Quality bar before render (in this order)
-1. Package META has the visual concept, the 3-ideas rows and the hero sequences.
+1. Package has the three storylines, a SCENE CARD for every sentence and the effects ledger (NEW/REUSE/ADAPT).
 2. `pp_scriptlint` ≥ 8.5 · `pp_lint` ≥ 9.0, 0 errors · **`pp_layout` 0 flags** · `pp_sheet` looked at.
 3. Critic round on sheets → fixes → **`--lite` render of every act** → critic round on real frames (1 frame per beat at
    75 %) → fixes → final render. Ship at ≥ 85 % of beats ≥ 5/8 and ≥ 90 % swap PASS. If 3 rounds don't reach it,
@@ -75,6 +62,9 @@ an episode may use more footage than stills.
 ---
 
 # FINAL CUT (v6.1): the anti-mechanical method
+
+> v6.3: the shares, caps and counts in the sections below are history, not rules. Keep their craft (beat table, swap
+> test, rhythm, motion polish); decide the picture with scene cards (§A above).
 
 What makes a film feel "made by a machine" is rarely one big flaw. It is the sum of four repetitions:
 - **the same device** again and again (photo + slammed word + stamp);

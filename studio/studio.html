@@ -28,6 +28,7 @@ window.READY=(async()=>{
   for(const f of ENGINE){await new Promise((res)=>{const s=document.createElement('script');s.src='engine/'+f+'.js';s.onload=res;s.onerror=()=>{console.log('missing '+f);res()};document.body.appendChild(s);});}
   await new Promise(res=>{const s=document.createElement('script');s.src='engine/library/index.js';s.onload=res;s.onerror=res;document.body.appendChild(s);});
   for(const f of (window.LIBRARY||[])){await new Promise(res=>{const s=document.createElement('script');s.src='engine/library/'+f+'.js';s.onload=res;s.onerror=()=>{console.log('missing library '+f);res()};document.body.appendChild(s);});}
+  await new Promise(res=>{const s=document.createElement('script');s.src='engine/library/effects.js';s.onload=res;s.onerror=res;document.body.appendChild(s);});
   await new Promise(res=>{const s=document.createElement('script');s.src='engine/library/images.js';s.onload=res;s.onerror=res;document.body.appendChild(s);}); await loadImages();
   const ep=new URLSearchParams(location.search).get('ep'); if(ep){await new Promise(res=>{const s=document.createElement('script');s.src=ep;s.onload=res;s.onerror=()=>{console.log('missing ep');res()};document.body.appendChild(s);});}
   const sample='Ha Giang Hà Giang ĐƯỜNG TÀU Ầ Ặ Ờ Ữ ẫ ₫ 하장 ハザン 河江 ฮาซาง';

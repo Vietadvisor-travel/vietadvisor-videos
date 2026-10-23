@@ -174,7 +174,7 @@ SB.doodles = (P, o, pts) => { const u = U(), k = o.k, r = rng(21); const lons = 
 
 // ---------------------------------------------------------------- compile
 SB.compile = (text) => {
-  const sb = SB.parse(text), H_ = sb.header; const look = {}; const kvs = (H_.look || '').split(/\s+/).filter(Boolean).map(s => s.split('='));
+  const sb = SB.parse(text), H_ = sb.header; window.PP_IDLE = /^(on|yes|1)$/i.test(H_.idle || '') ? 1 : 0; /* v6.3: no idle breathing or floating unless idle: on */ const look = {}; const kvs = (H_.look || '').split(/\s+/).filter(Boolean).map(s => s.split('='));
   for (const [k, v] of kvs) { if (k === 'grade') look.grade = v; if (k === 'artstyle') look.artstyle = v; if (k === 'captions') look.captionStyle = v; if (k === 'boil') look.boil = v === 'off' ? undefined : (v === 'on' ? { amp: 1.1, fps: 8 } : { amp: +v, fps: 8 }); if (k === 'step') look.step = +v; if (k === 'smear') look.smear = v !== 'off'; }
   if (H_.artstyle) look.artstyle = H_.artstyle;
   const used = []; const scenes = [];

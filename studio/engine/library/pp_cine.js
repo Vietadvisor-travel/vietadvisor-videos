@@ -292,7 +292,7 @@
   // v6 VOICE DIRECTION: a caption may open with "@speaker:" (a quote read by a cast voice — voices: header) and carry {tags}
   // ({slow} {fast} {hold} {hit} {low} {up} {soft} {archive}); both are stripped from the caption text and handed to voice.py
   // with the beat's act, so the narrator reads the fall slower and lower than the rise (tools/voice.py, voice-direction.md).
-  const VDIR = /\s*\{((?:slow|fast|hold|hit|low|up|soft|archive)(?:[,\s]+(?:slow|fast|hold|hit|low|up|soft|archive))*)\}\s*/gi;
+  const VDIR = /\s*\{((?:slow|fast|hold|hit|low|up|soft|archive|sad|grave|excited|urgent|tense|warm|wry|awe)(?:[,\s]+(?:slow|fast|hold|hit|low|up|soft|archive|sad|grave|excited|urgent|tense|warm|wry|awe))*)\}\s*/gi;
   try { const cd0 = capDur; window.capDur = function (s, spk) { const V = SB._vo, n = V && V.list ? V.list.length : -1; const r = cd0(s, spk); if (n >= 0 && V.list.length > n) { const L = V.list[V.list.length - 1]; if (SB._act) L.act = SB._act; if (SB._vdir && SB._vdir.length) L.dir = SB._vdir; } return r; };
     window.timeCaps = function (caps, start = .15, gap = .12, style) { const out = []; let t = start; for (let c of caps) { let spk, dir = []; c = String(c); const m = c.match(/^@([\w-]+)\s*:\s*/); if (m) { spk = m[1]; c = c.slice(m[0].length); }
         c = c.replace(VDIR, (x, d) => { dir.push(...d.toLowerCase().split(/[,\s]+/).filter(Boolean)); return ' '; }).trim(); SB._vdir = dir; const d = capDur(c, spk); SB._vdir = null;
@@ -354,7 +354,7 @@
           const mid_ = /^clip:/.test(m.id) ? clipFrame(m.id, p) : m.id; const tc = HAS(m.id) ? toned(mid_, m.tone || midTone(o.act), m.border === 'off' ? 0 : 1, m.style || 'print') : null;
           const inn = m.in || 'slap'; let sc = 1, oy = 0, ox = 0, al = 1, rot = num(m.rot, ((i % 2) ? 1.6 : -1.4)) * Math.PI / 180;
           let blurIn = 0; if (inn === 'drop') { oy = -(1 - E.out5(clamp(p / .55))) * H * .7; blurIn = (1 - clamp(p / .6)) * 18; } else if (inn === 'zoom') { sc = lerp(.2, 1, E.back(clamp(p / .45))); } else if (inn === 'develop') { al = 1; } else if (inn === 'slap') { sc = lerp(1.22, 1, E.out5(clamp(p / .25))); al = clamp(p / .06); } else if (inn === 'rise') { oy = (1 - E.out5(clamp(p / .5))) * H * .5; } else if (inn === 'slideL') { ox = -(1 - E.out5(clamp(p / .4))) * W * .6; } else if (inn === 'slideR') { ox = (1 - E.out5(clamp(p / .4))) * W * .6; }
-          const breathe = 1 + Math.sin(lt * 1.3 + i) * .006;
+          const breathe = 1 + (window.PP_IDLE ?? 1) * Math.sin(lt * 1.3 + i) * .006;
           if (!tc) { missing(m.id, mx, my, mh); boxes[i + 1] = { x: mx, y0: my - mh / 2, y1: my + mh / 2, x0: mx - mh * .35, x1: mx + mh * .35 }; return; }
           const s = mh / tc.h; const cw = tc.c.width * s, ch = tc.c.height * s; const flip = m.flip === '1';
           boxes[i + 1] = boxes[m.id] = { x: mx + ox, y0: my - mh / 2 + oy, y1: my + mh / 2 + oy, x0: mx + ox - tc.w * s / 2, x1: mx + ox + tc.w * s / 2, tc, s, cx: mx + ox, cy: my + oy };

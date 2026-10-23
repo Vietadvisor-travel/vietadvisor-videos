@@ -17,7 +17,21 @@ MagnatesMedia collage × LEMMiNO 3D atmosphere.
 > made of photo + slammed word + stamp + shake is a slideshow, and it does not ship.
 
 ## What makes v5 different (read first)
-000. **v6.2 (Oct 2026), which OVERRIDES everything below where it disagrees (`final-cut.md` §A–D and `publish.md`):**
+0000. **v6.3 (Oct 2026), which OVERRIDES everything below where it disagrees: the scene script and the effects library.**
+    - **No quotas.** Shares and counts ("≥ 45 % footage", "≥ 3 montages", "≤ 8 % drawn") are gone; they made films mechanical.
+    - **Write every second first:** three storylines (world · device · form), then a SCENE CARD per sentence: what the
+      viewer sees, second by second, each change caused by a word (`references/scene-script.md`).
+    - **Build the effect the card describes, then save it:** `node tools/pp_fx.mjs save …` keeps code, params, preview
+      and origin in `studio/effects/`; later films reuse it as `fx="code:@name;param:…"` (`pp_fx.mjs list <words>`).
+    - **Move like a film:** seams cut mid-motion along one current, carriers across cuts, no idle breathing (now off by
+      default; `idle: on` to enable), stillness before the climax (`references/motion-doctrine.md`, learned from
+      HyperFrames and Remotion).
+    - **Content, SEO and emotion run in parallel with the picture** (`references/content-and-audience.md`): keyword and
+      competitor research before the angle, title + thumbnail before the script, a script that works with the screen off
+      (listen-only test), the channel's own character, and an emotional arc voiced with `{excited}` `{tense}` `{grave}`
+      `{sad}` `{warm}` `{wry}` `{awe}` `{urgent}`.
+    - Hard rules stay: facts, licences, no AI real people, `captions: off`, `pp_layout` 0 flags, the publish kit.
+000. **v6.2 (Oct 2026); its quotas are replaced by v6.3 above, while its clean frame and publish kit stay:**
     - **Creativity first:**
       - one visual concept per episode;
       - 3 picture ideas per key beat;
@@ -152,8 +166,11 @@ Pick the one that best serves this moment of the film and its neighbours (variet
 | `references/story-mining.md` | **always**: research worksheet, angle types, anti-Wikipedia test, insight density, 12 formats, value rubric |
 | `references/custom-scenes.md` | **always**: write a beat's animation as code, the API, worked examples |
 | `references/image-sourcing.md` | finding licensed real images automatically (`pp_find.py`) |
+| `references/scene-script.md` | **always (v6.3, first)**: the per-second SCENE CARD method, where pictures come from, building and saving effects (`pp_fx.mjs`), weak vs strong cards, the tells |
+| `references/content-and-audience.md` | **always (v6.3)**: packaging first (keywords, competitors, title + thumbnail before the script), the listen-only test, the channel's character, what viewers and the platform reward, the emotional arc and emotion tags |
+| `references/motion-doctrine.md` | **always (v6.3)**: seam law, the cut catalogue with parameters, no idle wobble, timing, type entrances, footage as material, effects to port |
 | `references/publish.md` | **always (v6.2)**: the YouTube kit: SRT, upload guide, SEO rules, the altered-content decision |
-| `references/final-cut.md` | **always (v6.2 §A–D first)**: footage leads, the clean frame + `pp_layout` gate, creativity gate; then v6.1: the anti-mechanical method: visual mix targets, the BEAT TABLE + swap test, rhythm, Remotion-standard motion, AI moment art, the critic on real frames |
+| `references/final-cut.md` | **always (v6.3 §A–D first)**: scene cards decide the picture (no quotas), the clean frame + `pp_layout` gate, what the critic looks for; then v6.1: the anti-mechanical method: visual mix targets, the BEAT TABLE + swap test, rhythm, Remotion-standard motion, AI moment art, the critic on real frames |
 | `references/voice-direction.md` | **always**: cast the narrator (blends, prosody mixes, audition), per-act reads, sentence roles, `{tags}`, quote voices and their rules |
 | `references/build.md` | **always**: the free-form composer, how to turn any sentence into its own picture, 25 examples, freshness rules |
 | `references/music.md` | music library (safe sources, moods), how the score is cut to the acts automatically |

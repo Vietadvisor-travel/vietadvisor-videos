@@ -11,4 +11,5 @@ python3 tools/voice.py setup
 python3 tools/pp_img.py sync >/dev/null
 ls ../jobs/_music/music_library*.zip >/dev/null 2>&1 && [ ! -f music/library.json ] && python3 tools/pp_pack.py music-import ../jobs/_music/music_library*.zip || true
 ls ../jobs/_stock/stock_library_*.zip >/dev/null 2>&1 && python3 tools/pp_stock.py index || true   # v6.2 shared stock library: catalogue only, clips are pulled per episode
+node tools/pp_fx.mjs build   # v6.3 effects library → engine/library/effects.js + effects/CATALOG.md
 node tools/pp_doctor.mjs
