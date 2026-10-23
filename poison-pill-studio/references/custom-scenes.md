@@ -30,6 +30,7 @@ randomness only through `rng(seed)`.
 | `W, H, u` | frame size; `u` = 1 at 1080p (multiply every pixel size by u) |
 | `layer(depth, fn)` | draw on a depth plane so the camera rig (`shot=`) parallaxes and defocuses it. 1 = far, 2 = subject, 3 = near. Calls are grouped by depth automatically |
 | `img(id, tone?)` | a registered image (real photo, cut-out, generated prop) as a canvas, toned for the look |
+| `clip(id, start?, speed?)` | (v6.2) the current frame of a footage clip (streams from disk; ping-pong loop); draw it with `ctx.drawImage` inside a mask, a phone, a window, a split screen. Not re-toned: grade with `ctx` |
 | `draw(c, x, y, h, {a, rot, s, sx, ax, ay, shadow, blend})` | draw an image centred at x,y with height h |
 | `text(s, x, y, {size, col, font: impact\|cond\|serif\|hand, weight, a, rot, align, ls, lw})` | type in the look's style |
 | `icon(name, x, y, h, {col, a, rot})` | the 24 build icons (person, coin, dollar, factory, store, bank, ship, plane, phone, doc, chart_up…) |

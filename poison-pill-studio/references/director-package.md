@@ -16,6 +16,8 @@ with these exact headings, because Muse's instructions parse them.
 - music: auto (moods follow the acts: music.md) · optional `score:` override · the 3 biggest reveals sit right after a [BEAT] (music drops out)
 - built on: RESEARCH_<nn>_<slug>.md (Muse's story-mining worksheet). Every fact used comes from it or goes to §1.
 - format: <1 of 12 (story-mining.md §7), not the last episode's> · opening: <type> · ending: <type> (rotate against pp_history)
+- **visual concept (v6.2, final-cut.md §C):** <the one world/device that carries the whole film, never used by another channel for this story> · motif inside it: <object + how it changes state per act> · hero sequence per act: a1 <…> · a2 <…> · … (8–20 s each, footage-led)
+- footage plan (v6.2): <n> clips from the clips pack, ≥ 45 % of beats footage-led · montage runs at: <act/beat> ×≥ 3
 - angle type: <contrarian | mechanism | second-order | human decision | the number | paradox | hidden system> — passes the anti-Wikipedia test because: <…>
 - mental models taught (1–3): <name — where it shows up> · original analysis/chart: <what we computed from the sources>
 - value rubric self-score (story-mining.md §6): angle _/2 · evidence _/2 · accuracy _/2 · mechanism _/2 · novelty _/2 · original analysis _/2 · decision & character _/2 · dramatic engine _/2 · takeaway _/2 · freshness _/2 = _/20 (≥ 15, no zero in the first four)
@@ -67,10 +69,13 @@ Ids are lowercase_underscores and must match the storyboard.
 …
 
 ## 4. VISUAL SCRIPT
+(v6.2) For the hook, every act turn, the 3 reveals and the ending, add a row "ideas: A / B / C → chose B because…" under the beat.
+
 | # | act | VO | MEANING | IDEA (what we see) | MODE | CAMERA | ON WORD | BRIDGE → next |
 |---|---|---|---|---|---|---|---|---|
 
 ## 5. STORYBOARD
+(v6.2: every act header has `captions: off`; YouTube gets the .srt, publish.md)
 ### stories/<slug>-a0.story
 (custom scenes of this act go first, as `#! scene <name>` … `#! end` blocks — custom-scenes.md)
 ```story
@@ -82,6 +87,7 @@ voice: <cast>
 delivery: <read>
 voices: <speaker=voice; … or leave the line out>
 music: auto
+captions: off
 endcard: off
 # cine …
 <the VO sentence>

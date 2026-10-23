@@ -1,5 +1,26 @@
 # Poison Pill Studio: changelog
 
+## v6.2 (Oct 2026): footage leads, a clean frame, the YouTube kit
+Owner feedback on ep. 4 (OneCoin): elements in odd places and sometimes overlapping, no burned-in captions wanted, and
+not "wow" enough (sparse, not polished). Creativity matters most. Muse now sources a lot of stock video.
+- **Footage streams from disk.** `role: clip` frames are no longer embedded in `images.js`; the engine loads them on
+  demand, and `renderReady(t)` waits for them before each exported frame (render, sheet, layout, thumb). An LRU cache
+  keeps memory flat.
+- **Packing footage:** `pp_pack.py clips-export` (Muse) and multi-zip `import` (Claude). Clips are imported at 24 fps
+  and 1280 px.
+- **`clip(id, start, speed)`** in custom scenes: footage inside masks, phones, windows and split screens.
+- **`captions: off`** in the story header removes burned-in captions for the whole act.
+- **`pp_layout.mjs`:** automatic layout QA on the real drawn frame. EDGE flags type outside the 3.5 % safe area;
+  OVERLAP flags type colliding with type. Annotated JPGs are written. The gate is 0 flags.
+- **`pp_publish.py`:** one YouTube SRT for the whole film (≤ 42 characters a line, ≤ 2 lines, ≤ 6.5 s a cue), plus
+  publish facts: chapters, credits, AI images, voices, and CC BY items missing an author.
+- **`references/publish.md`:** the upload guide template, SEO rules, the altered-content decision and the checklist.
+- **`final-cut.md` v6.2:**
+  - the new mix: footage ≥ 45 %, AI art ≤ 20 %, drawn-only ≤ 8 %, no text-only frames;
+  - the clean-frame rules;
+  - the creativity gate: concept, 3 ideas, hero sequences, montage runs;
+  - the ship gate on real frames.
+
 ## v6.1 "Final cut" (Oct 2026): nothing mechanical
 - **`final-cut.md`:**
   - Visual mix targets: ≥ 60 % invented, templates ≤ 20 % and each ≤ 2×, AI moment art 20–40 %, real b-roll 8–15 %.

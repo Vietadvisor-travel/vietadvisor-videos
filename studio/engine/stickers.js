@@ -7,7 +7,14 @@
    ===================================================================== */
 'use strict';
 window.IMAGES = window.IMAGES || {};
-const IMG = {};
+// Footage frames (role clip / stream:true in images.json) are NOT embedded: they load from disk the first time a frame
+// asks for them. renderReady(t) draws, waits for any frames that were requested, and draws again, so every exported
+// frame is complete. A small LRU keeps memory flat however many clips an episode uses.
+const _IMG = {}, _ppPend = new Set(), _ppLRU = [];
+const IMG = new Proxy(_IMG, { get(o, id) { if (id in o || typeof id !== 'string') return o[id]; const m = window.IMAGES && window.IMAGES[id];
+  if (!m || !m.stream || !m.src) return undefined; const im = new Image(); const p = new Promise(res => { im.onload = im.onerror = () => { _ppPend.delete(p); res(); }; }); _ppPend.add(p); im.src = m.src; o[id] = im;
+  _ppLRU.push(id); if (_ppLRU.length > 900) { const old = _ppLRU.shift(); delete o[old]; } return im; } });
+window.renderReady = async t => { renderEpisode(t); if (!_ppPend.size) return; for (let k = 0; k < 3 && _ppPend.size; k++) await Promise.all([..._ppPend]); renderEpisode(t); };
 function loadImages() { const ps = []; for (const [id, m] of Object.entries(window.IMAGES)) { if (IMG[id] || !m.data) continue; const im = new Image(); im.src = m.data; IMG[id] = im; ps.push(im.decode().catch(() => console.warn('image failed', id))); } return Promise.all(ps); }
 const _stk = {};
 function stickerCanvas(id, style) {

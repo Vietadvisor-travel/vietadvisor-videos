@@ -31,11 +31,13 @@ def sync(quiet=False):
             found = next((a for a in alt if os.path.exists(a)), None)
             if found: v['src'] = os.path.relpath(found, ROOT).replace(os.sep, '/'); src = found; print(f'fixed path {k} → {v["src"]}')
             else: bad.append(k); continue
+        if v.get('role') == 'clip' or v.get('stream'):   # footage frames stream from disk on demand (engine: stickers.js), never embedded
+            out[k] = {**v, 'stream': True}; continue
         mime = 'image/jpeg' if src.lower().endswith(('.jpg', '.jpeg')) else 'image/png'
         out[k] = {**v, 'data': f'data:{mime};base64,' + base64.b64encode(open(src, 'rb').read()).decode()}
     json.dump(r, open(REG, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     open(os.path.join(LIB, 'images.js'), 'w').write('window.IMAGES = ' + json.dumps(out) + ';\n')
-    if not quiet: print(f'images.js rebuilt: {len(out)} embedded' + (f', BROKEN (file missing): {", ".join(bad)}' if bad else ''))
+    if not quiet: print(f'images.js rebuilt: {sum(1 for v in out.values() if not v.get("stream"))} embedded, {sum(1 for v in out.values() if v.get("stream"))} footage frames streamed' + (f', BROKEN (file missing): {", ".join(bad)}' if bad else ''))
     return bad
 def add(src, id_, role='cut', credit='', lic='', gen=''):
     if not re.match(r'^[a-z0-9_]+$', id_): sys.exit(f'bad id "{id_}" — use lowercase, digits, underscores')

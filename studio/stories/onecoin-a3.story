@@ -6,6 +6,7 @@ voice: am_michael*.7+bm_george*.3
 delivery: wry
 voices: ruja=bf_emma
 music: auto
+captions: off
 endcard: off
 
 # cine act=doubt shot="ws|1.12:pt:.6,.45@programmer/dolly" fx="scene:x;plate:onecoin_hq_office;air:dust;light:sweep@weakness|build:x;el:W=txt:WANTED · SOFIA,.66,.3,53~P=txt:ONE REAL PROGRAMMER,.66,.44,84,gold;do:W.drop@weakness~P.type@programmer"

@@ -184,7 +184,7 @@ SB.compile = (text) => {
     if (o.grade) sc.look = { ...(sc.look || {}), grade: o.grade };
     if (o.dur) sc.dur = +o.dur;
     if (o.artstyle) sc.artstyle = o.artstyle; // whole-frame art direction (engine/library/artstyles.js)
-    if (o.caps === 'off') sc.hideCaps = true; // voice still plays; the lettering carries the line
+    if (o.caps === 'off' || /^(off|none|srt)$/i.test(H_.captions || '')) sc.hideCaps = true; // voice still plays; `captions: off` in the header = no burned-in captions (YouTube gets the .srt)
     if (o.art && window.TYPE) { const prev = sc.post; const ao = { at: o.artAt !== undefined ? +o.artAt : .3, out: o.artOut !== undefined ? +o.artOut : undefined, x: o.artX !== undefined ? +o.artX : undefined, y: o.artY !== undefined ? +o.artY : undefined, col: o.artCol, size: o.artSize ? +o.artSize : 1, role: o.artRole };
       sc.post = (lt, S) => { if (prev) prev(lt, S); TYPE.draw(o.artfx || 'slam', o.art, lt, ao); }; sc.art = { fx: o.artfx || 'slam', at: ao.at }; } // art-directed lettering on any beat (engine/library/typekit.js)
     if (o.capY !== undefined && b.type !== 'moment') sc.capY = { v: +o.capY, h: Math.min(.88, +o.capY + .02) }; // per-beat caption height override

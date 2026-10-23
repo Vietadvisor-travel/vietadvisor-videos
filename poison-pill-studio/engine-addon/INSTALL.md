@@ -56,3 +56,8 @@ quality. On a weak machine, pass `--lite` (see `references/production.md` §7).
 
 **Fork note (local-empire-files-studio):** if the fork renamed `SB.recipes`, `timeCaps`, `renderEpisode` or `_starts`,
 `pp_doctor` fails on "engine loads the add-on" or "renders". See `references/engine-fixes.md`.
+
+## v6.2 core patches (already applied in `studio/`)
+`engine/stickers.js` (footage frames stream from disk + `renderReady(t)`) and `engine/storyboard.js` (`captions: off`
+header) are copied here because v6.2 changed them. Copy both over the base engine, then run `python3 tools/pp_img.py sync`
+so footage frames are no longer embedded.

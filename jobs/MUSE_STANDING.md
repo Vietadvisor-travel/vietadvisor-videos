@@ -53,15 +53,31 @@ For every person, place, product, document and moment in the research:
   - **Never** draw a real, identifiable person, a real document, logo or headline, or anything that pretends to be
     archive. People appear only as silhouettes, from behind, as hands, or as crowds.
   - Import each with `pp_img.py add <file> <id> --role plate|cut --gen "<tool>"`.
-- **REAL B-ROLL CLIPS (v6.1): 10–20 per episode, 2–4 s each.** Factories, streets, crowds, products in use, stock
-  tickers, archive TV.
-  - Sources:
-    - Pexels and Pixabay videos (their licences allow commercial use);
-    - Wikimedia Commons video;
+- **STOCK + ARCHIVAL FOOTAGE (v6.2): 60–150 clips per episode. Footage now leads the film (≥ 45 % of beats).**
+  - **What to find, for every beat-worthy moment in the research:**
+    - the places (city aerials, the HQ street, the airport, the courthouse);
+    - the activity (trading floors, servers, factories, crowds at events, cash counting, people on phones, typing,
+      signing);
+    - the mood (rain on glass, night traffic, empty offices, fog over water);
+    - the objects (coins, banknotes, passports, handcuffs, gavels, newspapers printing);
+    - archival TV and press footage of the real events.
+  - Look for **variety of shot size and movement** (aerial, wide, close-up, macro, slow push, handheld) so Claude can
+    cut montage runs.
+  - **Sources:**
+    - Pexels and Pixabay videos (commercial use, no attribution required, but record the author anyway);
+    - Wikimedia Commons video (CC0 / PD / CC BY / CC BY-SA only);
     - archive.org public domain;
-    - the company's own press videos, as editorial excerpts only, with credit.
-  - Import with `python3 tools/pp_clip.py add <video> <slug>_clip_<what> --start <s> --dur 3 --fps 12 --width 720 --credit "…" --license "…"`.
-  - Keep the whole pack under 90 MB: lower `--width` to 640 if needed.
+    - US government footage (FBI, DOJ, NASA… public domain);
+    - the company's own press videos, as short editorial excerpts only.
+    - **Never** NC/ND licences, unknown "no copyright" uploads, film or TV clips.
+  - **Trim each clip** to its best 2–8 s, with no title cards, logos of the stock site, watermarks or burned-in
+    subtitles: `ffmpeg -ss <s> -t <dur> -i in.mp4 -an -vf scale=1920:-2 -c:v libx264 -crf 20 <id>.mp4`.
+    Ids: `<slug>_clip_<what>`.
+  - **Record every clip** in `clips.json`, with the AUTHOR (CC BY needs it; a clip without an author cannot ship):
+    `{"<id>": {"file": "<id>.mp4", "dur": 5, "desc": "aerial, slow push over Sofia at dusk, centre-left subject",
+    "author": "<name>", "source": "Pexels", "source_url": "<url>", "license": "Pexels License"}}`.
+  - **Pack** into parts of ≤ 88 MB: `python3 tools/pp_pack.py clips-export <slug> <folder> <folder>/clips.json`, then
+    copy `packs/<slug>_clips_*.zip` to `jobs/<slug>/`.
 - **Describe every image and clip.** It makes directing faster and more precise:
   - write `jobs/<slug>/desc.json` as `{"<id>": "what it shows, who, when, orientation, notable details"}`;
   - mention where the subject sits ("CEO left third, looking right").
@@ -70,12 +86,12 @@ For every person, place, product, document and moment in the research:
 ```bash
 cd studio
 python3 tools/pp_pack.py export <slug> --desc ../jobs/<slug>/desc.json --research ../jobs/<slug>/RESEARCH_<slug>.md
-cp packs/<slug>_assets.zip ../jobs/<slug>/
+cp packs/<slug>_assets.zip packs/<slug>_clips_*.zip ../jobs/<slug>/
 cd .. && git add jobs/<slug> && git commit -m "[<slug>] research + assets pack" && git pull --rebase && git push
 ```
 - Keep the zip under 90 MB. If it is bigger, re-save large photos at 2000 px on the long side.
 - Do NOT commit `studio/engine/library/img` or `images.json` changes. Only `jobs/<slug>/` goes in.
-- Reply to the owner: the slug, the number of images (real / AI), the 5 most surprising facts, and the risks.
+- Reply to the owner: the slug, the number of images (real / AI), the number of clips (and parts), the 5 most surprising facts, and the risks.
 
 ### Music library (once, and again when you add tracks)
 - Build it with `pp_music.py add` (references/music.md: ≥ 3 instrumental tracks per mood, safe licences only).

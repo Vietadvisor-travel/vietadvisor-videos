@@ -1,0 +1,70 @@
+HƯỚNG DẪN ĐĂNG TẬP 4 · ONECOIN: THE EXIT STRATEGY · POISON PILL
+Video: PoisonPill_EP04_OneCoin_Exit_Strategy_FULL_16x9.mp4 (10:05). Đổi tên file onecoin_16x9_FINAL.mp4 thành tên này trước khi tải lên: từ khóa trong tên file giúp SEO.
+Thumbnail chính: onecoin_thumb.png (trong jobs/onecoin/)
+Phụ đề: onecoin_FULL.srt (trong jobs/onecoin/)
+Lưu ý riêng tập 4: bản video này còn chữ phụ đề in trên hình (làm trước khi đổi quy trình). Vẫn tải file .srt lên để YouTube lập chỉ mục lời thoại; người xem chỉ thấy phụ đề YouTube khi tự bật CC.
+Lịch đăng gợi ý: 3/11/2026 lúc 21:00 giờ Việt Nam (= 9:00 sáng ET; khán giả Mỹ và Anh xem nhiều từ trưa đến tối).
+
+=== 1. TIÊU ĐỀ (dùng số 1) ===
+1. OneCoin: The Crypto Queen Sold a Coin That Never Existed   ← dùng
+2. OneCoin's Founder Wrote the Exit Plan Before the Scam Began
+3. $4 Billion, One Cent Back: The OneCoin Exit Strategy
+(Sau 48 giờ nếu CTR < 4 %: đổi sang tiêu đề 2.)
+
+=== 2. MÔ TẢ (copy nguyên khối dưới đây) ===
+OneCoin was never a cryptocurrency that failed. In 2014 Ruja Ignatova wrote the exit strategy down, "take the money and run and blame someone else for this", then followed it almost to the word.
+
+How a crypto scam with no blockchain, no mining and no market took more than $4 billion from 3.5 million people. Who went to prison and who walked free, where the Cryptoqueen might be, and why OneCoin victims are getting back about one cent on the dollar.
+
+0:00 OneCoin: the coin that didn't exist
+1:05 Ruja Ignatova and the 2014 exit plan
+2:14 How the OneCoin scam worked
+4:32 No blockchain: the crack
+5:51 The Cryptoqueen vanishes
+6:54 The OneCoin sentences
+8:24 Where is Ruja Ignatova now?
+
+Sources: U.S. Department of Justice and IRS-CI press releases (Mar 2019, Dec 2022, Sep 2023, Jan 2024, Apr 2026); FBI Ten Most Wanted page; SDNY indictment; BBC reporting (The Missing Cryptoqueen; Bjørn Bjercke; Jen McAdam); Bielefeld prosecutors; CoinMarketCap historical data.
+Ruja Ignatova is charged on five counts in the Southern District of New York and has never been tried; she is presumed innocent in law. Allegations are attributed to prosecutors and court records.
+
+Footage: FBI release video of the OneCoin London event (public domain). Wikimedia Commons: "Frankfurt Airport timelapse" (CC BY 3.0), "City at night" (CC BY 3.0), "Data Center Tour" (CC BY 3.0), "ASIC Bitcoin miner" (CC BY-SA 4.0), "Raindrops against the window, Las Palmas" (CC0), "United Airlines 737 takeoff, Portland" (CC BY 3.0).
+Photos: Apaleutos25 (CC BY-SA 4.0) · AntanaCoins (CC BY-SA 3.0) · Dietmar Rabich (CC BY-SA 4.0) · Americasroof (CC BY-SA 3.0) · Kgbo (CC BY-SA 4.0) · Robert Bock (CC0) · Bericht (CC0) · ajay_suresh (CC BY 2.0) · Jonathunder (CC BY-SA 4.0) · U.S. National Archives (public domain) · Ronny Martin Junnilainen (CC BY-SA 3.0) · Jose Hidalgo (CC BY 2.0) · Alfred Twu (CC0) · Benh LIEU SONG (CC BY-SA 3.0) · Mike (CC BY 3.0) · Txllxt TxllxT (CC BY-SA 4.0) · Vesa Linja-aho (CC BY 3.0) · OneCoin Corporation via Wikimedia Commons (CC BY-SA 2.0) · NAC (CC BY-SA 4.0) · Ann Wuyts (CC BY 2.0) · elisfkc (CC BY-SA 2.0) · Robert Lamb (CC BY-SA 2.0) · FBI, U.S. DOJ / IRS-CI documents (public domain). All via Wikimedia Commons unless stated.
+Music by Kevin MacLeod (incompetech.com): Clean Soul, Deep Haze, Fretless, Inspired, Lightless Dawn, Marty Gots a Plan, Meditation Impromptu 01, Perspectives, Reawakening, The Descent, Unseen Horrors, Wallpaper. Licensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/
+Some illustrations of places and objects are AI-generated and are not archival images. Quoted email lines are real words from U.S. Department of Justice filings, read by a synthetic voice.
+
+#OneCoin #RujaIgnatova #BusinessDocumentary
+
+=== 3. THẺ (dán vào ô Tags) ===
+onecoin, onecoin scam, ruja ignatova, cryptoqueen, missing cryptoqueen, onecoin documentary, crypto scam, ponzi scheme, pyramid scheme, fbi most wanted, sebastian greenwood, konstantin ignatov, mark scott, crypto fraud, business case study, poison pill
+
+=== 4. CÁC Ô TRONG YOUTUBE STUDIO ===
+- Thumbnail: tải onecoin_thumb.png. Nếu kênh có "Test & compare", báo Claude để làm thêm 2 thumbnail thử nghiệm.
+- Audience: "No, it's not made for kids".
+- Language: Video language = English; Title and description language = English.
+- Subtitles: Subtitles → Add language → English → Add (Upload file) → "With timing" → chọn onecoin_FULL.srt → Publish.
+- Category: Education.
+- Playlist: "Business Case Studies"; nếu chưa có, tạo thêm playlist "Crypto Collapses" và cho tập này vào cả hai.
+- License: Standard YouTube License. Allow embedding: bật. Publish to subscriptions feed and notify subscribers: bật.
+- Comments: Allow all comments. Sort by: Top.
+- Altered or synthetic content: chọn YES. Lý do: câu trích email của Ruja Ignatova được đọc bằng giọng tổng hợp, và có ảnh AI trông như thật minh họa sự kiện có thật (đêm Wembley, sân bay Athens).
+- Paid promotion: không tích.
+
+=== 5. END SCREEN VÀ CARDS ===
+- End screen (từ 9:45 đến hết): "Best for viewer" + nút Subscribe.
+- Card 1 tại 5:27 (đoạn "It was her boyfriend"): trỏ về tập Theranos.
+- Sau khi đăng: quay lại tập Theranos, thêm card trỏ sang tập này tại 3:29.
+
+=== 6. CHẾ ĐỘ HIỂN THỊ ===
+Schedule: 3/11/2026, 21:00 giờ Việt Nam.
+
+=== 7. PINNED COMMENT (dán rồi ghim) ===
+She wrote "take the money and run and blame someone else" in 2014, before a single coin was sold. If a friend had offered you OneCoin in 2016, what would have made you check?
+
+=== 8. 48 GIỜ ĐẦU ===
+- Trả lời 10 bình luận đầu tiên trong 2 giờ đầu; tự trả lời 1 câu ngắn dưới pinned comment để mở thảo luận.
+- Không chia sẻ link vào group spam. Có thể chia sẻ ở r/CryptoCurrency hoặc r/Documentaries nếu luật nhóm cho phép.
+- Sau 48 giờ, ghi vào jobs/nhat-ky.md: CTR, Average view duration, % viewed, nguồn traffic chính.
+- Ngưỡng: CTR < 4 % → đổi tiêu đề 2. Retention phút đầu < 55 % → báo Claude để sửa hook tập sau.
+
+=== 9. CẦN XỬ LÝ TRƯỚC KHI ĐĂNG ===
+- Các clip Wikimedia giấy phép CC BY (Frankfurt Airport timelapse, City at night, Data Center Tour, ASIC Bitcoin miner, United Airlines 737 takeoff) chưa có tên tác giả trong gói. Nhờ Muse gửi tên tác giả rồi điền vào dòng "Footage" ở mô tả.

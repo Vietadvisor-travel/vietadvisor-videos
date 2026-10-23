@@ -6,6 +6,7 @@ voice: am_michael*.7+bm_george*.3
 delivery: wry
 voices: ruja=bf_emma
 music: auto
+captions: off
 endcard: off
 
 #! scene two_tickets

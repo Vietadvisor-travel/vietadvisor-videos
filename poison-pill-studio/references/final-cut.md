@@ -1,3 +1,79 @@
+# FINAL CUT v6.2: footage leads, a clean frame, a concept you have never seen
+
+**v6.2 overrides the shares and rules below wherever they disagree.** Owner feedback on ep. 4 (OneCoin): elements sat
+in odd places and sometimes collided, burned-in captions were not wanted, and the film did not feel "wow". It felt
+sparse and not polished enough. The most important quality is creativity. Muse now sources a lot of stock video, and
+an episode may use more footage than stills.
+
+## A. The mix (replaces the §1 table)
+| Kind | Share of beats | Notes |
+|---|---|---|
+| **Moving footage leads**: archival or stock clips are the main picture | **≥ 45 %** | clips stream from disk (v6.2), so 60–150 clips per episode is fine; 2–8 s each |
+| Real stills brought alive (scene, parallax, rack focus) | 15–30 % | people, documents, places without footage |
+| AI moment art | ≤ 20 % | only for moments with no footage and no photo |
+| Custom code scenes | 8–14 beats | built ON footage or photos: masks, split screens, screen inserts, data drawn onto the real picture |
+| Drawn-only graphics (maps, diagrams, flapboards…) | ≤ 8 % | only when a mechanism needs a diagram |
+| Text-only frames | **0**, except one deliberate black-card punch per film | a sentence never "becomes" a word on a dark plate |
+
+## B. The clean frame (every beat; gate: `node tools/pp_layout.mjs` = 0 flags on every act)
+1. **No burned-in captions.** Every act header has `captions: off`; YouTube gets `<slug>_FULL.srt` (`publish.md`).
+2. **Safe area:**
+   - all type and every key subject stays inside a 5 % margin;
+   - nothing sits in the bottom 12 % (player controls and YouTube captions);
+   - no type closer than 3 % to another type block.
+3. **One type system:**
+   - **hero:** 110–170 px, at most 4 words;
+   - **headline:** 64–90 px;
+   - **label:** ≥ 40 px.
+
+   Nothing smaller except credits. Never the `tag:` element (it is too small at 1080p); use `txt:`. One accent colour.
+4. **One focal point per frame.** Type goes in the empty third opposite the subject, never on faces, products or
+   documents being read.
+5. **The camera never pushes type off frame.** On beats with type, the end zoom is ≤ 1.12. Bigger moves happen only
+   on pictures with no type on them.
+6. **Everything lands early:**
+   - counters reach their final value, and type-ons finish, by 50 % of the beat;
+   - the last 30 % of a beat holds a finished, readable frame;
+   - a viewer pausing on any frame sees the final number, never "$3.91B" for "$4 billion".
+7. **Plates and clips are used once.** A second use is allowed only for a declared motif (written in META).
+8. **No white boxes:** documents and receipts sit on the look's paper colour, or as real prints in the scene, with a shadow.
+9. `pp_layout.mjs` hooks every text draw on the real frame and reports EDGE (outside the safe area) and OVERLAP (two
+   type blocks colliding). Fix every flag: move the type, shrink it, or reduce the camera's end zoom. Rendering with a
+   flag is not allowed.
+
+## C. Creativity is the first gate, not the last
+1. **One visual concept per episode,** written in META before any beat:
+   - a world or device that carries the whole film and that no other channel would use for this story;
+   - examples: "the film is a forensic audit of one email", "every act is a floor of the same empty hotel", "the
+     money is always shown as one physical object that changes state".
+   - The motif (final-cut §4) lives inside this concept.
+2. **Three ideas per key beat.** For the hook, every act turn, the 3 reveals and the ending, write 3 picture ideas in the
+   beat table and pick the one an informed viewer would least expect but understand in 2 seconds. Keep the losing two
+   in the package, so the critic can see the choice.
+3. **Each act has one hero sequence of 8–20 s,** designed as a mini film across 3–6 beats:
+   - footage, match cuts, a custom scene over the footage, and a sound hit, with one camera language;
+   - examples: the money's route as real streets seen from a plane window, with the sums burned onto the glass; the
+     price typed into the database while real trading-floor footage freezes.
+4. **Footage is composed, not pasted.** Use clips as layers:
+   - masked into a phone or a window;
+   - split screens that answer each other;
+   - a clip playing inside a document's photo;
+   - match cuts on shape (a coin → a spotlight → a camera lens);
+   - speed ramps on the hit word;
+   - rack focus from footage to a document.
+5. **Montage runs carry the energy:** at least 3 per episode, of 4–8 clips at 0.8–1.5 s each, cut on the music's beat.
+6. **The critic scores "never seen before" explicitly.** A beat that any channel would make for this sentence is
+   swap-FAIL, even when it is clean.
+
+## D. Quality bar before render (in this order)
+1. Package META has the visual concept, the 3-ideas rows and the hero sequences.
+2. `pp_scriptlint` ≥ 8.5 · `pp_lint` ≥ 9.0, 0 errors · **`pp_layout` 0 flags** · `pp_sheet` looked at.
+3. Critic round on sheets → fixes → **`--lite` render of every act** → critic round on real frames (1 frame per beat at
+   75 %) → fixes → final render. Ship at ≥ 85 % of beats ≥ 5/8 and ≥ 90 % swap PASS. If 3 rounds don't reach it,
+   say so plainly in the delivery report with the scores.
+
+---
+
 # FINAL CUT (v6.1): the anti-mechanical method
 
 What makes a film feel "made by a machine" is rarely one big flaw. It is the sum of four repetitions:

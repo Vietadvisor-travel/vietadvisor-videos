@@ -5,14 +5,14 @@ engine plays inside any layer —  mid="clip:<id>;style:tv"  ·  fg="clip:<id>;s
         [--credit "Footage: … / Source"] [--license "…"]
   python3 tools/pp_clip.py list
 Frames are registered as <id>__000 … in images.json and embedded in images.js (via pp_img sync). Keep clips SHORT
-(2–4 s, ≤ 12 fps, ≤ 720 px): every frame is embedded in the render bundle. Use only footage you may use (own, licensed,
+(v6.2: clip frames are STREAMED from disk, not embedded, so stock footage can lead an episode: 24 fps, 1280 px, 2–8 s per clip are fine). Use only footage you may use (own, licensed,
 public domain, or short editorial fair-use excerpts that the narration comments on) — credit it.
 --cut auto removes the background of every frame (slow; for a person on a plain background)."""
 import sys, os, json, subprocess, tempfile, glob, shutil
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); LIB = os.path.join(ROOT, 'engine', 'library'); IMG = os.path.join(LIB, 'img'); REG = os.path.join(LIB, 'images.json')
 sys.path.insert(0, os.path.join(ROOT, 'tools'))
 def load(): return json.load(open(REG, encoding='utf-8')) if os.path.exists(REG) else {}
-def add(src, id_, start=0, dur=3, fps=12, width=720, cut='none', loop=True, credit='', lic=''):
+def add(src, id_, start=0, dur=3, fps=12, width=720, cut='none', loop=True, credit='', lic='', desc='', sync=True):
     os.makedirs(IMG, exist_ok=True); tmp = tempfile.mkdtemp()
     subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-ss', str(start), '-t', str(dur), '-i', src, '-vf', f'fps={fps},scale={width}:-2', '-q:v', '4', os.path.join(tmp, 'f%03d.jpg')], check=True)
     frames = sorted(glob.glob(os.path.join(tmp, 'f*.jpg'))); r = load()
@@ -23,9 +23,9 @@ def add(src, id_, start=0, dur=3, fps=12, width=720, cut='none', loop=True, cred
             import sticker; from PIL import Image; im = sticker.cutout(Image.open(f)); im.save(dst)
         else: shutil.copy(f, dst)
         from PIL import Image; w, h = Image.open(dst).size
-        r[fid] = {'src': os.path.relpath(dst, ROOT).replace(os.sep, '/'), 'w': w, 'h': h, 'cut': cut == 'auto', 'role': 'clip', 'fps': fps, 'loop': loop, 'credit': credit, 'license': lic, 'from': os.path.basename(src)}
+        r[fid] = {'src': os.path.relpath(dst, ROOT).replace(os.sep, '/'), 'w': w, 'h': h, 'cut': cut == 'auto', 'role': 'clip', 'fps': fps, 'loop': loop, 'credit': credit, 'license': lic, 'from': os.path.basename(src), **({'desc': desc} if desc else {})}
     json.dump(r, open(REG, 'w', encoding='utf-8'), ensure_ascii=False, indent=1); shutil.rmtree(tmp)
-    subprocess.run([sys.executable, os.path.join(ROOT, 'tools', 'pp_img.py'), 'sync'], check=True)
+    if sync: subprocess.run([sys.executable, os.path.join(ROOT, 'tools', 'pp_img.py'), 'sync'], check=True)
     print(f'clip {id_}: {len(frames)} frames @ {fps} fps → use mid="clip:{id_};style:tv" or bg=clip:{id_}')
 if __name__ == '__main__':
     a = sys.argv[1:]; opt = lambda k, d='': a[a.index('--' + k) + 1] if '--' + k in a else d

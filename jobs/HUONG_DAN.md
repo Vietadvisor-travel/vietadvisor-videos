@@ -1,6 +1,6 @@
 # HƯỚNG DẪN POISON PILL v6: Claude làm phim, Muse nghiên cứu và gom nguồn
 
-**Muse:** nghiên cứu sâu, tìm ảnh thật, tạo ảnh AI cho chỗ thiếu, gom nhạc, rồi đóng gói và đẩy lên GitHub.
+**Muse:** nghiên cứu sâu, tìm thật nhiều video stock và tư liệu (60–150 clip mỗi tập), tìm ảnh thật, tạo ảnh AI cho chỗ thiếu, gom nhạc, rồi đóng gói và đẩy lên GitHub.
 **Claude Code:** đạo diễn, viết kịch bản, dựng cảnh, đọc giọng, render, tự chấm điểm, rồi gửi video cho anh.
 
 ## CÀI ĐẶT (1 lần)
@@ -14,16 +14,21 @@
 ```
 nghiên cứu và đóng gói: Nokia
 ```
-Muse làm xong sẽ báo slug (ví dụ `nokia`), số ảnh và 5 sự thật bất ngờ nhất.
+Muse làm xong sẽ báo slug (ví dụ `nokia`), số ảnh, số clip và 5 sự thật bất ngờ nhất.
 
 **Câu 2, mở phiên Claude Code mới với repo `vietadvisor-videos`, nhắn:**
 ```
 làm tập nokia
 ```
-Claude tự làm hết, rồi gửi anh video, thumbnail, 3 tiêu đề, phần mô tả kèm ghi công ảnh và nhạc, và tag SEO.
+Claude tự làm hết, rồi gửi anh:
+- video (không có chữ phụ đề trên hình);
+- file phụ đề `.srt` để tải lên YouTube;
+- thumbnail (kèm 1–2 bản thử nghiệm);
+- file `UPLOAD_GUIDE_<slug>.txt`: hướng dẫn đăng từng ô trong YouTube Studio, tiêu đề, mô tả có chương và ghi công, tag, bình luận ghim, việc cần làm trong 48 giờ đầu.
 Một tập 10 phút mất khoảng 1–2 tiếng, phần lớn là thời gian render. Anh không cần ngồi chờ.
 
 ## KHÁC (khi cần)
 - **Lên lịch tháng:** nhắn Muse `nghiên cứu chủ đề tháng`, rồi nhắn Claude Code `lịch 30 ngày từ jobs/TOPICS_<tháng>.md`.
 - **Muốn sửa video:** trong cùng phiên Claude Code, nhắn chỗ chưa ưng (kèm ảnh chụp càng tốt).
-- **Khi đăng YouTube:** nếu tập có giọng trích lời người thật hoặc ảnh AI trông như thật, nhớ tích ô "altered or synthetic content".
+- **Khi đăng YouTube:** làm đúng theo file `UPLOAD_GUIDE_<slug>.txt` của tập đó (đã ghi sẵn có tích ô "altered or synthetic content" hay không, và lý do).
+- **Khi đổi hướng dẫn thường trực cho Muse:** gửi lại file `MUSE_STANDING.md` mới cho Muse (bản v6.2 có phần đóng gói video stock).

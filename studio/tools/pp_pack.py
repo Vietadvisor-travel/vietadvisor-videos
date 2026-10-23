@@ -8,6 +8,9 @@
   python3 tools/pp_pack.py import packs/<slug>_assets.zip
         → images copied into engine/library/img, registry merged (credits and AI flags kept), images.js rebuilt.
           Prints CATALOG.md. Ids already present are replaced by the pack's version.
+  python3 tools/pp_pack.py clips-export <slug> <folder of trimmed mp4> <clips.json>   (v6.2 stock footage, Muse)
+        → packs/<slug>_clips_1.zip, _2.zip … (≤ 88 MB each). Claude imports them together with the assets pack:
+  python3 tools/pp_pack.py import ../jobs/<slug>/<slug>_assets.zip ../jobs/<slug>/<slug>_clips_*.zip
   python3 tools/pp_pack.py list packs/<slug>_assets.zip
   python3 tools/pp_pack.py music-export          → packs/music_library_1.zip, _2.zip … (MP3 128 kb/s, each ≤ 90 MB)
   python3 tools/pp_pack.py music-import <zip> [<zip> …]   → music/ merged (tracks added, library.json entries merged)
@@ -49,7 +52,7 @@ def read_pack(zp):
     z = zipfile.ZipFile(zp); P = json.loads(z.read('pack.json').decode('utf-8')); return z, P
 
 def imp(zp):
-    z, P = read_pack(zp); r = load(); dst = os.path.join(LIB, 'img'); os.makedirs(dst, exist_ok=True); n = 0
+    z, P = read_pack(zp); P.setdefault('images', {}); r = load(); dst = os.path.join(LIB, 'img'); os.makedirs(dst, exist_ok=True); n = 0
     for i, m in P['images'].items():
         f = m.get('file', '')
         if not ID.match(i) or not f.startswith('img/') or '..' in f or not f.lower().endswith(EXT) or f not in z.namelist(): print('rejected entry:', i); continue
@@ -59,12 +62,46 @@ def imp(zp):
         if m.get('desc'): e['desc'] = m['desc']
         r[i] = e; n += 1
     json.dump(r, open(REG, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    # v6.2 stock footage: pack.json "clips": {id: {file: "clips/<id>.mp4", start, dur, credit, license, author, source_url, desc}}
+    clips = P.get('clips', {}); nc = 0
+    if clips:
+        sys.path.insert(0, os.path.join(ROOT, 'tools')); import pp_clip; tmpd = os.path.join(ROOT, 'out', '_packclips'); os.makedirs(tmpd, exist_ok=True)
+        for i, m in clips.items():
+            f = m.get('file', '')
+            if not ID.match(i) or '..' in f or not f.lower().endswith(('.mp4', '.mov', '.webm', '.m4v')) or f not in z.namelist(): print('rejected clip:', i); continue
+            src = os.path.join(tmpd, os.path.basename(f))
+            with z.open(f) as a, open(src, 'wb') as b: shutil.copyfileobj(a, b)
+            cr = m.get('credit') or ' · '.join(x for x in (m.get('author'), m.get('source')) if x)
+            pp_clip.add(src, i, start=float(m.get('start', 0)), dur=float(m.get('dur', 6)), fps=int(m.get('fps', 24)), width=int(m.get('width', 1280)), credit=cr, lic=m.get('license', ''), desc=m.get('desc', ''), sync=False)
+            os.remove(src); nc += 1
+        r = load()
     for extra in [x for x in z.namelist() if x.endswith('.md') and '/' not in x and x != 'CATALOG.md']:
         os.makedirs(os.path.join(ROOT, 'research'), exist_ok=True); open(os.path.join(ROOT, 'research', extra), 'wb').write(z.read(extra)); print('research file →', 'research/' + extra)
     subprocess.run([sys.executable, os.path.join(ROOT, 'tools', 'pp_img.py'), 'sync'], check=True)
-    cat = z.read('CATALOG.md').decode('utf-8'); os.makedirs(os.path.join(ROOT, 'research'), exist_ok=True)
-    open(os.path.join(ROOT, 'research', f"{P.get('slug', 'pack')}_catalog.md"), 'w', encoding='utf-8').write(cat)
-    print(f'imported {n} images from {zp}'); print(cat)
+    cat = z.read('CATALOG.md').decode('utf-8') if 'CATALOG.md' in z.namelist() else ''; os.makedirs(os.path.join(ROOT, 'research'), exist_ok=True)
+    cf = os.path.join(ROOT, 'research', f"{P.get('slug', 'pack')}_catalog.md")
+    if cat: open(cf, 'a' if os.path.basename(zp) != f"{P.get('slug', 'pack')}_assets.zip" and os.path.exists(cf) else 'w', encoding='utf-8').write(cat)
+    print(f'imported {n} images and {nc} clips from {zp}'); print(cat)
+
+def clips_export(slug, folder, meta_json, max_mb=88):
+    """Muse: trimmed stock clips (MP4, H.264, no audio, 1280–1920 px, 2–8 s) + clips.json {id: {file, start, dur, desc, author, source, source_url, license}}
+    → packs/<slug>_clips_1.zip, _2.zip … each ≤ max_mb, with pack.json {"slug", "clips": {…}} and CATALOG.md rows for the clips."""
+    M = json.load(open(meta_json, encoding='utf-8')); os.makedirs(os.path.join(ROOT, 'packs'), exist_ok=True); parts, cur, size = [], {}, 0
+    for i, m in M.items():
+        f = os.path.join(folder, os.path.basename(m.get('file') or i + '.mp4'))
+        if not ID.match(i) or not os.path.exists(f): print('skipped clip (bad id or missing file):', i); continue
+        sz = os.path.getsize(f) / 1e6
+        if cur and size + sz > max_mb: parts.append(cur); cur, size = {}, 0
+        cur[i] = (f, m); size += sz
+    if cur: parts.append(cur)
+    for k, part in enumerate(parts, 1):
+        zp = os.path.join(ROOT, 'packs', f'{slug}_clips_{k}.zip'); rows = [f'## Clips ({os.path.basename(zp)})', '', '| id | role | what it shows | licence / credit | AI |', '|---|---|---|---|---|']; meta = {}
+        with zipfile.ZipFile(zp, 'w', zipfile.ZIP_STORED) as z:
+            for i, (f, m) in part.items():
+                arc = 'clips/' + i + os.path.splitext(f)[1].lower(); z.write(f, arc); meta[i] = {**m, 'file': arc}
+                rows.append(f"| `{i}` | clip | {m.get('desc', '—')} ({m.get('dur', '?')} s) | {m.get('license', '')} · {m.get('author', '')} · {m.get('source', '')} |  |")
+            z.writestr('pack.json', json.dumps({'slug': slug, 'clips': meta}, ensure_ascii=False, indent=1)); z.writestr('CATALOG.md', '\n'.join(rows) + '\n')
+        print(f'{zp}: {len(part)} clips, {os.path.getsize(zp) / 1e6:.1f} MB')
 
 AUD = ('.mp3', '.wav', '.ogg', '.flac', '.m4a', '.json')
 def music_export(kbps=128, max_mb=90):
@@ -112,7 +149,8 @@ if __name__ == '__main__':
     a = sys.argv[1:]; opt = lambda k: a[a.index('--' + k) + 1] if '--' + k in a else None
     if not a: print(__doc__)
     elif a[0] == 'export': export(a[1], opt('ids').split(',') if opt('ids') else None, opt('prefix'), opt('desc'), opt('research'))
-    elif a[0] == 'import': imp(a[1])
+    elif a[0] == 'clips-export': clips_export(a[1], a[2], a[3])
+    elif a[0] == 'import': [imp(x) for x in a[1:]]   # several parts: pp_pack.py import <slug>_assets.zip <slug>_clips_1.zip …
     elif a[0] == 'music-export': music_export()
     elif a[0] == 'music-import': [music_import(z) for z in a[1:]]
     elif a[0] == 'list': z, P = read_pack(a[1]); print(z.read('CATALOG.md').decode('utf-8'))
