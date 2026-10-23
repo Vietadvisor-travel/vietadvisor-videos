@@ -34,7 +34,9 @@ The rulebook is `poison-pill-studio/` (SKILL.md and references/). The engine wit
    - **Two footage sources, used together:**
      - the episode's own clips for named people, places and events;
      - the shared library for generic action, mood and texture.
-     - `python3 tools/pp_stock.py find <words>` finds library clips for a beat.
+     - `python3 tools/pp_stock.py find <words>` finds library clips for a beat. When a beat needs a generic shot the
+       library lacks, log it: `python3 tools/pp_stock.py want "<the shot>" --slug <slug>`, then commit
+       `jobs/STOCK_WISHLIST.md` (Muse fills it first).
      - Avoid library clips used in the last 3 episodes (the catalogue's "used in" column), except for the declared
        motif.
    - **Use only catalogue ids.** Where no image exists, use AI moment art from the pack, or a custom scene over a picture. Never draw a

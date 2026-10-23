@@ -11,6 +11,19 @@ id prefix (`stock_<category>_…`). Each row shows have / target and the gap. Th
 - **what** lists the subjects to cover;
 - **search** gives starting queries.
 
+## Two phases, then demand-driven
+1. **Phase 1, breadth (this table, about 1,500 clips):** every category usable.
+2. **Phase 2, depth (target about 3,000):** the categories every episode leans on go to 2–3× their target, so a
+   viewer who watches every episode does not see the same shot again within a month:
+   - office, money, screen, phone, finance, people and city to ×3;
+   - law, documents, tech, texture, archive and emotion to ×2.
+3. **Always, demand-driven:** each film logs the shots it needed and could not find
+   (`pp_stock.py want …` → `jobs/STOCK_WISHLIST.md`). Muse fills the wishlist FIRST, before any plan gap. Real need
+   beats guessing.
+
+More is not automatically better. 50 clips that look alike are worth less than 15 different ones. Depth means new
+angles, places, light and actions, never near-duplicates.
+
 ## Rules for every clip (same as MUSE_DRIVE.md)
 - **Format:**
   - 2–8 s, trimmed to the best moment;

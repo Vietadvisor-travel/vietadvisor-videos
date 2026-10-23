@@ -56,7 +56,8 @@ cd .. && git add jobs/_drive.json && git commit -m "stock library: +<n> clips (D
 - **Zip size:** each zip ≤ 1.9 GB (`--max-mb 1900`). Smaller zips upload and resume more easily.
 
 ## 3b. What to collect: `jobs/STOCK_PLAN.md`
-The library's target shape: about 30 categories and about 1,500 clips. Work the biggest gaps first
+The library's target shape: about 30 categories and about 1,500 clips (phase 1), then about 3,000 (phase 2).
+**`jobs/STOCK_WISHLIST.md` comes first** (shots a real film needed). Then work the biggest gaps
 (`python3 tools/pp_stock.py coverage`) and use the category names exactly as id prefixes.
 
 ## 4. If something goes wrong

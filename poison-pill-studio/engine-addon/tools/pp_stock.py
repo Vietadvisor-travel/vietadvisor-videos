@@ -13,6 +13,7 @@ The library can hold hundreds of clips, so nothing is extracted until a story us
   python3 tools/pp_stock.py pull <slug> stories/<slug>-a*.story
                                                          → extracts ONLY the stock_* clips the stories use (24 fps, 1280 px, streamed),
                                                            and records them as used by <slug> in stock_used.json
+  python3 tools/pp_stock.py want "<the shot>" --slug <slug>   → a needed shot the library lacks → jobs/STOCK_WISHLIST.md (Muse fills first)
   python3 tools/pp_stock.py coverage                    → progress against jobs/STOCK_PLAN.md (have / target per category)
 Rules (CLAUDE.md): prefer the episode's own clips for named people, places and events; use the library for generic
 action, mood and texture. Avoid a library clip used in the last 3 episodes unless it is the declared motif."""
@@ -77,6 +78,8 @@ def find(words):
         hay = (i + ' ' + str(m.get('desc', '')) + ' ' + (' '.join(m['tags']) if isinstance(m.get('tags'), list) else str(m.get('tags', '')))).lower()
         s = sum(2 if re.search(r'\b' + re.escape(w) + r'\b', hay) else (1 if w in hay else 0) for w in q)
         if s: sc.append((s - .5 * len(U.get(i, [])), i, m))
+    if not sc or max(x[0] for x in sc) < len(q):
+        print(f'(weak match for "{" ".join(words)}": if the beat needs it, log it: python3 tools/pp_stock.py want "<the shot>" --slug <slug>)')
     for s, i, m in sorted(sc, reverse=True)[:15]:
         print(f"{s:4.1f}  {i:40s} {m.get('dur', '?')}s  {m.get('desc', '')[:70]}  {'(used: ' + ', '.join(U.get(i, [])) + ')' if U.get(i) else ''}")
 
@@ -113,6 +116,16 @@ def pull(slug, stories):
     if again: print('note: also used in the last 3 episodes (OK only for the declared motif):', ', '.join(again))
 
 
+def want(what, slug=''):
+    """A shot the director needed and the library lacked → jobs/STOCK_WISHLIST.md, which Muse fills first."""
+    f = os.path.join(REPO, 'jobs', 'STOCK_WISHLIST.md')
+    if not os.path.exists(f):
+        open(f, 'w', encoding='utf-8').write('# Stock wishlist: shots a film needed and the library lacked\n\nMuse fills these FIRST (before STOCK_PLAN gaps), then ticks the box and writes the clip ids.\n\n')
+    import datetime
+    open(f, 'a', encoding='utf-8').write(f'- [ ] {what}' + (f'  ({slug}, {datetime.date.today()})' if slug else f'  ({datetime.date.today()})') + '\n')
+    print('wishlist +', what)
+
+
 def coverage():
     """Library progress against jobs/STOCK_PLAN.md: have / target per category (id prefix stock_<category>_)."""
     idx = json.load(open(IDX)) if os.path.exists(IDX) else index(True)
@@ -134,7 +147,8 @@ def coverage():
 
 if __name__ == '__main__':
     a = sys.argv[1:]
-    if not a or a[0] not in ('index', 'find', 'pull', 'coverage'): print(__doc__); sys.exit(1)
+    if not a or a[0] not in ('index', 'find', 'pull', 'coverage', 'want'): print(__doc__); sys.exit(1)
+    if a[0] == 'want': want(' '.join(x for x in a[1:] if x != '--slug' and (a.index(x) == 0 or a[a.index(x) - 1] != '--slug')), a[a.index('--slug') + 1] if '--slug' in a else ''); sys.exit()
     if a[0] == 'coverage': coverage(); sys.exit()
     if a[0] == 'index': index()
     elif a[0] == 'find': find(a[1:])
