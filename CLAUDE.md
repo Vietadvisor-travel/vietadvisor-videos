@@ -117,6 +117,20 @@ The rulebook is `poison-pill-studio/` (SKILL.md and references/). The engine wit
      `images.json`, `images.js`); it is rebuilt from the packs in every session.
    - Report honestly: what was checked, what is uncertain, and the critic scores.
 
+## When the owner writes "kiểm tra drive"
+This means the **media Drive used by the studio**, not a browse with the Google Drive connector. Run:
+```bash
+env | grep -o '^GDRIVE_[A-Z_]*' ; ls ~/.config/poisonpill/drive.env 2>/dev/null   # names only, never print the values
+cd studio && python3 tools/pp_drive.py check && python3 tools/pp_drive.py ls && python3 tools/pp_stock.py index
+```
+- Report: whether the credentials are present, whether login works, the folder id, the files with their sizes, and the
+  number of stock clips indexed.
+- If the credentials are missing: say which variable is missing and point to `jobs/DRIVE_SETUP.md` step 3. The
+  variables only reach a session opened after they were saved.
+- If there is no folder yet (`jobs/_drive.json` missing): login can still be proven with
+  `python3 -c "import sys; sys.path.insert(0, 'tools'); import pp_drive; pp_drive.auth(); print('login OK')"`, and Muse's
+  first upload will create the folder.
+
 **Missing sources:** if `jobs/<slug>/` has no research or no pack, say so and stop. Tell the owner the exact sentence
 to send Muse: `nghiên cứu và đóng gói: <topic>`.
 
