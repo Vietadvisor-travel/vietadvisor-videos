@@ -32,6 +32,15 @@ Ngoài video riêng của từng tập, Muse dựng một kho video stock dùng 
 Để Muse bổ sung kho, nhắn: `bổ sung thư viện stock: <chủ đề, ví dụ: tiền mặt, sàn chứng khoán, sân bay>`.
 Claude tự lấy clip trong kho khi làm tập mới, và tránh dùng lại clip đã xuất hiện trong 3 tập gần nhất.
 
+## VIDEO STOCK NẰM TRÊN GOOGLE DRIVE (từ v6.4)
+- Video stock và footage từng tập (có thể vài GB) không đưa lên git nữa. Muse tải lên Drive vào thư mục
+  `PoisonPill_Media`, còn Claude đọc thẳng từ Drive và chỉ kéo đúng những clip phim dùng.
+- **Cài 1 lần:** làm theo `jobs/DRIVE_SETUP.md` (khoảng 15 phút: tạo chìa khoá Google, rồi cất 3 biến `GDRIVE_*` vào
+  môi trường của cả Claude Code lẫn Muse).
+- **Gửi Muse:** file `jobs/MUSE_DRIVE.md`, kèm lời nhắn:
+  > Từ giờ video stock và footage tải lên Google Drive theo file này, không đưa lên git nữa. Những gì em đã đào xong thì đóng gói và tải lên luôn theo mục 2 và 3, rồi báo anh.
+- **Kiểm tra:** mở phiên Claude Code mới, nhắn `kiểm tra drive`.
+
 ## KHÁC (khi cần)
 - **Lên lịch tháng:** nhắn Muse `nghiên cứu chủ đề tháng`, rồi nhắn Claude Code `lịch 30 ngày từ jobs/TOPICS_<tháng>.md`.
 - **Muốn sửa video:** trong cùng phiên Claude Code, nhắn chỗ chưa ưng (kèm ảnh chụp càng tốt).

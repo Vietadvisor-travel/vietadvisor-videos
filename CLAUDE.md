@@ -6,10 +6,10 @@
   - `RESEARCH_<slug>.md`: the story-mining worksheet, sections A–M;
   - `<slug>_assets.zip`: real photos (already cut out), AI fills for gaps only, a catalogue of what each image shows, and
     credits;
-  - `<slug>_clips_1.zip`, `_2.zip` … (v6.2): lots of stock and archival footage (MP4, 2–8 s, with author + licence);
-    footage now leads the film;
+  - `<slug>_clips_1.zip`, `_2.zip` … (v6.2): lots of stock and archival footage (MP4, 2–8 s, with author + licence),
+    **uploaded to Google Drive `<slug>/`, never to git** (v6.4, `jobs/MUSE_DRIVE.md`);
   - once only: `jobs/_music/music_library_*.zip` (MP3, split into parts of ≤ 90 MB; `setup.sh` imports them).
-  - **the shared stock library** (v6.2, grows over time): `jobs/_stock/stock_library_*.zip`. Generic footage for every
+  - **the shared stock library** (v6.2, grows over time): Google Drive `_stock/stock_library_*.zip` (v6.4). Generic footage for every
     episode: action, mood, texture, places, objects. Ids start with `stock_`. `setup.sh` indexes it into
     `studio/research/stock_catalog.md`.
 - **Claude Code** (you, in this repo): everything else. Direction, script, storyboard, custom scenes, voice, render,
@@ -22,8 +22,13 @@ The rulebook is `poison-pill-studio/` (SKILL.md and references/). The engine wit
    - `git pull`, then `bash studio/setup.sh` (about 1–2 min the first time in a session; it must end with ALL PASS).
    - The voice model download needs github.com and the npm/pip registries.
 2. **Load the sources:**
-   - Run `cd studio && python3 tools/pp_pack.py import ../jobs/<slug>/<slug>_assets.zip ../jobs/<slug>/<slug>_clips_*.zip`
-     (clips stream from disk; any number is fine).
+   - **Big media lives on Google Drive (v6.4, `jobs/DRIVE_SETUP.md`):** the episode's clips packs are in Drive
+     `<slug>/`, the shared stock library in Drive `_stock/`; git holds only text, small packs and `jobs/_drive.json`.
+     `python3 tools/pp_drive.py check` shows what is there (needs `GDRIVE_*` in the environment).
+   - Run `cd studio && python3 tools/pp_pack.py import ../jobs/<slug>/<slug>_assets.zip "drive:<slug>/<slug>_clips_*.zip"`
+     (zips read over the network, no full download; local `../jobs/<slug>/<slug>_clips_*.zip` still work; if the assets
+     pack is on Drive use `drive:<slug>/<slug>_assets.zip`).
+   - If Drive is not configured or a pack is missing, say exactly which, and stop: tell the owner `jobs/DRIVE_SETUP.md`.
    - Read `jobs/<slug>/RESEARCH_<slug>.md`, the printed catalogue of the episode's images and clips (also saved as
      `studio/research/<slug>_catalog.md`), and the shared library catalogue `studio/research/stock_catalog.md`.
    - **Two footage sources, used together:**
@@ -108,7 +113,7 @@ The rulebook is `poison-pill-studio/` (SKILL.md and references/). The engine wit
    - Send the owner: the final MP4, the SRT, the upload guide, the thumbnail(s) and 10 stills.
    - Commit the stories, `studio/history.json`, `jobs/<slug>/EPISODE_<slug>.md`, the SRT, the upload guide and the
      thumbnail(s), then push.
-   - Never commit MP4s (GitHub's limit is 100 MB), and never commit the imported library (`studio/engine/library/img/`,
+   - Never commit MP4s or clips/stock zips (GitHub's limit is 100 MB; big media goes to Drive), and never commit the imported library (`studio/engine/library/img/`,
      `images.json`, `images.js`); it is rebuilt from the packs in every session.
    - Report honestly: what was checked, what is uncertain, and the critic scores.
 

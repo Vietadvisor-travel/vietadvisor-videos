@@ -76,8 +76,9 @@ For every person, place, product, document and moment in the research:
   - **Record every clip** in `clips.json`, with the AUTHOR (CC BY needs it; a clip without an author cannot ship):
     `{"<id>": {"file": "<id>.mp4", "dur": 5, "desc": "aerial, slow push over Sofia at dusk, centre-left subject",
     "author": "<name>", "source": "Pexels", "source_url": "<url>", "license": "Pexels License"}}`.
-  - **Pack** into parts of ≤ 88 MB: `python3 tools/pp_pack.py clips-export <slug> <folder> <folder>/clips.json`, then
-    copy `packs/<slug>_clips_*.zip` to `jobs/<slug>/`.
+  - **Pack and upload to Google Drive, never git (v6.4, `jobs/MUSE_DRIVE.md` §2):**
+    `python3 tools/pp_pack.py clips-export <slug> <folder> <folder>/clips.json --max-mb 1900`, then
+    `python3 tools/pp_drive.py put packs/<slug>_clips_*.zip --to <slug>`.
 - **Describe every image and clip.** It makes directing faster and more precise:
   - write `jobs/<slug>/desc.json` as `{"<id>": "what it shows, who, when, orientation, notable details"}`;
   - mention where the subject sits ("CEO left third, looking right").
@@ -86,8 +87,8 @@ For every person, place, product, document and moment in the research:
 ```bash
 cd studio
 python3 tools/pp_pack.py export <slug> --desc ../jobs/<slug>/desc.json --research ../jobs/<slug>/RESEARCH_<slug>.md
-cp packs/<slug>_assets.zip packs/<slug>_clips_*.zip ../jobs/<slug>/
-cd .. && git add jobs/<slug> && git commit -m "[<slug>] research + assets pack" && git pull --rebase && git push
+cp packs/<slug>_assets.zip ../jobs/<slug>/            # footage already went to Drive (pp_drive.py put)
+cd .. && git add jobs/<slug> jobs/_drive.json && git commit -m "[<slug>] research + assets pack" && git pull --rebase && git push
 ```
 - Keep the zip under 90 MB. If it is bigger, re-save large photos at 2000 px on the long side.
 - Do NOT commit `studio/engine/library/img` or `images.json` changes. Only `jobs/<slug>/` goes in.
@@ -114,8 +115,9 @@ A channel-wide footage library that every episode can use, next to each episode'
   - in `clips.json` add `"tags": ["money", "cash", "close-up", "hands"]` plus `desc`, `author`, `source`,
     `source_url` and `license`.
   - **No author, no entry:** CC BY needs the author.
-- **Pack:** `python3 tools/pp_pack.py clips-export stock <folder> <folder>/clips.json`, rename the parts to
-  `jobs/_stock/stock_library_<n>.zip` (continue the numbering; never rewrite an old part), then commit and push.
+- **Pack and upload to Google Drive `_stock/`, never git (v6.4, `jobs/MUSE_DRIVE.md` §3):**
+  `clips-export stock … --max-mb 1900`, rename the parts to `stock_library_<n>.zip` (continue the numbering from
+  `pp_drive.py ls _stock`; never reuse a number), then `python3 tools/pp_drive.py put packs/stock_library_<n>.zip --to _stock`.
 - **Two sources, one rule:** the episode pack holds what is specific to the story (the real people, places and events);
   the library holds what is generic. Don't duplicate library clips in an episode pack.
 

@@ -11,6 +11,8 @@
   python3 tools/pp_pack.py clips-export <slug> <folder of trimmed mp4> <clips.json>   (v6.2 stock footage, Muse)
         → packs/<slug>_clips_1.zip, _2.zip … (≤ 88 MB each). Claude imports them together with the assets pack:
   python3 tools/pp_pack.py import ../jobs/<slug>/<slug>_assets.zip ../jobs/<slug>/<slug>_clips_*.zip
+  python3 tools/pp_pack.py import drive:<slug>/<slug>_assets.zip "drive:<slug>/<slug>_clips_*.zip"   (v6.4: read from Google Drive, pp_drive.py)
+  python3 tools/pp_pack.py clips-export <slug> <folder> <clips.json> --max-mb 1900   (v6.4: bigger parts for Drive)
   python3 tools/pp_pack.py list packs/<slug>_assets.zip
   python3 tools/pp_pack.py music-export          → packs/music_library_1.zip, _2.zip … (MP3 128 kb/s, each ≤ 90 MB)
   python3 tools/pp_pack.py music-import <zip> [<zip> …]   → music/ merged (tracks added, library.json entries merged)
@@ -49,7 +51,9 @@ def export(slug, ids=None, prefix=None, desc=None, research=None):
     print(f'packed {len(meta)} images → {zp} ({os.path.getsize(zp) / 1e6:.1f} MB)'); print(catalog(meta, slug))
 
 def read_pack(zp):
-    z = zipfile.ZipFile(zp); P = json.loads(z.read('pack.json').decode('utf-8')); return z, P
+    if str(zp).startswith('drive:'): sys.path.insert(0, os.path.join(ROOT, 'tools')); import pp_drive; z = pp_drive.open_zip(zp)   # v6.4: big packs live on Drive
+    else: z = zipfile.ZipFile(zp)
+    P = json.loads(z.read('pack.json').decode('utf-8')); return z, P
 
 def imp(zp):
     z, P = read_pack(zp); P.setdefault('images', {}); r = load(); dst = os.path.join(LIB, 'img'); os.makedirs(dst, exist_ok=True); n = 0
@@ -72,8 +76,9 @@ def imp(zp):
             src = os.path.join(tmpd, os.path.basename(f))
             with z.open(f) as a, open(src, 'wb') as b: shutil.copyfileobj(a, b)
             cr = m.get('credit') or ' · '.join(x for x in (m.get('author'), m.get('source')) if x)
-            pp_clip.add(src, i, start=float(m.get('start', 0)), dur=float(m.get('dur', 6)), fps=int(m.get('fps', 24)), width=int(m.get('width', 1280)), credit=cr, lic=m.get('license', ''), desc=m.get('desc', ''), sync=False)
-            os.remove(src); nc += 1
+            try: pp_clip.add(src, i, start=float(m.get('start', 0)), dur=float(m.get('dur', 6)), fps=int(m.get('fps', 24)), width=int(m.get('width', 1280)), credit=cr, lic=m.get('license', ''), desc=m.get('desc', ''), sync=False); nc += 1
+            except subprocess.CalledProcessError: print(f'skipped clip {i}: ffmpeg cannot decode it (tell Muse to re-trim it)')
+            os.remove(src)
         r = load()
     for extra in [x for x in z.namelist() if x.endswith('.md') and '/' not in x and x != 'CATALOG.md']:
         os.makedirs(os.path.join(ROOT, 'research'), exist_ok=True); open(os.path.join(ROOT, 'research', extra), 'wb').write(z.read(extra)); print('research file →', 'research/' + extra)
@@ -149,8 +154,13 @@ if __name__ == '__main__':
     a = sys.argv[1:]; opt = lambda k: a[a.index('--' + k) + 1] if '--' + k in a else None
     if not a: print(__doc__)
     elif a[0] == 'export': export(a[1], opt('ids').split(',') if opt('ids') else None, opt('prefix'), opt('desc'), opt('research'))
-    elif a[0] == 'clips-export': clips_export(a[1], a[2], a[3])
-    elif a[0] == 'import': [imp(x) for x in a[1:]]   # several parts: pp_pack.py import <slug>_assets.zip <slug>_clips_1.zip …
+    elif a[0] == 'clips-export': clips_export(a[1], a[2], a[3], float(opt('max-mb') or 88))   # --max-mb 1900 for packs that go to Drive
+    elif a[0] == 'import':
+        args = []
+        for x in [x for x in a[1:] if not x.startswith('--')]:
+            if x.startswith('drive:') and any(c in x for c in '*?['): sys.path.insert(0, os.path.join(ROOT, 'tools')); import pp_drive; args += ['drive:' + p for p in pp_drive.match(x)]
+            else: args.append(x)
+        [imp(x) for x in args]   # several parts: pp_pack.py import <slug>_assets.zip <slug>_clips_1.zip …
     elif a[0] == 'music-export': music_export()
     elif a[0] == 'music-import': [music_import(z) for z in a[1:]]
     elif a[0] == 'list': z, P = read_pack(a[1]); print(z.read('CATALOG.md').decode('utf-8'))

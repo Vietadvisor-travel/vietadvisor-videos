@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """pp_stock — the channel's SHARED stock-footage library (v6.2), next to each episode's own clips pack.
 
-Muse builds the library once and grows it over time: jobs/_stock/stock_library_1.zip, _2.zip … (made with
+Muse builds the library once and grows it over time: on Google Drive _stock/stock_library_N.zip (v6.4, pp_drive.py), or
+locally in jobs/_stock/stock_library_1.zip, _2.zip … (made with
 `pp_pack.py clips-export stock <folder> <clips.json>`; ids start with `stock_`; every clip has desc, tags, author, licence).
 The library can hold hundreds of clips, so nothing is extracted until a story uses it:
 
@@ -29,14 +30,30 @@ def used():
     return json.load(open(USED)) if os.path.exists(USED) else {}
 
 
+def drive():
+    sys.path.insert(0, os.path.join(ROOT, 'tools')); import pp_drive; return pp_drive
+
+
+def open_zip(ref):
+    return drive().open_zip(ref) if ref.startswith('drive:') else zipfile.ZipFile(os.path.join(REPO, ref))
+
+
 def index(quiet=False):
-    idx = {}
-    for zp in zips():
-        with zipfile.ZipFile(zp) as z:
-            P = json.loads(z.read('pack.json').decode('utf-8'))
-            for i, m in P.get('clips', {}).items():
-                if m.get('file') in z.namelist():
-                    idx[i] = {**m, 'zip': os.path.relpath(zp, REPO)}
+    idx = {}; refs = [os.path.relpath(zp, REPO) for zp in zips()]
+    if drive().configured():   # v6.4: the library lives on Google Drive; only each zip's pack.json is read (a few KB)
+        refs += ['drive:' + p for p in drive().match('_stock/stock_library_*.zip', drive().files(True))]
+    cache = os.path.join(ROOT, 'research', 'drive_packs.json'); C = json.load(open(cache)) if os.path.exists(cache) else {}
+    for ref in refs:
+        stamp = ref + '|' + str((drive().files().get(ref[6:], {}) if ref.startswith('drive:') else {}).get('md5', ''))
+        if ref.startswith('drive:') and stamp in C: P, names = C[stamp]; names = set(names)
+        else:
+            with open_zip(ref) as z:
+                P = json.loads(z.read('pack.json').decode('utf-8')); names = set(z.namelist())
+            if ref.startswith('drive:'): C[stamp] = [P, sorted(names)]
+        for i, m in P.get('clips', {}).items():
+            if m.get('file') in names:
+                idx[i] = {**m, 'zip': ref}
+    os.makedirs(os.path.dirname(cache), exist_ok=True); json.dump(C, open(cache, 'w'))
     os.makedirs(os.path.dirname(IDX), exist_ok=True); json.dump(idx, open(IDX, 'w'), ensure_ascii=False, indent=1)
     U = used(); order = ['slug order'] + list(U.get('_order', []))
     rows = [f'# Shared stock library ({len(idx)} clips)', '',
@@ -48,7 +65,7 @@ def index(quiet=False):
         rows.append(f"| `{i}` | {m.get('desc', '—')} | {tags} | {m.get('dur', '?')} | {m.get('license', '')} · {m.get('author', '?')} | {', '.join(U.get(i, [])) or '—'} |")
     open(CAT, 'w', encoding='utf-8').write('\n'.join(rows) + '\n')
     if not quiet:
-        print(f'{CAT}: {len(idx)} library clips from {len(zips())} zip(s)')
+        print(f'{CAT}: {len(idx)} library clips from {len(refs)} zip(s)' + (f" ({sum(r.startswith('drive:') for r in refs)} on Drive)" if any(r.startswith('drive:') for r in refs) else ''))
     return idx
 
 
@@ -76,7 +93,7 @@ def pull(slug, stories):
         if i + '__000' in reg:
             continue
         m = idx[i]
-        with zipfile.ZipFile(os.path.join(REPO, m['zip'])) as z:
+        with open_zip(m['zip']) as z:
             src = os.path.join(tmp, os.path.basename(m['file']))
             with z.open(m['file']) as a, open(src, 'wb') as b: shutil.copyfileobj(a, b)
         cr = m.get('credit') or ' · '.join(x for x in (m.get('author'), m.get('source')) if x)

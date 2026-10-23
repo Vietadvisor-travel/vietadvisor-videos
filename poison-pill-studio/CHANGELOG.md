@@ -1,5 +1,27 @@
 # Poison Pill Studio: changelog
 
+## v6.4 (Oct 2026): big media on Google Drive, not git
+Muse's stock and episode footage reaches several GB; git and GitHub (100 MB per file) cannot hold it.
+- **`tools/pp_drive.py`** (Drive API v3, stdlib only):
+  - `put`: resumable upload in 64 MB chunks; skips a file already there with the same md5; creates
+    `PoisonPill_Media/` on first use and records its id in `jobs/_drive.json`.
+  - `check`, `ls`, `get`: full download with resume and md5 check.
+  - `share`: optional.
+  - Auth is OAuth `drive.file` (`GDRIVE_CLIENT_ID/SECRET/REFRESH_TOKEN`: private, and it sees only the files the
+    tools uploaded) or a read-only `GDRIVE_API_KEY` for a public link.
+- **Zips are read over HTTP range requests:**
+  - `pp_stock.py index` reads only each Drive zip's `pack.json` (cached by md5);
+  - `pp_stock.py pull` extracts only the clips a story uses;
+  - `pp_pack.py import "drive:<slug>/<slug>_clips_*.zip"` imports without a full download.
+  - Tested on a mock Drive: 2 KB to index and about 1 MB to pull one clip from a 300 MB zip.
+- **`pp_pack.py`:**
+  - `clips-export --max-mb 1900` for Drive parts;
+  - import skips an undecodable clip instead of failing the whole pack.
+- **Docs:**
+  - `jobs/DRIVE_SETUP.md`: the owner's one-time setup, in Vietnamese;
+  - `jobs/MUSE_DRIVE.md`: Muse's new packing and upload rules.
+  - CLAUDE.md step 2, MUSE_STANDING, HUONG_DAN and `.gitignore` (clips/stock zips are never committed) updated.
+
 ## v6.3 (Oct 2026): the scene script, an effects library that grows, motion like a film
 Owner verdict on ep. 4: "desperately simple: text sliding and shaking, a few repeated effects, a few 2D scenes", and
 the v6.2 quotas were "mechanical". Creativity must come second by second from the content, and every effect invented
