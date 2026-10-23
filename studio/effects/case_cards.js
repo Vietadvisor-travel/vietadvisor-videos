@@ -9,9 +9,10 @@
   // rows: NAME/role/TERM~…  (slash-separated fields)  · show: cards already on the desk · go: cue word of the new card (or 99 for none)
   ctx.save(); seam(P.in || 'none', P.out || 'none'); paperDesk({ lx: .5, ly: .5 });
   const rows = String(P.rows).split('~').map(r => r.split('/')), show = +(P.show || 0), t0 = at(P.go || 99), em = P.empty !== undefined ? +P.empty : -1, n = rows.length;
-  const cols = 3, cw = W * .27, ch = H * .34, gx = W * .5 - cw * 1.08, gy = H * .3, k = clamp((t - t0) / Math.max(.6, dur * .4)), z = lerp(1.12, 1, k * k * (3 - 2 * k));
+  const cols = 3, cw = W * .27, ch = H * .34, gx = W * .5 - cw * 1.08, gy = H * .3, k = clamp((t - t0) / Math.max(.6, dur * .4)), z = lerp(1.07, 1, k * k * (3 - 2 * k));
   if (P.title) text(P.title, W / 2, H * .08, { size: 44 * u, font: 'cond', col: '#cbbfa8', lw: 0, ls: 6 * u });
-  ctx.translate(W / 2, H * .52); ctx.scale(z, z); ctx.translate(-W / 2, -H * .52);
+  const nx = gx + (show % cols) * cw * 1.08, ny = gy + Math.floor(show / cols) * ch * 1.12 + H * .06, pk = show < n ? (1 - Math.abs(1 - 2 * Math.min(1, k * 1.2)) * 0 + k) : 0, ox = (W / 2 - nx) * .07 * pk, oy = (H * .52 - ny) * .06 * pk;
+  ctx.translate(W / 2 + ox, H * .52 + oy); ctx.scale(z, z); ctx.translate(-W / 2, -H * .52);
   rows.forEach((r, i) => { const cx = gx + (i % cols) * cw * 1.08, cy = gy + Math.floor(i / cols) * ch * 1.12 + H * .06, isNew = i === show, here = i < show || (isNew && t >= t0);
     const isEmpty = i === em; ctx.save();
     if (!here) { ctx.strokeStyle = 'rgba(203,191,168,.18)'; ctx.setLineDash([8 * u, 8 * u]); ctx.lineWidth = 2 * u; ctx.strokeRect(cx - cw / 2, cy - ch / 2, cw, ch); ctx.setLineDash([]); text(r[0], cx, cy, { size: 44 * u, font: 'cond', col: 'rgba(203,191,168,.35)', lw: 0 }); ctx.restore(); return; }

@@ -14,8 +14,8 @@ endcard: off
 # cine act=fall fx="code:@reel;clip:stock_money_cash_stack_04;move:in;z:.16;in:right;out:right"
 {urgent} The blame arrived **fast**.
 
-// CARD a5-02 · SEE: a coastline seen straight down from the air, surf on sand; the place and date set over it · SEAM in right
-# cine act=fall fx="code:@reel;clip:stock_world_aerial_coast_01;move:in;z:.1;in:right;txt:THAILAND · JULY 2018;tsize:80;tfont:impact;tat:In;ty:.16;sub:Greenwood arrested on Koh Samui"
+// CARD a5-02 · SEE: the DOJ release about Greenwood lifts off the desk and fills the frame; the place and date of his arrest set over it · SEAM in right
+# cine act=fall fx="code:@table;items:onecoin_doc_doj_greenwood@.5,.5,-3,.62;pan:0,0;lift:0;at:arrested;txt:KOH SAMUI, THAILAND · JULY 2018;tat:In;sub:Greenwood arrested (US Justice Department);in:right"
 In July 2018, Greenwood was arrested on the Thai island of Koh **Samui**.
 
 // CARD a5-03 · SEE: the real aerial of Los Angeles airport lifts and fills the frame, then drains to grey on "arrested" · SEAM out right
@@ -74,8 +74,8 @@ Konstantin, who testified about his sister's escape: time served, and **free**.
 # cine act=after fx="code:@case_cards;rows:GREENWOOD/the salesman/20 YEARS~SCOTT/the lawyer/10 YEARS~ARMENTA/the boyfriend/5 YEARS~DILKINSKA/head of compliance/4 YEARS~KONSTANTIN/the brother/34 MONTHS~RUJA IGNATOVA/charged, never tried/NEVER TRIED;empty:5;title:THE SENTENCES;show:5;go:Ruja;out:right"
 {grave} And Ruja? Charged on five counts, never **tried**. In law, she is presumed innocent.
 
-// CARD a5-17 · SEE: a city at dusk seen while landing — Luxembourg — the sequel arrives on a plane · SEAM in right
-# cine act=fall fx="code:@reel;clip:stock_city_night_landing_time_over_luxembourg_01;move:in;z:.1;in:right;txt:THE SEQUEL;tsize:84;tfont:impact;tat:Then;ty:.16"
+// CARD a5-17 · SEE: two prints on the desk: Athens airport (her escape) and Luxembourg (his) — circled one after the other · SEAM in right
+# cine act=fall fx="code:@table;items:onecoin_athens_airport@.3,.5,-4,.42~onecoin_luxembourg@.72,.5,3,.42;pan:0,0;mark:0@escape,1@sequel;in:right"
 Then even her escape got a **sequel**.
 
 // CARD a5-18 · SEE: the desk: a real print of Luxembourg's old town at night; his name and role set over it as it lifts · SEAM out right

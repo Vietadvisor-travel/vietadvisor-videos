@@ -30,12 +30,9 @@ Each package came with tokens, and you "**mined**" the tokens into coins.
 # cine act=rise fx="code:@backoffice;bg:stock_screen_loading_04;title:ONECOIN · MINING;ry:.28;rows:Status=MINING;go:Mining;hero:00:00:10;hlab:TIME LEFT;hat:Mining;timer:10;tat:timer;to:COINS ADDED;out:right"
 Mining meant a **timer**. When it ran out, a number appeared in your account. (J)
 
-// CARD a2-06 · SEE: the city at night, blurred; a window rises into it on "office" — inside, hands at a keyboard; the camera pushes into the window until the typing is the world on "typed" · SEAM in right
-# cine act=rise fx="code:@framed_insert;outside:onecoin_clip_city_night;inside:stock_screen_email_02;rise:office;fill:typed"
-And the price of that number? The office in Sofia **typed** it in.
-
 // CARD a2-07 · SEE: the price field on the company screen: 0.50 types in on "Fifty"; on "ninety" the hero flips to 29.95 — set by the company, not a market · SEAM out right
 # cine act=rise fx="code:@backoffice;bg:onecoin_clip_datacenter;title:ONECOIN · PRICE ADMIN;ry:-.06;rows:Launch=0.50 EUR~January 2019=29.95 EUR;go:Fifty;gap:1.6;hero:0.50 EUR;hlab:PRICE PER COIN · SET BY THE COMPANY;hat:Fifty;to:29.95 EUR;toat:ninety;note:SDNY indictment;out:right"
+And the price of that number? The office in Sofia **typed** it in.
 Fifty euro cents at launch. Twenty-nine ninety-five by **2019**.
 
 // CARD a2-08 · SEE: a real trading screen of candles flickering; it slows on "never" and freezes grey on "market" — the one place the coin never appeared · SEAM in right
@@ -58,8 +55,8 @@ So on screen, your balance only ever **grew**.
 # cine act=rise fx="code:@blocks;vals:120000,21;labs:ONECOIN (CLAIMED),BITCOIN (EVER);txts:120 BILLION,21 MILLION;go:promised;gap:2.6;hl:0;hlat:promised;in:right"
 The company promised 120 billion coins. Bitcoin will only ever have twenty-one **million**.
 
-// CARD a2-13 · SEE: a real crowd on bleachers clapping at an event; the camera pushes into the faces · SEAM in right, out in
-# cine act=rise fx="code:@reel;clip:stock_people_applause_09;move:in;z:.14;in:right;out:in"
+// CARD a2-13 · SEE: the pyramid is born: one living portrait, then on "also" it sprouts its first two recruits · SEAM in right, out in
+# cine act=rise fx="code:@network;clips:stock_people_applause_09,stock_crowds_street_scramble_crossing_at_robinso_01;levels:2;go:also;top:BUYER = SELLER;flow:salesman;in:right;out:in"
 {excited} And every buyer was also a **salesman**.
 
 // CARD a2-14 · SEE: a pyramid of living portraits grows down: one buyer, then two recruits on "paid", then their recruits on "recruits" · SEAM in Z
@@ -74,8 +71,8 @@ At the very top, Greenwood took five percent of all sales worldwide: over three 
 # cine act=doubt fx="code:@split_note;img:onecoin_euro_cash;cut:.6;lab1:60% CASH;lab2:40% LOCKED;at:Sixty;lock:locked;in:right"
 {wry} But your own bonus? Sixty percent cash. Forty percent locked inside the **system**. (J)
 
-// CARD a2-17 · SEE: a hand taps a card on a reader; the footage freezes grey on "out" — the payment never goes through · SEAM in right
-# cine act=doubt fx="code:@reel;clip:stock_money_card_payment_06;move:in;z:.1;in:right;slow:hard;freeze:out;mono:out"
+// CARD a2-17 · SEE: the member's cash account: a withdrawal submitted, the daily limit reached; WITHDRAW flips to PENDING on "out" · SEAM in right
+# cine act=doubt fx="code:@backoffice;bg:stock_screen_ticker_13;title:ONECOIN · CASH ACCOUNT;ry:.3;rows:Withdraw request=SUBMITTED~Daily limit=REACHED;go:even;gap:.5;hero:WITHDRAW;hlab:YOUR CASH;hat:even;to:PENDING;toat:out"
 And even the cash was hard to get **out**.
 
 // CARD a2-18 · SEE: the company's own exchange screen: sell orders PENDING type in; ONLINE flips to OFFLINE on "offline" · SEAM out right

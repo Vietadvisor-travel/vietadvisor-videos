@@ -30,12 +30,12 @@ In 2024, the United States raised the reward to five million **dollars**.
 # cine act=after fx="code:@email_page;head:BULGARIAN POLICE MEMO · leaked, reported February 2023;lines:Claim: she was killed~in November 2018~Document: genuine~Claim: second-hand, unverified;src:Reconstruction of the reported claim (BIRD) · not a copy of the memo;circle:genuine@real,unverified@unverified;zoom:2;zat:But;rot:1.2;out:right"
 The document is real. But the claim inside it is second-hand, and **unverified**.
 
-// CARD a6-06 · SEE: a globe in extreme close-up, place names gliding past — the search still on · SEAM in right
-# cine act=after fx="code:@reel;clip:stock_world_globe_06;move:right;z:.1;in:right"
+// CARD a6-06 · SEE: prints of every place she has been rumoured to be — Sofia, Dubai, Cape Town, the Black Sea — slide past under the lamp; none confirmed · SEAM in right
+# cine act=after fx="code:@table;items:onecoin_sofia@.16,.45,-5,.32~onecoin_dubai@.42,.55,4,.32~onecoin_cape_town@.66,.45,-3,.32~onecoin_black_sea@.88,.55,5,.3;pan:0,.08;txt:SIGHTINGS SINCE 2017: NONE CONFIRMED;tat:So;in:right"
 So the FBI still hunts her as if she's **alive**.
 
-// CARD a6-07 · SEE: a plane climbing away (her own footage pack); it slows and greys on "Athens" — the trail ends there · SEAM out right
-# cine act=after fx="code:@reel;clip:onecoin_clip_takeoff;move:in;z:.08;slow:seeing;mono:Athens;txt:NO CONFIRMED SIGHTING SINCE;tsize:60;tfont:impact;tat:confirmed;ty:.16;sub:Athens · 25 October 2017;out:right"
+// CARD a6-07 · SEE: callback: the Athens airport print again, lifting and greying — the trail still ends here · SEAM out right
+# cine act=after fx="code:@table;items:onecoin_athens_airport@.5,.5,-3,.56;pan:0,0;lift:0;at:Nobody;mono:Athens;txt:LAST CONFIRMED: ATHENS;tat:Nobody;sub:25 October 2017;out:right"
 Nobody has confirmed seeing her since **Athens**.
 
 // CARD a6-08 · SEE: a printing press running sheet after sheet — the bill being printed · SEAM in right
@@ -43,19 +43,19 @@ Nobody has confirmed seeing her since **Athens**.
 What we can confirm is the **bill**.
 
 // CARD a6-09 · SEE: an AI plate of a small farm plot at dusk (illustration, not archive) lifts from the desk and fills the frame; the place and the BBC finding set over it · SEAM in right
-# cine act=lesson fx="code:@table;items:onecoin_art_uganda_plot@.5,.5,-3,.56;pan:0,0;lift:0;at:Uganda;txt:UGANDA;tat:BBC;sub:farmers sold land and livestock to buy in (BBC);in:right"
+# cine act=lesson fx="code:@table;items:onecoin_art_uganda_plot@.5,.5,-3,.56;pan:0,0;lift:0;at:Uganda;txt:UGANDA;tat:In;sub:AI illustration · farmers sold land and livestock to buy in (BBC);in:right"
 {sad} In Uganda, the BBC found farmers who had sold land and **livestock** to buy in.
 
-// CARD a6-10 · SEE: a phone tapped on a payment terminal; the German count sets above it · SEAM in right, out right
-# cine act=lesson fx="code:@reel;clip:stock_money_card_payment_05;move:in;z:.1;in:right;out:right;txt:17,552 VICTIMS · ONE PROCESSOR;tsize:70;tfont:impact;tat:Germany;ty:.16;sub:Germany · Bielefeld prosecutors"
+// CARD a6-10 · SEE: the German finding typed on a sheet under the lamp; the marker underlines victims and processor · SEAM in right, out right
+# cine act=lesson fx="code:@email_page;head:BIELEFELD PROSECUTORS · GERMANY;lines:One payment processor~17,552 victims~December 2015 – August 2016;src:As reported by The Block, October 2022;under:victims@victims,processor@processor;rot:1;in:right;out:right"
 In Germany, investigators traced the money of 17,552 victims through a single payment **processor**.
 
 // CARD a6-11 · SEE: the shadows of a crowd walking at sunset — friends and family, no faces; the place sets above · SEAM in right
 # cine act=lesson fx="code:@reel;clip:stock_people_silhouette_06;move:right;z:.1;in:right;txt:GLASGOW;tsize:90;tfont:impact;tat:Glasgow;ty:.16;sub:Jen McAdam brought in friends and family"
 In Glasgow, Jen McAdam had brought in friends and family.
 
-// CARD a6-12 · SEE: a real photo of euro notes burns away from the centre with a glowing edge, leaving a rain-dark window behind it · SEAM out right
-# cine act=lesson fx="code:@burn_away;a:onecoin_euro_cash;b:onecoin_art_mood_rain;go:quarter"
+// CARD a6-12 · SEE: a real photo of euro notes burns away from the centre with a glowing edge, leaving a rain-dark window; her words set over it, attributed · SEAM out right
+# cine act=lesson fx="code:@burn_away;a:onecoin_euro_cash;b:onecoin_art_mood_rain;go:quarter;txt:“thrown a quarter of a million euros away”;tat:Together;sub:Jen McAdam · BBC, 2019"
 {sad} Together, she said, they had "thrown a quarter of a million euros **away**."
 
 // CARD a6-13 · SEE: two blocks: lost (more than $4 billion) and returned ($40 million), the second barely a line on the floor · SEAM in right

@@ -14,12 +14,9 @@ endcard: off
 # cine act=setup fx="code:@table;items:onecoin_sofia@.08,.36,6,.3~onecoin_ruja@.48,.5,-3,.62~onecoin_hq_door@.88,.6,-5,.32;pan:-.06,.1;mark:1@Germany;in:right;out:right"
 Ruja Ignatova was born in **Ruse**, Bulgaria, in 1980, and grew up in Germany.
 
-// CARD a1-02 · SEE: a cream CV card fills the frame under the lamp, her name set large, the rows still empty — waiting to be filled · SEAM in right
-# cine act=setup fx="code:@cv_card;name:Dr. Ruja Ignatova;rows:LAW DOCTORATE/University of Konstanz~CONSULTANT/McKinsey & Company~OXFORD/as marketed~2012/convicted of fraud, Germany;step:0;go:paper;in:right"
-On paper, the founder was the most **credible** person in any room.
-
 // CARD a1-03 · SEE: the first row springs onto the CV on "doctorate" and the camera rides down to it
-# cine act=setup fx="code:@cv_card;name:Dr. Ruja Ignatova;rows:LAW DOCTORATE/University of Konstanz~CONSULTANT/McKinsey & Company~OXFORD/as marketed~2012/convicted of fraud, Germany;step:1;go:doctorate"
+# cine act=setup fx="code:@cv_card;name:Dr. Ruja Ignatova;rows:LAW DOCTORATE/University of Konstanz~CONSULTANT/McKinsey & Company~OXFORD/as marketed~2012/convicted of fraud, Germany;step:1;go:doctorate;in:right"
+On paper, the founder was the most **credible** person in any room.
 A real law **doctorate** from the University of Konstanz.
 
 // CARD a1-04 · SEE: the second row lands on "McKinsey" — a quick punch, the shortest beat of the act
@@ -42,8 +39,8 @@ She and her father had stripped a foundry until it went **bankrupt**. Her senten
 # cine act=rise fx="code:@reel;clip:stock_money_coins_falling_06;move:in;z:.08;in:right;out:right;txt:BIGCOIN · 2013;tsize:76;tfont:impact;ty:.16;tat:BigCoin;tcol:#2a2219;sub:her first crypto scheme;grade:warm"
 Then, in 2013, she tried a first crypto scheme, **BigCoin**, alongside a Swedish salesman named Sebastian Greenwood.
 
-// CARD a1-09 · SEE: hands typing on a laptop in an office at night, city lights beyond the window; the date sets on "June" · SEAM in right, out in
-# cine act=rise fx="code:@reel;clip:stock_screen_email_08;move:in;z:.1;in:right;out:in;txt:11 JUNE 2014;tsize:72;tat:In;ty:.15"
+// CARD a1-09 · SEE: the June email itself, whole, on the desk under the lamp — before anyone reads it · SEAM in right, out in
+# cine act=rise fx="code:@email_page;head:FROM  Ruja Ignatova · TO  Sebastian Greenwood · 11 JUNE 2014 (excerpt);lines:you as the magic sales machine - and me~as someone who really can work with~numbers, legal and back you up . . .~we could really make it big - like MLM~meets bitch of wall street ;-);src:Quoted in a US Justice Department release, 16 December 2022;in:right;out:in"
 In June 2014 she sent Greenwood an email pitching a bigger **deal**.
 
 // CARD a1-10 · SEE: that email on the desk; as her voice reads it the marker underlines "magic" and "numbers" · SEAM in Z
@@ -55,8 +52,8 @@ In her words:
 # cine act=rise fx="code:@email_page;head:FROM  Ruja Ignatova · TO  Sebastian Greenwood · 11 JUNE 2014 (excerpt);lines:you as the magic sales machine - and me~as someone who really can work with~numbers, legal and back you up . . .~we could really make it big - like MLM~meets bitch of wall street ;-);src:Quoted in a US Justice Department release, 16 December 2022;zoom:3;zat:0;circle:MLM@MLM,street@street;out:right"
 @ruja: "…like MLM meets bitch of wall **street**." (J)
 
-// CARD a1-12 · SEE: gold coins scattered on wood, gleaming; the footage slows on "nickname" and freezes grey on "trashy" — their own word for it, set above the coins · SEAM in right
-# cine act=rise fx="code:@reel;clip:stock_money_gold_03;move:in;z:.1;in:right;slow:nickname;freeze:trashy;mono:trashy;txt:“TRASHY COIN”;tsize:96;tfont:impact;tat:nickname;ty:.2;sub:the founders' private nickname, 2014 emails (DOJ)"
+// CARD a1-12 · SEE: the real OneCoin logo on the company's glass door lifts off the desk and fills the frame; their own nickname sets over it and the picture drains to grey on "trashy" · SEAM in right
+# cine act=rise fx="code:@table;items:onecoin_hq_door@.5,.5,-3,.6;pan:0,0;lift:0;at:nickname;mono:trashy;txt:“TRASHY COIN”;tat:nickname;sub:the founders' private nickname, 2014 emails (DOJ);in:right"
 In their private emails, the two founders even had a nickname for their product: "trashy **coin**." (J)
 
 // CARD a1-13 · SEE: the exit-strategy email again, the motif, seen whole on the desk; the camera pushes in on "exit" · SEAM in right, out in

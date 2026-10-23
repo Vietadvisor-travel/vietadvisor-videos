@@ -9,9 +9,9 @@
   // head: lines above a rule (· separated); lines: body lines (~ separated); circle: word@cue,word@cue; under: word@cue; zoom: target line index; zat: cue word
   ctx.save(); seam(P.in || 'none', P.out || 'none'); paperDesk({ lx: .5, ly: .4 });
   const head = String(P.head || '').split('·').map(s => s.trim()).filter(Boolean), lines = String(P.lines || '').split('~').map(s => s.trim());
-  const pw = W * .56, ph = H * 1.05, fs = 44 * u, lh = fs * 1.5, top = H * .06;
+  const pw = W * .66, ph = H * .84, fs = 52 * u, lh = fs * 1.45, top = H * .08;
   const z = P.zoom !== undefined ? clamp(p(P.zat || 0, 1.6, 'inOut')) : 0, zl = +(P.zoom || 0), ty = top + H * .08 + head.length * 40 * u + 60 * u + zl * lh;
-  const sc = lerp(1, 1.55, z), drift = clamp(t / Math.max(1, dur)) * .02;
+  const sc = lerp(1.08, 1.45, z), drift = clamp(t / Math.max(1, dur)) * .02;
   ctx.translate(W / 2, H / 2); ctx.scale(sc + drift, sc + drift); ctx.translate(-W / 2, -lerp(H / 2, ty, z)); ctx.translate(W / 2, 0); ctx.rotate((+P.rot || -1.2) * Math.PI / 180);
   const key = 'pg:' + P.head + P.lines + P.src + W, PG = window.__pages || (window.__pages = {}); let pg = PG[key];
   const F = (typeof FONT !== 'undefined' ? FONT : {}), x = pw * .09, pos = {};

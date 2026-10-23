@@ -1,4 +1,4 @@
-# Effects library (34)
+# Effects library (35)
 
 Every effect was invented for one moment of one film. Use it as `fx="code:@<name>;<param>:<value>…"`, adapt a copy under a new name, or invent a new one and save it (`node tools/pp_fx.mjs save …`).
 
@@ -37,4 +37,5 @@ Every effect was invented for one moment of one film. Use it as `fx="code:@<name
 | ![](previews/tear_reveal.jpg) | `@tear_reveal` | the whole picture tears in two like paper with fibrous edges, revealing footage beneath | a, b, go | transition,paper,tear,footage,collapse | demo-kit (fx kit showcase) |
 | ![](previews/tokens_per_coin.jpg) | `@tokens_per_coin` | one coin equals a grid of tokens that grows from N to M dots on the spoken word: the hidden dilution made countable | — | dilution,ratio,tokens,count,hidden-cost | onecoin a2: the mining difficulty quietly rose: from 44 tokens per coin to 359 |
 | ![](previews/typed_price_staircase.jpg) | `@typed_price_staircase` | a hand-set price drawn as a gold staircase line (never a market wiggle) from a start price to an end price, over a dim photo of the office that set it | — | price,chart,manipulation,line,growth | onecoin a2: Fifty euro cents at launch. 29.95 by 2019 |
+| — | `@wiretap` | a phone lies on the desk mid-call; the caller's initials sit on the screen, a live waveform runs and the call timer counts; on a word a red REC lamp and a label slide in — someone else is listening | caller, sub, rec, lab, heart, in, out | surveillance, informant, phone, recording, betrayal, fbi | onecoin v2 (it was her boyfriend) |
 | ![](previews/word_cut_montage.jpg) | `@word_cut_montage` | one clip per key word, hard cut on the word with a zoom-through seam (blur out, land pushing in) | clips, keys | footage,montage,cut,rhythm,stock | demo-stock (stock-as-material test) |

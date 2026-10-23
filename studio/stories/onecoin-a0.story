@@ -14,8 +14,8 @@ endcard: off
 # cine act=setup fx="code:@table;items:onecoin_wembley_night@.22,.42,-5,.36~onecoin_doc_fbi_wanted@.52,.55,4,.5~onecoin_ruja_stage@.86,.45,-3,.42;pan:0,.3;lift:2;at:stage;live:onecoin_clip_ruja_stage;out:right"
 On Saturday, the eleventh of June, 2016, a woman in a red gown walked onto the stage at Wembley Arena.
 
-// CARD a0-02 · SEE: the desk again: the real Wembley exterior and an arena-bowl print; on "Thousands" the arena print lifts, fills the frame and fills with a live crowd · SEAM in right, out in
-# cine act=setup fx="code:@table;items:onecoin_wembley_night@.24,.46,-4,.36~onecoin_wembley_interior@.64,.5,3,.46;pan:0,.1;lift:1;at:Thousands;live:stock_people_applause_02;in:right;out:in"
+// CARD a0-02 · SEE: the desk: the real Wembley Arena exterior at night lifts and fills the frame on "Thousands" — the building they filled · SEAM in right, out in
+# cine act=setup fx="code:@table;items:onecoin_ruja_fbi@.2,.44,-5,.34~onecoin_wembley_night@.6,.5,3,.5;pan:0,.1;lift:1;at:Thousands;txt:WEMBLEY ARENA · LONDON;tat:arena;in:right;out:in"
 Thousands of her investors filled the arena.
 
 // CARD a0-03 · SEE: the real close shot of her at the microphone (FBI footage); her verbatim promise sits above her, attributed, and lands dead still · SEAM in Z, out right
