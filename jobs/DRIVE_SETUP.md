@@ -63,6 +63,14 @@ Làm cho **cả 2 nơi**: môi trường của Claude Code (repo `vietadvisor-vi
 - **Network access:** phải cho phép `www.googleapis.com` và `oauth2.googleapis.com`. Môi trường hiện tại đã vào được;
   nếu sau này bị chặn thì thêm 2 tên miền này vào Allowed domains.
 - Phiên mới sẽ tự nhận biến; phiên đang mở thì không.
+- **Muse chạy trên máy tính** (không có phần cài đặt môi trường): tạo file `~/.config/poisonpill/drive.env`, nằm ngoài
+  repo nên không bao giờ lên git, gồm 3 dòng:
+  ```
+  GDRIVE_CLIENT_ID=...
+  GDRIVE_CLIENT_SECRET=...
+  GDRIVE_REFRESH_TOKEN=...
+  ```
+  `pp_drive.py` tự đọc file này.
 
 ## Bước 4. Kiểm tra
 - Lần tải lên đầu tiên của Muse sẽ **tự tạo thư mục `PoisonPill_Media`** trong My Drive của anh, rồi đẩy mã thư mục lên

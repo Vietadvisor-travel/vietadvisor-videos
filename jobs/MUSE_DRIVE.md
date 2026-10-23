@@ -9,7 +9,8 @@
 ## 0. Before the first upload
 1. `git pull` (you need `studio/tools/pp_drive.py`).
 2. Check that the environment has `GDRIVE_CLIENT_ID`, `GDRIVE_CLIENT_SECRET` and `GDRIVE_REFRESH_TOKEN`
-   (`env | grep -c GDRIVE_` prints 3).
+   (`env | grep -c GDRIVE_` prints 3), or that the private file `~/.config/poisonpill/drive.env` holds them (never
+   inside the repo; never print it).
    - If not, stop and tell the owner: "cần cài chìa khoá Drive theo jobs/DRIVE_SETUP.md".
    - Never ask for the values in chat.
 3. Network: `www.googleapis.com` and `oauth2.googleapis.com` must be reachable.

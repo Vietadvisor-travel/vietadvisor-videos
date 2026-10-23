@@ -32,6 +32,14 @@ API = os.environ.get('PP_DRIVE_API', 'https://www.googleapis.com/drive/v3'); UPL
 TOKEN_URL = os.environ.get('PP_DRIVE_TOKEN', 'https://oauth2.googleapis.com/token'); CFG = os.path.join(REPO, 'jobs', '_drive.json'); FILES = os.path.join(ROOT, 'research', 'drive_files.json')
 
 
+# Credentials may also sit in a private file outside the repo (a desktop machine without environment settings):
+# ~/.config/poisonpill/drive.env with lines KEY=value. Real environment variables win.
+for _f in (os.environ.get('PP_DRIVE_ENV', ''), os.path.expanduser('~/.config/poisonpill/drive.env')):
+    if _f and os.path.exists(_f):
+        for _l in open(_f, encoding='utf-8'):
+            _m = re.match(r'\s*(?:export\s+)?(GDRIVE_\w+)\s*=\s*"?([^"\n]*)"?', _l)
+            if _m: os.environ.setdefault(_m.group(1), _m.group(2).strip())
+        break
 _TOK = {'t': '', 'exp': 0}
 def oauth():
     return all(os.environ.get(k) for k in ('GDRIVE_CLIENT_ID', 'GDRIVE_CLIENT_SECRET', 'GDRIVE_REFRESH_TOKEN'))
