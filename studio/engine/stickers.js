@@ -16,7 +16,7 @@ const IMG = new Proxy(_IMG, { get(o, id) { if (id in o || typeof id !== 'string'
   _ppLRU.push(id); if (_ppLRU.length > 900) { const old = _ppLRU.shift(); delete o[old]; } return im; } });
 window.renderReady = async t => { renderEpisode(t); if (!_ppPend.size) return; for (let k = 0; k < 3 && _ppPend.size; k++) await Promise.all([..._ppPend]); renderEpisode(t); };
 function loadImages() { // decode a few at a time and retry: hundreds of parallel decodes make Chromium drop some (seen on ep. 4)
-  const todo = Object.entries(window.IMAGES).filter(([id, m]) => !IMG[id] && m.data);
+  const todo = Object.entries(window.IMAGES).filter(([id, m]) => m.data && !_IMG[id])   // _IMG, not IMG: touching the proxy would start streaming every footage frame;
   const one = async ([id, m]) => { for (let k = 0; k < 4; k++) { const im = new Image(); im.src = m.data; try { await im.decode(); IMG[id] = im; return; } catch (e) { await new Promise(r => setTimeout(r, 150 * (k + 1))); } } const im = new Image(); im.src = m.data; IMG[id] = im; console.warn('image failed', id); };
   let i = 0; const worker = async () => { while (i < todo.length) await one(todo[i++]); }; return Promise.all(Array.from({ length: 6 }, worker)); }
 const _stk = {};
