@@ -9,6 +9,8 @@ not "wow" enough (sparse, not polished). Creativity matters most. Muse now sourc
 - **Packing footage:** `pp_pack.py clips-export` (Muse) and multi-zip `import` (Claude). Clips are imported at 24 fps
   and 1280 px.
 - **`clip(id, start, speed)`** in custom scenes: footage inside masks, phones, windows and split screens.
+- **Shared stock library** (`jobs/_stock/stock_library_*.zip`, `pp_stock.py index | find | pull`): indexed by setup;
+  only the clips a story uses are extracted; usage is tracked across episodes.
 - **`captions: off`** in the story header removes burned-in captions for the whole act.
 - **`pp_layout.mjs`:** automatic layout QA on the real drawn frame. EDGE flags type outside the 3.5 % safe area;
   OVERLAP flags type colliding with type. Annotated JPGs are written. The gate is 0 flags.

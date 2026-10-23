@@ -93,6 +93,32 @@ cd .. && git add jobs/<slug> && git commit -m "[<slug>] research + assets pack" 
 - Do NOT commit `studio/engine/library/img` or `images.json` changes. Only `jobs/<slug>/` goes in.
 - Reply to the owner: the slug, the number of images (real / AI), the number of clips (and parts), the 5 most surprising facts, and the risks.
 
+### Shared stock library (once, then grow it every week)
+A channel-wide footage library that every episode can use, next to each episode's own clips pack:
+- **What goes in:** generic, reusable footage that fits business, finance and crime documentaries:
+  - city aerials by night and day (New York, London, Frankfurt, Hong Kong, Dubai, Singapore…);
+  - trading floors, tickers and screens;
+  - cash counting, coins, gold, safes and vaults;
+  - servers, code and typing;
+  - factories, ports and containers;
+  - offices empty and full, boardrooms, corridors;
+  - courthouses, gavels, handcuffs, police lights;
+  - airports, planes, passports, departures boards;
+  - crowds, applause, conferences, stages;
+  - phones, notifications, newspapers printing;
+  - mood: rain, fog, storms, sunsets, smoke, embers.
+- **Size:** 200–600 clips over time. Prefer variety: every subject in 3–4 shot sizes and directions.
+- **Ids:** `stock_<category>_<what>_<nn>`, e.g. `stock_money_cash_counting_02`, `stock_city_newyork_aerial_night_01`.
+- **Per clip:**
+  - trim it to its best 2–8 s, as for episode clips;
+  - in `clips.json` add `"tags": ["money", "cash", "close-up", "hands"]` plus `desc`, `author`, `source`,
+    `source_url` and `license`.
+  - **No author, no entry:** CC BY needs the author.
+- **Pack:** `python3 tools/pp_pack.py clips-export stock <folder> <folder>/clips.json`, rename the parts to
+  `jobs/_stock/stock_library_<n>.zip` (continue the numbering; never rewrite an old part), then commit and push.
+- **Two sources, one rule:** the episode pack holds what is specific to the story (the real people, places and events);
+  the library holds what is generic. Don't duplicate library clips in an episode pack.
+
 ### Music library (once, and again when you add tracks)
 - Build it with `pp_music.py add` (references/music.md: ≥ 3 instrumental tracks per mood, safe licences only).
 - Pack it. The tool transcodes to MP3 128 kb/s and splits into parts of ≤ 90 MB each:

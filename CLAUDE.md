@@ -9,6 +9,9 @@
   - `<slug>_clips_1.zip`, `_2.zip` … (v6.2): lots of stock and archival footage (MP4, 2–8 s, with author + licence);
     footage now leads the film;
   - once only: `jobs/_music/music_library_*.zip` (MP3, split into parts of ≤ 90 MB; `setup.sh` imports them).
+  - **the shared stock library** (v6.2, grows over time): `jobs/_stock/stock_library_*.zip`. Generic footage for every
+    episode: action, mood, texture, places, objects. Ids start with `stock_`. `setup.sh` indexes it into
+    `studio/research/stock_catalog.md`.
 - **Claude Code** (you, in this repo): everything else. Direction, script, storyboard, custom scenes, voice, render,
   critic. The owner sends a single line.
 
@@ -21,8 +24,14 @@ The rulebook is `poison-pill-studio/` (SKILL.md and references/). The engine wit
 2. **Load the sources:**
    - Run `cd studio && python3 tools/pp_pack.py import ../jobs/<slug>/<slug>_assets.zip ../jobs/<slug>/<slug>_clips_*.zip`
      (clips stream from disk; any number is fine).
-   - Read `jobs/<slug>/RESEARCH_<slug>.md` and the printed image catalogue (also saved as
-     `studio/research/<slug>_catalog.md`).
+   - Read `jobs/<slug>/RESEARCH_<slug>.md`, the printed catalogue of the episode's images and clips (also saved as
+     `studio/research/<slug>_catalog.md`), and the shared library catalogue `studio/research/stock_catalog.md`.
+   - **Two footage sources, used together:**
+     - the episode's own clips for named people, places and events;
+     - the shared library for generic action, mood and texture.
+     - `python3 tools/pp_stock.py find <words>` finds library clips for a beat.
+     - Avoid library clips used in the last 3 episodes (the catalogue's "used in" column), except for the declared
+       motif.
    - **Use only catalogue ids.** Where no image exists, use AI moment art from the pack, or a custom scene over a picture. Never draw a
      real person.
 3. **Direct:**
@@ -57,6 +66,8 @@ The rulebook is `poison-pill-studio/` (SKILL.md and references/). The engine wit
    - Save it as `jobs/<slug>/EPISODE_<slug>.md`.
 4. **Build:**
    - Write `studio/stories/<slug>-a0.story … -aN.story`.
+   - Run `python3 tools/pp_stock.py pull <slug> stories/<slug>-a*.story`. It extracts only the library clips the
+     stories use and records them as used. Run it again after every story edit that adds a `stock_` clip.
    - Run `node tools/pp_scriptlint.mjs` (≥ 8.5) and `node tools/pp_lint.mjs` on each act: 0 errors and ≥ 9.0.
    - Run **`node tools/pp_layout.mjs` on each act: 0 flags** (type outside the safe area or colliding). Never render
      with a flag.

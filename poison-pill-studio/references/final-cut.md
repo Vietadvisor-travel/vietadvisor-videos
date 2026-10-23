@@ -8,7 +8,7 @@ an episode may use more footage than stills.
 ## A. The mix (replaces the §1 table)
 | Kind | Share of beats | Notes |
 |---|---|---|
-| **Moving footage leads**: archival or stock clips are the main picture | **≥ 45 %** | clips stream from disk (v6.2), so 60–150 clips per episode is fine; 2–8 s each |
+| **Moving footage leads**: archival or stock clips are the main picture | **≥ 45 %** | clips stream from disk (v6.2), so 60–150 clips per episode is fine; 2–8 s each. Two sources: the episode's clips pack (the named people, places and events) and the shared library `stock_*` (`pp_stock.py find` / `pull`; generic action, mood, texture) |
 | Real stills brought alive (scene, parallax, rack focus) | 15–30 % | people, documents, places without footage |
 | AI moment art | ≤ 20 % | only for moments with no footage and no photo |
 | Custom code scenes | 8–14 beats | built ON footage or photos: masks, split screens, screen inserts, data drawn onto the real picture |

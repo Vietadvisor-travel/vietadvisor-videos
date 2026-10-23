@@ -27,6 +27,11 @@ Claude tự làm hết, rồi gửi anh:
 - file `UPLOAD_GUIDE_<slug>.txt`: hướng dẫn đăng từng ô trong YouTube Studio, tiêu đề, mô tả có chương và ghi công, tag, bình luận ghim, việc cần làm trong 48 giờ đầu.
 Một tập 10 phút mất khoảng 1–2 tiếng, phần lớn là thời gian render. Anh không cần ngồi chờ.
 
+## THƯ VIỆN VIDEO STOCK DÙNG CHUNG
+Ngoài video riêng của từng tập, Muse dựng một kho video stock dùng chung cho cả kênh và bổ sung dần (mục "Shared stock library" trong `MUSE_STANDING.md`).
+Để Muse bổ sung kho, nhắn: `bổ sung thư viện stock: <chủ đề, ví dụ: tiền mặt, sàn chứng khoán, sân bay>`.
+Claude tự lấy clip trong kho khi làm tập mới, và tránh dùng lại clip đã xuất hiện trong 3 tập gần nhất.
+
 ## KHÁC (khi cần)
 - **Lên lịch tháng:** nhắn Muse `nghiên cứu chủ đề tháng`, rồi nhắn Claude Code `lịch 30 ngày từ jobs/TOPICS_<tháng>.md`.
 - **Muốn sửa video:** trong cùng phiên Claude Code, nhắn chỗ chưa ưng (kèm ảnh chụp càng tốt).
