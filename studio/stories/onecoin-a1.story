@@ -14,28 +14,28 @@ endcard: off
 # cine act=setup fx="code:@table;items:onecoin_sofia@.08,.36,6,.3~onecoin_ruja@.48,.5,-3,.62~onecoin_hq_door@.88,.6,-5,.32;pan:-.06,.1;mark:1@Germany;in:right;out:right"
 Ruja Ignatova was born in **Ruse**, Bulgaria, in 1980, and grew up in Germany.
 
-// CARD a1-02 · SEE: a cream CV card swings into the light beside her name, empty but for the name, as if waiting to be filled · SEAM in right
-# cine act=setup fx="code:@credentials_cv;step:0;go:paper;plate:onecoin_art_frosted_doors"
+// CARD a1-02 · SEE: a cream CV card fills the frame under the lamp, her name set large, the rows still empty — waiting to be filled · SEAM in right
+# cine act=setup fx="code:@cv_card;name:Dr. Ruja Ignatova;rows:LAW DOCTORATE/University of Konstanz~CONSULTANT/McKinsey & Company~OXFORD/as marketed~2012/convicted of fraud, Germany;step:0;go:paper;in:right"
 On paper, the founder was the most **credible** person in any room.
 
-// CARD a1-03 · SEE: the first row springs onto the CV on "doctorate" and gets its gold tick
-# cine act=setup fx="code:@credentials_cv;step:1;go:doctorate;plate:onecoin_art_frosted_doors"
+// CARD a1-03 · SEE: the first row springs onto the CV on "doctorate" and the camera rides down to it
+# cine act=setup fx="code:@cv_card;name:Dr. Ruja Ignatova;rows:LAW DOCTORATE/University of Konstanz~CONSULTANT/McKinsey & Company~OXFORD/as marketed~2012/convicted of fraud, Germany;step:1;go:doctorate"
 A real law **doctorate** from the University of Konstanz.
 
 // CARD a1-04 · SEE: the second row lands on "McKinsey" — a quick punch, the shortest beat of the act
-# cine act=setup fx="code:@credentials_cv;step:2;go:McKinsey;plate:onecoin_art_frosted_doors"
+# cine act=setup fx="code:@cv_card;name:Dr. Ruja Ignatova;rows:LAW DOCTORATE/University of Konstanz~CONSULTANT/McKinsey & Company~OXFORD/as marketed~2012/convicted of fraud, Germany;step:2;go:McKinsey"
 A job at **McKinsey**.
 
 // CARD a1-05 · SEE: OXFORD lands as the third row; on "degree" a yellow correction sticker slaps over it (the joke is the sticker) · SEAM hard cut
-# cine act=setup fx="code:@credentials_cv;step:3;go:Oxford;fix:degree;plate:onecoin_art_frosted_doors"
+# cine act=setup fx="code:@cv_card;name:Dr. Ruja Ignatova;rows:LAW DOCTORATE/University of Konstanz~CONSULTANT/McKinsey & Company~OXFORD/as marketed~2012/convicted of fraud, Germany;step:3;go:Oxford;fix:A MASTER'S;fixrow:2;fixat:degree"
 Her marketing added **Oxford**. [BEAT] Her Oxford degree was a master's. (J)
 
-// CARD a1-06 · SEE: the hidden fourth row arrives last and it is red: the 2012 fraud conviction · SEAM out down
-# cine act=doubt fx="code:@credentials_cv;step:4;go:fraud;fix:marketing;plate:onecoin_art_frosted_doors"
+// CARD a1-06 · SEE: the hidden fourth row arrives last, in red — the 2012 fraud conviction — and the marker rings it · SEAM out down
+# cine act=doubt fx="code:@cv_card;name:Dr. Ruja Ignatova;rows:LAW DOCTORATE/University of Konstanz~CONSULTANT/McKinsey & Company~OXFORD/as marketed~2012/convicted of fraud, Germany;step:4;go:fraud;fix:A MASTER'S;fixrow:2;fixat:0;red:3;ring:fraud;out:down"
 What the marketing left out: in 2012, a German court convicted her of **fraud**.
 
 // CARD a1-07 · SEE: a steel door with a padlock in a hard shaft of light — a business stripped and shut; the sentence sets beside the lock on "fourteen"; the picture drains to grey on "suspended" · SEAM in down, out right
-# cine act=doubt fx="code:@reel;clip:stock_money_vault_02;move:in;z:.1;in:down;out:right;txt:14 MONTHS · SUSPENDED;tsize:72;tfont:impact;ty:.18;tat:fourteen;mono:suspended"
+# cine act=doubt fx="code:@reel;clip:stock_money_vault_02;move:in;z:.1;in:down;out:right;txt:14 MONTHS · SUSPENDED;tsize:72;tfont:impact;ty:.18;tat:She;mono:suspended"
 She and her father had stripped a foundry until it went **bankrupt**. Her sentence: fourteen months, suspended.
 
 // CARD a1-08 · SEE: coins dropping into a glass jar, one by one — a small first scheme; the name of it sets above the jar on "BigCoin" · SEAM in right, out right
@@ -43,7 +43,7 @@ She and her father had stripped a foundry until it went **bankrupt**. Her senten
 Then, in 2013, she tried a first crypto scheme, **BigCoin**, alongside a Swedish salesman named Sebastian Greenwood.
 
 // CARD a1-09 · SEE: hands typing on a laptop in an office at night, city lights beyond the window; the date sets on "June" · SEAM in right, out in
-# cine act=rise fx="code:@reel;clip:stock_screen_email_08;move:in;z:.1;in:right;out:in;txt:11 JUNE 2014;tsize:72;tat:June;ty:.15"
+# cine act=rise fx="code:@reel;clip:stock_screen_email_08;move:in;z:.1;in:right;out:in;txt:11 JUNE 2014;tsize:72;tat:In;ty:.15"
 In June 2014 she sent Greenwood an email pitching a bigger **deal**.
 
 // CARD a1-10 · SEE: that email on the desk; as her voice reads it the marker underlines "magic" and "numbers" · SEAM in Z
@@ -56,7 +56,7 @@ In her words:
 @ruja: "…like MLM meets bitch of wall **street**." (J)
 
 // CARD a1-12 · SEE: gold coins scattered on wood, gleaming; the footage slows on "nickname" and freezes grey on "trashy" — their own word for it, set above the coins · SEAM in right
-# cine act=rise fx="code:@reel;clip:stock_money_gold_03;move:in;z:.1;in:right;slow:nickname;freeze:trashy;mono:trashy;txt:“TRASHY COIN”;tsize:96;tfont:impact;tat:trashy;ty:.2;sub:the founders' private nickname, 2014 emails (DOJ)"
+# cine act=rise fx="code:@reel;clip:stock_money_gold_03;move:in;z:.1;in:right;slow:nickname;freeze:trashy;mono:trashy;txt:“TRASHY COIN”;tsize:96;tfont:impact;tat:nickname;ty:.2;sub:the founders' private nickname, 2014 emails (DOJ)"
 In their private emails, the two founders even had a nickname for their product: "trashy **coin**." (J)
 
 // CARD a1-13 · SEE: the exit-strategy email again, the motif, seen whole on the desk; the camera pushes in on "exit" · SEAM in right, out in

@@ -187,10 +187,10 @@
       ctx.translate(W / 2 + dx * u / u, H / 2 + dy); ctx.scale(s, s); ctx.translate(-W / 2, -H / 2); if (bl > .4) ctx.filter = `blur(${(bl * u).toFixed(1)}px)`; return { dx, dy, s, bl }; }
     function paperDesk(o = {}) { // a dark investigator's desk lit by one lamp: leather/wood gradient, lamp pool, vignette, fine grain (procedural, no image)
       const lx = (o.lx ?? .5) * W, ly = (o.ly ?? .45) * H; ctx.fillStyle = o.col || '#1a140e'; ctx.fillRect(-W, -H, W * 3, H * 3);
-      const g = ctx.createRadialGradient(lx, ly, 0, lx, ly, W * .75); g.addColorStop(0, 'rgba(255,214,150,.22)'); g.addColorStop(.45, 'rgba(255,190,120,.07)'); g.addColorStop(1, 'rgba(0,0,0,.55)'); ctx.fillStyle = g; ctx.fillRect(-W, -H, W * 3, H * 3);
+      const g = ctx.createRadialGradient(lx, ly, 0, lx, ly, W * .75); g.addColorStop(0, 'rgba(255,214,150,.13)'); g.addColorStop(.45, 'rgba(255,190,120,.05)'); g.addColorStop(1, 'rgba(0,0,0,.55)'); ctx.fillStyle = g; ctx.fillRect(-W, -H, W * 3, H * 3);
       const r = R(o.seed ?? 21); ctx.save(); ctx.globalAlpha = .05; ctx.strokeStyle = '#000'; ctx.lineWidth = 1.2 * u; for (let i = 0; i < 70; i++) { const y = r() * H * 1.4 - H * .2; ctx.beginPath(); ctx.moveTo(-W * .2, y); ctx.bezierCurveTo(W * .3, y + (r() - .5) * 40 * u, W * .7, y + (r() - .5) * 40 * u, W * 1.2, y + (r() - .5) * 20 * u); ctx.stroke(); } ctx.restore(); }
     function paper(w, h, o = {}) { // a sheet of paper as a canvas (off-white, faint fibres, soft edge shading) to type or draw on
-      const key = 'paper:' + w + 'x' + h + (o.tint || ''); if (C[key] && C[key].__ok) return C[key]; const c = cv(key, w, h), g = c.getContext('2d'); g.fillStyle = o.tint || '#f1ece1'; g.fillRect(0, 0, w, h);
+      const key = 'paper:' + w + 'x' + h + (o.tint || ''); if (C[key] && C[key].__ok) return C[key]; const c = cv(key, w, h), g = c.getContext('2d'); g.fillStyle = o.tint || '#e4ddcf'; g.fillRect(0, 0, w, h);
       const r = R(77); g.globalAlpha = .05; for (let i = 0; i < 400; i++) { g.fillStyle = r() < .5 ? '#000' : '#fff'; g.fillRect(r() * w, r() * h, 1 + r() * 2, 1 + r() * 2); } g.globalAlpha = 1;
       const e = g.createLinearGradient(0, 0, w, 0); e.addColorStop(0, 'rgba(0,0,0,.06)'); e.addColorStop(.1, 'rgba(0,0,0,0)'); e.addColorStop(.9, 'rgba(0,0,0,0)'); e.addColorStop(1, 'rgba(0,0,0,.08)'); g.fillStyle = e; g.fillRect(0, 0, w, h); c.__ok = 1; return c; }
     function marker(pts, k, o = {}) { // a hand-drawn marker stroke (circle, underline, tick) drawn up to fraction k; pts in px

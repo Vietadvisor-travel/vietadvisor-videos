@@ -22,8 +22,8 @@ Its founder never **showed**.
 # cine act=fall fx="code:@email_page;head:UNITED STATES DISTRICT COURT · SOUTHERN DISTRICT OF NEW YORK;lines:Arrest warrant~Ruja Ignatova~Issued: 12 October 2017;src:Reconstruction · date from FBI and IRS statements;under:october@warrant;rot:-1.6;in:right"
 Five days later, the United States issued a **warrant** for her arrest.
 
-// CARD a4-04 · SEE: a river city at night, still water, lights; her words to her brother set in the dark, attributed to his testimony · SEAM in right, out right
-# cine act=fall fx="code:@reel;clip:stock_city_london_night_10;move:in;z:.08;in:right;out:right;grade:cold;txt:“very tired”;tsize:84;tfont:serif;tat:tired;ty:.42;sub:what she told her brother, in his court testimony"
+// CARD a4-04 · SEE: a real print of Sofia lifts off the desk and fills the frame; her two words to her brother set over it, attributed · SEAM in right, out right
+# cine act=fall fx="code:@table;items:onecoin_sofia@.5,.5,-3,.56;pan:0,0;lift:0;at:She;txt:“VERY TIRED”;tat:She;sub:what she told her brother, in his court testimony;in:right;out:right"
 {sad} She told her brother she was very **tired**.
 
 // CARD a4-05 · SEE: a passport lands on the desk; two boarding passes slide out of it, one per city spoken — Vienna, Athens — and only Athens stays lit · SEAM in right
@@ -38,28 +38,25 @@ She had what he called a "big **passport**", and he bought her tickets to Vienna
 # cine act=fall fx="code:@boarding;from:SOF;to:ATH;date:25 OCT 2017;fields:BAGS=1~GUARD=1;tear:bodyguard;recon:Reconstruction · from her brother's testimony;out:right"
 One bag. One **bodyguard**. [BEAT]
 
-// CARD a4-08 · SEE: an airliner on the runway in Athens (her own footage pack), the camera pushing toward it · SEAM in right
-# cine act=fall fx="code:@reel;clip:onecoin_clip_athens;move:in;z:.1;in:right;txt:ATHENS;tsize:90;tfont:impact;tat:Athens;ty:.16"
+// CARD a4-09 · SEE: the real Athens airport photo lifts off the desk and fills the frame on "landed"; it drains to grey on "sighting" and the date holds in the silence · SEAM hold
+# cine act=fall fx="code:@table;items:onecoin_athens_airport@.5,.5,-3,.5;pan:0,0;lift:0;at:landed;mono:sighting;txt:LAST CONFIRMED SIGHTING;tsize:70;tat:sighting;ty:.16;sub:Athens airport · 25 October 2017"
 She landed in **Athens**.
-
-// CARD a4-09 · SEE: the real Athens airport photo lifts off the desk and fills the frame on "last"; it drains to grey on "sighting" and the date holds in the silence · SEAM hold
-# cine act=fall fx="code:@table;items:onecoin_athens_airport@.5,.5,-3,.5;pan:0,0;lift:0;at:last;mono:sighting;txt:LAST CONFIRMED SIGHTING;tsize:70;tat:sighting;ty:.16;sub:Athens airport · 25 October 2017"
 {grave} And that is the last confirmed sighting of Ruja Ignatova. {hold}
 
-// CARD a4-10 · SEE: a hand holding a phone, the screen scrolling, no face — waiting for a message that never comes; grey · SEAM in right
-# cine act=after fx="code:@reel;clip:stock_screen_phone_06;move:in;z:.08;in:right;grade:mono"
+// CARD a4-10 · SEE: her portrait print alone on the desk; it drains to grey on "never" · SEAM in right
+# cine act=after fx="code:@table;items:onecoin_ruja@.5,.5,-2,.6;pan:0,0;mono:never;txt:NO CONTACT SINCE OCTOBER 2017;tat:She;sub:per her brother's testimony;in:right"
 {sad} She never contacted her brother **again**.
 
-// CARD a4-11 · SEE: hands still counting money at a desk with a calculator — business as usual; the camera trucks right · SEAM in right, out right
-# cine act=rise fx="code:@reel;clip:stock_money_broll_05;move:right;z:.1;in:right;out:right"
+// CARD a4-11 · SEE: the company screen: FOUNDER — ABSENT, PACKAGE SALES — CONTINUING; the status stays OPEN · SEAM in right, out right
+# cine act=rise fx="code:@backoffice;bg:stock_screen_spreadsheet_14;title:ONECOIN · SALES;ry:-.22;rows:Founder=ABSENT~Package sales=CONTINUING;go:But;gap:.5;hero:OPEN;hlab:BUSINESS STATUS;hat:But;in:right;out:right"
 But the company didn't even **pause**.
 
-// CARD a4-12 · SEE: a forklift reversing in a warehouse; the length of his tenure sets above it · SEAM in right
-# cine act=rise fx="code:@reel;clip:stock_logistics_warehouse_forklift_06;move:in;z:.1;in:right;txt:16 MORE MONTHS;tsize:96;tfont:impact;tat:sixteen;ty:.16;sub:her brother, a former forklift driver, in charge"
+// CARD a4-12 · SEE: a forklift moving down a warehouse aisle, nobody's face in frame; his tenure sets above it · SEAM in right
+# cine act=rise fx="code:@reel;clip:stock_logistics_warehouse_forklift_03;move:in;z:.1;in:right;txt:16 MORE MONTHS;tsize:96;tfont:impact;tat:Her;ty:.16;sub:her brother, a former forklift driver, in charge"
 {wry} Her brother, a former forklift driver, ran it for sixteen more **months**. (J)
 
-// CARD a4-13 · SEE: a crypto display in close-up, numbers still moving; the year sets on "2019" · SEAM out right
-# cine act=rise fx="code:@reel;clip:stock_screen_chart_up_06;move:in;z:.1;out:right;txt:STILL SELLING · 2019;tsize:76;tfont:impact;tat:Members;ty:.16"
+// CARD a4-13 · SEE: purchase confirmations keep typing in, dated 2019 · SEAM out right
+# cine act=rise fx="code:@backoffice;bg:stock_screen_wall_04;title:ONECOIN · ORDERS;ry:.25;rows:Jan 2019=PACKAGE BOUGHT~Feb 2019=PACKAGE BOUGHT~Mar 2019=PACKAGE BOUGHT;go:Members;gap:.45;hero:STILL SELLING;hlab:2019;hat:Members;note:illustration · sales continued into 2019;out:right"
 Members kept buying coins into **2019**.
 
 // CARD a4-14 · SEE: the three prints from act 1 on the desk again — cash, Athens, the courthouse; the marker rings the first two, one on each "done" · SEAM in right

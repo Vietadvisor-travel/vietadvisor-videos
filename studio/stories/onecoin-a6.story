@@ -11,7 +11,7 @@ autotrans: off
 endcard: off
 
 // CARD a6-01 · SEE: an old globe turning slowly under warm light; the question sets above it and holds · SEAM in right, out in
-# cine act=after fx="code:@reel;clip:stock_world_globe_04;move:in;z:.1;in:right;out:in;txt:WHERE IS SHE?;tsize:96;tfont:impact;tat:where;ty:.16"
+# cine act=after fx="code:@reel;clip:stock_world_globe_04;move:in;z:.1;in:right;out:in;txt:WHERE IS SHE?;tsize:96;tfont:impact;tat:So;ty:.16"
 {tense} So where is **she**?
 
 // CARD a6-02 · SEE: the FBI's real Ten Most Wanted page flies in from deep space turning over, lands with a shadow; a highlighter runs across her name on "FBI" · SEAM in Z
@@ -19,7 +19,7 @@ endcard: off
 In 2022, the FBI put her on its Ten Most Wanted list, the only **woman** on it at the time.
 
 // CARD a6-03 · SEE: three blocks: the reward over time, $100K, $250K, then the State Department's $5M towers on "five" · SEAM out right
-# cine act=after fx="code:@blocks;vals:100000,250000,5000000;labs:FBI 2022,FBI 2023,US STATE DEPT 2024;txts:$100K,$250K,$5M;go:raised;gap:.4;hl:2;hlat:five;out:right"
+# cine act=after fx="code:@blocks;vals:100000,250000,5000000;labs:FBI 2022,FBI 2023,US STATE DEPT 2024;txts:$100K,$250K,$5M;go:In;gap:.4;hl:2;hlat:five;out:right"
 In 2024, the United States raised the reward to five million **dollars**.
 
 // CARD a6-04 · SEE: a typed sheet under the lamp, marked as a reconstruction: the reported claim from the leaked police memo · SEAM in right
@@ -39,7 +39,7 @@ So the FBI still hunts her as if she's **alive**.
 Nobody has confirmed seeing her since **Athens**.
 
 // CARD a6-08 · SEE: a printing press running sheet after sheet — the bill being printed · SEAM in right
-# cine act=lesson fx="code:@reel;clip:stock_documents_printing_press_02;move:in;z:.1;in:right;txt:THE BILL;tsize:110;tfont:impact;tat:bill;ty:.16"
+# cine act=lesson fx="code:@reel;clip:stock_documents_printing_press_02;move:in;z:.1;in:right;txt:THE BILL;tsize:110;tfont:impact;tat:What;ty:.16"
 What we can confirm is the **bill**.
 
 // CARD a6-09 · SEE: an AI plate of a small farm plot at dusk (illustration, not archive) lifts from the desk and fills the frame; the place and the BBC finding set over it · SEAM in right
@@ -47,7 +47,7 @@ What we can confirm is the **bill**.
 {sad} In Uganda, the BBC found farmers who had sold land and **livestock** to buy in.
 
 // CARD a6-10 · SEE: a phone tapped on a payment terminal; the German count sets above it · SEAM in right, out right
-# cine act=lesson fx="code:@reel;clip:stock_money_card_payment_05;move:in;z:.1;in:right;out:right;txt:17,552 VICTIMS · ONE PROCESSOR;tsize:70;tfont:impact;tat:investigators;ty:.16;sub:Germany · Bielefeld prosecutors"
+# cine act=lesson fx="code:@reel;clip:stock_money_card_payment_05;move:in;z:.1;in:right;out:right;txt:17,552 VICTIMS · ONE PROCESSOR;tsize:70;tfont:impact;tat:Germany;ty:.16;sub:Germany · Bielefeld prosecutors"
 In Germany, investigators traced the money of 17,552 victims through a single payment **processor**.
 
 // CARD a6-11 · SEE: the shadows of a crowd walking at sunset — friends and family, no faces; the place sets above · SEAM in right
@@ -59,7 +59,7 @@ In Glasgow, Jen McAdam had brought in friends and family.
 {sad} Together, she said, they had "thrown a quarter of a million euros **away**."
 
 // CARD a6-13 · SEE: two blocks: lost (more than $4 billion) and returned ($40 million), the second barely a line on the floor · SEAM in right
-# cine act=lesson fx="code:@blocks;vals:4000,40;labs:LOST,FUND FOR VICTIMS 2026;txts:$4B+,$40M;go:fund;gap:.8;hl:1;hlat:forty;in:right"
+# cine act=lesson fx="code:@blocks;vals:4000,40;labs:LOST,FUND FOR VICTIMS 2026;txts:$4B+,$40M;go:In;gap:.8;hl:1;hlat:forty;in:right"
 In 2026, the US opened a fund for victims: just over forty million **dollars**.
 
 // CARD a6-14 · SEE: a hundred notes in a grid stand for the whole sum; ninety-nine fall away on "billion" and one is left in the light · SEAM hold, then out in
