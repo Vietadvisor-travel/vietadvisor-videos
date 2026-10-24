@@ -1,3 +1,4 @@
 # Episode log (Project file: update after every episode)
 | day | slug | title | thesis | signature shots used | hook type | published | views 48h | notes / lessons |
 |---|---|---|---|---|---|---|---|---|
+| 24/10/2026 | onecoin (v2) | Ruja Ignatova Wrote Her Escape Plan in 2014. Then She Vanished | an exit plan written down in 2014, followed almost to the word | email page, desk prints, back-office panel, case cards, FBI footage | cold open on a date | not yet | – | Owner: base style (real footage + photos with effects on them) is fine; fault = the same 6 devices repeated (78 % of beats) and pictures not matching the words closely. Tried a 3D world and a non-stop effects show: rejected as messy/ugly. Next: vary devices, match each sentence literally with real footage/photos, keep it calm; opening lead-in and a written ending. |

@@ -4,7 +4,7 @@
   python3 tools/pp_motion.py file <video.mp4>        one file, no beats
 Per second: mean absolute frame difference (96×54 grey, 10 fps). A second under STILL is "nearly still" to the eye.
 Report per beat (still seconds, longest still run), per act and for the film, plus effect repetition from the stories.
-GATE (motion-doctrine.md §8): still seconds ≤ 15 % of the film · no still run > 2.0 s except beats whose card says HOLD
+GATE (motion-doctrine.md §0): still seconds ≤ 35 % of the film · no still run > 3.0 s except beats whose card says HOLD
 (≤ 2 per act) · no effect on more than 10 % of the beats · at least 2 effects per act that appear in no other act.
 Writes out/<slug>_motion.md and prints the verdict.
 """
@@ -50,17 +50,17 @@ for n in acts:
         a, b = int(s['start'] * FPS), int((s['start'] + s['dur']) * FPS); seg = st[a:b]; beats_total += 1
         lr = max([x[1] for x in runs(seg)], default=0) / FPS; cid = cards[i] if i < len(cards) else f'a{n}-b{i + 1}'
         flag = ''
-        if lr > 2.0:
+        if lr > 3.0:
             if cid in hold and nh < 2: nh += 1; flag = ' (HOLD)'
             else: long_runs.append((cid, lr)); flag = ' ⚠'
         rep.append(f'| {cid} | {s["dur"]:.1f} | {seg.mean() * 100 if len(seg) else 0:.0f} | {lr:.1f}{flag} | {fx[i] if i < len(fx) else ""} |')
 still_pct = still_total / max(secs_total, 1) * 100
 top = fx_all.most_common(); over = [(f, c) for f, c in top if c > 0.10 * max(beats_total, 1)]
 own = {n: [f for f in fx_act[n] if all(f not in fx_act[m] for m in fx_act if m != n)] for n in fx_act}; few = [n for n in own if len(own[n]) < 2]
-ok = still_pct <= 15 and not long_runs and not over and not few
+ok = still_pct <= 35 and not long_runs and not over and not few
 head = [f'# Motion & repetition gate · {slug}', '',
-        f'- nearly still: **{still_pct:.0f} %** of {secs_total:.0f} s (gate ≤ 15 %)',
-        f'- still runs > 2 s outside HOLD beats: **{len(long_runs)}** (gate 0)' + (': ' + ', '.join(f'{c} {l:.1f}s' for c, l in sorted(long_runs, key=lambda x: -x[1])[:12]) if long_runs else ''),
+        f'- nearly still: **{still_pct:.0f} %** of {secs_total:.0f} s (gate ≤ 35 %)',
+        f'- still runs > 3 s outside HOLD beats: **{len(long_runs)}** (gate 0)' + (': ' + ', '.join(f'{c} {l:.1f}s' for c, l in sorted(long_runs, key=lambda x: -x[1])[:12]) if long_runs else ''),
         f'- effects: {len(fx_all)} distinct over {beats_total} beats; over 10 %: ' + (', '.join(f'@{f} ×{c}' for f, c in over) or 'none') + ' (gate none)',
         '- effects only this act has: ' + ' · '.join(f'a{n}: {len(own[n])}' for n in sorted(own)) + (f' (gate ≥ 2; short: {", ".join("a" + str(n) for n in few)})' if few else ' (gate ≥ 2)'),
         f'- usage: ' + ', '.join(f'@{f} {c}' for f, c in top), '', f'**VERDICT: {"PASS" if ok else "FAIL"}**']
