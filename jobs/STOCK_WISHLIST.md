@@ -9,8 +9,9 @@ Muse fills these FIRST (before STOCK_PLAN gaps), then ticks the box and writes t
 - [x] Los Angeles airport arrivals or LAX exterior  (onecoin, 2026-10-23) → stock_airport_lax_exterior_01
 - [x] Thai island beach, Koh Samui style, aerial  (onecoin, 2026-10-23) → stock_place_koh_samui_aerial_01
 - [ ] ankle monitor / GPS tag close-up  (onecoin, 2026-10-23)
+  <!-- OPEN, 2026-10-24: no genuine footage with a named author and clean free licence found in Pexels, Pixabay, Mixkit, Commons or archive.org (first exhaustive pass 23/10 + sanity re-pass 24/10: Pexels "ankle monitor" hits are a dancer's ghungroo bells, a leg massage and police footage; Pixabay hits are a heart-rate video, a bird video and a jewellery bracelet; only paid MotionArray clips show a real monitor). Episode-level need is covered by the OneCoin pack's AI element onecoin_el_ankle_tag; only the shared-library generic clip is missing. -->
 - [x] airport departures board flipping  (onecoin, 2026-10-23) → stock_airport_departures_board_01
-- [ ] passport being stamped at border control  (onecoin, 2026-10-23)
+- [x] passport being stamped at border control  (onecoin, 2026-10-23) → stock_documents_passport_stamped_pages_01 (near-miss fill: flips pages of an already-stamped passport, no stamp coming down)
 - [x] empty jury box or jury room  (onecoin, 2026-10-23) → stock_law_jury_box_01
 - [x] foundry: molten metal pouring  (onecoin, 2026-10-23) → stock_factory_foundry_molten_01
 - [x] university lecture hall or graduation caps  (onecoin, 2026-10-23) → stock_media_lecture_hall_01
