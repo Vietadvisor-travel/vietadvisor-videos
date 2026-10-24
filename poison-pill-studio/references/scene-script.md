@@ -89,6 +89,20 @@ those frames? If not, rewrite the card. Never patch it with a stamp or a shake.
 4. **AI moment art** only for moments with no footage and no photo: places, objects, silhouettes, never a real face.
 5. **Drawn graphics** only when a mechanism needs a diagram, and then drawn ON a real picture.
 
+## 3b. The shot list: ask for the exact picture (v6.6)
+Real footage and photos are the picture (motion-doctrine §0), so the film is only as precise as its sources. After the
+cards, write `jobs/<slug>/SHOTLIST_<slug>.md`:
+
+| # | card | sentence (short) | the literal picture | kind | have (catalogue id) | status |
+|---|---|---|---|---|---|---|
+| 1 | a2-18 | "the only exchange kept going offline" | the real xcoinx exchange page, archive.org, a sell order stuck "pending" | screenshot | – | NEED |
+| 2 | a4-12 | "her brother landed at LAX" | LAX arrivals hall or apron, 2019-ish, wide | footage | onecoin_lax (photo) | HAVE (photo; footage better) |
+
+- "Literal" means: with the sound off, the picture says what the sentence says. Generic stock under a caption fails.
+- Prefer, in order: footage of the thing itself → a photo of it → its document or web page → specific stock of the
+  action → an AI part composited on a real picture.
+- More than 15 % NEED → the owner sends Muse `bổ sung shotlist <slug>` (round 2, MUSE_STANDING §2b) before the build.
+
 ## 4. Build the effect, then save it
 - **Write the effect as a custom scene** (`custom-scenes.md`) from its card:
   - every timed line of SECONDS becomes a timed event on its word (`at()`, `spring()`, `stagger()`);

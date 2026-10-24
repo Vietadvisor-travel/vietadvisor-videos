@@ -24,7 +24,42 @@ Choose a slug: lowercase-hyphen, e.g. `nokia`. Every image id starts with the sl
 - At the end, add 3 candidate angles and 3 candidate hooks. Claude chooses.
 - Go deep: use as many parallel agents as useful. Depth is the point.
 
-### 2. Images and clips: 40–80 real images, 25–40 moment art, 10–20 clips
+### 2. Sources (v6.6, the owner's call, 24 Oct 2026): real first, far more of it, more specific
+The film is built from REAL footage and REAL images, with effects applied on them. The owner's verdict on ep. 4: the
+style is right, but the same few pictures repeat and they do not match the words closely enough. So every episode needs
+much more real material, and more specific material:
+
+| what | per episode | ids |
+|---|---|---|
+| real footage of the named people, places, events (archival, press, government, the company's own videos) + specific stock of the actions in the story | **100–200 clips**, ≥ 3 per named place/event, ≥ 15 per act | `<slug>_clip_<what>` |
+| real photos (people cut out, places, products, events) | **80–150** | `<slug>_<what>` |
+| **documents & screenshots** (see §2a) | **30–60** | `<slug>_doc_<what>` |
+| AI components: cut-out props/objects, textures, blank device frames, a few plates for gaps only | **20–40** (full AI scenes ≤ 10) | `<slug>_el_<what>`, `<slug>_art_<what>` |
+
+#### 2a. Documents and screenshots: the real paper trail on screen
+Capture the real thing at full resolution (≥ 1920 px wide; tall full-page captures are welcome: Claude scrolls them):
+- court filings and indictments (render the key PDF pages; mark the page number), sentencing memos, plea documents;
+- press releases from DOJ / regulators / the company; regulator warning pages;
+- **the company's own website as it was** (archive.org Wayback snapshots: home page, product page, "about", price page,
+  login screen) with the snapshot date in the file name;
+- its brochures, slide decks, certificates, app screens, promo posters, event programmes;
+- social posts and channel pages of the company and its leaders (with date visible), and of victims' public posts
+  (blur private names/faces of non-public people);
+- news headlines (crop: masthead + headline + date), magazine covers;
+- wanted posters, reward notices, maps from OpenStreetMap (credit "© OpenStreetMap contributors").
+Per file: role `prop`, credit "Screenshot: <site/outlet>, <date> (via archive.org if so)", license "editorial
+screenshot" (or the real licence for government works), and a desc that says what is on it and where the key line sits
+("headline top third; date bottom-left; line 'Take the money and run' at 58 % height").
+
+#### 2b. Round 2: the shot list (Claude asks, you fill)
+After writing the scene cards, Claude pushes `jobs/<slug>/SHOTLIST_<slug>.md`: one row per sentence with the exact
+picture it needs and whether it already exists. When the owner writes **"bổ sung shotlist <slug>"**:
+- fill every row marked NEED with that exact picture (real first; AI only for props/textures/gaps, never people or
+  documents);
+- pack them as `<slug>_assets_2.zip` (git, < 90 MB) and `<slug>_clips_2_*.zip` (Drive `<slug>/`);
+- write in the shot list FOUND <id> or NONE <why> on each row; commit and push.
+
+#### 2c. The rest of the round-1 pack (as before)
 For every person, place, product, document and moment in the research:
 - **Real images:**
   - `python3 tools/pp_find.py get "<query>" <slug>_<what> --kind person|place|product|document|event --role cut|plate|prop`
@@ -38,8 +73,8 @@ For every person, place, product, document and moment in the research:
   - products, logos (identification only) and documents (`prop`);
   - 5–10 headline or document screenshots;
   - charts of key numbers if a source has them.
-- **AI MOMENT ART (v6.1): 25–40 illustrations per episode.** This is what makes the film rich instead of a
-  slideshow.
+- **AI components (v6.6): 20–40 per episode, full AI scenes ≤ 10.** Real material comes first; AI fills gaps and
+  supplies parts Claude composites onto real pictures.
   - Read the research and list the 25–40 strongest moments: the founding room, the first big deal, the factory at full
     speed, the crowd at launch, the boardroom the night it broke, the empty office after.
   - Make one 16:9 illustration per moment (≥ 1920×1080), all in ONE style bible. Use the look prefix from ai-images.md
@@ -53,7 +88,7 @@ For every person, place, product, document and moment in the research:
   - **Never** draw a real, identifiable person, a real document, logo or headline, or anything that pretends to be
     archive. People appear only as silhouettes, from behind, as hands, or as crowds.
   - Import each with `pp_img.py add <file> <id> --role plate|cut --gen "<tool>"`.
-- **STOCK + ARCHIVAL FOOTAGE (v6.2): 60–150 clips per episode. Footage is the main material of the film; the more real moving footage of the named people, places and events, the better.**
+- **STOCK + ARCHIVAL FOOTAGE (v6.6): 100–200 clips per episode, specific to the actions the story describes. Footage is the main material of the film; the more real moving footage of the named people, places and events, the better.**
   - **What to find, for every beat-worthy moment in the research:**
     - the places (city aerials, the HQ street, the airport, the courthouse);
     - the activity (trading floors, servers, factories, crowds at events, cash counting, people on phones, typing,

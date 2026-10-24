@@ -80,6 +80,11 @@ The rulebook is `poison-pill-studio/` (SKILL.md and references/). The engine wit
      - titles land and stay still.
    - Hard rules from `final-cut.md` §B (clean frame) stay.
    - Save it as `jobs/<slug>/EPISODE_<slug>.md`.
+   - **Shot list (v6.6, `scene-script.md` §3b):** write `jobs/<slug>/SHOTLIST_<slug>.md`, one row per sentence: the
+     literal picture it needs (footage / photo / document / screenshot / AI part), the catalogue id if it exists, else
+     NEED. Commit and push it. If more than 15 % of the rows are NEED, stop and tell the owner the line for Muse:
+     `bổ sung shotlist <slug>`; when round 2 lands, import it
+     (`python3 tools/pp_pack.py import ../jobs/<slug>/<slug>_assets_2.zip "drive:<slug>/<slug>_clips_2*.zip"`) and go on.
 4. **Build:**
    - Write `studio/stories/<slug>-a0.story … -aN.story`.
    - Run `python3 tools/pp_stock.py pull <slug> stories/<slug>-a*.story`. It extracts only the library clips the

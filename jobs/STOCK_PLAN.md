@@ -11,13 +11,17 @@ id prefix (`stock_<category>_…`). Each row shows have / target and the gap. Th
 - **what** lists the subjects to cover;
 - **search** gives starting queries.
 
-## Two phases, then demand-driven
+## Three phases, then demand-driven
 1. **Phase 1, breadth (this table, about 1,500 clips):** every category usable.
 2. **Phase 2, depth (target about 3,000):** the categories every episode leans on go to 2–3× their target, so a
    viewer who watches every episode does not see the same shot again within a month:
    - office, money, screen, phone, finance, people and city to ×3;
    - law, documents, tech, texture, archive and emotion to ×2.
-3. **Always, demand-driven:** each film logs the shots it needed and could not find
+3. **Phase 3, precision (v6.6, the owner's call: "still too few, needs to be more varied and more specific"):** the
+   rows marked P3 below. They are the concrete actions business-crime stories narrate (sign, wire, pack a suitcase,
+   board a jet, raid, pitch on stage, log in, get frozen out), shot so a sentence can be illustrated literally. Each
+   P3 clip's `desc` starts with the VERB of the action ("signs a contract at a glass desk, close-up on the pen…").
+4. **Always, demand-driven:** each film logs the shots it needed and could not find
    (`pp_stock.py want …` → `jobs/STOCK_WISHLIST.md`). Muse fills the wishlist FIRST, before any plan gap. Real need
    beats guessing.
 
@@ -91,4 +95,13 @@ aliases: bank=finance, crowds=people, datacenter=tech, hotel=place, smartphone=p
 | texture | 50 | film grain, light leaks, dust in light, ink in water, paper textures moving, bokeh, glitch, smoke on black, sparks: overlays for compositing | light leak overlay, ink in water, dust particles light, sparks black background |
 | abstract | 30 | lines of light, data flows, particles on black, graphs drawn by light, slow motion liquids | light trails, abstract data, slow motion liquid |
 | archive | 60 | public-domain archival: 1920s–1990s offices, stock exchanges, factories, ads, city streets, computers of each decade (Prelinger / archive.org, NASA, US gov) | Prelinger archives office, 1980s computer, vintage stock exchange |
+| crypto | 60 | P3: crypto apps and wallet screens on phones (no brand as subject), hardware wallets, mining rigs, crypto ATMs, candlestick charts on a phone in hand, QR-code payments, seed phrase on paper (blank/fake words) | crypto wallet app phone, mining rig, crypto atm |
+| scam | 50 | P3: a pitch on a stage to an audience seen from behind, seminar rooms, people signing up on laptops, cash handed over a table, a recruiter on the phone, a slideshow of promises, a fake-luxury lifestyle shoot, victims reading bad news | seminar audience from behind, signing up laptop, cash handover |
+| payment | 40 | P3: online banking login, wire transfer form being filled, transfer confirmed, card declined, bank statement scrolled, receipts printing, money app balance going to zero | online banking transfer, card declined, bank statement |
+| investigation | 40 | P3: evidence boxes, documents spread on a table, hands turning pages, evidence bags, redacted pages, corkboard with strings, archive shelves, a detective's desk lamp, a laptop being imaged | evidence boxes, corkboard strings, redacted document |
+| escape | 40 | P3: packing a suitcase at night, passport into a pocket, boarding a small jet, a car leaving a garage at night, an empty apartment, a burner phone, a boat leaving a harbour at dusk, airport taxi rank | packing suitcase night, boarding private jet, empty apartment |
+| luxury | 40 | P3: champagne poured, gala dinner tables, penthouse view, yacht deck, jewellery, supercars, designer bags, a party crowd, a private chef | champagne pouring, gala dinner, penthouse night view |
+| event | 50 | P3: arena and conference stages, keynote lights, audience from behind, confetti, stage smoke, LED walls, award ceremony, backstage corridors | conference stage lights, audience from behind, confetti stage |
+| news | 40 | P3: newsrooms, printing presses, headline on a phone, reporters outside a courthouse, TV studio without channel logos, breaking-news style screen (no brand) | newsroom, printing press newspaper, reporters courthouse |
+| ui | 40 | P3: browser loading, login and password screens, error pages, account frozen, inbox filling up, chat typing, social feed scrolling, notifications stacking (no real brand as subject) | login screen, error page, inbox notifications |
 | world | 40 | globes, Earth from space (NASA), map-like aerials, borders, flags waving (no logos), world landmarks | earth from space NASA, globe spinning, flag waving |
