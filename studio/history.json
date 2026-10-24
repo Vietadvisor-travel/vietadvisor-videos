@@ -56,5 +56,24 @@
    "km_marty_gots_a_plan"
   ],
   "date": "2026-10-24"
+ },
+ {
+  "ep": "demo-fx",
+  "format": null,
+  "opening": null,
+  "ending": null,
+  "looks": [
+   "luxury"
+  ],
+  "open": "code",
+  "modes": {
+   "code": 1
+  },
+  "verbs": {},
+  "trans": {},
+  "tracks": [
+   "km_fretless"
+  ],
+  "date": "2026-10-24"
  }
 ]
