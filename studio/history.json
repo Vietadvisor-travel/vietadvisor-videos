@@ -18,5 +18,43 @@
    "km_perspectives"
   ],
   "date": "2026-10-23"
+ },
+ {
+  "ep": "demo-open",
+  "format": null,
+  "opening": null,
+  "ending": null,
+  "looks": [
+   "luxury"
+  ],
+  "open": "code",
+  "modes": {
+   "code": 1
+  },
+  "verbs": {},
+  "trans": {},
+  "tracks": [
+   "km_wallpaper"
+  ],
+  "date": "2026-10-24"
+ },
+ {
+  "ep": "demo-mg",
+  "format": null,
+  "opening": null,
+  "ending": null,
+  "looks": [
+   "luxury"
+  ],
+  "open": "code",
+  "modes": {
+   "code": 1
+  },
+  "verbs": {},
+  "trans": {},
+  "tracks": [
+   "km_marty_gots_a_plan"
+  ],
+  "date": "2026-10-24"
  }
 ]

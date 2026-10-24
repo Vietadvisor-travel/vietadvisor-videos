@@ -30,10 +30,11 @@ endcard: off
 
   // ---- A + B background: the arena. Exterior pushes in, accelerating; through the doors into the dark hall (pull back = arrival)
   const aK = clamp(t / Math.max(1, tSeats - .4)), inside = io(tSeats - 1.6, tSeats + .2);
-  if (t < tSeats + .4) { cover(img('onecoin_wembley_night'), { z: 1.04 + 1.9 * Math.pow(aK, 2.2), oy: .12 * aK, filter: `brightness(${1 - .55 * aK})` });
+  if (t < tSeats + .4) { cover(img('onecoin_wembley_night'), { z: 1.04 + 1.9 * Math.pow(aK, 2.2), oy: .12 * aK, filter: `brightness(${1.05 - .35 * aK}) contrast(1.1)` });
     if (aK > .55) zoomBlur(grab('a_blur'), (aK - .55) * 1.6); }
   if (inside > 0 && t < tMusic + 2) { ctx.save(); if (inside < 1) { blob(W / 2, H * .55, W * .9 * inside, { seed: 2, wob: .18, flow: 1 }); ctx.clip(); }
-    cover(img('onecoin_art_empty_stage'), { z: lerp(1.5, 1.08, ease.out(io(tSeats - 1.6, tSeats + 2.5))), oy: .35, filter: 'brightness(.55) contrast(1.1)' }); ctx.restore(); }
+    cover(img('onecoin_art_empty_stage'), { z: lerp(1.5, 1.08, ease.out(io(tSeats - 1.6, tSeats + 2.5))), oy: .35, filter: 'brightness(.9) contrast(1.1)' });
+    const crowdBg = io(tSeats, tSeats + 1.5) * (1 - io(tMusic, tMusic + 1.2)); if (crowdBg > 0) { ctx.globalAlpha = crowdBg * .75; drawFit(clip('stock_people_applause_02', tSeats, .8), 0, H * .35, W, H * .65, 1.1, .5, .6); ctx.globalAlpha = 1; } ctx.restore(); }
 
   // ---- B: rows of phones rise from the seats, each filming the stage; the camera trucks right; on "families" more rows join
   const crowd = (n0, rows, y0, h0, gap, from, dim) => { for (let r = 0; r < rows; r++) for (let i = 0; i < n0 + r * 2; i++) {
@@ -45,9 +46,9 @@ endcard: off
       ctx.fillStyle = '#0d0d10'; ctx.beginPath(); ctx.roundRect(-pw / 2 - 5 * u, -ph / 2 - 5 * u, pw + 10 * u, ph + 10 * u, 14 * u); ctx.fill();
       ctx.beginPath(); ctx.roundRect(-pw / 2, -ph / 2, pw, ph, 10 * u); ctx.clip();
       drawFit(clip('onecoin_clip_ruja_stage', -(i * .9 + r * 2.1), 1), -pw / 2, -ph / 2, pw, ph, 1.25, .3 + (i % 4) * .12, .4);
-      if (glow > 0) { ctx.fillStyle = `rgba(232,199,126,${.55 * glow})`; ctx.globalCompositeOperation = 'screen'; ctx.fillRect(-pw / 2, -ph / 2, pw, ph); }
+      if (glow > 0) { ctx.strokeStyle = `rgba(240,205,130,${glow})`; ctx.lineWidth = 6 * u; ctx.strokeRect(-pw / 2, -ph / 2, pw, ph); ctx.fillStyle = `rgba(232,199,126,${.22 * glow})`; ctx.globalCompositeOperation = 'screen'; ctx.fillRect(-pw / 2, -ph / 2, pw, ph); }
       ctx.restore(); } };
-  if (t > tSeats - .2 && t < tMusic + 1.6) crowd(5, 1 + Math.floor(3 * io(K('families') - .3, K('families') + 1.2) * 1.01), H * .82, H * .42, 26 * u, tSeats, 1);
+  if (t > tSeats - .2 && t < tMusic + 1.6) crowd(7, 1 + Math.floor(3 * io(K('families') - .3, K('families') + 1.2) * 1.01), H * .86, H * .5, 22 * u, tSeats, 1);
 
   // ---- C: the glow leaves the phones as gold dust, rising into a cone of light; inside the cone, the real stage
   const cone = io(tMusic, tLight + .3), full = io(tLight, tFeet + .6);
@@ -56,18 +57,19 @@ endcard: off
     // the footage plays at speed, then ramps up on "feet" (the room standing), then slows into the freeze
     const ramp = t < tFeet ? t : tFeet + (t - tFeet) * (t < tQueen ? 1.7 : 1), off = Math.min(ramp, tQueen + .7) - tMusic + 4;
     ctx.save(); ctx.beginPath(); ctx.moveTo(apex[0] - W * .01 * (1 - full), apex[1]); ctx.lineTo(apex[0] + bw / 2, by); ctx.lineTo(apex[0] - bw / 2, by); ctx.closePath(); ctx.globalAlpha = cone; ctx.clip();
-    drawFit(clip('onecoin_clip_ruja_stage', t - off, 1), 0, 0, W, H, lerp(1.35, 1.06, full), .5, .3); ctx.restore();
+    ctx.filter = `brightness(${lerp(1.5, 1.1, full)})`; drawFit(clip('onecoin_clip_ruja_stage', t - off, 1), 0, 0, W, H, lerp(1.35, 1.06, full), .5, .3); ctx.filter = 'none';
+    const gb = ctx.createLinearGradient(0, 0, 0, H); gb.addColorStop(0, `rgba(255,236,190,${.35 * (1 - full)})`); gb.addColorStop(1, 'rgba(255,236,190,0)'); ctx.globalCompositeOperation = 'screen'; ctx.fillStyle = gb; ctx.fillRect(0, 0, W, H); ctx.restore();
     const R = n => { const x = Math.sin(n * 91.7) * 43758.5; return x - Math.floor(x); };
-    for (let k = 0; k < 160; k++) { const born = tMusic - .2 + R(k) * 1.6, q = clamp((t - born) / 2.2); if (q <= 0 || q >= 1) continue;
+    for (let k = 0; k < 420; k++) { const born = tMusic - .2 + R(k) * 1.6, q = clamp((t - born) / 2.2); if (q <= 0 || q >= 1) continue;
       const x0 = W * R(k + 7), y0 = H * (.6 + .35 * R(k + 3)), x = lerp(x0, W * .5 + (R(k + 5) - .5) * W * .2 * q, ease.inOut(q)), y = lerp(y0, H * .15, ease.inOut(q));
-      ctx.fillStyle = `rgba(240,205,130,${.9 * (1 - q)})`; ctx.beginPath(); ctx.arc(x, y, (2.2 + 3 * R(k + 9)) * u * (1 - q * .5), 0, 7); ctx.fill(); } }
+      ctx.fillStyle = `rgba(240,205,130,${.9 * (1 - q)})`; ctx.beginPath(); ctx.arc(x, y, (3.5 + 5 * R(k + 9)) * u * (1 - q * .5), 0, 7); ctx.fill(); } }
 
   // ---- D: freeze on her; the name assembles letter by letter in depth, then holds still (titles land and stay)
   if (t >= tQueen - .05 && t < tTonight + 1.4) {
     const fz = tQueen + .7 - tMusic + 4, push = io(tQueen, tTonight); ctx.save();
     drawFit(clip('onecoin_clip_ruja_stage', t - fz, 1), 0, 0, W, H, 1.06 + .18 * ease.out(push), .5, .3);
     ctx.fillStyle = `rgba(0,0,0,${.35 * push})`; ctx.fillRect(0, 0, W, H); ctx.restore();
-    const word = 'THE CRYPTOQUEEN', lw = W * .052; [...word].forEach((ch, i) => { const k = ease.out(clamp((t - tQueen - .1 - i * .045) / .5)); if (k <= 0 || ch === ' ') return;
+    const word = 'THE CRYPTOQUEEN', lw = W * .052; [...word].forEach((ch, i) => { const k = ease.out(clamp((t - tQueen + .25 - i * .03) / .45)); if (k <= 0 || ch === ' ') return;
       text(ch, W * .5 + (i - (word.length - 1) / 2) * lw, H * .8 + (1 - k) * H * .12, { size: 92 * u * (1 + (1 - k) * 1.6), font: 'serif', weight: 900, col: '#e8c77e', a: k, lw: 0 }); }); }
 
   // ---- E: the frozen frame tilts away into a wall of identical screens (the pitch sold everywhere) that flickers into code
@@ -85,8 +87,9 @@ endcard: off
   // ---- F: out of the code, one line of her email types itself in space; the camera rides along it; a red ring on "run"
   if (t >= tNight - .3 && t < tOne + .8) {
     const k = io(tNight - .3, tNight + .9), code = clip('stock_screen_code_07', tTonight, 1);
-    ctx.save(); ctx.globalAlpha = .35 * (1 - .6 * k); drawFit(code, 0, 0, W, H, 1.2 + k * .5); ctx.restore();
-    ctx.fillStyle = `rgba(5,4,3,${.65 * k})`; ctx.fillRect(0, 0, W, H);
+    ctx.save(); ctx.globalAlpha = .8 - .35 * k; drawFit(code, 0, 0, W, H, 1.2 + io(tNight - .3, tOne) * .9, .5 - io(tEmail, tEnd) * .2, .5); ctx.restore();
+    ctx.fillStyle = `rgba(5,4,3,${.45 * k})`; ctx.fillRect(0, 0, W, H);
+    text('FROM  Ruja Ignatova  ·  TO  Sebastian Greenwood  ·  9 AUGUST 2014', W * .5, H * .32, { size: 30 * u, font: 'cond', weight: 700, col: '#a99a82', a: io(tEmail - .2, tEmail + .5) * (1 - io(tOne, tOne + .5)), lw: 0, ls: 3 * u });
     const line = LINE, ty = io(tEmail, tEnd - .4), nC = Math.floor(line.length * ty), fs = FS, [sx, rx, , rwE] = ringGeo(t);
     ctx.save(); ctx.font = `600 ${fs}px "Be Vietnam Pro", sans-serif`; ctx.textBaseline = 'middle'; const shown = line.slice(0, nC);
     ctx.fillStyle = '#f1e8d4'; ctx.fillText(shown, sx, H * .5); if (nC < line.length && (t * 2.5 % 1) < .6) ctx.fillRect(sx + ctx.measureText(shown).width + 6 * u, H * .5 - fs * .4, 6 * u, fs * .8);
@@ -101,8 +104,8 @@ endcard: off
     const [, rx, ry, rw, rh] = ringGeo(Math.min(t, tOne - .2)), k = ease.inOut(io(tOne - .2, tOne + 1.4));
     const cx = lerp(rx, W / 2, k), cy = lerp(ry, H / 2, k), ex = lerp(rw, W * .75, k), ey = lerp(rh, H * .75, k);
     ctx.save(); ctx.beginPath(); ctx.ellipse(cx, cy, ex, ey, 0, 0, 7); ctx.clip();
-    cover(img('onecoin_doc_fbi_wanted'), { z: lerp(1.8, 1.15, k) + .06 * io(tOne + 1.4, tVan), oy: .25, filter: 'brightness(.9)' });
-    const b = io(tVan, tVan + 2.2); if (b > 0) { const A = grab('g_burn'); cover(img('onecoin_doc_fbi_wanted'), { z: 1.21, oy: .25, filter: 'brightness(.35) blur(3px)' }); burn(A, b, { seed: 4, cx: .45, cy: .45 }); }
+    const pan = ease.inOut(io(tOne + 1.2, tVan)); cover(img('onecoin_doc_fbi_wanted'), { z: lerp(1.5, 1.0, k) + .35 * pan, ox: .5 - .25 * pan, oy: .3 + .15 * pan, filter: 'brightness(.95)' });
+    const b = io(tVan, tVan + 2.2); if (b > 0) { const A = grab('g_burn'); cover(img('onecoin_doc_fbi_wanted'), { z: 1.21, oy: .25, filter: 'brightness(.35) blur(3px)' }); burn(A, b, { seed: 4, cx: .35, cy: .5 }); }
     ctx.restore(); ctx.strokeStyle = `rgba(205,30,30,${.95 * (1 - k)})`; ctx.lineWidth = 9 * u; ctx.beginPath(); ctx.ellipse(cx, cy, ex, ey, 0, 0, 7); ctx.stroke(); }
 }
 #! end
