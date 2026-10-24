@@ -25,7 +25,9 @@ id prefix (`stock_<category>_…`). Each row shows have / target and the gap. Th
    prisons, police work, bankruptcies, protests, casinos, surveillance, startups, auctions, foreclosure housing),
    plus deepening of the ×3 groups, until Drive `_stock/` reaches 20 GB; then stop. Each Phase 4 clip's `desc` starts
    with the VERB of the action, same as P3. The 20 GB cap is checked before every pack upload: at 19.5 GB or above,
-   pack in ≤ 100 MB chunks; at 20 GB or above, stop all production, index, commit and report the exact total.
+   pack in ≤ 100 MB chunks. Neither the group targets nor the 20 GB cap need to be exact (owner, 24 Oct 2026: a bit
+   over is fine): do not cut good clips just to land on an exact target, and a pack in flight may be finished and
+   uploaded even if it carries the total slightly past 20 GB; only do not start new production after crossing 20 GB.
 4. **Always, demand-driven:** each film logs the shots it needed and could not find
    (`pp_stock.py want …` → `jobs/STOCK_WISHLIST.md`). Muse fills the wishlist FIRST, before any plan gap. Real need
    beats guessing.
