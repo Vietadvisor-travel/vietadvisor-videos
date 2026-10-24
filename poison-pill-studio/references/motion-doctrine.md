@@ -22,9 +22,10 @@ So the rule is NOT "more effects" and NOT "motion graphics first". It is:
    "her brother landed in Los Angeles" → the LAX footage/photo, not a generic plane; "the only exchange kept going
    offline" → a real trading screen freezing and going black, not a typed panel. Ask of every beat: if the sound were
    off, would this picture still tell me what the sentence says? Generic stock under a caption fails.
-3. **Variety inside one episode.** The fault of ep. 4 v2 was repetition (desk prints ×22, email page ×20, back-office
-   panel ×13, case cards ×11, bars ×11), not the style itself. No device on more than 10 % of the beats; the motif
-   (e.g. the email) at most once per act, short; never the same composition twice in a row; each act brings at least
+3. **No repetition inside one video (the owner: "tuyệt đối không lặp").** The fault of ep. 4 v2 was repetition (desk
+   prints ×22, email page ×20, back-office panel ×13, case cards ×11, bars ×11), not the style itself. Each device at
+   most 2 times per film; only the declared motif (`motif: @name` in the act header, e.g. the email) returns, once per
+   act at most, short; the treatment of a sentence is chosen from what it SAYS, not picked from the effects library; never the same composition twice in a row; each act brings at least
    2 devices the others do not use (`pp_motion.py` reports it).
 4. **Calm and readable.** One idea per beat, one effect per beat, at most one line of type. Effects serve the cut, they
    do not perform. No constant particles, no shaking, no colour flashing; nothing the eye has to chase.

@@ -143,6 +143,10 @@ cd studio && python3 tools/pp_drive.py check && python3 tools/pp_drive.py ls && 
 to send Muse: `nghiên cứu và đóng gói: <topic>`.
 
 ## Rules that never change
+- **THE FIRST RULE (the owner, 24 Oct 2026): the picture comes from the sentence, never from the effects menu.** Each
+  sentence or scene gets the treatment its own content asks for, chosen for it. **Never repeat a device in one video:**
+  each effect/composition at most 2 times per film; only the declared motif (`motif:` in the act header) may return,
+  once per act at most. `pp_motion.py` fails the film otherwise.
 - 16:9 only. No cartoon characters or mascots. Real footage and real images first. AI images only for plates, environments, props and
   textures, never for real people, documents, logos or events.
 - Every number in the script must appear in the research with a source. Otherwise cut it or mark it in the report.

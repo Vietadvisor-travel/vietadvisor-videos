@@ -5,7 +5,7 @@
 Per second: mean absolute frame difference (96×54 grey, 10 fps). A second under STILL is "nearly still" to the eye.
 Report per beat (still seconds, longest still run), per act and for the film, plus effect repetition from the stories.
 GATE (motion-doctrine.md §0): still seconds ≤ 35 % of the film · no still run > 3.0 s except beats whose card says HOLD
-(≤ 2 per act) · no effect on more than 10 % of the beats · at least 2 effects per act that appear in no other act.
+(≤ 2 per act) · no effect more than 2 times in the film (the act header's `motif:` excepted, ≤ 1 per act) · at least 2 effects per act that appear in no other act.
 Writes out/<slug>_motion.md and prints the verdict.
 """
 import glob, json, os, re, subprocess, sys, collections
@@ -34,11 +34,14 @@ if len(sys.argv) > 2 and sys.argv[1] == 'file':
     print(f'{len(m) / FPS:.0f} s · nearly still {st.mean() * 100:.0f} % · still runs ≥ 2 s: {len(r)} · longest {max([x[1] for x in r], default=0) / FPS:.1f} s'); sys.exit()
 slug = sys.argv[1]; draft = '--draft' in sys.argv
 acts = sorted(int(re.search(r'-a(\d+)\.story$', f).group(1)) for f in glob.glob(f'stories/{slug}-a*.story') if re.search(r'-a\d+\.story$', f))
+motif, mot_act = set(), {}
 rep, fx_all, fx_act, beats_total, still_total, secs_total, long_runs, holds_over = [], collections.Counter(), {}, 0, 0, 0, [], []
 for n in acts:
     story = open(f'stories/{slug}-a{n}.story', encoding='utf-8').read()
     cards = re.findall(r'^// CARD (\S+)[^\n]*', story, re.M); hold = {c for c, l in zip(cards, re.findall(r'^// CARD [^\n]*', story, re.M)) if re.search(r'\bHOLD\b', l)}
-    fx = re.findall(r'fx="code:@?([a-z_0-9]+)', story); fx_all.update(fx); fx_act[n] = set(fx)
+    fx = [m[0] + ('_with_text' if m[0] == 'reel' and 'txt:' in m[1] else '') for m in re.findall(r'fx="code:@?([a-z_0-9]+)([^"]*)"', story)]   # a plain clip is the picture, not a device
+    fx_all.update(f for f in fx if f != 'reel'); fx_act[n] = set(fx)
+    motif.update(re.findall(r'^motif:\s*@?([a-z_0-9]+)', story, re.M)); mot_act[n] = collections.Counter(f for f in fx if f in motif)
     vid = f'out/{slug}-a{n}_16x9{"_lite" if draft else ""}.mp4'
     if not os.path.exists(vid): vid = f'out/{slug}-a{n}_16x9_FINAL.mp4'
     cues = f'out/{slug}-a{n}_cues.json'
@@ -55,13 +58,13 @@ for n in acts:
             else: long_runs.append((cid, lr)); flag = ' ⚠'
         rep.append(f'| {cid} | {s["dur"]:.1f} | {seg.mean() * 100 if len(seg) else 0:.0f} | {lr:.1f}{flag} | {fx[i] if i < len(fx) else ""} |')
 still_pct = still_total / max(secs_total, 1) * 100
-top = fx_all.most_common(); over = [(f, c) for f, c in top if c > 0.10 * max(beats_total, 1)]
+top = fx_all.most_common(); over = [(f, c) for f, c in top if f not in motif and c > 2] + [(f'{f} (motif, a{n})', c) for n, m in mot_act.items() for f, c in m.items() if c > 1]
 own = {n: [f for f in fx_act[n] if all(f not in fx_act[m] for m in fx_act if m != n)] for n in fx_act}; few = [n for n in own if len(own[n]) < 2]
 ok = still_pct <= 35 and not long_runs and not over and not few
 head = [f'# Motion & repetition gate · {slug}', '',
         f'- nearly still: **{still_pct:.0f} %** of {secs_total:.0f} s (gate ≤ 35 %)',
         f'- still runs > 3 s outside HOLD beats: **{len(long_runs)}** (gate 0)' + (': ' + ', '.join(f'{c} {l:.1f}s' for c, l in sorted(long_runs, key=lambda x: -x[1])[:12]) if long_runs else ''),
-        f'- effects: {len(fx_all)} distinct over {beats_total} beats; over 10 %: ' + (', '.join(f'@{f} ×{c}' for f, c in over) or 'none') + ' (gate none)',
+        f'- effects: {len(fx_all)} distinct over {beats_total} beats; used more than 2× (motif > 1× per act): ' + (', '.join(f'@{f} ×{c}' for f, c in over) or 'none') + ' (gate none)',
         '- effects only this act has: ' + ' · '.join(f'a{n}: {len(own[n])}' for n in sorted(own)) + (f' (gate ≥ 2; short: {", ".join("a" + str(n) for n in few)})' if few else ' (gate ≥ 2)'),
         f'- usage: ' + ', '.join(f'@{f} {c}' for f, c in top), '', f'**VERDICT: {"PASS" if ok else "FAIL"}**']
 open(f'out/{slug}_motion.md', 'w').write('\n'.join(head + rep) + '\n')
