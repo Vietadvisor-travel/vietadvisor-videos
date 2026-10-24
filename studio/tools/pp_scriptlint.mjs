@@ -20,6 +20,10 @@ const hook = S.filter(x => x.t < 20); const hookOk = hook.some(x => spec.test(x.
 const loops = S.filter(x => loop.test(x.l)); if (!S.filter(x => x.t < 60).some(x => loop.test(x.l))) W.push('no open loop in the first minute — promise something you pay off later ("but that\'s not the real story", a question, "remember this number")');
 // 3 causality: BUT/THEREFORE density, and/then chains
 const turns = S.filter(x => turn.test(x.l)).length; const causal = S.length ? turns / S.length : 0; if (causal < .18) W.push(`only ${Math.round(causal * 100)} % of sentences turn the story (but / so / then / until / which meant) — scenes linked by AND THEN feel like a list; target ≥ 20 %`);
+// v6.6 opening & ending (content-and-audience.md §2b): a lead-in before the first fact, and an ending that lands
+{ const fact = /\b(1[89]|20)\d\d\b|\$\s?\d|\d[\d,.]*\s*(%|percent|million|billion|thousand)|\b\d{2,}\b/i; let lead = 0; for (const x of S) { if (fact.test(x.l)) break; lead += x.w; }
+  if (lead < 90) W.push(`opening: only ${lead} words before the first number or date — lead the viewer in first (place, question, stakes, promise; ≥ 90 words)`);
+  const end = S.slice(-3).reduce((a, x) => a + x.w, 0); if (end < 70) W.push(`ending: the last 3 sentences have ${end} words — land the film (return to the opening image, thesis, what is open, closing line, sign-off; ≥ 70 words)`); }
 const andThen = S.filter(x => /\band then\b/i.test(x.l)).length; if (andThen > 2) W.push(`"and then" ×${andThen} — replace with BUT (conflict) or SO / WHICH MEANT (consequence)`);
 // 4 re-hooks every ~2.5 min
 for (let a = 60; a < t - 60; a += 150) { const win = S.filter(x => x.t >= a && x.t < a + 150); if (win.length && !win.some(x => loop.test(x.l) || /\b(but here's|that's when|nobody knew|what happened next|the real reason|it gets worse)\b/i.test(x.l))) W.push(`${tm(a)}–${tm(a + 150)}: no re-hook — every 2–3 min re-raise the stakes or the central question`); }

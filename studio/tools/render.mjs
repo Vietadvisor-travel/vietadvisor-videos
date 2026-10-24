@@ -34,10 +34,21 @@ else {
   const chunkF = Math.max(30, Math.round(+(opt('chunk') || 4) * fps)); const reuse = opt('reuse') !== '0'; const thr = +(opt('reuse-thr') || .7); const ftimeout = +(opt('frame-timeout') || 90) * 1000;
   const memJobs = Math.max(1, Math.floor(os.totalmem() / 2.2e9)); const jobs = Math.max(1, Math.min(+(opt('jobs') || Math.min(os.cpus().length, 4, memJobs)), Math.ceil((f1 - f0) / chunkF)));
   const preset = opt('preset') || 'veryfast', crf = opt('crf') || '18';
-  const cdir = out.replace(/\.mp4$/, '.chunks'); const sig = crypto.createHash('md5').update([fs.readFileSync(ep), fmt, sc_, fps, chunkF, LITE, VO ? JSON.stringify(VO) : ''].join('|')).digest('hex');
-  if (fs.existsSync(cdir) && (!fs.existsSync(cdir + '/sig') || fs.readFileSync(cdir + '/sig', 'utf8') !== sig)) fs.rmSync(cdir, { recursive: true, force: true });
-  fs.mkdirSync(cdir, { recursive: true }); fs.writeFileSync(cdir + '/sig', sig);
-  const chunks = []; for (let a = f0; a < f1; a += chunkF) chunks.push({ a, b: Math.min(f1, a + chunkF), f: `${cdir}/c${String(a).padStart(6, '0')}.mp4` });
+  // v6.6 content-addressed chunks: each chunk's file name is a hash of everything that can change its pixels — the
+  // shared parts (header, #! scene code, effects library, image registry, format) plus the beats it overlaps (± 1 s)
+  // with their timing (the voice of a line is fixed by its text, so the beat text covers it). Editing one beat re-renders only the chunks around it; a crash or a new session resumes.
+  const cdir = out.replace(/\.mp4$/, '.chunks'); const H5 = x => crypto.createHash('md5').update(x).digest('hex');
+  const src = fs.readFileSync(ep, 'utf8'), fileH = f => fs.existsSync(f) ? H5(fs.readFileSync(f)) : '';
+  const beatRe = /^# (?!!)/m, parts = src.split(/^(?=# (?!!))/m);
+  const sceneCode = (src.match(/^#! scene[\s\S]*?^#! end/gm) || []).join('\n');
+  const beats = parts.slice(1).map(b => b.split('\n').filter(l => !l.startsWith('//')).join('\n').replace(/^#! scene[\s\S]*?^#! end/gm, ''));
+  const starts = await page.evaluate(() => _starts.slice()); const perBeat = beats.length === starts.length && beatRe.test(src);
+  const shared = H5([parts[0].split('\n').filter(l => !l.startsWith('//')).join('\n'), sceneCode, fileH('engine/library/effects.js'), fileH('engine/library/images.json'), fileH('engine/library/pp_fxkit.js'), fmt, sc_, fps, chunkF, LITE].join('|'));
+  const whole = H5([src, VO ? JSON.stringify(VO) : ''].join('|'));
+  const chunkSig = (a, b) => { if (!perBeat) return H5(shared + whole + a + '-' + b); const t0 = a / fps - 1, t1 = b / fps + 1, ends = starts.slice(1).concat([dur]);
+    const ids = starts.map((s, i) => i).filter(i => ends[i] > t0 && starts[i] < t1); return H5([shared, a, b, ...ids.map(i => i + ':' + starts[i].toFixed(3) + ':' + ends[i].toFixed(3) + ':' + beats[i])].join('|')); };
+  fs.mkdirSync(cdir, { recursive: true });
+  const chunks = []; for (let a = f0; a < f1; a += chunkF) { const b = Math.min(f1, a + chunkF); chunks.push({ a, b, f: `${cdir}/c${String(a).padStart(6, '0')}_${chunkSig(a, b).slice(0, 12)}.mp4` }); }
   const todo = chunks.filter(c => !fs.existsSync(c.f)); const total = chunks.length; let doneN = total - todo.length; const t0 = Date.now(); let framesDone = 0, reused = 0; const todoFrames = todo.reduce((s, c) => s + c.b - c.a, 0);
   if (doneN) console.log(`resuming: ${doneN}/${total} chunks already rendered`);
   const progress = () => { const el = (Date.now() - t0) / 1000, eta = framesDone ? el / framesDone * (todoFrames - framesDone) : null; fs.writeFileSync(cdir + '/progress.json', JSON.stringify({ done: doneN, total, framesDone, todoFrames, reused, elapsed_s: Math.round(el), eta_s: eta && Math.round(eta), jobs, updated: new Date().toISOString() }, null, 1));
@@ -60,7 +71,11 @@ else {
   await Promise.all(Array.from({ length: jobs }, (_, k) => worker(k)));
   const list = cdir + '/list.txt'; fs.writeFileSync(list, chunks.map(c => `file '${path.resolve(c.f)}'`).join('\n'));
   const { execFileSync } = await import('child_process'); execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', list, '-c', 'copy', '-movflags', '+faststart', out]);
-  if (!args.includes('--keep-chunks')) fs.rmSync(cdir, { recursive: true, force: true });
+  // v6.6: chunks are KEPT (they are the cache for the next edit or a crashed session); stale ones beyond the newest
+  // 3 versions of each time slot are pruned. --clean-chunks removes the folder after a successful render.
+  if (args.includes('--clean-chunks')) fs.rmSync(cdir, { recursive: true, force: true });
+  else { const keep = new Set(chunks.map(c => path.basename(c.f))), bySlot = {}; for (const f of fs.readdirSync(cdir).filter(f => /^c\d{6}_/.test(f) && !keep.has(f))) (bySlot[f.slice(0, 7)] ||= []).push(f);
+    for (const fs_ of Object.values(bySlot)) fs_.map(f => [f, fs.statSync(cdir + '/' + f).mtimeMs]).sort((x, y) => y[1] - x[1]).slice(2).forEach(([f]) => fs.unlinkSync(cdir + '/' + f)); }
   console.log(`rendered ${f1 - f0} frames in ${((Date.now() - t0) / 1000).toFixed(0)}s · ${reused} reused · ${jobs} jobs`);
   if (args.includes('--audio')) { // procedural SFX track from the cue sheet, muxed into the MP4
     const { execFileSync } = await import('child_process'); const cj = out.replace(/\.mp4$/, '_cues.json'), wav = out.replace(/\.mp4$/, '_sfx.wav'), tmp = out.replace(/\.mp4$/, '_tmp.mp4');

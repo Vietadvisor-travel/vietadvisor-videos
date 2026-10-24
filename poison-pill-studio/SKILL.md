@@ -27,7 +27,7 @@ MagnatesMedia collage × LEMMiNO 3D atmosphere.
       default; `idle: on` to enable), stillness before the climax (`references/motion-doctrine.md`, learned from
       HyperFrames and Remotion).
     - **Content, SEO and emotion run in parallel with the picture** (`references/content-and-audience.md`): keyword and
-      competitor research before the angle, title + thumbnail before the script, a script that works with the screen off
+      competitor research before the angle, titles before the script (the owner makes thumbnails), a script that works with the screen off
       (listen-only test), the channel's own character, and an emotional arc voiced with `{excited}` `{tense}` `{grave}`
       `{sad}` `{warm}` `{wry}` `{awe}` `{urgent}`.
     - Hard rules stay: facts, licences, no AI real people, `captions: off`, `pp_layout` 0 flags, the publish kit.
@@ -144,7 +144,7 @@ the film from it without redesigning anything.
 | 9 | Critic loop | `gauntlet.md`: fresh critic → top 6 fixes → verification critic | SHIP |
 | 10 | Draft render | `pp_speed.mjs` (SLOW beats?) → `render.mjs --fmt 16x9 --scale .5 --jobs N` | alive at 1× |
 | 11 | Make & join | `make.mjs` per act (16:9) `--jobs N [--lite]`; crash → same command `--resume` → concat → loudness → full-film critic | −14 LUFS, SHIP |
-| 12 | Package & deliver | `pp_thumb.mjs`, titles, description, credits | human rubric ≥ 9/10 |
+| 12 | Package & deliver | titles, description, credits, 10 stills (no thumbnail) | human rubric ≥ 9/10 |
 
 ## One beat, four ways (the same sentence, four families)
 > *"Everyone saw the famous names. Nobody looked at what was underneath."*
@@ -167,7 +167,7 @@ Pick the one that best serves this moment of the film and its neighbours (variet
 | `references/custom-scenes.md` | **always**: write a beat's animation as code, the API, worked examples |
 | `references/image-sourcing.md` | finding licensed real images automatically (`pp_find.py`) |
 | `references/scene-script.md` | **always (v6.3, first)**: the per-second SCENE CARD method, where pictures come from, building and saving effects (`pp_fx.mjs`), weak vs strong cards, the tells |
-| `references/content-and-audience.md` | **always (v6.3)**: packaging first (keywords, competitors, title + thumbnail before the script), the listen-only test, the channel's character, what viewers and the platform reward, the emotional arc and emotion tags |
+| `references/content-and-audience.md` | **always (v6.3)**: packaging first (keywords, competitors, titles before the script (the owner makes thumbnails)), the listen-only test, the channel's character, what viewers and the platform reward, the emotional arc and emotion tags |
 | `references/motion-doctrine.md` | **always (v6.3)**: seam law, the cut catalogue with parameters, no idle wobble, timing, type entrances, footage as material, effects to port |
 | `references/publish.md` | **always (v6.2)**: the YouTube kit: SRT, upload guide, SEO rules, the altered-content decision |
 | `references/final-cut.md` | **always (v6.3 §A–D first)**: scene cards decide the picture (no quotas), the clean frame + `pp_layout` gate, what the critic looks for; then v6.1: the anti-mechanical method: visual mix targets, the BEAT TABLE + swap test, rhythm, Remotion-standard motion, AI moment art, the critic on real frames |

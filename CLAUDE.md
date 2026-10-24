@@ -47,7 +47,7 @@ The rulebook is `poison-pill-studio/` (SKILL.md and references/). The engine wit
      - keyword and competitor research BEFORE the angle (Semrush/Ubersuggest connector if present, else autocomplete via
        web search);
      - "Everyone says X. The real story is Y.";
-     - 3 titles + a thumbnail concept BEFORE the script;
+     - 3 titles BEFORE the script (no thumbnail: the owner makes thumbnails himself, Oct 2026);
      - a script that works with the screen off (listen-only test);
      - the channel's own character (`jobs/channel.md`);
      - an emotional arc per act, voiced with `{excited}` `{urgent}` `{tense}` `{grave}` `{sad}` `{warm}` `{wry}` `{awe}`.
@@ -111,10 +111,10 @@ The rulebook is `poison-pill-studio/` (SKILL.md and references/). The engine wit
    - Write `jobs/<slug>/UPLOAD_GUIDE_<slug>.txt` exactly as `poison-pill-studio/references/publish.md` §3 defines:
      titles, description with chapters, sources and every credit, tags, Studio fields, the altered-content decision
      with its reason, end screen and cards, pinned comment, and the 48-hour checklist.
-   - Copy the SRT and the thumbnail(s) to `jobs/<slug>/`.
-   - Send the owner: the final MP4, the SRT, the upload guide, the thumbnail(s) and 10 stills.
-   - Commit the stories, `studio/history.json`, `jobs/<slug>/EPISODE_<slug>.md`, the SRT, the upload guide and the
-     thumbnail(s), then push.
+   - Copy the SRT to `jobs/<slug>/`.
+   - Send the owner: the final MP4, the SRT, the upload guide and 10 stills (stills help him make the thumbnail).
+   - Commit the stories, `studio/history.json`, `jobs/<slug>/EPISODE_<slug>.md`, the SRT and the upload guide, then
+     push.
    - Never commit MP4s or clips/stock zips (GitHub's limit is 100 MB; big media goes to Drive), and never commit the imported library (`studio/engine/library/img/`,
      `images.json`, `images.js`); it is rebuilt from the packs in every session.
    - Report honestly: what was checked, what is uncertain, and the critic scores.

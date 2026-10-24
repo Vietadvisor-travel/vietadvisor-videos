@@ -8,6 +8,29 @@ Distilled from:
 
 Here they are rewritten for our engine. Read with `scene-script.md`. Where they disagree with older files, these win.
 
+## 0. The film never stops (v6.6, the owner's rule after ep. 4 v2, 24 Oct 2026)
+Measured on ep. 4 v2 with `pp_motion.py`: 58 % of the seconds were nearly still, 58 still runs over 2 s, and 6 effects
+carried 78 % of the beats (desk prints, email page, footage + caption, back-office screen, case cards, bars). The owner:
+"almost only a picture or a clip with some text, shaking, flying in, changing, then repeating; not one continuous film
+that moves and transforms with the content". Stills hid it from the critic. From now on:
+
+1. **One continuous film.** Each act is one camera moving through one space; beats are places the camera reaches, not
+   slides. The picture transforms: the object on screen BECOMES the next one (a coin's edge becomes a runway, the email's
+   red ring becomes a courtroom spotlight, a map line becomes a phone cable). A beat that starts by dropping new things
+   onto a plate fails.
+2. **Something meaningful changes every 0.8–1.5 s.** No window over 1.2 s without motion; a declared `HOLD` (written in
+   the card) is the only exception: at most 2 per act, at most 2 s, and only before a reveal.
+3. **Pictures carry, type is rare.** At most 1 beat in 4 has words on screen beyond a 2–3 word label; never a sheet of
+   text as the picture (documents are inserts of under 2 s, at most 3 per film, except a declared motif shown once
+   per act).
+4. **Variety budget.** No effect on more than 10 % of the beats; each act brings at least 2 effects no other act uses;
+   never the same composition twice in a row; every act uses at least 3 of: real footage transformed, a 2.5D photo
+   world with depth, a true 3D shot, a match cut, a speed ramp/freeze, a mask transition through an object, a split
+   that collapses, a typographic world built in space, a map/route flight, a data object made physical.
+5. **The gate measures the video, not the stills.** Before the final render: `--lite` draft of every act, then
+   `python3 tools/pp_motion.py <slug> --draft`. It must PASS (nearly still ≤ 15 %, 0 still runs > 2 s outside HOLD,
+   no effect > 10 %, ≥ 2 own effects per act). The critic then watches motion strips, not single stills.
+
 ## 1. The seam law: one camera, not a slideshow
 - **How a scene exits decides how the next enters:**
   - same axis, same direction, matched speed;

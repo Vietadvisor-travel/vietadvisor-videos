@@ -128,6 +128,76 @@ def tts(text, voice, speed=1.0):
     if len(idx): s = s[max(0, idx[0] - int(sr * .03)): idx[-1] + int(sr * .08)]
     return s, sr
 
+# ---------------------------------------------------------------- v6.6 natural cloud voices (Google): far more human than Kokoro
+# A voice spec "gemini:Charon" (Gemini TTS: directed in plain words, so {sad} {grave} {wry} really change the read) or
+# "google:en-US-Chirp3-HD-Charon" (Cloud Text-to-Speech, Chirp 3 HD). One API key from the owner's Google Cloud project,
+# in the environment as GOOGLE_TTS_API_KEY (or GEMINI_API_KEY / GOOGLE_API_KEY), or a line GOOGLE_TTS_API_KEY=… in
+# ~/.config/poisonpill/voice.env. Never in git, never printed. PP_GEMINI_TTS_MODEL overrides the model name.
+# A whole line is read in ONE call (prosody flows across its sentences); [BEAT] still inserts a 0.6 s held pause.
+def is_cloud(v): return bool(v) and v.split(':')[0] in ('gemini', 'google')
+def gkey():
+    for k in ('GOOGLE_TTS_API_KEY', 'GEMINI_API_KEY', 'GOOGLE_API_KEY'):
+        if os.environ.get(k): return os.environ[k]
+    f = os.path.expanduser('~/.config/poisonpill/voice.env')
+    if os.path.exists(f):
+        for ln in open(f):
+            m = re.match(r'\s*(?:export\s+)?(GOOGLE_TTS_API_KEY|GEMINI_API_KEY|GOOGLE_API_KEY)\s*=\s*"?([^"\s]+)', ln)
+            if m: return m.group(2)
+    sys.exit('cloud voice needs GOOGLE_TTS_API_KEY in the environment (jobs/VOICE_SETUP.md)')
+def _post(url, body):
+    import urllib.request, urllib.error, time
+    for k in range(4):
+        try:
+            rq = urllib.request.Request(url, json.dumps(body).encode(), {'Content-Type': 'application/json', 'x-goog-api-key': gkey()})
+            return json.load(urllib.request.urlopen(rq, timeout=180))
+        except urllib.error.HTTPError as e:
+            msg = e.read().decode()[:300]
+            if e.code in (429, 500, 503) and k < 3: time.sleep(4 * (k + 1)); continue
+            raise RuntimeError(f'HTTP {e.code}: {msg}')
+EMO_WORDS = {'sad': 'softly, with quiet sadness', 'grave': 'gravely, low and unhurried', 'excited': 'with bright, building excitement',
+             'urgent': 'urgently, pressing forward', 'tense': 'tense and restrained, as if something is about to go wrong',
+             'warm': 'warmly, close to the listener', 'wry': 'with dry, wry understatement', 'awe': 'with hushed awe',
+             'slow': 'slowly', 'fast': 'briskly', 'hit': 'landing the last words with weight', 'soft': 'softly', 'hold': 'after a held breath'}
+ACT_WORDS = {'hook': 'drawing the listener in', 'setup': 'calm and clear', 'rise': 'with growing momentum', 'peak': 'confident, at full stride',
+             'doubt': 'with a note of suspicion', 'fall': 'heavier and slower', 'crash': 'heavy, slow, final', 'after': 'reflective',
+             'lesson': 'reflective and direct', 'verdict': 'measured and final'}
+def cloud_tts(text, voice, speed=1.0, dirs=(), act=None, delivery=None, quote=False):
+    kind, name = voice.split(':', 1); sp = speakable(text)
+    if kind == 'gemini':
+        how = ', '.join([w for w in [ACT_WORDS.get(act or ''), *(EMO_WORDS[d] for d in dirs if d in EMO_WORDS), {'wry': 'dry wit', 'tense': 'tension', 'calm': 'calm', 'warm': 'warmth', 'lively': 'energy'}.get(delivery or '')] if w])
+        who = 'Read this quoted line as the person who wrote it, naturally' if quote else 'You are the narrator of a serious, gripping YouTube documentary. Read this line naturally, like a person telling a true story, not like an announcer'
+        prompt = f'{who}{(", " + how) if how else ""}:\n{sp}'
+        models = [os.environ['PP_GEMINI_TTS_MODEL']] if os.environ.get('PP_GEMINI_TTS_MODEL') else ['gemini-2.5-pro-preview-tts', 'gemini-2.5-flash-preview-tts', 'gemini-2.5-pro-tts', 'gemini-2.5-flash-tts']
+        last = None
+        for mdl in models:
+            try:
+                r = _post(f'https://generativelanguage.googleapis.com/v1beta/models/{mdl}:generateContent', {'contents': [{'parts': [{'text': prompt}]}],
+                          'generationConfig': {'responseModalities': ['AUDIO'], 'speechConfig': {'voiceConfig': {'prebuiltVoiceConfig': {'voiceName': name}}}}})
+                d = r['candidates'][0]['content']['parts'][0]['inlineData']; rate = int((re.search(r'rate=(\d+)', d.get('mimeType', '')) or [0, 24000])[1])
+                import base64; x = np.frombuffer(base64.b64decode(d['data']), '<i2').astype(np.float32) / 32768; sr = rate; break
+            except RuntimeError as e:
+                last = e
+                if 'HTTP 404' in str(e): continue
+                raise
+        else: raise last
+    else:
+        lang = '-'.join(name.split('-')[:2])
+        r = _post('https://texttospeech.googleapis.com/v1/text:synthesize', {'input': {'text': sp}, 'voice': {'languageCode': lang, 'name': name},
+                  'audioConfig': {'audioEncoding': 'LINEAR16', 'sampleRateHertz': 24000, 'speakingRate': max(.75, min(1.3, speed))}})
+        import base64, io; from scipy.io import wavfile; sr, x = wavfile.read(io.BytesIO(base64.b64decode(r['audioContent']))); x = x.astype(np.float32) / 32768
+    a = np.abs(x); thr = max(1e-3, a.max() * .02); idx = np.where(a > thr)[0]
+    if len(idx): x = x[max(0, idx[0] - int(sr * .03)): idx[-1] + int(sr * .08)]
+    return x, sr
+def cloud_expr(text, voice, speed=1.0, act=None, dirs=(), delivery=None, spk=None):
+    dpre = max([DIR[d][1] for d in dirs if d in DIR] + [0]); parts, words, t, sr0 = [], [], 0.0, 24000
+    if dpre: parts.append(np.zeros(int(sr0 * dpre), np.float32)); t += dpre
+    for k, seg in enumerate([c for c in text.split('\u200b')]):
+        if k: parts.append(np.zeros(int(sr0 * .6), np.float32)); t += .6
+        if not re.search(r'[A-Za-z0-9]', seg): continue
+        x, sr = cloud_tts(seg.strip(), voice, speed, dirs, act, delivery, quote=spk not in (None, '', 'narrator'))
+        x = resample(x, sr, sr0); parts.append(x); words += align_chunk(seg, x, sr0, t, 'am_michael'); t += len(x) / sr0
+    return np.concatenate(parts) if parts else np.zeros(1, np.float32), sr0, words
+
 # ---------------------------------------------------------------- delivery direction (references/voice-direction.md)
 # act → (speed ×, gap ×, pitch semitones): the same narrator reads the rise faster and brighter, the fall slower and lower.
 ACT = {'hook': (1.02, .9, 0), 'setup': (.98, 1., 0), 'rise': (1.04, .85, .15), 'peak': (1.03, .9, .1), 'doubt': (.96, 1.15, -.15),
@@ -162,6 +232,7 @@ def tts_expr(text, voice, speed=1.0, act=None, dirs=(), delivery=None, spk=None)
     """Delivery pass on top of Kokoro. Each sentence is read by its role (set / fact / build / reveal / question / quote), the
     line by its act and the episode's delivery, plus {tags}; '…' or ' — ' = a held beat, [BEAT] (\u200b) = a 0.6 s pause.
     Seeded jitter (±2 % speed, ±50 ms pauses) keeps the rhythm human but makes a re-render identical."""
+    if is_cloud(voice): return cloud_expr(text, voice, speed, act, dirs, delivery, spk)
     R = rnd_for(text + str(act) + str(dirs)); A = ACT.get(act or '', (1, 1, 0)); Dl = DELIV.get(delivery or '', (1, 1, 0))
     dsp, dpre, dpost = 1., 0., 0.
     for d in dirs:
@@ -264,6 +335,7 @@ def synth(lines_path, outdir, voice=None, speed=1.0):
     cast = {k.strip(): v.strip() for k, v in re.findall(r'([\w-]+)\s*=\s*([^;]+)', L.get('voices') or '')}
     if 'narrator' in cast and not voice: narr = cast['narrator']
     delivery = (L.get('delivery') or '').strip().lower() or None
+    if is_cloud(narr) and speed in (None, 'auto'): speed = 1.0   # cloud voices keep their natural pace
     if speed in (None, 'auto'):  # calibrate to ~2.7 words/s (≈160 wpm, explainer pace) from the first lines
         probe = [ln['text'] for ln in L['lines'][:4]] or ['This is a short calibration line for the narrator.']
         dur = 0

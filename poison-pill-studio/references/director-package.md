@@ -29,7 +29,7 @@ with these exact headings, because Muse's instructions parse them.
 - open loop (planted ≤ 0:45): "<line>" → paid off at <act/beat>: "<line>"
 - midpoint twist (≈ 50 %): "<the fact that reframes everything>"
 - signature shots: a0 <mode> · a2 <mode> · a3 <mode> · a4 <mode> · a6 <mode>
-- titles: 1) … 2) … 3) …          - thumbnail brief: <face id + number + red word, ≤ 3 elements>
+- titles: 1) … 2) … 3) …          (no thumbnail: the owner makes it)
 - pinned comment: "<the open question>"
 - SEO (v6.3, content-and-audience.md §1, done BEFORE the script): primary keyword (what people type) · 3 secondary · top 3 audience questions · 3 competing videos + their angle · "Everyone says X. The real story is Y." · 15 tags · description lines 1–2 (keyword + hook) · chapter titles
 - emotional arc (v6.3, §5): a0 <emotion> · a1 <…> · … · the 3 strongest moments: <line → {tag}> ×3 · listen-only test passed ✓
@@ -175,7 +175,7 @@ only)  6) pp_sheet + pp_review every act; a SEPARATE fresh critic agent compares
 picture doesn't match its IDEA; fix only execution (assets, framing, timing), re-sheet  7) make.mjs per act (16:9) with --jobs <CPU cores>; add --lite on a 2-core machine; if anything
 crashes or the machine reboots, run the SAME command again with --resume (finished chunks are kept); watch
 out/<act>_16x9_v.chunks/progress.json (if 'updated' is older than 15 min, the job is stuck: restart it with --resume) → join →
-−14 LUFS → 15 stills checked  8) thumbnail per §0, titles, description with sources and credits.
+−14 LUFS → 15 stills checked  8) 10 strong stills for the owner's thumbnail, titles, description with sources and credits.
 BEFORE RENDERING: node tools/pp_speed.mjs stories/<act>.story → any beat marked SLOW: report it, don't redesign it.
 REPORT: pp_doctor output · factcheck table (with every change) · pp_lint score per act · all pp_sheet JPGs · critic notes
 and fixes · final MP4 + 10 stills.

@@ -35,8 +35,8 @@ the film keep the promise?). So:
    - What do the competing videos all say? That is the Wikipedia version we must not make.
    - Our angle answers a question they leave open (`story-mining.md` §2). Write it in one line: "Everyone says X. The
      real story is Y."
-3. **Title + thumbnail before the script:**
-   - Write 3 titles and 1 thumbnail concept now. The hook (first 30 s) must pay off the title's promise in its first
+3. **Titles before the script** (the owner makes the thumbnail himself; the hook still has to match his thumbnail style):
+   - Write 3 titles now. The hook (first 30 s) must pay off the title's promise in its first
      sentence, so the viewer who clicked hears they came to the right place.
    - Titles:
      - keyword in the first 5 words;
@@ -72,6 +72,25 @@ The script must survive the **listen-only test**:
   - a turn (BUT / SO);
   - a pause;
   - a cut.
+
+## 2b. The opening and the ending are written, not cut short (v6.6, the owner's rule)
+Ep. 4 v2 opened with a date and a fact ("On Saturday, the eleventh of June, 2016…") and ended on a one-line kicker: the
+owner found both abrupt ("đùng phát nói luôn chả có dẫn chuyện", "đoạn kết quá cụt lủn").
+- **Opening (40–70 s, its own act a0):** the narrator leads the viewer in before the facts:
+  1. an image and a voice that set a place and a mood (who is there, what it feels like);
+  2. the question the film answers, said plainly ("How do you sell four billion dollars of something that doesn't exist?");
+  3. the stakes for real people (one person, one number);
+  4. the promise: what we will follow, and the twist we will reach ("…and the plan she wrote two years before");
+  5. only then the first fact. The first 30 s must still pay off the title.
+- **Ending (60–120 s, its own final act):** the film lands, it does not stop:
+  1. return to the opening image, changed by what we now know;
+  2. the thesis said plainly in one sentence, then what it means for the viewer (the lesson, the warning sign);
+  3. what is still open (the honest unknowns);
+  4. a closing line written to be remembered, after a breath of silence;
+  5. a short sign-off in the channel's voice (an invitation to comment on one specific question, never "like and
+     subscribe" filler).
+- `pp_scriptlint.mjs` warns when a0 has under 90 spoken words before its first number or date, or the last act's final
+  three beats have under 70 words.
 
 ## 3. Its own character: the channel voice, not a generic explainer
 `jobs/channel.md` is the bible. On top of it, every episode has:
@@ -138,7 +157,7 @@ Every film is a ride: curiosity → excitement → doubt → dread → loss → 
 - META:
   - **SEO block:** primary + secondary keywords, audience questions, competing videos and their angles, "Everyone says
     X. The real story is Y."
-  - 3 titles + thumbnail concept (before the script).
+  - 3 titles (before the script).
   - **Emotion per act + the 3 strongest moments.**
 - Script: emotion tags on the lines that carry feeling; listen-only test passed (`pp_scriptlint` 0 screen-pointing).
 - Delivery report: what the keyword research found and how the title uses it.
