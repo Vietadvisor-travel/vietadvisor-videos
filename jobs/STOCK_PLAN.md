@@ -21,6 +21,13 @@ id prefix (`stock_<category>_…`). Each row shows have / target and the gap. Th
    rows marked P3 below. They are the concrete actions business-crime stories narrate (sign, wire, pack a suitcase,
    board a jet, raid, pitch on stage, log in, get frozen out), shot so a sentence can be illustrated literally. Each
    P3 clip's `desc` starts with the VERB of the action ("signs a contract at a glass desk, close-up on the pen…").
+4. **Phase 4, expansion (the owner's call, 24 Oct 2026):** new groups the channel's stories keep needing (courtrooms,
+   prisons, police work, bankruptcies, protests, casinos, surveillance, startups, auctions, foreclosure housing),
+   plus deepening of the ×3 groups, until Drive `_stock/` reaches 20 GB; then stop. Each Phase 4 clip's `desc` starts
+   with the VERB of the action, same as P3. The 20 GB cap is checked before every pack upload: at 19.5 GB or above,
+   pack in ≤ 100 MB chunks. Neither the group targets nor the 20 GB cap need to be exact (owner, 24 Oct 2026: a bit
+   over is fine): do not cut good clips just to land on an exact target, and a pack in flight may be finished and
+   uploaded even if it carries the total slightly past 20 GB; only do not start new production after crossing 20 GB.
 4. **Always, demand-driven:** each film logs the shots it needed and could not find
    (`pp_stock.py want …` → `jobs/STOCK_WISHLIST.md`). Muse fills the wishlist FIRST, before any plan gap. Real need
    beats guessing.
@@ -104,4 +111,14 @@ aliases: bank=finance, crowds=people, datacenter=tech, hotel=place, smartphone=p
 | event | 50 | P3: arena and conference stages, keynote lights, audience from behind, confetti, stage smoke, LED walls, award ceremony, backstage corridors | conference stage lights, audience from behind, confetti stage |
 | news | 40 | P3: newsrooms, printing presses, headline on a phone, reporters outside a courthouse, TV studio without channel logos, breaking-news style screen (no brand) | newsroom, printing press newspaper, reporters courthouse |
 | ui | 40 | P3: browser loading, login and password screens, error pages, account frozen, inbox filling up, chat typing, social feed scrolling, notifications stacking (no real brand as subject) | login screen, error page, inbox notifications |
+| court | 80 | P4: empty courtrooms, judge bench, witness stand, jury box, lawyers at tables, scales of justice, court reporters sketching (no real trials) | empty courtroom, judge bench, witness stand |
+| prison | 70 | P4: cells, corridors, bars, exercise yards, visitation rooms, release gates, watchtowers | prison cell corridor, prison bars, prison yard |
+| police | 70 | P4: patrol cars, lights at night, officers on duty (backs, no faces in close-up), staged arrests, crime scene tape, forensics gloves and evidence markers | police car lights night, crime scene tape, forensics gloves |
+| bankruptcy | 70 | P4: "closed" signs, shuttered shops, empty offices being cleared, moving boxes, auction signs, foreclosure notices (generic, no real brand) | closed shop sign, empty office moving boxes, foreclosure sign |
+| protest | 70 | P4: marches, placards (blank or generic text), crowds chanting, police lines facing crowds | protest march crowd, protest signs, crowd chanting |
+| gambling | 60 | P4: casino floors, roulette wheels, poker chips, slot machines, betting slips, card tables | casino roulette, poker chips, slot machine |
+| surveillance | 60 | P4: CCTV cameras, security control rooms, monitor walls, drones overhead, camera lenses | cctv camera, security control room monitors, surveillance drone |
+| startup | 60 | P4: garage workspaces, pitch whiteboards, co-working at night, prototype hands, founders sketching (no faces in close-up) | startup garage office, whiteboard pitch, coworking night |
+| auction | 50 | P4: auctioneer gavel, bidding paddles, lots, warehouse auctions, hands raising paddles | auction gavel bidding, auction paddle, warehouse auction |
+| realestate | 60 | P4: empty houses, foreclosure signs (generic), keys handover, house viewings, mansions at dusk | empty house interior, foreclosure sign, house keys handover |
 | world | 40 | globes, Earth from space (NASA), map-like aerials, borders, flags waving (no logos), world landmarks | earth from space NASA, globe spinning, flag waving |
