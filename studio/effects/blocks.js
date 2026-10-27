@@ -1,6 +1,6 @@
 /* @effect blocks
    @does: values become solid blocks that rise out of a dark floor one by one on the beat (photo or tone on their faces, a lit top, a dark side); one block is singled out on a word; an empty plinth can stand for a missing value
-   @params: vals, labs, txts, show, go, gap, hl, hlat, img, scale, empty, note, base, in, out, bg
+   @params: vals, labs, txts, show, go, gap, ats (one cue word per block, after show), hl, hlat, img, scale, empty, note, base, in, out, bg
    @uses: optional face image (img) and background clip (bg)
    @tags: data, comparison, bars, solids, ladder, sentences, scale
    @born: onecoin v2 (package ladder, the sentence line-up, Bitcoin vs OneCoin)
@@ -12,7 +12,7 @@
   const base = (+P.base || .78) * H, maxH = H * .58, log = P.scale === 'log', mx = Math.max(...vals.map(v => log ? Math.log10(v + 1) : v)), gw = W * .8 / n, bw = Math.min(gw * .7, W * .2);
   const fl = ctx.createLinearGradient(0, base, 0, H); fl.addColorStop(0, '#1b1611'); fl.addColorStop(1, '#060504'); ctx.fillStyle = fl; ctx.fillRect(0, base, W, H - base);
   const t0 = P.go ? at(P.go) : .3, gap = +(P.gap || .5), hl = P.hl !== undefined ? +P.hl : -1, hk = P.hlat ? clamp(p(P.hlat, .5, 'out')) : 0, face = P.img ? img(P.img) : null;
-  const show = +(P.show || 0); vals.forEach((v, i) => { const x = W * .1 + gw * (i + .5), ti = i < show ? -9 : t0 + (i - show) * gap, isEmpty = String(P.empty) === String(i);
+  const show = +(P.show || 0); vals.forEach((v, i) => { const x = W * .1 + gw * (i + .5), ats = P.ats ? String(P.ats).split(',') : null, ti = i < show ? -9 : ats && ats[i - show] ? at(ats[i - show].trim()) : t0 + (i - show) * gap, isEmpty = String(P.empty) === String(i);
     if (t >= ti) { const hh = isEmpty ? 0 : Math.max(10 * u, maxH * (log ? Math.log10(v + 1) : v) / mx), g = clamp((t - ti) / .6), e = 1 - Math.pow(1 - g, 3), cur = hh * e;
       const dim = hl >= 0 && hk > 0 && i !== hl ? 1 - .55 * hk : 1; ctx.save(); ctx.globalAlpha = dim;
       if (isEmpty) { ctx.strokeStyle = 'rgba(216,180,106,.6)'; ctx.setLineDash([10 * u, 8 * u]); ctx.lineWidth = 3 * u; ctx.strokeRect(x - bw / 2, base - maxH * .5, bw, maxH * .5); ctx.setLineDash([]); }

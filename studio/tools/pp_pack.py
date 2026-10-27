@@ -53,13 +53,27 @@ def export(slug, ids=None, prefix=None, desc=None, research=None):
 def read_pack(zp):
     if str(zp).startswith('drive:'): sys.path.insert(0, os.path.join(ROOT, 'tools')); import pp_drive; z = pp_drive.open_zip(zp)   # v6.4: big packs live on Drive
     else: z = zipfile.ZipFile(zp)
-    P = json.loads(z.read('pack.json').decode('utf-8')); return z, P
+    if 'pack.json' in z.namelist(): return z, json.loads(z.read('pack.json').decode('utf-8'))
+    # Muse v6.6 layout: no pack.json; images under photos/ docs/ ai/ described by jobs/<slug>/desc.json (or desc.json in the zip),
+    # clips under clips/ described by clips.json in the zip
+    slug = re.sub(r'_(assets|clips)(_\d+)?\.zip$', '', os.path.basename(str(zp))); P = {'slug': slug, 'images': {}, 'clips': {}}
+    dj = os.path.join(ROOT, '..', 'jobs', slug, 'desc.json')
+    desc = json.loads(z.read('desc.json').decode('utf-8')) if 'desc.json' in z.namelist() else json.load(open(dj, encoding='utf-8')) if os.path.exists(dj) and any(x.lower().endswith(EXT) for x in z.namelist()) else []
+    for m in desc:
+        e = {k: m[k] for k in ('file', 'role', 'credit', 'license', 'gen', 'desc', 'w', 'h') if k in m}
+        if m.get('kind') == 'el' and m.get('role') == 'cut': e['cut'] = 'solid'   # Muse cut-outs have solid backgrounds, not alpha
+        P['images'][m['id'].replace('-', '_')] = e
+    if 'clips.json' in z.namelist():
+        for m in json.loads(z.read('clips.json').decode('utf-8')):
+            P['clips'][m['id']] = {'file': m['file'], 'dur': m.get('duration', 6), 'width': min(1600, int(m.get('width', 1280))), 'author': m.get('author'), 'source': m.get('source'), 'license': m.get('license', ''), 'source_url': m.get('source_url', ''), 'desc': m.get('desc', '')}
+    if not P['images'] and not P['clips']: raise SystemExit(f'{zp}: no pack.json, no clips.json, and no desc.json for slug {slug}')
+    return z, P
 
 def imp(zp):
     z, P = read_pack(zp); P.setdefault('images', {}); r = load(); dst = os.path.join(LIB, 'img'); os.makedirs(dst, exist_ok=True); n = 0
     for i, m in P['images'].items():
         f = m.get('file', '')
-        if not ID.match(i) or not f.startswith('img/') or '..' in f or not f.lower().endswith(EXT) or f not in z.namelist(): print('rejected entry:', i); continue
+        if not ID.match(i) or not f.startswith(('img/', 'photos/', 'docs/', 'ai/')) or '..' in f or not f.lower().endswith(EXT) or f not in z.namelist(): print('rejected entry:', i); continue
         out = os.path.join(dst, i + os.path.splitext(f)[1].lower())
         with z.open(f) as a, open(out, 'wb') as b: shutil.copyfileobj(a, b)
         e = {k: m[k] for k in ('role', 'cut', 'credit', 'license', 'gen', 'w', 'h') if k in m}; e['src'] = os.path.relpath(out, ROOT).replace(os.sep, '/'); e['from'] = os.path.basename(zp)
