@@ -1,0 +1,829 @@
+1
+00:00:00,120 --> 00:00:01,600
+A wet morning in Manhattan.
+
+2
+00:00:02,320 --> 00:00:05,837
+Above the traffic, strangers
+rent desks, only by the month,
+
+3
+00:00:05,904 --> 00:00:07,970
+in an office not one of them owns.
+
+4
+00:00:08,400 --> 00:00:13,639
+The coffee is free, there's a beer tap in
+the lobby, and a sign on the wall says:
+
+5
+00:00:13,706 --> 00:00:14,820
+do what you love.
+
+6
+00:00:15,240 --> 00:00:18,472
+Adam Neumann's WeWork was
+an office company that told
+
+7
+00:00:18,539 --> 00:00:22,460
+investors its mission was to
+elevate the world's consciousness.
+
+8
+00:00:22,890 --> 00:00:25,541
+This is the story of
+how that company fell,
+
+9
+00:00:25,608 --> 00:00:28,010
+and how its founder walked out richer.
+
+10
+00:00:28,440 --> 00:00:30,833
+And here's the stranger
+question underneath the money.
+
+11
+00:00:30,900 --> 00:00:33,120
+How do you raise money for your next
+
+12
+00:00:33,187 --> 00:00:36,680
+company before the first one
+has even finished falling?
+
+13
+00:00:37,110 --> 00:00:41,253
+So we'll keep two accounts side by side:
+the company's, and the founder's.
+
+14
+00:00:41,320 --> 00:00:45,370
+Keep an eye on which one pays the
+bills, and which one gets paid.
+
+15
+00:00:45,800 --> 00:00:48,536
+In August twenty twenty-two,
+Andreessen Horowitz,
+
+16
+00:00:48,603 --> 00:00:51,920
+one of Silicon Valley's most
+famous investors, made a bet.
+
+17
+00:00:52,350 --> 00:00:54,873
+About three hundred and
+fifty million dollars,
+
+18
+00:00:54,940 --> 00:00:57,523
+into Adam Neumann's new
+housing company, Flow.
+
+19
+00:00:57,590 --> 00:01:01,470
+It was reported as the biggest single
+check the firm had ever paid out.
+
+20
+00:01:01,900 --> 00:01:05,780
+But WeWork only filed for
+bankruptcy fifteen months later.
+
+21
+00:01:06,210 --> 00:01:09,560
+The comeback started before
+the crash had even finished.
+
+22
+00:01:09,990 --> 00:01:13,836
+Here's how that happened, and the
+one decision, signed years earlier,
+
+23
+00:01:13,903 --> 00:01:15,150
+that made it possible.
+
+24
+00:01:15,587 --> 00:01:16,803
+It began in twenty ten,
+
+25
+00:01:16,870 --> 00:01:20,777
+when Adam Neumann and Miguel McKelvey
+started a company called WeWork.
+
+26
+00:01:21,207 --> 00:01:25,307
+They had just sold their first shared
+office business, GreenDesk, in Brooklyn.
+
+27
+00:01:25,737 --> 00:01:30,197
+Their first floor, at one fifty-four Grand
+Street in SoHo, opened in twenty eleven.
+
+28
+00:01:30,627 --> 00:01:33,317
+The trick was simple. Rent
+a whole floor for years.
+
+29
+00:01:33,747 --> 00:01:36,767
+Then cut it into desks,
+and rent the desks out by the month.
+
+30
+00:01:37,197 --> 00:01:40,507
+Add coffee, glass walls and a
+beer tap. Call it a community.
+
+31
+00:01:40,937 --> 00:01:42,546
+For a member, that meant freedom:
+
+32
+00:01:42,613 --> 00:01:46,017
+you could leave the office any
+month you liked, no questions asked.
+
+33
+00:01:46,447 --> 00:01:50,750
+But for WeWork, a lease was a promise to
+pay rent for years, whatever happened.
+
+34
+00:01:50,817 --> 00:01:53,457
+Remember that. It's the whole story.
+
+35
+00:01:53,887 --> 00:01:55,407
+Then the money arrived, from Tokyo.
+
+36
+00:01:56,087 --> 00:01:59,332
+In August twenty seventeen,
+SoftBank, run by Masayoshi Son,
+
+37
+00:01:59,399 --> 00:02:01,757
+announced four point four billion dollars.
+
+38
+00:02:02,187 --> 00:02:04,267
+But only three billion
+went into WeWork itself.
+
+39
+00:02:04,687 --> 00:02:07,767
+The rest went to its offices in
+China, Japan and the Pacific.
+
+40
+00:02:08,207 --> 00:02:10,530
+So growth became the only
+number investors measured.
+
+41
+00:02:10,597 --> 00:02:15,103
+WeWork's desks went from about one hundred
+thousand, at the end of twenty sixteen,
+
+42
+00:02:15,170 --> 00:02:18,237
+to four hundred and sixty-six
+thousand two years later.
+
+43
+00:02:18,667 --> 00:02:22,278
+In January twenty nineteen, SoftBank
+came back with two billion more,
+
+44
+00:02:22,345 --> 00:02:24,797
+at a valuation of
+forty-seven billion dollars.
+
+45
+00:02:25,227 --> 00:02:27,970
+But only one billion of that
+was new money for the company.
+
+46
+00:02:28,037 --> 00:02:31,157
+The other billion bought shares
+from people who already owned them.
+
+47
+00:02:31,587 --> 00:02:34,440
+So forty-seven billion
+dollars wasn't a market price.
+
+48
+00:02:34,507 --> 00:02:38,207
+It was a price set by the very
+investor who was paying for the growth,
+
+49
+00:02:38,274 --> 00:02:39,297
+with its own money.
+
+50
+00:02:39,720 --> 00:02:42,740
+Meanwhile, the founder's account
+was quietly filling with money.
+
+51
+00:02:43,170 --> 00:02:46,027
+Neumann's own company held
+the rights to the word "we".
+
+52
+00:02:46,094 --> 00:02:49,230
+So WeWork paid it five point
+nine million dollars for them.
+
+53
+00:02:49,660 --> 00:02:51,644
+The company's own filing admits he had
+
+54
+00:02:51,711 --> 00:02:54,140
+owned stakes in buildings
+that WeWork rented.
+
+55
+00:02:54,570 --> 00:02:58,000
+So in some buildings, the founder
+was his own company's landlord.
+
+56
+00:02:58,430 --> 00:02:59,989
+In April twenty nineteen,
+
+57
+00:03:00,056 --> 00:03:03,891
+WeWork lent him three hundred
+and sixty-two million dollars,
+
+58
+00:03:03,958 --> 00:03:07,210
+at two point eight nine
+percent, to buy its stock.
+
+59
+00:03:07,640 --> 00:03:11,353
+By that July, he had taken out
+about seven hundred million dollars.
+
+60
+00:03:11,420 --> 00:03:15,960
+Share sales, and loans against his stock,
+the Wall Street Journal reported.
+
+61
+00:03:16,390 --> 00:03:18,762
+The company also owned a Gulfstream jet,
+
+62
+00:03:18,829 --> 00:03:21,450
+bought for more than
+sixty million dollars.
+
+63
+00:03:21,880 --> 00:03:24,897
+But here's the problem with
+a private account: one day,
+
+64
+00:03:24,964 --> 00:03:26,590
+someone else gets to read it.
+
+65
+00:03:27,020 --> 00:03:31,833
+On Wednesday, August fourteenth,
+twenty nineteen, WeWork filed its S-1.
+
+66
+00:03:31,900 --> 00:03:33,900
+It's the document a company must publish
+
+67
+00:03:33,967 --> 00:03:36,190
+before it sells shares
+on the stock market.
+
+68
+00:03:36,620 --> 00:03:38,340
+Outsiders could finally read it.
+
+69
+00:03:38,820 --> 00:03:39,721
+In twenty eighteen,
+
+70
+00:03:39,788 --> 00:03:43,100
+WeWork brought in one point eight
+two billion dollars of revenue.
+
+71
+00:03:43,540 --> 00:03:45,490
+And it lost one point six one billion.
+
+72
+00:03:45,920 --> 00:03:50,535
+So the filing invented its own profit
+measure: "community-adjusted EBITDA".
+
+73
+00:03:50,602 --> 00:03:52,343
+It left out costs like rent.
+
+74
+00:03:52,410 --> 00:03:55,023
+For a company whose whole
+business was paying rent,
+
+75
+00:03:55,090 --> 00:03:57,350
+that's like a bakery
+leaving out the flour.
+
+76
+00:03:57,780 --> 00:04:01,530
+Then, on page forty-one of the filing,
+one line decided everything.
+
+77
+00:04:01,960 --> 00:04:06,570
+Future lease payments, already signed:
+forty-seven point two billion dollars.
+
+78
+00:04:06,000 --> 00:04:11,070
+Against that, contracted membership
+revenue of about four billion.
+
+79
+00:04:11,500 --> 00:04:14,820
+Years of rent on one side. Months
+of membership on the other.
+
+80
+00:04:15,250 --> 00:04:18,449
+That's the poison pill: rent
+for years, sell by the month,
+
+81
+00:04:18,516 --> 00:04:20,430
+and let your funder set the price.
+
+82
+00:04:20,860 --> 00:04:22,517
+It also showed who was in charge.
+
+83
+00:04:22,584 --> 00:04:24,830
+Neumann's shares carried
+twenty votes each.
+
+84
+00:04:25,250 --> 00:04:29,320
+And if the founder died, his wife
+Rebekah would help choose the next CEO.
+
+85
+00:04:29,750 --> 00:04:30,915
+So investors read it,
+
+86
+00:04:30,982 --> 00:04:35,560
+and the forty-seven-billion price tag
+fell toward fifteen, then as low as ten.
+
+87
+00:04:35,990 --> 00:04:39,560
+In September, WeWork cut his votes,
+dropped the successor clause,
+
+88
+00:04:39,627 --> 00:04:41,810
+and he handed back the trademark money.
+
+89
+00:04:42,240 --> 00:04:45,933
+But it wasn't enough. On Tuesday,
+September twenty-fourth,
+
+90
+00:04:46,000 --> 00:04:47,880
+Adam Neumann resigned as CEO.
+
+91
+00:04:48,310 --> 00:04:50,880
+The same day, the company
+put the jet up for sale.
+
+92
+00:04:51,310 --> 00:04:54,410
+Six days later, the stock
+market listing was cancelled.
+
+93
+00:04:54,853 --> 00:04:59,133
+And that's when the two accounts
+split, and the money went one way.
+
+94
+00:04:59,563 --> 00:05:02,008
+In October, SoftBank rescued WeWork.
+
+95
+00:05:02,075 --> 00:05:05,556
+The headline said nine and
+a half billion dollars.
+
+96
+00:05:05,623 --> 00:05:08,783
+But only six and a half
+billion was for the company.
+
+97
+00:05:09,213 --> 00:05:13,086
+Three billion was an offer to
+buy shares from existing owners.
+
+98
+00:05:13,153 --> 00:05:15,493
+One of them was the founder, Adam Neumann.
+
+99
+00:05:15,913 --> 00:05:19,556
+His exit was reported as one
+point seven billion dollars.
+
+100
+00:05:19,623 --> 00:05:23,873
+In fact, about nine hundred and
+seventy million was for his shares.
+
+101
+00:05:24,303 --> 00:05:27,536
+Five hundred million was a
+credit line, which is a loan.
+
+102
+00:05:27,603 --> 00:05:31,333
+And one hundred and eighty-five
+million was a consulting fee.
+
+103
+00:05:31,763 --> 00:05:34,170
+Part of that deal was later cancelled,
+
+104
+00:05:34,237 --> 00:05:37,753
+then settled on terms that
+were never fully disclosed.
+
+105
+00:05:38,183 --> 00:05:40,823
+The company kept the leases.
+
+106
+00:05:41,253 --> 00:05:45,913
+Then, in twenty twenty, the pandemic
+emptied the offices in every city.
+
+107
+00:05:46,333 --> 00:05:50,493
+But it didn't kill WeWork.
+WeWork lasted three more years.
+
+108
+00:05:50,923 --> 00:05:55,946
+In October twenty twenty-one, it finally
+reached the stock market, through a SPAC.
+
+109
+00:05:56,013 --> 00:05:59,740
+A SPAC is a shell company that's
+already on the stock market,
+
+110
+00:05:59,807 --> 00:06:01,983
+so a merger skips the usual filing.
+
+111
+00:06:02,413 --> 00:06:04,816
+The headline value was
+nine billion dollars.
+
+112
+00:06:04,883 --> 00:06:08,106
+But the shares were valued at
+about six and a half billion.
+
+113
+00:06:08,173 --> 00:06:11,843
+And the cash it actually raised
+was about one point three billion.
+
+114
+00:06:12,273 --> 00:06:16,113
+A big headline, then a
+smaller real number. Again.
+
+115
+00:06:16,553 --> 00:06:18,112
+In March twenty twenty-three,
+
+116
+00:06:18,179 --> 00:06:22,103
+WeWork announced its first month of
+adjusted profit, back in December.
+
+117
+00:06:22,533 --> 00:06:23,524
+Five months later,
+
+118
+00:06:23,591 --> 00:06:26,108
+its own report warned
+of "substantial doubt"
+
+119
+00:06:26,175 --> 00:06:28,583
+that it could survive as a going concern.
+
+120
+00:06:29,013 --> 00:06:32,943
+Because paying for space ate seventy-four
+cents of every dollar of revenue.
+
+121
+00:06:33,373 --> 00:06:37,333
+And even its buildings sat partly empty:
+only seventy-two percent full.
+
+122
+00:06:37,753 --> 00:06:39,375
+Its lawyers said it had already
+
+123
+00:06:39,442 --> 00:06:41,772
+renegotiated five hundred
+and ninety leases,
+
+124
+00:06:41,839 --> 00:06:42,983
+building by building.
+
+125
+00:06:43,413 --> 00:06:48,423
+Then, on Monday, November sixth, twenty
+twenty-three, WeWork filed for bankruptcy.
+
+126
+00:06:48,853 --> 00:06:52,306
+It had about one hundred and
+sixty-four million dollars in cash.
+
+127
+00:06:52,373 --> 00:06:56,110
+Against that: almost nineteen
+billion in liabilities on its books,
+
+128
+00:06:56,177 --> 00:06:58,193
+more than a hundred times its cash.
+
+129
+00:06:58,633 --> 00:07:02,293
+In bankruptcy, a judge can do what
+no founder could: cancel leases.
+
+130
+00:07:02,723 --> 00:07:06,556
+The first batch was sixty-nine.
+Floor by floor, office by office,
+
+131
+00:07:06,623 --> 00:07:07,943
+the community emptied.
+
+132
+00:07:08,363 --> 00:07:11,663
+And the founder? Fifteen
+months into his next company.
+
+133
+00:07:12,093 --> 00:07:14,034
+Between twenty twenty
+and twenty twenty-two,
+
+134
+00:07:14,101 --> 00:07:16,133
+companies he controlled
+bought majority stakes
+
+135
+00:07:16,200 --> 00:07:17,933
+in more than four thousand apartments.
+
+136
+00:07:18,363 --> 00:07:22,233
+Flow would rent them out with the same
+promise: not just a home, a community.
+
+137
+00:07:22,673 --> 00:07:25,206
+Andreessen Horowitz's
+co-founder, Marc Andreessen,
+
+138
+00:07:25,273 --> 00:07:27,076
+explained the bet in his own words.
+
+139
+00:07:27,143 --> 00:07:27,685
+ANDREESSEN:
+
+140
+00:07:27,752 --> 00:07:30,177
+Adam is a visionary
+leader who revolutionized
+
+141
+00:07:30,244 --> 00:07:32,613
+the second largest asset
+class in the world,
+
+142
+00:07:32,680 --> 00:07:33,953
+commercial real estate.
+
+143
+00:07:34,383 --> 00:07:35,846
+The day that post went up,
+
+144
+00:07:35,913 --> 00:07:38,845
+investor Jason Calacanis
+wrote that a startup worth
+
+145
+00:07:38,912 --> 00:07:41,853
+a billion before it launches
+is "probably a scam".
+
+146
+00:07:42,287 --> 00:07:46,007
+In early twenty twenty-four,
+the founder tried to buy WeWork back.
+
+147
+00:07:46,437 --> 00:07:50,283
+His offer was reported at more
+than five hundred million dollars,
+
+148
+00:07:50,350 --> 00:07:52,457
+then six hundred and fifty million.
+
+149
+00:07:52,887 --> 00:07:57,037
+His letter said he was partnering with
+Dan Loeb's hedge fund, Third Point.
+
+150
+00:07:57,467 --> 00:08:00,147
+But Third Point said it had
+made no commitment to pay.
+
+151
+00:08:00,577 --> 00:08:05,520
+So the creditors chose their own deal,
+and in May, Neumann walked away.
+
+152
+00:08:05,587 --> 00:08:06,057
+NEUMANN:
+
+153
+00:08:06,124 --> 00:08:09,618
+The company looks to be
+emerging from bankruptcy with
+
+154
+00:08:09,685 --> 00:08:13,447
+a plan that appears unrealistic
+and unlikely to succeed.
+
+155
+00:08:13,877 --> 00:08:20,030
+In June twenty twenty-four, WeWork came
+out of bankruptcy, owned mostly by Yardi,
+
+156
+00:08:20,097 --> 00:08:22,247
+a property software company.
+
+157
+00:08:22,677 --> 00:08:27,910
+Yardi paid three hundred and thirty-seven
+million dollars for about sixty percent.
+
+158
+00:08:27,977 --> 00:08:30,140
+SoftBank had put in, or promised,
+
+159
+00:08:30,207 --> 00:08:33,857
+more than ten billion before
+the stock market listing.
+
+160
+00:08:34,277 --> 00:08:35,990
+Then, in April twenty twenty-five,
+
+161
+00:08:36,057 --> 00:08:38,930
+Flow raised more than one
+hundred million dollars more.
+
+162
+00:08:38,997 --> 00:08:41,787
+The reported value:
+about two and a half billion.
+
+163
+00:08:42,227 --> 00:08:46,448
+So, back to that wet morning in
+Manhattan. The desks are still there,
+
+164
+00:08:46,515 --> 00:08:48,877
+rented by the month, under new owners.
+
+165
+00:08:49,307 --> 00:08:51,780
+WeWork didn't fall
+because of one man's ego.
+
+166
+00:08:51,847 --> 00:08:55,190
+It fell because it rented for
+years and sold by the month.
+
+167
+00:08:55,257 --> 00:09:00,067
+And because the investor paying for the
+growth was also the one who set the price.
+
+168
+00:09:00,497 --> 00:09:04,872
+The founder survived for a simpler
+reason: a valuation isn't cash,
+
+169
+00:09:04,939 --> 00:09:07,497
+and a famous name opens the next door.
+
+170
+00:09:07,927 --> 00:09:11,984
+So here's the lesson. When a
+founder story quotes a valuation,
+
+171
+00:09:12,051 --> 00:09:15,777
+ask who set that price,
+and how much cash changed hands.
+
+172
+00:09:16,197 --> 00:09:22,757
+Flow says it may go public one day, and if
+it does, it will have to file its own S-1,
+
+173
+00:09:22,824 --> 00:09:25,780
+with every number, for anyone to read.
+
+174
+00:09:25,847 --> 00:09:32,022
+And for the first time, we'll all finally
+get to read the founder's own account,
+
+175
+00:09:32,089 --> 00:09:36,927
+line by line, in public, the way
+the world once read WeWork's.
+
+176
+00:09:37,357 --> 00:09:42,177
+Should a founder get a second chance
+this fast? Tell us in the comments below.
+
