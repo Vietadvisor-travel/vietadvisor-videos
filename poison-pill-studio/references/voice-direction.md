@@ -1,5 +1,13 @@
 # VOICE DIRECTION: cast and direct the read like a real narrator (v6)
 
+
+**DEFAULT NARRATOR (the owner, 26 Oct 2026): `voice: supertonic:M1`, in every episode, no choosing per episode.**
+Other voices are cast INSIDE the film where the content calls for it: verbatim quotes (`voices: ruja=bf_emma`), a
+second reader for documents or messages, a contrasting voice for a witness or a victim's words (always verbatim,
+attributed on screen). Available: Supertonic `supertonic:F1`, `supertonic:M2`, `supertonic:F2`, and every Kokoro voice
+(`af_*`, `am_*`, `bf_*`, `bm_*`, blends). Never the narrator's own voice for a quote. Supertonic requires the
+"AI-generated narration" line in the description (publish.md §3).
+
 The voice is half the film. A flat read at one speed makes the best pictures feel cheap. v6 directs Kokoro (free,
 offline, Apache-2.0) the way a director coaches a narrator:
 - **cast** a voice per episode;

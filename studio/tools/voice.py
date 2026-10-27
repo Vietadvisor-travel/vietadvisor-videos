@@ -24,7 +24,8 @@ URLS = {'kokoro-v1.0.onnx': 'https://github.com/thewh1teagle/kokoro-onnx/release
         'kokoro-v1.0.int8.onnx': 'https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.int8.onnx',
         'voices-v1.0.bin': 'https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin'}
 SR_OUT = 44100
-DEFAULT_SPK = {'narrator': 'am_michael', 'a': 'am_echo', 'b': 'af_heart', 'c': 'bm_george', 'd': 'af_nicole'}
+DEFAULT_SPK = {'narrator': 'supertonic:M1',   # v6.7 the owner's default narrator (26 Oct 2026)
+                'a': 'am_echo', 'b': 'af_heart', 'c': 'bm_george', 'd': 'af_nicole'}
 
 def setup():
     subprocess.call([sys.executable, '-m', 'pip', 'install', '-q', 'kokoro-onnx', 'soundfile', '--break-system-packages'])
@@ -119,7 +120,7 @@ def vstyle(spec):
         tot = sum(w for _, w in parts) or 1; st = sum(K.get_voice_style(n) * (w / tot) for n, w in parts)
     _VS[spec] = st.astype(np.float32); return _VS[spec]
 def vlang(spec): return 'en-gb' if (spec or 'a').strip()[:1] == 'b' else 'en-us'
-def vbase(spec): return re.match(r'\s*([a-z]{2}_\w+)', spec or 'am_michael').group(1)
+def vbase(spec): m = re.match(r'\s*([a-z]{2}_\w+)', spec or ''); return m.group(1) if m else 'am_michael'   # cloud/Supertonic narrators count as US male
 
 # v6.7 Supertonic 3 (Supertone, weights OpenRAIL-M: publishing REQUIRES an express "AI-generated narration" disclosure,
 # publish.md §3). Spec "supertonic:M1" (male) / "supertonic:F1" (female); about 4-6x faster than real time on 4 CPU cores.
@@ -358,7 +359,7 @@ def read_wav(path):
 
 def synth(lines_path, outdir, voice=None, speed=1.0):
     L = json.load(open(lines_path, encoding='utf-8')); os.makedirs(outdir, exist_ok=True)
-    narr = voice or L.get('voice') or 'am_michael'; durs = []; wlist = []
+    narr = voice or L.get('voice') or DEFAULT_SPK['narrator']; durs = []; wlist = []
     cast = {k.strip(): v.strip() for k, v in re.findall(r'([\w-]+)\s*=\s*([^;]+)', L.get('voices') or '')}
     if 'narrator' in cast and not voice: narr = cast['narrator']
     delivery = (L.get('delivery') or '').strip().lower() or None

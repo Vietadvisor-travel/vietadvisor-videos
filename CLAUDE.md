@@ -50,6 +50,8 @@ The rulebook is `poison-pill-studio/` (SKILL.md and references/). The engine wit
      - 3 titles BEFORE the script (no thumbnail: the owner makes thumbnails himself, Oct 2026);
      - a script that works with the screen off (listen-only test);
      - the channel's own character (`jobs/channel.md`);
+     - narrator voice: always `voice: supertonic:M1` (the owner's default); other voices only cast inside the film for
+       verbatim quotes, documents or witnesses (`voice-direction.md`);
      - an emotional arc per act, voiced with `{excited}` `{urgent}` `{tense}` `{grave}` `{sad}` `{warm}` `{wry}` `{awe}`.
    - Write the director package exactly as `poison-pill-studio/references/director-package.md` defines, built on the
      research:

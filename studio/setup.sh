@@ -8,6 +8,7 @@ cd "$(dirname "$0")"
 python3 -c "import numpy, scipy, PIL, kokoro_onnx, soundfile" 2>/dev/null || pip install -q numpy scipy pillow kokoro-onnx soundfile --break-system-packages 2>/dev/null || pip install -q numpy scipy pillow kokoro-onnx soundfile
 python3 -c "import rembg" 2>/dev/null || pip install -q "rembg[cpu]" --break-system-packages 2>/dev/null || echo "note: rembg not installed (only needed to cut out NEW photos; packs from Muse are already cut out)"
 python3 tools/voice.py setup
+python3 tools/voice.py setup-supertonic || echo 'WARN: Supertonic narrator not installed (needs GDRIVE_* for Drive _voice/); Kokoro still works'
 python3 tools/pp_img.py sync >/dev/null
 ls ../jobs/_music/music_library*.zip >/dev/null 2>&1 && [ ! -f music/library.json ] && python3 tools/pp_pack.py music-import ../jobs/_music/music_library*.zip || true
 { ls ../jobs/_stock/stock_library_*.zip >/dev/null 2>&1 || env | grep -q '^GDRIVE_'; } && python3 tools/pp_stock.py index || true   # v6.2/6.4 shared stock library (local zips and/or Google Drive): catalogue only
