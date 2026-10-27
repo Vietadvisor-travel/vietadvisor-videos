@@ -11,9 +11,11 @@ schedule. If any older doc says otherwise, this file wins.
 - Publish cadence stays Tue / Thu / Sat, 3 episodes per week. Only the
   TOPIC CHOICE window changed, not the cadence, the format (8-12 min,
   16:9, English) or the v6.6 pack spec.
-- Every Monday, Muse publishes `jobs/SCHEDULE_WEEK_<monday-yyyy-mm-dd>.md`
-  (trigger: the owner writes "nghiên cứu tuần"). That file is the ONLY
-  schedule for the coming 7 days. There is no longer a month file.
+- Every Sunday, Muse scans trends and publishes `jobs/SCHEDULE_WEEK_<monday-yyyy-mm-dd>.md`
+  for the FOLLOWING week (trigger: the owner writes "nghiên cứu tuần", and
+  automatically every Sunday via cron `poison-pill-weekly-trend-scan`). That
+  file is the ONLY schedule for the coming 7 days. There is no longer a
+  month file.
 
 ## What a week file contains
 
@@ -49,7 +51,7 @@ The 5 already-produced episodes KEEP their dates, because the work is done:
 - 05 Nov 2026: WeWork (research pack pushed 27 Oct 2026)
 
 The first slot chosen purely by the new system is 07 Nov 2026, picked by
-the trend scan of Mon 02 Nov 2026.
+the trend scan of Sun 01 Nov 2026.
 
 ## How "làm tập <slug>" works now
 

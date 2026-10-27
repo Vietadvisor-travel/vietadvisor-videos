@@ -23,7 +23,7 @@ researched, so nothing here needs a new trend pick.
 ## What happens next
 
 - Sat 07 Nov 2026: FIRST slot under the new system. Topic picked by the
-  trend scan of Mon 02 Nov 2026, not by the old schedule. The old
+  trend scan of Sun 01 Nov 2026, not by the old schedule. The old
   schedule's 07 Nov topic (Nintendo) is only an idea-pool candidate now.
 - Old 30-day topics from 07 Nov onward (Nintendo, Thomas Cook, Nikola,
   Luckin Coffee, FTX, Alibaba, Swissair, SoftBank, Samsung vs Apple,

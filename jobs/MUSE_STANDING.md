@@ -164,7 +164,7 @@ A channel-wide footage library that every episode can use, next to each episode'
 - Commit and push `jobs/_music/`. Never commit WAV files, and never commit any file over 95 MB.
 
 ## Weekly: "nghiên cứu tuần" (replaces the old monthly topic research, 27 Oct 2026)
-Every Monday, deliver `jobs/SCHEDULE_WEEK_<monday-yyyy-mm-dd>.md` for the coming 7 days, following jobs/MUSE_SCHEDULE.md.
+Every Sunday, scan trends thoroughly and deliver `jobs/SCHEDULE_WEEK_<monday-yyyy-mm-dd>.md` for the FOLLOWING week, following jobs/MUSE_SCHEDULE.md. Scan broad and deep: business news, AI news, earnings and event calendars, competitor channels, search and social trends, and the old idea pool checked against current trends, so the picks are the best available, not the first found.
 For each publish slot (Tue / Thu / Sat):
 - topic, slug, publish date;
 - WHY NOW, with dated trend evidence (news date, earnings date, viral moment, search spike, competitor video taking
