@@ -119,6 +119,9 @@ The rulebook is `poison-pill-studio/` (SKILL.md and references/). The engine wit
      titles, description with chapters, sources and every credit, tags, Studio fields, the altered-content decision
      with its reason, end screen and cards, pinned comment, and the 48-hour checklist.
    - Copy the SRT to `jobs/<slug>/`.
+   - **Upload the full master to Drive by default** (the owner, 27 Oct 2026):
+     `python3 tools/pp_drive.py put out/<slug>_16x9_FINAL.mp4 --to <slug>`. This is the file to put on YouTube; the
+     ~5 Mbps delivery encode is only a fallback for a weak connection.
    - Send the owner: the final MP4, the SRT, the upload guide and 10 stills (stills help him make the thumbnail).
    - Commit the stories, `studio/history.json`, `jobs/<slug>/EPISODE_<slug>.md`, the SRT and the upload guide, then
      push.
