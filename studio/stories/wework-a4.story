@@ -11,7 +11,7 @@ endcard: off
 motif: two_accounts
 
 // CARD a4-01 · SEE: the two accounts, same pictures; the spine splits wide on "split" and the company half drops; KEEPS THE LEASES / SELLS HIS SHARES type in and the company's half drains grey while the founder's warms · SEAM in right, out right
-# cine act=fall fx="code:@two_accounts;l:wework_interior_nyc_fulton_elevator;r:wework_neumann_2015_disrupt_portrait;lt:THE COMPANY · WEWORK;rt:THE FOUNDER · ADAM NEUMANN;open:no;win:r;wat:split;crack:split;lv:KEEPS THE LEASES;lat:money;rv:SELLS HIS SHARES;rat:way;in:right;out:right"
+# cine act=fall fx="code:@two_accounts;l:wework_interior_nyc_fulton_elevator;r:wework_neumann_2015_disrupt_portrait;lt:THE COMPANY · WEWORK;rt:THE FOUNDER · ADAM NEUMANN;open:no;win:r;wat:split;crack:split;lv:KEEPS THE LEASES;lat:split;rv:SELLS HIS SHARES;rat:money;in:right;out:right"
 {grave} And that's when the two accounts **split**, and the money went one way.
 
 // CARD a4-02 · SEE: SoftBank's real release behind, dim; $9.5B sets as the headline over an empty dashed bar; on "five" the gold $5B part fills from the left, on "six" the $1.5B part joins it: FOR THE COMPANY — the last third of the bar stays empty · SEAM in right

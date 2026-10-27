@@ -8,7 +8,7 @@
 ({ t, at, p, W, H, u, ctx, params: P, clamp, lerp, text, seam, dur }) => {
   ctx.save(); seam(P.in || 'none', P.out || 'none'); ctx.fillStyle = '#12100d'; ctx.fillRect(-W, -H, 3 * W, 3 * H);
   const rows = String(P.rows).split('~').map(s => { const [l, hs, rs, hv, rv, w] = s.split('^'); return { l, hs, rs, hv: +hv, rv: +rv, w }; }), mx = +(P.max || Math.max(...rows.map(r => r.hv))), x0 = W * .26, bw = W * .44, rh = H * .64 / rows.length;
-  if (P.title) text(P.title, W / 2, H * .08, { size: 48 * u, font: 'cond', col: '#d6b25e', lw: 0, ls: 5 * u, a: clamp(t / .5) });
+  if (P.title) text(P.title, W / 2, H * .1, { size: 48 * u, font: 'cond', col: '#d6b25e', lw: 0, ls: 5 * u, a: clamp(t / .5) });
   rows.forEach((r, i) => { const k = clamp(p(r.w || 0, .6, 'out5')); if (k <= 0) return; const y = H * .18 + rh * (i + .5);
     text(r.l, x0 - 30 * u, y, { size: 44 * u, font: 'cond', col: '#efe6d2', lw: 0, align: 'right', a: k });
     ctx.save(); ctx.globalAlpha = k; ctx.strokeStyle = 'rgba(239,230,210,.7)'; ctx.setLineDash([12 * u, 9 * u]); ctx.lineWidth = 3 * u; ctx.strokeRect(x0, y - rh * .3, bw * r.hv / mx * k, rh * .6); ctx.restore();

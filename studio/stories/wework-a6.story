@@ -47,7 +47,7 @@ The reported value: about two and a half **billion**.
 {warm} So, back to that wet morning in Manhattan. The desks are still there, rented by the month, under new **owners**.
 
 // CARD a6-11 · SEE: black. The whole thesis arrives word by word in large serif over four lines and holds dead still; "month" and "price" in gold · SEAM hard cut, HOLD
-# cine act=lesson fx="code:@thesis_black;lines:It rented for years~and sold by the month.~And the one paying for the growth~set the price.;go:fell;span:6;size:84;hi:month,price"
+# cine act=lesson fx="code:@thesis_black;lines:It rented for years~and sold by the month.~And the one paying for the growth~set the price.;go:fell;span:3.6;size:84;hi:month,price"
 WeWork didn't fall because of one man's ego. It fell because it rented for years and sold by the **month**.
 And because the investor paying for the growth was also the one who set the **price**.
 
