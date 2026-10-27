@@ -16,7 +16,7 @@
   for (let i = 0; i < n; i++) { const k = clamp(spring(at(P.go || 0) + i * .11, { stiff: 210, damp: 20 }), 0, 1.06); if (k <= 0) continue; const y = floor - bh * (i + .5) - (1 - Math.min(1, k)) * H * .5; block(null, lx, y, bw, bh * .92, { depth: .5, skew: .45, side: '#2a2014' }); ctx.fillStyle = i % 2 ? '#d9a63c' : '#f2c14e'; ctx.fillRect(lx - bw / 2, y - bh * .46, bw, bh * .92); text('YEAR', lx, y, { size: 30 * u, font: 'cond', col: '#2a2014', lw: 0, ls: 8 * u, a: .8 }); }
   const mx = W * .7, mk = clamp(spring(P.month || P.go || 0, { stiff: 170, damp: 18 }), 0, 1.04), blink = P.blink ? (Math.floor((t - at(P.blink)) * 3) % 2 === 0 && t > at(P.blink) && t < at(P.blink) + 1.4 ? .15 : 1) : 1;
   if (mk > 0) { const y = floor - bh * .5 - (1 - Math.min(1, mk)) * H * .4; ctx.save(); ctx.globalAlpha = blink; block(null, mx, y, bw, bh * .92, { depth: .5, skew: .45, side: '#1d2a33' }); ctx.fillStyle = '#9fd1e8'; ctx.fillRect(mx - bw / 2, y - bh * .46, bw, bh * .92); text('1 MONTH', mx, y, { size: 30 * u, font: 'cond', col: '#10202a', lw: 0, ls: 6 * u }); ctx.restore(); }
-  const a = clamp(p(P.go || 0, .5)); text(P.llab || 'WHAT WEWORK OWED', lx, H * .16, { size: 52 * u, font: 'cond', col: '#f2c14e', lw: 0, ls: 4 * u, a });
-  text(P.rlab || 'WHAT A MEMBER OWED', mx, H * .16, { size: 52 * u, font: 'cond', col: '#9fd1e8', lw: 0, ls: 4 * u, a: clamp(p(P.month || P.go || 0, .5)) });
+  const a = clamp(p(P.go || 0, .5)); text(P.llab || 'WHAT WEWORK OWED', lx, H * .12, { size: 52 * u, font: 'cond', col: '#f2c14e', lw: 0, ls: 4 * u, a });
+  text(P.rlab || 'WHAT A MEMBER OWED', mx, H * .12, { size: 52 * u, font: 'cond', col: '#9fd1e8', lw: 0, ls: 4 * u, a: clamp(p(P.month || P.go || 0, .5)) });
   ctx.restore();
 }

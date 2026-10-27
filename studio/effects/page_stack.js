@@ -18,7 +18,7 @@
   ctx.save(); ctx.globalAlpha = a; ctx.translate(cx, cy - thick * .1); ctx.scale(z, z); ctx.rotate((1 - Math.min(1, k)) * -.12 - .015);
   ctx.shadowColor = 'rgba(0,0,0,.55)'; ctx.shadowBlur = 40 * u; ctx.shadowOffsetY = 14 * u; ctx.fillStyle = '#f7f5ef'; ctx.fillRect(-pw / 2, -ph / 2, pw, ph); ctx.shadowColor = 'transparent';
   ctx.drawImage(im, c0 * im.width, c1 * im.height, sw, sh, -pw / 2, -ph / 2, pw, ph); ctx.restore();
-  const la = clamp(p(P.land || 0, .5, 'out')), lx = cx + pw / 2 + W * .05;
+  const la = clamp((t - at(P.land || 0) - .6) / .4), lx = cx + pw / 2 + W * .05;
   if (P.lab) text(P.lab, lx, H * .4, { size: 84 * u, font: 'impact', col: '#f2ead9', align: 'left', lw: 0, a: la });
   if (P.sub) text(P.sub, lx, H * .4 + 84 * u, { size: 44 * u, font: 'cond', col: '#c9bda6', align: 'left', lw: 0, a: clamp(p(P.grow || P.land || 0, .5, 'out')) });
   ctx.restore();

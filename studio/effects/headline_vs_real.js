@@ -13,6 +13,6 @@
     text(r.l, x0 - 30 * u, y, { size: 44 * u, font: 'cond', col: '#efe6d2', lw: 0, align: 'right', a: k });
     ctx.save(); ctx.globalAlpha = k; ctx.strokeStyle = 'rgba(239,230,210,.7)'; ctx.setLineDash([12 * u, 9 * u]); ctx.lineWidth = 3 * u; ctx.strokeRect(x0, y - rh * .3, bw * r.hv / mx * k, rh * .6); ctx.restore();
     const kr = clamp(p(r.w || 0, 1.1, 'inOut') * 1.4 - .4); ctx.fillStyle = '#f2c14e'; ctx.fillRect(x0, y - rh * .3, bw * r.rv / mx * kr, rh * .6);
-    text(r.hs, x0 + bw * r.hv / mx + 16 * u, y, { size: 44 * u, font: 'impact', col: '#cfc3ab', lw: 0, align: 'left', a: k }); const rw = bw * r.rv / mx; if (kr > .5) text(r.rs, rw > 190 * u ? x0 + 14 * u : x0 + rw + 14 * u, y + (rw > 190 * u ? 0 : rh * .62), { size: 44 * u, font: 'impact', col: rw > 190 * u ? '#1a1408' : '#f2c14e', lw: 0, align: 'left', a: clamp((kr - .5) * 2) }); });
+    text(r.hs + (kr > .5 ? '  →  ' + r.rs : ''), x0 + bw * r.hv / mx + 16 * u, y, { size: 44 * u, font: 'impact', col: '#cfc3ab', lw: 0, align: 'left', a: k });  });
   ctx.restore();
 }

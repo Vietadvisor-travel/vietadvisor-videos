@@ -19,7 +19,7 @@ It began in twenty ten, when Adam Neumann and Miguel McKelvey started a company 
 They had just sold their first shared office **business**, GreenDesk, in Brooklyn.
 
 // CARD a1-03 · SEE: a real SoHo street (West Broadway, cast-iron fronts); the pin drops on "Grand" and its card reads 154 GRAND STREET · SOHO · 2011 · SEAM in right, out right
-# cine act=setup fx="code:@place_pin;bg:wework_ctx_soho_westbroadway;x:.36;y:.5;go:Grand;lab:154 GRAND STREET · SOHO;sub:the first WeWork floor · opened 2011;in:right;out:right"
+# cine act=setup fx="code:@place_pin;bg:wework_ctx_soho_westbroadway;x:.36;y:.5;go:Grand;lab:SOHO · MANHATTAN;sub:the first WeWork floor: 154 Grand Street, 2011;in:right;out:right"
 Their first floor, at one fifty-four Grand Street in SoHo, opened in twenty **eleven**.
 
 // CARD a1-04 · SEE: an empty office floor at dawn; on "whole" its outline is traced in gold as ONE space; on "years" a tape of year marks runs away down the floor · SEAM in right
@@ -34,16 +34,13 @@ Then cut it into desks, and rent the desks out by the **month**.
 # cine act=rise fx="code:@reel;under:wework_interior_nyc_kitchen;ua:0;move:in;z:.1;in:right"
 Add coffee, glass walls and a beer tap. Call it a **community**. (J)
 
-// CARD a1-07 · SEE: a member in a cap walks across a lobby toward the door, past closed lift doors; the camera travels with her · SEAM out right
-# cine act=rise fx="code:@reel;clip:wework_clip_elevator_lobby_entry;move:right;z:.1;out:right"
+// CARD a1-07 · SEE: a man walks down a glass-walled office corridor toward us, folder in hand, on his way out · SEAM out right
+# cine act=rise fx="code:@reel;clip:wework_clip_ipo_leaving_3;move:in;z:.08;out:right"
 For a member, that meant **freedom**: you could leave the office any month you liked, no questions asked.
 
-// CARD a1-08 · SEE: the S-1's own risk-factors page, read from the top; the camera pushes into the opening lines and slows on "years" · SEAM in right
-# cine act=doubt fx="code:@reel;under:wework_doc_s1_risk_factors_p24;ua:0;fy:.15;move:in;z:.14;in:right"
+// CARD a1-09 · SEE: on a dim WeWork lounge: on "years" a column of gold YEAR blocks drops in one by one (what WeWork owed); on "Remember" one thin blue 1 MONTH tile lands, and blinks out on "story" because a member can leave · SEAM HOLD then out right
+# cine act=doubt fx="code:@years_vs_month;plate:wework_interior_vancouver_15;n:9;go:years;month:Remember;blink:story;out:right"
 But for WeWork, a lease was a promise to pay rent for years, whatever **happened**.
-
-// CARD a1-09 · SEE: on a dim WeWork lounge: on the left a column of gold YEAR blocks drops in one by one (what WeWork owed); on the right one thin blue 1 MONTH tile lands and blinks out, because a member can leave · SEAM HOLD then out right
-# cine act=doubt fx="code:@years_vs_month;plate:wework_interior_vancouver_15;n:11;go:Remember;month:whole;blink:story;out:right"
 Remember that. It's the whole **story**.
 
 // CARD a1-10 · SEE: Tokyo Station's red-brick front and the towers behind it, aerial, travelling right · SEAM in right, out right
@@ -63,7 +60,7 @@ But only three billion went into WeWork **itself**.
 The rest went to its offices in China, Japan and the **Pacific**.
 
 // CARD a1-15 · SEE: the S-1's own key-metrics table on the desk; the camera travels to the workstation row; 107,000 is highlighted on "hundred", 466,000 on "sixty-six" · SEAM hard cut, in from the previous beat
-# cine act=rise fx="code:@doc_read;doc:wework_doc_s1_summary_operating_kpi_p23;crop:0,.27,1,.42;marks:.555,.297,.635,.325@hundred~.725,.297,.795,.325@sixty;zoom:hundred;z:1.25"
+# cine act=rise fx="code:@doc_read;doc:wework_doc_s1_summary_operating_kpi_p23;crop:0,.27,1,.42;marks:.555,.297,.635,.325@hundred~.725,.297,.795,.325@sixty;zoom:hundred;z:.7"
 So **growth** became the only number investors measured.
 WeWork's desks went from about one hundred thousand, at the end of twenty sixteen, to four hundred and sixty-six thousand two years **later**.
 

@@ -1,6 +1,6 @@
 /* @effect photo_drain
    @does: a framed portrait on a dark wall above a title plate; on the word the photo drains grey and slides out of the frame, leaving the empty frame and the plate
-   @params: in, out, pic, go, plate, date
+   @params: cap, in, out, pic, go, plate, date
    @uses: — (swap these ids for the new episode's own)
    @tags: exit,resignation,removal,portrait,frame,ceo
    @born: wework a3-17: Adam Neumann resigned as CEO
@@ -17,6 +17,7 @@
   if (im && im.width && k < 1) { ctx.save(); ctx.beginPath(); ctx.rect(fx, fy, fw, fh); ctx.clip(); const s = Math.max(fw / im.width, fh / im.height) * (1.02 + .03 * clamp(t / dur)); ctx.filter = `grayscale(${dr.toFixed(2)}) brightness(${(1 - .3 * dr).toFixed(2)})`; ctx.drawImage(im, fx + fw / 2 - im.width * s / 2, fy + fh / 2 - im.height * s / 2 + k * k * fh * 1.05, im.width * s, im.height * s); ctx.restore(); }
   ctx.strokeStyle = '#8a6d45'; ctx.lineWidth = 6 * u; ctx.strokeRect(fx - 10 * u, fy - 10 * u, fw + 20 * u, fh + 20 * u);
   ctx.fillStyle = '#b89a62'; ctx.fillRect(W * .4 - 150 * u, fy + fh + 50 * u, 300 * u, 70 * u); text(P.plate || 'CEO', W * .4, fy + fh + 85 * u, { size: 48 * u, font: 'cond', col: '#2a2014', lw: 0, ls: 8 * u });
+  if (P.cap) text(P.cap, W * .74, H * .56, { size: 40 * u, font: 'cond', col: '#c9bda6', lw: 0, a: clamp(p(P.go || 0, .5)) });
   if (P.date) text(P.date, W * .74, H * .45, { size: 84 * u, font: 'impact', col: '#f2ead9', lw: 0, a: clamp(p(P.go || 0, .5)) });
   ctx.restore();
 }

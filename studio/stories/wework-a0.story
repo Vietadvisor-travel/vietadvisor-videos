@@ -36,16 +36,16 @@ And here's the stranger question underneath the **money**.
 How do you raise money for your next company before the first one has even finished **falling**?
 
 // CARD a0-08 · SEE: the frame opens from a paper spine into two accounts: left the WeWork sign on brick (THE COMPANY), right Neumann (THE FOUNDER); PAYS THE BILLS types into the company's side on "pays", GETS PAID into the founder's on "paid" · SEAM in right, out right
-# cine act=doubt fx="code:@two_accounts;l:wework_sign_toronto_richmond;r:wework_neumann_2015_disrupt_portrait;lt:THE COMPANY · WEWORK;rt:THE FOUNDER · ADAM NEUMANN;lv:PAYS THE BILLS;lat:pays;rv:GETS PAID;rat:paid;open:keep;in:right;out:right"
+# cine act=doubt fx="code:@two_accounts;l:wework_interior_nyc_fulton_elevator;r:wework_neumann_2015_disrupt_portrait;lt:THE COMPANY · WEWORK;rt:THE FOUNDER · ADAM NEUMANN;lv:PAYS THE BILLS;lat:pays;rv:GETS PAID;rat:paid;open:keep;in:right;out:right"
 So we'll keep two **accounts** side by side: the company's, and the founder's.
 {wry} Keep an eye on which one pays the **bills**, and which one gets paid. (J)
 
 // CARD a0-10 · SEE: the real a16z post (archived 15 Aug 2022) flies in turning over and lands; a highlighter runs across its headline on "bet" · SEAM hard cut
-# cine act=rise fx="code:@doc_flip;doc:wework_doc_post_a16z_flow_2022_08_15;bg:wework_clip_nyc_skyline_dusk__060;land:Andreessen;mark:bet;line:.2"
+# cine act=rise fx="code:@doc_flip;doc:wework_doc_post_a16z_flow_2022_08_15;bg:wework_clip_nyc_skyline_timelapse__060;land:Andreessen;mark:bet;line:.2"
 In August twenty twenty-two, Andreessen Horowitz, one of Silicon Valley's most famous investors, made a **bet**.
 
-// CARD a0-11 · SEE: a pink apartment block from below, balconies stacked up; the sum sets in the sky above it on "three" and its source under it · SEAM in right, out right
-# cine act=rise fx="code:@reel;clip:wework_clip_flow_building_lowangle;move:up;z:.08;txt:$350,000,000;tsize:120;tfont:impact;ty:.2;tat:three;tcol:#f2c14e;sub:reported as a16z’s largest single check (NYT);in:right;out:right"
+// CARD a0-11 · SEE: two modern apartment towers with glass balconies, seen from below; the sum sets in the sky above it on "three" and its source under it · SEAM in right, out right
+# cine act=rise fx="code:@reel;clip:wework_clip_flow_building_highrise;move:up;z:.08;txt:$350,000,000;tsize:120;tfont:impact;ty:.2;tat:three;tcol:#f2c14e;sub:reported as a16z’s largest single check (NYT);in:right;out:right"
 About three hundred and fifty million dollars, into Adam Neumann's new housing company, **Flow**.
 It was reported as the biggest single **check** the firm had ever paid out.
 
@@ -57,7 +57,7 @@ But WeWork only filed for bankruptcy fifteen months **later**. [BEAT]
 # cine act=fall fx="code:@timeline_pins;items:wework_doc_post_a16z_flow_2022_08_15^.03,.03,.97,.34^.3^AUG 2022^THE COMEBACK · FLOW^comeback~wework_doc_news_ft_bankruptcy_2023_11_07^.03,.03,.97,.52^.72^NOV 2023^THE CRASH · WEWORK FILES^crash;gap:THE COMEBACK CAME FIRST;gapat:finished"
 {tense} The comeback **started** before the crash had even finished.
 
-// CARD a0-15 · SEE: an empty boardroom at night along a long table: the room where a decision gets signed; the camera eases in and slows on "signed" · SEAM out right
-# cine act=setup fx="code:@reel;under:wework_art_boardroom_night;ua:0;move:in;z:.1;slow:signed;out:right"
+// CARD a0-15 · SEE: a pen is handed over a stack of papers and touches the page; the picture freezes on "signed" · SEAM out right
+# cine act=setup fx="code:@reel;clip:wework_clip_ipo_signing_1;move:in;z:.1;freeze:signed;out:right"
 Here's how that happened, and the one **decision**, signed years earlier, that made it possible.
 

@@ -11,15 +11,15 @@ endcard: off
 motif: two_accounts
 
 // CARD a2-01 · SEE: the two accounts again, same pictures; on "filling" the founder's half warms and lifts while the company's half drains grey · SEAM in right, out right
-# cine act=doubt fx="code:@two_accounts;l:wework_sign_toronto_richmond;r:wework_neumann_2015_disrupt_portrait;lt:THE COMPANY · WEWORK;rt:THE FOUNDER · ADAM NEUMANN;open:no;win:r;wat:filling;in:right;out:right"
+# cine act=doubt fx="code:@two_accounts;l:wework_interior_nyc_fulton_elevator;r:wework_neumann_2015_disrupt_portrait;lt:THE COMPANY · WEWORK;rt:THE FOUNDER · ADAM NEUMANN;open:no;win:r;wat:filling;in:right;out:right"
 Meanwhile, the founder's account was quietly filling with **money**.
 
 // CARD a2-02 · SEE: the S-1's page 199 on the desk; the camera travels into one paragraph; "we" family trademarks is highlighted on "we", then $5.9 million on "five" · SEAM in right
-# cine act=doubt fx="code:@doc_read;doc:wework_doc_s1_trademark_59m_p199;crop:.28,.6,.82,.69;marks:.328,.623,.44,.637@we~.664,.66,.76,.674@five;zoom:we;z:.9;in:right"
+# cine act=doubt fx="code:@doc_read;doc:wework_doc_s1_trademark_59m_p199;crop:.02,.61,.98,.685;marks:.328,.623,.44,.637@we~.664,.66,.76,.674@five;zoom:we;z:.9;in:right"
 Neumann's own company held the rights to the word "we". So WeWork paid it five point nine million dollars for **them**. (J)
 
-// CARD a2-03 · SEE: page 200 of the filing flies in turning over in 3D and lands; a highlighter runs across "lease agreements for four commercial properties with landlord entities in which Adam has an ownership interest" on "rented" · SEAM hard cut
-# cine act=doubt fx="code:@doc_flip;doc:wework_doc_s1_neumann_buildings_p200;bg:wework_bldg_brooklyn_navy_north;land:filing;mark:rented;line:.337"
+// CARD a2-03 · SEE: page 200 of the S-1 lies dim behind; its sentence is lifted out in two strips — "We are party to lease agreements for four commercial properties / with landlord entities in which Adam has an ownership interest." — "ownership interest" highlights on "stakes", "lease agreements" on "rented" · SEAM hard cut
+# cine act=doubt fx="code:@doc_quote_line;doc:wework_doc_s1_neumann_buildings_p200;line:.006,.327,.476,.344+.476,.327,.86,.344;marks:.64,.327,.858,.344@stakes~.1,.327,.24,.344@rented;src:WeWork Form S-1, page 200, 14 August 2019"
 The company's own filing admits he had owned stakes in buildings that WeWork **rented**.
 
 // CARD a2-04 · SEE: looking up a Manhattan tower: a name card drops high on the facade, LANDLORD (PART-OWNER) with Neumann's face; on "company's" a second card drops at street level, TENANT: WEWORK, with the same face; gold $ marks climb from one to the other · SEAM out right
@@ -31,12 +31,12 @@ So in some buildings, the founder was his own company's **landlord**. (J)
 In April twenty nineteen, WeWork lent him three hundred and sixty-two million dollars, at two point eight nine percent, to buy its **stock**.
 
 // CARD a2-06 · SEE: thick bundles of real cash drop onto a dark desk one after another and stack into a pile while $700M counts up; on "loans" two tags set beside it: SHARE SALES, LOANS AGAINST HIS STOCK · SEAM in right
-# cine act=doubt fx="code:@cash_pile;img:stock_scam_cash_stacks_counting_24__060;n:21;go:taken;val:700;lab:TAKEN OUT BY JULY 2019;tags:SHARE SALES~LOANS AGAINST HIS STOCK~(THE WALL STREET JOURNAL);in:right"
+# cine act=doubt fx="code:@cash_pile;img:stock_scam_cash_stacks_counting_24__060;n:21;go:July;val:700;lab:TAKEN OUT BY JULY 2019 · WSJ;tags:SHARE SALES~LOANS AGAINST HIS STOCK;in:right"
 By that July, he had taken out about seven hundred million **dollars**.
 Share sales, and loans against his stock, the Wall Street Journal **reported**.
 
-// CARD a2-08 · SEE: the WSJ's own sentence from September 2019 lifted out of the page: "…zipping across the Atlantic Ocean in a Gulfstream G650"; "Gulfstream G650" highlights on "Gulfstream" · SEAM out right
-# cine act=doubt fx="code:@doc_quote_line;doc:wework_doc_news_wsj_neumann_profile_2019_09_18;line:.25,.948,.43,.973+.43,.948,.61,.973;marks:.505,.948,.607,.973@Gulfstream;src:The Wall Street Journal, 18 September 2019;out:right"
+// CARD a2-08 · SEE: executives in the cabin of a private jet, the camera gliding along the aisle · SEAM out right
+# cine act=doubt fx="code:@reel;clip:stock_place_private_jet_03;move:right;z:.08;out:right"
 {wry} The company also owned a Gulfstream jet, bought for more than sixty million **dollars**.
 
 // CARD a2-09 · SEE: a closed kraft folder stamped PRIVATE lies on the desk; on "someone" its flap lifts and the real S-1 cover slides out toward us · SEAM out up

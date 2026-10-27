@@ -15,8 +15,8 @@ motif: two_accounts
 {tense} On Wednesday, August fourteenth, twenty nineteen, WeWork **filed** its S-1.
 It's the document a company must publish before it sells shares on the stock **market**.
 
-// CARD a3-03 · SEE: the S-1's real table of contents on the desk, the camera reading down it · SEAM out right
-# cine act=doubt fx="code:@reel;under:wework_doc_s1_toc;ua:0;fy:.2;move:in;z:.12;out:right"
+// CARD a3-03 · SEE: printed pages seen from above, a magnifying glass sliding over them: outsiders reading · SEAM out right
+# cine act=doubt fx="code:@reel;clip:wework_clip_ipo_analysis;move:in;z:.12;out:right"
 Outsiders could finally **read** it.
 
 // CARD a3-04 · SEE: the real statement of operations (page F-5) across the desk; on "one point eight two" the 2018 revenue figure is cut out of the page and lifts toward us; REVENUE 2018 · $1.82B · SEAM in right
@@ -37,7 +37,7 @@ For a company whose whole business was paying rent, that's like a bakery leaving
 Then, on page forty-one of the filing, one line decided **everything**.
 
 // CARD a3-09 · SEE: page 41's opening two lines lifted out of the page as a wide strip, large enough to read; "future undiscounted minimum lease cost payment obligations" highlights on "Future", "$47.2 billion" on "forty-seven" · SEAM HOLD, then hard cut
-# cine act=fall fx="code:@doc_quote_line;doc:wework_doc_s1_lease_47bn_p41;line:.283,.002,.646,.024+.646,.002,.997,.024+0,.022,.086,.044;marks:.285,.004,.645,.022@Future~.006,.023,.084,.043@forty-seven;src:WeWork Form S-1, page 41, 14 August 2019"
+# cine act=fall fx="code:@doc_quote_line;doc:wework_doc_s1_lease_47bn_p41;line:.283,.002,.646,.024+.646,.002,.997,.024+0,.022,.1,.044;marks:.285,.004,.645,.022@Future~.006,.023,.084,.043@forty-seven;src:WeWork Form S-1, page 41, 14 August 2019"
 Future lease payments, already signed: forty-seven point two billion **dollars**.
 
 // CARD a3-10 · SEE: a brass beam scale over Wall Street; the left pan takes $47.2B · LEASES SIGNED and the beam slams down to the left; on "four" the right pan takes $4B · MEMBERSHIPS — the beam barely moves · SEAM [BEAT] stillness after
@@ -45,7 +45,7 @@ Future lease payments, already signed: forty-seven point two billion **dollars**
 Against that, contracted membership revenue of about four **billion**. [BEAT]
 
 // CARD a3-11 · SEE: the mechanism again, now in another WeWork room: the gold YEAR column drops in on "Years", the blue 1 MONTH tile on "Months" and blinks out on "other" · SEAM out right
-# cine act=fall fx="code:@years_vs_month;plate:wework_interior_vancouver_09;n:11;go:Years;month:Months;blink:other;llab:YEARS OF RENT;rlab:MONTHS OF MEMBERSHIP;out:right"
+# cine act=fall fx="code:@years_vs_month;plate:wework_interior_vancouver_09;n:9;go:Years;month:Months;blink:other;llab:YEARS OF RENT;rlab:MONTHS OF MEMBERSHIP;out:right"
 {grave} Years of rent on one side. Months of membership on the **other**.
 
 // CARD a3-12 · SEE: a long empty glass corridor, dead still; THE POISON PILL lands in the middle on "poison" and does not move; the three clauses sit under it · SEAM in right, HOLD
@@ -65,7 +65,7 @@ And if the founder died, his wife Rebekah would help choose the next **CEO**.
 So investors read it, and the reported value fell from forty-seven billion toward fifteen, then as low as **ten**.
 
 // CARD a3-16 · SEE: the desk again: the FT's 13 September 2019 headline and the S-1 cover lie side by side; on "cut" a red marker circles the FT print — WeWork overhauls corporate governance in bid to save IPO · SEAM in right, out in
-# cine act=doubt fx="code:@table;items:wework_doc_news_ft_governance_ipo_2019_09_13@.33,.45,-3,.36~wework_doc_s1_cover@.74,.52,4,.4;pan:0,.06;mark:0;mat:cut;in:right;out:in"
+# cine act=doubt fx="code:@table;items:wework_doc_news_ft_governance_ipo_2019_09_13@.33,.45,-3,.36~wework_doc_s1_cover@.74,.52,4,.4;pan:0,.06;mark:0@cut;in:right;out:in"
 In September, WeWork cut his votes, dropped the successor clause, and he handed back the **trademark** money.
 
 // CARD a3-17 · SEE: a framed portrait of Neumann on a dark wall above a brass plate reading CEO; on "resigned" the photo drains grey and slides down out of the frame, leaving the empty frame and the plate; 24 SEP 2019 sets beside it · SEAM in Z
