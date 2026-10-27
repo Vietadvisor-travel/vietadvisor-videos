@@ -76,6 +76,7 @@ Footage: <every clip with author and licence>
 Photos: <every photo with author and licence>
 Music: <every track, "Title by Artist (source)", licence + link>
 Some illustrations of places and objects are AI-generated and are not archival images.
+<if the narrator is Supertonic (voice: supertonic:…): The narration is an AI-generated (synthetic) voice. ← REQUIRED by the Supertonic OpenRAIL-M licence, never omit>
 <if quote voices: Quoted lines are real words from <source>, read by a synthetic voice.>
 
 #<Primary> #<Person> #BusinessDocumentary

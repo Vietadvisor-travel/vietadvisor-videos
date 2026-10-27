@@ -121,7 +121,34 @@ def vstyle(spec):
 def vlang(spec): return 'en-gb' if (spec or 'a').strip()[:1] == 'b' else 'en-us'
 def vbase(spec): return re.match(r'\s*([a-z]{2}_\w+)', spec or 'am_michael').group(1)
 
+# v6.7 Supertonic 3 (Supertone, weights OpenRAIL-M: publishing REQUIRES an express "AI-generated narration" disclosure,
+# publish.md §3). Spec "supertonic:M1" (male) / "supertonic:F1" (female); about 4-6x faster than real time on 4 CPU cores.
+# Weights come from Drive _voice/supertonic (python3 tools/voice.py setup-supertonic), never from git.
+ST_DIR = os.path.expanduser(os.environ.get('PP_SUPERTONIC_DIR', '~/.cache/pp-voice/supertonic')); _ST = {}
+def supertonic(): 
+    if 'tts' not in _ST:
+        os.environ.setdefault('HF_HUB_OFFLINE', '1')
+        if not os.path.exists(os.path.join(ST_DIR, 'onnx')): sys.exit('Supertonic weights missing: python3 tools/voice.py setup-supertonic')
+        from supertonic import TTS; _ST['tts'] = TTS(model='supertonic-3', model_dir=ST_DIR, auto_download=False)
+    return _ST['tts']
+def setup_supertonic():
+    subprocess.call([sys.executable, '-m', 'pip', 'install', '-q', 'supertonic==1.3.1', '--break-system-packages'])
+    if not os.path.exists(os.path.join(ST_DIR, 'onnx')):
+        root = os.path.dirname(HERE); dl = os.path.expanduser('~/.cache/pp-voice')
+        subprocess.check_call([sys.executable, os.path.join(HERE, 'pp_drive.py'), 'get', '_voice/supertonic/*', '--to', dl])
+        import zipfile, glob; os.makedirs(ST_DIR, exist_ok=True)
+        for z in glob.glob(os.path.join(dl, '_voice', 'supertonic', '*.zip')): zipfile.ZipFile(z).extractall(ST_DIR)
+    print('supertonic ready:', ST_DIR)
+
 def tts(text, voice, speed=1.0):
+    if (voice or '').startswith('supertonic:'):
+        T = supertonic(); key = 'st_' + voice.split(':', 1)[1]
+        if key not in _ST: _ST[key] = T.get_voice_style(voice_name=voice.split(':', 1)[1])
+        wav, _ = T.synthesize(speakable(text), voice_style=_ST[key], total_steps=int(os.environ.get('PP_SUPERTONIC_STEPS', 8)), speed=max(.7, min(2., speed)), lang='en')
+        s, sr = np.asarray(wav, dtype=np.float32).squeeze(), 44100
+        a = np.abs(s); thr = max(1e-3, a.max() * .02); idx = np.where(a > thr)[0]
+        if len(idx): s = s[max(0, idx[0] - int(sr * .03)): idx[-1] + int(sr * .08)]
+        return s, sr
     s, sr = kokoro().create(speakable(text), voice=vstyle(voice), speed=max(.5, min(2., speed)), lang=vlang(voice))
     s = np.asarray(s, dtype=np.float32)
     a = np.abs(s); thr = max(1e-3, a.max() * .02); idx = np.where(a > thr)[0]   # trim silence
@@ -403,6 +430,7 @@ if __name__ == '__main__':
     a = sys.argv[1:]; opt = lambda k, d=None: a[a.index('--' + k) + 1] if '--' + k in a else d
     cmd = a[0] if a else 'help'
     if cmd == 'setup': setup()
+    elif cmd == 'setup-supertonic': setup_supertonic()
     elif cmd == 'voices': print(' '.join(sorted(kokoro().get_voices())))
     elif cmd == 'synth': synth(a[1], a[2], opt('voice'), opt('speed', 'auto'))
     elif cmd == 'place': place(a[1], a[2], a[3])
