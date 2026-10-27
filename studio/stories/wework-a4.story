@@ -34,7 +34,7 @@ In fact, about nine hundred and seventy million was for his **shares**.
 Five hundred million was a credit line, which is a **loan**.
 And one hundred and eighty-five million was a consulting **fee**.
 
-// CARD a4-07 · SEE: the WSJ's page of 22 October 2019 under the lamp; on "cancelled" a red line strikes its $1.7B line; on "disclosed" black redaction bars sweep across the rest · SEAM out right
+// CARD a4-07 · SEE: the WSJ's page of 22 October 2019 under the lamp; on "cancelled" a red line strikes its $1.7B line; on "disclosed" black redaction bars sweep across the rest · SEAM out right · HOLD
 # cine act=after fx="code:@redact_bars;doc:wework_doc_news_wsj_softbank_control_2019_10_22;crop:.03,.12,.97,.75;strike:.25,.665,.53,.695;sat:cancelled;go:disclosed;out:right"
 Part of that deal was later cancelled, then settled on terms that were never fully **disclosed**.
 
@@ -50,7 +50,7 @@ Then, in twenty twenty, the pandemic emptied the **offices** in every city.
 # cine act=after fx="code:@month_flip;from:2020-03;to:2023-11;go:kill;lab:STILL OPEN;sub:the pandemic in 2020 → the bankruptcy filing in November 2023;bg:wework_clip_empty_office_02;in:right"
 But it didn't kill WeWork. WeWork lasted three more **years**.
 
-// CARD a4-12 · SEE: over the dim exchange: an empty box already stands on THE STOCK MARKET line (LISTED SHELL); on "merger" a gold WEWORK card slides into it and the lid closes; THE USUAL FILING card above is struck through on "skips" · SEAM in right
+// CARD a4-12 · SEE: over the dim exchange: an empty box already stands on THE STOCK MARKET line (LISTED SHELL); on "merger" a gold WEWORK card slides into it and the lid closes; THE USUAL FILING card above is struck through on "skips" · SEAM in right · HOLD
 # cine act=rise fx="code:@shell_merge;bg:wework_ctx_wallstreet_looking_down;shell:LISTED SHELL (BOWX);co:WEWORK;go:merger;skip:skips;in:right"
 In October twenty twenty-one, it finally reached the stock market, through a **SPAC**.
 A SPAC is a shell company that's already on the stock market, so a merger skips the usual **filing**.

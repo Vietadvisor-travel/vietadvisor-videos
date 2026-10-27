@@ -41,7 +41,7 @@ So we'll keep two **accounts** side by side: the company's, and the founder's.
 {wry} Keep an eye on which one pays the **bills**, and which one gets paid. (J)
 
 // CARD a0-10 · SEE: the real a16z post (archived 15 Aug 2022) flies in turning over and lands; a highlighter runs across its headline on "bet" · SEAM hard cut
-# cine act=rise fx="code:@doc_flip;doc:wework_doc_post_a16z_flow_2022_08_15;bg:wework_clip_nyc_skyline_timelapse__060;land:Andreessen;mark:bet;line:.2"
+# cine act=rise fx="code:@doc_flip;doc:wework_doc_post_a16z_flow_2022_08_15;bg:wework_clip_nyc_skyline_timelapse__060;land:August;mark:famous;line:.2"
 In August twenty twenty-two, Andreessen Horowitz, one of Silicon Valley's most famous investors, made a **bet**.
 
 // CARD a0-11 · SEE: two modern apartment towers with glass balconies, seen from below; the sum sets in the sky above it on "three" and its source under it · SEAM in right, out right

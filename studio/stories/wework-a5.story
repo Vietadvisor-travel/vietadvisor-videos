@@ -60,11 +60,11 @@ Between twenty twenty and twenty twenty-two, companies he controlled bought majo
 # cine act=rise fx="code:@reel;clip:wework_clip_flow_interior_hallway;move:right;z:.08;out:right"
 Flow would rent them out with the same promise: not just a home, a **community**.
 
-// CARD a5-13 · SEE: the real a16z post header (Investing in Flow, Marc Andreessen, 15 August 2022) at the top over dim footage of an apartment tower; the verbatim line lights word by word as the quote voice reads it; MARC ANDREESSEN · VOICED · SEAM in right
+// CARD a5-13 · SEE: the real a16z post header (Investing in Flow, Marc Andreessen, 15 August 2022) at the top over dim footage of an apartment tower; the verbatim line lights word by word as the quote voice reads it; MARC ANDREESSEN · VOICED · SEAM in right · HOLD
 # cine act=rise fx="code:@post_quote;doc:wework_doc_post_a16z_flow_2022_08_15;crop:.03,.03,.97,.34;bg:wework_clip_flow_keys_minihouse;q:“Adam is a visionary leader who revolutionized the second largest asset class in the world, commercial real estate.”;go:visionary;span:5.5;size:64;by:MARC ANDREESSEN · a16z blog, 15 Aug 2022 · read by a voice actor;in:right"
 Marc Andreessen, the firm's co-founder, explained the bet in his own **words**.
 @andreessen: Adam is a visionary leader who revolutionized the second largest asset class in the world, commercial real estate.
 
-// CARD a5-14 · SEE: a phone lying tilted on the desk; a single post arrives as a bubble: Jason Calacanis, 15 August 2022, “If a startup is worth $1b before it launches a product it is probably a scam.” · SEAM out up
+// CARD a5-14 · SEE: a phone lying tilted on the desk; a single post arrives as a bubble: Jason Calacanis, 15 August 2022, “If a startup is worth $1b before it launches a product it is probably a scam.” · SEAM out up · HOLD
 # cine act=doubt fx="code:@chat;msgs:Jason Calacanis: If a startup is worth $1b before it launches a product it is probably a scam.;cues:posted;left:Jason Calacanis;right:post, 15 Aug 2022;src:post by Jason Calacanis, 15 August 2022;out:up"
 {wry} The same day, investor Jason Calacanis posted that a startup worth a billion before it launches is "probably a **scam**". (J)

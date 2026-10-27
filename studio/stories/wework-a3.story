@@ -11,7 +11,7 @@ endcard: off
 motif: two_accounts
 
 // CARD a3-01 · SEE: the S-1's real cover page drops onto a dark desk with weight; the rest of the filing builds up under it into a thick stack; FILED 14 AUG 2019 types beside it · SEAM in up (a reveal), out right
-# cine act=doubt fx="code:@page_stack;doc:wework_doc_s1_cover;crop:.39,0,1,.6;land:Wednesday;grow:document;pages:34;lab:FORM S-1;sub:filed 14 August 2019;in:up;out:right"
+# cine act=doubt fx="code:@page_stack;doc:wework_doc_s1_cover;crop:.39,0,1,.6;land:Wednesday;grow:publish;pages:34;lab:FORM S-1;sub:filed 14 August 2019;in:up;out:right"
 {tense} On Wednesday, August fourteenth, twenty nineteen, WeWork **filed** its S-1.
 It's the document a company must publish before it sells shares on the stock **market**.
 
@@ -27,7 +27,7 @@ In twenty eighteen, WeWork brought in one point eight two billion dollars of **r
 # cine act=fall fx="code:@doc_lift;doc:wework_doc_s1_statements_operations_f5;crop:0,.56,1,.76;cut:.895,.675,.99,.698;go:lost;lab:NET LOSS 2018 · $1.61 BILLION;col:#ff6b5e"
 And it lost one point six one **billion**.
 
-// CARD a3-06 · SEE: a sheet on the desk headed COMMUNITY-ADJUSTED EBITDA with three lines; on "rent" the – RENT line is cut out of the sheet and drops out of frame, leaving a black slot · SEAM out right
+// CARD a3-06 · SEE: a sheet on the desk headed COMMUNITY-ADJUSTED EBITDA with three lines; on "rent" the – RENT line is cut out of the sheet and drops out of frame, leaving a black slot · SEAM out right · HOLD
 # cine act=doubt fx="code:@cut_out_word;title:COMMUNITY-ADJUSTED EBITDA;lines:MEMBERSHIP REVENUE~– RENT~– OTHER COSTS;cut:1;go:rent;note:the S-1’s own profit measure left out major costs, including rent;out:right"
 So the filing invented its own profit measure: "community-adjusted EBITDA". It left out costs like **rent**. (J)
 For a company whose whole business was paying rent, that's like a bakery leaving out the **flour**. (J)
@@ -68,7 +68,7 @@ So investors read it, and the reported value fell from forty-seven billion towar
 # cine act=doubt fx="code:@table;items:wework_doc_news_ft_governance_ipo_2019_09_13@.33,.45,-3,.36~wework_doc_s1_cover@.74,.52,4,.4;pan:0,.06;mark:0@cut;in:right;out:in"
 In September, WeWork cut his votes, dropped the successor clause, and he handed back the **trademark** money.
 
-// CARD a3-17 · SEE: a framed portrait of Neumann on a dark wall above a brass plate reading CEO; on "resigned" the photo drains grey and slides down out of the frame, leaving the empty frame and the plate; 24 SEP 2019 sets beside it · SEAM in Z
+// CARD a3-17 · SEE: a framed portrait of Neumann on a dark wall above a brass plate reading CEO; on "resigned" the photo drains grey and slides down out of the frame, leaving the empty frame and the plate; 24 SEP 2019 sets beside it · SEAM in Z · HOLD
 # cine act=fall fx="code:@photo_drain;pic:wework_neumann_2016_delhi_portrait;plate:CEO;go:resigned;date:24 SEP 2019;in:in"
 But it wasn't enough. On Tuesday, September twenty-fourth, Adam Neumann resigned as **CEO**.
 

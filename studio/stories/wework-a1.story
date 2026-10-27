@@ -60,7 +60,7 @@ But only three billion went into WeWork **itself**.
 The rest went to its offices in China, Japan and the **Pacific**.
 
 // CARD a1-15 · SEE: the S-1's own key-metrics table on the desk; the camera travels to the workstation row; 107,000 is highlighted on "hundred", 466,000 on "sixty-six" · SEAM hard cut, in from the previous beat
-# cine act=rise fx="code:@doc_read;doc:wework_doc_s1_summary_operating_kpi_p23;crop:0,.27,1,.42;marks:.555,.297,.635,.325@hundred~.725,.297,.795,.325@sixty;zoom:hundred;z:.7"
+# cine act=rise fx="code:@doc_read;doc:wework_doc_s1_summary_operating_kpi_p23;crop:0,.27,1,.42;marks:.555,.297,.635,.325@hundred~.725,.297,.795,.325@sixty;zoom:growth;z:.7"
 So **growth** became the only number investors measured.
 WeWork's desks went from about one hundred thousand, at the end of twenty sixteen, to four hundred and sixty-six thousand two years **later**.
 

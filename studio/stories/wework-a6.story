@@ -31,9 +31,12 @@ But Third Point said it had made no **commitment** to pay. (J)
 So the creditors chose their own deal, and in May, Neumann walked **away**.
 @neumann: The company looks to be emerging from bankruptcy with a plan that appears unrealistic and unlikely to succeed.
 
+// CARD a6-07 · SEE: a person walks across a bright office lobby past the lift doors, the business carrying on under new owners · SEAM out right
+# cine act=after fx="code:@reel;clip:wework_clip_elevator_lobby_entry;move:right;z:.1;out:right"
+{grave} In June twenty twenty-four, WeWork came out of bankruptcy, owned mostly by Yardi, a property software **company**.
+
 // CARD a6-08 · SEE: in a cleared-out office a small real stack of cash lands on "thirty-seven" ($337M · YARDI, FOR ABOUT 60%); on "ten" a dark wall builds beside it and runs out of frame ($10B+ · SOFTBANK, PUT IN OR PROMISED) · SEAM in right
 # cine act=after fx="code:@cash_vs_wall;plate:wework_art_building_lobby;cash:wework_clip_cash_bills_table__100;a:$337M^YARDI · FOR ABOUT 60%^thirty-seven;b:$10B+^SOFTBANK · PUT IN OR PROMISED^ten;note:WeWork after bankruptcy: owned mostly by Yardi;in:right"
-{grave} In June twenty twenty-four, WeWork came out of bankruptcy, owned mostly by Yardi, a property software **company**.
 Yardi paid three hundred and thirty-seven million dollars for about sixty **percent**.
 SoftBank had put in, or promised, more than ten billion before the stock market **listing**.
 
