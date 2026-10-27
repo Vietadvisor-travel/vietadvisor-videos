@@ -15,6 +15,6 @@
   const a0 = clamp(t / .5); card(W * .24, H * .74, 0, '#efe6d2', '1', a0); text(P.llab || 'ONE ORDINARY SHARE', W * .24, H * .29, { size: 44 * u, font: 'cond', col: '#efe6d2', lw: 0, a: a0 });
   for (let i = 0; i < n; i++) { const k = stagger(i, n, P.go || 0, .7, .45), ang = lerp(0, (i / (n - 1) - .5) * 2.1, k); card(W * .66, H * .74, ang, i === n - 1 ? '#f2c14e' : '#e8c26a', i === n - 1 && k > .9 ? String(n) : i === 0 && k < .1 ? '1' : '', i === 0 ? a0 : clamp(k * 3)); }
   text(P.rlab || "THE FOUNDER'S SHARE", W * .66, H * .29, { size: 44 * u, font: 'cond', col: '#f2c14e', lw: 0, a: a0 });
-  const la = clamp(p(P.go || 0, .5, 'out')); if (P.lab) text(P.lab, W * .5, H * .12, { size: 84 * u, font: 'impact', col: '#f2c14e', lw: 0, a: la });
+  const la = clamp(p(P.go || 0, .5, 'out')); if (P.lab) text(P.lab, W * .5, H * .15, { size: 84 * u, font: 'impact', col: '#f2c14e', lw: 0, a: la });
   ctx.restore();
 }

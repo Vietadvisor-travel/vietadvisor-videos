@@ -15,8 +15,8 @@ motif: two_accounts
 {tense} On Wednesday, August fourteenth, twenty nineteen, WeWork **filed** its S-1.
 It's the document a company must publish before it sells shares on the stock **market**.
 
-// CARD a3-03 · SEE: printed pages seen from above, a magnifying glass sliding over them: outsiders reading · SEAM out right
-# cine act=doubt fx="code:@reel;clip:wework_clip_ipo_analysis;move:in;z:.12;out:right"
+// CARD a3-03 · SEE: a magnifying glass moving over printed charts and tables: outsiders reading · SEAM out right
+# cine act=doubt fx="code:@reel;clip:stock_screen_spreadsheet_16;move:in;z:.12;out:right"
 Outsiders could finally **read** it.
 
 // CARD a3-04 · SEE: the real statement of operations (page F-5) across the desk; on "one point eight two" the 2018 revenue figure is cut out of the page and lifts toward us; REVENUE 2018 · $1.82B · SEAM in right
@@ -37,7 +37,7 @@ For a company whose whole business was paying rent, that's like a bakery leaving
 Then, on page forty-one of the filing, one line decided **everything**.
 
 // CARD a3-09 · SEE: page 41's opening two lines lifted out of the page as a wide strip, large enough to read; "future undiscounted minimum lease cost payment obligations" highlights on "Future", "$47.2 billion" on "forty-seven" · SEAM HOLD, then hard cut
-# cine act=fall fx="code:@doc_quote_line;doc:wework_doc_s1_lease_47bn_p41;line:.283,.002,.646,.024+.646,.002,.997,.024+0,.022,.1,.044;marks:.285,.004,.645,.022@Future~.006,.023,.084,.043@forty-seven;src:WeWork Form S-1, page 41, 14 August 2019"
+# cine act=fall fx="code:@doc_quote_line;doc:wework_doc_s1_lease_47bn_p41;line:.266,.002,.663,.024+.662,.002,.999,.024+0,.022,.096,.044;marks:.27,.004,.66,.022@Future~.008,.023,.093,.043@forty-seven;src:WeWork Form S-1, page 41, 14 August 2019"
 Future lease payments, already signed: forty-seven point two billion **dollars**.
 
 // CARD a3-10 · SEE: a brass beam scale over Wall Street; the left pan takes $47.2B · LEASES SIGNED and the beam slams down to the left; on "four" the right pan takes $4B · MEMBERSHIPS — the beam barely moves · SEAM [BEAT] stillness after
@@ -57,7 +57,7 @@ That's the poison pill: rent for years, sell by the month, and let your funder s
 It also showed who was in charge. Neumann's shares carried twenty **votes** each.
 
 // CARD a3-14 · SEE: Rebekah Neumann speaking on a stage, hand raised; the camera eases in (no event or date shown) · SEAM in right
-# cine act=doubt fx="code:@reel;under:wework_rebekah_neumann_conference;ua:0;fy:.2;move:in;z:.1;in:right"
+# cine act=doubt fx="code:@reel;under:wework_rebekah_neumann_conference;ua:0;fy:.02;move:in;z:.1;in:right"
 And if the founder died, his wife Rebekah would help choose the next **CEO**.
 
 // CARD a3-15 · SEE: the price tag again, now on a WeWork entrance; $47B is struck through on "fifteen" and $15B written under it, then struck on "ten" and $10B written in red · SEAM out right

@@ -15,11 +15,11 @@ motif: two_accounts
 Meanwhile, the founder's account was quietly filling with **money**.
 
 // CARD a2-02 · SEE: the S-1's page 199 on the desk; the camera travels into one paragraph; "we" family trademarks is highlighted on "we", then $5.9 million on "five" · SEAM in right
-# cine act=doubt fx="code:@doc_read;doc:wework_doc_s1_trademark_59m_p199;crop:.02,.61,.98,.685;marks:.328,.623,.44,.637@we~.664,.66,.76,.674@five;zoom:we;z:.9;in:right"
+# cine act=doubt fx="code:@doc_read;doc:wework_doc_s1_trademark_59m_p199;crop:.02,.61,.98,.685;marks:.433,.621,.582,.639@we~.464,.658,.544,.676@five;zoom:we;z:.9;in:right"
 Neumann's own company held the rights to the word "we". So WeWork paid it five point nine million dollars for **them**. (J)
 
 // CARD a2-03 · SEE: page 200 of the S-1 lies dim behind; its sentence is lifted out in two strips — "We are party to lease agreements for four commercial properties / with landlord entities in which Adam has an ownership interest." — "ownership interest" highlights on "stakes", "lease agreements" on "rented" · SEAM hard cut
-# cine act=doubt fx="code:@doc_quote_line;doc:wework_doc_s1_neumann_buildings_p200;line:.006,.327,.476,.344+.476,.327,.86,.344;marks:.64,.327,.858,.344@stakes~.1,.327,.24,.344@rented;src:WeWork Form S-1, page 200, 14 August 2019"
+# cine act=doubt fx="code:@doc_quote_line;doc:wework_doc_s1_neumann_buildings_p200;line:.006,.326,.425,.345+.425,.326,.828,.345;marks:.704,.327,.826,.344@stakes~.113,.327,.229,.344@rented;src:WeWork Form S-1, page 200, 14 August 2019"
 The company's own filing admits he had owned stakes in buildings that WeWork **rented**.
 
 // CARD a2-04 · SEE: looking up a Manhattan tower: a name card drops high on the facade, LANDLORD (PART-OWNER) with Neumann's face; on "company's" a second card drops at street level, TENANT: WEWORK, with the same face; gold $ marks climb from one to the other · SEAM out right

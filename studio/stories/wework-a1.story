@@ -65,7 +65,7 @@ So **growth** became the only number investors measured.
 WeWork's desks went from about one hundred thousand, at the end of twenty sixteen, to four hundred and sixty-six thousand two years **later**.
 
 // CARD a1-16 · SEE: a WeWork building on a New York corner; a paper price tag swings in on its string and "$47 BILLION" is written on it on "forty-seven" · SEAM in right
-# cine act=rise fx="code:@valuation_tag;bg:wework_bldg_nyc_fifth_avenue;vals:$47B@forty-seven;lab:VALUATION · JAN 2019;sub:set in a private deal with SoftBank;x:.66;in:right"
+# cine act=rise fx="code:@valuation_tag;bg:wework_bldg_nyc_fifth_avenue;vals:$47B@valuation;lab:VALUATION · JAN 2019;sub:set in a private deal with SoftBank;x:.66;in:right"
 In January twenty nineteen, SoftBank came back with two billion more, at a valuation of forty-seven billion **dollars**.
 
 // CARD a1-17 · SEE: SoftBank (Son, 2025 portrait) on the left; on "new" a gold arrow forks to a WeWork lobby: $1B NEW MONEY; on "other" a blue arrow forks to people at their desks: $1B FOR SHARES THEY ALREADY OWNED · SEAM out right
