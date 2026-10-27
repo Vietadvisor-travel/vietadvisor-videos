@@ -10,7 +10,8 @@ deliver. Your work decides how true, deep and beautiful it can be.
 - Set `export PP_CONTACT=<the owner's email>` (Wikimedia and Openverse require a contact).
 - Read `poison-pill-studio/references/story-mining.md`, `image-sourcing.md` and `ai-images.md`.
 
-## When the owner writes "nghiên cứu và đóng gói: <topic>" (or "… tập N", using lich-30-ngay.md)
+## When the owner writes "nghiên cứu và đóng gói: <topic>" (or "… tập N", using the current jobs/SCHEDULE_WEEK_*.md)
+Topics come from the rolling 7-day schedule (jobs/MUSE_SCHEDULE.md, owner decision 27 Oct 2026). The old 30-day schedule (lich-30-ngay.md) is RETIRED as a plan; its unproduced topics are an idea pool only, usable if they trend in the week they would publish.
 Choose a slug: lowercase-hyphen, e.g. `nokia`. Every image id starts with the slug in underscores, e.g. `nokia_ceo_ollila`.
 
 ### 1. Research: `jobs/<slug>/RESEARCH_<slug>.md`
@@ -162,15 +163,18 @@ A channel-wide footage library that every episode can use, next to each episode'
   `cd studio && git pull --rebase && python3 tools/pp_pack.py music-export && mkdir -p ../jobs/_music && rm -f ../jobs/_music/music_library*.zip && cp packs/music_library_*.zip ../jobs/_music/`
 - Commit and push `jobs/_music/`. Never commit WAV files, and never commit any file over 95 MB.
 
-## Monthly: "nghiên cứu chủ đề tháng"
-Deliver `jobs/TOPICS_<yyyy-mm>.md` with 60 candidate topics. For each candidate:
-- main keyword, search volume, competition;
-- the top 3 existing videos;
-- the gap or angle they missed, and why now;
-- whether real images and documents are available;
-- the rise-fall clarity, and a score out of 100.
+## Weekly: "nghiên cứu tuần" (replaces the old monthly topic research, 27 Oct 2026)
+Every Monday, deliver `jobs/SCHEDULE_WEEK_<monday-yyyy-mm-dd>.md` for the coming 7 days, following jobs/MUSE_SCHEDULE.md.
+For each publish slot (Tue / Thu / Sat):
+- topic, slug, publish date;
+- WHY NOW, with dated trend evidence (news date, earnings date, viral moment, search spike, competitor video taking
+  off, AI event). No dated "why now", no slot;
+- angle, thesis, hook, archetype, 3 signature shots;
+- main keyword, search volume, competition, the top 3 existing videos and the gap they missed;
+- whether real images and documents are available, the rise-fall clarity, and a score out of 100.
 
-Also list 5 competitor channels with their last 10 titles and views, 20 search phrasings, and the title patterns that
-win now. Push the file.
+Also list a trend watchlist for next week (especially AI: model releases, AI company drama, AI regulation, AI bubble
+debate, AI-driven collapses and comebacks), 5 competitor channels with their last 10 titles and views, 20 search
+phrasings, and the title patterns that win now. Push the file.
 
 **Never:** invent facts, use images with unknown or NC/ND licences, generate real people or documents, or skip credits.
