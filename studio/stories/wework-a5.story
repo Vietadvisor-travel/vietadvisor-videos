@@ -20,25 +20,25 @@ In March twenty twenty-three, WeWork announced its first month of adjusted profi
 {tense} Five months later, its own report warned of "substantial doubt" that it could survive as a going **concern**.
 
 // CARD a5-03 · SEE: a hundred real banknotes laid out on the desk stand for one dollar of revenue; on "seventy-four" seventy-four of them drop off the desk one after another; 26 stay in the light · SEAM out right
-# cine act=fall fx="code:@cent_grid;share:26;at:seventy-four;lab:74¢ OF EVERY $1 → PAYING FOR SPACE;sub:second quarter of 2023 (Reuters);out:right"
+# cine act=fall fx="code:@cent_grid;share:26;at:seventy-four;ld:.8;lab:74¢ OF EVERY $1 → PAYING FOR SPACE;sub:second quarter of 2023 (Reuters);out:right"
 Because paying for space ate seventy-four cents of every dollar of **revenue**.
 
 // CARD a5-04 · SEE: a real empty coworking room behind, dim; a block of 100 seats in front; on "seventy-two" 72 of them light up gold in a scatter while 72% counts up · SEAM in right
 # cine act=fall fx="code:@occupancy_grid;plate:wework_ctx_empty_coworking_office;pct:72;go:seventy-two;lab:OF THE SPACE IN USE;sub:physical occupancy, second quarter of 2023;in:right"
-And its buildings were only seventy-two percent **full**.
+And even its buildings sat partly empty: only seventy-two percent **full**.
 
-// CARD a5-05 · SEE: the real declaration WeWork's lawyers (Kirkland & Ellis) filed with the court, read from the top · SEAM out right
-# cine act=fall fx="code:@reel;under:wework_doc_tolley_declaration_p1;ua:0;fy:.1;move:in;z:.12;out:right"
+// CARD a5-05 · SEE: a real coworking floor, people at work; on "ninety" a placard is planted into the room: 590 LEASES · RENEGOTIATED, BEFORE THE FILING · SEAM out right
+# cine act=fall fx="code:@sign_on_footage;clip:wework_clip_coworking_open_space;sign:590 LEASES;sub:RENEGOTIATED FIRST;go:ninety;x:.68;y:.4;out:right"
 Its lawyers said it had already renegotiated five hundred and ninety **leases**, building by building.
 
 // CARD a5-06 · SEE: the real Chapter 11 petition's first page drops onto the desk with weight; the 54-page filing builds up under it; CHAPTER 11 · 6 NOV 2023 types beside it · SEAM in right
 # cine act=fall fx="code:@page_stack;doc:wework_doc_bankruptcy_petition_p1;crop:0,0,1,.5;land:Monday;grow:bankruptcy;pages:54;lab:CHAPTER 11;sub:filed 6 November 2023;in:right"
 {grave} Then, on Monday, November sixth, twenty twenty-three, WeWork filed for **bankruptcy**.
 
-// CARD a5-07 · SEE: in a deserted open-plan office, a small real stack of cash lands on the floor on "sixty-four" ($164M CASH); on "eighteen" a dark wall of blocks builds beside it until it runs out of the top of the frame ($18.66B LIABILITIES ON THE BOOKS) · SEAM HOLD
-# cine act=fall fx="code:@cash_vs_wall;plate:wework_art_office_clearout;cash:wework_clip_cash_bills_stack__030;a:$164M^CASH^sixty-four;b:$18.66B^LIABILITIES ON ITS BOOKS^eighteen;note:at the bankruptcy filing (petition, 6 Nov 2023)"
+// CARD a5-07 · SEE: in a deserted open-plan office, a small real stack of cash lands on the floor on "sixty-four" ($164M CASH); on "nineteen" a dark wall of blocks builds beside it until it runs out of the top of the frame ($18.66B LIABILITIES ON THE BOOKS) · SEAM HOLD
+# cine act=fall fx="code:@cash_vs_wall;plate:wework_art_office_clearout;cash:wework_clip_cash_bills_stack__030;a:$164M^CASH^sixty-four;b:$18.66B^LIABILITIES ON ITS BOOKS^nineteen;note:at the bankruptcy filing (petition, 6 Nov 2023)"
 It had about one hundred and sixty-four million dollars in **cash**.
-Against that: eighteen point six six billion in liabilities on its **books**.
+Against that: almost nineteen billion in liabilities on its books, more than a hundred times its **cash**.
 
 // CARD a5-08 · SEE: S-1 page 41 — the lease book — fills the frame; on "cancel" the page tears in two like paper and an empty office is underneath · SEAM hard cut on the tear
 # cine act=fall fx="code:@tear_reveal;a:wework_doc_s1_lease_47bn_p41;b:wework_clip_bankruptcy_empty_office_2;go:cancel"
@@ -56,15 +56,15 @@ The first batch was sixty-nine. Floor by floor, office by office, the community 
 # cine act=rise fx="code:@window_count;bg:wework_clip_flow_building_night;n:4000;go:majority;lab:APARTMENTS;sub:majority stakes bought by companies he controlled, 2020–2022 (WSJ);in:right"
 Between twenty twenty and twenty twenty-two, companies he controlled bought majority stakes in more than four thousand **apartments**.
 
-// CARD a5-12 · SEE: a long warm-lit apartment hallway leading to a bright room, the camera moving down it · SEAM out right
-# cine act=rise fx="code:@reel;clip:wework_clip_flow_interior_hallway;move:right;z:.08;out:right"
+// CARD a5-12 · SEE: an estate agent showing a model apartment to a visitor: the home sold as a place to belong · SEAM out right
+# cine act=rise fx="code:@reel;clip:wework_clip_flow_viewing_realtor;move:right;z:.08;out:right"
 Flow would rent them out with the same promise: not just a home, a **community**.
 
 // CARD a5-13 · SEE: the real a16z post header (Investing in Flow, Marc Andreessen, 15 August 2022) at the top over dim footage of an apartment tower; the verbatim line lights word by word as the quote voice reads it; MARC ANDREESSEN · VOICED · SEAM in right · HOLD
 # cine act=rise fx="code:@post_quote;doc:wework_doc_post_a16z_flow_2022_08_15;crop:.03,.03,.97,.34;bg:wework_clip_flow_keys_minihouse;q:“Adam is a visionary leader who revolutionized the second largest asset class in the world, commercial real estate.”;go:visionary;span:5.5;size:64;by:MARC ANDREESSEN · a16z blog, 15 Aug 2022 · read by a voice actor;in:right"
-Marc Andreessen, the firm's co-founder, explained the bet in his own **words**.
+Andreessen Horowitz's co-founder, Marc Andreessen, explained the bet in his own **words**.
 @andreessen: Adam is a visionary leader who revolutionized the second largest asset class in the world, commercial real estate.
 
 // CARD a5-14 · SEE: a phone lying tilted on the desk; a single post arrives as a bubble: Jason Calacanis, 15 August 2022, “If a startup is worth $1b before it launches a product it is probably a scam.” · SEAM out up · HOLD
-# cine act=doubt fx="code:@chat;msgs:Jason Calacanis: If a startup is worth $1b before it launches a product it is probably a scam.;cues:posted;left:Jason Calacanis;right:post, 15 Aug 2022;src:post by Jason Calacanis, 15 August 2022;out:up"
-{wry} The same day, investor Jason Calacanis posted that a startup worth a billion before it launches is "probably a **scam**". (J)
+# cine act=doubt fx="code:@chat;msgs:Jason Calacanis: If a startup is worth $1b before it launches a product it is probably a scam.;cues:wrote;left:Jason Calacanis;right:post, 15 Aug 2022;src:post by Jason Calacanis, 15 August 2022;out:up"
+{wry} The day that post went up, investor Jason Calacanis wrote that a startup worth a billion before it launches is "probably a **scam**". (J)

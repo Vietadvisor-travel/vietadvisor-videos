@@ -49,8 +49,8 @@ In August twenty twenty-two, Andreessen Horowitz, one of Silicon Valley's most f
 About three hundred and fifty million dollars, into Adam Neumann's new housing company, **Flow**.
 It was reported as the biggest single **check** the firm had ever paid out.
 
-// CARD a0-13 · SEE: an empty office behind; a split-flap calendar runs AUG 2022 → NOV 2023 on "fifteen" and locks gold; 15 MONTHS sets under it · SEAM hard cut, then HOLD
-# cine act=fall fx="code:@month_flip;from:2022-08;to:2023-11;go:fifteen;lab:15 MONTHS;sub:a16z’s check to Flow → WeWork’s bankruptcy filing;bg:wework_clip_bankruptcy_empty_office_1"
+// CARD a0-13 · SEE: an empty office behind; a split-flap calendar runs AUG 2022 → NOV 2023 on "filed" and locks gold; 15 MONTHS sets under it · SEAM hard cut, then HOLD
+# cine act=fall fx="code:@month_flip;from:2022-08;to:2023-11;go:filed;lab:15 MONTHS;sub:a16z’s check to Flow → WeWork’s bankruptcy filing;bg:wework_clip_bankruptcy_empty_office_1"
 But WeWork only filed for bankruptcy fifteen months **later**. [BEAT]
 
 // CARD a0-14 · SEE: one time line across the frame: the real a16z post is pinned at AUG 2022 on "comeback" (THE COMEBACK), the FT's bankruptcy page at NOV 2023 on "crash" (THE CRASH); a bracket measures the gap on "finished" · SEAM hard cut

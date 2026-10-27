@@ -62,8 +62,8 @@ The founder survived for a simpler reason: a valuation isn't cash, and a famous 
 # cine act=lesson fx="code:@two_questions;bg:stock_money_raining_07;lab:NEXT TIME YOU HEAR A VALUATION, ASK;qs:WHO SET THE PRICE?^who~HOW MUCH CASH CHANGED HANDS?^much;out:right"
 So here's the lesson. When a founder story quotes a valuation, ask who set that price, and how much cash changed **hands**.
 
-// CARD a6-16 · SEE: the two accounts a last time: left WeWork's page 41, read in public (WEWORK · READ IN 2019), right Flow's glass doors (FLOW · NOT YET) — the founder's side still blank · SEAM in right, out right
-# cine act=lesson fx="code:@two_accounts;l:wework_doc_s1_lease_47bn_p41;r:wework_clip_flow_elevator;lt:WEWORK · READ IN PUBLIC;rt:THE FOUNDER · FLOW;lv:S-1 · 2019;lat:read;rv:NOT FILED;rat:founder's;open:no;in:right;out:right"
+// CARD a6-16 · SEE: the two accounts a last time: left the WeWork floor from the opening (READ IN PUBLIC · 2019), right Flow's glass doors (FLOW · NOT YET) — the founder's side still blank · SEAM in right, out right
+# cine act=lesson fx="code:@two_accounts;l:wework_interior_nyc_fulton_elevator;r:wework_clip_flow_elevator;lt:THE COMPANY · WEWORK;rt:THE FOUNDER · FLOW;lv:READ IN PUBLIC · 2019;lat:read;rv:NOT FILED;rat:founder's;open:no;in:right;out:right"
 Flow says it may go public one day, and if it does, it will have to file its own S-1, with every number, for anyone to **read**. [BEAT]
 {awe} And for the first time, we'll all finally get to read the founder's own account, line by line, in public, the way the world once read **WeWork's**.
 

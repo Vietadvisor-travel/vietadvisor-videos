@@ -66,7 +66,7 @@ Against that, contracted membership revenue of about four **billion**. [BEAT]
 That's the poison pill: rent for years, sell by the month, and let your funder set the **price**.
 It also showed who was in charge. Neumann's shares carried twenty **votes** each.
 And if the founder died, his wife Rebekah would help choose the next **CEO**.
-So investors read it, and the reported value fell from forty-seven billion toward fifteen, then as low as **ten**.
+So investors read it, and the forty-seven-billion price tag fell toward fifteen, then as low as **ten**.
 In September, WeWork cut his votes, dropped the successor clause, and he handed back the **trademark** money.
 But it wasn't enough. On Tuesday, September twenty-fourth, Adam Neumann resigned as **CEO**.
 {wry} The same day, the company put the jet up for **sale**. (J)
@@ -97,19 +97,19 @@ And the cash it actually raised was about one point three **billion**.
 In March twenty twenty-three, WeWork announced its first month of adjusted profit, back in **December**.
 {tense} Five months later, its own report warned of "substantial doubt" that it could survive as a going **concern**.
 Because paying for space ate seventy-four cents of every dollar of **revenue**.
-And its buildings were only seventy-two percent **full**.
+And even its buildings sat partly empty: only seventy-two percent **full**.
 Its lawyers said it had already renegotiated five hundred and ninety **leases**, building by building.
 {grave} Then, on Monday, November sixth, twenty twenty-three, WeWork filed for **bankruptcy**.
 It had about one hundred and sixty-four million dollars in **cash**.
-Against that: eighteen point six six billion in liabilities on its **books**.
+Against that: almost nineteen billion in liabilities on its books, more than a hundred times its **cash**.
 In bankruptcy, a judge can do what no founder could: cancel **leases**.
 The first batch was sixty-nine. Floor by floor, office by office, the community **emptied**.
 {wry} And the founder? Fifteen months into his next **company**.
 Between twenty twenty and twenty twenty-two, companies he controlled bought majority stakes in more than four thousand **apartments**.
 Flow would rent them out with the same promise: not just a home, a **community**.
-Marc Andreessen, the firm's co-founder, explained the bet in his own **words**.
+Andreessen Horowitz's co-founder, Marc Andreessen, explained the bet in his own **words**.
 @andreessen: Adam is a visionary leader who revolutionized the second largest asset class in the world, commercial real estate.
-{wry} The same day, investor Jason Calacanis posted that a startup worth a billion before it launches is "probably a **scam**". (J)
+{wry} The day that post went up, investor Jason Calacanis wrote that a startup worth a billion before it launches is "probably a **scam**". (J)
 
 ## a6 THE BID · and the other account
 In early twenty twenty-four, the founder tried to buy WeWork **back**.

@@ -15,8 +15,8 @@ motif: two_accounts
 {tense} On Wednesday, August fourteenth, twenty nineteen, WeWork **filed** its S-1.
 It's the document a company must publish before it sells shares on the stock **market**.
 
-// CARD a3-03 · SEE: a magnifying glass moving over printed charts and tables: outsiders reading · SEAM out right
-# cine act=doubt fx="code:@reel;clip:stock_screen_spreadsheet_16;move:in;z:.12;out:right"
+// CARD a3-03 · SEE: the S-1's own key-numbers table (page 23) under the lamp, the camera reading down its rows: what outsiders could now read · SEAM out right
+# cine act=doubt fx="code:@reel;under:wework_doc_s1_summary_operating_kpi_p23;ua:0;fy:.3;move:in;z:.14;out:right"
 Outsiders could finally **read** it.
 
 // CARD a3-04 · SEE: the real statement of operations (page F-5) across the desk; on "one point eight two" the 2018 revenue figure is cut out of the page and lifts toward us; REVENUE 2018 · $1.82B · SEAM in right
@@ -62,7 +62,7 @@ And if the founder died, his wife Rebekah would help choose the next **CEO**.
 
 // CARD a3-15 · SEE: the price tag again, now on a WeWork entrance; $47B is struck through on "fifteen" and $15B written under it, then struck on "ten" and $10B written in red · SEAM out right
 # cine act=fall fx="code:@valuation_tag;bg:wework_bldg_sandiego_bstreet;vals:$47B@forty-seven~$15B@fifteen~$10B@ten;lab:REPORTED IPO VALUE;x:.62;out:right"
-So investors read it, and the reported value fell from forty-seven billion toward fifteen, then as low as **ten**.
+So investors read it, and the forty-seven-billion price tag fell toward fifteen, then as low as **ten**.
 
 // CARD a3-16 · SEE: the desk again: the FT's 13 September 2019 headline and the S-1 cover lie side by side; on "cut" a red marker circles the FT print — WeWork overhauls corporate governance in bid to save IPO · SEAM in right, out in
 # cine act=doubt fx="code:@table;items:wework_doc_news_ft_governance_ipo_2019_09_13@.33,.45,-3,.36~wework_doc_s1_cover@.74,.52,4,.4;pan:0,.06;mark:0@cut;in:right;out:in"

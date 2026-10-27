@@ -74,6 +74,6 @@ But only one billion of that was new money for the **company**.
 The other billion bought shares from people who already owned **them**.
 
 // CARD a1-20 · SEE: over Son on a giant screen at an event: a closed ring of four stations draws itself, SOFTBANK → PAYS FOR GROWTH → WEWORK GROWS → SETS THE PRICE: $47B → back to SOFTBANK in gold on "money" · SEAM in right
-# cine act=doubt fx="code:@money_loop;bg:wework_son_video_message;nodes:SOFTBANK@investor~PAYS FOR THE GROWTH@paying~WEWORK GROWS@growth~SETS THE PRICE · $47B@own;close:money"
+# cine act=doubt fx="code:@money_loop;bg:wework_son_video_message;nodes:SOFTBANK@investor~PAYS FOR GROWTH@paying~WEWORK GROWS@growth~SETS THE PRICE · $47B@own;close:money"
 {wry} So forty-seven billion dollars wasn't a market **price**.
 It was a price set by the very investor who was paying for the growth, with its own **money**.

@@ -34,8 +34,8 @@ In fact, about nine hundred and seventy million was for his **shares**.
 Five hundred million was a credit line, which is a **loan**.
 And one hundred and eighty-five million was a consulting **fee**.
 
-// CARD a4-07 · SEE: the WSJ's page of 22 October 2019 under the lamp; on "cancelled" a red line strikes its $1.7B line; on "disclosed" black redaction bars sweep across the rest · SEAM out right · HOLD
-# cine act=after fx="code:@redact_bars;doc:wework_doc_news_wsj_softbank_control_2019_10_22;crop:.03,.12,.97,.75;strike:.25,.665,.53,.695;sat:cancelled;go:disclosed;out:right"
+// CARD a4-07 · SEE: the WSJ's page of 22 October 2019 under the lamp; on "cancelled" a red line strikes its $1.7B line; on "settled" black redaction bars sweep across the rest · SEAM out right · HOLD
+# cine act=after fx="code:@redact_bars;doc:wework_doc_news_wsj_softbank_control_2019_10_22;crop:.03,.45,.97,.78;strike:.25,.665,.53,.695;sat:cancelled;go:settled;out:right"
 Part of that deal was later cancelled, then settled on terms that were never fully **disclosed**.
 
 // CARD a4-08 · SEE: a rusted gate chained shut with a yellow padlock: the company locked in with its leases · SEAM in right, HOLD
@@ -55,8 +55,8 @@ But it didn't kill WeWork. WeWork lasted three more **years**.
 In October twenty twenty-one, it finally reached the stock market, through a **SPAC**.
 A SPAC is a shell company that's already on the stock market, so a merger skips the usual **filing**.
 
-// CARD a4-13 · SEE: three blocks on a dark floor: $9B ENTERPRISE VALUE rises on "nine", $6.55B EQUITY VALUE on "six", a short $1.28B CASH RAISED on "one" — each smaller than the last · SEAM out right
-# cine act=rise fx="code:@blocks;vals:9,6.553,1.283;labs:ENTERPRISE VALUE,EQUITY VALUE,CASH RAISED (GROSS);txts:$9B,$6.55B,$1.28B;ats:nine,six,one;bg:stock_finance_wall_street_sign_04;hl:2;hlat:raised;note:the SPAC, October 2021 (SEC filings);out:right"
+// CARD a4-13 · SEE: three blocks on a dark floor: $9B ENTERPRISE VALUE rises on "headline", $6.55B EQUITY VALUE on "shares", a short $1.28B CASH RAISED on "cash" — each smaller than the last · SEAM out right
+# cine act=rise fx="code:@blocks;vals:9,6.553,1.283;labs:ENTERPRISE VALUE,EQUITY VALUE,CASH RAISED (GROSS);txts:$9B,$6.55B,$1.28B;ats:headline,shares,cash;bg:stock_finance_wall_street_sign_04;hl:2;hlat:cash;note:the SPAC, October 2021 (SEC filings);out:right"
 The headline value was nine billion **dollars**.
 But the shares were valued at about six and a half **billion**.
 And the cash it actually raised was about one point three **billion**.
