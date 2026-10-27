@@ -75,5 +75,24 @@
    "km_fretless"
   ],
   "date": "2026-10-24"
+ },
+ {
+  "ep": "wework",
+  "format": null,
+  "opening": null,
+  "ending": null,
+  "looks": [
+   "editorial"
+  ],
+  "open": "code",
+  "modes": {
+   "code": 15
+  },
+  "verbs": {},
+  "trans": {},
+  "tracks": [
+   "km_deep_haze"
+  ],
+  "date": "2026-10-27"
  }
 ]
