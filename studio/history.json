@@ -86,12 +86,13 @@
   ],
   "open": "code",
   "modes": {
-   "code": 15
+   "code": 16
   },
   "verbs": {},
   "trans": {},
   "tracks": [
-   "km_deep_haze"
+   "km_deep_haze",
+   "km_stay_the_course"
   ],
   "date": "2026-10-27"
  }

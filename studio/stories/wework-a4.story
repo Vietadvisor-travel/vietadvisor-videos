@@ -20,7 +20,7 @@ In October, SoftBank rescued WeWork. The headline said nine and a half billion *
 But only six and a half billion was for the **company**.
 
 // CARD a4-03 · SEE: SoftBank's real release on the left; the gold $6.5B arrow into WeWork is drawn on "was"; on "offer" a blue arrow forks to Neumann himself: $3B TO BUY EXISTING SHARES, his among them · SEAM out right
-# cine act=fall fx="code:@money_fork;src:wework_doc_softbank_release_cover_p1;srclab:SOFTBANK · OCTOBER 2019;a:wework_bldg_denver_vault^INTO WEWORK^$6.5B^was;b:wework_neumann_2015_disrupt_close^SHAREHOLDERS, NEUMANN AMONG THEM^$3B^offer;out:right"
+# cine act=fall fx="code:@money_fork;src:wework_doc_softbank_release_cover_p1;srclab:SOFTBANK · OCT 2019;a:wework_bldg_denver_vault^INTO WEWORK^$6.5B^was;b:wework_neumann_2015_disrupt_close^SHAREHOLDERS, NEUMANN AMONG THEM^$3B^offer"
 Three billion was an offer to buy shares from existing **owners**.
 One of them was the founder, Adam **Neumann**.
 

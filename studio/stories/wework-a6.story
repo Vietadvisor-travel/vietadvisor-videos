@@ -27,7 +27,7 @@ His letter said he was partnering with Dan Loeb's hedge fund, Third **Point**.
 But Third Point said it had made no **commitment** to pay. (J)
 
 // CARD a6-05 · SEE: his framed portrait on the dark wall again, plate BIDDER; on "away" the photo drains grey and slides out of the frame; 28 MAY 2024 sets beside it; as his own words are read the frame stays empty, attributed — ADAM NEUMANN, via NYT DealBook · read by a voice actor · SEAM in right, HOLD
-# cine act=after fx="code:@photo_drain;pic:wework_neumann_2015_disrupt_close;plate:BIDDER;go:away;date:28 MAY 2024;cap:ADAM NEUMANN · via NYT DealBook · read by a voice actor;in:right"
+# cine act=after fx="code:@photo_drain;pic:wework_neumann_2015_disrupt_close;plate:BIDDER;go:away;date:28 MAY 2024;cap:Neumann via NYT DealBook · voice actor;in:right"
 So the creditors chose their own deal, and in May, Neumann walked **away**.
 @neumann: The company looks to be emerging from bankruptcy with a plan that appears unrealistic and unlikely to succeed.
 

@@ -69,11 +69,11 @@ WeWork's desks went from about one hundred thousand, at the end of twenty sixtee
 In January twenty nineteen, SoftBank came back with two billion more, at a valuation of forty-seven billion **dollars**.
 
 // CARD a1-17 · SEE: SoftBank (Son, 2025 portrait) on the left; on "new" a gold arrow forks to a WeWork lobby: $1B NEW MONEY; on "other" a blue arrow forks to people at their desks: $1B FOR SHARES THEY ALREADY OWNED · SEAM out right
-# cine act=doubt fx="code:@money_fork;src:wework_son_2025_tokyo_portrait;srclab:SOFTBANK · JANUARY 2019;a:wework_interior_vancouver_06^INTO WEWORK^$1B NEW^new;b:wework_clip_office_group_computers^TO EXISTING OWNERS^$1B^other;out:right"
+# cine act=doubt fx="code:@money_fork;src:wework_son_2025_tokyo_portrait;srclab:SOFTBANK · JAN 2019;a:wework_interior_vancouver_06^INTO WEWORK^$1B NEW^new;b:wework_clip_office_group_computers^TO EXISTING OWNERS^$1B^other"
 But only one billion of that was new money for the **company**.
 The other billion bought shares from people who already owned **them**.
 
 // CARD a1-20 · SEE: over Son on a giant screen at an event: a closed ring of four stations draws itself, SOFTBANK → PAYS FOR GROWTH → WEWORK GROWS → SETS THE PRICE: $47B → back to SOFTBANK in gold on "money" · SEAM in right
-# cine act=doubt fx="code:@money_loop;bg:wework_son_video_message;nodes:SOFTBANK@investor~PAYS FOR THE GROWTH@paying~WEWORK GROWS@growth~SETS THE PRICE · $47B@own;close:money;in:right"
+# cine act=doubt fx="code:@money_loop;bg:wework_son_video_message;nodes:SOFTBANK@investor~PAYS FOR THE GROWTH@paying~WEWORK GROWS@growth~SETS THE PRICE · $47B@own;close:money"
 {wry} So forty-seven billion dollars wasn't a market **price**.
 It was a price set by the very investor who was paying for the growth, with its own **money**.
