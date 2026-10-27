@@ -52,8 +52,8 @@ The first batch was sixty-nine. Floor by floor, office by office, the community 
 # cine act=after fx="code:@two_accounts;l:wework_ctx_empty_office;r:wework_clip_flow_building_scenic;lt:THE COMPANY · WEWORK;rt:THE FOUNDER · FLOW;lv:CHAPTER 11;lat:founder;rv:15 MONTHS IN;rat:Fifteen;open:no;win:r;wat:next;in:right;out:right"
 {wry} And the founder? Fifteen months into his next **company**.
 
-// CARD a5-11 · SEE: an apartment block at night, a few windows lit; on "companies" windows light up across the frame faster and faster while the count runs to 4,000+ · SEAM in right
-# cine act=rise fx="code:@window_count;bg:wework_clip_flow_building_night;n:4000;go:companies;span:1.6;lab:APARTMENTS;sub:majority stakes bought by companies he controlled, 2020–2022 (WSJ);in:right"
+// CARD a5-11 · SEE: an apartment block at night, a few windows lit; on "Between" windows light up across the frame faster and faster while the count runs to 4,000+ · SEAM in right
+# cine act=rise fx="code:@window_count;bg:wework_clip_flow_building_night;n:4000;go:Between;span:2.2;lab:APARTMENTS;sub:majority stakes bought by companies he controlled, 2020–2022 (WSJ);in:right"
 Between twenty twenty and twenty twenty-two, companies he controlled bought majority stakes in more than four thousand **apartments**.
 
 // CARD a5-12 · SEE: an estate agent showing a model apartment to a visitor: the home sold as a place to belong · SEAM out right
