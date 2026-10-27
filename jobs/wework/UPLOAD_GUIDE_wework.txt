@@ -1,0 +1,72 @@
+HƯỚNG DẪN ĐĂNG TẬP 5 · WEWORK: TWO ACCOUNTS · POISON PILL
+Video: PoisonPill_EP05_WeWork_Adam_Neumann_FULL_16x9.mp4 (9:46). Đổi tên wework_16x9_FINAL.mp4 thành tên này trước khi tải lên: từ khoá trong tên file giúp SEO.
+Bản tải lên: wework_16x9_FINAL.mp4 (bản gốc ~20 Mbps, ~1,4 GB, chất lượng tốt nhất). Bản wework_16x9_DELIVERY_5M.mp4 (~5 Mbps, ~370 MB) chỉ dùng khi mạng yếu.
+Thumbnail: anh tự làm (10 ảnh tĩnh từ phim đã gửi kèm). Gợi ý: một khuôn mặt (Neumann) + một con số ("15 MONTHS EARLY") + khung chia đôi.
+Phụ đề: wework_FULL.srt (trong jobs/wework/). Phim KHÔNG có chữ phụ đề in trên hình; người xem bật CC.
+Âm thanh: −14,1 LUFS, đỉnh −1,8 dBTP (đúng chuẩn YouTube).
+Lịch đăng gợi ý: thứ Ba 10/11/2026 lúc 21:00 giờ Việt Nam (= 9:00 sáng ET, 14:00 London; cách tập OneCoin một tuần).
+
+=== 1. TIÊU ĐỀ (dùng số 1) ===
+1. Adam Neumann Got Paid Before WeWork Even Went Bankrupt   ← dùng
+2. Why WeWork Failed, and Why Adam Neumann Is Still Rich
+3. WeWork's $47 Billion Was Never a Price. Here's Who Set It
+(Sau 48 giờ nếu CTR < 4 %: đổi sang tiêu đề 2.)
+
+=== 2. MÔ TẢ (copy nguyên khối dưới đây) ===
+WeWork was valued at $47 billion and filed for bankruptcy in 2023. Adam Neumann's new company, Flow, got a $350 million check from Andreessen Horowitz 15 months before that filing. Here is how both accounts moved, straight from the filings.
+
+Everyone says Neumann's ego destroyed WeWork. The filings tell a different story: WeWork rented buildings for years and sold desks by the month, and the investor paying for the growth was the one setting the price. Why WeWork failed, what page 41 of the S-1 revealed, how much Adam Neumann walked away with, who owns WeWork now, and what Flow is.
+
+0:00 Two accounts: the check that came before the collapse
+1:15 One floor: how WeWork actually made money
+2:39 The second account: Adam Neumann's money
+3:26 Page 41: what the WeWork S-1 revealed
+4:54 The accounts split: SoftBank's rescue and Neumann's exit
+6:16 The bill arrives: the WeWork bankruptcy
+7:42 The other account: Adam Neumann, Flow and who owns WeWork now
+
+Sources: The We Company Form S-1 (SEC, 14 Aug 2019) and its September amendments; Form RW (30 Sep 2019); SoftBank Group statements (Oct 2019); WeWork Form 8-K, Exhibit 99.1 (SPAC, 2021) and second-quarter 2023 report; Chapter 11 petition and the Declaration of David Tolley, U.S. Bankruptcy Court, District of New Jersey, Case No. 23-19865 (Nov 2023); WeWork emergence release (Jun 2024); Andreessen Horowitz, "Investing in Flow" (15 Aug 2022); reporting by The Wall Street Journal, Financial Times, The New York Times (incl. DealBook), Reuters, The Straits Times, Bloomberg, TechCrunch, Fast Company, The Japan Times, Bisnow, The Real Deal and AP.
+Valuations, bids and the size of Neumann's exit are given as reported; the 2019 exit package was later partly cancelled and settled on terms that were not fully disclosed.
+
+Footage: Pexels (Pexels License): Advancer Drones, Alena Darmel, Andres Daza, Connor Scott McManus, cottonbro studio, Coverr, Darlene Alderson, David Pickup, Edmond Dantès, fauxels, FÁBIO REIS DE ABREU (PORTUGA), Gabe H, Hugh Mitton, Jakub Zerdzicki, K, kaboompics.com, Kampus Production, Kartik Malviya, Kiara Gandhi, Kindel Media, Lukas Rodriguez, Mark Hawk, Martyn Day, Mikhail Nilov, Moe Magners, mohammad hassan tabatabaei jafari, Nothing Ahead, Paul Bill, Peggy Anke, RDNE Stock project, Rec Everywhere, Sam Lastres, Sarowar Hussain, Thirdman, Tima Miroshnichenko, utopia 36.
+Photos (Wikimedia Commons): JJonahJackalope (CC BY-SA 4.0); Rpollock1998 (CC BY-SA 4.0); Professorcornbread (CC BY-SA 4.0); Lombardia1 (CC BY-SA 4.0); Hnapel (CC BY-SA 4.0); Raysonho @ Open Grid Scheduler / Scalable Grid Engine (CC0); דוד שי (CC BY-SA 4.0); Ranbar (CC BY-SA 4.0); Robert Lamb (CC BY-SA 2.0); Xemenendura (CC BY-SA 4.0); Han Zheng (CC BY-SA 2.0); Tdorante10 (CC BY-SA 4.0); JiriMatejicek (CC BY-SA 4.0); Carlos Figueroa (CC BY-SA 4.0); Steve46814 (CC BY-SA 4.0); Ajay Suresh (CC BY 2.0); Ser Amantio di Nicolao (CC BY-SA 4.0); Ged Carroll (CC BY 2.0); Carl Lender (CC BY 2.0); Diliff (CC BY-SA 3.0); His Imperial Majesty, an Emperor of Emperors (CC BY-SA 4.0); Michael Plump (CC BY 2.0); Dietmar Rabich (CC BY-SA 4.0); Jakub Hałun (CC BY 4.0); Ken Lund (CC BY-SA 2.0); Davidmoerike (CC0); Matteo Doni (CC BY-SA 2.0); Nicki Dugan Pogue (CC BY-SA 2.0); Tokumeigakarinoaoshima (CC BY-SA 4.0); Eugene Kim (CC BY 2.0); Mx. Granger (CC0); GoToVan (CC BY 2.0); TechCrunch (CC BY 2.0); TechCrunch – Max Morse (CC BY 2.5); Anna Frodesiak (CC0); Snowshoww (CC BY 4.0); Phillip Pessar (CC BY 2.0); Syced (CC0); Masaru Kamikura (CC BY 2.0); European Communities, 2025 / EC – Audiovisual Service (CC BY 4.0); Financial Times (CC BY 2.0).
+Documents shown: SEC EDGAR public filings; U.S. federal court public records; screenshots of press pages and posts (WSJ, FT, The Straits Times, SoftBank Group, Andreessen Horowitz) shown for news reporting and commentary.
+Music by Kevin MacLeod (incompetech.com): Clean Soul, Deep Haze, Inspired, Lightless Dawn, Reawakening, Stay the Course, The Descent, Unseen Horrors. Licensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/
+Some illustrations of places and objects are AI-generated and are not archival images.
+The narration is an AI-generated (synthetic) voice.
+Quoted lines are real words from Marc Andreessen (Andreessen Horowitz blog, 15 Aug 2022) and Adam Neumann (statement reported by NYT DealBook, May 2024), read by a synthetic voice.
+
+#WeWork #AdamNeumann #BusinessDocumentary
+
+=== 3. THẺ (dán vào ô Tags) ===
+wework, adam neumann, wework bankruptcy, why wework failed, wework scandal, adam neumann flow, softbank wework, wework ipo, wework s-1, a16z flow, masayoshi son, startup valuation, business documentary, company collapse, poison pill
+
+=== 4. CÁC Ô TRONG YOUTUBE STUDIO ===
+- Thumbnail: tải thumbnail anh tự làm. Nếu có nhiều bản, bật "Test & compare".
+- Audience: "No, it's not made for kids".
+- Language: Video language = English; Title and description language = English.
+- Subtitles: Subtitles → Add language → English → Upload file → "With timing" → wework_FULL.srt → Publish.
+- Category: Education.
+- Playlist: "Corporate Collapses" (tạo mới nếu chưa có) + playlist chính của kênh.
+- License: Standard YouTube License. Allow embedding: bật. Publish to subscriptions feed: bật.
+- Comments: Allow all comments (tắt "hold potentially inappropriate" nếu nó giữ quá nhiều bình luận). Sort by: Top.
+- Altered or synthetic content: YES — phim có giọng tổng hợp đọc nguyên văn lời của hai người thật (Marc Andreessen, Adam Neumann), người xem có thể tưởng là giọng thật của họ.
+- Paid promotion: không tích.
+
+=== 5. END SCREEN VÀ CARDS ===
+- End screen (từ 9:30 đến hết): "Best for viewer" + nút Subscribe.
+- Card 1 tại 7:39 (Calacanis: "probably a scam"): trỏ về tập 4 OneCoin.
+- Card 2 tại 4:31 ("the forty-seven-billion price tag"): poll "Was WeWork ever worth $47B?" (Yes / No).
+- Sau khi đăng: quay lại tập OneCoin, thêm card trỏ sang tập này tại phần cuối (khoảng 8:20, chương "The bill").
+
+=== 6. CHẾ ĐỘ HIỂN THỊ ===
+Schedule: thứ Ba 10/11/2026, 21:00 giờ Việt Nam.
+
+=== 7. PINNED COMMENT (dán rồi ghim) ===
+Should a founder whose company collapsed get a second check this fast? And would you rent a Flow apartment?
+
+=== 8. 48 GIỜ ĐẦU ===
+- Trả lời 10 bình luận đầu tiên trong 2 giờ đầu (tín hiệu tương tác mạnh nhất).
+- Không chia sẻ link vào group spam; chia sẻ thật ở 1–2 cộng đồng đúng chủ đề (subreddit, forum) nếu luật cho phép.
+- Sau 48 giờ, ghi vào jobs/nhat-ky.md: CTR, Average view duration, % viewed, nguồn traffic chính.
+- Ngưỡng: CTR < 4 % → đổi tiêu đề 2 hoặc để Test & compare chạy xong; retention phút 1 < 55 % → báo Claude để sửa hook tập sau.
