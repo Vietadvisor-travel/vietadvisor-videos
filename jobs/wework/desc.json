@@ -1,0 +1,1422 @@
+[
+  {
+    "id": "wework_bldg_atlanta_tower",
+    "file": "photos/wework_bldg_atlanta_tower.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "JJonahJackalope / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "desc": "A soaring glass tower at centre frame, a small wework sign at the top, street and billboards below, Atlanta.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork%20skyscraper%2C%20Atlanta.jpg"
+  },
+  {
+    "id": "wework_bldg_austin_ziften",
+    "file": "photos/wework_bldg_austin_ziften.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Rpollock1998 / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "desc": "A low building facade, large wework lettering at upper right, glass doors and greenery below, a black glass tower above, Austin.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AZiften%20HQ%2C%20WeWork%20Austin.jpg"
+  },
+  {
+    "id": "wework_bldg_brooklyn_navy_crane",
+    "file": "photos/wework_bldg_brooklyn_navy_crane.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Professorcornbread / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "desc": "An old rusty blue crane dominates the centre of the frame, a WeWork glass building behind it, Brooklyn Navy Yard.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3ABrooklyn%20Navy%20Yard%20-%20WeWork%2C%20Crane.jpg"
+  },
+  {
+    "id": "wework_bldg_brooklyn_navy_north",
+    "file": "photos/wework_bldg_brooklyn_navy_north.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Professorcornbread / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "desc": "A stepped glass building under a grey cloudy sky, a crane at far left, Brooklyn Navy Yard.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3ABrooklyn%20Navy%20Yard%20-%20WeWork%20%28North%20Side%29.jpg"
+  },
+  {
+    "id": "wework_bldg_brooklyn_navy_south",
+    "file": "photos/wework_bldg_brooklyn_navy_south.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Professorcornbread / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "desc": "A glass tower at left of frame, a blue crane at centre-right, cloudy sky, Brooklyn Navy Yard.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3ABrooklyn%20Navy%20Yard%20-%20WeWork%20%28South%20Side%29.jpg"
+  },
+  {
+    "id": "wework_bldg_buenosaires_florida",
+    "file": "photos/wework_bldg_buenosaires_florida.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Lombardia1 / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "desc": "A tall glass building, wework lettering at its base, a Spanish-language banner on the glass, greenery at front right, Buenos Aires.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork%20Building%20in%20Florida%2C%20Buenos%20Aires.jpg"
+  },
+  {
+    "id": "wework_bldg_buenosaires_office",
+    "file": "photos/wework_bldg_buenosaires_office.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Hnapel / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "desc": "A glass entrance, wework lettering on the glass at left, large columns, a red Spanish-language sign at right, Buenos Aires.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork%20office%20building%20Buenos%20Aires%20001%20hnapel.jpg"
+  },
+  {
+    "id": "wework_bldg_denver_vault",
+    "file": "photos/wework_bldg_denver_vault.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Raysonho @ Open Grid Scheduler / Scalable Grid Engine / Wikimedia Commons",
+    "license": "CC0",
+    "desc": "A stone gateway, a yellow wework sign above the door, a pedestrian walking at centre below, Denver.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWorkTheVaultDenverCO.jpg"
+  },
+  {
+    "id": "wework_bldg_herzliya",
+    "file": "photos/wework_bldg_herzliya.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "דוד שי / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "desc": "A curved glass building, wework lettering on the upper right of the roof, street and traffic below, evening light, Herzliya.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork%20Herzliya.jpg"
+  },
+  {
+    "id": "wework_bldg_jerusalem",
+    "file": "photos/wework_bldg_jerusalem.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Ranbar / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "desc": "A low building at centre, small wework lettering at upper left, a busy plaza below, Jerusalem.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWorkJerusakem.jpg"
+  },
+  {
+    "id": "wework_bldg_london_harrow_murals",
+    "file": "photos/wework_bldg_london_harrow_murals.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Robert Lamb / Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "desc": "An iron gate painted with colourful murals, empty road in front, no WeWork logo clearly visible in frame, London.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AView%20of%20murals%20on%20the%20gates%20of%20WeWork%20on%20Harrow%20Place%20-%20geograph.org.uk%20-%206810440.jpg"
+  },
+  {
+    "id": "wework_bldg_medellin_poblado",
+    "file": "photos/wework_bldg_medellin_poblado.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Xemenendura / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "desc": "A tall building covered in greenery, white wework lettering on the lower floors, shot from below, Medellin.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWework%20El%20Poblado.jpg"
+  },
+  {
+    "id": "wework_bldg_miami_beach",
+    "file": "photos/wework_bldg_miami_beach.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Han Zheng / Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "desc": "A low building with a green tower behind, wework lettering on top of the tower, palm trees at left, empty road in front, Miami Beach.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWework%20Miami%20Beach%20%2851977671340%29.jpg"
+  },
+  {
+    "id": "wework_bldg_nyc_fifth_avenue",
+    "file": "photos/wework_bldg_nyc_fifth_avenue.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Tdorante10 / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "desc": "A New York street corner, a building with a wework banner and a Chase bank at street level, pedestrians at right, Fifth Avenue area.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3A34th%20St%205th%20Av%20td%20%282018-09-10%29%2007%20-%20349%20Fifth%20Avenue.jpg"
+  },
+  {
+    "id": "wework_bldg_sandiego_bstreet",
+    "file": "photos/wework_bldg_sandiego_bstreet.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "JiriMatejicek / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "desc": "A building entrance, a white wework sign on black at centre, two palm trees flanking it, a lit glass lobby, San Diego.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3ASan%20Diego%20600%20B%20Street%20WeWork.jpg"
+  },
+  {
+    "id": "wework_bldg_santiago_apoquindo",
+    "file": "photos/wework_bldg_santiago_apoquindo.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Carlos Figueroa / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "desc": "A tall curved glass tower at centre, wework lettering on top, street and cars below, Santiago.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork%20Apoquindo%205950%2C%20Las%20Condes%2C%20Santiago%2020211024.jpg"
+  },
+  {
+    "id": "wework_bldg_seoul_jongno",
+    "file": "photos/wework_bldg_seoul_jongno.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Steve46814 / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "desc": "A large glass canopy at the entrance, a glass tower behind, outdoor seating at right, the WeWork sign not clearly legible in frame, Seoul.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork%20Jongno%20Tower%20-%20Seoul%2C%20South%20Korea%2007.jpg"
+  },
+  {
+    "id": "wework_bldg_street_awning_54",
+    "file": "photos/wework_bldg_street_awning_54.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Ajay Suresh from New York, NY, USA / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "A street-level shopfront, a black awning marked 54 with white wework lettering at centre, bicycles parked at the door at left, city not identifiable from the photo.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork%20%2848155566876%29.jpg"
+  },
+  {
+    "id": "wework_ctx_40wallstreet",
+    "file": "photos/wework_ctx_40wallstreet.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Kidfly182 / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "desc": "Looking up at 40 Wall Street, a dark facade below, a lit tower at centre above, New York.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3A40%20Wall%20Street%20April%202022.jpg"
+  },
+  {
+    "id": "wework_ctx_empty_coworking_office",
+    "file": "photos/wework_ctx_empty_coworking_office.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Ser Amantio di Nicolao / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "desc": "An empty room with two desks and office chairs, grey carpet, white walls, no people, for the decline section.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AEmpty%20office%20in%20a%20coworking%20building.jpg"
+  },
+  {
+    "id": "wework_ctx_empty_office",
+    "file": "photos/wework_ctx_empty_office.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Ged Carroll / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "A wide empty carpeted floor, windows on both sides, a distant door at the end of the room, no furniture, for the decline section.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AEmpty%20office.jpg"
+  },
+  {
+    "id": "wework_ctx_empty_office_block",
+    "file": "photos/wework_ctx_empty_office_block.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Sebastian Ballard / Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "desc": "A brick office building, windows boarded up, a fence and two small trees at centre, an empty yard in front, for the decline section.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AEmpty%20Office%20Block%20-%20geograph.org.uk%20-%20633711.jpg"
+  },
+  {
+    "id": "wework_ctx_empty_office_realestate",
+    "file": "photos/wework_ctx_empty_office_realestate.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Carl Lender from Sunrise, USA / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "An empty office with cubicle partitions on both sides, a walkway at centre, no people, for the decline section.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AEmpty%20Office%20Real%20Estate%20%2822789285225%29.jpg"
+  },
+  {
+    "id": "wework_ctx_empty_offices_demolition",
+    "file": "photos/wework_ctx_empty_offices_demolition.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Sebastian Ballard / Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "desc": "An empty office building at back right, a construction fence, an empty road in front, for the decline section.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AEmpty%20offices%20-%20soon%20to%20be%20demolished%20-%20geograph.org.uk%20-%20768586.jpg"
+  },
+  {
+    "id": "wework_ctx_london_city_offices",
+    "file": "photos/wework_ctx_london_city_offices.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Rudi Winter / Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "desc": "Looking across the Thames to the City of London, tall buildings behind, cloudy sky.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AOffice%20buildings%20in%20the%20City%20of%20London%20-%20geograph.org.uk%20-%205763880.jpg"
+  },
+  {
+    "id": "wework_ctx_london_offices_dusk",
+    "file": "photos/wework_ctx_london_offices_dusk.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Diliff / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "desc": "Office buildings lit at dusk beside the water, a pointed tower at back centre, London.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AMore%20London%20Office%20Development%20at%20Dusk%2C%20London%2C%20UK%20-%20Diliff.jpg"
+  },
+  {
+    "id": "wework_ctx_nyse_wallstreet",
+    "file": "photos/wework_ctx_nyse_wallstreet.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Carlos Delgado / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "desc": "A WALL ST street sign at upper right, the American flag and the New York Stock Exchange facade below.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWall%20Street%20-%20New%20York%20Stock%20Exchange.jpg"
+  },
+  {
+    "id": "wework_ctx_soho_westbroadway",
+    "file": "photos/wework_ctx_soho_westbroadway.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Wikimedia Commons uploader (tên ghi trên file: His Imperial Majesty, an Emperor of Emperors) / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "desc": "West Broadway, a cast-iron building at left, pedestrians at centre, parked cars at right, SoHo, Manhattan.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWest%20Broadway%2C%20SoHo%2C%20Manhattan.jpg"
+  },
+  {
+    "id": "wework_ctx_telaviv_skyline",
+    "file": "photos/wework_ctx_telaviv_skyline.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Michael Plump from San Francisco, CA, USA / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "A wet road after rain, a row of palm trees at centre, towers behind, Tel Aviv.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AA%20Tel%20Aviv%20skyline%20%282981700947%29.jpg"
+  },
+  {
+    "id": "wework_ctx_telaviv_skyline2",
+    "file": "photos/wework_ctx_telaviv_skyline2.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Eduard Marmet / Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "desc": "A panoramic view of Tel Aviv, low houses in front, towers behind, sunny sky.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3ASkyline%20of%20Tel%20Aviv%20%2834324506705%29.jpg"
+  },
+  {
+    "id": "wework_ctx_wallstreet_2012",
+    "file": "photos/wework_ctx_wallstreet_2012.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Dietmar Rabich / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "desc": "The New York Stock Exchange facade, a huge American flag at centre, stone columns on both sides, Wall Street 2012.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3ANew%20York%20City%20%28New%20York%2C%20USA%29%2C%20Wall%20Street%20--%202012%20--%206614.jpg"
+  },
+  {
+    "id": "wework_ctx_wallstreet_2023",
+    "file": "photos/wework_ctx_wallstreet_2023.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Jakub Hałun / Wikimedia Commons",
+    "license": "CC BY 4.0",
+    "desc": "Looking up at Wall Street buildings, a lit tower at centre, blue sky, a glass reflection at the top edge, 2023.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWall%20Street%2C%20Manhattan%2C%20New%20York%20City%2C%2020231002%20172333.jpg"
+  },
+  {
+    "id": "wework_ctx_wallstreet_looking_down",
+    "file": "photos/wework_ctx_wallstreet_looking_down.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Ken Lund from Reno, Nevada, USA / Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "desc": "Looking down Wall Street, tall buildings on both sides, pedestrians at centre below.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3ALooking%20Down%20Wall%20Street%2C%20Manhattan%2C%20New%20York%20%287236961374%29.jpg"
+  },
+  {
+    "id": "wework_event_sxsw_meetup",
+    "file": "photos/wework_event_sxsw_meetup.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Raysonho @ Open Grid Scheduler / Scalable Grid Engine / Wikimedia Commons",
+    "license": "CC0",
+    "desc": "A community meetup, a presenter standing small at right before a screen reading What is SXSW, audience seated with their backs to camera in front.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3ASXSW2020CommunityMeetupWeWorkTheHub.jpg"
+  },
+  {
+    "id": "wework_interior_berlin_coworking",
+    "file": "photos/wework_interior_berlin_coworking.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Davidmoerike / Wikimedia Commons",
+    "license": "CC0",
+    "desc": "One person seated with their back to camera at right, looking through a large window at greenery and the Berlin TV tower in the distance.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWework-coworking-space-berlin.jpg"
+  },
+  {
+    "id": "wework_interior_denver_reception",
+    "file": "photos/wework_interior_denver_reception.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Raysonho @ Open Grid Scheduler / Scalable Grid Engine / Wikimedia Commons",
+    "license": "CC0",
+    "desc": "A reception desk, black wework lettering on glass at centre-right, a brick wall blurred behind, Denver.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWorkDenverTriangleBuilding.jpg"
+  },
+  {
+    "id": "wework_interior_denver_reception2",
+    "file": "photos/wework_interior_denver_reception2.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Raysonho @ Open Grid Scheduler / Scalable Grid Engine / Wikimedia Commons",
+    "license": "CC0",
+    "desc": "A reception desk seen from another angle, wework lettering on glass at the bottom, a staircase behind, Denver.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWorkDenverTriangleBuilding2.jpg"
+  },
+  {
+    "id": "wework_interior_glass_offices",
+    "file": "photos/wework_interior_glass_offices.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Matteo Doni / Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "desc": "Looking through a glass wall into workrooms, people working small and blurred inside, faces not clearly identifiable.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork%20workplace%20exterior%20%2823528997251%29.jpg"
+  },
+  {
+    "id": "wework_interior_nyc_fulton_elevator",
+    "file": "photos/wework_interior_nyc_fulton_elevator.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Tdorante10 / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "desc": "A stainless steel elevator door at centre, wework lettering across above the door, dark corridors on both sides, New York.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AFulton%20Ctr%20td%20%282018-3-22%29%2050%20-%20WeWork.jpg"
+  },
+  {
+    "id": "wework_interior_nyc_kitchen",
+    "file": "photos/wework_interior_nyc_kitchen.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Nicki Dugan Pogue from San Francisco, USA / Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "desc": "A shared kitchen, several people standing around a kitchen island at centre-right, an 85 BROAD STREET sign above, New York.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork%20kitchen%20area%20in%20New%20York%20%2818342962964%29.jpg"
+  },
+  {
+    "id": "wework_interior_osaka_storefront",
+    "file": "photos/wework_interior_osaka_storefront.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Tokumeigakarinoaoshima / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "desc": "A wework shopfront inside a shopping mall, large glass doors, people seated at right front, an advertising screen at left, Osaka.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork%20LINKS%20UMEDA.jpg"
+  },
+  {
+    "id": "wework_interior_seoul_witchgarden",
+    "file": "photos/wework_interior_seoul_witchgarden.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Steve46814 / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "desc": "A dark green shopfront, a glowing WITCH GARDEN sign at centre top, an arched doorway at centre, inside the WeWork Jongno building, Seoul.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWitch%20Garden%20in%20WeWork%20Jongno%20Tower%20-%20Seoul%2C%20South%20Korea.jpg"
+  },
+  {
+    "id": "wework_interior_seoul_witchgarden2",
+    "file": "photos/wework_interior_seoul_witchgarden2.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Steve46814 / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "desc": "A WITCH GARDEN store directory sign, FLOWER, CAFE and SKIN IS GOOD sections, Korean text around, inside the WeWork Jongno building, Seoul.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWitch%20Garden%20in%20WeWork%20Jongno%20Tower%20-%20Seoul%2C%20South%20Korea%20%2801%29.jpg"
+  },
+  {
+    "id": "wework_interior_seoul_witchgarden3",
+    "file": "photos/wework_interior_seoul_witchgarden3.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Steve46814 / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "desc": "A long green counter, products displayed along it, a menu on the wall behind, greenery at front right, inside the WeWork Jongno building, Seoul.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWitch%20Garden%20in%20WeWork%20Jongno%20Tower%20-%20Seoul%2C%20South%20Korea%20%2802%29.jpg"
+  },
+  {
+    "id": "wework_interior_sf_openplan",
+    "file": "photos/wework_interior_sf_openplan.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Eugene Kim from San Francisco, USA / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "A glass meeting room, one person working on a laptop at right, a red chair at left, a screen reading Do What You Love behind, San Francisco.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork%20SF%20interior%20%2823119290411%29.jpg"
+  },
+  {
+    "id": "wework_interior_sf_panorama",
+    "file": "photos/wework_interior_sf_panorama.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Mx. Granger / Wikimedia Commons",
+    "license": "CC0",
+    "desc": "A corner lounge with a curved window looking out over the city, wooden chairs and a round table at centre-left, greenery at right, San Francisco.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork%20-%20Salesforce%20Tower.jpg"
+  },
+  {
+    "id": "wework_interior_toronto_reception",
+    "file": "photos/wework_interior_toronto_reception.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Raysonho @ Open Grid Scheduler / Scalable Grid Engine / Wikimedia Commons",
+    "license": "CC0",
+    "desc": "A long wooden reception desk in front, a Welcome to WeWork screen at front right, a person standing behind, Toronto.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork1UniversityAvenueToronto.jpg"
+  },
+  {
+    "id": "wework_interior_vancouver_01",
+    "file": "photos/wework_interior_vancouver_01.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "GoToVan from Vancouver, Canada / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "A curved yellow reception desk at centre-right, a wework screen on the desk, a GOOD NIGHT sign at right, sofas behind, Vancouver.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork%20Coworking%20Space%2C%20333%20Seymour%2C%20Vancouver%20%2831392421297%29.jpg"
+  },
+  {
+    "id": "wework_interior_vancouver_02",
+    "file": "photos/wework_interior_vancouver_02.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "GoToVan from Vancouver, Canada / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "A wood-panelled lounge corner, a round window at left, a long seat by a large window looking out over the city, Vancouver.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork%20Coworking%20Space%2C%20333%20Seymour%2C%20Vancouver%20%2831392421777%29.jpg"
+  },
+  {
+    "id": "wework_interior_vancouver_03",
+    "file": "photos/wework_interior_vancouver_03.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "GoToVan from Vancouver, Canada / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "A wide open lobby, a yellow counter at right, a long green table and chairs at centre-left, large windows behind, Vancouver.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork%20Coworking%20Space%2C%20333%20Seymour%2C%20Vancouver%20%2831392420917%29.jpg"
+  },
+  {
+    "id": "wework_interior_vancouver_04",
+    "file": "photos/wework_interior_vancouver_04.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "GoToVan from Vancouver, Canada / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "A close-up of a reception desk, a wework screen at centre, a neon VAN. sign behind, greenery at left, Vancouver.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork%20Coworking%20Space%2C%20333%20Seymour%2C%20Vancouver%20%2831392421167%29.jpg"
+  },
+  {
+    "id": "wework_interior_vancouver_05",
+    "file": "photos/wework_interior_vancouver_05.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "GoToVan from Vancouver, Canada / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "A close-up of a check-in screen on a stone counter, green toy soldiers below, chairs blurred behind, Vancouver.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork%20Coworking%20Space%2C%20333%20Seymour%2C%20Vancouver%20%2831392421047%29.jpg"
+  },
+  {
+    "id": "wework_interior_vancouver_06",
+    "file": "photos/wework_interior_vancouver_06.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "GoToVan from Vancouver, Canada / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "A wide lobby, a yellow counter at centre, a colourful mural at right, sofas and greenery, Vancouver.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork%20Coworking%20Space%2C%20333%20Seymour%2C%20Vancouver%20%2831392420647%29.jpg"
+  },
+  {
+    "id": "wework_interior_vancouver_07",
+    "file": "photos/wework_interior_vancouver_07.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "GoToVan from Vancouver, Canada / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "A long empty communal table at centre, wooden chairs, a large window at left, a kitchen counter in the distance, Vancouver.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork%20Coworking%20Space%2C%20333%20Seymour%2C%20Vancouver%20%2844420378630%29.jpg"
+  },
+  {
+    "id": "wework_interior_vancouver_08",
+    "file": "photos/wework_interior_vancouver_08.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "GoToVan from Vancouver, Canada / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "A long green table in front, wooden chairs, a kitchen and bar area behind, Vancouver.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork%20Coworking%20Space%2C%20333%20Seymour%2C%20Vancouver%20%2845418889035%29.jpg"
+  },
+  {
+    "id": "wework_interior_vancouver_09",
+    "file": "photos/wework_interior_vancouver_09.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "GoToVan from Vancouver, Canada / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "A wide lobby seen from the counter, a long green table at centre-left, a yellow counter at right, Vancouver.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork%20Coworking%20Space%2C%20333%20Seymour%2C%20Vancouver%20%2832365147778%29.jpg"
+  },
+  {
+    "id": "wework_interior_vancouver_10",
+    "file": "photos/wework_interior_vancouver_10.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "GoToVan from Vancouver, Canada / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "A close-up of a yellow beer tap on a stone counter, a green table and the lobby blurred behind, Vancouver.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork%20Coworking%20Space%2C%20333%20Seymour%2C%20Vancouver%20%2844420378140%29.jpg"
+  },
+  {
+    "id": "wework_interior_vancouver_11",
+    "file": "photos/wework_interior_vancouver_11.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "GoToVan from Vancouver, Canada / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "Pink sofa areas on both sides, a glass table at centre, a kitchen area behind, Vancouver.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork%20Coworking%20Space%2C%20333%20Seymour%2C%20Vancouver%20%2831392420497%29.jpg"
+  },
+  {
+    "id": "wework_interior_vancouver_12",
+    "file": "photos/wework_interior_vancouver_12.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "GoToVan from Vancouver, Canada / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "A long green table at centre, a small Christmas tree at back right, a long seat by the window, Vancouver.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork%20Coworking%20Space%2C%20333%20Seymour%2C%20Vancouver%20%2832365148278%29.jpg"
+  },
+  {
+    "id": "wework_interior_vancouver_13",
+    "file": "photos/wework_interior_vancouver_13.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "GoToVan from Vancouver, Canada / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "Looking through glass into the lobby, yellow seating pods at back right, an orange sofa at front right, Vancouver.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork%20Coworking%20Space%2C%20333%20Seymour%2C%20Vancouver%20%2832365148848%29.jpg"
+  },
+  {
+    "id": "wework_interior_vancouver_14",
+    "file": "photos/wework_interior_vancouver_14.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "GoToVan from Vancouver, Canada / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "An orange sofa at front right, a glass table and books at centre-left, three yellow seating pods behind, Vancouver.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork%20Coworking%20Space%2C%20333%20Seymour%2C%20Vancouver%20%2844420377260%29.jpg"
+  },
+  {
+    "id": "wework_interior_vancouver_15",
+    "file": "photos/wework_interior_vancouver_15.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "GoToVan from Vancouver, Canada / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "A long empty table at centre, wooden chairs, a large window looking out on mountains and a bay behind, Vancouver.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork%20Coworking%20Space%2C%20333%20Seymour%2C%20Vancouver%20%2831392421907%29.jpg"
+  },
+  {
+    "id": "wework_logo_official",
+    "file": "photos/wework_logo_official.png",
+    "kind": "photo",
+    "role": "prop",
+    "credit": "WeWork / Wikimedia Commons",
+    "license": "Public domain",
+    "desc": "Black wework lettering on a transparent background, PNG file 415x88, for brand identification only, not to be used as a main image.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork%20logo.png"
+  },
+  {
+    "id": "wework_neumann_2015_disrupt_close",
+    "file": "photos/wework_neumann_2015_disrupt_close.jpg",
+    "kind": "photo",
+    "role": "cut",
+    "credit": "TechCrunch / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "Adam Neumann seated slightly left of centre, holding a microphone with both hands, wearing a black t-shirt, a blurred Disrupt backdrop behind, TechCrunch Disrupt 2015.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3ATechCrunch%20Disrupt%20NY%202015%20-%20Day%202%20%2817192687298%29.jpg"
+  },
+  {
+    "id": "wework_neumann_2015_disrupt_panel",
+    "file": "photos/wework_neumann_2015_disrupt_panel.jpg",
+    "kind": "photo",
+    "role": "cut",
+    "credit": "TechCrunch / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "Adam Neumann leaning left in frame, holding a microphone, looking right, wearing a black t-shirt, seated on a white chair, TechCrunch Disrupt 2015.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3ATechCrunch%20Disrupt%20NY%202015%20-%20Day%202%20%2817378512882%29.jpg"
+  },
+  {
+    "id": "wework_neumann_2015_disrupt_portrait",
+    "file": "photos/wework_neumann_2015_disrupt_portrait.jpg",
+    "kind": "photo",
+    "role": "cut",
+    "credit": "TechCrunch - Max Morse / Wikimedia Commons",
+    "license": "CC BY 2.5",
+    "desc": "Portrait of Adam Neumann facing camera, shoulder-length hair, wearing a black t-shirt, TechCrunch Disrupt New York 2015 backdrop behind.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3ATechCrunch%20Disrupt%20NY%202015%20%2817172830107%29%20cropped.jpg"
+  },
+  {
+    "id": "wework_neumann_2015_disrupt_stage",
+    "file": "photos/wework_neumann_2015_disrupt_stage.jpg",
+    "kind": "photo",
+    "role": "cut",
+    "credit": "TechCrunch / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "Adam Neumann seated on a white chair at left of frame, holding a microphone, wearing a black t-shirt printed Do What You Love, TechCrunch Disrupt backdrop behind, New York 2015.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3ATechCrunch%20Disrupt%20NY%202015%20%2817172830107%29.jpg"
+  },
+  {
+    "id": "wework_neumann_2015_disrupt_talk",
+    "file": "photos/wework_neumann_2015_disrupt_talk.jpg",
+    "kind": "photo",
+    "role": "cut",
+    "credit": "TechCrunch / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "Adam Neumann seated at centre on a white chair, holding a microphone close to his mouth, wearing a black t-shirt, a large screen behind, TechCrunch Disrupt 2015.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3ATechCrunch%20Disrupt%20NY%202015%20-%20Day%202%20%2817192687008%29.jpg"
+  },
+  {
+    "id": "wework_neumann_2015_disrupt_wide",
+    "file": "photos/wework_neumann_2015_disrupt_wide.jpg",
+    "kind": "photo",
+    "role": "cut",
+    "credit": "TechCrunch / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "Adam Neumann standing at right of frame, wearing a black t-shirt, talking with two people seen from behind in front, a dark stage, TechCrunch Disrupt 2015.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3ATechCrunch%20Disrupt%20NY%202015%20%2816757779304%29.jpg"
+  },
+  {
+    "id": "wework_neumann_2016_delhi_portrait",
+    "file": "photos/wework_neumann_2016_delhi_portrait.jpg",
+    "kind": "photo",
+    "role": "cut",
+    "credit": "Anna Frodesiak / Wikimedia Commons",
+    "license": "CC0",
+    "desc": "Portrait of Adam Neumann facing camera, long hair, wearing a light-coloured mandarin-collar shirt, yellow background, Delhi, January 2016.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AMr.%20Adam%20Neumann%2C%20Founder%20WeWork%20%28Start%20Up%20India%20Participant%29%20call%20on%20the%20Prime%20Minister%2C%20Shri%20Narendra%20Modi%2C%20in%20New%20Delhi%20on%20January%2015%2C%202016%20-%20cropped.jpg"
+  },
+  {
+    "id": "wework_rebekah_neumann_conference",
+    "file": "photos/wework_rebekah_neumann_conference.jpg",
+    "kind": "photo",
+    "role": "cut",
+    "credit": "Snowshoww (Wikimedia Commons) / Wikimedia Commons",
+    "license": "CC BY 4.0",
+    "desc": "Rebekah Neumann standing at centre stage, long wavy hair, wearing an ear-mounted microphone, one hand raised as she speaks, wearing a dark blazer and white t-shirt.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3APicture%20of%20rebekah%20neumann.jpg"
+  },
+  {
+    "id": "wework_sign_chicago_doormat",
+    "file": "photos/wework_sign_chicago_doormat.jpg",
+    "kind": "photo",
+    "role": "prop",
+    "credit": "Raysonho @ Open Grid Scheduler / Scalable Grid Engine / Wikimedia Commons",
+    "license": "CC0",
+    "desc": "An entrance doormat reading wework and STATE STREET, glass doors behind, shot from above, Chicago.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWorkOneWestMonroeStreetChicago.jpg"
+  },
+  {
+    "id": "wework_sign_miami_brickell",
+    "file": "photos/wework_sign_miami_brickell.jpg",
+    "kind": "photo",
+    "role": "prop",
+    "credit": "Phillip Pessar / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "Raised wework lettering on a grey wall above glass doors, a red EXIT sign above, Miami.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AWeWork%20Brickell%20City%20Centre.jpg"
+  },
+  {
+    "id": "wework_sign_toronto_richmond",
+    "file": "photos/wework_sign_toronto_richmond.jpg",
+    "kind": "photo",
+    "role": "prop",
+    "credit": "Raysonho @ Open Grid Scheduler / Grid Engine / Wikimedia Commons",
+    "license": "CC0",
+    "desc": "A white wework sign on black mounted on a red brick wall, close-up, Toronto.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3A240RichmondStreetWestWeWork.jpg"
+  },
+  {
+    "id": "wework_softbank_hq_tokyo",
+    "file": "photos/wework_softbank_hq_tokyo.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Syced / Wikimedia Commons",
+    "license": "CC0",
+    "desc": "A tall black tower shot from below at night, greenery at front left, scattered lit windows, SoftBank headquarters at Hamamatsucho, Tokyo.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3ANew%20Softbank%20heaquarters%20in%20Hamamatsucho.jpg"
+  },
+  {
+    "id": "wework_son_2008_iphone_launch",
+    "file": "photos/wework_son_2008_iphone_launch.jpg",
+    "kind": "photo",
+    "role": "cut",
+    "credit": "Masaru Kamikura from Japan / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "Masayoshi Son facing camera, wearing a black polo shirt with iPhone 3G and SoftBank logos, grey background, Tokyo 2008.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AMasayoshi%20Son%20%28%E5%AD%AB%E6%AD%A3%E7%BE%A9%29%20on%20July%2011%2C%202008.jpg"
+  },
+  {
+    "id": "wework_son_2008_iphone_with_tanihara",
+    "file": "photos/wework_son_2008_iphone_with_tanihara.jpg",
+    "kind": "photo",
+    "role": "cut",
+    "credit": "Masaru Kamikura from Japan / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "Shosuke Tanihara at left giving a thumbs-up and holding a phone, Masayoshi Son at right holding a phone, an iPhone 3G backdrop behind, 2008.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3ASh%C5%8Dsuke%20Tanihara%28%E8%B0%B7%E5%8E%9F%E7%AB%A0%E4%BB%8B%2Cleft%29%20and%20Masayoshi%20Son%28%E5%AD%AB%E6%AD%A3%E7%BE%A9%2Cright%29.jpg"
+  },
+  {
+    "id": "wework_son_2008_summit",
+    "file": "photos/wework_son_2008_summit.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "nobihaya / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "Masayoshi Son standing small at centre of a distant stage, wearing a black suit, the audience visible only as silhouetted heads at the bottom of the frame, a SoftBank event 2008.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AMasayoshi%20Son.jpg"
+  },
+  {
+    "id": "wework_son_2008_with_hayashi",
+    "file": "photos/wework_son_2008_with_hayashi.jpg",
+    "kind": "photo",
+    "role": "cut",
+    "credit": "Danny Choo / Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "desc": "Masayoshi Son at left holding up a phone, a person in a Stormtrooper costume at centre, Nobi Hayashi at right in a light suit, a SoftBank event.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AMasayoshi%20Son%20%28boss%20of%20Softbank%29%20and%20Nobi%20Hayashi%20%28Digital%20Advisor%29.jpg"
+  },
+  {
+    "id": "wework_son_2017_milken",
+    "file": "photos/wework_son_2017_milken.jpg",
+    "kind": "photo",
+    "role": "cut",
+    "credit": "Cnbc2017 / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "desc": "Masayoshi Son at left, standing next to Sandro Salsano at right, who fills most of the frame and wears a conference badge, Milken Global Conference 2017.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3ASandro%20Salsano%20and%20Masayoshi%20Son.jpg"
+  },
+  {
+    "id": "wework_son_2025_handshake",
+    "file": "photos/wework_son_2025_handshake.jpg",
+    "kind": "photo",
+    "role": "cut",
+    "credit": "European Communities, 2025 / EC - Audiovisual Service / Wikimedia Commons",
+    "license": "CC BY 4.0",
+    "desc": "Masayoshi Son at left shaking hands with Henna Virkkunen at right, both standing before a yellow screen, Tokyo 2025.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AHenna%20Virkkunen%20is%20shaking%20hands%20with%20Masayoshi%20Son%2C%20SoftBank%20Group%20Chairman%20%28P066533-522034%29.jpg"
+  },
+  {
+    "id": "wework_son_2025_tokyo_portrait",
+    "file": "photos/wework_son_2025_tokyo_portrait.jpg",
+    "kind": "photo",
+    "role": "cut",
+    "credit": "European Communities, 2025 / EC - Audiovisual Service / Wikimedia Commons",
+    "license": "CC BY 4.0",
+    "desc": "Portrait of Masayoshi Son facing camera, wearing a black suit, a light background with a faint pattern, Tokyo, May 2025.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AMasayoshi%20Son%20%28P066533-522034%2C%20cropped%29.jpg"
+  },
+  {
+    "id": "wework_son_video_message",
+    "file": "photos/wework_son_video_message.jpg",
+    "kind": "photo",
+    "role": "plate",
+    "credit": "Financial Times / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "desc": "A presenter standing small at left of a lectern, a large screen at right showing a photo of Masayoshi Son with his name; Son appears only on the screen, not in person.",
+    "source_url": "https://commons.wikimedia.org/wiki/File%3AMasayoshi%20Son%20%28via%20video%29%20%288577542482%29.jpg"
+  },
+  {
+    "id": "wework_doc_s1_cover",
+    "file": "docs/wework_doc_s1_cover.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: SEC EDGAR, The We Company Form S-1, filed August 14, 2019",
+    "license": "SEC EDGAR public filing",
+    "desc": "Cover page of the S-1, unnumbered. Top: \"As filed with the Securities and Exchange Commission on August 14, 2019\"; FORM S-1; The We Company; Delaware; principal executive offices 115 West 18th Street, New York, NY 10011; proposed maximum aggregate offering price $1,000,000,000, registration fee $121,200, mid page.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1533523/000119312519220499/d781982ds1.htm"
+  },
+  {
+    "id": "wework_doc_s1_toc",
+    "file": "docs/wework_doc_s1_toc.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: SEC EDGAR, The We Company Form S-1, filed August 14, 2019",
+    "license": "SEC EDGAR public filing",
+    "desc": "Table of contents page of the S-1, unnumbered. Contents list top to bottom: Prospectus Summary p1, Risk Factors p24, MD&A p65, Business p127, Management p172, Certain Relationships and Related Party Transactions p197, Financial Statements F-1.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1533523/000119312519220499/d781982ds1.htm"
+  },
+  {
+    "id": "wework_doc_s1_summary_financial_p21",
+    "file": "docs/wework_doc_s1_summary_financial_p21.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: SEC EDGAR, The We Company Form S-1, filed August 14, 2019",
+    "license": "SEC EDGAR public filing",
+    "desc": "Printed prospectus page 21, Summary Consolidated Financial and Operating Information table. Revenue line about 58% down the image: 2016 $436,099; 2017 $886,004; 2018 $1,821,751; H1 2018 $763,771; H1 2019 $1,535,420 (thousands). Net loss line about 88% down: 2016 $(429,690); 2017 $(933,494); 2018 $(1,927,419); H1 2018 $(722,892); H1 2019 $(904,652). Page number 21 centered at bottom.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1533523/000119312519220499/d781982ds1.htm"
+  },
+  {
+    "id": "wework_doc_s1_summary_pershare_balancesheet_p22",
+    "file": "docs/wework_doc_s1_summary_pershare_balancesheet_p22.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: SEC EDGAR, The We Company Form S-1, filed August 14, 2019",
+    "license": "SEC EDGAR public filing",
+    "desc": "Printed prospectus page 22, continuation of summary financials. Upper half: net loss per share diluted 2016 $(2.66), 2017 $(5.54), 2018 $(9.87), H1 2018 $(3.87), H1 2019 $(4.15); pro forma net loss per share 2018 $(4.41), H1 2019 $(3.20). Lower half: Consolidated balance sheet information as of June 30, 2019: Cash and cash equivalents $2,473,070 (thousands), Total assets 27,047,235, Total liabilities 24,641,746, Total equity (deficit) (2,299,404). Page number 22 centered at bottom.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1533523/000119312519220499/d781982ds1.htm"
+  },
+  {
+    "id": "wework_doc_s1_summary_operating_kpi_p23",
+    "file": "docs/wework_doc_s1_summary_operating_kpi_p23.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: SEC EDGAR, The We Company Form S-1, filed August 14, 2019",
+    "license": "SEC EDGAR public filing",
+    "desc": "Printed prospectus page 23, Key Performance Indicators table. Workstation capacity 2016 107,000; 2017 214,000; 2018 466,000; June 2018 301,000; June 2019 604,000. Memberships 2016 87,000; 2017 186,000; 2018 401,000; June 2018 268,000; June 2019 527,000. Enterprise membership percentage 18%, 28%, 38%, 30%, 40%. Run-rate revenue (billions) $0.6, $1.1, $2.4, $1.8, $3.3. Committed revenue backlog (billions) $0.1, $0.5, $2.6, N/R, $4.0. Contribution Margin section starts at bottom. Page number 23 centered at bottom.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1533523/000119312519220499/d781982ds1.htm"
+  },
+  {
+    "id": "wework_doc_s1_risk_factors_p24",
+    "file": "docs/wework_doc_s1_risk_factors_p24.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: SEC EDGAR, The We Company Form S-1, filed August 14, 2019",
+    "license": "SEC EDGAR public filing",
+    "desc": "Printed prospectus page 24, opening of RISK FACTORS. Headline at top third: \"Investing in our Class A common stock involves a high degree of risk\", followed by Risks Relating to Our Business, first risk about managing rapid growth. Page number 24 centered at bottom.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1533523/000119312519220499/d781982ds1.htm"
+  },
+  {
+    "id": "wework_doc_s1_lease_47bn_p41",
+    "file": "docs/wework_doc_s1_lease_47bn_p41.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: SEC EDGAR, The We Company Form S-1, filed August 14, 2019",
+    "license": "SEC EDGAR public filing",
+    "desc": "Printed prospectus page 41. First line at top: \"as of June 30, 2019, we had future undiscounted minimum lease cost payment obligations under signed operating and finance leases of $47.2 billion\". Mid page: cash discussion ($2.5 billion cash and equivalents including $535.8 million of consolidated VIEs, restricted cash $575.6 million) and risk headings on additional capital and indebtedness terms. Page number 41 centered at bottom.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1533523/000119312519220499/d781982ds1.htm"
+  },
+  {
+    "id": "wework_doc_s1_related_party_p197",
+    "file": "docs/wework_doc_s1_related_party_p197.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: SEC EDGAR, The We Company Form S-1, filed August 14, 2019",
+    "license": "SEC EDGAR public filing",
+    "desc": "Printed prospectus page 197, opening of CERTAIN RELATIONSHIPS AND RELATED PARTY TRANSACTIONS, covering transactions since January 1, 2016 above $120,000 involving directors, officers, or holders above 5%. Section \"Relationships and Transactions with Adam Neumann, our Co-Founder and Chief Executive Officer\" lists Voting controls, Succession planning, Sale of shares, Employment agreement, Equity awards, Charitable giving, Real estate transactions, Company and personal loans, Family relationships. Voting Controls subsection states Adam controlled a majority of voting power through high-vote stock at twenty votes per share. Page number 197 centered at bottom.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1533523/000119312519220499/d781982ds1.htm"
+  },
+  {
+    "id": "wework_doc_s1_trademark_59m_p199",
+    "file": "docs/wework_doc_s1_trademark_59m_p199.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: SEC EDGAR, The We Company Form S-1, filed August 14, 2019",
+    "license": "SEC EDGAR public filing",
+    "desc": "Printed prospectus page 199. Key passage about 72% down the image: \"In July 2019, WE Holdings LLC assigned residual rights related to 'we' family trademarks to the Company\", in exchange for partnership interests with fair market value about $5.9 million per third-party appraisal. About 60% down: Adam exercised a time-based option in exchange for a $362.1 million full recourse promissory note at 2.89%, maturing April 11, 2029; in August 2019 Adam repaid the note in full by surrendering all shares received. Page number 199 centered at bottom.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1533523/000119312519220499/d781982ds1.htm"
+  },
+  {
+    "id": "wework_doc_s1_neumann_buildings_p200",
+    "file": "docs/wework_doc_s1_neumann_buildings_p200.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: SEC EDGAR, The We Company Form S-1, filed August 14, 2019",
+    "license": "SEC EDGAR public filing",
+    "desc": "Printed prospectus page 200, Real Estate Transactions. Adam bought four buildings early on to prove WeWork as a tenant; later majority interest in downtown San Jose projects (December 2017). Properties Leased to The We Company: 4 commercial properties leased from landlord entities in which Adam has an ownership interest, only 4 of 528 locations as of June 1, 2019. Cash payments $3.1 million in 2016, $5.6 million in 2017, $8.0 million in 2018, $4.2 million in H1 2019; tenant improvement reimbursements $11.6 million in 2018; future undiscounted minimum lease payments about $236.6 million as of June 30, 2019, equal to 0.5% of total lease commitments. Page number 200 centered at bottom.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1533523/000119312519220499/d781982ds1.htm"
+  },
+  {
+    "id": "wework_doc_s1_neumann_loans_p201",
+    "file": "docs/wework_doc_s1_neumann_loans_p201.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: SEC EDGAR, The We Company Form S-1, filed August 14, 2019",
+    "license": "SEC EDGAR public filing",
+    "desc": "Printed prospectus page 201, Company Loans and Personal Loans. Loans to WE Holdings LLC $10.4 million in May 2013 at 0.2% per year maturing May 30, 2016 and $15.0 million in February 2014 at 0.2% per year maturing February 4, 2017, settled in May 2016 for 8,398,670 shares; loan to Adam $7.0 million in June 2016 at 0.64% per year maturing June 14, 2019, repaid in full November 2017 with $0.1 million interest; Adam line of credit up to $500 million with UBS AG Stamford Branch, JPMorgan Chase Bank N.A., and Credit Suisse AG New York Branch, about $380 million principal outstanding as of July 31, 2019; JPMorgan loans/credit to Adam totaling $97.5 million. Page number 201 centered at bottom.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1533523/000119312519220499/d781982ds1.htm"
+  },
+  {
+    "id": "wework_doc_s1_balance_sheet_f3",
+    "file": "docs/wework_doc_s1_balance_sheet_f3.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: SEC EDGAR, The We Company Form S-1, filed August 14, 2019",
+    "license": "SEC EDGAR public filing",
+    "desc": "Financial statement page F-3, WEWORK COMPANIES INC. CONSOLIDATED BALANCE SHEETS, December 31, 2017 and 2018. Total assets 2017 $5,364,072 (thousands), 2018 $8,644,916. Total liabilities 2017 2,406,511, 2018 6,284,159. F-3 centered at bottom.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1533523/000119312519220499/d781982ds1.htm"
+  },
+  {
+    "id": "wework_doc_s1_statements_operations_f5",
+    "file": "docs/wework_doc_s1_statements_operations_f5.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: SEC EDGAR, The We Company Form S-1, filed August 14, 2019",
+    "license": "SEC EDGAR public filing",
+    "desc": "Financial statement page F-5, CONSOLIDATED STATEMENTS OF OPERATIONS, years ended December 31, 2016/2017/2018. Revenue (including related party amounts $216, $365, $21,982) $436,099, $886,004, $1,821,751 (thousands). Loss from operations (396,274), (931,834), (1,690,999). Net loss (429,690), (933,494), (1,927,419). Net loss attributable to WeWork Companies Inc. $(429,690), $(883,994), $(1,610,792). F-5 centered at bottom.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1533523/000119312519220499/d781982ds1.htm"
+  },
+  {
+    "id": "wework_doc_ipo_withdrawal_rw_p1",
+    "file": "docs/wework_doc_ipo_withdrawal_rw_p1.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: SEC EDGAR, The We Company Form RW, September 30, 2019",
+    "license": "SEC EDGAR public filing",
+    "desc": "Form RW letter, page 1 of the rendered PDF. Letter via EDGAR to SEC Division of Corporation Finance, dated September 30, 2019, Re: The We Company, Request for Withdrawal of Registration Statement on Form S-1, File No. 333-233259. Body states the S-1 was initially filed August 14, 2019, withdrawal is requested under Rule 477 because the company no longer wishes to conduct a public offering at this time, the statement was never declared effective, no securities were issued or sold, and fees are requested to be credited for future use under Rule 457(p). Render artifact, not a document date: the print header shows 10/27/26, 6:29 AM and the footer shows a file:// path; the document date September 30, 2019 is in the body.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1533523/000119312519258913/d808793drw.htm"
+  },
+  {
+    "id": "wework_doc_softbank_release_cover_p1",
+    "file": "docs/wework_doc_softbank_release_cover_p1.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: SoftBank Group Corp., October 2019",
+    "license": "editorial screenshot",
+    "desc": "Cover page of the SoftBank Group release PDF, page 1. Title \"Significant Funding to WeWork\" centered. IMPORTANT: the cover prints literally \"October 23, 2018\" at top right; this is a year typo in the original document. The body dateline and the PDF creation date are October 2019; do not correct the cover year on screen without noting the typo.",
+    "source_url": "https://resource.ufocatch.com/pdf/ot/OT2019102300031"
+  },
+  {
+    "id": "wework_doc_softbank_release_body_p2",
+    "file": "docs/wework_doc_softbank_release_body_p2.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: SoftBank Group Corp., October 22, 2019",
+    "license": "editorial screenshot",
+    "desc": "Body page of the SoftBank Group release PDF, page 2. Headline \"WeWork Announces Significant Funding from SoftBank Group\", subheads about a finance package combining debt and equity and about the Board electing Marcelo Claure as Executive Chairman, dateline NEW YORK and TOKYO, October 22, 2019, top. Body: $5 billion new financing, tender offer up to $3 billion for existing shareholders, acceleration of the existing $1.5 billion commitment; after closing and tender, SoftBank fully diluted economic ownership about 80%; WeWork will not be a subsidiary but an associate of SoftBank; Board appoints Marcelo Claure as Executive Chairman, Adam Neumann becomes a Board observer. Combined package 5 + 3 + 1.5 = 9.5 billion USD.",
+    "source_url": "https://resource.ufocatch.com/pdf/ot/OT2019102300031"
+  },
+  {
+    "id": "wework_doc_bankruptcy_petition_p1",
+    "file": "docs/wework_doc_bankruptcy_petition_p1.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: U.S. Bankruptcy Court for the District of New Jersey, Case No. 23-19865 (JKS), filed November 6, 2023",
+    "license": "U.S. federal court public record",
+    "desc": "Voluntary petition, PDF page 1 of 54, Official Form 201 Voluntary Petition for Non-Individuals Filing for Bankruptcy. Debtor WeWork Inc., other names BowX Acquisition Corp., EIN 85-1144904, principal place 12 East 49th Street, 3rd Floor, New York, NY 10017, website https://www.WeWork.com/, debtor type Corporation checked. Header \"Case 23-19865-JKS Doc 1 Filed 11/06/23 Entered 11/06/23 21:11:24 Desc Main Document Page 1 of 54\", footer \"page 1\".",
+    "source_url": "https://storage.courtlistener.com/recap/gov.uscourts.njb.1105230/gov.uscourts.njb.1105230.1.0.pdf"
+  },
+  {
+    "id": "wework_doc_bankruptcy_petition_assets_liab_p4",
+    "file": "docs/wework_doc_bankruptcy_petition_assets_liab_p4.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: U.S. Bankruptcy Court for the District of New Jersey, Case No. 23-19865 (JKS), filed November 6, 2023",
+    "license": "U.S. federal court public record",
+    "desc": "Voluntary petition, PDF page 4, form page 4. Item 15 Estimated assets and item 16 Estimated liabilities both tick the box $10,000,000,001-$50 billion, on a consolidated basis, upper half of the page. Lower half: Declaration and signature of authorized representative, executed 11/06/2023, /s/ Pam Swidler, Authorized Signatory; attorney signature /s/ Michael D. Sirota, Cole Schotz P.C., Hackensack, New Jersey. Footer \"page 4\".",
+    "source_url": "https://storage.courtlistener.com/recap/gov.uscourts.njb.1105230/gov.uscourts.njb.1105230.1.0.pdf"
+  },
+  {
+    "id": "wework_doc_bankruptcy_form201a_figures_p9",
+    "file": "docs/wework_doc_bankruptcy_form201a_figures_p9.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: U.S. Bankruptcy Court for the District of New Jersey, Case No. 23-19865 (JKS), filed November 6, 2023",
+    "license": "U.S. federal court public record",
+    "desc": "Voluntary petition, PDF page 9, Official Form 201A attachment. Header \"Page 9 of 54\". Financial data latest available as of June 30, 2023, upper half: (a) Total assets $15,063 million, (b) Total debts $18,656 million, (c) debt securities held by more than 500 holders N/A, (e) common stock shares 53,257,212 with footnote as of November 3, 2023 (52,758,760 shares of Class A Common Stock and 498,452 shares of Class C Common Stock issued and outstanding). Lower half: business description as workspace provider offering flexible and community-centered office space; 5% or more voting holder: Entities affiliated with SB Global Advisors Limited.",
+    "source_url": "https://storage.courtlistener.com/recap/gov.uscourts.njb.1105230/gov.uscourts.njb.1105230.1.0.pdf"
+  },
+  {
+    "id": "wework_doc_tolley_declaration_p1",
+    "file": "docs/wework_doc_tolley_declaration_p1.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: U.S. Bankruptcy Court for the District of New Jersey, Case No. 23-19865 (JKS), filed November 7, 2023",
+    "license": "U.S. federal court public record",
+    "desc": "Declaration of David Tolley, PDF page 1 of 180. Counsel blocks Kirkland & Ellis LLP and Cole Schotz P.C. at top; In re: WEWORK INC., et al., Chapter 11, Case No. 23-19865 (JKS) (Joint Administration Requested); title DECLARATION OF DAVID TOLLEY, CHIEF EXECUTIVE OFFICER OF WEWORK INC., IN SUPPORT OF CHAPTER 11 PETITIONS AND FIRST DAY MOTIONS, mid page. Paragraph 1 begins \"For decades, entrepreneurs, freelancers, and small business owners without access to dedicated office space made do with coffee shops and kitchen tables. Then came WeWork.\" Footnote 1 gives the Epiq site https://dm.epiq11.com/WeWork and principal place 12 East 49th Street, 3rd Floor, New York, NY 10017.",
+    "source_url": "https://storage.courtlistener.com/recap/gov.uscourts.njb.1105230/gov.uscourts.njb.1105230.21.0.pdf"
+  },
+  {
+    "id": "wework_doc_tolley_funded_debt_p18",
+    "file": "docs/wework_doc_tolley_funded_debt_p18.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: U.S. Bankruptcy Court for the District of New Jersey, Case No. 23-19865 (JKS), filed November 7, 2023",
+    "license": "U.S. federal court public record",
+    "desc": "Declaration of David Tolley, PDF page 18 of 180, section B. WeWork Prepetition Capital Structure, paragraph 44. Text at top: as of the Petition Date, Debtors have approximately $4.2 billion in aggregate outstanding principal and accrued interest for funded debt obligations. Table mid page: Senior LC Facility $1,077.2 million, Junior LC Facility $552.0 million, 1L Notes Series I $614.2 million, Series II $345.2 million, Series III $204.1 million, 2L Notes $733.0 million, 2L Exchangeable Notes $200.0 million, 3L Notes $24.3 million, 3L Exchangeable Notes $289.1 million, Total Secured Debt $4,039.3 million, 7.875% Senior Notes $170.1 million, 5.000% Senior Notes $9.5 million, Total Funded Debt Obligations $4,218.9 million. Page number 18 at bottom, header \"Page 18 of 180\".",
+    "source_url": "https://storage.courtlistener.com/recap/gov.uscourts.njb.1105230/gov.uscourts.njb.1105230.21.0.pdf"
+  },
+  {
+    "id": "wework_doc_bankruptcy_8k_item103_p3",
+    "file": "docs/wework_doc_bankruptcy_8k_item103_p3.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: SEC EDGAR, WeWork Inc. Form 8-K, filed November 7, 2023",
+    "license": "SEC EDGAR public filing",
+    "desc": "Form 8-K, rendered PDF page 3, internal page 2 (page number 2 centered at bottom). Item 1.01 and Item 1.03 Bankruptcy or Receivership, Voluntary Petitions for Bankruptcy: on November 6, 2023 (the Petition Date), WeWork Inc. and certain direct and indirect subsidiaries filed voluntary Chapter 11 petitions in the United States Bankruptcy Court for the District of New Jersey, jointly administered as \"In re WeWork Inc., et al.\", continuing as debtors in possession; Restructuring Support Agreement dated November 6, 2023 with SoftBank Vision Fund II-2 L.P. and certain affiliated entities plus Consenting Noteholders, with holding percentages listed (for example 89.4% of Series I First Lien Notes, 100% of Series II and Series III First Lien Notes). Render artifact: print header shows 10/27/26, 6:29 AM and footer shows a file:// path; those are not document dates.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1813756/000119312523271902/d522028d8k.htm"
+  },
+  {
+    "id": "wework_doc_bankruptcy_press_release_8kex991_p1",
+    "file": "docs/wework_doc_bankruptcy_press_release_8kex991_p1.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: SEC EDGAR, WeWork Inc. Form 8-K Exhibit 99.1, November 6, 2023",
+    "license": "SEC EDGAR public filing",
+    "desc": "Exhibit 99.1 press release, rendered PDF page 1 of 3 (footer \"1/3\"). Headline at top: \"WeWork Takes Strategic Action to Significantly Strengthen Balance Sheet and Further Streamline Real Estate Footprint\", subhead that WeWork spaces remain open and operational, dateline NEW YORK (BUSINESS WIRE) November 6, 2023, WeWork Inc. (NYSE: WE). Body: Restructuring Support Agreement with holders representing approximately 92% of secured notes to drastically reduce existing funded debt, Chapter 11 filing plus planned Canada CCAA recognition proceedings, locations outside the U.S. and Canada not part of the process, lease rejection plan for certain largely non-operational locations, quotes from CEO David Tolley. Render artifact: print header shows 10/27/26, 6:29 AM and footer shows a file:// path; those are not document dates.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1813756/000119312523271902/d522028dex991.htm"
+  },
+  {
+    "id": "wework_doc_wayback_home_2019-08-15",
+    "file": "docs/wework_doc_wayback_home_2019-08-15.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: WeWork.com, August 15, 2019 (via archive.org)",
+    "license": "editorial screenshot",
+    "desc": "Full-page render of the WeWork.com home page, Wayback snapshot 20190815033325 (15 August 2019). Nav at top: Locations, Workspace, Mission, Enterprise, Ideas, Contact Us, Log In. Hero \"Revolutionize your workspace\" with Find Workspace In box and Start button, upper third. Mid page: Solutions designed for all your needs; member cases GE, Royal Bank of Canada, Standard Chartered Bank, TripActions; Your people, first. Lower third: yellow IMPACT block \"Space to make your greatest impact\" (one image in this block still grey, image failed to load in the snapshot render); News, updates, and insights, article \"10 WeWork spaces you have to see to believe\"; footer WeWork HQ, 115 W 18th St, New York, NY 10011 and Copyright 2019 WeWork Companies Inc.",
+    "source_url": "https://web.archive.org/web/20190815033325/https://www.wework.com/"
+  },
+  {
+    "id": "wework_doc_wayback_workspace_2019-08-12",
+    "file": "docs/wework_doc_wayback_workspace_2019-08-12.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: WeWork.com, August 12, 2019 (via archive.org)",
+    "license": "editorial screenshot",
+    "desc": "Full-page render of the WeWork.com workspace page, Wayback snapshot 20190812215330 (12 August 2019); used as the pricing/membership page because the /pricing path had no 2019 snapshot. Headline \"Workspace Solutions\" at top. Private Offices: Standard Private Office, Office Suites, headquarters by WeWork, Custom Buildout. Desk Space: Hot Desk, Dedicated Desk, Labs Desk. On-Demand Access: Global Access, We Membership, Event Space. Mid page: Stories from our revolutionary members. Lower third: \"Over 500 locations worldwide\" with a world map of black dots; footer Copyright 2019.",
+    "source_url": "https://web.archive.org/web/20190812215330/https://www.wework.com/workspace"
+  },
+  {
+    "id": "wework_doc_wayback_mission_2019-08-17",
+    "file": "docs/wework_doc_wayback_mission_2019-08-17.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: WeWork.com, August 17, 2019 (via archive.org)",
+    "license": "editorial screenshot",
+    "desc": "Render of the WeWork.com mission page, Wayback snapshot 20190817235456 (17 August 2019); used as the about page. Headline \"Our Mission\" at top, sentence \"Create a world where people work to make a life, not just a living\". Our Story, WeWork founded 2010. Founders caption \"Left: Miguel McKelvey, Adam Neumann, Rebekah Neumann\". Our Values: Inspired, Entrepreneurial, Authentic, Tenacious, Grateful, Together. Our Team. Why WeWork / Our Blog. LIMITS, stated honestly: the hero video poster image did not load (grey gradient at top; its Wayback asset returned 429 then 404), and the file is cropped to 9000px device height, so the footer is NOT inside this crop; do not present it as a full page with footer.",
+    "source_url": "https://web.archive.org/web/20190817235456/https://www.wework.com/mission"
+  },
+  {
+    "id": "wework_doc_news_wsj_softbank_control_2019-10-22",
+    "file": "docs/wework_doc_news_wsj_softbank_control_2019-10-22.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: The Wall Street Journal, October 22, 2019 (via archive.org)",
+    "license": "editorial screenshot",
+    "desc": "Top crop of the WSJ article page, Wayback snapshot 20191022121922 (22 October 2019). Top black bar with \"DOW JONES, A NEWS CORP COMPANY\", edition line \"English Edition | October 22, 2019 | Print Edition | Video\", nav Home, World, U.S., Politics, Economy, Business, Tech, Markets, Opinion, Life & Arts, Real Estate, WSJ. Magazine, Search. Red BREAKING NEWS bar: \"SoftBank wins approval from WeWork's board to take control of the co-working startup in a deal that would hand co-founder Neumann nearly $1.7 billion\". Label \"WSJ NEWS EXCLUSIVE | BUSINESS\" above headline \"SoftBank to Take Control of WeWork\" centered upper-middle; subhead \"Co-founder Adam Neumann to step down from WeWork board\"; date line \"Oct. 22, 2019 8:14 am ET\" below. Body is paywalled in the snapshot (TO READ THE FULL STORY SUBSCRIBE / SIGN IN block at bottom). Limitation: the WSJ wordmark logo image did not load in the snapshot render (top black bar is empty); outlet identity comes from the Dow Jones bar, the WSJ NEWS EXCLUSIVE label, and WSJ. Magazine in nav.",
+    "source_url": "https://www.wsj.com/articles/softbank-to-take-control-of-wework-11571746483"
+  },
+  {
+    "id": "wework_doc_news_wsj_neumann_profile_2019-09-18",
+    "file": "docs/wework_doc_news_wsj_neumann_profile_2019-09-18.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: The Wall Street Journal, September 18, 2019 (via archive.org)",
+    "license": "editorial screenshot",
+    "desc": "Top crop of the WSJ article page, Wayback snapshot 20190918181049 (18 September 2019). Top SIGN IN / SUBSCRIBE bar; large dark hero area (hero photo did not load in the snapshot). Section label BUSINESS above headline \"This Is Not the Way Everybody Behaves. How Adam Neumann's Over-the-Top Style Built WeWork.\" mid-frame; subhead \"The skills that helped fuel We Co.'s breakneck growth are piling up as potential liabilities as the company prepares to go public\". Photo caption at bottom right: \"Adam Neumann speaking onstage in January. PHOTO ILLUSTRATION: DAVE COLE/WSJ; PHOTO: MICHAEL KOVAC/GETTY IMAGES FOR WEWORK\". Byline \"By Eliot Brown\" and date \"Sept. 18, 2019 12:23 pm ET\" at bottom third; opening line \"Adam Neumann was flying high. Literally.\" and a second paragraph beginning about a $47 billion valuation and a Gulfstream G650.",
+    "source_url": "https://www.wsj.com/articles/this-is-not-the-way-everybody-behaves-how-adam-neumanns-over-the-top-style-built-wework-11568823827"
+  },
+  {
+    "id": "wework_doc_news_ft_governance_ipo_2019-09-13",
+    "file": "docs/wework_doc_news_ft_governance_ipo_2019-09-13.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: Financial Times, September 13, 2019 (via archive.org)",
+    "license": "editorial screenshot",
+    "desc": "Header composition built ONLY from elements taken from the FT article snapshot itself (Wayback snapshot 20190913173142, 13 September 2019), because the full-page render failed to load FT CSS and produced an unstyled navigation dump. FINANCIAL TIMES masthead (the snapshot's own inline SVG masthead) at top, rule, headline \"WeWork overhauls corporate governance in bid to save IPO\" across two lines, byline \"By Eric Platt, James Fontanella-Khan and Adam Samson\", date \"September 13, 2019\" in red, plus a note line stating the snapshot itself is a subscribe page and that headline, byline, and date are as published. No standfirst is shown; an early draft standfirst was removed after verification because the snapshot contains no meta description or standfirst.",
+    "source_url": "https://www.ft.com/content/ec754e00-d610-11e9-8367-807ebd53ab77"
+  },
+  {
+    "id": "wework_doc_news_ft_bankruptcy_2023-11-07",
+    "file": "docs/wework_doc_news_ft_bankruptcy_2023-11-07.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: Financial Times, November 7, 2023 (via archive.org)",
+    "license": "editorial screenshot",
+    "desc": "Header composition built ONLY from elements taken from the FT article snapshot itself (Wayback snapshot 20231107040357, 7 November 2023), because the full-page render failed to load FT CSS. FINANCIAL TIMES masthead (the snapshot's own inline SVG masthead) at top, rule, headline \"WeWork files for bankruptcy amid office market downturn\" across two lines, byline \"By Sujeet Indap and Eric Platt\", date \"November 7, 2023\" in red, dek \"Desk-renting company seeks to restructure more than $13bn in lease obligations through Chapter 11\" (verified from the snapshot meta description), plus a note line stating header elements come from the Wayback snapshot and body text is paywalled in the snapshot. November 7, 2023 is the datePublished date (London date); the filing itself was November 6, 2023 in the U.S.",
+    "source_url": "https://www.ft.com/content/775ec01c-1f57-4105-bbc2-b048865056f7"
+  },
+  {
+    "id": "wework_doc_softbank_deck_wework_loss_slide4",
+    "file": "docs/wework_doc_softbank_deck_wework_loss_slide4.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: SoftBank Group Q2 FY2019 investor presentation, November 2019",
+    "license": "editorial screenshot",
+    "desc": "SoftBank Group investor deck slide, PDF page 7, printed slide number 4 at bottom right, title \"Loss of Investments in WeWork and Its Affiliates\", SoftBank Group logo top right. Bullets: fair value of The We Company (WeWork) entire equity at end Q2: USD 7.8 bn; the USD 7.8 bn includes a revised business plan after postponing the public offering and the agreement under which SBG commits to provide significant funding. Table \"Cumulative investment, fair value, loss recorded etc. from SBG's wholly owned subsidiary and SVF, as of Sep. 30, 2019 (USD bn)\": SBG wholly owned subsidiary, WeWork warrants 1.5 (unexecuted as of Sep. 30, 2019), cumulative loss/gain -1.2, fair value 0.3, loss recorded -1.2; preferred and common stock 4.5, -3.5, 1.0, -3.5; SVF (SoftBank Vision Fund), WeWork preferred and common stock 3.0, -2.0, 1.0, -3.1; Three affiliates of WeWork preferred stock 1.3, -0.2, 1.1, -0.4. Footnotes include the October 22, 2019 (ET) SBG-WeWork funding agreement. This is a SoftBank deck, NOT a WeWork roadshow deck.",
+    "source_url": "https://group.softbank/system/files/pdf/ir/presentations/2019/investor-accounting_q2fy2019_01_en.pdf"
+  },
+  {
+    "id": "wework_doc_softbank_deck_funding_commitment_slide5",
+    "file": "docs/wework_doc_softbank_deck_funding_commitment_slide5.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: SoftBank Group Q2 FY2019 investor presentation, November 2019",
+    "license": "editorial screenshot",
+    "desc": "SoftBank Group investor deck slide, PDF page 8, printed slide number 5 at bottom right, title \"Accounting of Funding Commitment to WeWork\", SoftBank Group logo top right. Subhead \"WeWork to become an associate of SBG\". Text: SBG and WeWork reached an agreement on October 22, 2019 (ET) for SBG to commit significant funding; WeWork will be an associate of SBG; SBG will not hold a majority of voting rights at any general shareholders meeting or board meeting; WeWork will not be SBG's subsidiary since SBG cannot control WeWork; the Company's economic ownership of WeWork will be up to 80 percent (footnote: fully diluted, up to 60% by SBG's wholly owned subsidiary and 20% by SVF). Table \"Accounting of funding and consolidated P/L accounts\": SBG wholly owned subsidiary common stock using equity method, preferred stock measured at fair value; SVF preferred and common stock measured at fair value; arrows to P/L accounts. This is a SoftBank deck, NOT a WeWork roadshow deck.",
+    "source_url": "https://group.softbank/system/files/pdf/ir/presentations/2019/investor-accounting_q2fy2019_01_en.pdf"
+  },
+  {
+    "id": "wework_doc_post_neumann_steps_down_2019-09-24",
+    "file": "docs/wework_doc_post_neumann_steps_down_2019-09-24.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: NPR Illinois (Associated Press report), September 24, 2019",
+    "license": "editorial screenshot",
+    "desc": "Header card built from elements of the NPR Illinois page carrying the Associated Press report of WeWork's 24 September 2019 leadership announcement (the original WeWork release page could not be rendered from a dated original; this dated AP report is used instead and is labeled as such). Masthead \"NPR ILLINOIS\" at top, headline \"WeWork CEO Steps Down As IPO Stalls\" mid page, byline \"Associated Press report, NPR Illinois\", date \"September 24, 2019 at 2:51 PM CDT\" in red. Body quote: \"The scrutiny directed toward me has become a significant distraction, and I have decided that it is in the best interest of the company to step down as chief executive,\" Neumann said. Neumann retains title as non-executive chairman; Artie Minson (co-president and CFO) and Sebastian Gunningham (vice chairman) named co-CEOs, lower half.",
+    "source_url": "https://www.nprillinois.org/generationlisten/2019-09-24/wework-ceo-steps-down-as-ipo-stalls"
+  },
+  {
+    "id": "wework_doc_post_a16z_flow_2022-08-15",
+    "file": "docs/wework_doc_post_a16z_flow_2022-08-15.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: Andreessen Horowitz, August 15, 2022 (via archive.org)",
+    "license": "editorial screenshot",
+    "desc": "Header card built from elements of the a16z post as archived 15 August 2022 (Wayback snapshot 20220815151000 of the original post URL; the full-page render failed to load the site CSS, so header elements are composed here and labeled as such). Masthead \"ANDREESSEN HOROWITZ (a16z)\" at top, headline \"Investing in Flow\" mid page, byline \"By Marc Andreessen\", date \"August 15, 2022\" in red. Body quotes: \"We are excited to partner with Adam Neumann and his colleagues on Flow, which is a direct strike on precisely this problem.\" \"Adam is a visionary leader who revolutionized the second largest asset class in the world - commercial real estate - by bringing community and brand to an industry in which neither existed before.\" \"We think it is natural that for his first venture since WeWork, Adam returns to the theme of connecting people through transforming their physical spaces and building communities where people spend the most time: their homes.\" The post itself does not state the investment amount; the $350 million figure for this round comes from same-day New York Times reporting.",
+    "source_url": "https://a16z.com/2022/08/15/investing-in-flow/"
+  },
+  {
+    "id": "wework_doc_post_neumann_bid_2024-03-26",
+    "file": "docs/wework_doc_post_neumann_bid_2024-03-26.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "Screenshot: The Straits Times (Reuters reporting), March 26, 2024",
+    "license": "editorial screenshot",
+    "desc": "Header card built from elements of The Straits Times page of 26 March 2024 carrying Reuters reporting of Neumann's bid (the original Reuters article could not be rendered: direct fetch returned 401, Wayback has no snapshot of that URL, and archive.today returned 429; this dated Reuters-sourced report is used instead and is labeled as such). Masthead \"THE STRAITS TIMES\" at top, headline \"Adam Neumann offers to buy back WeWork for over $673 million: Source\" across two lines, byline \"Reuters reporting carried by The Straits Times\", date \"Published Mar 26, 2024, 07:17 AM\" in red. Body: \"Mr Adam Neumann has submitted a bid of more than US$500 million to buy back the bankrupt office-sharing company he co-founded, a person familiar with the matter told Reuters.\" February 2024 lawyers' letter about a joint bid with Daniel Loeb's Third Point; Third Point told Reuters it had held \"only preliminary conversations\" and made no financial commitments.",
+    "source_url": "https://www.straitstimes.com/business/adam-neumann-submits-over-673-million-bid-to-buy-back-wework-source-says?ai-allowed=1"
+  },
+  {
+    "id": "wework_doc_osm_hq_115w18st_nyc",
+    "file": "docs/wework_doc_osm_hq_115w18st_nyc.png",
+    "kind": "document",
+    "role": "prop",
+    "credit": "© OpenStreetMap contributors",
+    "license": "ODbL (OpenStreetMap data)",
+    "desc": "OpenStreetMap map, zoom 17, centered on the WeWork headquarters at 115 West 18th Street, New York, NY 10011 (Nominatim geocode lat 40.7401457, lon -73.9954736). Red pin near center of the frame on West 18th Street between 6th Avenue and 7th Avenue, Chelsea, Manhattan; street labels W 19 St (top), W 18 St, 6 Ave, 7 Ave visible around the pin. White label box below the pin reads \"WeWork HQ: 115 West 18th Street, New York, NY 10011\". Credit \"© OpenStreetMap contributors\" at bottom right. Note: this is the S-1 / 2019 headquarters address; the 2023 bankruptcy petition lists a different address, 12 East 49th Street, 3rd Floor, New York, NY 10017.",
+    "source_url": "https://www.openstreetmap.org/?mlat=40.7401457&mlon=-73.9954736#map=17/40.7401457/-73.9954736"
+  },
+  {
+    "id": "wework_el_office_key",
+    "file": "ai/wework_el_office_key.png",
+    "kind": "el",
+    "role": "cut",
+    "credit": "AI generated (Muse media.generate_image)",
+    "license": "AI generated component",
+    "desc": "A silver metal office key lying horizontally, at centre frame, a large plain key head with no lettering, a plain round key ring, on a uniform bright white background. For the coworking startup beat: the key that opens the first office.",
+    "gen": "media.generate_image (Muse)"
+  },
+  {
+    "id": "wework_el_coffee_cup",
+    "file": "ai/wework_el_coffee_cup.png",
+    "kind": "el",
+    "role": "cut",
+    "credit": "AI generated (Muse media.generate_image)",
+    "license": "AI generated component",
+    "desc": "A plain white takeaway paper cup with a lid, standing at centre frame, no lettering, no logo, on a uniform bright white background. For the coworking startup beat: the daily rhythm of shared-office life.",
+    "gen": "media.generate_image (Muse)"
+  },
+  {
+    "id": "wework_el_laptop_desk",
+    "file": "ai/wework_el_laptop_desk.png",
+    "kind": "el",
+    "role": "cut",
+    "credit": "AI generated (Muse media.generate_image)",
+    "license": "AI generated component",
+    "desc": "A silver laptop open on a wooden desk, at centre frame, its screen showing only an abstract orange-pink-purple-blue gradient, no text, no logo on screen, a bright white background behind. For the coworking startup beat: working in a shared space.",
+    "gen": "media.generate_image (Muse)"
+  },
+  {
+    "id": "wework_el_office_chair",
+    "file": "ai/wework_el_office_chair.png",
+    "kind": "el",
+    "role": "cut",
+    "credit": "AI generated (Muse media.generate_image)",
+    "license": "AI generated component",
+    "desc": "A single black swivel office chair, mesh back, armrests on both sides, a five-wheel base, seen from the front, at centre frame, on a uniform bright white background, no text, no logo. For the startup and growth beats: an empty chair in an office filling up.",
+    "gen": "media.generate_image (Muse)"
+  },
+  {
+    "id": "wework_el_office_plant",
+    "file": "ai/wework_el_office_plant.png",
+    "kind": "el",
+    "role": "cut",
+    "credit": "AI generated (Muse media.generate_image)",
+    "license": "AI generated component",
+    "desc": "A large broad-leaf green plant in a plain white pot, placed at centre frame, on a uniform bright white background, no text, no logo. For the coworking startup beat: a friendly green shared-office space.",
+    "gen": "media.generate_image (Muse)"
+  },
+  {
+    "id": "wework_el_whiteboard",
+    "file": "ai/wework_el_whiteboard.png",
+    "kind": "el",
+    "role": "cut",
+    "credit": "AI generated (Muse media.generate_image)",
+    "license": "AI generated component",
+    "desc": "A whiteboard on a standing frame, at centre frame, with generic handwritten words legible as ideas (black, top), plan (blue, lower left), team (black, lower right), plus a lightbulb sketch and several abstract curved arrows in black and blue, absolutely no figures, no company name, no logo. For the startup and peak-growth beats: brainstorming and expansion.",
+    "gen": "media.generate_image (Muse)"
+  },
+  {
+    "id": "wework_el_dossier_envelope",
+    "file": "ai/wework_el_dossier_envelope.png",
+    "kind": "el",
+    "role": "cut",
+    "credit": "AI generated (Muse media.generate_image)",
+    "license": "AI generated component",
+    "desc": "A thick unopened kraft paper dossier envelope, flap folded at top, its front completely plain, at centre frame, on a uniform bright white background, no text, no seal. For the collapse beat: files and paperwork as everything falls apart.",
+    "gen": "media.generate_image (Muse)"
+  },
+  {
+    "id": "wework_el_suitcase",
+    "file": "ai/wework_el_suitcase.png",
+    "kind": "el",
+    "role": "cut",
+    "credit": "AI generated (Muse media.generate_image)",
+    "license": "AI generated component",
+    "desc": "A single black cabin pull-along suitcase, its metal handle extended, wheels at the bottom, standing at centre frame, on a uniform bright white background, no logo, no brand label. For the collapse beat of packing up and leaving the office.",
+    "gen": "media.generate_image (Muse)"
+  },
+  {
+    "id": "wework_el_house_key",
+    "file": "ai/wework_el_house_key.png",
+    "kind": "el",
+    "role": "cut",
+    "credit": "AI generated (Muse media.generate_image)",
+    "license": "AI generated component",
+    "desc": "A bunch of gold and silver house keys on a plain metal ring, fanned out at centre frame, on a uniform bright white background, no text, no logo. For the Flow beat about homes: the move from shared offices to a shared-living model.",
+    "gen": "media.generate_image (Muse)"
+  },
+  {
+    "id": "wework_el_champagne_glass",
+    "file": "ai/wework_el_champagne_glass.png",
+    "kind": "el",
+    "role": "cut",
+    "credit": "AI generated (Muse media.generate_image)",
+    "license": "AI generated component",
+    "desc": "A single tall champagne flute, full of golden sparkling wine, standing at centre frame, on a uniform dark grey-black luxury background, no bottle, no label, no text. For the peak-growth beat: celebration and luxury before the collapse.",
+    "gen": "media.generate_image (Muse)"
+  },
+  {
+    "id": "wework_el_moving_box",
+    "file": "ai/wework_el_moving_box.png",
+    "kind": "el",
+    "role": "cut",
+    "credit": "AI generated (Muse media.generate_image)",
+    "license": "AI generated component",
+    "desc": "An open cardboard moving box with four flaps, seen from above, at centre frame, containing three plain-covered books (blue, green, beige), a white mug, paper clips, pens and sticky notes, no brand lettering, no human face, on a uniform bright white background. For the collapse beat of packing up and leaving the office.",
+    "gen": "media.generate_image (Muse)"
+  },
+  {
+    "id": "wework_el_brick_wall",
+    "file": "ai/wework_el_brick_wall.webp",
+    "kind": "el",
+    "role": "cut",
+    "credit": "AI generated (Muse media.generate_image)",
+    "license": "AI generated component",
+    "desc": "Full-frame texture: a white-painted brick wall, even rows of bricks, soft natural light, a faint shadow streak at the left edge. No people, no text. Used as a base layer for the early startup and office beats.",
+    "gen": "media.generate_image (Muse)"
+  },
+  {
+    "id": "wework_el_wood_floor",
+    "file": "ai/wework_el_wood_floor.webp",
+    "kind": "el",
+    "role": "cut",
+    "credit": "AI generated (Muse media.generate_image)",
+    "license": "AI generated component",
+    "desc": "Full-frame texture: a warm-toned wooden floor seen from a low angle, planks running across the frame and receding into the distance, visible wood grain and a few light scratches. No people, no text. Used as a warm base layer for the startup and peak beats in shared workspaces.",
+    "gen": "media.generate_image (Muse)"
+  },
+  {
+    "id": "wework_el_frosted_glass",
+    "file": "ai/wework_el_frosted_glass.webp",
+    "kind": "el",
+    "role": "cut",
+    "credit": "AI generated (Muse media.generate_image)",
+    "license": "AI generated component",
+    "desc": "Full-frame texture: frosted glass, diffused light in a pale white-blue tone, behind it only vague blurred shapes and green plant shadows, no person or face clearly visible. No text. For the beat where peak growth turns into collapse: the feeling of a closed-off office.",
+    "gen": "media.generate_image (Muse)"
+  },
+  {
+    "id": "wework_el_old_newspaper",
+    "file": "ai/wework_el_old_newspaper.webp",
+    "kind": "el",
+    "role": "cut",
+    "credit": "AI generated (Muse media.generate_image)",
+    "license": "AI generated component",
+    "desc": "Full-frame texture: an aged, yellowed newspaper-paper background, wrinkled and stained, divided into vertical columns, all printed text blurred beyond legibility. No real headline, no real newspaper name. Used as a base layer for the collapse and press-coverage beats, not as a real document.",
+    "gen": "media.generate_image (Muse)"
+  },
+  {
+    "id": "wework_art_coworking_dawn",
+    "file": "ai/wework_art_coworking_dawn.webp",
+    "kind": "art",
+    "role": "plate",
+    "credit": "AI generated (Muse media.generate_image)",
+    "license": "AI generated component",
+    "desc": "Plate 1920x1080: an empty coworking office at dawn, long wooden desks running down the room, black mesh chairs, green plants spread across desks and floor, golden morning light through a large glass wall at right, trees and houses visible through the glass in the distance. No people, no text. For the startup beat: the dream of a shared workspace just beginning.",
+    "gen": "media.generate_image (Muse)"
+  },
+  {
+    "id": "wework_art_meeting_afterhours",
+    "file": "ai/wework_art_meeting_afterhours.webp",
+    "kind": "art",
+    "role": "plate",
+    "credit": "AI generated (Muse media.generate_image)",
+    "license": "AI generated component",
+    "desc": "Plate 1920x1080: an empty meeting room after hours, a long wooden table at centre with grey upholstered chairs on both sides, a large dark screen mounted on the wall behind, three warm yellow pendant lights, a glass wall at right looking out on the city at night. No people, no text. For the beat where peak growth turns into collapse: an empty meeting room after the big decisions.",
+    "gen": "media.generate_image (Muse)"
+  },
+  {
+    "id": "wework_art_office_corridor",
+    "file": "ai/wework_art_office_corridor.webp",
+    "kind": "art",
+    "role": "plate",
+    "credit": "AI generated (Muse media.generate_image)",
+    "license": "AI generated component",
+    "desc": "Plate 1920x1080: a long symmetrical office corridor, black-framed glass rooms on both sides, a white ceiling with a row of square lights, a glossy grey floor, perspective pulling straight toward a bright glass door at the end of the corridor. No people, no text. For the peak-growth and mass-expansion beats, the sense of endless scale, or an empty office once the growth momentum is gone.",
+    "gen": "media.generate_image (Muse)"
+  },
+  {
+    "id": "wework_art_building_lobby",
+    "file": "ai/wework_art_building_lobby.webp",
+    "kind": "art",
+    "role": "plate",
+    "credit": "AI generated (Muse media.generate_image)",
+    "license": "AI generated component",
+    "desc": "Plate 1920x1080: an empty luxury building lobby, a light-wood reception desk at centre-left before a wood-panelled wall, beige sofas and a round wooden table at front right, many large green plants, strip ceiling lights running lengthwise. No people, no text. For the peak beat: the glamorous face of the office empire before the collapse.",
+    "gen": "media.generate_image (Muse)"
+  },
+  {
+    "id": "wework_art_office_clearout",
+    "file": "ai/wework_art_office_clearout.webp",
+    "kind": "art",
+    "role": "plate",
+    "credit": "AI generated (Muse media.generate_image)",
+    "license": "AI generated component",
+    "desc": "Plate 1920x1080: an office being cleared out, brown cardboard boxes scattered across the floor, some open boxes and packing paper, an overturned chair, grey partitions pushed out of place, empty cabinets and shelves behind, cold ceiling light, a dried potted plant at the right corner. No people. One small white label with illegible text on one box at right, not a logo or brand. For the collapse beat: clearing out after everything breaks.",
+    "gen": "media.generate_image (Muse)"
+  },
+  {
+    "id": "wework_art_boardroom_night",
+    "file": "ai/wework_art_boardroom_night.webp",
+    "kind": "scene",
+    "role": "plate",
+    "credit": "AI generated (Muse media.generate_image)",
+    "license": "AI generated component",
+    "desc": "FULL AI SCENE. FULL AI SCENE, not a real photo of a real event. A boardroom at night seen along a long wooden table running toward the back of the room, rows of black leather chairs mostly empty on both sides, blank white papers with no text scattered on the table. At the far end, 3 blurred figures seen only from behind, backs to camera, no faces clearly visible. The ceiling casts tense yellow light, behind is a glass wall looking out on the city at night. No legible text, no logo, no brand name. For the beat of the night before the IPO collapse.",
+    "gen": "media.generate_image (Muse)"
+  },
+  {
+    "id": "wework_art_empty_office_bankruptcy",
+    "file": "ai/wework_art_empty_office_bankruptcy.webp",
+    "kind": "scene",
+    "role": "plate",
+    "credit": "AI generated (Muse media.generate_image)",
+    "license": "AI generated component",
+    "desc": "FULL AI SCENE. FULL AI SCENE, not a real photo of a real event. A deserted open-plan office, no people: bare desks and chairs, several sealed and open cardboard boxes scattered across the floor, an overturned chair at the front corner, peeling ceiling and columns. Cold grey light from a row of large windows, slanted sunbeams with drifting dust making the emptiness clear. No legible text, no logo, no brand name. For the post-bankruptcy beat: an office once crowded, now empty.",
+    "gen": "media.generate_image (Muse)"
+  },
+  {
+    "id": "wework_art_event_crowd_far",
+    "file": "ai/wework_art_event_crowd_far.webp",
+    "kind": "scene",
+    "role": "plate",
+    "credit": "AI generated (Muse media.generate_image)",
+    "license": "AI generated component",
+    "desc": "FULL AI SCENE. FULL AI SCENE, not a real photo of a real event. A very large event hall seen from high above and far away: a crowd spread across the floor, everyone small and blurred, no face identifiable. In the distance a warmly lit stage in light haze, a dark steel-truss ceiling above. No real text banner, no logo, no brand name. For the peak-era event beat: the scale of the crowd and the glow of the stage.",
+    "gen": "media.generate_image (Muse)"
+  }
+]
