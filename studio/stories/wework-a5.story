@@ -20,15 +20,15 @@ In March twenty twenty-three, WeWork announced its first month of adjusted profi
 {tense} Five months later, its own report warned of "substantial doubt" that it could survive as a going **concern**.
 
 // CARD a5-03 · SEE: a hundred real banknotes laid out on the desk stand for one dollar of revenue; on "seventy-four" seventy-four of them drop off the desk one after another; 26 stay in the light · SEAM out right
-# cine act=fall fx="code:@cent_grid;keep:26;at:seventy-four;lab:74¢ OF EVERY $1 → PAYING FOR SPACE;sub:second quarter of 2023 (Reuters);out:right"
+# cine act=fall fx="code:@cent_grid;share:26;at:seventy-four;lab:74¢ OF EVERY $1 → PAYING FOR SPACE;sub:second quarter of 2023 (Reuters);out:right"
 Because paying for space ate seventy-four cents of every dollar of **revenue**.
 
 // CARD a5-04 · SEE: a real empty coworking room behind, dim; a block of 100 seats in front; on "seventy-two" 72 of them light up gold in a scatter while 72% counts up · SEAM in right
 # cine act=fall fx="code:@occupancy_grid;plate:wework_ctx_empty_coworking_office;pct:72;go:seventy-two;lab:OF THE SPACE IN USE;sub:physical occupancy, second quarter of 2023;in:right"
 And its buildings were only seventy-two percent **full**.
 
-// CARD a5-05 · SEE: the dark frame fills with 590 gold points spreading outward, one per lease; 590 LEASES sets above · SEAM out right
-# cine act=fall fx="code:@dots;n:590;go:renegotiated;lab:590 LEASES RENEGOTIATED;sub:before the filing, according to WeWork’s lawyers;out:right"
+// CARD a5-05 · SEE: loose printed lease forms spread across a white table and smoothed flat, one after another · SEAM out right
+# cine act=fall fx="code:@reel;clip:stock_investigation_papers_spread_01;move:right;z:.08;out:right"
 Its lawyers said it had already renegotiated five hundred and ninety **leases**, building by building.
 
 // CARD a5-06 · SEE: the real Chapter 11 petition's first page drops onto the desk with weight; the 54-page filing builds up under it; CHAPTER 11 · 6 NOV 2023 types beside it · SEAM in right
@@ -56,8 +56,8 @@ The first batch was sixty-nine. Floor by floor, office by office, the community 
 # cine act=rise fx="code:@window_count;bg:wework_clip_flow_building_night;n:4000;go:majority;lab:APARTMENTS;sub:majority stakes bought by companies he controlled, 2020–2022 (WSJ);in:right"
 Between twenty twenty and twenty twenty-two, companies he controlled bought majority stakes in more than four thousand **apartments**.
 
-// CARD a5-12 · SEE: a wide, furnished living room, a ceiling fan turning, the camera drifting right · SEAM out right
-# cine act=rise fx="code:@reel;clip:wework_clip_flow_interior_livingroom;move:right;z:.08;out:right"
+// CARD a5-12 · SEE: the kitchen and dining corner of a furnished model apartment, velvet chairs, the camera drifting right · SEAM out right
+# cine act=rise fx="code:@reel;clip:wework_clip_flow_interior_cozy;move:right;z:.08;out:right"
 Flow would rent them out with the same promise: not just a home, a **community**.
 
 // CARD a5-13 · SEE: the real a16z post header (Investing in Flow, Marc Andreessen, 15 August 2022) at the top over dim footage of an apartment tower; the verbatim line lights word by word as the quote voice reads it; MARC ANDREESSEN · VOICED · SEAM in right

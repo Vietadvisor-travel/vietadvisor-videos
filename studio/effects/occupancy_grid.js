@@ -12,7 +12,7 @@
   ctx.save(); seam(P.in || 'none', P.out || 'none');
   const bg = clip(P.plate, 0, 1) || img(P.plate); ctx.fillStyle = '#0c0b0a'; ctx.fillRect(-W, -H, 3 * W, 3 * H);
   if (bg && bg.width) { const s = Math.max(W / bg.width, H / bg.height) * (1.04 + .03 * clamp(t / dur)); ctx.save(); ctx.filter = 'blur(4px) brightness(.4)'; ctx.drawImage(bg, W / 2 - bg.width * s / 2, H / 2 - bg.height * s / 2, bg.width * s, bg.height * s); ctx.restore(); }
-  const pct = +(P.pct || 72), r = rng(11), ord = Array.from({ length: 100 }, (_, i) => i).sort(() => r() - .5), on = new Set(ord.slice(0, pct)), k = clamp(p(P.go || 0, 1.4, 'inOut'));
+  const pct = +(P.pct || 72), r = rng(11), ord = Array.from({ length: 100 }, (_, i) => i).sort(() => r() - .5), on = new Set(ord.slice(0, pct)), k = clamp(p(P.go || 0, .9, 'inOut'));
   const gx = W * .1, gy = H * .16, cs = H * .066; let lit = 0;
   ord.forEach((i, rk) => { const x = gx + (i % 10) * cs, y = gy + Math.floor(i / 10) * cs, isOn = on.has(i), shown = isOn && rk / pct < k;
     if (shown) lit++; ctx.save(); if (shown) { ctx.fillStyle = '#f2c14e'; ctx.beginPath(); ctx.roundRect(x + cs * .12, y + cs * .12, cs * .76, cs * .76, 6 * u); ctx.fill(); } else { ctx.strokeStyle = 'rgba(239,230,210,.35)'; ctx.lineWidth = 2 * u; ctx.beginPath(); ctx.roundRect(x + cs * .12, y + cs * .12, cs * .76, cs * .76, 6 * u); ctx.stroke(); } ctx.restore(); });

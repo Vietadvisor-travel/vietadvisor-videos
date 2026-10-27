@@ -14,7 +14,7 @@
   if (bg && bg.width) { const s = Math.max(W / bg.width, H / bg.height) * (1.04 + .04 * clamp(t / dur)); ctx.save(); ctx.filter = 'brightness(.62) saturate(.8)'; ctx.drawImage(bg, W / 2 - bg.width * s / 2, H / 2 - bg.height * s / 2, bg.width * s, bg.height * s); ctx.restore(); }
   const face = P.face ? img(P.face) : null;
   const card = (lab, sub, x, y, w0) => { const k = clamp(spring(w0, { stiff: 150, damp: 16 }), 0, 1.08); if (k <= 0) return; const yy = y - (1 - Math.min(1, k)) * H * .3;
-    setFont(58 * u, 'cond'); const tw = Math.max(ctx.measureText(lab).width, (setFont(40 * u, 'cond'), ctx.measureText(sub || '').width)) + (face ? 190 : 70) * u, th = 140 * u;
+    setFont(58 * u, 'cond'); const tw = Math.max(ctx.measureText(lab).width, (setFont(40 * u, 'cond'), ctx.measureText(sub || '').width)) + (face ? 214 : 70) * u, th = 140 * u;
     ctx.save(); ctx.strokeStyle = '#d9cfbd'; ctx.lineWidth = 3 * u; ctx.beginPath(); ctx.moveTo(x, yy - th / 2 - 70 * u); ctx.lineTo(x, yy - th / 2); ctx.stroke();
     ctx.shadowColor = 'rgba(0,0,0,.55)'; ctx.shadowBlur = 30 * u; ctx.shadowOffsetY = 12 * u; ctx.fillStyle = '#f2ead9'; ctx.beginPath(); ctx.roundRect(x - tw / 2, yy - th / 2, tw, th, 10 * u); ctx.fill(); ctx.restore();
     let tx = x - tw / 2 + 36 * u; if (face && face.width) { const fs = 112 * u, sc = Math.max(fs / face.width, fs / face.height); ctx.save(); ctx.beginPath(); ctx.arc(tx + fs / 2, yy, fs / 2, 0, 7); ctx.clip(); ctx.drawImage(face, tx + fs / 2 - face.width * sc / 2, yy - face.height * sc * .35, face.width * sc, face.height * sc); ctx.restore(); tx += fs + 26 * u; }

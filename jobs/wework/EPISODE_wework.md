@@ -1,7 +1,7 @@
 # EPISODE 05 · wework · The comeback that started before the collapse
 
 ## 0. META
-- slug: wework · length: ≈ 10–11 min (1,620 words, 118 sentences in 108 beats) · acts: a0 … a6 · format: 16:9 only
+- slug: wework · length: ≈ 10.5 min (1,620 words, 118 sentences in 97 beats) · acts: a0 … a6 · format: 16:9 only
 - archetype: rise and fall + the founder who walks away richer (two arcs that cross) · look: `editorial` (modern business, colour photos and real filings; `luxury` was the last episode's look, `tech` would sell WeWork as the tech company it pretended to be)
 - tone: playful (dry irony; jokes aimed at the powerful and the absurd, never at members or staff who lost jobs)
 - voice: `voice: supertonic:M1` (the owner's default narrator) · `delivery: wry` · quote voices, verbatim only: `andreessen=bm_lewis` (a5, the a16z post), `neumann=am_fenrir` (a6, his statement ending the bid) — 3 voices in total, cast by contrast, never imitation; both quotes attributed on screen with "read by a voice actor"
@@ -143,11 +143,11 @@ WORLD      real New York / real WeWork floors / the documents of record (the two
 SECONDS
   0.0  arrives already moving from the right; Neumann on stage in his "Do What You Love" t-shirt fills the left half
   on «mission»  go: the change the sentence names happens
-  end  the last 30 % holds a finished, readable frame; exit right
+  end  the last 30 % holds a finished, readable frame; exit right · HOLD
 LAYERS     bg: wework_neumann_2015_disrupt_stage · fg: type only where TEXT says
 CAMERA     the camera move lives inside the effect (travel to the subject, then still)
 MOTION     acted sequence / sequenced UI life (the picture does what the voice says); no idle wobble
-SEAM       in right, out right
+SEAM       in right, out right · HOLD
 SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
 TEXT       “To elevate the world’s consciousness.” · ADAM NEUMANN · CO-FOUNDER, CEO · WeWork’s stated mission · Form S-1, 14 August 2019
 EFFECT     NEW @quote_beside
@@ -158,7 +158,7 @@ SEE        a WeWork tower holds; on "richer" the whole photo tears like paper an
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
   0.0  arrives on a hard cut; a WeWork tower holds
-  on «richer»  go: the change the sentence names happens
+  on «fell»  go: the change the sentence names happens
   end  the last 30 % holds a finished, readable frame; exit on the cut
 LAYERS     bg: wework_bldg_atlanta_tower · mid: wework_clip_private_jet_tarmac · fg: type only where TEXT says
 CAMERA     the camera move lives inside the effect (travel to the subject, then still)
@@ -168,44 +168,29 @@ SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
 TEXT       none
 EFFECT     REUSE @tear_reveal
 
-### a0-06 · "And here's the stranger question underneath the **money**." (≈ 3.5 s)
-MEANS      there is a stranger question under the money story
-SEE        hundred-dollar bills fanned across the frame, the camera sliding down along them, under the money
+### a0-06 · "And here's the stranger question underneath the **money**. / How do you raise money for your next company before the first one has even finished **falling**?" (≈ 10.0 s)
+MEANS      the stranger question: raising for the next company while the first is still falling
+SEE        the question as two framed pictures: a WeWork doormat on the left sinks and drains to grey on "falling"; on "raise" a new apartment block rises into the light on the right (THE NEXT COMPANY)
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
-  0.0  arrives already moving from the right; hundred-dollar bills fanned across the frame, the camera sliding down along them, under the money
-  end  the last 30 % holds a finished, readable frame; exit on the cut
-LAYERS     bg: wework_clip_cash_bills_stack · fg: type only where TEXT says
-CAMERA     tilt down
-MOTION     footage playing; no idle wobble
-SEAM       in right
-SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
-TEXT       none
-EFFECT     REUSE @reel
-
-### a0-07 · "How do you raise money for your next company before the first one has even finished **falling**?" (≈ 6.9 s)
-MEANS      he raised money while the old company was still falling
-SEE        a construction hoist climbing a tower (raising); on "falling" it slows to a crawl and drains to grey
-WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
-SECONDS
-  0.0  arrives on a hard cut; a construction hoist climbing a tower (raising)
-  on «finished»  slow: the footage slows (speed ramp)
-  on «falling»  mono: the picture drains to grey
+  0.0  arrives already moving from the right; the question as two framed pictures: a WeWork doormat on the left sinks and drains to grey on "falling"
   end  the last 30 % holds a finished, readable frame; exit right
-LAYERS     bg: wework_clip_tower_elevator · fg: type only where TEXT says
-CAMERA     tilt/rise up
-MOTION     footage playing; no idle wobble
-SEAM       out right
+LAYERS     bg: wework_sign_chicago_doormat · mid: wework_clip_flow_building_trees · fg: type only where TEXT says
+CAMERA     the camera move lives inside the effect (travel to the subject, then still)
+MOTION     acted sequence / sequenced UI life (the picture does what the voice says); no idle wobble
+SEAM       in right, out right
 SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
 TEXT       none
-EFFECT     REUSE @reel
+EFFECT     NEW @rise_and_sink
 
-### a0-08 · "So we'll keep two **accounts** side by side: the company's, and the founder's." (≈ 5.4 s)
-MEANS      the device: two accounts, the company and the founder, side by side
-SEE        the frame opens from a paper spine into two accounts: left the WeWork sign on brick (THE COMPANY), right Neumann (THE FOUNDER), both still empty
+### a0-08 · "So we'll keep two **accounts** side by side: the company's, and the founder's. / Keep an eye on which one pays the **bills**, and which one gets paid. (J)" (≈ 10.8 s)
+MEANS      the device: two accounts; the company pays the bills, the founder gets paid
+SEE        the frame opens from a paper spine into two accounts: left the WeWork sign on brick (THE COMPANY), right Neumann (THE FOUNDER); PAYS THE BILLS types into the company's side on "pays", GETS PAID into the founder's on "paid"
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
-  0.0  arrives already moving from the right; the frame opens from a paper spine into two accounts: left the WeWork sign on brick (THE COMPANY), right Neumann (THE FOUNDER), both still empty
+  0.0  arrives already moving from the right; the frame opens from a paper spine into two accounts: left the WeWork sign on brick (THE COMPANY), right Neumann (THE FOUNDER)
+  on «pays»  lat: the company value types in
+  on «paid»  rat: the founder value types in
   on «keep»  open: the spine opens the frame
   end  the last 30 % holds a finished, readable frame; exit right
 LAYERS     bg: wework_sign_toronto_richmond · mid: wework_neumann_2015_disrupt_portrait · fg: type only where TEXT says
@@ -213,23 +198,8 @@ CAMERA     the camera move lives inside the effect (travel to the subject, then 
 MOTION     acted sequence / sequenced UI life (the picture does what the voice says); no idle wobble
 SEAM       in right, out right
 SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
-TEXT       THE COMPANY · WEWORK · THE FOUNDER · ADAM NEUMANN
+TEXT       THE COMPANY · WEWORK · THE FOUNDER · ADAM NEUMANN · PAYS THE BILLS · GETS PAID
 EFFECT     NEW @two_accounts
-
-### a0-09 · "Keep an eye on which one pays the **bills**, and which one gets paid. (J)" (≈ 5.8 s)
-MEANS      watch who pays and who gets paid
-SEE        hands counting dollar bills onto a table, the camera drifting right
-WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
-SECONDS
-  0.0  arrives already moving from the right; hands counting dollar bills onto a table, the camera drifting right
-  end  the last 30 % holds a finished, readable frame; exit on the cut
-LAYERS     bg: stock_money_raining_06 · fg: type only where TEXT says
-CAMERA     track right
-MOTION     footage playing; no idle wobble
-SEAM       in right
-SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
-TEXT       none
-EFFECT     REUSE @reel
 
 ### a0-10 · "In August twenty twenty-two, Andreessen Horowitz, one of Silicon Valley's most famous investors, made a **bet**." (≈ 6.6 s)
 MEANS      a16z, a famous firm, bet on Neumann in August 2022 (the post is real)
@@ -248,9 +218,9 @@ SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
 TEXT       none
 EFFECT     REUSE @doc_flip
 
-### a0-11 · "About three hundred and fifty million dollars, into Adam Neumann's new housing company, **Flow**." (≈ 5.8 s)
-MEANS      the size of the bet: about $350M into Flow
-SEE        a pink apartment block from below, balconies stacked up; the sum sets in the sky above it on "three"
+### a0-11 · "About three hundred and fifty million dollars, into Adam Neumann's new housing company, **Flow**. / It was reported as the biggest single **check** the firm had ever paid out." (≈ 11.2 s)
+MEANS      about $350M into Flow, reported as a16z's largest single check
+SEE        a pink apartment block from below, balconies stacked up; the sum sets in the sky above it on "three" and its source under it
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
   0.0  arrives already moving from the right; a pink apartment block from below, balconies stacked up
@@ -261,24 +231,8 @@ CAMERA     tilt/rise up
 MOTION     footage playing; no idle wobble
 SEAM       in right, out right
 SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
-TEXT       $350,000,000 · into Flow · reported by The New York Times
+TEXT       $350,000,000 · reported as a16z’s largest single check (NYT)
 EFFECT     REUSE @reel (with one line of type)
-
-### a0-12 · "It was reported as the biggest single **check** the firm had ever paid out." (≈ 5.8 s)
-MEANS      reported as a16z's biggest single check
-SEE        a pen signing a document on a clipboard, close; it slows on "biggest"
-WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
-SECONDS
-  0.0  arrives already moving from the right; a pen signing a document on a clipboard, close
-  on «biggest»  slow: the footage slows (speed ramp)
-  end  the last 30 % holds a finished, readable frame; exit on the cut
-LAYERS     bg: wework_clip_signing_contract · fg: type only where TEXT says
-CAMERA     push in
-MOTION     footage playing; no idle wobble
-SEAM       in right
-SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
-TEXT       none
-EFFECT     REUSE @reel
 
 ### a0-13 · "But WeWork only filed for bankruptcy fifteen months **later**. [BEAT]" (≈ 3.9 s)
 MEANS      the sequencing: the check came 15 months BEFORE the bankruptcy
@@ -291,37 +245,35 @@ SECONDS
 LAYERS     bg: wework_clip_bankruptcy_empty_office_1 · fg: type only where TEXT says
 CAMERA     the camera move lives inside the effect (travel to the subject, then still)
 MOTION     acted sequence / sequenced UI life (the picture does what the voice says); no idle wobble
-SEAM       hard cut, then hold
+SEAM       hard cut, then HOLD
 SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
 TEXT       15 MONTHS · a16z’s check to Flow → WeWork’s bankruptcy filing
 EFFECT     NEW @month_flip
 
 ### a0-14 · "The comeback **started** before the crash had even finished." (≈ 3.9 s)
-MEANS      the comeback started before the crash finished
-SEE        a red market chart plunging; it slows on "crash" and freezes grey on "finished", framed like evidence
+MEANS      on one time line: the comeback (Aug 2022) came before the crash (Nov 2023)
+SEE        one time line across the frame: the real a16z post is pinned at AUG 2022 on "comeback" (THE COMEBACK), the FT's bankruptcy page at NOV 2023 on "crash" (THE CRASH); a bracket measures the gap on "finished"
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
-  0.0  arrives on a hard cut; a red market chart plunging
-  on «crash»  slow: the footage slows (speed ramp)
-  on «finished»  freeze: the footage freezes
+  0.0  arrives on a hard cut; one time line across the frame: the real a16z post is pinned at AUG 2022 on "comeback" (THE COMEBACK), the FT's bankruptcy page at NOV 2023 on "crash" (THE CRASH)
   end  the last 30 % holds a finished, readable frame; exit on the cut
-LAYERS     bg: wework_clip_ipo_graph_falling · fg: type only where TEXT says
+LAYERS     bg: wework_doc_post_a16z_flow_2022_08_15 · mid: wework_doc_news_ft_bankruptcy_2023_11_07 · fg: type only where TEXT says
 CAMERA     the camera move lives inside the effect (travel to the subject, then still)
-MOTION     footage playing; no idle wobble
+MOTION     acted sequence / sequenced UI life (the picture does what the voice says); no idle wobble
 SEAM       hard cut
 SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
 TEXT       none
-EFFECT     REUSE @ramp_freeze
+EFFECT     NEW @timeline_pins
 
 ### a0-15 · "Here's how that happened, and the one **decision**, signed years earlier, that made it possible." (≈ 6.2 s)
-MEANS      the cause was one decision signed years before: the lease
-SEE        two suited hands shake over a contract on a white table; the shot slows on "signed" (the lease is the decision)
+MEANS      the cause was a decision signed years earlier
+SEE        an empty boardroom at night along a long table: the room where a decision gets signed; the camera eases in and slows on "signed"
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
-  0.0  arrives on a hard cut; two suited hands shake over a contract on a white table
+  0.0  arrives on a hard cut; an empty boardroom at night along a long table: the room where a decision gets signed
   on «signed»  slow: the footage slows (speed ramp)
   end  the last 30 % holds a finished, readable frame; exit right
-LAYERS     bg: wework_clip_handshake_contract · fg: type only where TEXT says
+LAYERS     bg: wework_art_boardroom_night · fg: type only where TEXT says
 CAMERA     push in
 MOTION     footage playing; no idle wobble
 SEAM       out right
@@ -331,13 +283,13 @@ EFFECT     REUSE @reel
 
 ### a1-01 · "It began in twenty ten, when Adam Neumann and Miguel McKelvey started a company called **WeWork**." (≈ 6.6 s)
 MEANS      the founding: Neumann and McKelvey start WeWork in 2010
-SEE        the investigator's desk: a print of Neumann and a print of a WeWork sign on brick; on "WeWork" the sign print lifts and fills the frame
+SEE        the investigator's desk: a print of Neumann (Delhi, 2016) and a print of a WeWork doormat; on "WeWork" the doormat print lifts and fills the frame
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
-  0.0  arrives already moving from the right; the investigator's desk: a print of Neumann and a print of a WeWork sign on brick
+  0.0  arrives already moving from the right; the investigator's desk: a print of Neumann (Delhi, 2016) and a print of a WeWork doormat
   on «WeWork»  at: the change lands
   end  the last 30 % holds a finished, readable frame; exit in
-LAYERS     bg: wework_neumann_2015_disrupt_portrait · mid: wework_sign_toronto_richmond · fg: type only where TEXT says
+LAYERS     bg: wework_neumann_2016_delhi_portrait · mid: wework_sign_chicago_doormat · fg: type only where TEXT says
 CAMERA     the camera move lives inside the effect (travel to the subject, then still)
 MOTION     acted sequence / sequenced UI life (the picture does what the voice says); no idle wobble
 SEAM       in right, out in
@@ -412,19 +364,19 @@ TEXT       none
 EFFECT     NEW @floor_grid
 
 ### a1-06 · "Add coffee, glass walls and a beer tap. Call it a **community**. (J)" (≈ 5.0 s)
-MEANS      step three: the perks are the brand
-SEE        an office kitchen (coffee); a panel slides in on "glass" (a glass meeting-room door), another on "tap" (bottles clinking); on "community" the clinking panel opens to full frame
+MEANS      the perks were sold as a community
+SEE        a real WeWork shared kitchen, people gathered round the island under the 85 BROAD STREET sign; the camera eases in on "community"
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
-  0.0  arrives already moving from the right; an office kitchen (coffee)
+  0.0  arrives already moving from the right; a real WeWork shared kitchen, people gathered round the island under the 85 BROAD STREET sign
   end  the last 30 % holds a finished, readable frame; exit on the cut
-LAYERS     bg: wework_clip_coffee_coworkers · mid: wework_clip_office_exit_door, wework_clip_beer_clink · fg: type only where TEXT says
-CAMERA     the camera move lives inside the effect (travel to the subject, then still)
+LAYERS     bg: wework_interior_nyc_kitchen · fg: type only where TEXT says
+CAMERA     push in
 MOTION     footage playing; no idle wobble
 SEAM       in right
 SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
 TEXT       none
-EFFECT     REUSE @footage_split
+EFFECT     REUSE @reel
 
 ### a1-07 · "For a member, that meant **freedom**: you could leave the office any month you liked, no questions asked." (≈ 7.3 s)
 MEANS      for members it was freedom: leave any month
@@ -442,14 +394,13 @@ TEXT       none
 EFFECT     REUSE @reel
 
 ### a1-08 · "But for WeWork, a lease was a promise to pay rent for years, whatever **happened**." (≈ 6.2 s)
-MEANS      for WeWork a lease was a promise for years
-SEE        a contract on a wooden table, two pens crossed on it; the camera pushes into the small print and slows on "years"
+MEANS      for WeWork a lease was a promise for years (the S-1's own risk factors)
+SEE        the S-1's own risk-factors page, read from the top; the camera pushes into the opening lines and slows on "years"
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
-  0.0  arrives already moving from the right; a contract on a wooden table, two pens crossed on it
-  on «years»  slow: the footage slows (speed ramp)
+  0.0  arrives already moving from the right; the S-1's own risk-factors page, read from the top
   end  the last 30 % holds a finished, readable frame; exit on the cut
-LAYERS     bg: wework_clip_ipo_signing_6 · fg: type only where TEXT says
+LAYERS     bg: wework_doc_s1_risk_factors_p24 · fg: type only where TEXT says
 CAMERA     push in
 MOTION     footage playing; no idle wobble
 SEAM       in right
@@ -536,23 +487,8 @@ SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
 TEXT       none
 EFFECT     REUSE @word_cut_montage
 
-### a1-14 · "So **growth** became the only number investors measured." (≈ 3.5 s)
-MEANS      growth became the only scoreboard
-SEE        a city skyline time-lapse with tower cranes swinging and new floors appearing
-WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
-SECONDS
-  0.0  arrives already moving from the right; a city skyline time-lapse with tower cranes swinging and new floors appearing
-  end  the last 30 % holds a finished, readable frame; exit on the cut
-LAYERS     bg: stock_construction_crane_timelapse_04 · fg: type only where TEXT says
-CAMERA     tilt/rise up
-MOTION     footage playing; no idle wobble
-SEAM       in right
-SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
-TEXT       none
-EFFECT     REUSE @reel
-
-### a1-15 · "WeWork's desks went from about one hundred thousand, at the end of twenty sixteen, to four hundred and sixty-six thousand two years **later**." (≈ 9.2 s)
-MEANS      desks went from ~100,000 (2016) to 466,000 (2018), in the S-1's own table
+### a1-15 · "So **growth** became the only number investors measured. / WeWork's desks went from about one hundred thousand, at the end of twenty sixteen, to four hundred and sixty-six thousand two years **later**." (≈ 12.3 s)
+MEANS      growth was the scoreboard: desks went from ~100,000 to 466,000 (S-1 table)
 SEE        the S-1's own key-metrics table on the desk; the camera travels to the workstation row; 107,000 is highlighted on "hundred", 466,000 on "sixty-six"
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
@@ -562,7 +498,7 @@ SECONDS
 LAYERS     bg: wework_doc_s1_summary_operating_kpi_p23 · fg: type only where TEXT says
 CAMERA     the camera move lives inside the effect (travel to the subject, then still)
 MOTION     acted sequence / sequenced UI life (the picture does what the voice says); no idle wobble
-SEAM       hard cut
+SEAM       hard cut, in from the previous beat
 SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
 TEXT       none
 EFFECT     NEW @doc_read
@@ -582,55 +518,23 @@ SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
 TEXT       VALUATION · JAN 2019 · set in a private deal with SoftBank
 EFFECT     NEW @valuation_tag
 
-### a1-17 · "But only one billion of that was new money for the **company**." (≈ 5.0 s)
-MEANS      only $1B of that was new money for the company
-SEE        a real photo of fanned hundred-dollar bills splits in half: $1B NEW MONEY stays lit, $1B BOUGHT OLD SHARES slides behind frosted glass, on "one"
+### a1-17 · "But only one billion of that was new money for the **company**. / The other billion bought shares from people who already owned **them**." (≈ 9.2 s)
+MEANS      of the $2B in Jan 2019, $1B was new money, $1B bought existing shares
+SEE        SoftBank (Son, 2025 portrait) on the left; on "new" a gold arrow forks to a WeWork lobby: $1B NEW MONEY; on "other" a blue arrow forks to people at their desks: $1B FOR SHARES THEY ALREADY OWNED
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
-  0.0  arrives on a hard cut; a real photo of fanned hundred-dollar bills splits in half: $1B NEW MONEY stays lit, $1B BOUGHT OLD SHARES slides behind frosted glass, on "one"
-  on «one»  at: the change lands
+  0.0  arrives on a hard cut; SoftBank (Son, 2025 portrait) on the left
   end  the last 30 % holds a finished, readable frame; exit right
-LAYERS     bg: wework_clip_cash_bills_stack__070 · fg: type only where TEXT says
+LAYERS     bg: wework_son_2025_tokyo_portrait · mid: wework_interior_vancouver_06, wework_clip_office_group_computers · fg: type only where TEXT says
 CAMERA     the camera move lives inside the effect (travel to the subject, then still)
 MOTION     acted sequence / sequenced UI life (the picture does what the voice says); no idle wobble
 SEAM       out right
 SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
 TEXT       none
-EFFECT     REUSE @split_note
+EFFECT     NEW @money_fork
 
-### a1-18 · "The other billion bought shares from people who already owned **them**." (≈ 4.6 s)
-MEANS      the other $1B bought existing shares
-SEE        a handshake between two people across a table, close; the shares changing hands
-WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
-SECONDS
-  0.0  arrives already moving from the right; a handshake between two people across a table, close
-  end  the last 30 % holds a finished, readable frame; exit on the cut
-LAYERS     bg: wework_clip_handshake_group · fg: type only where TEXT says
-CAMERA     track left
-MOTION     footage playing; no idle wobble
-SEAM       in right
-SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
-TEXT       none
-EFFECT     REUSE @reel
-
-### a1-19 · "So forty-seven billion dollars wasn't a market **price**." (≈ 3.5 s)
-MEANS      so $47B was not a market price
-SEE        the New York Stock Exchange facade under its flag; on "market" it drains to grey: no market set this price
-WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
-SECONDS
-  0.0  arrives on a hard cut; the New York Stock Exchange facade under its flag
-  on «market»  mono: the picture drains to grey
-  end  the last 30 % holds a finished, readable frame; exit right
-LAYERS     bg: wework_ctx_nyse_wallstreet · fg: type only where TEXT says
-CAMERA     push in
-MOTION     footage playing; no idle wobble
-SEAM       out right
-SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
-TEXT       none
-EFFECT     REUSE @reel
-
-### a1-20 · "It was a price set by the very investor who was paying for the growth, with its own **money**." (≈ 7.7 s)
-MEANS      it was set by the investor paying for the growth: a closed loop
+### a1-20 · "So forty-seven billion dollars wasn't a market **price**. / It was a price set by the very investor who was paying for the growth, with its own **money**." (≈ 10.8 s)
+MEANS      $47B was not a market price; it was set by the investor paying for the growth
 SEE        over Son on a giant screen at an event: a closed ring of four stations draws itself, SOFTBANK → PAYS FOR GROWTH → WEWORK GROWS → SETS THE PRICE: $47B → back to SOFTBANK in gold on "money"
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
@@ -727,68 +631,55 @@ SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
 TEXT       WEWORK · FORM S-1 · PAGE 199 (EXCERPT) · Adam exercised the time-based option~in exchange for a $362.1 million full~recourse promissory note payable to~the Company (with an interest rate~of 2.89% and a maturity date of~April 11, 2029). · Form S-1, 14 August 2019 (verbatim)
 EFFECT     REUSE @email_page
 
-### a2-06 · "By that July, he had taken out about seven hundred million **dollars**." (≈ 5.0 s)
-MEANS      by July 2019 he had taken out about $700M
-SEE        thick strapped stacks of hundred-dollar bills handled on a desk, the camera pushing in
+### a2-06 · "By that July, he had taken out about seven hundred million **dollars**. / Share sales, and loans against his stock, the Wall Street Journal **reported**." (≈ 9.6 s)
+MEANS      about $700M taken out by July 2019, through share sales and loans (WSJ)
+SEE        thick bundles of real cash drop onto a dark desk one after another and stack into a pile while $700M counts up; on "loans" two tags set beside it: SHARE SALES, LOANS AGAINST HIS STOCK
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
-  0.0  arrives on a hard cut; thick strapped stacks of hundred-dollar bills handled on a desk, the camera pushing in
-  end  the last 30 % holds a finished, readable frame; exit right
-LAYERS     bg: stock_scam_cash_stacks_counting_24 · fg: type only where TEXT says
-CAMERA     push in
-MOTION     footage playing; no idle wobble
-SEAM       out right
-SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
-TEXT       none
-EFFECT     REUSE @reel
-
-### a2-07 · "Share sales, and loans against his stock, the Wall Street Journal **reported**." (≈ 5.0 s)
-MEANS      through share sales and loans against his stock (WSJ)
-SEE        a trading screen of charts (share sales); a panel slides in on "loans" (papers exchanged across a desk), another on "Journal" (a newspaper press running)
-WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
-SECONDS
-  0.0  arrives already moving from the right; a trading screen of charts (share sales)
+  0.0  arrives already moving from the right; thick bundles of real cash drop onto a dark desk one after another and stack into a pile while $700M counts up
+  on «taken»  go: the change the sentence names happens
   end  the last 30 % holds a finished, readable frame; exit on the cut
-LAYERS     bg: stock_finance_exchange_floor_10 · mid: stock_finance_loan_meeting_08, stock_media_printing_press_03 · fg: type only where TEXT says
+LAYERS     bg: stock_scam_cash_stacks_counting_24__060 · fg: type only where TEXT says
 CAMERA     the camera move lives inside the effect (travel to the subject, then still)
-MOTION     footage playing; no idle wobble
+MOTION     acted sequence / sequenced UI life (the picture does what the voice says); no idle wobble
 SEAM       in right
 SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
-TEXT       none
-EFFECT     REUSE @footage_split
+TEXT       TAKEN OUT BY JULY 2019
+EFFECT     NEW @cash_pile
 
 ### a2-08 · "The company also owned a Gulfstream jet, bought for more than sixty million **dollars**." (≈ 5.8 s)
-MEANS      the company owned a Gulfstream bought for more than $60M
-SEE        a white private jet on an apron from above; the camera tracks right along it
+MEANS      the Gulfstream G650, in the WSJ's own sentence
+SEE        the WSJ's own sentence from September 2019 lifted out of the page: "…zipping across the Atlantic Ocean in a Gulfstream G650"; "Gulfstream G650" highlights on "Gulfstream"
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
-  0.0  arrives on a hard cut; a white private jet on an apron from above
+  0.0  arrives on a hard cut; the WSJ's own sentence from September 2019 lifted out of the page: "…zipping across the Atlantic Ocean in a Gulfstream G650"
   end  the last 30 % holds a finished, readable frame; exit right
-LAYERS     bg: wework_clip_private_jet_airport · fg: type only where TEXT says
-CAMERA     track right
-MOTION     footage playing; no idle wobble
+LAYERS     bg: wework_doc_news_wsj_neumann_profile_2019_09_18 · fg: type only where TEXT says
+CAMERA     the camera move lives inside the effect (travel to the subject, then still)
+MOTION     acted sequence / sequenced UI life (the picture does what the voice says); no idle wobble
 SEAM       out right
 SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
-TEXT       none
-EFFECT     REUSE @reel
+TEXT       The Wall Street Journal, 18 September 2019
+EFFECT     NEW @doc_quote_line
 
 ### a2-09 · "But here's the problem with a private account: one day, someone else gets to **read** it." (≈ 6.6 s)
-MEANS      a private account is safe until someone outside reads it
-SEE        printed charts on a desk from above, a magnifying glass sliding over them: someone else reading
+MEANS      a private account stays private until someone outside reads it
+SEE        a closed kraft folder stamped PRIVATE lies on the desk; on "someone" its flap lifts and the real S-1 cover slides out toward us
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
-  0.0  arrives already moving from the right; printed charts on a desk from above, a magnifying glass sliding over them: someone else reading
+  0.0  arrives on a hard cut; a closed kraft folder stamped PRIVATE lies on the desk
+  on «someone»  go: the change the sentence names happens
   end  the last 30 % holds a finished, readable frame; exit up
-LAYERS     bg: wework_clip_ipo_analysis · fg: type only where TEXT says
-CAMERA     push in
-MOTION     footage playing; no idle wobble
-SEAM       in right, out up
+LAYERS     bg: wework_doc_s1_cover · fg: type only where TEXT says
+CAMERA     the camera move lives inside the effect (travel to the subject, then still)
+MOTION     acted sequence / sequenced UI life (the picture does what the voice says); no idle wobble
+SEAM       out up
 SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
 TEXT       none
-EFFECT     REUSE @reel
+EFFECT     NEW @folder_reveal
 
-### a3-01 · "On Wednesday, August fourteenth, twenty nineteen, WeWork filed its **S-1**." (≈ 4.2 s)
-MEANS      14 Aug 2019: the S-1 is filed
+### a3-01 · "On Wednesday, August fourteenth, twenty nineteen, WeWork filed its **S-1**. / It's the document a company must publish before it sells shares on the stock **market**." (≈ 10.0 s)
+MEANS      14 Aug 2019: the S-1, the document a company must publish before listing
 SEE        the S-1's real cover page drops onto a dark desk with weight; the rest of the filing builds up under it into a thick stack; FILED 14 AUG 2019 types beside it
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
@@ -801,32 +692,17 @@ CAMERA     the camera move lives inside the effect (travel to the subject, then 
 MOTION     acted sequence / sequenced UI life (the picture does what the voice says); no idle wobble
 SEAM       in up (a reveal), out right
 SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
-TEXT       FORM S-1 · filed 14 August 2019 · The We Company
+TEXT       FORM S-1 · filed 14 August 2019
 EFFECT     NEW @page_stack
 
-### a3-02 · "It's the document a company must publish before it sells shares on the stock **market**." (≈ 6.2 s)
-MEANS      what an S-1 is: the document before a stock listing
-SEE        the New York Stock Exchange facade hung with huge American flags, the camera rising up the columns
-WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
-SECONDS
-  0.0  arrives already moving from the right; the New York Stock Exchange facade hung with huge American flags, the camera rising up the columns
-  end  the last 30 % holds a finished, readable frame; exit on the cut
-LAYERS     bg: stock_finance_exchange_floor_12 · fg: type only where TEXT says
-CAMERA     tilt/rise up
-MOTION     footage playing; no idle wobble
-SEAM       in right
-SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
-TEXT       none
-EFFECT     REUSE @reel
-
 ### a3-03 · "Outsiders could finally **read** it." (≈ 2.3 s)
-MEANS      outsiders could finally read the books
-SEE        a man with coffee reading a newspaper, close; the camera eases in to the page
+MEANS      outsiders could finally read it
+SEE        the S-1's real table of contents on the desk, the camera reading down it
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
-  0.0  arrives on a hard cut; a man with coffee reading a newspaper, close
+  0.0  arrives on a hard cut; the S-1's real table of contents on the desk, the camera reading down it
   end  the last 30 % holds a finished, readable frame; exit right
-LAYERS     bg: stock_documents_newspapers_10 · fg: type only where TEXT says
+LAYERS     bg: wework_doc_s1_toc · fg: type only where TEXT says
 CAMERA     push in
 MOTION     footage playing; no idle wobble
 SEAM       out right
@@ -866,8 +742,8 @@ SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
 TEXT       NET LOSS 2018 · $1.61 BILLION
 EFFECT     NEW @doc_lift
 
-### a3-06 · "So the filing invented its own profit measure: "community-adjusted EBITDA". It left out costs like **rent**. (J)" (≈ 6.6 s)
-MEANS      the S-1 invented a profit measure that left out rent
+### a3-06 · "So the filing invented its own profit measure: "community-adjusted EBITDA". It left out costs like **rent**. (J) / For a company whose whole business was paying rent, that's like a bakery leaving out the **flour**. (J)" (≈ 13.1 s)
+MEANS      an invented profit measure that left out rent (a bakery without flour)
 SEE        a sheet on the desk headed COMMUNITY-ADJUSTED EBITDA with three lines; on "rent" the – RENT line is cut out of the sheet and drops out of frame, leaving a black slot
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
@@ -882,21 +758,6 @@ SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
 TEXT       COMMUNITY-ADJUSTED EBITDA · MEMBERSHIP REVENUE~– RENT~– OTHER COSTS
 EFFECT     NEW @cut_out_word
 
-### a3-07 · "For a company whose whole business was paying rent, that's like a bakery leaving out the **flour**. (J)" (≈ 6.9 s)
-MEANS      the joke: a bakery leaving out the flour
-SEE        a cook carries a freshly baked dish across a bright kitchen toward a camera on a tripod
-WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
-SECONDS
-  0.0  arrives already moving from the right; a cook carries a freshly baked dish across a bright kitchen toward a camera on a tripod
-  end  the last 30 % holds a finished, readable frame; exit on the cut
-LAYERS     bg: stock_scam_creator_filming_kitchen_37 · fg: type only where TEXT says
-CAMERA     track right
-MOTION     footage playing; no idle wobble
-SEAM       in right
-SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
-TEXT       none
-EFFECT     REUSE @reel
-
 ### a3-08 · "Then, on page forty-one of the filing, one line decided **everything**." (≈ 4.6 s)
 MEANS      one page, p.41, decided everything
 SEE        the filing's real pages flick past like a thumbed book — cover, contents, the summary tables, risk factors — slowing, and stop on page 41 on "forty-one"
@@ -910,24 +771,23 @@ CAMERA     the camera move lives inside the effect (travel to the subject, then 
 MOTION     acted sequence / sequenced UI life (the picture does what the voice says); no idle wobble
 SEAM       hard cut
 SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
-TEXT       none
+TEXT       PAGE 41
 EFFECT     NEW @page_turn
 
 ### a3-09 · "Future lease payments, already signed: forty-seven point two billion **dollars**." (≈ 4.2 s)
-MEANS      $47.2B of future lease payments already signed (p.41 verbatim)
-SEE        page 41 held; the camera reads into its first lines; "future undiscounted minimum lease cost payment obligations" highlights on "Future", "$47.2 billion" on "forty-seven"
+MEANS      $47.2B of future lease payments already signed, page 41 verbatim
+SEE        page 41's opening two lines lifted out of the page as a wide strip, large enough to read; "future undiscounted minimum lease cost payment obligations" highlights on "Future", "$47.2 billion" on "forty-seven"
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
-  0.0  arrives on a hard cut; page 41 held
-  on «Future»  zoom: the camera reads into the passage
+  0.0  arrives on a hard cut; page 41's opening two lines lifted out of the page as a wide strip, large enough to read
   end  the last 30 % holds a finished, readable frame; exit on the cut
 LAYERS     bg: wework_doc_s1_lease_47bn_p41 · fg: type only where TEXT says
 CAMERA     the camera move lives inside the effect (travel to the subject, then still)
 MOTION     acted sequence / sequenced UI life (the picture does what the voice says); no idle wobble
 SEAM       HOLD, then hard cut
 SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
-TEXT       none
-EFFECT     NEW @page_turn
+TEXT       WeWork Form S-1, page 41, 14 August 2019
+EFFECT     NEW @doc_quote_line
 
 ### a3-10 · "Against that, contracted membership revenue of about four **billion**. [BEAT]" (≈ 3.9 s)
 MEANS      against ~$4B of contracted membership revenue
@@ -1028,11 +888,10 @@ EFFECT     NEW @valuation_tag
 
 ### a3-16 · "In September, WeWork cut his votes, dropped the successor clause, and he handed back the **trademark** money." (≈ 6.9 s)
 MEANS      September: governance overhaul (votes cut, clause dropped, trademark money returned)
-SEE        the desk again: the FT's 13 September 2019 headline and the S-1 cover lie side by side; on "cut" the FT print lifts and fills the frame — WeWork overhauls corporate governance in bid to save IPO
+SEE        the desk again: the FT's 13 September 2019 headline and the S-1 cover lie side by side; on "cut" a red marker circles the FT print — WeWork overhauls corporate governance in bid to save IPO
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
   0.0  arrives already moving from the right; the desk again: the FT's 13 September 2019 headline and the S-1 cover lie side by side
-  on «cut»  at: the change lands
   end  the last 30 % holds a finished, readable frame; exit in
 LAYERS     bg: wework_doc_news_ft_governance_ipo_2019_09_13 · mid: wework_doc_s1_cover · fg: type only where TEXT says
 CAMERA     the camera move lives inside the effect (travel to the subject, then still)
@@ -1060,18 +919,19 @@ EFFECT     NEW @photo_drain
 
 ### a3-18 · "The same day, the company put the jet up for **sale**. (J)" (≈ 4.6 s)
 MEANS      the same day the jet was put up for sale
-SEE        hard cut on "jet": an executive signing papers in a private jet cabin; hard cut on "sale": a FOR SALE sign planted in the ground
+SEE        a white private jet on the apron from above; on "sale" a red FOR SALE placard is planted on the tarmac beside it, dated 24 SEPTEMBER 2019
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
-  0.0  arrives on a hard cut; hard cut on "jet": an executive signing papers in a private jet cabin
+  0.0  arrives on a hard cut; a white private jet on the apron from above
+  on «sale»  go: the change the sentence names happens
   end  the last 30 % holds a finished, readable frame; exit on the cut
-LAYERS     bg: stock_place_private_jet_04 · mid: stock_realestate_sale_sign_07 · fg: type only where TEXT says
+LAYERS     bg: wework_clip_private_jet_airport · fg: type only where TEXT says
 CAMERA     the camera move lives inside the effect (travel to the subject, then still)
-MOTION     footage playing; no idle wobble
-SEAM       cuts on words
+MOTION     acted sequence / sequenced UI life (the picture does what the voice says); no idle wobble
+SEAM       hard cut
 SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
-TEXT       none
-EFFECT     REUSE @word_cut_montage
+TEXT       24 SEPTEMBER 2019
+EFFECT     NEW @sign_on_footage
 
 ### a3-19 · "Six days later, the stock market listing was **cancelled**." (≈ 3.9 s)
 MEANS      six days later the IPO filing was withdrawn
@@ -1091,18 +951,20 @@ EFFECT     REUSE @burn_away
 
 ### a4-01 · "And that's when the two accounts **split**, and the money went one way." (≈ 5.4 s)
 MEANS      the two accounts split for good
-SEE        the two accounts, same pictures; the spine cracks wider on "split" and the company's half drains grey while the founder's warms
+SEE        the two accounts, same pictures; the spine splits wide on "split" and the company half drops; KEEPS THE LEASES / SELLS HIS SHARES type in and the company's half drains grey while the founder's warms
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
   0.0  arrives already moving from the right; the two accounts, same pictures
   on «split»  wat: the losing side drains to grey
+  on «money»  lat: the company value types in
+  on «way»  rat: the founder value types in
   end  the last 30 % holds a finished, readable frame; exit right
 LAYERS     bg: wework_sign_toronto_richmond · mid: wework_neumann_2015_disrupt_portrait · fg: type only where TEXT says
 CAMERA     the camera move lives inside the effect (travel to the subject, then still)
 MOTION     acted sequence / sequenced UI life (the picture does what the voice says); no idle wobble
 SEAM       in right, out right
 SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
-TEXT       THE COMPANY · WEWORK · THE FOUNDER · ADAM NEUMANN
+TEXT       THE COMPANY · WEWORK · THE FOUNDER · ADAM NEUMANN · KEEPS THE LEASES · SELLS HIS SHARES
 EFFECT     NEW @two_accounts
 
 ### a4-02 · "In October, SoftBank rescued WeWork. The headline said nine and a half billion **dollars**. / But only six and a half billion was for the **company**." (≈ 10.0 s)
@@ -1121,19 +983,19 @@ TEXT       $9.5 BILLION^THE HEADLINE · OCTOBER 2019
 EFFECT     NEW @headline_split
 
 ### a4-03 · "Three billion was an offer to buy shares from existing **owners**." (≈ 4.6 s)
-MEANS      $3B was a tender for existing shareholders
-SEE        two suited arms meet in a handshake over papers on a table: shares bought from people who already owned them
+MEANS      $3B of the rescue was a tender to existing shareholders
+SEE        SoftBank's real release on the left; the gold $6.5B arrow into WeWork is already drawn; on "offer" a blue arrow forks to a room of existing shareholders: $3B TO BUY THEIR SHARES
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
-  0.0  arrives on a hard cut; two suited arms meet in a handshake over papers on a table: shares bought from people who already owned them
+  0.0  arrives on a hard cut; SoftBank's real release on the left
   end  the last 30 % holds a finished, readable frame; exit right
-LAYERS     bg: wework_clip_handshake_deal · fg: type only where TEXT says
-CAMERA     push in
-MOTION     footage playing; no idle wobble
+LAYERS     bg: wework_doc_softbank_release_cover_p1 · mid: wework_bldg_denver_vault, wework_clip_meeting_discussion · fg: type only where TEXT says
+CAMERA     the camera move lives inside the effect (travel to the subject, then still)
+MOTION     acted sequence / sequenced UI life (the picture does what the voice says); no idle wobble
 SEAM       out right
 SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
 TEXT       none
-EFFECT     REUSE @reel
+EFFECT     NEW @money_fork
 
 ### a4-04 · "One of them was the founder, Adam **Neumann**." (≈ 3.5 s)
 MEANS      one of those shareholders was Neumann
@@ -1181,15 +1043,15 @@ TEXT       none
 EFFECT     REUSE @blocks
 
 ### a4-07 · "Part of that deal was later cancelled, then settled on terms that were never fully **disclosed**." (≈ 6.6 s)
-MEANS      part of it was later cancelled and settled on undisclosed terms
-SEE        the camera pans across a sheet marked CONTRACT; on "cancelled" the picture drains to grey
+MEANS      part of the exit deal was later cancelled and settled on undisclosed terms
+SEE        the WSJ's real page of 22 October 2019 (SoftBank to provide Neumann with nearly $1.7B) under the lamp; on "cancelled" it drains to grey
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
-  0.0  arrives on a hard cut; the camera pans across a sheet marked CONTRACT
+  0.0  arrives on a hard cut; the WSJ's real page of 22 October 2019 (SoftBank to provide Neumann with nearly $1.7B) under the lamp
   on «cancelled»  mono: the picture drains to grey
   end  the last 30 % holds a finished, readable frame; exit right
-LAYERS     bg: wework_clip_ipo_signing_2 · fg: type only where TEXT says
-CAMERA     track right
+LAYERS     bg: wework_doc_news_wsj_softbank_control_2019_10_22 · fg: type only where TEXT says
+CAMERA     push in
 MOTION     footage playing; no idle wobble
 SEAM       out right
 SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
@@ -1243,23 +1105,8 @@ SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
 TEXT       STILL OPEN · the pandemic in 2020 → the bankruptcy filing in November 2023
 EFFECT     NEW @month_flip
 
-### a4-11 · "In October twenty twenty-one, it finally reached the stock market, through a **SPAC**." (≈ 5.4 s)
-MEANS      Oct 2021: listing through a SPAC
-SEE        looking along the Wall Street canyon toward the columned exchange, the camera travelling forward
-WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
-SECONDS
-  0.0  arrives already moving from the right; looking along the Wall Street canyon toward the columned exchange, the camera travelling forward
-  end  the last 30 % holds a finished, readable frame; exit right
-LAYERS     bg: stock_finance_wall_street_sign_04 · fg: type only where TEXT says
-CAMERA     push in
-MOTION     footage playing; no idle wobble
-SEAM       in right, out right
-SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
-TEXT       none
-EFFECT     REUSE @reel
-
-### a4-12 · "A SPAC is a shell company that's already on the stock market, so a merger skips the usual **filing**." (≈ 7.7 s)
-MEANS      what a SPAC is: a listed shell; the merger skips the usual filing
+### a4-12 · "In October twenty twenty-one, it finally reached the stock market, through a **SPAC**. / A SPAC is a shell company that's already on the stock market, so a merger skips the usual **filing**." (≈ 12.7 s)
+MEANS      Oct 2021: a SPAC, a listed shell; the merger skips the usual filing
 SEE        over the dim exchange: an empty box already stands on THE STOCK MARKET line (LISTED SHELL); on "merger" a gold WEWORK card slides into it and the lid closes; THE USUAL FILING card above is struck through on "skips"
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
@@ -1292,20 +1139,19 @@ TEXT       none
 EFFECT     REUSE @blocks
 
 ### a4-14 · "A big headline, then a smaller real number. **Again**. (J)" (≈ 3.9 s)
-MEANS      the pattern again: a big headline, a smaller real number
-SEE        the gears and rollers of a newspaper press spinning; on "Again" the footage freezes
+MEANS      the pattern, all five times: headline vs the money that moved
+SEE        a ledger of the film's numbers lands row by row on the words: 2017 $4.4B → $3B, JAN 2019 $2B → $1B NEW, RESCUE $9.5B → $6.5B, EXIT $1.7B → $970M SHARES, SPAC $9B → $1.28B CASH — dashed headline bars, solid real bars
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
-  0.0  arrives already moving from the right; the gears and rollers of a newspaper press spinning
-  on «Again»  freeze: the footage freezes
+  0.0  arrives on a hard cut; a ledger of the film's numbers lands row by row on the words: 2017 $4.4B → $3B, JAN 2019 $2B → $1B NEW, RESCUE $9.5B → $6.5B, EXIT $1.7B → $970M SHARES, SPAC $9B → $1.28B CASH — dashed headline bars, solid real bars
   end  the last 30 % holds a finished, readable frame; exit right
-LAYERS     bg: stock_news_press_gears_01 · fg: type only where TEXT says
-CAMERA     push in
-MOTION     footage playing; no idle wobble
-SEAM       in right, out right
+LAYERS     bg: drawn desk / black · fg: type only where TEXT says
+CAMERA     the camera move lives inside the effect (travel to the subject, then still)
+MOTION     acted sequence / sequenced UI life (the picture does what the voice says); no idle wobble
+SEAM       out right
 SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
-TEXT       none
-EFFECT     REUSE @reel
+TEXT       THE HEADLINE vs THE MONEY THAT MOVED
+EFFECT     NEW @headline_vs_real
 
 ### a5-01 · "In March twenty twenty-three, WeWork announced its first month of adjusted profit, back in **December**." (≈ 6.2 s)
 MEANS      March 2023: WeWork announces its first month of adjusted profit (December 2022)
@@ -1371,20 +1217,19 @@ TEXT       OF THE SPACE IN USE · physical occupancy, second quarter of 2023
 EFFECT     NEW @occupancy_grid
 
 ### a5-05 · "Its lawyers said it had already renegotiated five hundred and ninety **leases**, building by building." (≈ 6.2 s)
-MEANS      it had renegotiated 590 leases (per its lawyers)
-SEE        the dark frame fills with 590 gold points spreading outward, one per lease; 590 LEASES sets above
+MEANS      590 leases renegotiated, building by building
+SEE        loose printed lease forms spread across a white table and smoothed flat, one after another
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
-  0.0  arrives on a hard cut; the dark frame fills with 590 gold points spreading outward, one per lease
-  on «renegotiated»  go: the change the sentence names happens
+  0.0  arrives on a hard cut; loose printed lease forms spread across a white table and smoothed flat, one after another
   end  the last 30 % holds a finished, readable frame; exit right
-LAYERS     bg: drawn desk / black · fg: type only where TEXT says
-CAMERA     the camera move lives inside the effect (travel to the subject, then still)
-MOTION     acted sequence / sequenced UI life (the picture does what the voice says); no idle wobble
+LAYERS     bg: stock_investigation_papers_spread_01 · fg: type only where TEXT says
+CAMERA     track right
+MOTION     footage playing; no idle wobble
 SEAM       out right
 SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
-TEXT       590 LEASES RENEGOTIATED · before the filing, according to WeWork’s lawyers
-EFFECT     REUSE @dots
+TEXT       none
+EFFECT     REUSE @reel
 
 ### a5-06 · "Then, on Monday, November sixth, twenty twenty-three, WeWork filed for **bankruptcy**." (≈ 4.6 s)
 MEANS      6 Nov 2023: Chapter 11 petition
@@ -1400,7 +1245,7 @@ CAMERA     the camera move lives inside the effect (travel to the subject, then 
 MOTION     acted sequence / sequenced UI life (the picture does what the voice says); no idle wobble
 SEAM       in right
 SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
-TEXT       CHAPTER 11 · filed 6 November 2023 · District of New Jersey
+TEXT       CHAPTER 11 · filed 6 November 2023
 EFFECT     NEW @page_stack
 
 ### a5-07 · "It had about one hundred and sixty-four million dollars in **cash**. / Against that: eighteen point six six billion in liabilities on its **books**." (≈ 9.2 s)
@@ -1486,12 +1331,12 @@ EFFECT     NEW @window_count
 
 ### a5-12 · "Flow would rent them out with the same promise: not just a home, a **community**." (≈ 6.2 s)
 MEANS      Flow: rent them out as community
-SEE        a wide, furnished living room, a ceiling fan turning, the camera drifting right
+SEE        the kitchen and dining corner of a furnished model apartment, velvet chairs, the camera drifting right
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
-  0.0  arrives on a hard cut; a wide, furnished living room, a ceiling fan turning, the camera drifting right
+  0.0  arrives on a hard cut; the kitchen and dining corner of a furnished model apartment, velvet chairs, the camera drifting right
   end  the last 30 % holds a finished, readable frame; exit right
-LAYERS     bg: wework_clip_flow_interior_livingroom · fg: type only where TEXT says
+LAYERS     bg: wework_clip_flow_interior_cozy · fg: type only where TEXT says
 CAMERA     track right
 MOTION     footage playing; no idle wobble
 SEAM       out right
@@ -1592,19 +1437,20 @@ TEXT       “…partnering with Third Point…”^Neumann’s lawyers’ letter
 EFFECT     NEW @claim_vs_denial
 
 ### a6-05 · "So the creditors chose their own deal, and in May, Neumann walked **away**." (≈ 5.4 s)
-MEANS      creditors chose their plan; Neumann walked away
-SEE        a man in a checked suit, bag in hand, walks away toward an iron gate and the street
+MEANS      creditors chose their plan; Neumann walked away (28 May 2024)
+SEE        his framed portrait on the dark wall again, plate BIDDER; on "away" the photo drains grey and slides out of the frame; 28 MAY 2024 sets beside it
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
-  0.0  arrives already moving from the right; a man in a checked suit, bag in hand, walks away toward an iron gate and the street
+  0.0  arrives already moving from the right; his framed portrait on the dark wall again, plate BIDDER
+  on «away»  go: the change the sentence names happens
   end  the last 30 % holds a finished, readable frame; exit on the cut
-LAYERS     bg: wework_clip_ipo_leaving_2 · fg: type only where TEXT says
-CAMERA     push in
-MOTION     footage playing; no idle wobble
+LAYERS     bg: wework_neumann_2015_disrupt_close · fg: type only where TEXT says
+CAMERA     the camera move lives inside the effect (travel to the subject, then still)
+MOTION     acted sequence / sequenced UI life (the picture does what the voice says); no idle wobble
 SEAM       in right
 SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
-TEXT       none
-EFFECT     REUSE @reel
+TEXT       BIDDER · 28 MAY 2024
+EFFECT     NEW @photo_drain
 
 ### a6-06 · "@neumann: The company looks to be emerging from bankruptcy with a plan that appears unrealistic and unlikely to succeed." (≈ 7.3 s)
 MEANS      his own epitaph for the bid, verbatim
@@ -1653,19 +1499,19 @@ TEXT       $337M^YARDI · FOR ABOUT 60%^thirty-seven · $10B+^SOFTBANK · PUT IN
 EFFECT     NEW @cash_vs_wall
 
 ### a6-09 · "Then, in April twenty twenty-five, Flow raised more than one hundred million dollars **more**. / The reported value: about two and a half **billion**." (≈ 9.2 s)
-MEANS      April 2025: Flow raises >$100M more at ~$2.5B (reported)
-SEE        a row of new apartment blocks above the trees, the camera rising past their balconies
+MEANS      April 2025: Flow raised >$100M more at ~$2.5B while WeWork had new owners
+SEE        two framed pictures: a WeWork building on the left drains and sinks on "reported" (WEWORK · NEW OWNERS); a Flow-style apartment tower rises into the light on "Flow" (FLOW · ABOUT $2.5B, REPORTED)
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
-  0.0  arrives on a hard cut; a row of new apartment blocks above the trees, the camera rising past their balconies
+  0.0  arrives on a hard cut; two framed pictures: a WeWork building on the left drains and sinks on "reported" (WEWORK · NEW OWNERS)
   end  the last 30 % holds a finished, readable frame; exit right
-LAYERS     bg: wework_clip_flow_building_cloudy · fg: type only where TEXT says
-CAMERA     tilt/rise up
-MOTION     footage playing; no idle wobble
+LAYERS     bg: wework_bldg_brooklyn_navy_south · mid: wework_clip_flow_building_cloudy · fg: type only where TEXT says
+CAMERA     the camera move lives inside the effect (travel to the subject, then still)
+MOTION     acted sequence / sequenced UI life (the picture does what the voice says); no idle wobble
 SEAM       out right
 SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
 TEXT       none
-EFFECT     REUSE @reel
+EFFECT     NEW @rise_and_sink
 
 ### a6-10 · "So, back to that wet morning in Manhattan. The desks are still there, rented by the month, under new **owners**." (≈ 8.1 s)
 MEANS      return to the opening image: desks still rented by the month
@@ -1684,12 +1530,12 @@ SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
 TEXT       none
 EFFECT     REUSE @framed_insert
 
-### a6-11 · "WeWork didn't fall because of one man's ego. It fell because it rented for years and sold by the **month**." (≈ 8.1 s)
-MEANS      thesis part 1: it rented for years and sold by the month
-SEE        black. The thesis arrives word by word in large serif and holds dead still; "month" in gold
+### a6-11 · "WeWork didn't fall because of one man's ego. It fell because it rented for years and sold by the **month**. / And because the investor paying for the growth was also the one who set the **price**." (≈ 14.2 s)
+MEANS      the thesis: it rented for years, sold by the month, and the funder set the price
+SEE        black. The whole thesis arrives word by word in large serif over four lines and holds dead still; "month" and "price" in gold
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
-  0.0  arrives on a hard cut; black. The thesis arrives word by word in large serif and holds dead still
+  0.0  arrives on a hard cut; black. The whole thesis arrives word by word in large serif over four lines and holds dead still
   on «fell»  go: the change the sentence names happens
   end  the last 30 % holds a finished, readable frame; exit on the cut
 LAYERS     bg: drawn desk / black · fg: type only where TEXT says
@@ -1697,23 +1543,7 @@ CAMERA     the camera move lives inside the effect (travel to the subject, then 
 MOTION     acted sequence / sequenced UI life (the picture does what the voice says); no idle wobble
 SEAM       hard cut, HOLD
 SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
-TEXT       It rented for years~and sold by the month.
-EFFECT     NEW @thesis_black
-
-### a6-12 · "And because the investor paying for the growth was also the one who set the **price**." (≈ 6.6 s)
-MEANS      thesis part 2: the funder set the price
-SEE        black. The second half of the thesis arrives the same way and holds; "price" in gold
-WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
-SECONDS
-  0.0  arrives on a hard cut; black. The second half of the thesis arrives the same way and holds
-  on «investor»  go: the change the sentence names happens
-  end  the last 30 % holds a finished, readable frame; exit on the cut
-LAYERS     bg: drawn desk / black · fg: type only where TEXT says
-CAMERA     the camera move lives inside the effect (travel to the subject, then still)
-MOTION     acted sequence / sequenced UI life (the picture does what the voice says); no idle wobble
-SEAM       hard cut, HOLD
-SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
-TEXT       And the one paying for the growth~set the price.
+TEXT       It rented for years~and sold by the month.~And the one paying for the growth~set the price.
 EFFECT     NEW @thesis_black
 
 ### a6-13 · "The founder survived for a simpler reason: a valuation isn't cash, and a famous name opens the next **door**." (≈ 7.7 s)
@@ -1748,13 +1578,13 @@ TEXT       NEXT TIME YOU HEAR A VALUATION, ASK · WHO SET THE PRICE?^who~HOW MUC
 EFFECT     NEW @two_questions
 
 ### a6-15 · "Flow says it may go public one day, and if it does, it will have to file its own S-1, with every number, for anyone to **read**. [BEAT]" (≈ 10.8 s)
-MEANS      Flow may list one day and would have to file its own S-1
-SEE        the glass doors of a new apartment building, a tower blurred above; the camera eases toward the doors
+MEANS      Flow would have to file its own S-1, with every number
+SEE        the S-1's real summary table, every number in its column, the camera reading in slowly
 WORLD      real New York / real WeWork floors / the documents of record (the two accounts)
 SECONDS
-  0.0  arrives already moving from the right; the glass doors of a new apartment building, a tower blurred above
+  0.0  arrives already moving from the right; the S-1's real summary table, every number in its column, the camera reading in slowly
   end  the last 30 % holds a finished, readable frame; exit on the cut
-LAYERS     bg: wework_clip_flow_building_location · fg: type only where TEXT says
+LAYERS     bg: wework_doc_s1_summary_financial_p21 · fg: type only where TEXT says
 CAMERA     push in
 MOTION     footage playing; no idle wobble
 SEAM       in right
@@ -1776,7 +1606,7 @@ CAMERA     the camera move lives inside the effect (travel to the subject, then 
 MOTION     acted sequence / sequenced UI life (the picture does what the voice says); no idle wobble
 SEAM       in right, out right
 SOUND      room tone + the effect's own SFX on its cue; music ducks under [BEAT]
-TEXT       WEWORK · READ IN PUBLIC · THE FOUNDER · FLOW · S-1 · 2019 · NOT YET FILED
+TEXT       WEWORK · READ IN PUBLIC · THE FOUNDER · FLOW · S-1 · 2019 · NOT FILED
 EFFECT     NEW @two_accounts
 
 ### a6-17 · "Should a founder get a second chance this fast? Tell us in the **comments** below." (≈ 6.2 s)
@@ -1799,26 +1629,34 @@ EFFECT     REUSE @reel
 |---|---|---|---|
 | @balance_scale | NEW | a3-10 | effects/balance_scale.js |
 | @bid_cards | NEW | a6-02 | effects/bid_cards.js |
+| @cash_pile | NEW | a2-06 | effects/cash_pile.js |
 | @cash_vs_wall | NEW | a5-07, a6-08 | effects/cash_vs_wall.js |
 | @claim_vs_denial | NEW | a6-03, a6-04 | effects/claim_vs_denial.js |
 | @cut_out_word | NEW | a3-06 | effects/cut_out_word.js |
 | @doc_lift | NEW | a3-04, a3-05 | effects/doc_lift.js |
+| @doc_quote_line | NEW | a2-08, a3-09 | effects/doc_quote_line.js |
 | @doc_read | NEW | a1-15, a2-02 | effects/doc_read.js |
 | @floor_grid | NEW | a1-04, a1-05 | effects/floor_grid.js |
+| @folder_reveal | NEW | a2-09 | effects/folder_reveal.js |
 | @grid_wall | NEW | a4-09, a5-09 | effects/grid_wall.js |
 | @headline_split | NEW | a4-02, a4-05 | effects/headline_split.js |
+| @headline_vs_real | NEW | a4-14 | effects/headline_vs_real.js |
 | @landlord_tenant | NEW | a2-04 | effects/landlord_tenant.js |
+| @money_fork | NEW | a1-17, a4-03 | effects/money_fork.js |
 | @money_loop | NEW | a1-20 | effects/money_loop.js |
 | @month_flip | NEW | a0-13, a4-10 | effects/month_flip.js |
 | @occupancy_grid | NEW | a5-04 | effects/occupancy_grid.js |
 | @page_stack | NEW | a3-01, a5-06 | effects/page_stack.js |
-| @page_turn | NEW | a3-08, a3-09 | effects/page_turn.js |
-| @photo_drain | NEW | a3-17 | effects/photo_drain.js |
+| @page_turn | NEW | a3-08 | effects/page_turn.js |
+| @photo_drain | NEW | a3-17, a6-05 | effects/photo_drain.js |
 | @place_pin | NEW | a1-02, a1-03 | effects/place_pin.js |
 | @post_quote | NEW | a5-13, a6-06 | effects/post_quote.js |
 | @quote_beside | NEW | a0-04, a5-02 | effects/quote_beside.js |
+| @rise_and_sink | NEW | a0-06, a6-09 | effects/rise_and_sink.js |
 | @shell_merge | NEW | a4-12 | effects/shell_merge.js |
-| @thesis_black | NEW | a6-11, a6-12 | effects/thesis_black.js |
+| @sign_on_footage | NEW | a3-18 | effects/sign_on_footage.js |
+| @thesis_black | NEW | a6-11 | effects/thesis_black.js |
+| @timeline_pins | NEW | a0-14 | effects/timeline_pins.js |
 | @two_accounts | NEW | a0-08, a2-01, a4-01, a5-10, a6-16 | effects/two_accounts.js |
 | @two_questions | NEW | a6-14 | effects/two_questions.js |
 | @valuation_tag | NEW | a1-16, a3-15 | effects/valuation_tag.js |
@@ -1831,27 +1669,25 @@ EFFECT     REUSE @reel
 | @cent_grid | REUSE | a5-03 | library |
 | @chat | REUSE | a5-14 | library |
 | @doc_flip | REUSE | a0-10, a2-03 | library |
-| @dots | REUSE | a5-05 | library |
 | @email_page | REUSE | a2-05 | library |
-| @footage_split | REUSE | a1-06, a2-07 | library |
 | @framed_insert | REUSE | a0-02, a6-10 | library |
-| @ramp_freeze | REUSE | a0-14 | library |
-| @reel | REUSE | a0-01, a0-06, a0-07, a0-09, a0-11, a0-12, a0-15, a1-07, a1-08, a1-10, a1-14, a1-18, a1-19, a2-06, a2-08, a2-09, a3-02, a3-03, a3-07, a3-12, a3-14, a4-03, a4-04, a4-07, a4-08, a4-11, a4-14, a5-01, a5-08, a5-12, a6-01, a6-05, a6-07, a6-09, a6-13, a6-15, a6-17 | library |
-| @split_note | REUSE | a1-12, a1-17 | library |
+| @reel | REUSE | a0-01, a0-11, a0-15, a1-06, a1-07, a1-08, a1-10, a3-03, a3-12, a3-14, a4-04, a4-07, a4-08, a5-01, a5-05, a5-08, a5-12, a6-01, a6-07, a6-13, a6-15, a6-17 | library |
+| @split_note | REUSE | a1-12 | library |
 | @table | REUSE | a1-01, a3-16 | library |
 | @tear_reveal | REUSE | a0-05 | library |
-| @word_cut_montage | REUSE | a1-13, a3-18 | library |
+| @word_cut_montage | REUSE | a1-13 | library |
 
 ## 5. STORYBOARD
 The storyboard is the seven act files, built from the cards above (every beat starts with its `// CARD` line):
 `studio/stories/wework-a0.story` … `studio/stories/wework-a6.story` (header: `look: editorial`, `voice: supertonic:M1`, `captions: off`, `autotrans: off`, `motif: two_accounts`; only a6 omits `endcard: off`).
 
 ## 6. INSTRUCTIONS FOR MUSE
-Built in-repo by Claude Code (no hand-off). For a round 2 the line is `bổ sung shotlist wework` (see SHOTLIST NEED rows: the founders in 2010-11, GreenDesk, 88 University Place, WeWork's Gulfstream, flour in a bakery, real Flow buildings, the Calacanis post screenshot, Neumann in 2024).
+Built in-repo by Claude Code (no hand-off). For a round 2 the line is `bổ sung shotlist wework` (see SHOTLIST NEED rows: the founders in 2010-11, GreenDesk, 88 University Place, flour in a bakery, real Flow buildings and interiors, the Calacanis post screenshot, Neumann in 2024).
 
 ## 7. DIRECTOR'S SELF-CHECK
-- beats 108 · sentences 118 · NEW effects 29 (≥ 1 per act ✓, each saved with pp_fx) · no effect more than 2× in the film except the declared motif (once per act) ✓ · every act has ≥ 2 effects no other act uses ✓
+- beats 97 · sentences 118 · NEW effects 37 (≥ 1 per act ✓, each saved to `studio/effects/`) · no effect more than 2× in the film except the declared motif (once per act) ✓ · every act has ≥ 2 effects no other act uses ✓ (pp_motion)
 - look chosen because the story lives in filings and real rooms, not in code · laughs (J) 14 · no cartoon characters ✓
 - pp_scriptlint 9.2 · hook + promise ≤ 30 s ✓ · re-hooks ✓ · midpoint p.41 ✓ · 3 scenes in the room ✓ · final line 15 words ✓
-- a SCENE CARD for every beat ✓ · every seam has a direction ✓ · no fades ✓ · type never the picture (one line at most, on real pictures) ✓
+- a SCENE CARD for every beat ✓ · every seam has a direction ✓ · no fades ✓ · type never the picture (one line at most, on real pictures; the thesis on black is the channel's signature) ✓
 - every number in §3 is in §1 ✓ · the UNVERIFIED $820M is not used ✓ · the bid is never called "raised" ✓
+- critic round 1 (sheets): 53.7 % of beats ≥ 5/8, 67.6 % swap PASS → redesign of 33 beats (12 weak sentences merged into their neighbours, stock wallpaper replaced by the WSJ, FT, SoftBank and S-1 pages, 8 new effects)

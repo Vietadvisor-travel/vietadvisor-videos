@@ -11,15 +11,12 @@ endcard: off
 motif: two_accounts
 
 // CARD a3-01 · SEE: the S-1's real cover page drops onto a dark desk with weight; the rest of the filing builds up under it into a thick stack; FILED 14 AUG 2019 types beside it · SEAM in up (a reveal), out right
-# cine act=doubt fx="code:@page_stack;doc:wework_doc_s1_cover;crop:.39,0,1,.6;land:Wednesday;grow:S-1;pages:34;lab:FORM S-1;sub:filed 14 August 2019;in:up;out:right"
-{tense} On Wednesday, August fourteenth, twenty nineteen, WeWork filed its **S-1**.
-
-// CARD a3-02 · SEE: the New York Stock Exchange facade hung with huge American flags, the camera rising up the columns · SEAM in right
-# cine act=doubt fx="code:@reel;clip:stock_finance_exchange_floor_12;move:up;z:.08;in:right"
+# cine act=doubt fx="code:@page_stack;doc:wework_doc_s1_cover;crop:.39,0,1,.6;land:Wednesday;grow:document;pages:34;lab:FORM S-1;sub:filed 14 August 2019;in:up;out:right"
+{tense} On Wednesday, August fourteenth, twenty nineteen, WeWork **filed** its S-1.
 It's the document a company must publish before it sells shares on the stock **market**.
 
-// CARD a3-03 · SEE: a man with coffee reading a newspaper, close; the camera eases in to the page · SEAM out right
-# cine act=doubt fx="code:@reel;clip:stock_documents_newspapers_10;move:in;z:.1;out:right"
+// CARD a3-03 · SEE: the S-1's real table of contents on the desk, the camera reading down it · SEAM out right
+# cine act=doubt fx="code:@reel;under:wework_doc_s1_toc;ua:0;fy:.2;move:in;z:.12;out:right"
 Outsiders could finally **read** it.
 
 // CARD a3-04 · SEE: the real statement of operations (page F-5) across the desk; on "one point eight two" the 2018 revenue figure is cut out of the page and lifts toward us; REVENUE 2018 · $1.82B · SEAM in right
@@ -33,17 +30,14 @@ And it lost one point six one **billion**.
 // CARD a3-06 · SEE: a sheet on the desk headed COMMUNITY-ADJUSTED EBITDA with three lines; on "rent" the – RENT line is cut out of the sheet and drops out of frame, leaving a black slot · SEAM out right
 # cine act=doubt fx="code:@cut_out_word;title:COMMUNITY-ADJUSTED EBITDA;lines:MEMBERSHIP REVENUE~– RENT~– OTHER COSTS;cut:1;go:rent;note:the S-1’s own profit measure left out major costs, including rent;out:right"
 So the filing invented its own profit measure: "community-adjusted EBITDA". It left out costs like **rent**. (J)
-
-// CARD a3-07 · SEE: a cook carries a freshly baked dish across a bright kitchen toward a camera on a tripod · SEAM in right
-# cine act=doubt fx="code:@reel;clip:stock_scam_creator_filming_kitchen_37;move:right;z:.08;in:right"
 For a company whose whole business was paying rent, that's like a bakery leaving out the **flour**. (J)
 
 // CARD a3-08 · SEE: the filing's real pages flick past like a thumbed book — cover, contents, the summary tables, risk factors — slowing, and stop on page 41 on "forty-one" · SEAM hard cut
-# cine act=fall fx="code:@page_turn;pages:wework_doc_s1_toc,wework_doc_s1_summary_financial_p21,wework_doc_s1_summary_pershare_balancesheet_p22,wework_doc_s1_summary_operating_kpi_p23,wework_doc_s1_risk_factors_p24,wework_doc_s1_related_party_p197,wework_doc_s1_lease_47bn_p41;stop:forty-one"
+# cine act=fall fx="code:@page_turn;pages:wework_doc_s1_toc,wework_doc_s1_summary_financial_p21,wework_doc_s1_summary_pershare_balancesheet_p22,wework_doc_s1_summary_operating_kpi_p23,wework_doc_s1_risk_factors_p24,wework_doc_s1_related_party_p197,wework_doc_s1_lease_47bn_p41;stop:forty-one;lab:PAGE 41"
 Then, on page forty-one of the filing, one line decided **everything**.
 
-// CARD a3-09 · SEE: page 41 held; the camera reads into its first lines; "future undiscounted minimum lease cost payment obligations" highlights on "Future", "$47.2 billion" on "forty-seven" · SEAM HOLD, then hard cut
-# cine act=fall fx="code:@page_turn;pages:wework_doc_s1_lease_47bn_p41;marks:.3,.004,.63,.022@Future~.008,.023,.078,.043@forty-seven;zoom:Future;z:1.4"
+// CARD a3-09 · SEE: page 41's opening two lines lifted out of the page as a wide strip, large enough to read; "future undiscounted minimum lease cost payment obligations" highlights on "Future", "$47.2 billion" on "forty-seven" · SEAM HOLD, then hard cut
+# cine act=fall fx="code:@doc_quote_line;doc:wework_doc_s1_lease_47bn_p41;line:.283,.002,.646,.024+.646,.002,.997,.024+0,.022,.086,.044;marks:.285,.004,.645,.022@Future~.006,.023,.084,.043@forty-seven;src:WeWork Form S-1, page 41, 14 August 2019"
 Future lease payments, already signed: forty-seven point two billion **dollars**.
 
 // CARD a3-10 · SEE: a brass beam scale over Wall Street; the left pan takes $47.2B · LEASES SIGNED and the beam slams down to the left; on "four" the right pan takes $4B · MEMBERSHIPS — the beam barely moves · SEAM [BEAT] stillness after
@@ -55,7 +49,7 @@ Against that, contracted membership revenue of about four **billion**. [BEAT]
 {grave} Years of rent on one side. Months of membership on the **other**.
 
 // CARD a3-12 · SEE: a long empty glass corridor, dead still; THE POISON PILL lands in the middle on "poison" and does not move; the three clauses sit under it · SEAM in right, HOLD
-# cine act=fall fx="code:@reel;under:wework_art_office_corridor;ua:0;move:in;z:.05;txt:THE POISON PILL;tsize:110;tfont:impact;ty:.4;tat:poison;tcol:#ff6b5e;sub:rent for years · sell by the month · let the funder set the price;in:right"
+# cine act=fall fx="code:@reel;under:wework_art_office_corridor;ua:0;move:in;z:.05;txt:THE POISON PILL;tsize:110;tfont:impact;ty:.4;tat:poison;tcol:#f4efe4;sub:rent for years · sell by the month · let the funder set the price;in:right"
 That's the poison pill: rent for years, sell by the month, and let your funder set the **price**.
 
 // CARD a3-13 · SEE: over a blurred Neumann on stage: one ordinary share card holds a single ballot (1); on "twenty" the founder's card fans out into 20 gold ballots, 20 VOTES EACH sets above · SEAM in right, out right
@@ -70,16 +64,16 @@ And if the founder died, his wife Rebekah would help choose the next **CEO**.
 # cine act=fall fx="code:@valuation_tag;bg:wework_bldg_sandiego_bstreet;vals:$47B@forty-seven~$15B@fifteen~$10B@ten;lab:REPORTED IPO VALUE;x:.62;out:right"
 So investors read it, and the reported value fell from forty-seven billion toward fifteen, then as low as **ten**.
 
-// CARD a3-16 · SEE: the desk again: the FT's 13 September 2019 headline and the S-1 cover lie side by side; on "cut" the FT print lifts and fills the frame — WeWork overhauls corporate governance in bid to save IPO · SEAM in right, out in
-# cine act=doubt fx="code:@table;items:wework_doc_news_ft_governance_ipo_2019_09_13@.33,.45,-3,.36~wework_doc_s1_cover@.74,.52,4,.4;pan:0,.06;lift:0;at:cut;in:right;out:in"
+// CARD a3-16 · SEE: the desk again: the FT's 13 September 2019 headline and the S-1 cover lie side by side; on "cut" a red marker circles the FT print — WeWork overhauls corporate governance in bid to save IPO · SEAM in right, out in
+# cine act=doubt fx="code:@table;items:wework_doc_news_ft_governance_ipo_2019_09_13@.33,.45,-3,.36~wework_doc_s1_cover@.74,.52,4,.4;pan:0,.06;mark:0;mat:cut;in:right;out:in"
 In September, WeWork cut his votes, dropped the successor clause, and he handed back the **trademark** money.
 
 // CARD a3-17 · SEE: a framed portrait of Neumann on a dark wall above a brass plate reading CEO; on "resigned" the photo drains grey and slides down out of the frame, leaving the empty frame and the plate; 24 SEP 2019 sets beside it · SEAM in Z
 # cine act=fall fx="code:@photo_drain;pic:wework_neumann_2016_delhi_portrait;plate:CEO;go:resigned;date:24 SEP 2019;in:in"
 But it wasn't enough. On Tuesday, September twenty-fourth, Adam Neumann resigned as **CEO**.
 
-// CARD a3-18 · SEE: hard cut on "jet": an executive signing papers in a private jet cabin; hard cut on "sale": a FOR SALE sign planted in the ground · SEAM cuts on words
-# cine act=fall fx="code:@word_cut_montage;clips:stock_place_private_jet_04,stock_realestate_sale_sign_07;keys:same,sale"
+// CARD a3-18 · SEE: a white private jet on the apron from above; on "sale" a red FOR SALE placard is planted on the tarmac beside it, dated 24 SEPTEMBER 2019 · SEAM hard cut
+# cine act=fall fx="code:@sign_on_footage;clip:wework_clip_private_jet_airport;sign:FOR SALE;sub:24 SEPTEMBER 2019;go:sale;x:.72;y:.42"
 {wry} The same day, the company put the jet up for **sale**. (J)
 
 // CARD a3-19 · SEE: the NYSE facade under its giant flag; on "cancelled" it burns away from the centre, glowing at the edge, revealing WeWork's real withdrawal letter to the SEC underneath · SEAM hard cut

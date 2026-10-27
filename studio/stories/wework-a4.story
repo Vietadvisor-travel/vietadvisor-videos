@@ -10,8 +10,8 @@ autotrans: off
 endcard: off
 motif: two_accounts
 
-// CARD a4-01 · SEE: the two accounts, same pictures; the spine cracks wider on "split" and the company's half drains grey while the founder's warms · SEAM in right, out right
-# cine act=fall fx="code:@two_accounts;l:wework_sign_toronto_richmond;r:wework_neumann_2015_disrupt_portrait;lt:THE COMPANY · WEWORK;rt:THE FOUNDER · ADAM NEUMANN;open:no;win:r;wat:split;in:right;out:right"
+// CARD a4-01 · SEE: the two accounts, same pictures; the spine splits wide on "split" and the company half drops; KEEPS THE LEASES / SELLS HIS SHARES type in and the company's half drains grey while the founder's warms · SEAM in right, out right
+# cine act=fall fx="code:@two_accounts;l:wework_sign_toronto_richmond;r:wework_neumann_2015_disrupt_portrait;lt:THE COMPANY · WEWORK;rt:THE FOUNDER · ADAM NEUMANN;open:no;win:r;wat:split;crack:split;lv:KEEPS THE LEASES;lat:money;rv:SELLS HIS SHARES;rat:way;in:right;out:right"
 {grave} And that's when the two accounts **split**, and the money went one way.
 
 // CARD a4-02 · SEE: SoftBank's real release behind, dim; $9.5B sets as the headline over an empty dashed bar; on "five" the gold $5B part fills from the left, on "six" the $1.5B part joins it: FOR THE COMPANY — the last third of the bar stays empty · SEAM in right
@@ -19,8 +19,8 @@ motif: two_accounts
 In October, SoftBank rescued WeWork. The headline said nine and a half billion **dollars**.
 But only six and a half billion was for the **company**.
 
-// CARD a4-03 · SEE: two suited arms meet in a handshake over papers on a table: shares bought from people who already owned them · SEAM out right
-# cine act=fall fx="code:@reel;clip:wework_clip_handshake_deal;move:in;z:.1;out:right"
+// CARD a4-03 · SEE: SoftBank's real release on the left; the gold $6.5B arrow into WeWork is already drawn; on "offer" a blue arrow forks to a room of existing shareholders: $3B TO BUY THEIR SHARES · SEAM out right
+# cine act=fall fx="code:@money_fork;src:wework_doc_softbank_release_cover_p1;srclab:SOFTBANK · OCTOBER 2019;a:wework_bldg_denver_vault^INTO WEWORK^$6.5B^was;b:wework_clip_meeting_discussion^EXISTING SHAREHOLDERS^$3B^offer;out:right"
 Three billion was an offer to buy shares from existing **owners**.
 
 // CARD a4-04 · SEE: Neumann on stage with a microphone, the camera easing in to him · SEAM in right
@@ -33,12 +33,12 @@ His exit was reported as one point seven billion **dollars**.
 In fact, about nine hundred and seventy million was for his **shares**.
 
 // CARD a4-06 · SEE: three solid blocks on a dark floor: SHARES $970M already standing; on "Five" a hatched block rises, $500M CREDIT LINE (A LOAN); on "consulting" a small one, $185M FEE · SEAM in right
-# cine act=fall fx="code:@blocks;vals:.97,.5,.185;labs:SHARES,CREDIT LINE · A LOAN,CONSULTING FEE;txts:$970M,$500M,$185M;show:1;ats:Five,consulting;note:his exit package as reported by the WSJ, 22 Oct 2019;in:right"
+# cine act=fall fx="code:@blocks;vals:.97,.5,.185;labs:SHARES,CREDIT LINE · A LOAN,CONSULTING FEE;txts:$970M,$500M,$185M;show:1;ats:Five,consulting;in:right"
 Five hundred million was a credit line, which is a **loan**.
 And one hundred and eighty-five million was a consulting **fee**.
 
-// CARD a4-07 · SEE: the camera pans across a sheet marked CONTRACT; on "cancelled" the picture drains to grey · SEAM out right
-# cine act=after fx="code:@reel;clip:wework_clip_ipo_signing_2;move:right;z:.08;mono:cancelled;out:right"
+// CARD a4-07 · SEE: the WSJ's real page of 22 October 2019 (SoftBank to provide Neumann with nearly $1.7B) under the lamp; on "cancelled" it drains to grey · SEAM out right
+# cine act=after fx="code:@reel;under:wework_doc_news_wsj_softbank_control_2019_10_22;ua:0;fy:.35;move:in;z:.1;mono:cancelled;out:right"
 Part of that deal was later cancelled, then settled on terms that were never fully **disclosed**.
 
 // CARD a4-08 · SEE: a WeWork lift lobby, steel doors under the wework lettering, empty; the camera eases toward the doors · SEAM in right, HOLD
@@ -53,12 +53,9 @@ Then, in twenty twenty, the pandemic emptied the **offices** in every city.
 # cine act=after fx="code:@month_flip;from:2020-03;to:2023-11;go:didn't;lab:STILL OPEN;sub:the pandemic in 2020 → the bankruptcy filing in November 2023;bg:wework_clip_empty_office_02;in:right"
 But it didn't kill WeWork. WeWork lasted three more **years**.
 
-// CARD a4-11 · SEE: looking along the Wall Street canyon toward the columned exchange, the camera travelling forward · SEAM in right, out right
-# cine act=rise fx="code:@reel;clip:stock_finance_wall_street_sign_04;move:in;z:.1;in:right;out:right"
-In October twenty twenty-one, it finally reached the stock market, through a **SPAC**.
-
 // CARD a4-12 · SEE: over the dim exchange: an empty box already stands on THE STOCK MARKET line (LISTED SHELL); on "merger" a gold WEWORK card slides into it and the lid closes; THE USUAL FILING card above is struck through on "skips" · SEAM in right
 # cine act=rise fx="code:@shell_merge;bg:wework_ctx_wallstreet_looking_down;shell:LISTED SHELL (BOWX);co:WEWORK;go:merger;skip:skips;in:right"
+In October twenty twenty-one, it finally reached the stock market, through a **SPAC**.
 A SPAC is a shell company that's already on the stock market, so a merger skips the usual **filing**.
 
 // CARD a4-13 · SEE: three blocks on a dark floor: $9B ENTERPRISE VALUE rises on "nine", $6.55B EQUITY VALUE on "six", a short $1.28B CASH RAISED on "one" — each smaller than the last · SEAM out right
@@ -67,6 +64,7 @@ The headline value was nine billion **dollars**.
 But the shares were valued at about six and a half **billion**.
 And the cash it actually raised was about one point three **billion**.
 
-// CARD a4-14 · SEE: the gears and rollers of a newspaper press spinning; on "Again" the footage freezes · SEAM in right, out right
-# cine act=after fx="code:@reel;clip:stock_news_press_gears_01;move:in;z:.1;freeze:Again;in:right;out:right"
+// CARD a4-14 · SEE: a ledger of the film's numbers lands row by row on the words: 2017 $4.4B → $3B, JAN 2019 $2B → $1B NEW, RESCUE $9.5B → $6.5B, EXIT $1.7B → $970M SHARES, SPAC $9B → $1.28B CASH — dashed headline bars, solid real bars · SEAM out right
+# cine act=after fx="code:@headline_vs_real;title:THE HEADLINE vs THE MONEY THAT MOVED;max:9.5;rows:SOFTBANK 2017^$4.4B^$3B IN^4.4^3^big~SOFTBANK JAN 2019^$2B^$1B NEW^2^1^headline~THE RESCUE 2019^$9.5B^$6.5B^9.5^6.5^smaller~HIS EXIT 2019^$1.7B^$0.97B SHARES^1.7^.97^real~THE SPAC 2021^$9B^$1.28B CASH^9^1.283^Again;out:right"
 {wry} A big headline, then a smaller real number. **Again**. (J)
+

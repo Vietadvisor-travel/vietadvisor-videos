@@ -10,8 +10,8 @@ autotrans: off
 endcard: off
 motif: two_accounts
 
-// CARD a1-01 · SEE: the investigator's desk: a print of Neumann and a print of a WeWork sign on brick; on "WeWork" the sign print lifts and fills the frame · SEAM in right, out in
-# cine act=setup fx="code:@table;items:wework_neumann_2015_disrupt_portrait@.32,.47,-4,.5~wework_sign_toronto_richmond@.7,.5,3,.42;pan:0,.08;lift:1;at:WeWork;in:right;out:in"
+// CARD a1-01 · SEE: the investigator's desk: a print of Neumann (Delhi, 2016) and a print of a WeWork doormat; on "WeWork" the doormat print lifts and fills the frame · SEAM in right, out in
+# cine act=setup fx="code:@table;items:wework_neumann_2016_delhi_portrait@.32,.47,-4,.5~wework_sign_chicago_doormat@.7,.5,3,.42;pan:0,.08;lift:1;at:WeWork;in:right;out:in"
 It began in twenty ten, when Adam Neumann and Miguel McKelvey started a company called **WeWork**.
 
 // CARD a1-02 · SEE: night aerial of the Brooklyn Bridge into Brooklyn; a red pin drops on Brooklyn on "Brooklyn" with its card GREENDESK · BROOKLYN · SEAM in Z, out right
@@ -30,16 +30,16 @@ Their first floor, at one fifty-four Grand Street in SoHo, opened in twenty **el
 # cine act=rise fx="code:@floor_grid;plate:wework_interior_vancouver_07;quad:.3,.52,.74,.52,.98,.9,.02,.9;mode:desks;nx:6;ny:4;cut:cut;tag:month;price:/MONTH;out:right"
 Then cut it into desks, and rent the desks out by the **month**.
 
-// CARD a1-06 · SEE: an office kitchen (coffee); a panel slides in on "glass" (a glass meeting-room door), another on "tap" (bottles clinking); on "community" the clinking panel opens to full frame · SEAM in right
-# cine act=rise fx="code:@footage_split;base:wework_clip_coffee_coworkers;clips:wework_clip_office_exit_door,wework_clip_beer_clink;keys:glass,tap;close:community"
+// CARD a1-06 · SEE: a real WeWork shared kitchen, people gathered round the island under the 85 BROAD STREET sign; the camera eases in on "community" · SEAM in right
+# cine act=rise fx="code:@reel;under:wework_interior_nyc_kitchen;ua:0;move:in;z:.1;in:right"
 Add coffee, glass walls and a beer tap. Call it a **community**. (J)
 
 // CARD a1-07 · SEE: a member in a cap walks across a lobby toward the door, past closed lift doors; the camera travels with her · SEAM out right
 # cine act=rise fx="code:@reel;clip:wework_clip_elevator_lobby_entry;move:right;z:.1;out:right"
 For a member, that meant **freedom**: you could leave the office any month you liked, no questions asked.
 
-// CARD a1-08 · SEE: a contract on a wooden table, two pens crossed on it; the camera pushes into the small print and slows on "years" · SEAM in right
-# cine act=doubt fx="code:@reel;clip:wework_clip_ipo_signing_6;move:in;z:.14;slow:years;in:right"
+// CARD a1-08 · SEE: the S-1's own risk-factors page, read from the top; the camera pushes into the opening lines and slows on "years" · SEAM in right
+# cine act=doubt fx="code:@reel;under:wework_doc_s1_risk_factors_p24;ua:0;fy:.15;move:in;z:.14;in:right"
 But for WeWork, a lease was a promise to pay rent for years, whatever **happened**.
 
 // CARD a1-09 · SEE: on a dim WeWork lounge: on the left a column of gold YEAR blocks drops in one by one (what WeWork owed); on the right one thin blue 1 MONTH tile lands and blinks out, because a member can leave · SEAM HOLD then out right
@@ -62,30 +62,21 @@ But only three billion went into WeWork **itself**.
 # cine act=rise fx="code:@word_cut_montage;clips:stock_finance_skyscraper_hq_17,wework_clip_shibuya_crossing,stock_city_singapore_night_08;keys:rest,Japan,Pacific"
 The rest went to its offices in China, Japan and the **Pacific**.
 
-// CARD a1-14 · SEE: a city skyline time-lapse with tower cranes swinging and new floors appearing · SEAM in right
-# cine act=rise fx="code:@reel;clip:stock_construction_crane_timelapse_04;move:up;z:.08;in:right"
-So **growth** became the only number investors measured.
-
-// CARD a1-15 · SEE: the S-1's own key-metrics table on the desk; the camera travels to the workstation row; 107,000 is highlighted on "hundred", 466,000 on "sixty-six" · SEAM hard cut
+// CARD a1-15 · SEE: the S-1's own key-metrics table on the desk; the camera travels to the workstation row; 107,000 is highlighted on "hundred", 466,000 on "sixty-six" · SEAM hard cut, in from the previous beat
 # cine act=rise fx="code:@doc_read;doc:wework_doc_s1_summary_operating_kpi_p23;crop:0,.27,1,.42;marks:.555,.297,.635,.325@hundred~.725,.297,.795,.325@sixty;zoom:hundred;z:1.25"
+So **growth** became the only number investors measured.
 WeWork's desks went from about one hundred thousand, at the end of twenty sixteen, to four hundred and sixty-six thousand two years **later**.
 
 // CARD a1-16 · SEE: a WeWork building on a New York corner; a paper price tag swings in on its string and "$47 BILLION" is written on it on "forty-seven" · SEAM in right
 # cine act=rise fx="code:@valuation_tag;bg:wework_bldg_nyc_fifth_avenue;vals:$47B@forty-seven;lab:VALUATION · JAN 2019;sub:set in a private deal with SoftBank;x:.66;in:right"
 In January twenty nineteen, SoftBank came back with two billion more, at a valuation of forty-seven billion **dollars**.
 
-// CARD a1-17 · SEE: a real photo of fanned hundred-dollar bills splits in half: $1B NEW MONEY stays lit, $1B BOUGHT OLD SHARES slides behind frosted glass, on "one" · SEAM out right
-# cine act=doubt fx="code:@split_note;img:wework_clip_cash_bills_stack__070;cut:.5;lab1:$1B NEW MONEY;lab2:$1B FOR OLD SHARES;at:one;out:right"
+// CARD a1-17 · SEE: SoftBank (Son, 2025 portrait) on the left; on "new" a gold arrow forks to a WeWork lobby: $1B NEW MONEY; on "other" a blue arrow forks to people at their desks: $1B FOR SHARES THEY ALREADY OWNED · SEAM out right
+# cine act=doubt fx="code:@money_fork;src:wework_son_2025_tokyo_portrait;srclab:SOFTBANK · JANUARY 2019;a:wework_interior_vancouver_06^INTO WEWORK^$1B NEW^new;b:wework_clip_office_group_computers^TO EXISTING OWNERS^$1B^other;out:right"
 But only one billion of that was new money for the **company**.
-
-// CARD a1-18 · SEE: a handshake between two people across a table, close; the shares changing hands · SEAM in right
-# cine act=doubt fx="code:@reel;clip:wework_clip_handshake_group;move:left;z:.08;in:right"
 The other billion bought shares from people who already owned **them**.
-
-// CARD a1-19 · SEE: the New York Stock Exchange facade under its flag; on "market" it drains to grey: no market set this price · SEAM out right
-# cine act=doubt fx="code:@reel;under:wework_ctx_nyse_wallstreet;ua:0;move:in;z:.08;mono:market;out:right"
-{wry} So forty-seven billion dollars wasn't a market **price**.
 
 // CARD a1-20 · SEE: over Son on a giant screen at an event: a closed ring of four stations draws itself, SOFTBANK → PAYS FOR GROWTH → WEWORK GROWS → SETS THE PRICE: $47B → back to SOFTBANK in gold on "money" · SEAM in right
 # cine act=doubt fx="code:@money_loop;bg:wework_son_video_message;nodes:SOFTBANK@investor~PAYS FOR THE GROWTH@paying~WEWORK GROWS@growth~SETS THE PRICE · $47B@own;close:money;in:right"
+{wry} So forty-seven billion dollars wasn't a market **price**.
 It was a price set by the very investor who was paying for the growth, with its own **money**.

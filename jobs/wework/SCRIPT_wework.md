@@ -52,7 +52,7 @@ Share sales, and loans against his stock, the Wall Street Journal reported.
 But here's the problem with a private account: one day, someone else gets to **read** it.
 
 ## a3 THE S-1 · the page that decided it
-{tense} On Wednesday, August fourteenth, twenty nineteen, WeWork filed its **S-1**.
+{tense} On Wednesday, August fourteenth, twenty nineteen, WeWork **filed** its S-1.
 It's the document a company must publish before it sells shares on the stock **market**.
 Outsiders could finally **read** it.
 In twenty eighteen, WeWork brought in one point eight two billion dollars of **revenue**.

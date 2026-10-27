@@ -5,7 +5,7 @@
    @tags: document,filing,pages,flip,highlight,find
    @born: wework a3-08/09: on page forty-one, one line decided everything
 */
-({ t, at, p, W, H, u, img, ctx, params: P, clamp, lerp, seam, dur }) => {
+({ t, at, p, W, H, u, img, ctx, params: P, clamp, lerp, seam, text, dur }) => {
   // the pages of a real filing flick past like a thumbed book, slowing until they stop on the one page that matters on its
   // word; then the camera reads into it and a highlighter runs over the marked line(s). params: pages (ids, the last is the
   // stop page), stop (word), marks (x0,y0,x1,y1@word ~ …, on the stop page), zoom (word), z, in, out
@@ -21,5 +21,5 @@
   page(img(ids[Math.min(n - 1, i + 1)]), x0, cw, 1);
   if (i < n - 1) { const w = cw * Math.max(0, Math.cos(fr * Math.PI / 2)); page(img(ids[i]), x0 + (cw - w), w, 1); ctx.fillStyle = `rgba(0,0,0,${(.35 * fr).toFixed(2)})`; ctx.fillRect(x0 + cw - w, y0, w, chh); }
   else marks.forEach(m => { const k = clamp(p(m.w, .6, 'inOut')); if (k <= 0) return; ctx.save(); ctx.globalCompositeOperation = 'multiply'; ctx.fillStyle = 'rgba(255,214,50,.85)'; ctx.fillRect(x0 + m.a * cw - 4, y0 + m.b * chh - 2, ((m.c - m.a) * cw + 8) * k, (m.d - m.b) * chh + 4); ctx.restore(); });
-  ctx.restore();
+  ctx.restore(); if (P.lab && i >= n - 1) text(P.lab, W * .9, H * .12, { size: 64 * u, font: 'impact', col: '#f2c14e', lw: 0, align: 'right', a: clamp((t - (P.stop ? at(P.stop) : 0)) / .3) });
 }

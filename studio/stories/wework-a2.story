@@ -15,7 +15,7 @@ motif: two_accounts
 Meanwhile, the founder's account was quietly filling with **money**.
 
 // CARD a2-02 · SEE: the S-1's page 199 on the desk; the camera travels into one paragraph; "we" family trademarks is highlighted on "we", then $5.9 million on "five" · SEAM in right
-# cine act=doubt fx="code:@doc_read;doc:wework_doc_s1_trademark_59m_p199;crop:0,.6,1,.69;marks:.328,.623,.44,.637@we~.664,.66,.76,.674@five;zoom:we;z:.9;in:right"
+# cine act=doubt fx="code:@doc_read;doc:wework_doc_s1_trademark_59m_p199;crop:.28,.6,.82,.69;marks:.328,.623,.44,.637@we~.664,.66,.76,.674@five;zoom:we;z:.9;in:right"
 Neumann's own company held the rights to the word "we". So WeWork paid it five point nine million dollars for **them**. (J)
 
 // CARD a2-03 · SEE: page 200 of the filing flies in turning over in 3D and lands; a highlighter runs across "lease agreements for four commercial properties with landlord entities in which Adam has an ownership interest" on "rented" · SEAM hard cut
@@ -30,18 +30,16 @@ So in some buildings, the founder was his own company's **landlord**. (J)
 # cine act=doubt fx="code:@email_page;head:WEWORK · FORM S-1 · PAGE 199 (EXCERPT);lines:Adam exercised the time-based option~in exchange for a $362.1 million full~recourse promissory note payable to~the Company (with an interest rate~of 2.89% and a maturity date of~April 11, 2029).;src:Form S-1, 14 August 2019 (verbatim);circle:million@sixty-two;under:interest@percent;zoom:1;zat:lent;rot:-1.5;in:right"
 In April twenty nineteen, WeWork lent him three hundred and sixty-two million dollars, at two point eight nine percent, to buy its **stock**.
 
-// CARD a2-06 · SEE: thick strapped stacks of hundred-dollar bills handled on a desk, the camera pushing in · SEAM out right
-# cine act=doubt fx="code:@reel;clip:stock_scam_cash_stacks_counting_24;move:in;z:.12;out:right"
+// CARD a2-06 · SEE: thick bundles of real cash drop onto a dark desk one after another and stack into a pile while $700M counts up; on "loans" two tags set beside it: SHARE SALES, LOANS AGAINST HIS STOCK · SEAM in right
+# cine act=doubt fx="code:@cash_pile;img:stock_scam_cash_stacks_counting_24__060;n:21;go:taken;val:700;lab:TAKEN OUT BY JULY 2019;tags:SHARE SALES~LOANS AGAINST HIS STOCK~(THE WALL STREET JOURNAL);in:right"
 By that July, he had taken out about seven hundred million **dollars**.
-
-// CARD a2-07 · SEE: a trading screen of charts (share sales); a panel slides in on "loans" (papers exchanged across a desk), another on "Journal" (a newspaper press running) · SEAM in right
-# cine act=doubt fx="code:@footage_split;base:stock_finance_exchange_floor_10;clips:stock_finance_loan_meeting_08,stock_media_printing_press_03;keys:loans,Journal"
 Share sales, and loans against his stock, the Wall Street Journal **reported**.
 
-// CARD a2-08 · SEE: a white private jet on an apron from above; the camera tracks right along it · SEAM out right
-# cine act=doubt fx="code:@reel;clip:wework_clip_private_jet_airport;move:right;z:.1;out:right"
+// CARD a2-08 · SEE: the WSJ's own sentence from September 2019 lifted out of the page: "…zipping across the Atlantic Ocean in a Gulfstream G650"; "Gulfstream G650" highlights on "Gulfstream" · SEAM out right
+# cine act=doubt fx="code:@doc_quote_line;doc:wework_doc_news_wsj_neumann_profile_2019_09_18;line:.25,.948,.43,.973+.43,.948,.61,.973;marks:.505,.948,.607,.973@Gulfstream;src:The Wall Street Journal, 18 September 2019;out:right"
 {wry} The company also owned a Gulfstream jet, bought for more than sixty million **dollars**.
 
-// CARD a2-09 · SEE: printed charts on a desk from above, a magnifying glass sliding over them: someone else reading · SEAM in right, out up
-# cine act=doubt fx="code:@reel;clip:wework_clip_ipo_analysis;move:in;z:.14;in:right;out:up"
+// CARD a2-09 · SEE: a closed kraft folder stamped PRIVATE lies on the desk; on "someone" its flap lifts and the real S-1 cover slides out toward us · SEAM out up
+# cine act=doubt fx="code:@folder_reveal;doc:wework_doc_s1_cover;crop:.39,0,1,.6;stamp:PRIVATE;go:someone;out:up"
 But here's the problem with a private account: one day, someone else gets to **read** it.
+
