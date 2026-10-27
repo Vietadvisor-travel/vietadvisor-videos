@@ -19,3 +19,6 @@ Muse fills these FIRST (before STOCK_PLAN gaps), then ticks the box and writes t
 - [x] telephone receiver / phone call close-up, night  (onecoin, 2026-10-23) → stock_phone_telephone_receiver_01
 - [x] server room lights or screens switching off  (onecoin, 2026-10-23) → stock_tech_server_dark_01
 - [x] audio recorder or wiretap headphones close-up  (onecoin, 2026-10-23) → stock_media_cassette_recorder_01
+- [ ] a baker scooping flour into a mixing bowl in a bakery, close shot  (wework, 2026-10-27)
+- [ ] Sand Hill Road / Menlo Park venture capital office exterior, wide  (wework, 2026-10-27)
+- [ ] a printed cheque being signed with a pen on a desk, extreme close  (wework, 2026-10-27)
