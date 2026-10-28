@@ -178,5 +178,5 @@ out/<act>_16x9_v.chunks/progress.json (if 'updated' is older than 15 min, the jo
 −14 LUFS → 15 stills checked  8) 10 strong stills for the owner's thumbnail, titles, description with sources and credits.
 BEFORE RENDERING: node tools/pp_speed.mjs stories/<act>.story → any beat marked SLOW: report it, don't redesign it.
 REPORT: pp_doctor output · factcheck table (with every change) · pp_lint score per act · all pp_sheet JPGs · critic notes
-and fixes · final MP4 + 10 stills.
+and fixes · final MP4 on Drive (no stills, no thumbnail).
 ```

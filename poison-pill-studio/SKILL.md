@@ -144,7 +144,7 @@ the film from it without redesigning anything.
 | 9 | Critic loop | `gauntlet.md`: fresh critic → top 6 fixes → verification critic | SHIP |
 | 10 | Draft render | `pp_speed.mjs` (SLOW beats?) → `render.mjs --fmt 16x9 --scale .5 --jobs N` | alive at 1× |
 | 11 | Make & join | `make.mjs` per act (16:9) `--jobs N [--lite]`; crash → same command `--resume` → concat → loudness → full-film critic | −14 LUFS, SHIP |
-| 12 | Package & deliver | titles, description, credits, 10 stills (no thumbnail) | human rubric ≥ 9/10 |
+| 12 | Package & deliver | titles, description, credits (no stills, no thumbnail, no compressed copy) | human rubric ≥ 9/10 |
 
 ## One beat, four ways (the same sentence, four families)
 > *"Everyone saw the famous names. Nobody looked at what was underneath."*

@@ -144,7 +144,7 @@ Report back with:
 3. the pp_lint score per act;
 4. all pp_sheet JPGs;
 5. the critic notes and what you fixed;
-6. the final 16:9 MP4 + 10 stills;
+6. the final 16:9 MP4 on Drive (no stills, no thumbnail, no compressed copy);
 7. thumbnail, 3 titles, description.
 
 **Images (v6: find them automatically, image-sourcing.md):**
