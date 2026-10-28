@@ -17,6 +17,20 @@
 
 The rulebook is `poison-pill-studio/` (SKILL.md and references/). The engine with the v6 add-on installed is `studio/`.
 
+## ONE COMMAND → THE FINAL RESULT (the owner, 28 Oct 2026; applies in this chat and every new chat)
+The owner is not available to check in. When he asks for an episode (or any job), run it **end to end, without
+stopping, until the final deliverables of step 7 exist** (final MP4 on Drive, SRT, upload guide, stills, everything
+committed and pushed).
+- Never end a turn with the work half done: no "next I will…", no progress report that waits for a reply, no
+  question he has to answer. Make every judgement call yourself and write it in the final report.
+- Long renders: run them in the background and keep working (cards, critic, publish files) meanwhile; when you must
+  wait, wait inside the turn (a background wait loop that notifies you), then continue at once.
+- Lint, layout, critic or motion failures are fixed by you and re-run, not reported and left.
+- The only reasons to stop early are hard blockers he alone can fix (missing research/pack, Drive not configured,
+  credentials). Then say exactly what is missing in one message.
+- Talk to him only twice: one line when you start, and the final report (what was delivered, the links, critic
+  scores, what is uncertain).
+
 ## When the owner writes "làm tập <slug>" (or "làm tập: <topic>")
 1. **Set up:**
    - `git pull`, then `bash studio/setup.sh` (about 1–2 min the first time in a session; it must end with ALL PASS).
