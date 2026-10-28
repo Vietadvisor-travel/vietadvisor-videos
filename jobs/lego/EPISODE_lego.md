@@ -1,7 +1,7 @@
 # EPISODE 06 · lego · The company that couldn't count its own bricks
 
 ## 0. META
-- slug: lego · length: ≈ 9½–10 min (≈ 1,400 words, 101 beats) · acts: a0 … a6 · format: 16:9 only
+- slug: lego · length: 8:17 (≈ 1,400 words, 93 beats) · acts: a0 … a6 · format: 16:9 only
 - archetype: comeback (near-death → rescue → record) with the mechanism as the hero · look: `editorial` (colour photos; a LEGO film must keep the bricks' real colours — `blueprint` was tried on the first sheets and turned every brick grey-blue, so it was dropped; same look as wework, accepted for that reason)
 - tone: playful (dry irony aimed at the 1990s management and the myths, never at children, fans or staff who lost jobs)
 - voice: `voice: supertonic:M1` (the owner's default narrator) · `delivery:` wry (a0, a1, a4), lively (a2), tense (a3, a5), warm (a6) · quote voice, verbatim only: `knudstorp=bm_george` (a3 the June 2003 warning, a5 the "action plan" line) — 2 voices in total; both quotes attributed on screen with "voice actor"
@@ -1757,4 +1757,9 @@ The storyboard is the seven act files, built from the cards above (every beat st
 Built in-repo by Claude Code (no hand-off). For a round 2 the line is `bổ sung shotlist lego` (see SHOTLIST NEED rows: real LEGO brick macro footage, a modern LEGO factory line, Billund/LEGO House footage, LEGOLAND Billund footage, the 2004 annual report Note 20 page, the Blackstone 2005 announcement, Mattel/Hasbro 2024 10-K figures).
 
 ## 7. DIRECTOR'S SELF-CHECK
-
+- Script: pp_scriptlint 8.8/10; every number traced to RESEARCH_lego.md (F01–F46); the $1.7B sale advice and the forest-house meeting are single-source and attributed on screen ("IE Business School case · single source"); the bank line is attributed to Bloomberg on screen.
+- Picture: per-sentence CARDS for every beat (§4); 70 distinct effects over 93 beats, none used more than twice, motif once per act (pp_motion repetition gate PASS); pp_lint 9.8–10/10 and pp_layout 0 flags on every act.
+- Motion: 23 % nearly still (gate ≤ 35 % PASS); 2 still runs over 3 s remain (a3-11 4.0 s, a6-12 3.4 s).
+- Critic (fresh agents, 3 rounds on real frames): final measured 64/92 beats ≥ 5/8 (69.6 %) and 74/92 swap PASS (80.4 %) — ship gate (85 % / 90 %) NOT met; acts 3–5 reached 77 % / 91 % and got the four fixes the critic named as the path to the gate (not re-scored). Weakest beats: generic stock in a0 (hands, archive man replaced), the brick motif beats, text-on-black thesis, and the NEED pictures below.
+- NEED (logged in jobs/STOCK_WISHLIST.md): Kiddicraft / 1949 brick, a 1998 loss headline, a real 2003-04 LEGO box, 1990s LEGO clothes/watches/games, the Utoft forest house, a LEGO game screenshot and LEGO's carbon page.
+- Sound: −14.1 LUFS integrated, −1.9 dBTP; narrator supertonic:M1, quote voice only for Knudstorp's two verbatim lines (attributed, "voice actor").

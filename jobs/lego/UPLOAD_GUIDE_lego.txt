@@ -1,0 +1,74 @@
+HƯỚNG DẪN ĐĂNG TẬP 6 · LEGO: THE COUNT · POISON PILL
+Video: PoisonPill_EP06_LEGO_Almost_Bankrupt_FULL_16x9.mp4 (8:16). Đổi tên lego_16x9_FINAL.mp4 thành tên này trước khi tải lên: từ khoá trong tên file giúp SEO.
+Bản tải lên: lego_16x9_FINAL.mp4 (bản gốc chất lượng cao nhất), có trên Google Drive: PoisonPill_Media/lego/. Bản lego_16x9_DELIVERY_5M.mp4 (~5 Mbps) chỉ dùng khi mạng yếu.
+Thumbnail: anh tự làm (10 ảnh tĩnh từ phim đã gửi kèm). Gợi ý: một viên gạch đỏ + "12,000 PARTS" + một nhãn giá có dấu "?" màu đỏ.
+Phụ đề: lego_FULL.srt (trong jobs/lego/). Phim KHÔNG có chữ phụ đề in trên hình; người xem bật CC.
+Âm thanh: −14,1 LUFS, đỉnh −1,9 dBTP (đúng chuẩn YouTube).
+Lịch đăng gợi ý: thứ Ba 17/11/2026 lúc 21:00 giờ Việt Nam (= 9:00 sáng ET, 14:00 London; cách tập WeWork một tuần).
+
+=== 1. TIÊU ĐỀ (dùng số 1) ===
+1. LEGO Almost Died Because It Couldn't Count Its Own Bricks   ← dùng
+2. How LEGO Almost Went Bankrupt (And Why It Never Did)
+3. LEGO Sold Boxes for Less Than the Parts Inside Them
+(Sau 48 giờ nếu CTR < 4 %: đổi sang tiêu đề 2.)
+
+=== 2. MÔ TẢ (copy nguyên khối dưới đây) ===
+LEGO nearly died in 2004, but it never went bankrupt. It lost count of what its own sets cost, sold some boxes for less than the parts inside, and was saved by counting. Here is how, from LEGO's own annual reports.
+
+Everyone says LEGO almost went bankrupt and was saved by going back to the brick. The record says something stranger: in its worst year the toy business still made a profit before write-downs; the giant loss was clean-up; the parts library had doubled to more than 12,000 pieces, most used in a single set; and the rescue was a cost system, a cut to about 7,000 parts, and an 800-million-kroner loan from the family's holding company, with interest. Why LEGO almost failed in 2003 and 2004, who Jørgen Vig Knudstorp is, what the complexity tax is, and how LEGO made its comeback.
+
+0:00 LEGO's promise: the brick that still fits
+0:57 Wood, then the system (1932–1958)
+2:04 More of everything: how LEGO lost count
+3:07 Two bad years: 2003 and 2004
+4:21 What the loss hid: the complexity tax
+5:22 The cut: how LEGO was rescued
+6:39 Why the brick still fits
+
+Sources: LEGO Company Annual Report 2003; LEGO Group Annual Report 2004 (financial highlights, income statement, notes) and later annual reports and results releases through the LEGO Group 2025 results (10 March 2026); US Patent 3,005,282 (G. K. Christiansen, filed 28 July 1958); David C. Robertson with Bill Breen, Brick by Brick (Crown Business, 2013); IE Business School case "The Turnaround of LEGO" (the 30 November 2004 Morgan Stanley meeting and sale advice, single source); Harvard Business School case "LEGO (A): The Crisis"; Bloomberg News (2005, via Providence Business News; 2013, via Business Standard); Bloomberg Businessweek (2011 interview); The Irish Times and Taipei Times (2014); Blackstone/Merlin LEGOLAND announcement (13 July 2005); Box Office Mojo; Mattel and Hasbro 2024 revenue as reported; archived lego.com pages via the Internet Archive; an interview with LEGO designer Mark Stafford (2014).
+Figures are in Danish kroner (DKK) as reported unless marked; the $1.7 billion sale price comes from a single business-school case and is given as reported.
+
+Footage: Pexels (Pexels License): Advancer Drones, Anastasia Shuraeva, Everett Bumstead, gusat silviu, Gustavo Fring, Harvey Tan Villarino, K, Mahadi Hassan Molla, MART PRODUCTION, Mikhail Nilov, Rafael Minguet Delgado, Sam Lion, Tiger Lily, Usman AbdulrasheedGambo. Pixabay (Pixabay License): Dx21. Wikimedia Commons: Banej (CC BY-SA 3.0); Legoktm (CC BY-SA 4.0); Juampayo Escorpio (CC BY-SA 4.0).
+Photos (Wikimedia Commons and Flickr): InSapphoWeTrust (CC BY-SA 2.0); Heady Metal (CC BY-SA 4.0); Father of Rathfelder (CC BY-SA 4.0); Ziongarage (CC0); Alan Chia (CC BY-SA 2.0); GTurnbull925 (CC BY-SA 4.0); Benjamin D. Esham (CC BY-SA 4.0); Leif Jørgensen (CC BY-SA 4.0); Enoch Leung (CC BY-SA 2.0); Klas Schöldström (Public domain); User:Miaow Miaow (Public domain); Unknown author (Public domain); Quinntropy (CC BY-SA 4.0); Regina Kühne (CC BY-SA 4.0); Legoland Billund Resort (CC BY 3.0); Hidden Isomorph (CC BY-SA 3.0); Andrzej Otrębski (CC BY-SA 4.0); FreeSoft (CC BY-SA 4.0); Bahnfrend (CC BY-SA 4.0); Toxophilus (CC BY-SA 4.0); A.Christensen (CC BY-SA 3.0); Ruben van Kuik (CC BY-SA 4.0); Achim Raschka (CC BY-SA 4.0); Nelsnelson (CC BY-SA 4.0); Hangz Leundra Rumma (CC BY-SA 4.0); Unknown author (CC0); Christiansen, Godtfred Kirk (Public domain); Tim Moreillon (CC BY-SA 2.0); Bill Ward (CC BY 2.0); Jordiferrer (CC BY-SA 4.0); Windell Oskay (CC BY 2.0); Didaictor (CC BY-SA 4.0); Oz1sej (Public domain); Mathious Ier (CC0); Lasse Deleuran (Public domain).
+Map: © OpenStreetMap contributors.
+Documents shown: LEGO annual reports and press releases, a US patent, archived lego.com pages (Internet Archive), and screenshots of press pages (Providence Business News/Bloomberg, Business Standard/Bloomberg, The Irish Times, Taipei Times) and the Brick by Brick cover, shown for news reporting, criticism and commentary.
+Music by Kevin MacLeod (incompetech.com): Crypto, Darkest Child, Deep Haze, Hero Down, Lightless Dawn, Meditation Impromptu 01, Stay the Course, Thief in the Night, Wallpaper. Licensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/
+Some illustrations of places and objects (a 1930s workshop, an empty factory line, warehouses, a meeting room, a cardboard box, plastic bricks) are AI-generated and are not archival images.
+The narration is an AI-generated (synthetic) voice.
+Quoted lines are real words from Jørgen Vig Knudstorp (June 2003 report to management, as quoted in a case study; 2011 Bloomberg Businessweek interview), read by a synthetic voice.
+LEGO® is a trademark of the LEGO Group, which does not sponsor or endorse this video.
+
+#LEGO #BusinessDocumentary #Turnaround
+
+=== 3. THẺ (dán vào ô Tags) ===
+lego, lego history, lego almost went bankrupt, lego bankruptcy 2004, how lego saved itself, lego comeback, why lego almost failed, knudstorp, kjeld kirk kristiansen, lego annual report, lego movie, business documentary, company turnaround, complexity, poison pill
+
+=== 4. CÁC Ô TRONG YOUTUBE STUDIO ===
+- Thumbnail: tải thumbnail anh tự làm. Nếu có nhiều bản, bật "Test & compare".
+- Audience: "No, it's not made for kids" (phim về kinh doanh, không nhắm trẻ em dù chủ đề là đồ chơi).
+- Language: Video language = English; Title and description language = English.
+- Subtitles: Subtitles → Add language → English → Upload file → "With timing" → lego_FULL.srt → Publish.
+- Category: Education.
+- Playlist: "Corporate Comebacks" (tạo mới nếu chưa có) + playlist chính của kênh.
+- License: Standard YouTube License. Allow embedding: bật. Publish to subscriptions feed: bật.
+- Comments: Allow all comments. Sort by: Top.
+- Altered or synthetic content: YES — phim có giọng tổng hợp đọc nguyên văn lời của một người thật (Jørgen Vig Knudstorp); người xem có thể tưởng là giọng thật của ông. Ngoài ra có vài ảnh minh hoạ AI (nơi chốn, đồ vật), không có người thật nào được vẽ bằng AI.
+- Paid promotion: không tích.
+
+=== 5. END SCREEN VÀ CARDS ===
+- End screen (20 giây cuối): "Best for viewer" + nút Subscribe.
+- Card 1 tại 3:07 (chương "Two bad years"): trỏ về tập 5 WeWork.
+- Card 2 tại 5:22 (chương "The cut"): poll "Would you have sold LEGO in 2004?" (Sell / Lend).
+- Sau khi đăng: quay lại tập WeWork, thêm card trỏ sang tập này ở chương cuối.
+
+=== 6. CHẾ ĐỘ HIỂN THỊ ===
+Schedule: thứ Ba 17/11/2026, 21:00 giờ Việt Nam.
+
+=== 7. PINNED COMMENT (dán rồi ghim) ===
+Would you have sold LEGO in 2004, or lent it the money? And which set would you keep?
+
+=== 8. 48 GIỜ ĐẦU ===
+- Trả lời 10 bình luận đầu tiên trong 2 giờ đầu (tín hiệu tương tác mạnh nhất).
+- Chia sẻ thật ở 1–2 cộng đồng đúng chủ đề (r/lego, r/business, diễn đàn AFOL) nếu luật cho phép; không spam.
+- Sau 48 giờ, ghi vào jobs/nhat-ky.md: CTR, Average view duration, % viewed, nguồn traffic chính.
+- Ngưỡng: CTR < 4 % → đổi tiêu đề 2 hoặc để Test & compare chạy xong; retention phút 1 < 55 % → báo Claude để sửa hook tập sau.
