@@ -6,7 +6,7 @@
    @born: lego a3-03: LEGO lost 935 million kroner
 */
 ({ t, at, p, W, H, u, img, clip, ctx, params: P, clamp, lerp, text, seam, cover, rng, dur }) => {
-  ctx.save(); seam(P.in || 'none', P.out || 'none');
+  ctx.save(); seam(P.in || 'none', P.out || 'none'); { const _c = clamp(t / Math.max(1, dur)), _s = 1.01 + .06 * _c * _c * (3 - 2 * _c); ctx.translate(W / 2, H / 2); ctx.scale(_s, _s); ctx.translate(-W / 2 + (_c - .5) * -W * .03, -H / 2); }
   const bg = clip(P.bg, 0, 1) || img(P.bg), k = clamp(t / Math.max(1, dur)); if (bg) cover(bg, { z: 1.1 + .1 * k, filter: 'brightness(.32) blur(2px)' });
   const F = { '0': '01110100011001110101110011000101110', '1': '00100011000010000100001000010001110', '2': '01110100010000100010001000100011111', '3': '11110000010000101110000010000111110', '4': '00010001100101010010111110001000010', '5': '11111100001111000001000011000101110', '6': '00110010001000011110100011000101110', '7': '11111000010001000100010000100001000', '8': '01110100011000101110100011000101110', '9': '01110100011000101111000010001001100' };
   const s = String(P.num || '0'), cols = []; for (const ch of s) { if (ch === ',') cols.push({ w: 2, g: '00000000000110' }); else if (ch === '-' || ch === '−') cols.push({ w: 4, g: '0000000000001111000000000000' }); else if (F[ch]) cols.push({ w: 5, g: F[ch] }); }

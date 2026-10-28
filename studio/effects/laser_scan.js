@@ -12,7 +12,7 @@
   const ly = by + bh * (.5 + .5 * Math.sin(t * 5)), on = t < t0 + .6; if (on) { ctx.save(); ctx.globalCompositeOperation = 'screen'; const g = ctx.createLinearGradient(0, ly - 30 * u, 0, ly + 30 * u); g.addColorStop(0, 'rgba(255,0,0,0)'); g.addColorStop(.5, 'rgba(255,40,30,.75)'); g.addColorStop(1, 'rgba(255,0,0,0)'); ctx.fillStyle = g; ctx.fillRect(bx - 40 * u, ly - 30 * u, bw + 80 * u, 60 * u); ctx.fillStyle = '#ff5040'; ctx.fillRect(bx - 40 * u, ly - 2 * u, bw + 80 * u, 4 * u); ctx.restore(); }
   const rx = W * .73, ry = H * .45, rw = W * .36, rh = H * .3; ctx.fillStyle = '#111a14'; ctx.fillRect(rx - rw / 2, ry - rh / 2, rw, rh); ctx.strokeStyle = '#4a5a50'; ctx.lineWidth = 6 * u; ctx.strokeRect(rx - rw / 2, ry - rh / 2, rw, rh);
   text(P.lab || 'COST PER SET', rx, ry - rh * .27, { size: 36 * u, font: 'cond', col: '#8fe3a8', lw: 0, ls: 5 * u });
-  const r = rng(Math.floor(t * 12)), hunt = String(Math.floor(r() * 90 + 10)) + '.' + String(Math.floor(r() * 90 + 10)), done = t > t0;
+  const r = rng(Math.floor(t * 12)), hunt = ['--.--', '- -.- -', '--.-', '---'][Math.floor(r() * 4)], done = t > t0;
   text(done ? (P.read || 'NO DATA') : hunt, rx, ry + rh * .12, { size: 110 * u, font: 'impact', col: done ? '#ff5040' : 'rgba(143,227,168,' + (.4 + .4 * r()).toFixed(2) + ')', lw: 0, a: done ? (Math.floor((t - t0) * 4) % 2 || t > t0 + .8 ? 1 : .35) : 1 });
   ctx.restore();
 }

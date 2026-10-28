@@ -26,20 +26,20 @@ This is the story of how a company famous for precision lost count of its own **
 # cine act=doubt fx="code:@price_query;bg:lego_doc_wayback_shop_2004_06_crop;go:tell;tags:.345,.42~.49,.40~.643,.42~.855,.2;lab:WHAT DID EACH BOX COST?;in:right"
 {wry} In two thousand and three, LEGO couldn't tell you what its own boxes **cost**. (J)
 
-// CARD a0-05 · SEE: a box lands with its small price tag; on "source" its parts pour out into a heap and a much bigger tag drops onto the heap · SEAM out right
-# cine act=doubt fx="code:@box_vs_parts;bg:lego_technic_supra_chassis;go:source;heap:70;btag:THE BOX'S PRICE;htag:WHAT THE PARTS COST;note:LEGO designer Mark Stafford · 2014 interview · motor and fibre-optic sets;out:right"
+// CARD a0-05 · SEE: a box lands with its small price tag; on "designers" its parts pour out into a heap and a much bigger tag drops onto the heap · SEAM out right
+# cine act=doubt fx="code:@box_vs_parts;bg:lego_technic_supra_chassis;go:designers;heap:70;btag:THE BOX'S PRICE;htag:WHAT THE PARTS COST;note:LEGO designer Mark Stafford · 2014 interview · motor and fibre-optic sets;out:right"
 One of its designers later said some sets cost more to source than the whole box sold **for**.
 
-// CARD a0-06 · SEE: a hand searching along a wall of archive drawers; it slows on "actually" and freezes grey on "knew" · SEAM in right, hard cut out
-# cine act=doubt fx="code:@reel;clip:stock_investigation_searching_aisle_01;move:right;z:.15;slow:actually;freeze:knew;mono:knew;in:right"
+// CARD a0-06 · SEE: the camera travels across a real box of sorted LEGO Technic parts, compartment after compartment; on "knew" it drains to grey · SEAM in right, hard cut out
+# cine act=doubt fx="code:@reel;under:lego_technic_bits;ua:0;move:right;z:.3;mono:knew;in:right"
 And no one at LEGO actually **knew**. (J)
 
 // CARD a0-07 · SEE: red trading screens falling in the dark; the real 2005 news clipping (PBN, carrying Bloomberg) slides in large; on "lost" a red marker underlines "the net loss widened to 1.93 billion kroner" · SEAM out right
 # cine act=fall fx="code:@clipping_over_footage;clip:lego_clip_chart_falling_screens;doc:lego_doc_headline_bloomberg_pbn_2005;crop:.21,.245,.6,.37;mark:.22,.351,.59,.364;go:lost;rot:-2;out:right"
 The next year, LEGO lost almost two billion **kroner**.
 
-// CARD a0-08 · SEE: the camera travels across LEGO's old System House in Billund; on "sell" a yellow note slaps onto the picture and SELL. writes itself in pencil · SEAM in right
-# cine act=fall fx="code:@advice_note;pic:lego_system_house;word:SELL.;go:sell;x:.66;y:.38;src:the advice, as told in an IE Business School case;in:right"
+// CARD a0-08 · SEE: the camera travels across LEGO's old System House in Billund; on "Bankers" a yellow note slaps onto the picture and SELL. writes itself in pencil · SEAM in right
+# cine act=fall fx="code:@advice_note;pic:lego_system_house;word:SELL.;go:Bankers;x:.66;y:.38;src:the advice, as told in an IE Business School case;in:right"
 Bankers advised the family to sell the **company**.
 
 // CARD a0-09 · SEE: a real LEGO city diorama, dim; on "Twenty" a tower of blue (MATTEL) and white (HASBRO) bricks builds itself; on "bigger" a red LEGO tower overtakes it; $9.52B and $10.85B land · SEAM out right

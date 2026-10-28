@@ -6,7 +6,7 @@
    @born: lego a2-13: every new shape needs its own steel mould, and a mould can cost tens of thousands of dollars
 */
 ({ t, at, p, W, H, u, img, clip, ctx, params: P, clamp, lerp, text, seam, cover, rng, dur }) => {
-  ctx.save(); seam(P.in || 'none', P.out || 'none');
+  ctx.save(); seam(P.in || 'none', P.out || 'none'); { const _c = clamp(t / Math.max(1, dur)), _s = 1.01 + .06 * _c * _c * (3 - 2 * _c); ctx.translate(W / 2, H / 2); ctx.scale(_s, _s); ctx.translate(-W / 2 + (_c - .5) * -W * .03, -H / 2); }
   const bg = clip(P.clip, 0, 1) || img(P.clip), k = clamp(t / Math.max(1, dur)); if (bg) cover(bg, { z: 1.08 + .1 * k, filter: 'brightness(.38) blur(2px)' });
   const m = img('lego_cut_mould'), mw = W * lerp(.62, .66, k), mh = m ? mw * m.height / m.width : H * .3, mx = W / 2 - mw / 2, my = H * .5 - mh / 2;
   if (m) { ctx.save(); ctx.shadowColor = 'rgba(0,0,0,.6)'; ctx.shadowBlur = 40 * u; ctx.shadowOffsetY = 20 * u; ctx.drawImage(m, mx, my, mw, mh); ctx.restore(); }

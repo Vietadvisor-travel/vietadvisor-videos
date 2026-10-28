@@ -9,8 +9,8 @@ captions: off
 autotrans: off
 motif: brick_drop
 
-// CARD a6-01 · SEE: a real LEGO store front in Leicester, bright with sets, the camera sliding along its windows · SEAM in right
-# cine act=rise fx="code:@reel;under:lego_store_leicester;ua:0;move:right;z:.35;in:right"
+// CARD a6-01 · SEE: inside LEGO's Leicester Square store, life-size brick sculptures, the camera sliding past them · SEAM in right
+# cine act=rise fx="code:@reel;under:lego_store_sculptures;ua:0;move:right;z:.3;in:right"
 {excited} What came next is the comeback everyone **remembers**.
 
 // CARD a6-02 · SEE: a packed theatre applauding, dim; ticket stubs fly across faster and faster while the box-office total runs to $468.1M and locks · SEAM out right
@@ -25,8 +25,8 @@ The sequel, five years later, made less than half of **that**. (J)
 # cine act=rise fx="code:@reel;clip:lego_clip_build_saturnv;move:in;z:.2;out:right"
 But here's the thing: the movies weren't the comeback. Hits come and go, and the system is what **compounds**.
 
-// CARD a6-05 · SEE: LEGO's own results release of 10 March 2026 in a browser window, scrolling; on "reached" the line "Revenue increased 12% to DKK 83.5 billion" is highlighted · SEAM in right
-# cine act=rise fx="code:@web_scroll;doc:lego_doc_results_2025_lego;crop:.28,.72;from:.06;to:.27;mark:.357,.377;go:reached;url:lego.com · 10 March 2026;in:right"
+// CARD a6-05 · SEE: LEGO's own results release of 10 March 2026 in a browser window, scrolling; on "twenty" the line "Revenue increased 12% to DKK 83.5 billion" is highlighted · SEAM in right
+# cine act=rise fx="code:@web_scroll;doc:lego_doc_results_2025_lego;crop:.28,.72;from:.06;to:.31;mark:.357,.377;go:twenty;url:lego.com · 10 March 2026;in:right"
 By twenty twenty-five, LEGO's revenue reached eighty-three and a half billion **kroner**.
 
 // CARD a6-06 · SEE: the white LEGO House in Billund dim behind; one brick for 2005 stands on the floor; on "twelve" a stack drops in brick by brick beside it until it is 11.8 bricks tall: ×11.8 · SEAM out right
@@ -37,8 +37,8 @@ That's nearly twelve times its two thousand and five **level**.
 # cine act=rise fx="code:@slice_returns;bg:lego_hq_2024;rows:2010^31.1~2015^34.2~2024^25.2~2025^26.4;go:year;lab:OPERATING PROFIT · SHARE OF SALES;in:right"
 And year after year, between a quarter and a third of its sales came back as operating **profit**.
 
-// CARD a6-08 · MOTIF · SEE: the white LEGO House in Billund with giant bricks on its plaza; the brick drops in and clicks down onto the plaza; IT STILL FITS sets above · SEAM out right
-# cine act=lesson fx="code:@brick_drop;bg:lego_lego_house_billund_04;go:fits;x:.4;y:.72;h:.1;lab:IT STILL FITS;lx:.5;z:.25;move:right;out:right"
+// CARD a6-08 · MOTIF · SEE: the 1958 patent page from the opening again; on "back" today's red brick drops onto the drawn bricks and clicks into place; IT STILL FITS sets above · SEAM out right
+# cine act=lesson fx="code:@brick_drop;bg:lego_doc_patent_us3005282_drawing_sheet1;go:back;x:.45;y:.5;h:.1;lab:IT STILL FITS;lx:.5;z:.15;move:right;out:right"
 {warm} So, back to that brick from nineteen fifty-eight. It still **fits**.
 
 // CARD a6-09 · SEE: black; the thesis arrives word by word in large serif and holds dead still; "counting" and "cost" in gold · SEAM hard cut · HOLD
@@ -49,12 +49,12 @@ LEGO didn't nearly die from a lack of ideas. It nearly died because it stopped c
 # cine act=lesson fx="code:@reel;under:lego_kjeld_2018;ua:0;fy:.05;move:in;z:.18;in:right"
 And it survived because the people who owned it could afford to lend, and chose not to **sell**.
 
-// CARD a6-11 · SEE: a closed box on the dark desk; on "ask" its lid lifts and a paper slip rises out; on "anyone" the question writes itself in pencil: CAN ANYONE SAY / WHAT EACH ONE COSTS? · SEAM out right
-# cine act=lesson fx="code:@question_on_box;box:lego_cut_box;go:ask;go2:anyone;q:Can anyone say~what each one costs?;out:right"
+// CARD a6-11 · SEE: a closed box on the dark desk; on "lesson" its lid lifts and a paper slip rises out; on "company" the question writes itself in pencil: CAN ANYONE SAY / WHAT EACH ONE COSTS? · SEAM out right
+# cine act=lesson fx="code:@question_on_box;box:lego_cut_box;go:lesson;go2:company;q:Can anyone say~what each one costs?;out:right"
 So here's the lesson: when a company you love keeps adding things, ask one question. Can anyone say what each one **costs**?
 
-// CARD a6-12 · SEE: three dark frames; on "games", "films", "carbon" real footage opens in each (kids with controllers, an applauding audience, drifting smoke); then counters over them spin and land on "?" · SEAM in right
-# cine act=doubt fx="code:@three_windows;wins:lego_clip_kids_game^GAMES^games~stock_people_applause_02^FILMS^films~stock_texture_smoke_black_14^CARBON PROMISES^carbon;lab:NONE OF THEM COMES IN A BOX;in:right"
+// CARD a6-12 · SEE: three dark frames; on "games", "films", "carbon" real footage opens in each (kids with controllers, the 2014 LEGO Movie news page, wind turbines); then counters over them spin and land on "?" · SEAM in right
+# cine act=doubt fx="code:@three_windows;wins:lego_clip_kids_game^GAMES^games~lego_doc_headline_taipeitimes_2014^FILMS^films~stock_energy_wind_turbines_06^CARBON PROMISES^carbon;lab:NONE OF THEM COMES IN A BOX;in:right"
 LEGO's next test isn't plastic, because its newest pieces are games, films and promises about carbon, and none of them comes in a box you can **count**. [BEAT]
 
 // CARD a6-13 · SEE: the giant brick-built tree inside LEGO House, the camera rising slowly up its trunk into the branches · SEAM out right

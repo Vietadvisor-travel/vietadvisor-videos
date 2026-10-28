@@ -13,6 +13,6 @@
   if (kw > 0) { ctx.save(); ctx.beginPath(); ctx.rect(x0 - 20 * u, y - sz, (fw + 40 * u) * kw, sz * 2); ctx.clip(); text(s, x, y, { size: sz, font: 'hand', col: 'rgba(245,240,230,.95)', lw: 0 }); ctx.restore(); }
   const kr = clamp((t - t0 - 1.1) / .6); if (kr > 0) { ctx.strokeStyle = 'rgba(245,240,230,.9)'; ctx.lineWidth = 5 * u; ctx.beginPath(); ctx.ellipse(x, y, fw * .62, sz * .62, -.05, -1.6, -1.6 + 6.4 * kr); ctx.stroke(); }
   const pc = img('lego_cut_pencil'); if (pc && kw > 0 && t < t0 + 2.2) { const px = kr > 0 ? x + Math.cos(-1.6 + 6.4 * kr) * fw * .62 : x0 + fw * kw, py = kr > 0 ? y + Math.sin(-1.6 + 6.4 * kr) * sz * .62 : y + Math.sin(t * 30) * 10 * u, pw = W * .3, ph = pw * pc.height / pc.width; ctx.drawImage(pc, px - .035 * pw, py - .01 * ph, pw, ph); }
-  const la = clamp(p(t0 + 1.3, .4)); if (P.lab) text(P.lab, W / 2, H * .12, { size: 54 * u, font: 'cond', col: '#f6efe2', lw: 0, ls: 6 * u, a: la }); if (P.src) text(P.src, W / 2, H * .82, { size: 30 * u, font: 'cond', col: '#e3d8c4', lw: 0, a: la });
+  const la = clamp(p(t0 + 1.3, .4)); if (P.lab) text(P.lab, W / 2, H * .12, { size: 54 * u, font: 'cond', col: '#f6efe2', lw: 0, ls: 6 * u, a: la }); if (P.src) text(P.src, W / 2, H * .82, { size: 38 * u, font: 'cond', col: '#f3ead8', lw: 0, a: la });
   ctx.restore();
 }

@@ -7,7 +7,7 @@
 */
 ({ t, at, p, W, H, u, img, ctx, params: P, clamp, lerp, text, seam, paperDesk, dur }) => {
   ctx.save(); seam(P.in || 'none', P.out || 'none'); paperDesk({ lx: .5, ly: .45 });
-  const A = img(P.a), B = img(P.b), k = clamp(t / Math.max(1, dur)), t0 = at(P.go || 0), kb = clamp((t - t0) / 1.6), pw = W * .3, cy = H * .52;
+  const A = img(P.a), B = img(P.b), k = clamp(t / Math.max(1, dur)), t0 = at(P.go || 0), kb = clamp((t - t0) / 1.2), pw = W * .3, cy = H * .52;
   const pr = (im, cx, lab) => { if (!im) return; const h = pw * im.height / im.width; ctx.save(); ctx.translate(cx, cy); ctx.shadowColor = 'rgba(0,0,0,.6)'; ctx.shadowBlur = 30 * u; ctx.fillStyle = '#efe8da'; ctx.fillRect(-pw / 2 - 10 * u, -h / 2 - 10 * u, pw + 20 * u, h + 20 * u); ctx.shadowColor = 'transparent'; ctx.drawImage(im, -pw / 2, -h / 2, pw, h); ctx.restore(); if (lab) text(lab, cx, cy + h / 2 + 50 * u, { size: 34 * u, font: 'cond', col: '#f2ead8', lw: 0, ls: 3 * u }); };
   pr(A, W * .16 - k * 10 * u, P.alab); pr(B, W * .84 + k * 10 * u, P.blab);
   const x0 = W * .32 + 10 * u, x1 = W * .68 - 10 * u, n = 8, bw = (x1 - x0) / n, br = img('lego_cut_brick_yellow'), bh = bw * .62;
