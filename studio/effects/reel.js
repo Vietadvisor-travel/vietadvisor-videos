@@ -17,7 +17,7 @@
   if (P.ink) { const r = lerp(0, W * .8, clamp(p(P.ink === '1' ? 0 : P.ink, 1.6, 'out'))); ctx.fillStyle = '#070605'; ctx.fillRect(0, 0, W, H); blob(W / 2, H / 2, r, { seed: 6, wob: .28, flow: 1 }); ctx.clip(); }
   // fy (0..1): which height of a tall still or clip stays in frame (0 = its top); default centre
   const fyo = src => { if (P.fy === undefined || !src || !src.width) return 0; const ex = Math.max(0, src.height * Math.max(W / src.width, H / src.height) - H) / H; return (.5 - +P.fy) * ex; };
-  if (P.under) { const ui = img(P.under); cover(ui, { z: sc * 1.02, ox: ox * .5, oy: oy * .5 + fyo(ui), filter: 'brightness(.8)' }); ctx.globalCompositeOperation = 'screen'; ctx.globalAlpha = +(P.ua || .6); }
+  if (P.under) { const ui = img(P.under); cover(ui, { z: sc * 1.02, ox: P.clip ? ox * .5 : ox, oy: (P.clip ? oy * .5 : oy) + fyo(ui), filter: 'brightness(.8)' }); ctx.globalCompositeOperation = 'screen'; ctx.globalAlpha = +(P.ua || .6); }
   if (im) cover(im, { z: sc, ox, oy: oy + fyo(im), filter: f }); ctx.globalCompositeOperation = 'source-over'; ctx.globalAlpha = 1;
   ctx.restore();
   if (P.txt) { const a = clamp(p(P.tat || 0, .35, 'out')); if (a > 0) { const yy = (+P.ty || .2) * H, sg = ctx.createLinearGradient(0, yy - H * .2, 0, yy + H * .2); sg.addColorStop(0, 'rgba(0,0,0,0)'); sg.addColorStop(.5, `rgba(6,5,4,${.55 * a})`); sg.addColorStop(1, 'rgba(0,0,0,0)'); ctx.fillStyle = sg; ctx.fillRect(0, yy - H * .2, W, H * .4); const bl = (1 - a) * 6; ctx.save(); if (bl > .3) ctx.filter = `blur(${bl * u}px)`; ctx.globalAlpha = a;

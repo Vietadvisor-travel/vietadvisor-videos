@@ -56,28 +56,26 @@ Star Wars made money. But many of LEGO's own new worlds did **not**.
 Then, in two thousand and three, LEGO's sales fell by more than a **quarter**.
 Its own annual report opened: two thousand and three was a very disappointing **year**. (J)
 LEGO lost nine hundred and thirty-five million **kroner**.
-That June, the head of strategy put a warning in **writing**.
+That June, the head of strategy, Jorgen Vig Knudstorp, put a warning in **writing**.
 @knudstorp: On a burning platform, losing money with negative cash flow and a real risk of debt default which could lead to a break up of the company.
-His name was Jorgen Vig Knudstorp, and he'd joined LEGO less than two years **before**.
-Kjeld took back day-to-day control, and his deputy, Poul Plougmann, was **fired**.
+He had joined LEGO less than two years **before**.
+Then Kjeld took back day-to-day control, and his deputy, Poul Plougmann, was **fired**.
 {tense} And two thousand and four was **worse**.
 LEGO lost one billion, nine hundred and thirty-one million **kroner**.
 Its main bank stopped lending, Bloomberg later **reported**.
 Equity fell from about four point nine billion kroner to under three **billion**.
-On the thirtieth of November, at a family house in the forest, bankers from Morgan Stanley met **Kjeld**.
+On the thirtieth of November two thousand and four, at a family house in the forest, bankers from Morgan Stanley met **Kjeld**.
 According to one business-school case, they recommended selling LEGO, for about one point seven billion **dollars**. [BEAT]
 The family said **no**.
 
 ## a4 THE COUNT · what the loss hid
-Here's the part the usual story leaves **out**.
+But here's the twist the usual story leaves **out**.
 In that worst year, the toy business itself, before write-downs, made a **profit**.
 One hundred and three million **kroner**.
-The giant loss came from cleaning up: write-downs, restructuring, and closing what didn't **work**.
-But the bricks weren't the problem. LEGO just couldn't see which sets made **money**.
-It had no way to cost a single set, so nobody knew which ones lost **it**.
+The giant loss came mostly from cleaning up: write-downs, restructuring, and closing what didn't **work**.
+But the bricks weren't the problem. LEGO had no way to cost a single **set**.
 Then designers finally checked the boxes, one by **one**.
 The worst were sets with a tiny motor or fibre-optic lights: their parts cost more than the whole box sold **for**.
-{wry} Every one of those sets lost money, and no one had **noticed**. (J)
 One study later did the maths for nineteen ninety-three to two thousand and **two**.
 LEGO reported profits in almost every one of those years, yet destroyed about one point six billion dollars of **value**.
 Profits on paper. Value going **down**.
@@ -106,7 +104,7 @@ Sales grew only a little. The swing came from what LEGO stopped **doing**.
 {excited} What came next is the comeback everyone **remembers**.
 In twenty fourteen, The LEGO Movie took about four hundred and sixty-eight million dollars **worldwide**.
 The sequel, five years later, made less than half of **that**. (J)
-But here's the twist: the movies weren't the comeback. Hits come and go, and the system is what **compounds**.
+But here's the thing: the movies weren't the comeback. Hits come and go, and the system is what **compounds**.
 By twenty twenty-five, LEGO's revenue reached eighty-three and a half billion **kroner**.
 That's nearly twelve times its two thousand and five **level**.
 And year after year, between a quarter and a third of its sales came back as operating **profit**.
@@ -115,6 +113,6 @@ LEGO didn't nearly die from a lack of ideas. It nearly died because it stopped c
 And it survived because the people who owned it could afford to lend, and chose not to **sell**.
 So here's the lesson: when a company you love keeps adding things, ask one question. Can anyone say what each one **costs**?
 LEGO's next test isn't plastic, because its newest pieces are games, films and promises about carbon, and none of them comes in a box you can **count**. [BEAT]
-{awe} So can a company that learned to count every single brick learn to count those too, before its catalogue grows too big all over **again**?
-And if you had been the family in two thousand and four, with the bankers' advice on the table, would you have sold LEGO to the highest bidder, or lent it the **money**?
+{awe} Can the company that learned to count every single brick learn to count those too, before its catalogue grows too big all over **again**?
+So, if you had been the family in two thousand and four, with the bankers' advice on the table: would you have sold LEGO to the highest bidder, or lent it the **money**?
 Tell us in the comments, and tell us which set you'd **keep**.

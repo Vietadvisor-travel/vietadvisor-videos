@@ -96,5 +96,24 @@
    "km_inspired"
   ],
   "date": "2026-10-27"
+ },
+ {
+  "ep": "lego",
+  "format": null,
+  "opening": null,
+  "ending": null,
+  "looks": [
+   "editorial"
+  ],
+  "open": "code",
+  "modes": {
+   "code": 12
+  },
+  "verbs": {},
+  "trans": {},
+  "tracks": [
+   "km_deep_haze"
+  ],
+  "date": "2026-10-28"
  }
 ]
