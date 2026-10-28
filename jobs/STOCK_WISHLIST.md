@@ -22,3 +22,5 @@ Muse fills these FIRST (before STOCK_PLAN gaps), then ticks the box and writes t
 - [ ] a baker scooping flour into a mixing bowl in a bakery, close shot  (wework, 2026-10-27)
 - [ ] Sand Hill Road / Menlo Park venture capital office exterior, wide  (wework, 2026-10-27)
 - [ ] a printed cheque being signed with a pen on a desk, extreme close  (wework, 2026-10-27)
+- [ ] a real LEGO set box from 2003-04, product shot, cut out  (lego, 2026-10-28)
+- [ ] LEGO-branded clothes, watches or video games from the 1990s  (lego, 2026-10-28)

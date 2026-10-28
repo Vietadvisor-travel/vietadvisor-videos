@@ -29,8 +29,8 @@ LEGO lost nine hundred and thirty-five million **kroner**.
 That June, the head of strategy, Jorgen Vig Knudstorp, put a warning in **writing**.
 @knudstorp: On a burning platform, losing money with negative cash flow and a real risk of debt default which could lead to a break up of the company.
 
-// CARD a3-05 · SEE: the camera travels along LEGO's old head office in Billund; on "joined" JOINED 2001 · WARNING JUNE 2003 sets above · SEAM in right
-# cine act=doubt fx="code:@reel;under:lego_campus_old;ua:0;move:right;z:.3;txt:JOINED 2001 · WARNING JUNE 2003;tat:joined;ty:.16;in:right"
+// CARD a3-05 · SEE: the camera travels along LEGO's old head office in Billund; on "joined" a red date stamp SEP 2001 slams onto it; on "years" JUN 2003 slams beside it; a pencil arc joins them: < 2 years · SEAM in right
+# cine act=doubt fx="code:@stamp_dates;pic:lego_campus_old;stamps:SEP 2001^joined~JUN 2003^years;gap:less than 2 years;in:right"
 He had joined LEGO less than two years **before**.
 
 // CARD a3-06 · SEE: a man carrying a box out of an office; the real 2005 news clipping slides in large; on "deputy" a red marker underlines "fired Deputy Chief Executive Poul Plougmann" · SEAM out right
@@ -45,8 +45,8 @@ Then Kjeld took back day-to-day control, and his deputy, Poul Plougmann, was **f
 # cine act=fall fx="code:@brick_digits;bg:lego_clip_closed_sign_woman;num:1,931;go:lost;col:red;lab:NET LOSS 2004 · DKK MILLION;sub:LEGO Annual Report 2004;out:right"
 LEGO lost one billion, nine hundred and thirty-one million **kroner**.
 
-// CARD a3-09 · SEE: a pen moving to sign a contract; on "stopped" the clip slows; on "lending" it freezes and drains grey; THE MAIN BANK STOPPED LENDING · BLOOMBERG sets · SEAM in right
-# cine act=fall fx="code:@reel;clip:stock_finance_signing_contract_11;move:in;z:.15;slow:stopped;freeze:lending;mono:lending;txt:MAIN BANK STOPPED LENDING · BLOOMBERG, 2013;tat:bank;ty:.16;in:right"
+// CARD a3-09 · SEE: a pen moving to sign a contract; on "stopped" the clip slows; on "lending" it freezes and drains grey · SEAM in right
+# cine act=fall fx="code:@reel;clip:stock_finance_signing_contract_11;move:in;z:.15;slow:stopped;freeze:lending;mono:lending;in:right"
 Its main bank stopped lending, Bloomberg later **reported**.
 
 // CARD a3-10 · SEE: a glass column of bricks over a dim warehouse; on "fell" bricks pour out of its foot and the level sinks below a dashed line while DKK 4.9B counts down to 2.9B · SEAM out right

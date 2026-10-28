@@ -45,8 +45,8 @@ And year after year, between a quarter and a third of its sales came back as ope
 # cine act=lesson fx="code:@thesis_black;lines:Not a lack of ideas.~It stopped counting~what each idea cost.;go:die;span:3.4;size:84;hi:counting,cost"
 LEGO didn't nearly die from a lack of ideas. It nearly died because it stopped counting what each idea **cost**.
 
-// CARD a6-10 · SEE: Kjeld Kirk Kristiansen today, outdoors in a blue scarf, the camera pushing slowly in; on "lend" THEY COULD LEND. THEY DIDN'T SELL. sets above · SEAM in right
-# cine act=lesson fx="code:@reel;under:lego_kjeld_2018;ua:0;fy:.05;move:in;z:.18;txt:THEY COULD LEND · THEY DIDN'T SELL;tat:lend;ty:.14;in:right"
+// CARD a6-10 · SEE: Kjeld Kirk Kristiansen today, outdoors in a blue scarf, the camera pushing slowly in · SEAM in right
+# cine act=lesson fx="code:@reel;under:lego_kjeld_2018;ua:0;fy:.05;move:in;z:.18;in:right"
 And it survived because the people who owned it could afford to lend, and chose not to **sell**.
 
 // CARD a6-11 · SEE: a closed box on the dark desk; on "ask" its lid lifts and a paper slip rises out; on "anyone" the question writes itself in pencil: CAN ANYONE SAY / WHAT EACH ONE COSTS? · SEAM out right
