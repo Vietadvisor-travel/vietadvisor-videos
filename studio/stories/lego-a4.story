@@ -27,8 +27,8 @@ The giant loss came mostly from cleaning up: write-downs, restructuring, and clo
 # cine act=doubt fx="code:@laser_scan;box:lego_cut_box;go:way;lab:COST PER SET;read:NO DATA;out:right"
 The bricks weren't the problem. LEGO had no way to cost a single **set**.
 
-// CARD a4-05 · SEE: a real LEGO kit laid out unbuilt, box top, instruction book and sealed bags, the camera pushing in over the parts · SEAM in right
-# cine act=doubt fx="code:@reel;under:lego_arch_fallingwater_kit_unbuilt;ua:0;move:in;z:.25;in:right"
+// CARD a4-05 · SEE: a real LEGO kit laid out unbuilt, box top, instruction book and sealed bags; on "designers" a pencil ticks the bags one by one while a tally counts 1 / 5 … 5 / 5 · SEAM in right
+# cine act=doubt fx="code:@bag_tally;pic:lego_arch_fallingwater_kit_unbuilt;pts:.3,.62~.45,.7~.6,.66~.72,.55~.82,.72;go:designers;span:2.4;lab:SETS COSTED;in:right"
 Then designers finally went through the sets, one by **one**.
 
 // CARD a4-06 · SEE: the box under the lamp; on "motor" an x-ray band sweeps it and shows gears inside and fibre-optic strands glowing; on "parts" two bars rise: WHAT THE PARTS COST towers over WHAT THE BOX SOLD FOR · SEAM out right

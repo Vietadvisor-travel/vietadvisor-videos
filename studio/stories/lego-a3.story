@@ -11,8 +11,8 @@ autotrans: off
 endcard: off
 motif: brick_drop
 
-// CARD a3-01 · SEE: a tall stack of red bricks on a floor over LEGO's own 2004 highlights page, 10,116 beside it; on "way" the floor cracks and the stack jolts; on "fell" its top breaks off and tumbles out while the figure counts down to 7,196 and −29% lands · SEAM in right
-# cine act=fall fx="code:@floor_drop;bg:lego_doc_annualreport_2004_financials;from:10116;to:7196;a:2002;b:2003;go:way;go2:fell;pct:−29%;lab:REVENUE · DKK MILLION · 2004 REPORT;note:LEGO Annual Report 2004 · highlights;in:right"
+// CARD a3-01 · SEE: a tall stack of red bricks on a floor over LEGO's own 2004 highlights page, 10,116 beside it; on "way" the floor cracks and the stack jolts; on "sales" its top breaks off and tumbles out while the figure counts down to 7,196 and −29% lands · SEAM in right
+# cine act=fall fx="code:@floor_drop;bg:lego_doc_annualreport_2004_financials;from:10116;to:7196;a:2002;b:2003;go:way;go2:sales;pct:−29%;lab:REVENUE · DKK MILLION · 2004 REPORT;note:LEGO Annual Report 2004 · highlights;in:right"
 {grave} Then the floor gave **way**.
 Then, in two thousand and three, LEGO's sales fell by more than a **quarter**.
 
@@ -42,16 +42,16 @@ Then Kjeld took back day-to-day control, and his deputy, Poul Plougmann, was **f
 # cine act=fall fx="code:@brick_digits;bg:lego_doc_annualreport_2004_cover;num:1,931;go:lost;col:red;lab:NET LOSS 2004 · DKK MILLION;sub:LEGO Annual Report 2004;out:right"
 LEGO lost one billion, nine hundred and thirty-one million **kroner**.
 
-// CARD a3-09 · SEE: the real Bloomberg story (via Business Standard, 2013), the camera riding down from its masthead; on "bank" THE MAIN BANK STOPPED LENDING · AS REPORTED BY BLOOMBERG, 2013 sets across it; on "lending" the page drains grey · SEAM in right
-# cine act=fall fx="code:@reel;under:lego_doc_headline_businessstandard_2013;ua:0;fy:0;move:down;z:.25;mono:lending;txt:THE MAIN BANK STOPPED LENDING · AS REPORTED BY BLOOMBERG, 2013;tat:bank;ty:.5;tsize:52;in:right"
+// CARD a3-09 · SEE: the camera travels down the real Bloomberg story (via Business Standard, 2013) to its "Bloomberg" byline; on "main" a strip slides across and types THE MAIN BANK STOPPED LENDING · Bloomberg, 16 March 2013, "Bloomberg" underlined in red · SEAM in right
+# cine act=fall fx="code:@retype_line;doc:lego_doc_headline_businessstandard_2013;fx:.12;fy:.43;line:THE MAIN BANK STOPPED LENDING · Bloomberg, 16 March 2013;hl:Bloomberg;go:main;rate:30;src:as reported by Bloomberg (via Business Standard) · its byline on the real page behind;in:right"
 Its main bank stopped lending, Bloomberg later **reported**.
 
 // CARD a3-10 · SEE: a glass column of bricks over a dim warehouse; on "fell" bricks pour out of its foot and the level sinks below a dashed line while DKK 4.9B counts down to 2.9B · SEAM out right
 # cine act=fall fx="code:@level_drain;bg:lego_clip_warehouse_stocked;from:4.9;to:2.9;go:fell;a:END 2003;b:END 2004;unit:DKK ;lab:EQUITY;note:LEGO Annual Report 2004;out:right"
 Equity fell from about four point nine billion kroner to under three **billion**.
 
-// CARD a3-11 · SEE: a quiet meeting room after hours (AI moment art, no people), the camera travelling; on "thirtieth" a red stamp 30 NOV 2004 slams on; on "bankers" MORGAN STANLEY slams beside it; a pencil arc: meets Kjeld · single source · SEAM in right
-# cine act=doubt fx="code:@stamp_dates;pic:lego_art_meeting_room_afterhours;stamps:30 NOV 2004^thirtieth~MORGAN STANLEY^bankers;gap:meets Kjeld · IE case account, single source;in:right"
+// CARD a3-11 · SEE: a quiet meeting room after hours (AI moment art, no people), framed on its blank whiteboard; a marker writes 30 NOV 2004 on "thirtieth", MORGAN STANLEY → KJELD on "bankers", advice: sell on "Kjeld"; single source · IE case in the corner · SEAM in right
+# cine act=doubt fx="code:@board_marker;pic:lego_art_meeting_room_afterhours;bx:.425;by:.445;bw:.36;lines:30 NOV 2004^thirtieth~MORGAN STANLEY → KJELD^bankers~advice: sell^Kjeld;src:single source · IE Business School case;in:right"
 On the thirtieth of November two thousand and four, at a family house in the forest, bankers from Morgan Stanley met **Kjeld**.
 
 // CARD a3-12 · SEE: the camera drifts across Ole Kirk's red-brick house; on "recommended" a pencil writes $1.7B across the picture and rings it; THE ADVICE · SELL · SEAM out right

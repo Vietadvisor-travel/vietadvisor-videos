@@ -37,8 +37,8 @@ The family's holding company, KIRKBI, lent LEGO eight hundred million **kroner**
 # cine act=rise fx="code:@tear_fifth;pic:lego_art_factory_line_empty;go:fifth;frac:.2;lab:−20%;sub:DKK 1,523M~ABOUT 1,000 JOBS;out:right"
 Costs were cut by a fifth, more than one and a half billion kroner, and about a thousand jobs **went**.
 
-// CARD a5-07 · SEE: a heap of bricks fills the frame under a counter reading 12,000+; on "cut" a sweep clears most of them out of frame and the counter runs down to 7,000 · SEAM in right
-# cine act=rise fx="code:@pile_sweep;bg:lego_brick_pile_mixed;go:cut;from:12000;to:7000;n:150;keep:.45;lab:DIFFERENT PARTS;in:right"
+// CARD a5-07 · SEE: a heap of bricks fills the frame under a counter reading 12,000+; on "parts" a sweep clears most of them out of frame and the counter runs down to 7,000 · SEAM in right
+# cine act=rise fx="code:@pile_sweep;bg:lego_brick_pile_mixed;go:parts;from:12000;to:7000;n:150;keep:.45;lab:DIFFERENT PARTS;in:right"
 The parts library was cut back to about seven **thousand**.
 
 // CARD a5-08 · SEE: real assorted LEGO bricks behind; a wall of colour chips, one per shade; on "colours" every other chip drops out and falls · SEAM out right

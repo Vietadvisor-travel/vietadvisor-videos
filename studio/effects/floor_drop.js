@@ -15,13 +15,13 @@
   const kb = t > t2 ? (t - t2) : -1, rr = rng(9);
   for (let i = 0; i < n; i++) { const top = i >= keep; let x = cx - bw / 2 + (i % 2 ? 6 * u : -6 * u), y = fy + jolt - (i + 1) * bh, rot = 0, a = 1; const dx = -(.3 + rr()) * 700 * u, dr = (rr() - .5) * 3;
     { const kin = clamp((t - i * .07) / .3); y -= (1 - kin * kin) * H * .9; if (kin <= 0) continue; }
-    if (top && kb > 0) { const tt = kb; x += dx * tt; y += 1400 * u * tt * tt - 200 * u * tt; rot = dr * tt; if (y > H * 1.3) continue; }
+    if (top && kb > 0) { const tt = kb; x += dx * tt; y += 1400 * u * tt * tt - 200 * u * tt; rot = dr * tt; if (y > H * .84) continue; }
     if (!br) continue; ctx.save(); ctx.translate(x + bw / 2, y + bh / 2); ctx.rotate(rot); ctx.globalAlpha = a; const ih = bw * br.height / br.width; ctx.drawImage(br, -bw / 2, bh / 2 - ih, bw, ih); ctx.restore(); }
-  const kv = clamp(p(t2, 1.0, 'inOut')), v = Math.round(lerp(from, to, kv)), tx = W * .68;
-  text(kv < 1 ? (P.a || '') : (P.b || ''), tx, H * .3, { size: 46 * u, font: 'cond', col: '#efe4cf', lw: 0, ls: 5 * u });
+  const kv = clamp(p(t2, .55, 'inOut')), v = Math.round(lerp(from, to, kv)), tx = W * .68;
+  text(t < t2 ? (P.a || '') : (P.b || ''), tx, H * .3, { size: 46 * u, font: 'cond', col: '#efe4cf', lw: 0, ls: 5 * u });
   text(v.toLocaleString('en-US'), tx, H * .43, { size: 150 * u, font: 'impact', col: kv > 0 ? '#ff6b5e' : '#f6efe2', lw: 0 });
   if (P.lab) text(P.lab, tx, H * .54, { size: 34 * u, font: 'cond', col: '#d9cdb8', lw: 0, ls: 4 * u });
-  if (P.pct && kv >= 1) { const ks = clamp(spring(t2 + 1, { stiff: 240, damp: 16 }), 0, 1.1); text(P.pct, tx, H * .68, { size: 110 * u * ks, font: 'impact', col: '#ff6b5e', lw: 0 }); }
+  if (P.pct && kv >= 1) { const ks = clamp(spring(t2 + .55, { stiff: 240, damp: 16 }), 0, 1.1); text(P.pct, tx, H * .68, { size: 110 * u * ks, font: 'impact', col: '#ff6b5e', lw: 0 }); }
   if (P.note) text(P.note, tx, H * .6, { size: 26 * u, font: 'cond', col: '#b9ad98', lw: 0 });
   ctx.restore();
 }
