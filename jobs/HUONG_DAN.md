@@ -42,7 +42,7 @@ Claude tự lấy clip trong kho khi làm tập mới, và tránh dùng lại cl
 - **Kiểm tra:** mở phiên Claude Code mới, nhắn `kiểm tra drive`.
 
 ## KHÁC (khi cần)
-- **Lên lịch tháng:** nhắn Muse `nghiên cứu chủ đề tháng`, rồi nhắn Claude Code `lịch 30 ngày từ jobs/TOPICS_<tháng>.md`.
+- **Lên lịch tuần (từ 27/10/2026, thay lịch 30 ngày):** mỗi thứ 2 nhắn Muse `nghiên cứu tuần` để có file `jobs/SCHEDULE_WEEK_<thứ-2>.md`, rồi nhắn Claude Code `làm tập <slug>` như bình thường, Claude tự đọc lịch tuần hiện tại. Lịch 30 ngày cũ đã nghỉ, chỉ giữ 5 tập đã làm xong (Jio, Theranos, AMD, OneCoin, WeWork).
 - **Muốn sửa video:** trong cùng phiên Claude Code, nhắn chỗ chưa ưng (kèm ảnh chụp càng tốt).
 - **Khi đăng YouTube:** làm đúng theo file `UPLOAD_GUIDE_<slug>.txt` của tập đó (đã ghi sẵn có tích ô "altered or synthetic content" hay không, và lý do).
 - **Khi đổi hướng dẫn thường trực cho Muse:** gửi lại file `MUSE_STANDING.md` mới cho Muse (bản v6.2 có phần đóng gói video stock).
