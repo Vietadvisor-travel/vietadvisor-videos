@@ -9,16 +9,16 @@ captions: off
 autotrans: off
 motif: brick_drop
 
-// CARD a6-01 · SEE: inside LEGO's Leicester Square store, life-size brick sculptures, the camera sliding past them · SEAM in right
-# cine act=rise fx="code:@reel;under:lego_store_sculptures;ua:0;move:right;z:.3;in:right"
+// CARD a6-01 · SEE: the real 2014 Irish Times page on The LEGO Movie, the camera riding down from its headline · SEAM in right
+# cine act=rise fx="code:@reel;under:lego_doc_headline_irishtimes_2014;ua:0;fy:0;move:down;z:.3;in:right"
 {excited} What came next is the comeback everyone **remembers**.
 
 // CARD a6-02 · SEE: a packed theatre applauding, dim; ticket stubs fly across faster and faster while the box-office total runs to $468.1M and locks · SEAM out right
 # cine act=rise fx="code:@box_office;clip:stock_people_applause_02;to:468.1;go:took;span:2;lab:THE LEGO MOVIE · 2014;sub:worldwide box office (Box Office Mojo);out:right"
 In twenty fourteen, The LEGO Movie took about four hundred and sixty-eight million dollars **worldwide**.
 
-// CARD a6-03 · SEE: the real 2014 Irish Times page dim behind; a big ticket THE LEGO MOVIE · $468M lies on the desk; on "sequel" a second ticket slides in and tears in two, $190–200M on the half that stays · SEAM in right
-# cine act=fall fx="code:@ticket_halves;bg:lego_doc_headline_irishtimes_2014;a:LEGO MOVIE · 2014;av:$468M;b:SEQUEL · 2019;bv:$190–200M;go:less;src:worldwide box office · Box Office Mojo;in:right"
+// CARD a6-03 · SEE: a LEGO store interior dim behind; a big ticket THE LEGO MOVIE · $468M lies on the desk; on "sequel" a second ticket slides in and tears in two, $190–200M on the half that stays · SEAM in right
+# cine act=fall fx="code:@ticket_halves;bg:lego_store_london;a:LEGO MOVIE · 2014;av:$468M;b:SEQUEL · 2019;bv:$190–200M;go:less;src:worldwide box office · Box Office Mojo;in:right"
 The sequel, five years later, made less than half of **that**. (J)
 
 // CARD a6-04 · SEE: a timelapse of a LEGO Saturn V rocket rising stage by stage on a mat · SEAM out right

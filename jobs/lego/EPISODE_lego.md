@@ -317,7 +317,7 @@ And if you had been the family in two thousand and four, with the bankers' advic
 Tell us in the comments, and tell us which set you'd **keep**.
 
 
-## 4. SCENE CARDS (v2, rebuilt after critic round 1 and the owner's note: one bespoke effect per sentence; per-act files jobs/lego/CARDS_lego_a0…a6.md)
+## 4. SCENE CARDS (v2, rebuilt after critic rounds 1–2 and the owner's note: one bespoke effect per sentence; per-act files jobs/lego/CARDS_lego_a0…a6.md)
 
 ### a0-01 · "LEGO says a brick made in nineteen fifty-eight still snaps onto a brick made today." (≈ 5.7 s)
 MEANS      the brick is the same object it was in 1958, and it still fits
@@ -741,13 +741,13 @@ SECONDS
 LAYERS     photo · brick · label
 EFFECT     motif @brick_drop
 
-### a2-01 · "The system took off. By nineteen sixty-six, LEGO was sold in forty-two countries."
+### a2-01 · "The system took off. By nineteen sixty-six, LEGO was sold in forty-two countries." (≈ 4.3 s)
 MEANS      the system spread fast: 42 countries by 1966
-SEE        a real globe turning in close-up; on "sold" gold lines shoot out from Denmark to new places one after another while a counter runs to 42
+SEE        a real globe turning in close-up; on "took" gold lines shoot out from Denmark to new places one after another while a counter runs to 42
 WORLD      stock_world_globe_02
 SECONDS
   0.0  a real globe turning in close-up
-  on "sold" gold lines shoot out from Denmark to new places one after another while a counter runs to 42
+  on "took" gold lines shoot out from Denmark to new places one after another while a counter runs to 42
 LAYERS     globe footage · origin pin · route lines · counter
 CAMERA     slow pull back
 MOTION     lines shoot out in sequence; counter climbs and locks
@@ -756,7 +756,7 @@ SOUND      soft whooshes per line
 TEXT       COUNTRIES BY 1966
 EFFECT     NEW @map_burst
 
-### a2-02 · "In nineteen sixty-eight, so many visitors turned up at the factory that LEGO built them a park, LEGOLAND."
+### a2-02 · "In nineteen sixty-eight, so many visitors turned up at the factory that LEGO built them a park, LEGOLAND." (≈ 6.0 s)
 MEANS      so many visitors came that LEGO built a park
 SEE        the real LEGOLAND Billund of the 1970s: a brick-built train full of passengers, the camera travelling with it
 WORLD      lego_legoland_1977_09
@@ -770,7 +770,7 @@ SOUND      room tone of the shot
 TEXT       none
 EFFECT     REUSE footage treatment @reel
 
-### a2-03 · "The first season drew six hundred and twenty-five thousand people, about twice the estimate."
+### a2-03 · "The first season drew six hundred and twenty-five thousand people, about twice the estimate." (≈ 4.6 s)
 MEANS      demand was double what anyone expected
 SEE        the real park seen from its tower; on "drew" tiny walkers pour onto its paths in waves while the count runs past a dashed ESTIMATE mark and locks on 625,000
 WORLD      lego_legoland_tower_view
@@ -785,12 +785,12 @@ SOUND      crowd murmur rising
 TEXT       VISITORS · FIRST SEASON 1968 / the estimate · about half
 EFFECT     NEW @crowd_fill
 
-### a2-04 · "Then in nineteen seventy-eight came the minifigure."
+### a2-04 · "Then in nineteen seventy-eight came the minifigure." (≈ 2.7 s)
 MEANS      the minifigure arrived in 1978
-SEE        the camera pushes hard into a real minifigure's smiling yellow face until it fills the frame
-WORLD      lego_minifig_head_macro
+SEE        a real minifigure on a skateboard, the camera pushing in
+WORLD      lego_minifig_skateboard
 SECONDS
-  0.0  the camera pushes hard into a real minifigure's smiling yellow face until it fills the frame
+  0.0  a real minifigure on a skateboard, the camera pushing in
 LAYERS     footage / photo · grade
 CAMERA     push or travel with intent
 MOTION     footage playing; ramp / freeze where marked
@@ -799,13 +799,13 @@ SOUND      room tone of the shot
 TEXT       none
 EFFECT     REUSE footage treatment @reel
 
-### a2-05 · "For forty-six years, LEGO's worlds had had no people in them."
+### a2-05 · "For forty-six years, LEGO's worlds had had no people in them." (≈ 3.2 s)
 MEANS      for 46 years the sets had had no people
-SEE        the real Miniland of 1977, empty streets of red roofs; on "years" chalk tally marks scratch across it in fives, 46 of them; NOBODY LIVED HERE sets under
-WORLD      lego_legoland_1977
+SEE        LEGOLAND's real Miniland airport seen from above, planes and runways and nobody; on "For" chalk tally marks scratch across it in fives, 46 of them; NOBODY LIVED HERE sets under
+WORLD      lego_legoland_miniland_airport
 SECONDS
-  0.0  the real Miniland of 1977, empty streets of red roofs
-  on "years" chalk tally marks scratch across it in fives, 46 of them
+  0.0  LEGOLAND's real Miniland airport seen from above, planes and runways and nobody
+  on "For" chalk tally marks scratch across it in fives, 46 of them
   NOBODY LIVED HERE sets under
 LAYERS     photo · chalk tally marks · one line
 CAMERA     dolly across
@@ -815,7 +815,7 @@ SOUND      chalk scratches
 TEXT       46 YEARS · NOBODY IN THE SETS
 EFFECT     NEW @years_tally
 
-### a2-06 · "In nineteen seventy-nine, the founder's grandson, Kjeld Kirk Kristiansen, took charge."
+### a2-06 · "In nineteen seventy-nine, the founder's grandson, Kjeld Kirk Kristiansen, took charge." (≈ 4.3 s)
 MEANS      the third generation took charge in 1979
 SEE        Kjeld Kirk Kristiansen at a lectern in 1996, the camera travelling to his face; on "Kjeld" a name card slides in at the top
 WORLD      lego_kjeld_1996_award
@@ -830,13 +830,13 @@ SOUND      paper slide
 TEXT       KJELD KIRK KRISTIANSEN / the founder's grandson · CEO 1979–2004
 EFFECT     NEW @name_strap
 
-### a2-07 · "And by the nineties, LEGO was saying yes to everything. More parks. Clothes. Watches. Video games."
+### a2-07 · "And by the nineties, LEGO was saying yes to everything. More parks. Clothes. Watches. Video games." (≈ 7.4 s)
 MEANS      in the nineties LEGO said yes to everything, far beyond bricks
-SEE        real LEGO product photos dealt onto a dark table faster and faster; on "parks", "Clothes", "Watches", "games" one card lands big in the middle, its footage playing inside
-WORLD      lego_city_space_shuttle · lego_city_train_toronto · lego_clip_arcade_family · lego_clip_clothing_store · lego_clip_roller_coaster · lego_clip_watch_face · lego_duplo_large · lego_legoland_castle · lego_legoland_logflume · lego_minifig_offroad · lego_minifig_skateboard · lego_model_red_house_theater · lego_technic_supra_build · lego_technic_tractor
+SEE        real LEGO product photos dealt onto a dark table faster and faster; on "parks", "Clothes", "games" one card lands big in the middle, its footage playing inside
+WORLD      lego_bionicle_exotoa · lego_city_train_toronto · lego_clip_arcade_family · lego_clip_clothing_store · lego_clip_roller_coaster · lego_duplo_old · lego_legoland_castle · lego_legoland_logflume · lego_legoland_shop · lego_model_red_house_theater · lego_technic_tractor
 SECONDS
   0.0  real LEGO product photos dealt onto a dark table faster and faster
-  on "parks", "Clothes", "Watches", "games" one card lands big in the middle, its footage playing inside
+  on "parks", "Clothes", "games" one card lands big in the middle, its footage playing inside
 LAYERS     dark table · dealt product prints · hero card with live footage
 CAMERA     locked, cards act
 MOTION     cards dealt faster and faster; hero card springs in per word
@@ -845,13 +845,13 @@ SOUND      card flicks accelerating
 TEXT       none
 EFFECT     NEW @catalogue_fan
 
-### a2-08 · "New themes, new worlds, new pieces every year."
+### a2-08 · "New themes, new worlds, new pieces every year." (≈ 2.4 s)
 MEANS      every year brought new themes, worlds and pieces
-SEE        the real LEGO online shop of March 2004 in a browser window, scrolling down through its themes; on "worlds" the headline is highlighted
-WORLD      lego_doc_wayback_shop_2004_03_26
+SEE        LEGO's real homepage of February 2003 in a browser window: ADVENTURES, GAMES, LEGOLAND, SHOP; on "worlds" the menu row is highlighted
+WORLD      lego_doc_wayback_home_2003_02_06
 SECONDS
-  0.0  the real LEGO online shop of March 2004 in a browser window, scrolling down through its themes
-  on "worlds" the headline is highlighted
+  0.0  LEGO's real homepage of February 2003 in a browser window: ADVENTURES, GAMES, LEGOLAND, SHOP
+  on "worlds" the menu row is highlighted
 LAYERS     browser window · archived page · highlight
 CAMERA     scroll down the page
 MOTION     page scrolls; marker sweeps on the cue
@@ -860,7 +860,7 @@ SOUND      mouse wheel ticks
 TEXT       none
 EFFECT     NEW @web_scroll
 
-### a2-09 · "Designers went from about six thousand different parts to more than twelve thousand."
+### a2-09 · "Designers went from about six thousand different parts to more than twelve thousand." (≈ 4.3 s)
 MEANS      the parts library doubled
 SEE        one real part photo fills the frame; on "Designers" it splits into 2, 4, 8 … 64 tiles of different parts while a counter runs 6,000 → 12,000+
 WORLD      lego_brick_2x4_stud · lego_brick_color_pile · lego_bricks_assorted · lego_duplo_old · lego_minifig_head_macro · lego_minifig_legs · lego_patent_brick · lego_technic_bits · lego_technic_gear · lego_technic_gears
@@ -875,7 +875,7 @@ SOUND      clicks doubling in speed
 TEXT       DIFFERENT PARTS
 EFFECT     NEW @tile_multiply
 
-### a2-10 · "And about ninety percent of the components were used in just one design."
+### a2-10 · "And about ninety percent of the components were used in just one design." (≈ 3.7 s)
 MEANS      most of those parts were used once
 SEE        a hundred bricks in a grid over real sorted Technic parts; on "ninety" ninety of them get a red 1 badge and sink, one after another; the ten left light up gold
 WORLD      lego_technic_bits
@@ -891,7 +891,7 @@ SOUND      soft drops, one bell at the end
 TEXT       90 IN 100 · USED IN ONE DESIGN / case literature · Robertson and Breen
 EFFECT     NEW @hundred_parts
 
-### a2-11 · "A system where nothing gets reused isn't a system. It's a catalogue." · MOTIF
+### a2-11 · "A system where nothing gets reused isn't a system. It's a catalogue." (≈ 4.1 s) · MOTIF
 MEANS      a system with no reuse is just a catalogue
 SEE        a warehouse buried under bricks and boxes (AI moment art); the brick drops and lands on the heap, one more among thousands; A CATALOGUE sets above
 WORLD      lego_scene_brick_warehouse_chaos
@@ -907,7 +907,7 @@ SOUND      the click
 TEXT       A CATALOGUE
 EFFECT     motif @brick_drop
 
-### a2-12 · "Every new shape needs its own steel mould, and a mould can cost tens of thousands of dollars."
+### a2-12 · "Every new shape needs its own steel mould, and a mould can cost tens of thousands of dollars." (≈ 5.1 s)
 MEANS      every new shape carries a heavy fixed cost
 SEE        a steel mould in front of a working factory; on "mould" a new cavity is cut into it in a shower of sparks and $10,000s is scratched beside it
 WORLD      lego_clip_factory_metal
@@ -922,7 +922,7 @@ SOUND      milling whine, sparks
 TEXT       ONE NEW SHAPE · ONE NEW MOULD
 EFFECT     NEW @mould_mill
 
-### a2-13 · "In nineteen ninety-eight, LEGO posted a loss."
+### a2-13 · "In nineteen ninety-eight, LEGO posted a loss." (≈ 2.9 s)
 MEANS      1998: the first sign in the accounts
 SEE        an accounts ledger slides along under the lamp, 1993 to 1997 ticked in black; on "loss" 1998 turns red and a red LOSS stamp hits its row
 WORLD      procedural desk / dark (no image)
@@ -937,7 +937,7 @@ SOUND      pen scratches, stamp thud
 TEXT       LOSS / THE YEAR'S RESULT
 EFFECT     NEW @ledger_red
 
-### a2-14 · "In nineteen ninety-nine it signed its first outside licence: Star Wars."
+### a2-14 · "In nineteen ninety-nine it signed its first outside licence: Star Wars." (≈ 3.7 s)
 MEANS      the first outside licence, Star Wars, 1999
 SEE        a giant brick-built Millennium Falcon at an exhibition, the camera pushing along it; 1999 · FIRST OUTSIDE LICENCE sets above
 WORLD      lego_starwars_millennium_falcon
@@ -952,7 +952,7 @@ SOUND      room tone of the shot
 TEXT       1999 · FIRST OUTSIDE LICENCE
 EFFECT     REUSE footage treatment @reel
 
-### a2-15 · "Star Wars made money. But many of LEGO's own new worlds did not."
+### a2-15 · "Star Wars made money. But many of LEGO's own new worlds did not." (≈ 4.1 s)
 MEANS      licences paid, LEGO's own new worlds did not
 SEE        two prints on the desk: a brick-built AT-AT and LEGO's own 2002 homepage with Galidor; on "money" gold coins pour onto the AT-AT; on "not" the Galidor print drains grey and sags
 WORLD      lego_doc_wayback_home_2002_crop · lego_starwars_atat
@@ -968,23 +968,23 @@ SOUND      coin cascade
 TEXT       STAR WARS · LICENSED / GALIDOR · LEGO'S OWN · 2002
 EFFECT     NEW @coin_stream
 
-### a3-01 · "Then the floor gave way. Then, in two thousand and three, LEGO's sales fell by more than a quarter."
+### a3-01 · "Then the floor gave way. Then, in two thousand and three, LEGO's sales fell by more than a quarter." (≈ 7.2 s)
 MEANS      the floor gave way: 2003 revenue fell 29 %
-SEE        a tall stack of red bricks on a floor over LEGO's own 2004 highlights page, 10,116 beside it; on "way" the floor cracks and the stack jolts; on "quarter" its top breaks off and tumbles out while the figure counts down to 7,196 and −29% lands
+SEE        a tall stack of red bricks on a floor over LEGO's own 2004 highlights page, 10,116 beside it; on "way" the floor cracks and the stack jolts; on "fell" its top breaks off and tumbles out while the figure counts down to 7,196 and −29% lands
 WORLD      lego_doc_annualreport_2004_financials
 SECONDS
   0.0  a tall stack of red bricks on a floor over LEGO's own 2004 highlights page, 10,116 beside it
   on "way" the floor cracks and the stack jolts
-  on "quarter" its top breaks off and tumbles out while the figure counts down to 7,196 and −29% lands
+  on "fell" its top breaks off and tumbles out while the figure counts down to 7,196 and −29% lands
 LAYERS     blurred source page · brick stack · floor crack · counter
 CAMERA     slow push
 MOTION     floor cracks, stack jolts, top breaks off and tumbles; figure counts down
 SEAM       in right
 SOUND      crack, plastic clatter
-TEXT       REVENUE · DKK MILLION
+TEXT       REVENUE · DKK MILLION · 2004 REPORT
 EFFECT     NEW @floor_drop
 
-### a3-02 · "Its own annual report opened: two thousand and three was a very disappointing year." · HOLD
+### a3-02 · "Its own annual report opened: two thousand and three was a very disappointing year." (≈ 5.8 s) · HOLD
 MEANS      LEGO's own report admitted it in its first sentence
 SEE        the camera travels down the real 2003 annual report to its first sentence; on "opened" a paper strip slides across and a typewriter retypes it; "disappointing" is underlined in red
 WORLD      lego_doc_annualreport_2003_disappointing_year
@@ -1000,7 +1000,7 @@ SOUND      typewriter keys, carriage bell
 TEXT       2003 was a very disappointing year for LEGO Company.
 EFFECT     NEW @retype_line
 
-### a3-03 · "LEGO lost nine hundred and thirty-five million kroner."
+### a3-03 · "LEGO lost nine hundred and thirty-five million kroner." (≈ 4.0 s)
 MEANS      the 2003 net loss: DKK 935M
 SEE        the real 2003 annual report cover dim behind; on "lost" red bricks rain down and click into the digits 935; NET LOSS 2003 · DKK MILLION sets under
 WORLD      lego_doc_annualreport_2003_cover
@@ -1016,7 +1016,7 @@ SOUND      rapid plastic clicks
 TEXT       NET LOSS 2003 · DKK MILLION / LEGO Annual Report 2004
 EFFECT     NEW @brick_digits
 
-### a3-04 · "That June, the head of strategy, Jorgen Vig Knudstorp, put a warning in writing. [quote voice] On a burning platform, losing money with negative cash flow and a real risk of debt default which could lead to a break up of the company." · HOLD
+### a3-04 · "That June, the head of strategy, Jorgen Vig Knudstorp, put a warning in writing. [quote voice] On a burning platform, losing money with negative cash flow and a real risk of debt default which could lead to a break up of the company. He had joined LEGO less than two years before." (≈ 16.5 s) · HOLD
 MEANS      an insider warned in writing in June 2003
 SEE        Knudstorp's real photo as a print on the left; the verbatim warning lights word by word on the right as the quote voice reads it, embers rising from the bottom and the light warming
 WORLD      lego_knudstorp_2010 · stock_texture_sparks_05
@@ -1028,27 +1028,10 @@ CAMERA     print drifts
 MOTION     words light one by one with the quote voice; embers rise
 SEAM       out right
 SOUND      low fire crackle under the quote voice
-TEXT       “On a burning platform, losing money with negative cash flow and a real risk of debt default which could lead to a break up of the company.” / JØRGEN VIG KNUDSTORP · photo 2010
+TEXT       “On a burning platform, losing money with negative cash flow and a real risk of debt default which could lead to a break up of the company.” / KNUDSTORP · AT LEGO SINCE 2001
 EFFECT     NEW @ember_quote
 
-### a3-05 · "He had joined LEGO less than two years before."
-MEANS      the warning came from someone less than two years in the company
-SEE        the camera travels along LEGO's old head office in Billund; on "joined" a red date stamp SEP 2001 slams onto it; on "years" JUN 2003 slams beside it; a pencil arc joins them: < 2 years
-WORLD      lego_campus_old
-SECONDS
-  0.0  the camera travels along LEGO's old head office in Billund
-  on "joined" a red date stamp SEP 2001 slams onto it
-  on "years" JUN 2003 slams beside it
-  a pencil arc joins them: < 2 years
-LAYERS     photo (travel) · two rubber stamps · pencil arc · gap note
-CAMERA     dolly across
-MOTION     stamps slam on their words; the arc draws
-SEAM       in right
-SOUND      two stamp thuds, pencil
-TEXT       none
-EFFECT     NEW @stamp_dates
-
-### a3-06 · "Then Kjeld took back day-to-day control, and his deputy, Poul Plougmann, was fired."
+### a3-06 · "Then Kjeld took back day-to-day control, and his deputy, Poul Plougmann, was fired." (≈ 5.7 s)
 MEANS      the top was cleared out: Kjeld back, deputy fired
 SEE        a man carrying a box out of an office; the real 2005 news clipping slides in large; on "deputy" a red marker underlines "fired Deputy Chief Executive Poul Plougmann"
 WORLD      lego_clip_office_carry_box · lego_doc_headline_bloomberg_pbn_2005
@@ -1064,13 +1047,13 @@ SOUND      paper slide, marker squeak
 TEXT       none
 EFFECT     REUSE (2nd and last use in the film) @clipping_over_footage
 
-### a3-07 · "And two thousand and four was worse." · MOTIF
+### a3-07 · "And two thousand and four was worse." (≈ 2.5 s) · MOTIF
 MEANS      2004 was worse
-SEE        supermarket shelves stripped almost bare; the brick drops and lands alone on an empty shelf; 2004 sets above
-WORLD      lego_clip_empty_shelves
+SEE        a vast empty warehouse, light on a bare floor; the brick drops and lands alone on it; 2004 sets above
+WORLD      lego_clip_empty_warehouse
 SECONDS
-  0.0  supermarket shelves stripped almost bare
-  the brick drops and lands alone on an empty shelf
+  0.0  a vast empty warehouse, light on a bare floor
+  the brick drops and lands alone on it
   2004 sets above
 LAYERS     photo · the red brick · shadow · one word
 CAMERA     push
@@ -1080,12 +1063,12 @@ SOUND      the click
 TEXT       2004
 EFFECT     motif @brick_drop
 
-### a3-08 · "LEGO lost one billion, nine hundred and thirty-one million kroner."
+### a3-08 · "LEGO lost one billion, nine hundred and thirty-one million kroner." (≈ 5.0 s)
 MEANS      the 2004 net loss: DKK 1,931M
-SEE        a shop assistant holding up a SORRY WE'RE CLOSED sign, dim; on "lost" red bricks rain into 1,931; NET LOSS 2004 · DKK MILLION sets under
-WORLD      lego_clip_closed_sign_woman
+SEE        the real 2004 annual report cover, dim; on "lost" red bricks rain into 1,931; NET LOSS 2004 · DKK MILLION sets under
+WORLD      lego_doc_annualreport_2004_cover
 SECONDS
-  0.0  a shop assistant holding up a SORRY WE'RE CLOSED sign, dim
+  0.0  the real 2004 annual report cover, dim
   on "lost" red bricks rain into 1,931
   NET LOSS 2004 · DKK MILLION sets under
 LAYERS     dim footage / page · studded bricks forming digits · label
@@ -1096,23 +1079,23 @@ SOUND      rapid plastic clicks
 TEXT       NET LOSS 2004 · DKK MILLION / LEGO Annual Report 2004
 EFFECT     REUSE (2nd and last use in the film) @brick_digits
 
-### a3-09 · "Its main bank stopped lending, Bloomberg later reported."
+### a3-09 · "Its main bank stopped lending, Bloomberg later reported." (≈ 3.8 s)
 MEANS      the main bank stopped lending (Bloomberg)
-SEE        a pen moving to sign a contract; on "stopped" the clip slows; on "lending" it freezes and drains grey
-WORLD      stock_finance_signing_contract_11
+SEE        the real Bloomberg story (via Business Standard, 2013), the camera riding down from its masthead; on "bank" THE MAIN BANK STOPPED LENDING · AS REPORTED BY BLOOMBERG, 2013 sets across it; on "lending" the page drains grey
+WORLD      lego_doc_headline_businessstandard_2013
 SECONDS
-  0.0  a pen moving to sign a contract
-  on "stopped" the clip slows
-  on "lending" it freezes and drains grey
+  0.0  the real Bloomberg story (via Business Standard, 2013), the camera riding down from its masthead
+  on "bank" THE MAIN BANK STOPPED LENDING · AS REPORTED BY BLOOMBERG, 2013 sets across it
+  on "lending" the page drains grey
 LAYERS     footage / photo · grade
 CAMERA     push or travel with intent
 MOTION     footage playing; ramp / freeze where marked
 SEAM       in right
 SOUND      room tone of the shot
-TEXT       none
+TEXT       THE MAIN BANK STOPPED LENDING · AS REPORTED BY BLOOMBERG, 2013
 EFFECT     REUSE footage treatment @reel
 
-### a3-10 · "Equity fell from about four point nine billion kroner to under three billion."
+### a3-10 · "Equity fell from about four point nine billion kroner to under three billion." (≈ 4.6 s)
 MEANS      equity drained from 4.9 to 2.9 billion
 SEE        a glass column of bricks over a dim warehouse; on "fell" bricks pour out of its foot and the level sinks below a dashed line while DKK 4.9B counts down to 2.9B
 WORLD      lego_clip_warehouse_stocked
@@ -1127,22 +1110,24 @@ SOUND      bricks pouring
 TEXT       EQUITY
 EFFECT     NEW @level_drain
 
-### a3-11 · "On the thirtieth of November two thousand and four, at a family house in the forest, bankers from Morgan Stanley met Kjeld."
+### a3-11 · "On the thirtieth of November two thousand and four, at a family house in the forest, bankers from Morgan Stanley met Kjeld." (≈ 8.4 s)
 MEANS      the bankers met Kjeld on 30 Nov 2004
-SEE        a banker reading papers under a desk lamp, the camera easing in; on "thirtieth" 30 NOVEMBER 2004 · MORGAN STANLEY sets above
-WORLD      stock_investigation_banker_lamp_reading_01
+SEE        a quiet meeting room after hours (AI moment art, no people), the camera travelling; on "thirtieth" a red stamp 30 NOV 2004 slams on; on "bankers" MORGAN STANLEY slams beside it; a pencil arc: meets Kjeld · single source
+WORLD      lego_art_meeting_room_afterhours
 SECONDS
-  0.0  a banker reading papers under a desk lamp, the camera easing in
-  on "thirtieth" 30 NOVEMBER 2004 · MORGAN STANLEY sets above
-LAYERS     footage / photo · grade
-CAMERA     push or travel with intent
-MOTION     footage playing; ramp / freeze where marked
+  0.0  a quiet meeting room after hours (AI moment art, no people), the camera travelling
+  on "thirtieth" a red stamp 30 NOV 2004 slams on
+  on "bankers" MORGAN STANLEY slams beside it
+  a pencil arc: meets Kjeld · single source
+LAYERS     photo (travel) · two rubber stamps · pencil arc · gap note
+CAMERA     dolly across
+MOTION     stamps slam on their words; the arc draws
 SEAM       in right
-SOUND      room tone of the shot
-TEXT       30 NOVEMBER 2004 · MORGAN STANLEY
-EFFECT     REUSE footage treatment @reel
+SOUND      two stamp thuds, pencil
+TEXT       none
+EFFECT     NEW @stamp_dates
 
-### a3-12 · "According to one business-school case, they recommended selling LEGO, for about one point seven billion dollars."
+### a3-12 · "According to one business-school case, they recommended selling LEGO, for about one point seven billion dollars." (≈ 8.3 s)
 MEANS      their advice: sell, for about $1.7B (single source)
 SEE        the camera drifts across Ole Kirk's red-brick house; on "recommended" a pencil writes $1.7B across the picture and rings it; THE ADVICE · SELL
 WORLD      lego_ole_kirks_house_02
@@ -1158,7 +1143,7 @@ SOUND      pencil on paper
 TEXT       $1.7B / THE ADVICE · SELL
 EFFECT     NEW @price_pencil
 
-### a3-13 · "The family said no." · HOLD
+### a3-13 · "The family said no." (≈ 2.2 s) · HOLD
 MEANS      the family refused
 SEE        the real 1920s photograph of the founder's family on the grass, the camera pushing slowly in toward them
 WORLD      lego_ole_family
@@ -1172,7 +1157,7 @@ SOUND      room tone of the shot
 TEXT       none
 EFFECT     REUSE footage treatment @reel
 
-### a4-01 · "But here's the twist the usual story leaves out."
+### a4-01 · "But here's the twist the usual story leaves out." (≈ 2.6 s)
 MEANS      the famous loss hides one line
 SEE        LEGO's real 2004 highlights table in the dark; a spotlight wanders down its rows; on "twist" it snaps onto the row nobody quotes, profit before special items, and the camera closes in
 WORLD      lego_doc_annualreport_2004_financials
@@ -1188,7 +1173,7 @@ SOUND      a lamp click
 TEXT       THE LINE NOBODY QUOTES / LEGO Annual Report 2004 · financial highlights
 EFFECT     NEW @spotlight_row
 
-### a4-02 · "In that worst year, the toy business itself, before write-downs, made a profit. One hundred and three million kroner."
+### a4-02 · "In that worst year, the toy business itself, before write-downs, made a profit. One hundred and three million kroner." (≈ 6.1 s)
 MEANS      the toy business made DKK 103M before write-downs
 SEE        a boy building with studded bricks on a living-room floor, dim; on "toy" yellow studs pop onto a green baseplate one per million, 103 of them, as the counter climbs and locks
 WORLD      lego_clip_boy_studded_bricks_floor
@@ -1203,13 +1188,13 @@ SOUND      tiny pops
 TEXT       MILLION · TOY BUSINESS PROFIT · 2004 / before write-downs · LEGO Annual Report 2004
 EFFECT     NEW @stud_counter
 
-### a4-03 · "The giant loss came mostly from cleaning up: write-downs, restructuring, and closing what didn't work."
+### a4-03 · "The giant loss came mostly from cleaning up: write-downs, restructuring, and closing what didn't work." (≈ 6.5 s)
 MEANS      the loss was mostly clean-up: 723 + 502 + 458 of 1,931
-SEE        the red brick number 1,931 from the last act hangs at the top; on "write-downs", "restructuring", "closing" a share of its bricks pours down into three labelled piles (723, 502, 458); THE REST · 248 stays in the number
+SEE        the red brick number 1,931 from the last act hangs at the top; on "cleaning", "write-downs", "restructuring" a share of its bricks pours down into three labelled piles (723, 502, 458); THE REST · 248 stays in the number
 WORLD      lego_doc_annualreport_2004_income_statement
 SECONDS
   0.0  the red brick number 1,931 from the last act hangs at the top
-  on "write-downs", "restructuring", "closing" a share of its bricks pours down into three labelled piles (723, 502, 458)
+  on "cleaning", "write-downs", "restructuring" a share of its bricks pours down into three labelled piles (723, 502, 458)
   THE REST · 248 stays in the number
 LAYERS     blurred statement · brick number · three piles · labels
 CAMERA     locked, bricks act
@@ -1219,7 +1204,7 @@ SOUND      three pours
 TEXT       none
 EFFECT     NEW @loss_breakdown_bricks
 
-### a4-04 · "But the bricks weren't the problem. LEGO had no way to cost a single set."
+### a4-04 · "The bricks weren't the problem. LEGO had no way to cost a single set." (≈ 4.3 s)
 MEANS      the real problem: no cost per set
 SEE        a plain product box under a checkout scanner, a red laser sweeping it again and again; the readout hunts for a number; on "way" it prints NO DATA in red
 WORLD      lego_cut_box
@@ -1235,13 +1220,12 @@ SOUND      scanner beeps, error buzz
 TEXT       COST PER SET
 EFFECT     NEW @laser_scan
 
-### a4-05 · "Then designers finally checked the boxes, one by one."
+### a4-05 · "Then designers finally went through the sets, one by one." (≈ 3.4 s)
 MEANS      designers finally checked set by set
-SEE        hands checking a plan sheet line by line on a desk; the clip slows on "one"
-WORLD      lego_clip_design_plan_checking
+SEE        a real LEGO kit laid out unbuilt, box top, instruction book and sealed bags, the camera pushing in over the parts
+WORLD      lego_arch_fallingwater_kit_unbuilt
 SECONDS
-  0.0  hands checking a plan sheet line by line on a desk
-  the clip slows on "one"
+  0.0  a real LEGO kit laid out unbuilt, box top, instruction book and sealed bags, the camera pushing in over the parts
 LAYERS     footage / photo · grade
 CAMERA     push or travel with intent
 MOTION     footage playing; ramp / freeze where marked
@@ -1250,7 +1234,7 @@ SOUND      room tone of the shot
 TEXT       none
 EFFECT     REUSE footage treatment @reel
 
-### a4-06 · "The worst were sets with a tiny motor or fibre-optic lights: their parts cost more than the whole box sold for."
+### a4-06 · "The worst were sets with a tiny motor or fibre-optic lights: their parts cost more than the whole box sold for." (≈ 7.7 s)
 MEANS      some sets cost more to source than they sold for
 SEE        the box under the lamp; on "motor" an x-ray band sweeps it and shows gears inside and fibre-optic strands glowing; on "parts" two bars rise: WHAT THE PARTS COST towers over WHAT THE BOX SOLD FOR
 WORLD      lego_cut_box · lego_technic_gears
@@ -1266,7 +1250,7 @@ SOUND      scanner hum, two bar thumps
 TEXT       none
 EFFECT     NEW @xray_box
 
-### a4-07 · "One study later did the maths for nineteen ninety-three to two thousand and two."
+### a4-07 · "One study, in the book Brick by Brick, later did the maths for nineteen ninety-three to two thousand and two." (≈ 6.4 s)
 MEANS      a study did the maths for 1993–2002
 SEE        the real cover of Brick by Brick on a dark desk; on "maths" the cover swings open and the page reads 1993 → 2002 in pencil, a red ribbon dropping across
 WORLD      lego_doc_book_brickbybrick_crop
@@ -1281,7 +1265,7 @@ SOUND      book creak, page
 TEXT       none
 EFFECT     NEW @book_open
 
-### a4-08 · "LEGO reported profits in almost every one of those years, yet destroyed about one point six billion dollars of value. Profits on paper. Value going down."
+### a4-08 · "LEGO reported profits in almost every one of those years, yet destroyed about one point six billion US dollars of value. Profits on paper. Value going down." (≈ 12.2 s)
 MEANS      profits on paper, $1.6B of value destroyed
 SEE        LEGO's dark history gallery behind; profit bars rise year by year 1993–2002 above a zero line (1998 dips red); on "destroyed" a blue VALUE line sinks under them to −$1.6B; on "down" it holds
 WORLD      lego_history_gallery
@@ -1298,7 +1282,7 @@ SOUND      ticks, then a low slide
 TEXT       ECONOMIC VALUE / ACCOUNTING PROFIT, EACH YEAR
 EFFECT     NEW @profit_vs_value
 
-### a4-09 · "That's the complexity tax: every new piece charges the whole system, the mould, the colour, the supplier, the shelf space."
+### a4-09 · "That's the complexity tax: every new piece charges the whole system, the mould, the colour, the supplier, the shelf space." (≈ 7.3 s)
 MEANS      every new part charges the whole system
 SEE        a warehouse of pallets dim behind; one new brick drops in; on each named cost a heavy tag clamps onto it with a chain and it sinks lower: MOULD, COLOUR, SUPPLIER, SHELF SPACE
 WORLD      lego_clip_warehouse_packed_aisle
@@ -1314,13 +1298,13 @@ SOUND      chain clanks
 TEXT       THE COMPLEXITY TAX
 EFFECT     NEW @tax_chain
 
-### a4-10 · "When the tax is bigger than what a piece earns, growth makes you poorer." · MOTIF
+### a4-10 · "When the tax is bigger than what a piece earns, growth makes you poorer." (≈ 4.1 s) · MOTIF
 MEANS      growth that makes you poorer
-SEE        an empty toy shop at closing time (AI moment art), half-bare shelves; the brick drops onto the counter; GROWTH THAT MAKES YOU POORER sets above
-WORLD      lego_art_toy_store_closed
+SEE        a dim warehouse stacked to the roof (AI moment art); the brick drops onto the floor in front of the stacks; GROWTH THAT MAKES YOU POORER sets above
+WORLD      lego_art_warehouse
 SECONDS
-  0.0  an empty toy shop at closing time (AI moment art), half-bare shelves
-  the brick drops onto the counter
+  0.0  a dim warehouse stacked to the roof (AI moment art)
+  the brick drops onto the floor in front of the stacks
   GROWTH THAT MAKES YOU POORER sets above
 LAYERS     photo · the red brick · shadow · one word
 CAMERA     push
@@ -1330,7 +1314,7 @@ SOUND      the click
 TEXT       GROWTH THAT MAKES YOU POORER
 EFFECT     motif @brick_drop
 
-### a5-01 · "In October two thousand and four, Kjeld stepped back after twenty-five years as chief executive. The new chief executive was the man who had written the warning."
+### a5-01 · "In October two thousand and four, Kjeld stepped back after twenty-five years as chief executive. The new chief executive was the man who had written the warning." (≈ 10.4 s)
 MEANS      Kjeld stepped back; the author of the warning took over
 SEE        two real portraits as prints, Kjeld in front; on "stepped" his print greys, a tag 1979–2004 · 25 YEARS ties on and it slides back; on "warning" Knudstorp's print slides forward into the light
 WORLD      lego_kjeld_1996_award · lego_knudstorp_2010
@@ -1346,22 +1330,22 @@ SOUND      paper slides
 TEXT       KJELD KIRK KRISTIANSEN / CEO 1979–2004 / JØRGEN VIG KNUDSTORP
 EFFECT     NEW @baton_portraits
 
-### a5-02 · "Knudstorp was thirty-five, and the first chief executive from outside the family in a generation."
+### a5-02 · "Knudstorp was thirty-five, and the first chief executive from outside the family in a generation." (≈ 6.2 s)
 MEANS      Knudstorp: 35, the first outsider CEO in a generation
-SEE        Knudstorp speaking, the camera travelling in toward his face; on "Knudstorp" his name card slides in at the top
-WORLD      lego_knudstorp_2010
+SEE        four real portraits in a row: Ole Kirk, Godtfred, Kjeld tied by a gold thread (FAMILY); on "thirty-five" Knudstorp's print slides into the fourth slot from below, tag OUTSIDER · 35 in red
+WORLD      lego_godtfred_cropped · lego_kjeld_1996_ceremony · lego_knudstorp_2010 · lego_ole_kirk_portrait
 SECONDS
-  0.0  Knudstorp speaking, the camera travelling in toward his face
-  on "Knudstorp" his name card slides in at the top
-LAYERS     portrait · name card
-CAMERA     travel toward the face
-MOTION     card slides in on the name
+  0.0  four real portraits in a row: Ole Kirk, Godtfred, Kjeld tied by a gold thread (FAMILY)
+  on "thirty-five" Knudstorp's print slides into the fourth slot from below, tag OUTSIDER · 35 in red
+LAYERS     picture · effect layer
+CAMERA     with intent
+MOTION     acted
 SEAM       out right
-SOUND      paper slide
-TEXT       JØRGEN VIG KNUDSTORP · 35 / CEO from October 2004 · first outsider in a generation
-EFFECT     REUSE (2nd and last use in the film) @name_strap
+SOUND      —
+TEXT       LEGO'S CHIEF EXECUTIVES
+EFFECT     NEW @lineage_row
 
-### a5-03 · "He said his first job wasn't strategy. It was cash. [quote voice] At first I actually said, let's not talk about strategy, let's talk about an action plan, to address the debt, to get the cash flow." · HOLD
+### a5-03 · "He said his first job wasn't strategy. It was cash. [quote voice] At first I actually said, let's not talk about strategy, let's talk about an action plan, to address the debt, to get the cash flow." (≈ 12.8 s) · HOLD
 MEANS      cash first, strategy later (verbatim)
 SEE        hands feeding notes through a counting machine, dim; a black LED board over it; on "cash" CASH clicks up in amber; then his verbatim words light in amber dots as the quote voice reads them
 WORLD      stock_money_counting_machine_03
@@ -1378,13 +1362,13 @@ SOUND      counting machine whirr, relay clicks
 TEXT       CASH / “At first I actually said, let's not talk about strategy, let's talk about an action plan, to address the debt, to get the cash flow.”
 EFFECT     NEW @led_quote
 
-### a5-04 · "The family's holding company, KIRKBI, lent LEGO eight hundred million kroner."
+### a5-04 · "The family's holding company, KIRKBI, lent LEGO eight hundred million kroner." (≈ 4.9 s)
 MEANS      KIRKBI lent DKK 800M
-SEE        two prints across a dark gap: Ole Kirk's house (KIRKBI · THE FAMILY) and a LEGO factory; on "lent" a bridge of yellow bricks builds across the gap while DKK 800M counts up over it
+SEE        two prints across a dark gap: Ole Kirk's house (KIRKBI · THE FAMILY) and a LEGO factory; on "holding" a bridge of yellow bricks builds across the gap while DKK 800M counts up over it
 WORLD      lego_factory_kladno · lego_ole_kirks_house_01
 SECONDS
   0.0  two prints across a dark gap: Ole Kirk's house (KIRKBI · THE FAMILY) and a LEGO factory
-  on "lent" a bridge of yellow bricks builds across the gap while DKK 800M counts up over it
+  on "holding" a bridge of yellow bricks builds across the gap while DKK 800M counts up over it
 LAYERS     desk · two prints · brick bridge · counter
 CAMERA     prints drift apart
 MOTION     bridge builds brick by brick; sum counts and locks
@@ -1393,7 +1377,7 @@ SOUND      brick clicks
 TEXT       KIRKBI · THE FAMILY / LEGO / LENT TO LEGO · 2004
 EFFECT     NEW @bridge_loan
 
-### a5-05 · "Not a gift. A loan, with interest, due in twenty eleven."
+### a5-05 · "Not a gift. A loan, with interest, due in twenty eleven." (≈ 3.9 s)
 MEANS      a loan with interest and terms, not a gift
 SEE        a pen signing a contract, dim; a red tag on a string reads GIFT; on "loan" it spins round: LOAN · CIBOR + 3% · DUE DECEMBER 2011
 WORLD      stock_finance_signing_contract_10
@@ -1409,7 +1393,7 @@ SOUND      string twang
 TEXT       CIBOR + 3%~DUE DECEMBER 2011~LOCKED WHILE EQUITY < 40%
 EFFECT     NEW @gift_tag_flip
 
-### a5-06 · "Costs were cut by a fifth, more than one and a half billion kroner, and about a thousand jobs went."
+### a5-06 · "Costs were cut by a fifth, more than one and a half billion kroner, and about a thousand jobs went." (≈ 5.6 s)
 MEANS      costs cut by a fifth, ~1,000 jobs
 SEE        an empty factory line (AI moment art) as a big print; on "fifth" it tears and its last fifth falls out of frame; −20% sets in the gap with DKK 1,523M and ABOUT 1,000 JOBS
 WORLD      lego_art_factory_line_empty
@@ -1425,7 +1409,7 @@ SOUND      paper tear
 TEXT       −20% / DKK 1,523M~ABOUT 1,000 JOBS
 EFFECT     NEW @tear_fifth
 
-### a5-07 · "The parts library was cut back to about seven thousand."
+### a5-07 · "The parts library was cut back to about seven thousand." (≈ 3.2 s)
 MEANS      parts cut back to ~7,000
 SEE        a heap of bricks fills the frame under a counter reading 12,000+; on "cut" a sweep clears most of them out of frame and the counter runs down to 7,000
 WORLD      lego_brick_pile_mixed
@@ -1440,14 +1424,14 @@ SOUND      sweep of plastic
 TEXT       DIFFERENT PARTS
 EFFECT     NEW @pile_sweep
 
-### a5-08 · "So the colours were cut roughly in half."
+### a5-08 · "So the colours were cut roughly in half." (≈ 2.3 s)
 MEANS      colours roughly halved
-SEE        a sorting machine working behind; a wall of colour chips, one per shade; on "half" every other chip drops out and falls
-WORLD      lego_clip_factory_sorting
+SEE        real assorted LEGO bricks behind; a wall of colour chips, one per shade; on "colours" every other chip drops out and falls
+WORLD      lego_bricks_assorted
 SECONDS
-  0.0  a sorting machine working behind
+  0.0  real assorted LEGO bricks behind
   a wall of colour chips, one per shade
-  on "half" every other chip drops out and falls
+  on "colours" every other chip drops out and falls
 LAYERS     footage · colour chip wall
 CAMERA     slow push
 MOTION     every other chip drops out
@@ -1456,7 +1440,7 @@ SOUND      patter of falling chips
 TEXT       ABOUT 100 COLOURS → ABOUT 50
 EFFECT     NEW @colour_halve
 
-### a5-09 · "And from then on, a new part had to earn its place." · MOTIF
+### a5-09 · "And from then on, a new part had to earn its place." (≈ 3.3 s) · MOTIF
 MEANS      every new part must earn its place
 SEE        real Technic gears meshed together; the brick drops and lands in a gap among them; EVERY PART EARNS ITS PLACE sets above
 WORLD      lego_technic_gears
@@ -1472,27 +1456,13 @@ SOUND      the click
 TEXT       EVERY PART EARNS ITS PLACE
 EFFECT     motif @brick_drop
 
-### a5-10 · "Then the parks went too."
-MEANS      the parks went too
-SEE        the real log-flume ride at LEGOLAND Billund, the camera travelling along it
-WORLD      lego_legoland_logflume
-SECONDS
-  0.0  the real log-flume ride at LEGOLAND Billund, the camera travelling along it
-LAYERS     footage / photo · grade
-CAMERA     push or travel with intent
-MOTION     footage playing; ramp / freeze where marked
-SEAM       out right
-SOUND      room tone of the shot
-TEXT       none
-EFFECT     REUSE footage treatment @reel
-
-### a5-11 · "In July two thousand and five, LEGO sold control of LEGOLAND for three hundred and seventy-five million euros."
+### a5-11 · "Then the parks went too. In July two thousand and five, LEGO sold control of LEGOLAND for three hundred and seventy-five million euros." (≈ 9.9 s)
 MEANS      LEGOLAND control sold for €375M, July 2005
-SEE        the camera travels across LEGOLAND's real castle; on "sold" a red SOLD strip sweeps across its top corner; €375M · JULY 2005 · CONTROL TO BLACKSTONE sets under
-WORLD      lego_legoland_castle
+SEE        the camera travels across LEGOLAND Billund's real Miniland harbour; on "parks" a red SOLD strip sweeps across its top corner; €375M · JULY 2005 · CONTROL TO BLACKSTONE sets under
+WORLD      lego_legoland_modern
 SECONDS
-  0.0  the camera travels across LEGOLAND's real castle
-  on "sold" a red SOLD strip sweeps across its top corner
+  0.0  the camera travels across LEGOLAND Billund's real Miniland harbour
+  on "parks" a red SOLD strip sweeps across its top corner
   €375M · JULY 2005 · CONTROL TO BLACKSTONE sets under
 LAYERS     photo (travel) · diagonal SOLD strip · terms
 CAMERA     dolly
@@ -1502,14 +1472,14 @@ SOUND      banner slap
 TEXT       SOLD / €375M · JULY 2005 · CONTROL TO BLACKSTONE
 EFFECT     NEW @corner_banner
 
-### a5-12 · "LEGO and its family holding company kept thirty percent."
+### a5-12 · "LEGO and its family holding company kept thirty percent." (≈ 4.1 s)
 MEANS      LEGO and KIRKBI kept 30 %
-SEE        the real Miniland harbour at LEGOLAND; a ring of shares is drawn round it; on "kept" the 70% sold swings away, LEGO 15% and KIRKBI 15% stay lit
-WORLD      lego_legoland_modern
+SEE        LEGOLAND Billund's real castle; a ring of shares is drawn round it; on "kept" the 70% sold swings away, LEGO 15% and KIRKBI 15% stay lit, 30% KEPT in the centre
+WORLD      lego_legoland_castle
 SECONDS
-  0.0  the real Miniland harbour at LEGOLAND
+  0.0  LEGOLAND Billund's real castle
   a ring of shares is drawn round it
-  on "kept" the 70% sold swings away, LEGO 15% and KIRKBI 15% stay lit
+  on "kept" the 70% sold swings away, LEGO 15% and KIRKBI 15% stay lit, 30% KEPT in the centre
 LAYERS     photo · share ring · labels
 CAMERA     slow push
 MOTION     the sold share swings away; kept shares stay lit
@@ -1518,7 +1488,7 @@ SOUND      soft swing
 TEXT       none
 EFFECT     NEW @pie_on_photo
 
-### a5-13 · "In two thousand and five, LEGO made a profit again: five hundred and five million kroner, net."
+### a5-13 · "In two thousand and five, LEGO made a profit again: five hundred and five million kroner, net." (≈ 7.0 s)
 MEANS      2005: back to a DKK 505M profit
 SEE        a boy building a tower of bricks, dim; one bar hangs below a zero line in red, −1,931 (2004); on "profit" it swings up through zero to +505 in gold (2005)
 WORLD      lego_clip_blocks_boy
@@ -1534,10 +1504,10 @@ SOUND      a rising whoosh
 TEXT       2004 · NET / 2005 · NET
 EFFECT     NEW @swing_bar
 
-### a5-14 · "Sales grew only a little. The swing came from what LEGO stopped doing."
+### a5-14 · "Sales grew only a little. The swing came from what LEGO stopped doing." (≈ 4.9 s)
 MEANS      the swing came from subtraction, not sales
 SEE        a film strip of real frames slides across the dark, each something LEGO let go: the parks, own worlds like Galidor, half the colours, 5,000 parts, about 1,000 jobs; a red line strikes each as it passes
-WORLD      lego_art_factory_line_empty · lego_brick_pile_mixed · lego_clip_factory_sorting · lego_doc_wayback_home_2002_crop · lego_legoland_logflume
+WORLD      lego_art_factory_line_empty · lego_brick_color_pile · lego_brick_pile_mixed · lego_doc_wayback_home_2002_crop · lego_legoland_logflume
 SECONDS
   0.0  a film strip of real frames slides across the dark, each something LEGO let go: the parks, own worlds like Galidor, half the colours, 5,000 parts, about 1,000 jobs
   a red line strikes each as it passes
@@ -1549,12 +1519,12 @@ SOUND      projector clatter
 TEXT       SALES 2005 · ABOUT +5% / DKK 6,704M → 7,050M · LEGO annual reports
 EFFECT     NEW @filmstrip_recap
 
-### a6-01 · "What came next is the comeback everyone remembers."
+### a6-01 · "What came next is the comeback everyone remembers." (≈ 2.8 s)
 MEANS      the comeback people remember
-SEE        a real LEGO store front in Leicester, bright with sets, the camera sliding along its windows
-WORLD      lego_store_leicester
+SEE        the real 2014 Irish Times page on The LEGO Movie, the camera riding down from its headline
+WORLD      lego_doc_headline_irishtimes_2014
 SECONDS
-  0.0  a real LEGO store front in Leicester, bright with sets, the camera sliding along its windows
+  0.0  the real 2014 Irish Times page on The LEGO Movie, the camera riding down from its headline
 LAYERS     footage / photo · grade
 CAMERA     push or travel with intent
 MOTION     footage playing; ramp / freeze where marked
@@ -1563,7 +1533,7 @@ SOUND      room tone of the shot
 TEXT       none
 EFFECT     REUSE footage treatment @reel
 
-### a6-02 · "In twenty fourteen, The LEGO Movie took about four hundred and sixty-eight million dollars worldwide."
+### a6-02 · "In twenty fourteen, The LEGO Movie took about four hundred and sixty-eight million dollars worldwide." (≈ 6.6 s)
 MEANS      The LEGO Movie: $468M
 SEE        a packed theatre applauding, dim; ticket stubs fly across faster and faster while the box-office total runs to $468.1M and locks
 WORLD      stock_people_applause_02
@@ -1578,12 +1548,12 @@ SOUND      applause, ticket flicks
 TEXT       THE LEGO MOVIE · 2014 / worldwide box office (Box Office Mojo)
 EFFECT     NEW @box_office
 
-### a6-03 · "The sequel, five years later, made less than half of that."
+### a6-03 · "The sequel, five years later, made less than half of that." (≈ 3.3 s)
 MEANS      the sequel made less than half
-SEE        the real 2014 Irish Times page dim behind; a big ticket THE LEGO MOVIE · $468M lies on the desk; on "sequel" a second ticket slides in and tears in two, $190–200M on the half that stays
-WORLD      lego_doc_headline_irishtimes_2014
+SEE        a LEGO store interior dim behind; a big ticket THE LEGO MOVIE · $468M lies on the desk; on "sequel" a second ticket slides in and tears in two, $190–200M on the half that stays
+WORLD      lego_store_london
 SECONDS
-  0.0  the real 2014 Irish Times page dim behind
+  0.0  a LEGO store interior dim behind
   a big ticket THE LEGO MOVIE · $468M lies on the desk
   on "sequel" a second ticket slides in and tears in two, $190–200M on the half that stays
 LAYERS     blurred page · two tickets · torn half
@@ -1594,7 +1564,7 @@ SOUND      paper tear
 TEXT       none
 EFFECT     NEW @ticket_halves
 
-### a6-04 · "But here's the thing: the movies weren't the comeback. Hits come and go, and the system is what compounds."
+### a6-04 · "But here's the thing: the movies weren't the comeback. Hits come and go, and the system is what compounds." (≈ 5.2 s)
 MEANS      hits fade; the system compounds
 SEE        a timelapse of a LEGO Saturn V rocket rising stage by stage on a mat
 WORLD      lego_clip_build_saturnv
@@ -1608,13 +1578,13 @@ SOUND      room tone of the shot
 TEXT       none
 EFFECT     REUSE footage treatment @reel
 
-### a6-05 · "By twenty twenty-five, LEGO's revenue reached eighty-three and a half billion kroner."
+### a6-05 · "By twenty twenty-five, LEGO's revenue reached eighty-three and a half billion kroner." (≈ 5.2 s)
 MEANS      2025 revenue DKK 83.5B
-SEE        LEGO's own results release of 10 March 2026 in a browser window, scrolling; on "reached" the line "Revenue increased 12% to DKK 83.5 billion" is highlighted
+SEE        LEGO's own results release of 10 March 2026 in a browser window, scrolling; on "twenty" the line "Revenue increased 12% to DKK 83.5 billion" is highlighted
 WORLD      lego_doc_results_2025_lego
 SECONDS
   0.0  LEGO's own results release of 10 March 2026 in a browser window, scrolling
-  on "reached" the line "Revenue increased 12% to DKK 83.5 billion" is highlighted
+  on "twenty" the line "Revenue increased 12% to DKK 83.5 billion" is highlighted
 LAYERS     browser window · archived page · highlight
 CAMERA     scroll down the page
 MOTION     page scrolls; marker sweeps on the cue
@@ -1623,7 +1593,7 @@ SOUND      mouse wheel ticks
 TEXT       none
 EFFECT     REUSE (2nd and last use in the film) @web_scroll
 
-### a6-06 · "That's nearly twelve times its two thousand and five level."
+### a6-06 · "That's nearly twelve times its two thousand and five level." (≈ 3.3 s)
 MEANS      nearly 12× 2005
 SEE        the white LEGO House in Billund dim behind; one brick for 2005 stands on the floor; on "twelve" a stack drops in brick by brick beside it until it is 11.8 bricks tall: ×11.8
 WORLD      lego_lego_house_01
@@ -1639,7 +1609,7 @@ SOUND      clicks accelerating
 TEXT       2005 · DKK 7.05B / 2025 · DKK 83.5B / ×11.8
 EFFECT     NEW @growth_stack
 
-### a6-07 · "And year after year, between a quarter and a third of its sales came back as operating profit."
+### a6-07 · "And year after year, between a quarter and a third of its sales came back as operating profit." (≈ 5.3 s)
 MEANS      a quarter to a third of sales as operating profit
 SEE        LEGO's headquarters in Billund dim behind; four bars of sales, one per year; on "year" each fills its operating-profit share in gold: 31.1%, 34.2%, 25.2%, 26.4%
 WORLD      lego_hq_2024
@@ -1655,13 +1625,13 @@ SOUND      four soft fills
 TEXT       OPERATING PROFIT · SHARE OF SALES
 EFFECT     NEW @slice_returns
 
-### a6-08 · "So, back to that brick from nineteen fifty-eight. It still fits." · MOTIF
+### a6-08 · "So, back to that brick from nineteen fifty-eight. It still fits." (≈ 4.8 s) · MOTIF
 MEANS      the 1958 brick still fits
-SEE        the white LEGO House in Billund with giant bricks on its plaza; the brick drops in and clicks down onto the plaza; IT STILL FITS sets above
-WORLD      lego_lego_house_billund_04
+SEE        the 1958 patent page from the opening again; on "back" today's red brick drops onto the drawn bricks and clicks into place; IT STILL FITS sets above
+WORLD      lego_doc_patent_us3005282_drawing_sheet1
 SECONDS
-  0.0  the white LEGO House in Billund with giant bricks on its plaza
-  the brick drops in and clicks down onto the plaza
+  0.0  the 1958 patent page from the opening again
+  on "back" today's red brick drops onto the drawn bricks and clicks into place
   IT STILL FITS sets above
 LAYERS     photo · the red brick · shadow · one word
 CAMERA     push
@@ -1671,7 +1641,7 @@ SOUND      the click
 TEXT       IT STILL FITS
 EFFECT     motif @brick_drop
 
-### a6-09 · "LEGO didn't nearly die from a lack of ideas. It nearly died because it stopped counting what each idea cost." · HOLD
+### a6-09 · "LEGO didn't nearly die from a lack of ideas. It nearly died because it stopped counting what each idea cost." (≈ 6.9 s) · HOLD
 MEANS      the thesis
 SEE        black; the thesis arrives word by word in large serif and holds dead still; "counting" and "cost" in gold
 WORLD      procedural desk / dark (no image)
@@ -1687,7 +1657,7 @@ SOUND      music drops to one note
 TEXT       none
 EFFECT     NEW @thesis_black
 
-### a6-10 · "And it survived because the people who owned it could afford to lend, and chose not to sell."
+### a6-10 · "And it survived because the people who owned it could afford to lend, and chose not to sell." (≈ 6.0 s)
 MEANS      it survived because the owners could lend
 SEE        Kjeld Kirk Kristiansen today, outdoors in a blue scarf, the camera pushing slowly in
 WORLD      lego_kjeld_2018
@@ -1701,14 +1671,14 @@ SOUND      room tone of the shot
 TEXT       none
 EFFECT     REUSE footage treatment @reel
 
-### a6-11 · "So here's the lesson: when a company you love keeps adding things, ask one question. Can anyone say what each one costs?"
+### a6-11 · "So here's the lesson: when a company you love keeps adding things, ask one question. Can anyone say what each one costs?" (≈ 7.4 s)
 MEANS      the viewer's question: what does each one cost?
-SEE        a closed box on the dark desk; on "ask" its lid lifts and a paper slip rises out; on "anyone" the question writes itself in pencil: CAN ANYONE SAY / WHAT EACH ONE COSTS?
+SEE        a closed box on the dark desk; on "lesson" its lid lifts and a paper slip rises out; on "company" the question writes itself in pencil: CAN ANYONE SAY / WHAT EACH ONE COSTS?
 WORLD      lego_cut_box
 SECONDS
   0.0  a closed box on the dark desk
-  on "ask" its lid lifts and a paper slip rises out
-  on "anyone" the question writes itself in pencil: CAN ANYONE SAY / WHAT EACH ONE COSTS?
+  on "lesson" its lid lifts and a paper slip rises out
+  on "company" the question writes itself in pencil: CAN ANYONE SAY / WHAT EACH ONE COSTS?
 LAYERS     desk · box · rising slip · pencil words
 CAMERA     locked
 MOTION     slip rises; question writes itself
@@ -1717,13 +1687,13 @@ SOUND      pencil
 TEXT       Can anyone say~what each one costs?
 EFFECT     NEW @question_on_box
 
-### a6-12 · "LEGO's next test isn't plastic, because its newest pieces are games, films and promises about carbon, and none of them comes in a box you can count."
+### a6-12 · "LEGO's next test isn't plastic, because its newest pieces are games, films and promises about carbon, and none of them comes in a box you can count." (≈ 11.5 s)
 MEANS      the next pieces cannot be counted in a box
-SEE        three dark frames; on "games", "films", "carbon" real footage opens in each (kids with controllers, an applauding audience, drifting smoke); then counters over them spin and land on "?"
-WORLD      lego_clip_kids_game · stock_people_applause_02 · stock_texture_smoke_black_14
+SEE        three dark frames; on "games", "films", "carbon" real footage opens in each (kids with controllers, the 2014 LEGO Movie news page, wind turbines); then counters over them spin and land on "?"
+WORLD      lego_clip_kids_game · lego_doc_headline_taipeitimes_2014 · stock_energy_wind_turbines_06
 SECONDS
   0.0  three dark frames
-  on "games", "films", "carbon" real footage opens in each (kids with controllers, an applauding audience, drifting smoke)
+  on "games", "films", "carbon" real footage opens in each (kids with controllers, the 2014 LEGO Movie news page, wind turbines)
   then counters over them spin and land on "?"
 LAYERS     dark · three frames · footage inside · spinning counters
 CAMERA     locked
@@ -1733,7 +1703,7 @@ SOUND      three light switches
 TEXT       NONE OF THEM COMES IN A BOX
 EFFECT     NEW @three_windows
 
-### a6-13 · "Can the company that learned to count every single brick learn to count those too, before its catalogue grows too big all over again?"
+### a6-13 · "Can the company that learned to count every single brick learn to count those too, before its catalogue grows too big all over again?" (≈ 10.4 s)
 MEANS      can it keep counting as it grows?
 SEE        the giant brick-built tree inside LEGO House, the camera rising slowly up its trunk into the branches
 WORLD      lego_lego_house_tree
@@ -1747,7 +1717,7 @@ SOUND      room tone of the shot
 TEXT       none
 EFFECT     REUSE footage treatment @reel
 
-### a6-14 · "So, if you had been the family in two thousand and four, with the bankers' advice on the table: would you have sold LEGO to the highest bidder, or lent it the money?"
+### a6-14 · "So, if you had been the family in two thousand and four, with the bankers' advice on the table: would you have sold LEGO to the highest bidder, or lent it the money?" (≈ 12.4 s)
 MEANS      your call: sell or lend
 SEE        the night boardroom (AI moment art, no faces) dim; two cards are dealt onto the table: SELL (a pen on a contract) and LEND (the founder's family); "sold" lifts the left, "lent" the right; both settle level
 WORLD      lego_ole_family · lego_scene_boardroom_2003 · stock_finance_signing_contract_11
@@ -1764,7 +1734,7 @@ SOUND      card deals
 TEXT       SELL / to the highest bidder / LEND
 EFFECT     NEW @choice_cards
 
-### a6-15 · "Tell us in the comments, and tell us which set you'd keep." · HOLD
+### a6-15 · "Tell us in the comments, and tell us which set you'd keep." (≈ 3.6 s) · HOLD
 MEANS      bookend: the click from the opening
 SEE        the opening hands again, pressing two bricks together; the picture freezes on the click
 WORLD      lego_clip_white_bricks_hands

@@ -24,3 +24,7 @@ Muse fills these FIRST (before STOCK_PLAN gaps), then ticks the box and writes t
 - [ ] a printed cheque being signed with a pen on a desk, extreme close  (wework, 2026-10-27)
 - [ ] a real LEGO set box from 2003-04, product shot, cut out  (lego, 2026-10-28)
 - [ ] LEGO-branded clothes, watches or video games from the 1990s  (lego, 2026-10-28)
+- [ ] the 1949 LEGO Automatic Binding Brick or a Kiddicraft self-locking brick  (lego, 2026-10-28)
+- [ ] a 1998 news headline about LEGO's first loss  (lego, 2026-10-28)
+- [ ] a LEGO video game screenshot (any era)  (lego, 2026-10-28)
+- [ ] LEGO's sustainability / carbon page screenshot  (lego, 2026-10-28)

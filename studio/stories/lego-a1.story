@@ -18,8 +18,8 @@ It started with wood, in a carpenter's workshop in the Danish village of **Billu
 # cine act=setup fx="code:@print_slide;clip:lego_clip_planing_shavings;pic:lego_ole_kirk_portrait;go:Ole;side:left;cap:OLE KIRK CHRISTIANSEN;sub:carpenter · from 1932;out:right"
 In nineteen thirty-two, Ole Kirk Christiansen began making wooden **toys**.
 
-// CARD a1-03 · SEE: the real 1936 logo dim; LEG and GODT slide in; on "well" the unused letters fall out and LEGO closes up in gold · SEAM in right
-# cine act=setup fx="code:@word_join;bg:lego_logo_1936;a:LEG;b:GODT;keep:0,1,4,5;go:well;gloss:leg godt · play well;in:right"
+// CARD a1-03 · SEE: the real 1936 logo dim; LEG and GODT slide in; on "words" the unused letters fall out and LEGO closes up in gold · SEAM in right
+# cine act=setup fx="code:@word_join;bg:lego_logo_1936;a:LEG;b:GODT;keep:0,1,4,5;go:words;gloss:leg godt · play well;in:right"
 He took the name from two Danish words, leg godt: play **well**. (J)
 
 // CARD a1-04 · SEE: a 1930s workshop (AI moment art, no people); a plank crosses the frame and on "motto" the motto is carved into it letter by letter, chips flying · SEAM out right

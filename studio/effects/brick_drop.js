@@ -18,6 +18,6 @@
     ctx.save(); ctx.globalAlpha = .45 * near; ctx.fillStyle = '#000'; ctx.beginPath(); ctx.ellipse(x, y + h * .42, h * 1.3 * (0.5 + near * .5), h * .16, 0, 0, Math.PI * 2); ctx.fill(); ctx.restore();
     if (t > t0 && t < tl) for (let i = 1; i <= 3; i++) { ctx.save(); ctx.globalAlpha = .12 / i; ctx.translate(x, yy - i * h * .18); ctx.drawImage(b, -h * b.width / b.height / 2, -h / 2, h * b.width / b.height, h); ctx.restore(); }
     if (t > t0) { ctx.save(); ctx.translate(x, yy + h / 2); ctx.scale(1 / sq, sq); ctx.drawImage(b, -h * b.width / b.height / 2, -h, h * b.width / b.height, h); ctx.restore(); }
-    if (P.lab) { const a = clamp(p(tl + .15, .4)), lx = (+P.lx || .5) * W; text(P.lab, lx, H * .16, { size: 64 * u, font: 'cond', col: '#f6efe2', lw: 0, ls: 6 * u, a }); if (P.sub) text(P.sub, lx, H * .16 + 58 * u, { size: 40 * u, font: 'serif', col: '#e2d6c2', lw: 0, a }); } }
+    if (P.lab) { const a = clamp(p(tl + .15, .4)), lx = (+P.lx || .5) * W, lw2 = P.lab.length * 64 * u * .36 + 60 * u; ctx.save(); ctx.globalAlpha = a * .72; ctx.fillStyle = '#0d0b09'; ctx.fillRect(lx - lw2, H * .16 - 48 * u, lw2 * 2, 96 * u); ctx.restore(); text(P.lab, lx, H * .16, { size: 64 * u, font: 'cond', col: '#f6efe2', lw: 0, ls: 6 * u, a }); if (P.sub) text(P.sub, lx, H * .16 + 58 * u, { size: 40 * u, font: 'serif', col: '#e2d6c2', lw: 0, a }); } }
   ctx.restore();
 }

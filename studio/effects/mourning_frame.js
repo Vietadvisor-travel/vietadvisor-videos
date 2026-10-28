@@ -13,6 +13,6 @@
     ctx.drawImage(pic, x + fw / 2 - pic.width * s * fx, y + fh / 2 - pic.height * s * fy, pic.width * s, pic.height * s); ctx.restore(); }
   if (kd > 0) { const L = 2 * (fw + fh) * kd, P0 = [[x, y], [x + fw, y], [x + fw, y + fh], [x, y + fh], [x, y]]; ctx.strokeStyle = '#000'; ctx.lineWidth = 22 * u; ctx.beginPath(); ctx.moveTo(x, y); let left = L;
     for (let i = 1; i < 5 && left > 0; i++) { const d = Math.hypot(P0[i][0] - P0[i - 1][0], P0[i][1] - P0[i - 1][1]), f = Math.min(1, left / d); ctx.lineTo(lerp(P0[i - 1][0], P0[i][0], f), lerp(P0[i - 1][1], P0[i][1], f)); left -= d; } ctx.stroke(); }
-  const a = clamp(p(at(P.go || 0) + .8, .5)); if (P.name) text(P.name, W * .78, H * .4, { size: 54 * u, font: 'cond', col: '#efe6d4', lw: 0, ls: 5 * u, a }); if (P.date) { const ch = Math.floor(P.date.length * clamp((t - at(P.go || 0) - 1) / .8)); text(P.date.slice(0, ch), W * .78, H * .52, { size: 72 * u, font: 'impact', col: '#f2ead9', lw: 0 }); }
+  const a = clamp(p(at(P.go || 0) + .3, .4)); if (P.name) text(P.name, W * .78, H * .4, { size: 54 * u, font: 'cond', col: '#efe6d4', lw: 0, ls: 5 * u, a }); if (P.date) { const ch = Math.floor(P.date.length * clamp((t - at(P.go || 0) - .4) / .5)); text(P.date.slice(0, ch), W * .78, H * .52, { size: 72 * u, font: 'impact', col: '#f2ead9', lw: 0 }); }
   ctx.restore();
 }

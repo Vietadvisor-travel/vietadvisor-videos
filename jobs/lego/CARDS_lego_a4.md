@@ -1,4 +1,4 @@
-### a4-01 · "But here's the twist the usual story leaves out."
+### a4-01 · "But here's the twist the usual story leaves out." (≈ 2.6 s)
 MEANS      the famous loss hides one line
 SEE        LEGO's real 2004 highlights table in the dark; a spotlight wanders down its rows; on "twist" it snaps onto the row nobody quotes, profit before special items, and the camera closes in
 WORLD      lego_doc_annualreport_2004_financials
@@ -14,7 +14,7 @@ SOUND      a lamp click
 TEXT       THE LINE NOBODY QUOTES / LEGO Annual Report 2004 · financial highlights
 EFFECT     NEW @spotlight_row
 
-### a4-02 · "In that worst year, the toy business itself, before write-downs, made a profit. One hundred and three million kroner."
+### a4-02 · "In that worst year, the toy business itself, before write-downs, made a profit. One hundred and three million kroner." (≈ 6.1 s)
 MEANS      the toy business made DKK 103M before write-downs
 SEE        a boy building with studded bricks on a living-room floor, dim; on "toy" yellow studs pop onto a green baseplate one per million, 103 of them, as the counter climbs and locks
 WORLD      lego_clip_boy_studded_bricks_floor
@@ -29,13 +29,13 @@ SOUND      tiny pops
 TEXT       MILLION · TOY BUSINESS PROFIT · 2004 / before write-downs · LEGO Annual Report 2004
 EFFECT     NEW @stud_counter
 
-### a4-03 · "The giant loss came mostly from cleaning up: write-downs, restructuring, and closing what didn't work."
+### a4-03 · "The giant loss came mostly from cleaning up: write-downs, restructuring, and closing what didn't work." (≈ 6.5 s)
 MEANS      the loss was mostly clean-up: 723 + 502 + 458 of 1,931
-SEE        the red brick number 1,931 from the last act hangs at the top; on "write-downs", "restructuring", "closing" a share of its bricks pours down into three labelled piles (723, 502, 458); THE REST · 248 stays in the number
+SEE        the red brick number 1,931 from the last act hangs at the top; on "cleaning", "write-downs", "restructuring" a share of its bricks pours down into three labelled piles (723, 502, 458); THE REST · 248 stays in the number
 WORLD      lego_doc_annualreport_2004_income_statement
 SECONDS
   0.0  the red brick number 1,931 from the last act hangs at the top
-  on "write-downs", "restructuring", "closing" a share of its bricks pours down into three labelled piles (723, 502, 458)
+  on "cleaning", "write-downs", "restructuring" a share of its bricks pours down into three labelled piles (723, 502, 458)
   THE REST · 248 stays in the number
 LAYERS     blurred statement · brick number · three piles · labels
 CAMERA     locked, bricks act
@@ -45,7 +45,7 @@ SOUND      three pours
 TEXT       none
 EFFECT     NEW @loss_breakdown_bricks
 
-### a4-04 · "But the bricks weren't the problem. LEGO had no way to cost a single set."
+### a4-04 · "The bricks weren't the problem. LEGO had no way to cost a single set." (≈ 4.3 s)
 MEANS      the real problem: no cost per set
 SEE        a plain product box under a checkout scanner, a red laser sweeping it again and again; the readout hunts for a number; on "way" it prints NO DATA in red
 WORLD      lego_cut_box
@@ -61,13 +61,12 @@ SOUND      scanner beeps, error buzz
 TEXT       COST PER SET
 EFFECT     NEW @laser_scan
 
-### a4-05 · "Then designers finally checked the boxes, one by one."
+### a4-05 · "Then designers finally went through the sets, one by one." (≈ 3.4 s)
 MEANS      designers finally checked set by set
-SEE        hands checking a plan sheet line by line on a desk; the clip slows on "one"
-WORLD      lego_clip_design_plan_checking
+SEE        a real LEGO kit laid out unbuilt, box top, instruction book and sealed bags, the camera pushing in over the parts
+WORLD      lego_arch_fallingwater_kit_unbuilt
 SECONDS
-  0.0  hands checking a plan sheet line by line on a desk
-  the clip slows on "one"
+  0.0  a real LEGO kit laid out unbuilt, box top, instruction book and sealed bags, the camera pushing in over the parts
 LAYERS     footage / photo · grade
 CAMERA     push or travel with intent
 MOTION     footage playing; ramp / freeze where marked
@@ -76,7 +75,7 @@ SOUND      room tone of the shot
 TEXT       none
 EFFECT     REUSE footage treatment @reel
 
-### a4-06 · "The worst were sets with a tiny motor or fibre-optic lights: their parts cost more than the whole box sold for."
+### a4-06 · "The worst were sets with a tiny motor or fibre-optic lights: their parts cost more than the whole box sold for." (≈ 7.7 s)
 MEANS      some sets cost more to source than they sold for
 SEE        the box under the lamp; on "motor" an x-ray band sweeps it and shows gears inside and fibre-optic strands glowing; on "parts" two bars rise: WHAT THE PARTS COST towers over WHAT THE BOX SOLD FOR
 WORLD      lego_cut_box · lego_technic_gears
@@ -92,7 +91,7 @@ SOUND      scanner hum, two bar thumps
 TEXT       none
 EFFECT     NEW @xray_box
 
-### a4-07 · "One study later did the maths for nineteen ninety-three to two thousand and two."
+### a4-07 · "One study, in the book Brick by Brick, later did the maths for nineteen ninety-three to two thousand and two." (≈ 6.4 s)
 MEANS      a study did the maths for 1993–2002
 SEE        the real cover of Brick by Brick on a dark desk; on "maths" the cover swings open and the page reads 1993 → 2002 in pencil, a red ribbon dropping across
 WORLD      lego_doc_book_brickbybrick_crop
@@ -107,7 +106,7 @@ SOUND      book creak, page
 TEXT       none
 EFFECT     NEW @book_open
 
-### a4-08 · "LEGO reported profits in almost every one of those years, yet destroyed about one point six billion dollars of value. Profits on paper. Value going down."
+### a4-08 · "LEGO reported profits in almost every one of those years, yet destroyed about one point six billion US dollars of value. Profits on paper. Value going down." (≈ 12.2 s)
 MEANS      profits on paper, $1.6B of value destroyed
 SEE        LEGO's dark history gallery behind; profit bars rise year by year 1993–2002 above a zero line (1998 dips red); on "destroyed" a blue VALUE line sinks under them to −$1.6B; on "down" it holds
 WORLD      lego_history_gallery
@@ -124,7 +123,7 @@ SOUND      ticks, then a low slide
 TEXT       ECONOMIC VALUE / ACCOUNTING PROFIT, EACH YEAR
 EFFECT     NEW @profit_vs_value
 
-### a4-09 · "That's the complexity tax: every new piece charges the whole system, the mould, the colour, the supplier, the shelf space."
+### a4-09 · "That's the complexity tax: every new piece charges the whole system, the mould, the colour, the supplier, the shelf space." (≈ 7.3 s)
 MEANS      every new part charges the whole system
 SEE        a warehouse of pallets dim behind; one new brick drops in; on each named cost a heavy tag clamps onto it with a chain and it sinks lower: MOULD, COLOUR, SUPPLIER, SHELF SPACE
 WORLD      lego_clip_warehouse_packed_aisle
@@ -140,13 +139,13 @@ SOUND      chain clanks
 TEXT       THE COMPLEXITY TAX
 EFFECT     NEW @tax_chain
 
-### a4-10 · "When the tax is bigger than what a piece earns, growth makes you poorer." · MOTIF
+### a4-10 · "When the tax is bigger than what a piece earns, growth makes you poorer." (≈ 4.1 s) · MOTIF
 MEANS      growth that makes you poorer
-SEE        an empty toy shop at closing time (AI moment art), half-bare shelves; the brick drops onto the counter; GROWTH THAT MAKES YOU POORER sets above
-WORLD      lego_art_toy_store_closed
+SEE        a dim warehouse stacked to the roof (AI moment art); the brick drops onto the floor in front of the stacks; GROWTH THAT MAKES YOU POORER sets above
+WORLD      lego_art_warehouse
 SECONDS
-  0.0  an empty toy shop at closing time (AI moment art), half-bare shelves
-  the brick drops onto the counter
+  0.0  a dim warehouse stacked to the roof (AI moment art)
+  the brick drops onto the floor in front of the stacks
   GROWTH THAT MAKES YOU POORER sets above
 LAYERS     photo · the red brick · shadow · one word
 CAMERA     push

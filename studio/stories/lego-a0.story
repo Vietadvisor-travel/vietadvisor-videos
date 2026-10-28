@@ -30,8 +30,8 @@ This is the story of how a company famous for precision lost count of its own **
 # cine act=doubt fx="code:@box_vs_parts;bg:lego_technic_supra_chassis;go:designers;heap:70;btag:THE BOX'S PRICE;htag:WHAT THE PARTS COST;note:LEGO designer Mark Stafford · 2014 interview · motor and fibre-optic sets;out:right"
 One of its designers later said some sets cost more to source than the whole box sold **for**.
 
-// CARD a0-06 · SEE: the camera travels across a real box of sorted LEGO Technic parts, compartment after compartment; on "knew" it drains to grey · SEAM in right, hard cut out
-# cine act=doubt fx="code:@reel;under:lego_technic_bits;ua:0;move:right;z:.3;mono:knew;in:right"
+// CARD a0-06 · SEE: the camera travels across a real box of sorted LEGO Technic parts, compartment after compartment; on "one" it drains to grey · SEAM in right, hard cut out
+# cine act=doubt fx="code:@reel;under:lego_technic_bits;ua:0;move:right;z:.3;mono:one;in:right"
 And no one at LEGO actually **knew**. (J)
 
 // CARD a0-07 · SEE: red trading screens falling in the dark; the real 2005 news clipping (PBN, carrying Bloomberg) slides in large; on "lost" a red marker underlines "the net loss widened to 1.93 billion kroner" · SEAM out right

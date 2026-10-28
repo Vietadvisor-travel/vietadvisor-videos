@@ -22,8 +22,8 @@ In nineteen sixty-eight, so many visitors turned up at the factory that LEGO bui
 # cine act=rise fx="code:@crowd_fill;pic:lego_legoland_tower_view;n:900;go:drew;to:625000;est:312500;lab:VISITORS · FIRST SEASON 1968;sub:the estimate · about half;in:right"
 The first season drew six hundred and twenty-five thousand people, about twice the **estimate**.
 
-// CARD a2-04 · SEE: a giant brick-built minifigure in a LEGO store, the camera pushing in to its yellow face · SEAM out right
-# cine act=rise fx="code:@reel;under:lego_minifig_officer_store;ua:0;move:in;z:.2;out:right"
+// CARD a2-04 · SEE: a real minifigure on a skateboard, the camera pushing in · SEAM out right
+# cine act=rise fx="code:@reel;under:lego_minifig_skateboard;ua:0;move:in;z:.2;out:right"
 Then in nineteen seventy-eight came the **minifigure**.
 
 // CARD a2-05 · SEE: LEGOLAND's real Miniland airport seen from above, planes and runways and nobody; on "For" chalk tally marks scratch across it in fives, 46 of them; NOBODY LIVED HERE sets under · SEAM in right
