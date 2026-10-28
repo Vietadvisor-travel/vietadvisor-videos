@@ -9,7 +9,7 @@
 ({ t, at, p, W, H, u, img, ctx, params: P, clamp, lerp, text, seam, dur }) => {
   ctx.save(); seam(P.in || 'none', P.out || 'none'); ctx.fillStyle = '#0d0b09'; ctx.fillRect(-W, -H, 3 * W, 3 * H);
   const im = img(P.pic), k = clamp(t / Math.max(1, dur)), bx = +(P.bx || .5), by = +(P.by || .45), bw = +(P.bw || .4);
-  if (im) { const s = W * .74 / (bw * im.width) * (1 + .05 * k), x = W / 2 - bx * im.width * s, y = H * .44 - by * im.height * s; ctx.filter = 'brightness(.85)'; ctx.drawImage(im, x, y, im.width * s, im.height * s); ctx.filter = 'none'; }
+  if (im) { const s = W * .74 / (bw * im.width) * (1 + .14 * k), x = W / 2 - bx * im.width * s + (k - .5) * -W * .08, y = H * .44 - by * im.height * s; ctx.filter = 'brightness(.85)'; ctx.drawImage(im, x, y, im.width * s, im.height * s); ctx.filter = 'none'; }
   const g = ctx.createRadialGradient(W / 2, H * .44, H * .3, W / 2, H * .5, H * .9); g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, 'rgba(0,0,0,.6)'); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
   const L = (P.lines || '').split('~').filter(Boolean).map(s => s.split('^')), n = L.length;
   L.forEach(([s, w], i) => { const st = at(w), kk = clamp((t - st) / Math.max(.5, s.length * .045)); if (kk <= 0) return; const y = H * (.3 + i * .13), sz = (i === 0 ? 88 : 70) * u; ctx.save(); ctx.font = `${sz}px "Patrick Hand", cursive`; const fw = ctx.measureText(s).width * 1.1 + 40 * u; ctx.beginPath(); ctx.rect(W / 2 - fw / 2, y - sz, fw * kk, sz * 2); ctx.clip(); text(s, W / 2, y, { size: sz, font: 'hand', col: i === 0 ? '#b3261e' : '#1d2f6a', lw: 0 }); ctx.restore(); });

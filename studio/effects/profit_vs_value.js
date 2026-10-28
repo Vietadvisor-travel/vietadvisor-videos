@@ -6,7 +6,7 @@
    @born: lego a4-11: LEGO reported profits in almost every one of those years, yet destroyed about 1.6 billion dollars of value
 */
 ({ t, at, p, W, H, u, img, clip, ctx, params: P, clamp, lerp, text, seam, cover, dur }) => {
-  ctx.save(); seam(P.in || 'none', P.out || 'none'); { const _c = clamp(t / Math.max(1, dur)), _s = 1.01 + .06 * _c * _c * (3 - 2 * _c); ctx.translate(W / 2, H / 2); ctx.scale(_s, _s); ctx.translate(-W / 2 + (_c - .5) * -W * .03, -H / 2); }
+  ctx.save(); seam(P.in || 'none', P.out || 'none'); { const _c = clamp(t / Math.max(1, dur)), _s = 1.01 + .06 * _c * _c * (3 - 2 * _c); ctx.translate(W / 2, H / 2); ctx.scale(_s, _s); ctx.translate(-W / 2 + (_c - .5) * -W * .07, -H / 2); }
   const bg = clip(P.bg, 0, 1) || img(P.bg); ctx.fillStyle = '#0d0b09'; ctx.fillRect(-W, -H, 3 * W, 3 * H); if (bg) cover(bg, { z: 1.06 + .12 * clamp(t / Math.max(1, dur)), filter: 'brightness(.3) blur(2px)' });
   const [y0, y1] = (P.years || '1993,2002').split(',').map(Number), n = y1 - y0 + 1, loss = (P.loss || '1998').split(',').map(Number), zx0 = W * .12, zx1 = W * .88, zy = H * .46, t0 = at(P.go || 0);
   ctx.strokeStyle = 'rgba(243,236,220,.5)'; ctx.lineWidth = 2 * u; ctx.beginPath(); ctx.moveTo(zx0, zy); ctx.lineTo(zx1, zy); ctx.stroke(); text('0', zx0 - 30 * u, zy, { size: 32 * u, font: 'cond', col: '#cfc4b0', lw: 0 });

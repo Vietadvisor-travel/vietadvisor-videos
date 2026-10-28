@@ -7,7 +7,7 @@
    @born: lego a6-12: its newest pieces are games, films and promises about carbon, and none of them comes in a box you can count
 */
 ({ t, at, p, W, H, u, img, clip, ctx, params: P, clamp, lerp, text, seam, rng, dur }) => {
-  ctx.save(); seam(P.in || 'none', P.out || 'none'); ctx.fillStyle = '#0d0b09'; ctx.fillRect(-W, -H, 3 * W, 3 * H);
+  ctx.save(); seam(P.in || 'none', P.out || 'none'); { const _c = clamp(t / Math.max(1, dur)), _s = 1.01 + .06 * _c * _c * (3 - 2 * _c); ctx.translate(W / 2, H / 2); ctx.scale(_s, _s); ctx.translate(-W / 2 + (_c - .5) * -W * .05, -H / 2); } ctx.fillStyle = '#0d0b09'; ctx.fillRect(-W, -H, 3 * W, 3 * H);
   const Wn = (P.wins || '').split('~').filter(Boolean).map(s => s.split('^')), fw = W * .27, fh = fw * .7, gap = W * .04, x0 = W / 2 - (Wn.length * fw + (Wn.length - 1) * gap) / 2, cy = H * .48, k = clamp(t / Math.max(1, dur));
   let last = 0; Wn.forEach(([id, lab, w], i) => { const x = x0 + i * (fw + gap), st = at(w), ko = clamp(p(st, .5, 'out')); last = Math.max(last, st); ctx.fillStyle = '#1d1a16'; ctx.fillRect(x - 8 * u, cy - fh / 2 - 8 * u, fw + 16 * u, fh + 16 * u);
     const im = clip(id, 0, 1) || img(id); if (im) { const ka = .22 + .78 * ko; const s = Math.max(fw / im.width, fh / im.height) * (1.05 + .05 * k); ctx.save(); ctx.globalAlpha = ka; ctx.filter = ko < 1 ? `grayscale(${1 - ko})` : 'none'; ctx.beginPath(); ctx.rect(x, cy - fh / 2, fw, fh); ctx.clip(); ctx.drawImage(im, x + fw / 2 - im.width * s / 2, cy - im.height * s / 2, im.width * s, im.height * s); ctx.restore(); }

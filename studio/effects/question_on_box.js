@@ -6,7 +6,7 @@
    @born: lego a6-11: when a company you love keeps adding things, ask: can anyone say what each one costs?
 */
 ({ t, at, p, W, H, u, img, ctx, params: P, clamp, lerp, text, seam, paperDesk, dur }) => {
-  ctx.save(); seam(P.in || 'none', P.out || 'none'); paperDesk({ lx: .5, ly: .55 });
+  ctx.save(); seam(P.in || 'none', P.out || 'none'); { const _c = clamp(t / Math.max(1, dur)), _s = 1.01 + .06 * _c * _c * (3 - 2 * _c); ctx.translate(W / 2, H / 2); ctx.scale(_s, _s); ctx.translate(-W / 2 + (_c - .5) * -W * .05, -H / 2); } paperDesk({ lx: .5, ly: .55 });
   const b = img(P.box || 'lego_cut_box'), k = clamp(t / Math.max(1, dur)), bw = W * .26, bh = b ? bw * b.height / b.width : H * .3, bx = W / 2 - bw / 2, by = H * .86 - bh, t1 = at(P.go || 0), t2 = at(P.go2 || P.go || 0), ku = clamp(p(t1, .9, 'out'));
   const sw = W * .62, sh = H * .34, sy = lerp(by + bh * .3, H * .1, ku);
   if (ku > 0) { ctx.save(); ctx.translate(W / 2, sy + sh / 2); ctx.rotate(lerp(.05, -.015, ku)); ctx.shadowColor = 'rgba(0,0,0,.5)'; ctx.shadowBlur = 30 * u; ctx.fillStyle = '#f4eee0'; ctx.fillRect(-sw / 2, -sh / 2, sw, sh); ctx.shadowColor = 'transparent';
