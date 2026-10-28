@@ -19,8 +19,8 @@ The rulebook is `poison-pill-studio/` (SKILL.md and references/). The engine wit
 
 ## ONE COMMAND → THE FINAL RESULT (the owner, 28 Oct 2026; applies in this chat and every new chat)
 The owner is not available to check in. When he asks for an episode (or any job), run it **end to end, without
-stopping, until the final deliverables of step 7 exist** (final MP4 on Drive, SRT, upload guide, stills, everything
-committed and pushed).
+stopping, until the final deliverables of step 7 exist** (final MP4 on Drive, SRT, upload guide, everything committed
+and pushed).
 - Never end a turn with the work half done: no "next I will…", no progress report that waits for a reply, no
   question he has to answer. Make every judgement call yourself and write it in the final report.
 - Long renders: run them in the background and keep working (cards, critic, publish files) meanwhile; when you must
@@ -61,7 +61,7 @@ committed and pushed).
      - keyword and competitor research BEFORE the angle (Semrush/Ubersuggest connector if present, else autocomplete via
        web search);
      - "Everyone says X. The real story is Y.";
-     - 3 titles BEFORE the script (no thumbnail: the owner makes thumbnails himself, Oct 2026);
+     - 3 titles BEFORE the script (no thumbnail work at all: the owner makes thumbnails himself);
      - a script that works with the screen off (listen-only test);
      - the channel's own character (`jobs/channel.md`);
      - narrator voice: always `voice: supertonic:M1` (the owner's default); other voices only cast inside the film for
@@ -101,6 +101,16 @@ committed and pushed).
      NEED. Commit and push it. If more than 15 % of the rows are NEED, stop and tell the owner the line for Muse:
      `bổ sung shotlist <slug>`; when round 2 lands, import it
      (`python3 tools/pp_pack.py import ../jobs/<slug>/<slug>_assets_2.zip "drive:<slug>/<slug>_clips_2*.zip"`) and go on.
+   - **Pre-flight on every card before building (v6.7, the owner 28 Oct 2026: faster, still striking).** These are the
+     faults the critic punished on LEGO; fix them on paper, not after renders:
+     - every count / typed text / number is keyed to an EARLY word and is final by 50 % of its beat (never the hit
+       word at the end of the line); no false in-between value on a paused frame;
+     - no generic stock where a named thing exists in the pack; no wrong-period picture; no plate used twice (except
+       the motif and a declared bookend);
+     - every held card (document, chart, desk) has a real camera travel or acted object for its whole length (a slow
+       5 % zoom on a dark plate still counts as "still"); no card longer than 4 s without a change;
+     - type ≥ 40 px at 1080p (sources ≥ 36 px), never on busy body text, never colliding with type inside the image;
+     - the motif beat must SHOW its word, not just drop an object with a label.
 4. **Build:**
    - Write `studio/stories/<slug>-a0.story … -aN.story`.
    - Run `python3 tools/pp_stock.py pull <slug> stories/<slug>-a*.story`. It extracts only the library clips the
@@ -112,20 +122,25 @@ committed and pushed).
    - **Save every NEW effect to the library:**
      `node tools/pp_fx.mjs save stories/<slug>-aN.story <scene> --does "<what the viewer sees>" --tags … --born "<slug aN-bM: sentence>"`.
      Commit `studio/effects/` and `studio/engine/library/effects.js`.
-5. **Critic (a fresh agent, never the builder):**
-   - Spawn a separate agent with the WOW gate from `references/gauntlet.md` plus the swap test (final-cut.md §6). It
-     must OPEN the sheet images and judge the pixels.
-   - It also applies the SECONDS, swap and pause tests (`final-cut.md` §C), and listens to one act's voice track with
-     the screen off (`content-and-audience.md` §2).
-   - Redesign every beat it scores ≤ 3/8 or that fails the swap test. At most 3 rounds.
-   - Then a `--lite` draft render of every act, and a critic round on 1 frame per beat taken from the real video
-     (at 75 % of each beat).
-   - The ship gate: ≥ 85 % of beats ≥ 5/8 and ≥ 90 % swap PASS. If 3 rounds don't reach it, say so with the scores.
+5. **Critic (a fresh agent, never the builder) — on the sheets, no draft renders (v6.7):**
+   - The sheets are the engine's own pixels at 0/42/72/96 % of every beat, so they replace `--lite` draft renders
+     (a lite pass of 7 acts cost ~70 min per round on LEGO). Do NOT make lite renders.
+   - Spawn ONE critic agent for the whole film (all sheets at once, in the background) with the WOW gate from
+     `references/gauntlet.md`, the swap test (final-cut.md §6), the SECONDS / swap / pause tests (§C) and the
+     listen-only test on one act's VO text (`content-and-audience.md` §2). It must OPEN the sheet images.
+   - While it works, write the parts of the upload guide that do not depend on timings (titles, sources, tags, fields).
+   - Redesign every beat it scores ≤ 3/8 or that fails swap; re-sheet only the acts you changed. **At most 2 rounds.**
+   - The ship gate: ≥ 85 % of beats ≥ 5/8 and ≥ 90 % swap PASS. If 2 rounds don't reach it, ship and say so with the
+     scores.
 6. **Render:**
    - Run `node tools/make.mjs stories/<slug>-aN.story --fmt 16x9 --jobs <cores>` per act, in the background. Use
      `--resume` after any interruption.
-   - Join the acts into `out/<slug>_16x9_FINAL.mp4`: concat, then two-pass loudnorm to −14 LUFS / −1.5 dBTP.
-   - Make a delivery encode of about 5 Mbps (≈ 400 MB for 10 min); keep the CRF-20 master.
+   - Render all acts in ONE background chain that touches a marker file when done; wait on the marker (never on
+     `pgrep` of a pattern that also matches the waiting command).
+   - Run `python3 tools/pp_motion.py <slug>` on the final acts; if a beat fails, fix it and re-render only that act.
+   - Join the acts into `out/<slug>_16x9_FINAL.mp4`: concat (stream copy), measure loudness once, then gain +
+     `alimiter` to −14 LUFS / ≤ −1.5 dBTP (audio re-encoded only, video copied).
+   - No compressed/delivery encode, no stills, no thumbnail (the owner, 28 Oct 2026).
 7. **Deliver:**
    - Run `python3 tools/pp_publish.py <slug>`. It writes `out/<slug>_FULL.srt` (YouTube subtitles, joined and re-cut)
      and `out/<slug>_publish_facts.json` (chapters, credits, AI images, voices, CC BY items missing an author).
@@ -134,9 +149,8 @@ committed and pushed).
      with its reason, end screen and cards, pinned comment, and the 48-hour checklist.
    - Copy the SRT to `jobs/<slug>/`.
    - **Upload the full master to Drive by default** (the owner, 27 Oct 2026):
-     `python3 tools/pp_drive.py put out/<slug>_16x9_FINAL.mp4 --to <slug>`. This is the file to put on YouTube; the
-     ~5 Mbps delivery encode is only a fallback for a weak connection.
-   - Send the owner: the final MP4, the SRT, the upload guide and 10 stills (stills help him make the thumbnail).
+     `python3 tools/pp_drive.py put out/<slug>_16x9_FINAL.mp4 --to <slug>`. This is the file to put on YouTube.
+   - Send the owner: the SRT and the upload guide (the MP4 is on Drive; no copy, no stills, no thumbnail).
    - Commit the stories, `studio/history.json`, `jobs/<slug>/EPISODE_<slug>.md`, the SRT and the upload guide, then
      push.
    - Never commit MP4s or clips/stock zips (GitHub's limit is 100 MB; big media goes to Drive), and never commit the imported library (`studio/engine/library/img/`,

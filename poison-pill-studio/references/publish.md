@@ -7,11 +7,9 @@ episode, in the owner's language (Vietnamese) for the instructions and English f
 ## 1. Files Claude delivers
 | File | Where | Notes |
 |---|---|---|
-| `<slug>_16x9_FINAL.mp4` | sent to the owner (never committed) | name for upload: `PoisonPill_EP<nn>_<Slug>_FULL_16x9.mp4` (the keyword in the file name helps) |
-| 10 stills (JPG) | sent | the owner makes the thumbnail himself (Oct 2026): send strong frames, never a thumbnail |
+| `<slug>_16x9_FINAL.mp4` | uploaded to Drive `<slug>/` (never committed, no compressed copy) | name for upload: `PoisonPill_EP<nn>_<Slug>_FULL_16x9.mp4` (the keyword in the file name helps) |
 | `<slug>_FULL.srt` | sent + `jobs/<slug>/` | `python3 tools/pp_publish.py <slug>` |
 | `UPLOAD_GUIDE_<slug>.txt` | sent + `jobs/<slug>/` | the template in §3, every field filled |
-| 10 stills | sent | one per act + the 3 reveals |
 
 `pp_publish.py <slug>` joins the per-act `.srt` files with the real act lengths as offsets and re-cuts every cue the way
 YouTube reads best: ≤ 42 characters a line, ≤ 2 lines, ≤ 6.5 s a cue, split at punctuation, never mid-word, zero-width
@@ -52,7 +50,7 @@ total length, music credits, footage and image credits, AI images, quote voices,
 ```
 HƯỚNG DẪN ĐĂNG TẬP <nn> · <SLUG IN CAPS>: <short name> · POISON PILL
 Video: PoisonPill_EP<nn>_<Slug>_FULL_16x9.mp4 (<m:ss>)
-Thumbnail: anh tự làm (10 ảnh tĩnh từ phim đã gửi kèm)
+Bản tải lên: <slug>_16x9_FINAL.mp4 trên Google Drive PoisonPill_Media/<slug>/
 Phụ đề: <slug>_FULL.srt
 Lịch đăng gợi ý: <date> <time> giờ Việt Nam (= <time> ET, khung giờ khán giả Mỹ/Anh xem nhiều nhất)
 
@@ -85,7 +83,7 @@ Some illustrations of places and objects are AI-generated and are not archival i
 <tags, comma separated, ≤ 450 characters>
 
 === 4. CÁC Ô TRONG YOUTUBE STUDIO ===
-- Thumbnail: tải thumbnail anh tự làm. Nếu có nhiều bản, bật "Test & compare".
+- Thumbnail: anh tự làm và tự tải lên (Claude không làm thumbnail, không cắt ảnh tĩnh).
 - Audience: "No, it's not made for kids".
 - Language: Video language = English; Title and description language = English.
 - Subtitles: Subtitles → Add language → English → Upload file → "With timing" → <slug>_FULL.srt → Publish.
@@ -130,4 +128,4 @@ Write the reason in the guide on one line.
 - [ ] Title ≤ 60 characters with the keyword up front; description lines 1–2 hold keyword plus hook.
 - [ ] Every CC BY item credited with author + licence; music credits copied exactly (CC BY 4.0 wording + link).
 - [ ] Altered-content decision written with its reason.
-- [ ] Guide and SRT in `jobs/<slug>/` and committed; no thumbnail (the owner makes it); MP4 sent, never committed.
+- [ ] Guide and SRT in `jobs/<slug>/` and committed; no thumbnail, no stills, no compressed copy; MP4 on Drive, never committed.
