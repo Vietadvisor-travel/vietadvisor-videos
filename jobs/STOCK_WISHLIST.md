@@ -28,3 +28,6 @@ Muse fills these FIRST (before STOCK_PLAN gaps), then ticks the box and writes t
 - [ ] a 1998 news headline about LEGO's first loss  (lego, 2026-10-28)
 - [ ] a LEGO video game screenshot (any era)  (lego, 2026-10-28)
 - [ ] LEGO's sustainability / carbon page screenshot  (lego, 2026-10-28)
+- [ ] sneaker shop shelves being filled or emptied, wide  (nike-vs-adidas, 2026-10-30)
+- [ ] people queueing outside a sneaker store  (nike-vs-adidas, 2026-10-30)
+- [ ] close-up of sneakers on a store shelf  (nike-vs-adidas, 2026-10-30)
