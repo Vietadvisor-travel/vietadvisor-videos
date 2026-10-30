@@ -8,7 +8,7 @@
 ({ t, at, p, spring, W, H, u, img, ctx, params: P, clamp, lerp, text, seam, cover, dur }) => {
   ctx.save(); seam(P.in || 'none', P.out || 'none');
   const pic = img(P.pic), k = clamp(t / Math.max(1, dur)), e = k * k * (3 - 2 * k), fx = +(P.fx || .5), fy = +(P.fy || .4);
-  if (pic) cover(pic, { z: lerp(1.05, 1.35, e), ox: lerp(0, (.5 - fx) * .3, e), oy: lerp(0, (.5 - fy) * .25, e), filter: 'brightness(.9)' });
+  if (pic) { const sc = Math.max(W / pic.width, H / pic.height), ov = (pic.height * sc - H) / 2 / H, oyT = clamp((.5 - fy) * pic.height * sc / H, -ov, ov); cover(pic, { z: lerp(1.05, 1.3, e), ox: lerp(0, (.5 - fx) * .3, e), oy: oyT + lerp(0, (.5 - fy) * .2, e), filter: 'brightness(.9)' }); }
   const kc = clamp(spring(P.go || 0, { stiff: 150, damp: 18 }), 0, 1.04); if (kc > 0) { const w = Math.max((P.name || '').length * 34, (P.role || '').length * 20) * u + 100 * u, x = W * .06 - (1 - Math.min(1, kc)) * (w + 80 * u), y = H * .1;
     ctx.save(); ctx.shadowColor = 'rgba(0,0,0,.5)'; ctx.shadowBlur = 24 * u; ctx.shadowOffsetY = 10 * u; ctx.fillStyle = '#f2ead9'; ctx.fillRect(x, y, w, 150 * u); ctx.shadowColor = 'transparent'; ctx.fillStyle = '#c8322a'; ctx.fillRect(x, y, 12 * u, 150 * u); ctx.restore();
     text(P.name || '', x + 40 * u, y + 58 * u, { size: 60 * u, font: 'cond', col: '#1d1813', lw: 0, ls: 3 * u, align: 'left' }); if (P.role) text(P.role, x + 40 * u, y + 112 * u, { size: 38 * u, font: 'serif', col: '#4a3f33', lw: 0, align: 'left' }); }

@@ -59,16 +59,16 @@ That was Nike's real formula: a shoe people lined up for, on shelves **everywher
 Remember that **shelf**.
 
 ## a3 THE SHELF · Nike 2020–2024
-In June twenty twenty, Nike's chief executive, John Donahoe, changed the formula. He called it Consumer Direct **Acceleration**.
-Sell through Nike's own app and stores. Cut out the **middlemen**. (J)
+For thirty-five years, that formula worked. Then, in June twenty twenty, Nike's chief executive, John Donahoe, changed it. He called it Consumer Direct **Acceleration**.
+The plan: sell through Nike's own app and stores, and cut out the **middlemen**. (J)
 Nike walked away from Belk, Dillard's, Zappos and other **stores**.
 By fiscal twenty twenty-four, direct sales were about forty-four percent of Nike brand **sales**.
-The margin was higher. But it meant the shelf was **gone**.
+The margin was higher. But it meant the shelf was **shrinking**.
 And the app kept selling the same few classics: Dunks, Air Force Ones, Jordan **retros**.
-A Bloomberg profile of the era was titled "The Man Who Made Nike **Uncool**."
-In fiscal twenty twenty-five, revenue fell ten percent, to forty-six point three billion **dollars**.
-Net income fell forty-four **percent**.
-Donahoe left. Elliott Hill, who joined Nike as an intern in nineteen eighty-eight, came back to run **it**.
+{wry} A Bloomberg profile of Donahoe was titled "The Man Who Made Nike **Uncool**."
+{grave} In fiscal twenty twenty-five, revenue fell ten **percent**.
+{grave} Net income fell forty-four **percent**.
+Donahoe left. Elliott Hill, who started at Nike as an intern in nineteen eighty-eight and retired in twenty twenty, came back as chief **executive**.
 His first job: get Nike back on the **shelves**.
 
 ## a4 THE ARCHIVE · Adidas 2022–2025
@@ -85,6 +85,7 @@ The Samba was named shoe of the year, the brand's first since twenty **fifteen**
 And instead of writing the Yeezys off, Adidas sold them, for about one point four billion **euros**.
 It set aside two hundred and sixty million for **charity**.
 Operating profit went from two hundred and sixty-eight million euros in twenty twenty-three to over two billion in twenty twenty-**five**.
+Adidas had climbed back onto the **shelf**.
 
 ## a5 THE SAME WEEK · 2026
 So who actually won twenty twenty-six? Then came the World **Cup**.

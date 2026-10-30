@@ -11,7 +11,7 @@
   const cols = Math.pow(2, Math.ceil(lv / 2)), rows = Math.pow(2, Math.floor(lv / 2)), cw = W / cols, ch = H / rows;
   for (let r = 0; r < rows; r++) for (let c = 0; c < cols; c++) { const im = img(T[(r * cols + c) % T.length]); if (!im) continue; const s = Math.max(cw / im.width, ch / im.height) * (1.05 + .05 * Math.sin(t + r + c)); ctx.save(); ctx.beginPath(); ctx.rect(c * cw + 2 * u, r * ch + 2 * u, cw - 4 * u, ch - 4 * u); ctx.clip(); ctx.filter = 'brightness(.62)'; ctx.drawImage(im, c * cw + cw / 2 - im.width * s / 2, r * ch + ch / 2 - im.height * s / 2, im.width * s, im.height * s); ctx.restore(); }
   if (lv < steps && t > t0) { ctx.fillStyle = `rgba(255,240,200,${(.25 * (1 - fr)).toFixed(2)})`; ctx.fillRect(0, 0, W, H); }
-  if (t > t0) { const v = Math.round(lerp(+(P.from || 6000), +(P.to || 12000), clamp(kk * 1.05))); ctx.save(); ctx.fillStyle = 'rgba(8,7,6,.72)'; ctx.fillRect(W * .5 - 330 * u, H * .36, 660 * u, 230 * u); ctx.restore();
+  if (t > t0 && P.count !== 'off') { const v = Math.round(lerp(+(P.from || 6000), +(P.to || 12000), clamp(kk * 1.05))); ctx.save(); ctx.fillStyle = 'rgba(8,7,6,.72)'; ctx.fillRect(W * .5 - 330 * u, H * .36, 660 * u, 230 * u); ctx.restore();
     text(v.toLocaleString('en-US') + (kk >= .95 ? (P.suf || '') : ''), W * .5, H * .36 + 105 * u, { size: 140 * u, font: 'impact', col: '#f2c14e', lw: 0 }); if (P.lab) text(P.lab, W * .5, H * .36 + 195 * u, { size: 44 * u, font: 'cond', col: '#f6efe2', lw: 0, ls: 5 * u }); }
   ctx.restore();
 }

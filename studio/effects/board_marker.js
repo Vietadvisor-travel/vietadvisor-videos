@@ -6,9 +6,9 @@
    @tags: meeting,date,who,record,whiteboard,handwriting
    @born: lego a3-11: on 30 November 2004 bankers from Morgan Stanley met Kjeld
 */
-({ t, at, p, W, H, u, img, ctx, params: P, clamp, lerp, text, seam, dur }) => {
+({ t, at, p, W, H, u, img, clip, ctx, params: P, clamp, lerp, text, seam, dur }) => {
   ctx.save(); seam(P.in || 'none', P.out || 'none'); ctx.fillStyle = '#0d0b09'; ctx.fillRect(-W, -H, 3 * W, 3 * H);
-  const im = img(P.pic), k = clamp(t / Math.max(1, dur)), _e = clamp(t / 3.2), dx = (1 - _e * _e * (3 - 2 * _e)) * W * .42 + (k - .5) * -W * .05, bx = +(P.bx || .5), by = +(P.by || .45), bw = +(P.bw || .4);
+  const im = clip(P.pic, 0, 1) || img(P.pic), k = clamp(t / Math.max(1, dur)), _e = clamp(t / 3.2), dx = (1 - _e * _e * (3 - 2 * _e)) * W * .42 + (k - .5) * -W * .05, bx = +(P.bx || .5), by = +(P.by || .45), bw = +(P.bw || .4);
   if (im) { const s = W * .74 / (bw * im.width) * (1.12 - .1 * _e), x = W / 2 - bx * im.width * s + dx, y = H * .44 - by * im.height * s; ctx.filter = 'brightness(.85)'; ctx.drawImage(im, x, y, im.width * s, im.height * s); ctx.filter = 'none'; }
   const g = ctx.createRadialGradient(W / 2, H * .44, H * .3, W / 2, H * .5, H * .9); g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, 'rgba(0,0,0,.6)'); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
   const L = (P.lines || '').split('~').filter(Boolean).map(s => s.split('^')), n = L.length;
