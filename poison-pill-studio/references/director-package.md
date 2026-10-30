@@ -8,7 +8,7 @@ with these exact headings, because Muse's instructions parse them.
 # EPISODE <nn> · <slug> · <working title>
 
 ## 0. META
-- slug: <lowercase-hyphen>          - length: <8–10 min ≈ 1,300–1,600 words>   - acts: a0 … a6
+- slug: <lowercase-hyphen>          - length: <11–14 min ≈ 2,000–2,500 words (M1 narrator)>   - acts: a0 … a6
 - archetype: <story-archetypes.md>   - format: 16:9 only
 - look: <one of the 11 looks, chosen by the CONTENT: look.md table> (+ a second look for a flashback act, if any)
 - tone: playful | dry   (playful by default: humor.md; dry only for tragedies)
@@ -150,7 +150,7 @@ endcard: off
    but/therefore, specific numbers made physical, the punch word last, a final line ≤ 15 words.
 6. **Tone playful** (`humor.md`): mark intended laughs `(J)` in §3, and use the photo-based comedy tools (`freeze`,
    `expect`, `cutaway`, `dramatic`, `math`, `meme`, `aside`) within their caps. **Never cartoon characters or mascots.**
-7. **Length:** 8–10 min is about 110–150 beats. The file is long, so write it as a downloadable file if your interface
+7. **Length:** 11–14 min (the owner's rule) is about 120–160 beats. The file is long, so write it as a downloadable file if your interface
    can. If a single reply would be cut off, split it into `PART 1/3`, `PART 2/3`… at section or act boundaries. Each part
    ends with `— CONTINUES IN PART k —`. Muse joins the parts.
 

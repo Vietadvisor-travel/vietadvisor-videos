@@ -67,6 +67,8 @@ and pushed).
      - narrator voice: always `voice: supertonic:M1` (the owner's default); other voices only cast inside the film for
        verbatim quotes, documents or witnesses (`voice-direction.md`);
      - an emotional arc per act, voiced with `{excited}` `{urgent}` `{tense}` `{grave}` `{sad}` `{warm}` `{wry}` `{awe}`.
+   - **Length first:** the script must read 11–14 min (`node tools/pp_scriptlint.mjs research/<slug>_script.md --long`
+     shows the estimate; outside the range is an ERROR). Usually 8 acts and 120–160 beats.
    - Write the director package exactly as `poison-pill-studio/references/director-package.md` defines, built on the
      research:
      - angle (anti-Wikipedia test), format (not the last one), value rubric ≥ 15/20, thesis, reveal ladder;
@@ -141,6 +143,7 @@ and pushed).
    - Join the acts into `out/<slug>_16x9_FINAL.mp4`: concat (stream copy), measure loudness once, then gain +
      `alimiter` to −14 LUFS / ≤ −1.5 dBTP (audio re-encoded only, video copied).
    - No compressed/delivery encode, no stills, no thumbnail (the owner, 28 Oct 2026).
+   - Check the joined duration (`ffprobe`): under 11:00 or over 14:00 → do not deliver; fix the script and rebuild.
 7. **Deliver:**
    - Run `python3 tools/pp_publish.py <slug>`. It writes `out/<slug>_FULL.srt` (YouTube subtitles, joined and re-cut)
      and `out/<slug>_publish_facts.json` (chapters, credits, AI images, voices, CC BY items missing an author).
@@ -176,6 +179,10 @@ cd studio && python3 tools/pp_drive.py check && python3 tools/pp_drive.py ls && 
 to send Muse: `nghiên cứu và đóng gói: <topic>`.
 
 ## Rules that never change
+- **LENGTH (the owner, 30 Oct 2026): every episode runs 11–14 minutes.** That is about 2,000–2,500 narration words for
+  the M1 narrator (measured: ~3 words/s plus pauses). Plan the research and the acts for it. `pp_scriptlint --long`
+  fails a script outside 11–14 min. A joined film under 11:00 is not deliverable: write more story (never padding,
+  never slower reading) and rebuild before step 7.
 - **THE FIRST RULE (the owner, 24 Oct 2026): the picture comes from the sentence, never from the effects menu.** Each
   sentence or scene gets the treatment its own content asks for, chosen for it. **Never repeat a device in one video:**
   each effect/composition at most 2 times per film; only the declared motif (`motif:` in the act header) may return,
