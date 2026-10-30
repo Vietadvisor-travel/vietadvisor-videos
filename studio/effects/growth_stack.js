@@ -9,11 +9,12 @@
   ctx.save(); seam(P.in || 'none', P.out || 'none');
   const bg = clip(P.bg, 0, 1) || img(P.bg); ctx.fillStyle = '#0d0b09'; ctx.fillRect(-W, -H, 3 * W, 3 * H); if (bg) cover(bg, { z: 1.06 + .12 * clamp(t / Math.max(1, dur)), filter: 'brightness(.4) blur(1px)' });
   const b = img(P.brick || 'lego_cut_brick_red'), bh = H * +(P.bh || .052), floor = H * .85, A = +(P.a || 1), B = +(P.b || 11.8), t0 = at(P.go || 0);
+  const kc = clamp(t / Math.max(1, dur)); ctx.save(); ctx.translate(W / 2, H * .55); ctx.scale(1 + .16 * kc, 1 + .16 * kc); ctx.translate(-W / 2 + (kc - .5) * -W * .06, -H * .55);
   const stack = (n, cx, st) => { if (!b) return floor; const w = bh * b.width / b.height; let y = floor; for (let i = 0; i < Math.ceil(n); i++) { const s = st + i * .09; if (t < s) break; const frac = Math.min(1, n - i), yy = Math.min(y - bh * frac / 2, -bh + 3200 * u * Math.pow(t - s, 2));
       ctx.save(); ctx.beginPath(); ctx.rect(cx - w, yy - bh * frac / 2, w * 2, bh * frac); ctx.clip(); ctx.drawImage(b, cx - w / 2, yy + bh * frac / 2 - bh, w, bh); ctx.restore(); y -= bh * frac * .88; } return y; };
   const ya = stack(A, W * .3, .15), yb = stack(B, W * .66, t0);
   text(P.alab || '2005', W * .3, ya - 70 * u, { size: 64 * u, font: 'cond', col: '#f3ecdc', lw: 0, ls: 4 * u, a: clamp(p(.4, .4)) });
   const done = t0 + Math.ceil(B) * .09 + .25; text(P.blab || '2025', W * .66, Math.max(H * .1, yb - 70 * u), { size: 64 * u, font: 'cond', col: '#f2c14e', lw: 0, ls: 4 * u, a: clamp(p(done, .4)) });
   if (P.lab) text(P.lab, W * .86, H * .5, { size: 96 * u, font: 'impact', col: '#f2c14e', lw: 0, a: clamp(p(done, .4)) });
-  ctx.restore();
+  ctx.restore(); ctx.restore();
 }

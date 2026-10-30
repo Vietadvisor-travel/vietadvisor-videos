@@ -118,5 +118,25 @@
    "km_crypto"
   ],
   "date": "2026-10-28"
+ },
+ {
+  "ep": "nike-vs-adidas",
+  "format": null,
+  "opening": null,
+  "ending": null,
+  "looks": [
+   "broadcast"
+  ],
+  "open": "code",
+  "modes": {
+   "code": 8
+  },
+  "verbs": {},
+  "trans": {},
+  "tracks": [
+   "km_fretless",
+   "km_perspectives"
+  ],
+  "date": "2026-10-30"
  }
 ]

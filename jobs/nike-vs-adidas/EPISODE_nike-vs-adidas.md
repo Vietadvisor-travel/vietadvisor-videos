@@ -1145,4 +1145,11 @@ EFFECT     REUSE (library) @choice_cards
 Built in-repo by Claude Code. NEED rows (SHOTLIST) are logged in jobs/STOCK_WISHLIST.md; line for a round 2: `bổ sung shotlist nike-vs-adidas`.
 
 ## 7. DIRECTOR'S SELF-CHECK
-(filled at delivery)
+- Script: pp_scriptlint 8.7/10 (whole film); every on-screen number traced to RESEARCH (F01–F40, Q01–Q03; critic r2 facts check: all match). The opening price path is drawn approximately and says so on screen ("shape approximate"); only $31.97 and the Nov 2021 record are labelled. Quote voices only for the three verbatim, sourced lines (Adidas statement, Gulden, Hill), each with "read by a voice actor".
+- Picture: 67 beats, 52 distinct effects, none used more than twice; motif @lane_race once per act (7), each motif beat shows the shelf; 6 new effects this round (price_path_level, crack_drain, object_drop, views_flip, quarter_bars, callback_cuts) plus 27 earlier; 40 px type floor added to the custom-scene text helper. pp_lint 10/10 and pp_layout 0 flags on every act.
+- Motion: 19 % nearly still (gate ≤ 35 %), 0 still runs over 3 s outside HOLD (a4-10 and a6-03 fixed and re-rendered); pp_motion PASS.
+- Critic (fresh agents, 2 rounds on sheets): r1 26/66 ≥ 5/8 (39 %), 46/66 swap (70 %); r2 50/67 ≥ 5/8 (74.6 %), 64/67 swap PASS (95.5 %). Swap gate met; the ≥ 5/8 gate (85 %) NOT met at r2. After r2 the critic's fixes 1–5 were applied (re-keyed late values in a1-03, a1-05, a1-08, a2-02, a2-07, a3-01, a3-08, a4-01, a4-04, a4-09, a5-01, a5-05, a6-03; a2-08 made a carrier of the AJ1 wall; a3-05 and a6-02 no longer black out; FIRST EVER tag moved; act-5 VO fixes); the critic projected ~91 % / 100 % after them, not re-scored (2-round cap).
+- Remaining weak spots: a0-03 uses a 1992 photo for "one rookie"; a2-03 shows a tinted modern shoe for the 1984 Air Ship (labelled); a5-01 is a club match for the World Cup; a5-07 is a type card on a trading plate; a6-08 Vaporfly card reads as feet; the black Samba appears 3× (a4-07, carrier a4-08, a6-08).
+- NEED: 9 of 76 shot-list rows (12 %) filled with stand-ins.
+- Sound: −14.2 LUFS integrated, −2.7 dBTP; narrator supertonic:M1.
+- Delivered: out/nike-vs-adidas_16x9_FINAL.mp4 (6:15, 993 MB) on Drive nike-vs-adidas/; SRT and upload guide in jobs/nike-vs-adidas/.

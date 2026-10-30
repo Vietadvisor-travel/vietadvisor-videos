@@ -116,7 +116,8 @@ def main():
     reg = json.load(open("engine/library/images.json")); used = set()
     for k in range(act):
         txt = open(f"stories/{slug}-a{k}.story", encoding="utf-8").read()
-        used |= set(re.findall(r"\b(" + re.escape(slug) + r"_[a-z0-9_]+?)(?:__\d+)?\b", txt))
+        # every library id the story names (episode ids use the slug with "_", plus stock_ clips and cut-outs)
+        used |= {w for w in re.findall(r"[A-Za-z0-9_]+", txt) if w in reg or w + "__000" in reg}
     credits, ai, clips = [], [], []
     for i in sorted(used):
         m = reg.get(i) or reg.get(i + "__000")
