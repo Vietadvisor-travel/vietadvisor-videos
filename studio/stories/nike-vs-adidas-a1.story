@@ -19,15 +19,15 @@ It starts in a small Bavarian town, Herzogenaurach, in nineteen twenty-**four**.
 Two brothers, Adi and Rudolf Dassler, register a shoe factory **together**.
 
 // CARD a1-03 · SEE: the Dassler workshop of the 1930s (AI moment art, no person); on "Jesse" four gold medals drop one by one onto a ribbon bar · SEAM in right
-# cine act=rise fx="code:@medal_drop;bg:nike_vs_adidas_scene_dassler_workshop_1940s;n:4;go:nineteen;lab:BERLIN 1936 · JESSE OWENS;sub:four golds · in Dassler spikes;in:right"
-In nineteen thirty-six, At the Berlin Olympics of nineteen thirty-six, Jesse Owens wins four gold medals in their **spikes**.
+# cine act=rise fx="code:@medal_drop;bg:nike_vs_adidas_scene_dassler_workshop_1940s;dim:.5;n:4;go:nineteen;lab:BERLIN 1936 · JESSE OWENS;sub:four golds · in Dassler spikes;in:right"
+At the Berlin Olympics of nineteen thirty-six, Jesse Owens wins four gold medals in their **spikes**.
 
 // CARD a1-04 · SEE: BOOKEND of a1-01: the same factory photo as a big print; on "Then" it tears down the middle and half of it falls away; 1948 sets in the gap · SEAM out right
 # cine act=fall fx="code:@tear_fifth;pic:nike_vs_adidas_dassler_shoe_factory_1928;go:Then;frac:.5;lab:1948;sub:THE BROTHERS SPLIT;out:right"
 Then, in nineteen forty-eight, the brothers **split**.
 
-// CARD a1-05 · SEE: a ruled index card on the desk: WHY THEY SPLIT; on "Nobody" the top line, THE BOMB-SHELTER STORY, is cut out and falls away; THE WAR, OLD GRUDGES and TWO WIVES stay · SEAM out right
-# cine act=doubt fx="code:@cut_out_word;title:WHY THEY SPLIT;lines:THE BOMB-SHELTER STORY~THE WAR~OLD GRUDGES~TWO WIVES;cut:1;go:Nobody;note:the shelter story is unproven · Adidas official history, Smit (2008);out:right"
+// CARD a1-05 · SEE: a ruled index card on the desk: WHY THEY SPLIT; on "famous" the top line, THE BOMB-SHELTER STORY, is cut out and falls away; THE WAR, OLD GRUDGES and TWO WIVES stay · SEAM out right
+# cine act=doubt fx="code:@cut_out_word;title:WHY THEY SPLIT;lines:THE BOMB-SHELTER STORY~THE WAR~OLD GRUDGES~TWO WIVES;cut:0;go:famous;note:the shelter story is unproven · Adidas official history, Smit (2008);out:right"
 Nobody agrees on exactly why. The famous bomb-shelter story is **unproven**.
 The records point to the war, to old grudges, and to two wives who did not get **along**.
 
@@ -41,11 +41,11 @@ The town splits with them, one factory on each side of the **river**.
 Families, shops and social life split by **employer**.
 
 // CARD a1-08 · SEE: real night football footage plays; on "wet" it slows; on "studs" it freezes, drains to grey and a frame line draws round it: BERN 1954 · SCREW-IN STUDS · SEAM in right
-# cine act=rise fx="code:@ramp_freeze;clip:nike_vs_adidas_clip_football_latvia_gibraltar;slow:wet;freeze:studs;lab:WORLD CUP FINAL · 1954;sub:West Germany, in Adidas boots with screw-in studs"
+# cine act=rise fx="code:@ramp_freeze;clip:nike_vs_adidas_clip_football_latvia_gibraltar;slow:In;freeze:West;lab:WORLD CUP FINAL · 1954;sub:stand-in footage · Adidas boots, screw-in studs"
 In nineteen fifty-four, West Germany wins the World Cup final on a wet pitch, in Adidas boots with screw-in **studs**.
 
 // CARD a1-09 · SEE: an empty stadium in real light; on "Adidas" a ball drops into frame and bounces to rest on the grass: 1970 · THE OFFICIAL BALL · SEAM out right
-# cine act=rise fx="code:@object_drop;bg:nike_vs_adidas_soccer_empty_stadium;obj:nva_cut_soccer_ball;go:Adidas;x:.5;y:.84;size:.3;lab:1970 · THE OFFICIAL BALL;sub:Adidas makes the World Cup ball from Mexico 1970;dim:.5;out:right"
+# cine act=rise fx="code:@object_drop;bg:nike_vs_adidas_art_stadium_crowd;obj:nva_cut_soccer_ball;go:From;x:.5;y:.8;size:.18;lab:1970 · THE OFFICIAL BALL;sub:Adidas makes the World Cup ball from Mexico 1970;dim:.5;out:right"
 From nineteen seventy, Adidas makes the official World Cup **ball**.
 
 // CARD a1-10 · SEE: MOTIF: two lanes end at a lit store shelf; on "So" the blue shoe runs all the way onto its plank; the red lane is still empty · SEAM in right

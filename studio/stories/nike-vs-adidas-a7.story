@@ -12,11 +12,11 @@ endcard: off
 motif: lane_race
 
 // CARD a7-01 · SEE: a real penalty shoot-out with a packed stand; on "Cup" a placard is planted into the scene: WORLD CUP 2026 · THE AD WAR · SEAM in right
-# cine act=rise fx="code:@sign_on_footage;clip:nike_vs_adidas_clip_wattens_penalty_shootout;sign:WORLD CUP 2026;sub:June 2026 · the ad war;go:won;x:.5;y:.4;in:right"
+# cine act=rise fx="code:@sign_on_footage;clip:nike_vs_adidas_clip_football_fans_porto;sign:WORLD CUP;sub:2026 · the ad war · stand-in;go:won;x:.5;y:.4;in:right"
 So who actually won twenty twenty-six? First came the World **Cup**.
 
 // CARD a7-02 · SEE: a real arena in daylight, dim; two bars grow: SALES +13% and OPERATING PROFIT +5%; a note: marketing +€212M for the World Cup · SEAM out right
-# cine act=rise fx="code:@category_bars;bg:nike_vs_adidas_clip_arena_megasport;items:SALES^13^#7fb2ff~OPERATING PROFIT^5^#c9ced8;go:spring;lab:ADIDAS · Q2 2026 (APR–JUN) · IN EUROS;note:marketing and point of sale +€212M, for World Cup campaigns;blur:4;dim:.32;out:right"
+# cine act=rise fx="code:@category_bars;bg:nike_vs_adidas_clip_arena_megasport;items:SALES^13^#7fb2ff~OPERATING PROFIT^5^#c9ced8~FOOTWEAR (C-N)^1^#c9ced8;go:euros;div:2;lab:ADIDAS · Q2 2026 (APR–JUN) · IN EUROS;note:marketing and point of sale +€212M, for World Cup campaigns;blur:4;dim:.32;out:right"
 In the spring quarter, Adidas sold more than ever: six point seven billion **euros**.
 But it spent two hundred and twelve million euros more on marketing, and its profit grew just five **percent**.
 Its shoe sales grew one **percent**.
@@ -37,11 +37,11 @@ Then, on Thursday the first of October, after the market closed, it reported the
 {grave} Revenue fell four percent. In Greater China, it fell twenty-**six**.
 
 // CARD a7-06 · SEE: a real whiteboard being written on, dim; a solid line FY24 → FY26, then on "expect" a dashed red line bends down into FY27: GUIDANCE · SEAM out right
-# cine act=fall fx="code:@dashed_forward;bg:stock_office_whiteboard_14;pts:.9,.55,.56,.32;labs:FY24~FY25~FY26~FY27;glab:GUIDANCE · DOWN HIGH-SINGLE DIGITS;go:told;out:right"
+# cine act=fall fx="code:@dashed_forward;bg:stock_office_whiteboard_14;pts:.9,.81,.81,.74;labs:FY24~FY25~FY26~FY27;glab:GUIDANCE · DOWN HIGH-SINGLE DIGITS;go:told;out:right"
 Nike told investors to expect revenue to fall again this fiscal **year**.
 
 // CARD a7-07 · SEE: a sheet on the desk: PACE · 4 DIVISIONS BECOME 3 · $2.5B SAVINGS BY FY2031 · FEWER ROLES ACROSS NIKE; on "fewer" the last line is cut out and falls away · SEAM in right
-# cine act=fall fx="code:@cut_out_word;title:NIKE'S PLAN: PACE;lines:4 DIVISIONS BECOME 3~$2.5B OF SAVINGS BY FY2031~FEWER ROLES ACROSS NIKE;cut:3;go:Pace;note:Nike release and Reuters, 1 Oct 2026;in:right"
+# cine act=fall fx="code:@cut_out_word;title:NIKE'S PLAN: PACE;lines:4 DIVISIONS BECOME 3~$2.5B OF SAVINGS BY FY2031~FEWER ROLES ACROSS NIKE;cut:2;go:fewer;note:Nike release and Reuters, 1 Oct 2026;in:right"
 It also announced a plan called Pace.
 It means about two and a half billion dollars of savings by twenty thirty-one, and fewer **roles**.
 Nike's four regions become **three**.
@@ -52,7 +52,7 @@ Nike's four regions become **three**.
 It was down about eighty-one percent from its record in November twenty twenty-**one**.
 
 // CARD a7-09 · SEE: a real trading screen, dim; a paper price tag swings in on a string; on the words it is struck and rewritten lower: $40, $30, then SELL · $27.50; the analyst's verbatim line sets below · SEAM in right
-# cine act=fall fx="code:@valuation_tag;bg:stock_finance_exchange_floor_09;vals:$40@Banks~$30@cut~SELL · $27.50@Berenberg;x:.72;lab:PRICE TARGETS · OCT 2026;sub:“a smaller place in sportswear” · Berenberg;in:right"
+# cine act=fall fx="code:@valuation_tag;bg:stock_finance_exchange_floor_09;vals:WELLS $40@Banks~WELLS $30@cut~SELL $27.50@Berenberg;x:.72;lab:TARGETS · OCT 2026;sub:26% BUY · FEWEST IN 20+ YEARS;in:right"
 Banks cut their price targets. Berenberg told clients to sell.
 It said Nike seemed to have accepted a smaller place in **sportswear**.
 Only about a quarter of the analysts who cover Nike still said buy, the fewest in at least twenty **years**.
@@ -63,8 +63,8 @@ Nike's chief executive, Elliott Hill, put it this **way**.
 @hill: Our Nike performance business is not yet large enough to offset the pressure we are seeing in Nike sportswear, Jordan brand, and Greater China.
 
 // CARD a7-11 · SEE: the real Nike campus as a framed print on a dark wall above a plate S&P 100; on "dropped" it drains grey and slides out of the frame: DEC 2008 – SEPT 2026 · SEAM in right
-# cine act=fall fx="code:@photo_drain;pic:nike_vs_adidas_nike_hq_beaverton_campus;cap:NIKE;plate:S&P 100;date:DEC 2008 – SEPT 2026;go:dropped;in:right"
-A month earlier, Nike had dropped out of the S and P one hundred.
+# cine act=fall fx="code:@photo_drain;pic:nike_vs_adidas_nike_hq_beaverton_campus;cap:NIKE;plate:S&P 100;date:2008–2026;stay:1;go:dropped;in:right"
+In September, Nike had dropped out of the S and P one hundred.
 It had been in that index since two thousand **eight**.
 
 // CARD a7-12 · SEE: an Adidas staff hall, dim and blurred; a grey Q3 2025 bar at €736M under a dashed €1,000M line; on "Three" the Q3 2026 bar grows and is the only one to crack through it; on "euros" FIRST EVER lands beside it · SEAM out right

@@ -12,11 +12,11 @@ motif: lane_race
 
 // CARD a3-01 · SEE: Michael Jordan dunking in a Bulls jersey, the camera travelling to his face; on "rookie" his name card slides in at the top · SEAM in right
 # cine act=setup fx="code:@name_strap;pic:nike_vs_adidas_michael_jordan_dunk_1987;go:Adidas;name:MICHAEL JORDAN · 1984;role:the rookie wanted Adidas · photo 1987;fx:.5;fy:.14;in:right"
-By nineteen eighty-four, Adidas was the bigger company, and the rookie Michael Jordan wanted **Adidas**.
+By nineteen eighty-four, Adidas was still the giant, and the rookie Michael Jordan wanted **Adidas**.
 He had worn Converse **before**. (J)
 
 // CARD a3-02 · SEE: two cheques on a dark desk; on "match" the ADIDAS one greys and slides away blank; on "gave" the NIKE one writes 5 YEARS, $2.5 MILLION, HIS OWN SHOE · SEAM out right
-# cine act=rise fx="code:@blank_cheque;bg:stock_investigation_dark_desk_clipboard_01;a:NIKE;b:ADIDAS;lines:5 YEARS · $2.5 MILLION~HIS OWN SHOE~A SHARE OF SALES;go:offer;go2:match;out:right"
+# cine act=rise fx="code:@blank_cheque;bg:stock_investigation_dark_desk_clipboard_01;a:NIKE;b:ADIDAS;lines:5 YEARS · $2.5 MILLION~HIS OWN SHOE~A SHARE OF SALES~$500,000 A YEAR;ch:.5;go:offer;go2:offer;out:right"
 But Adidas didn't match Nike's **offer**.
 Nike gave him five years, two and a half million dollars, and his own **shoe**.
 And a share of every pair sold, not just a flat **fee**.
@@ -46,8 +46,8 @@ The Air Jordan went on sale in nineteen eighty-five, at sixty-five **dollars**.
 # cine act=rise fx="code:@box_office;pic:nike_vs_adidas_sneaker_store_jordans;brick:nva_cut_shoe_box;dec:0;to:100;go:0;span:1.2;pre:$;unit:M+;lab:AIR JORDAN · FIRST YEAR;sub:sales by the end of 1985 · Britannica;in:right"
 By the end of that year, its sales had passed one hundred million **dollars**.
 
-// CARD a3-08 · SEE: CARRIER of a2-07: the same real Air Jordan wall, dark; on "real" its stands light up row by row; A SHOE PEOPLE LINE UP FOR · SEAM out right
-# cine act=rise fx="code:@shelf_light;pic:nike_vs_adidas_sneaker_store_jordans;go:real;rows:.3~.5~.72;lab:A SHOE PEOPLE LINE UP FOR;out:right"
+// CARD a3-08 · SEE: CARRIER of a3-07: the same real Air Jordan wall, dark; on "real" its stands light up row by row; A SHOE PEOPLE LINE UP FOR · SEAM out right
+# cine act=rise fx="code:@shelf_light;pic:nike_vs_adidas_sneaker_store_jordans;go:real;rows:.22~.47~.7;lab:A SHOE PEOPLE LINE UP FOR;out:right"
 That was Nike's real formula: a shoe people lined up for, on shelves **everywhere**.
 
 // CARD a3-09 · SEE: MOTIF: on "Remember" the red shoe runs onto its plank while the blue one slides back off: NIKE ON EVERY SHELF · SEAM in right

@@ -11,7 +11,7 @@ endcard: off
 motif: lane_race
 
 // CARD a5-01 · SEE: a real empty press-conference desk, the camera travelling in; the lines write across its backdrop on "June", "Donahoe" and "changed" · SEAM out right
-# cine act=doubt fx="code:@board_marker;pic:stock_news_press_desk_empty_01;bx:.5;by:.3;bw:.5;ink:light;dim:.42;lines:JUNE 2020^thirty-five~CEO JOHN DONAHOE^June~CONSUMER DIRECT ACCELERATION^Donahoe;src:Nike · June 2020;out:right"
+# cine act=doubt fx="code:@board_marker;pic:stock_news_press_desk_empty_01;bx:.5;by:.3;bw:.5;ink:light;dim:.42;lines:JUNE 2020^For~CEO JOHN DONAHOE^thirty-five~CONSUMER DIRECT ACCELERATION^June;src:Nike · June 2020;out:right"
 For thirty-five years, that formula worked.
 Then, in June twenty twenty, Nike's chief executive, John Donahoe, changed it.
 He called it Consumer Direct **Acceleration**.
@@ -31,11 +31,11 @@ In fiscal twenty twenty, about three quarters of Nike brand sales still went thr
 By fiscal twenty twenty-four, direct sales were about forty-four **percent**.
 
 // CARD a5-05 · SEE: CALLBACK of a0-06: the same shop shelf wall of sneakers; on "margin" two of its rows go dark and stand bare; THE SHELF · SHRINKING · SEAM out right
-# cine act=fall fx="code:@shelf_empty_out;pic:nike_vs_adidas_art_store_shelf_wall;rows:.3~.55;dark:.6;go:margin;word:THE SHELF · SHRINKING;out:right"
+# cine act=fall fx="code:@shelf_empty_out;pic:nike_vs_adidas_art_store_shelf_wall;rows:.3~.42~.55;dark:.35;go:margin;word:THE SHELF · SHRINKING;out:right"
 The margin was higher. But it meant the shelf was **shrinking**.
 
 // CARD a5-06 · SEE: one real Jordan retro photo splits into 2, 4, 8 … tiles, always the same shoe · SEAM in right
-# cine act=doubt fx="code:@tile_multiply;tiles:nike_vs_adidas_air_jordan_4_seafoam;go:app;steps:6;from:3;to:3;count:off;lab:THE SAME FEW CLASSICS;in:right"
+# cine act=doubt fx="code:@tile_multiply;tiles:nike_vs_adidas_air_jordan_4_seafoam;go:app;steps:6;from:3;to:3;count:off;hue:colours;lab:THE SAME FEW CLASSICS;in:right"
 And the app kept selling the same few classics: Dunks, Air Force Ones, Jordan **retros**.
 In twenty twenty-four, NPR reported the complaint that Nike had lost its innovation **mojo**.
 Analysts blamed the same shoes, dropped again and again in new **colours**.
@@ -59,6 +59,6 @@ Donahoe left. Elliott Hill came back as chief executive.
 He had started at Nike as an intern in nineteen eighty-eight, and retired in twenty **twenty**.
 
 // CARD a5-11 · SEE: MOTIF: on "job" the red shoe steps back off its plank; both lanes stand short of the shelf; NIKE OFF ITS OWN SHELF · SEAM out right
-# cine act=lesson fx="code:@lane_race;bg:nike_vs_adidas_art_running_track;a:nva_cut_sneaker_red;b:nva_cut_sneaker_blue;alab:NIKE;blab:ADIDAS;ax0:0.9;ax:0.6;bx0:0.62;bx:0.62;go:job;lab:NIKE · OFF ITS OWN SHELF;out:right"
+# cine act=lesson fx="code:@lane_race;bg:nike_vs_adidas_art_running_track;a:nva_cut_sneaker_red;b:nva_cut_sneaker_blue;alab:NIKE;blab:ADIDAS;ax0:0.6;ax:0.76;bx0:0.62;bx:0.62;go:plan;lab:HILL'S JOB · GET BACK ON;out:right"
 His plan, Win Now, reorganised Nike around sports again and rebuilt its ties with the **stores**.
 His first job: get Nike back on the **shelves**.

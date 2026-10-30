@@ -19,7 +19,7 @@
     // the empty slot on this plank, waiting, when nobody stands on it
     if (!on) { ctx.save(); ctx.setLineDash([12 * u, 10 * u]); ctx.strokeStyle = 'rgba(255,217,160,.55)'; ctx.lineWidth = 3 * u; ctx.strokeRect(slot - sw * .45, g - sw * .42, sw * .9, sw * .4); ctx.restore(); }
     else { const gl = ctx.createRadialGradient(X, g - 60 * u, 10 * u, X, g - 60 * u, sw * .8); gl.addColorStop(0, 'rgba(255,220,160,.45)'); gl.addColorStop(1, 'rgba(255,220,160,0)'); ctx.fillStyle = gl; ctx.fillRect(X - sw, g - sw, sw * 2, sw); }
-    if (lab) text(lab, W * .06, g - 34 * u, { size: 44 * u, font: 'cond', col, lw: 0, ls: 4 * u, align: 'left' });
+    if (lab) text(lab, W * .1, g - 34 * u, { size: 44 * u, font: 'cond', col, lw: 0, ls: 4 * u, align: 'left' });
     if (!im) return; const h = sw * im.height / im.width, run = km > 0 && km < 1, bob = run ? Math.abs(Math.sin(t * 10)) * 12 * u : 0;
     ctx.fillStyle = 'rgba(0,0,0,.4)'; ctx.beginPath(); ctx.ellipse(X, g + 2 * u, sw * .42, 9 * u, 0, 0, 6.29); ctx.fill();
     ctx.save(); if (x1 < x0 && run) ctx.globalAlpha = .9; ctx.drawImage(im, X - sw / 2, g - h - bob, sw, h); ctx.restore(); });

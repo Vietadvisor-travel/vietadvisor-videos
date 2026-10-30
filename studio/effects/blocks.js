@@ -21,6 +21,6 @@
       ctx.restore(); const ta = clamp((t - ti - .35) / .3) * dim;
       if (ta > 0) { ctx.save(); ctx.globalAlpha = ta; if (txts[i]) text(txts[i], x, base - (isEmpty ? maxH * .5 : cur) - 52 * u, { size: 72 * u, font: 'impact', col: i === hl ? '#e8c77e' : '#f1e9d8', lw: 0 });
         if (labs[i]) text(labs[i], x, base + 50 * u, { size: 44 * u, font: 'cond', col: '#cbbfa8', lw: 0 }); ctx.restore(); } } });
-  if (P.note) text(P.note, W * .5, H * .1, { size: 48 * u, font: 'serif', col: '#a99a82', lw: 0 });
+  if (P.note) text(P.note, W * .5, H * +(P.notey || .1), { size: 48 * u, font: 'serif', col: '#a99a82', lw: 0 });
   ctx.restore();
 }

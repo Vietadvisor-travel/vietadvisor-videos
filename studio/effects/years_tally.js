@@ -13,5 +13,6 @@
   for (let i = 0; i < shown; i++) { const g = Math.floor(i / 5), j = i % 5, row = Math.floor(g / 5), col = g % 5, gx = x0 + col * gw * 1.55, gy = y0 + row * H * .2; ctx.beginPath();
     if (j < 4) { const x = gx + j * gw * .24; ctx.moveTo(x + (r() - .5) * 4 * u, gy); ctx.lineTo(x + (r() - .5) * 4 * u, gy + H * .12); } else { ctx.moveTo(gx - gw * .1, gy + H * .1); ctx.lineTo(gx + gw * .85, gy + H * .02); } ctx.stroke(); }
   if (P.lab) text(P.lab, W * .5, H * .86 - 30 * u, { size: 64 * u, font: 'impact', col: '#f6efe2', lw: 0, a: clamp(p(t0 + span, .4)) });
+  if (P.lab2) text(P.lab2, W * .5, H * .14, { size: 54 * u, font: 'impact', col: '#f2c14e', lw: 0, ls: 3 * u, a: clamp(p(at(P.at2 || 0), .4)) });
   ctx.restore();
 }

@@ -46,8 +46,8 @@ The Samba. The Gazelle. The Spezial. Old shoes, made in far bigger **numbers**.
 The Samba was named shoe of the year, the brand's first since twenty **fifteen**.
 
 // CARD a6-09 · SEE: the real photo of Bjorn Gulden on the left; his verbatim words light from grey to ink as the voice reads them; "godsend" in gold · SEAM in right · HOLD
-# cine act=rise fx="code:@quote_beside;pic:nike_vs_adidas_bjorn_gulden_media_day_ball;side:l;pw:.4;size:52;q:“I have to be very honest and confess that at the beginning of 2023, when the company's performance was not too good, it was a godsend to have the Samba and that they were in such demand.”;go:way;span:8;name:BJORN GULDEN · ADIDAS CEO;src:via Modaes (2026) · read by a voice actor;in:right"
-Gulden later put it this **way**.
+# cine act=rise fx="code:@quote_beside;pic:nike_vs_adidas_adidas_samba_black;side:l;pw:.4;size:52;q:“I have to be very honest and confess that at the beginning of 2023, when the company's performance was not too good, it was a godsend to have the Samba and that they were in such demand.”;span:8;name:BJORN GULDEN · ADIDAS CEO;go:been;src:via Modaes (2026) · read by a voice actor;in:right"
+Gulden later admitted how close it had **been**.
 @gulden: I have to be very honest and confess that at the beginning of 2023, when the company's performance was not too good, it was a godsend to have the Samba and that they were in such demand.
 
 // CARD a6-10 · SEE: a real paper-bag packing shot, dim; a long gold bar YEEZY STOCK SOLD · ABOUT €1.4B; on "set" its end peels off: €260M FOR CHARITY · SEAM in right
@@ -57,14 +57,14 @@ It set aside two hundred and sixty million for **charity**.
 The last pair went at the end of twenty twenty-**four**. (J)
 
 // CARD a6-11 · SEE: real empty shop shelves being cleared, dim; a paper card slides up and the CFO's verbatim words type as the voice reads them · SEAM out right · HOLD
-# cine act=rise fx="code:@quote_card_type;bg:stock_bankruptcy_empty_shop_01;q:“There is not one Yeezy shoe left, it has all been sold and that episode is behind us.”;span:3.5;h:.34;go:way;hl:sold;by:HARM OHLMEYER · ADIDAS CFO · via Reuters, 5 March 2025 · read by a voice actor;out:right"
-Its finance chief, Harm Ohlmeyer, put it this **way**.
+# cine act=rise fx="code:@quote_card_type;bg:stock_bankruptcy_empty_shop_01;q:“There is not one Yeezy shoe left, it has all been sold and that episode is behind us.”;span:3.5;h:.36;go:chapter;rise:finance;hl:sold;by:HARM OHLMEYER · ADIDAS CFO · Reuters, 5 Mar 2025~read by a voice actor;out:right"
+Its finance chief, Harm Ohlmeyer, closed the **chapter**.
 @ohlmeyer: There is not one Yeezy shoe left, it has all been sold and that episode is behind us.
 
 // CARD a6-12 · SEE: a red bar hangs below a zero line: FORECAST 2023 · −€700M; on "never" it swings up through zero and stands at €268M: ACTUAL 2023 · SEAM in right
-# cine act=rise fx="code:@swing_bar;bg:stock_office_whiteboard_14;a:-700;b:268;go:never;alab:FORECAST 2023 (€);blab:ACTUAL 2023 (€);unit:M;in:right"
+# cine act=rise fx="code:@swing_bar;bg:nike_vs_adidas_doc_adidas_ar2024_ten_year_overview;a:-700;b:268;go:came;alab:FORECAST 2023 (€);blab:ACTUAL 2023 (€);unit:M;in:right"
 The forecast loss never came. Adidas closed twenty twenty-three with an operating **profit**.
-On the bottom line, it still lost money for the first time since nineteen ninety-**two**.
+On the bottom line, it still posted a net loss from continuing operations, its first since nineteen ninety-**two**.
 
 // CARD a6-13 · SEE: the real Adidas staff restaurant by its pond, dim; one shoe box for 2023; on "Operating" a stack drops in box by box to ×7.7 · SEAM out right
 # cine act=rise fx="code:@growth_stack;bg:nike_vs_adidas_adidas_hq_staff_restaurant;a:1;b:7.7;go:Operating;alab:2023 · €268M;blab:2025 · €2,056M;brick:nva_cut_shoe_box;bh:.075;lab:×7.7;out:right"

@@ -14,7 +14,7 @@ motif: lane_race
 Today, wholesale is Nike's growing channel again: sixty-one percent of brand sales in fiscal twenty twenty-**six**.
 
 // CARD a8-02 · SEE: a real wall of sneakers in a shop; on "company" one whole row goes dark and stands bare in the middle of the full wall: NOT ON THE WALL · SEAM in right
-# cine act=lesson fx="code:@shelf_empty_out;pic:nike_vs_adidas_flight_club_wall;rows:.52;dark:.6;go:company;word:NOT ON THE WALL;in:right"
+# cine act=lesson fx="code:@shelf_empty_out;pic:nike_vs_adidas_flight_club_wall;rows:.52;dark:.5;go:company;word:NOT ON THE WALL;in:right"
 The company behind the world's most famous shoe forgot that people have to find it **first**.
 
 // CARD a8-03 · SEE: the wall of archive drawers again; on "saved" a drawer slides out and a real black Stan Smith rises in it: SAVED BY ITS OWN ARCHIVE · SEAM out right
@@ -26,7 +26,7 @@ And the company facing a seven-hundred-million-euro loss was saved by shoes from
 {warm} Here's the lesson. The shelf is the strategy. Where you sell is part of what you **sell**.
 
 // CARD a8-05 · SEE: a dark field; gold points appear one by one, a row of twenty-four: 24 DIVIDEND RISES IN A ROW; the yield sets under them · SEAM out right
-# cine act=lesson fx="code:@dots;n:24;go:raised;lab:24 DIVIDEND RISES IN A ROW;sub:yield a record 4.8% · The Motley Fool, 7 Oct 2026;bg:stock_finance_exchange_floor_11;out:right"
+# cine act=lesson fx="code:@dots;n:24;row:1;go:raised;sub2:BACK ABOVE $38 · END OF OCTOBER;at2:October;lab:24 DIVIDEND RISES IN A ROW;sub:yield a record 4.8% · The Motley Fool, 7 Oct 2026;bg:stock_finance_exchange_floor_11;out:right"
 And Nike is far from finished. It has raised its dividend for twenty-four years in a **row**.
 By the end of October, the stock was back above thirty-eight **dollars**.
 
@@ -44,7 +44,7 @@ So remember that shelf from nineteen eighty-five.
 Nike built an empire on being everywhere, and then decided it didn't need to be.
 Adidas simply showed up wherever people **shop**.
 If Nike gets its shoes back on those shelves, these were two bad years, and a company that once beat a giant will have learned its own lesson the hard way.
-If it doesn't, then in the end the brothers' old rival from Bavaria may be the one still standing, because where you sell is part of what you **sell**.
+If it doesn't, then in the end the old company from Bavaria may be the one still standing, because where you sell is part of what you **sell**.
 
 // CARD a8-09 · SEE: two cards dealt onto a dark table: real Nike Vaporfly (THE NEW NIKE) and the real black Samba (THE OLD SAMBA); each lifts on its word · SEAM out right
 # cine act=lesson fx="code:@choice_cards;bg:nike_vs_adidas_art_boardroom_modern;a:nike_vs_adidas_nike_vaporfly_next;alab:NIKE;asub:the new Nike;b:nike_vs_adidas_adidas_samba_black;blab:SAMBA;bsub:the old classic;go:Nike;go2:Samba;lab:YOUR PICK;out:right"

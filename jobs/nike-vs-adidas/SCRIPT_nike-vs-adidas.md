@@ -15,7 +15,7 @@ Remember the word shelf. It decides the **ending**.
 ## a1 · the brothers
 It starts in a small Bavarian town, Herzogenaurach, in nineteen twenty-**four**.
 Two brothers, Adi and Rudolf Dassler, register a shoe factory **together**.
-In nineteen thirty-six, At the Berlin Olympics of nineteen thirty-six, Jesse Owens wins four gold medals in their **spikes**.
+At the Berlin Olympics of nineteen thirty-six, Jesse Owens wins four gold medals in their **spikes**.
 Then, in nineteen forty-eight, the brothers **split**.
 Nobody agrees on exactly why. The famous bomb-shelter story is **unproven**.
 The records point to the war, to old grudges, and to two wives who did not get **along**.
@@ -43,7 +43,7 @@ In December nineteen eighty, Nike goes **public**.
 So Adidas was the giant. Nike was the **upstart**.
 
 ## a3 · the bet
-By nineteen eighty-four, Adidas was the bigger company, and the rookie Michael Jordan wanted **Adidas**.
+By nineteen eighty-four, Adidas was still the giant, and the rookie Michael Jordan wanted **Adidas**.
 He had worn Converse **before**. (J)
 But Adidas didn't match Nike's **offer**.
 Nike gave him five years, two and a half million dollars, and his own **shoe**.
@@ -70,9 +70,9 @@ At Madison Square Garden, fans held up their Superstars, and Adidas signed the *
 Adidas calls it the birth of non-athletic promotion in sporting **goods**. (J)
 Nike's real scare came from Reebok, which took the American lead in the late eighties on aerobics **shoes**.
 But Nike took the lead back in nineteen eighty-**eight**.
-In nineteen ninety-seven, Jordan got his own brand, with the Jumpman instead of the **Swoosh**.
 Nike's yearly sales passed one billion dollars in the mid-eighties.
 They reached six and a half billion by nineteen ninety-six, and ten billion by two thousand **three**.
+In nineteen ninety-seven, Jordan got his own brand, with the Jumpman instead of the **Swoosh**.
 So in two thousand six, Adidas bought Reebok for about three point eight billion dollars, to fight Nike in **America**.
 It even dressed the NBA, until Nike took that contract over in twenty **seventeen**.
 In twenty thirteen, Kanye West left Nike for Adidas. The first Yeezy Boost arrived in twenty **fifteen**.
@@ -80,6 +80,7 @@ In early twenty seventeen, Adidas grew faster than Nike in North America, on Boo
 By twenty seventeen, Adidas had climbed to about eleven percent of the American sneaker **market**.
 Nike still had thirty-seven **percent**.
 Nike didn't need to chase anyone. It was on every **shelf**.
+{wry} So what could possibly go **wrong**? (J)
 
 ## a5 · the shelf
 For thirty-five years, that formula worked.
@@ -114,15 +115,15 @@ The new chief executive, Bjorn Gulden, came from **Puma**, where he had been chi
 Then he did something deeply unglamorous. He sold what Adidas already **had**. (J)
 The Samba. The Gazelle. The Spezial. Old shoes, made in far bigger **numbers**.
 The Samba was named shoe of the year, the brand's first since twenty **fifteen**.
-Gulden later put it this **way**.
+Gulden later admitted how close it had **been**.
 @gulden: I have to be very honest and confess that at the beginning of 2023, when the company's performance was not too good, it was a godsend to have the Samba and that they were in such demand.
 And instead of writing the Yeezys off, Adidas sold them, for about one point four billion **euros**.
 It set aside two hundred and sixty million for **charity**.
 The last pair went at the end of twenty twenty-**four**. (J)
-Its finance chief, Harm Ohlmeyer, put it this **way**.
+Its finance chief, Harm Ohlmeyer, closed the **chapter**.
 @ohlmeyer: There is not one Yeezy shoe left, it has all been sold and that episode is behind us.
 The forecast loss never came. Adidas closed twenty twenty-three with an operating **profit**.
-On the bottom line, it still lost money for the first time since nineteen ninety-**two**.
+On the bottom line, it still posted a net loss from continuing operations, its first since nineteen ninety-**two**.
 Operating profit went from two hundred and sixty-eight million euros in twenty twenty-three to over two billion in twenty twenty-**five**.
 Adidas had climbed back onto the **shelf**.
 
@@ -148,7 +149,7 @@ It said Nike seemed to have accepted a smaller place in **sportswear**.
 Only about a quarter of the analysts who cover Nike still said buy, the fewest in at least twenty **years**.
 Nike's chief executive, Elliott Hill, put it this **way**.
 @hill: Our Nike performance business is not yet large enough to offset the pressure we are seeing in Nike sportswear, Jordan brand, and Greater China.
-A month earlier, Nike had dropped out of the S and P one hundred.
+In September, Nike had dropped out of the S and P one hundred.
 It had been in that index since two thousand **eight**.
 {tense} So had Adidas really won?
 On Tuesday the twentieth of October, Adidas put out its numbers early.
@@ -171,5 +172,5 @@ So remember that shelf from nineteen eighty-five.
 Nike built an empire on being everywhere, and then decided it didn't need to be.
 Adidas simply showed up wherever people **shop**.
 If Nike gets its shoes back on those shelves, these were two bad years, and a company that once beat a giant will have learned its own lesson the hard way.
-If it doesn't, then in the end the brothers' old rival from Bavaria may be the one still standing, because where you sell is part of what you **sell**.
+If it doesn't, then in the end the old company from Bavaria may be the one still standing, because where you sell is part of what you **sell**.
 Tell us in the comments: the new Nike, or the old **Samba**?

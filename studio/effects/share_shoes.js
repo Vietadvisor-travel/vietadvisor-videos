@@ -16,7 +16,7 @@
   for (let r = 0; r < rows; r++) { ctx.fillStyle = 'rgba(196,170,132,.55)'; ctx.fillRect(x0 - 10 * u, y0 + (r + 1) * ch - 6 * u, x1 - x0 + 20 * u, 5 * u); }
   for (let i = 0; i < cols * rows; i++) { const c = i % cols, r = Math.floor(i / cols), x = x0 + c * cw + cw / 2, y = y0 + (r + 1) * ch - 8 * u, gi = owner[i];
     let lit = 0, im = grey; if (gi >= 0) { const g = G[gi], st = at(g[4] || 0), first = owner.indexOf(gi); lit = clamp((t - st - (i - first) * .025) / .25); if (lit > 0) im = img(g[2]) || grey; }
-    if (!im) continue; const w = cw * .86, h = w * im.height / im.width; ctx.save(); ctx.filter = lit > 0 ? 'none' : 'grayscale(1) brightness(.45)'; ctx.globalAlpha = lit > 0 ? lerp(.5, 1, lit) : .55; ctx.drawImage(im, x - w / 2, y - h - (lit > 0 && lit < 1 ? (1 - lit) * 14 * u : 0), w, h); ctx.restore(); }
+    if (!im) continue; const w = cw * .86, h = w * im.height / im.width; ctx.save(); ctx.filter = lit > 0 ? 'none' : 'grayscale(1) brightness(.85)'; ctx.globalAlpha = lit > 0 ? lerp(.6, 1, lit) : .5; ctx.drawImage(im, x - w / 2, y - h - (lit > 0 && lit < 1 ? (1 - lit) * 14 * u : 0), w, h); ctx.restore(); }
   ctx.restore();
   G.forEach(([lab, sh, , col, w], gi) => { const a = clamp(p(at(w || 0) + .3, .4)), x = W * (G.length > 1 ? lerp(.2, .8, gi / (G.length - 1)) : .5); text(sh + '%', x, H * .76, { size: 84 * u, font: 'impact', col: col || '#f2c14e', lw: 0, a }); text(lab, x, H * .83, { size: 42 * u, font: 'cond', col: '#f2f4f8', lw: 0, ls: 3 * u, a }); });
   if (P.lab) text(P.lab, W / 2, H * .12, { size: 52 * u, font: 'cond', col: '#f2f4f8', lw: 0, ls: 5 * u });
