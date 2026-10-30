@@ -19,7 +19,7 @@ It starts in a small Bavarian town, Herzogenaurach, in nineteen twenty-**four**.
 Two brothers, Adi and Rudolf Dassler, register a shoe factory **together**.
 
 // CARD a1-03 · SEE: the Dassler workshop of the 1930s (AI moment art, no person); on "Jesse" four gold medals drop one by one onto a ribbon bar · SEAM in right
-# cine act=rise fx="code:@medal_drop;bg:nike_vs_adidas_scene_dassler_workshop_1940s;n:4;go:Jesse;lab:BERLIN 1936 · JESSE OWENS;sub:four golds · in Dassler spikes;in:right"
+# cine act=rise fx="code:@medal_drop;bg:nike_vs_adidas_scene_dassler_workshop_1940s;n:4;go:nineteen;lab:BERLIN 1936 · JESSE OWENS;sub:four golds · in Dassler spikes;in:right"
 In nineteen thirty-six, Jesse Owens wins four Olympic gold medals in their **spikes**.
 
 // CARD a1-04 · SEE: BOOKEND of a1-01: the same factory photo as a big print; on "Then" it tears down the middle and half of it falls away; 1948 sets in the gap · SEAM out right
@@ -27,7 +27,7 @@ In nineteen thirty-six, Jesse Owens wins four Olympic gold medals in their **spi
 Then, in nineteen forty-eight, the brothers **split**.
 
 // CARD a1-05 · SEE: real leather under the camera; on "Adi" three white stripes are brushed across it; a count ticks to 47 beside them · SEAM in right
-# cine act=rise fx="code:@stripes_paint;bg:nike_vs_adidas_el_leather;go:Adi;n:47;lab:ADIDAS · 1949;sub:EMPLOYEES;in:right"
+# cine act=rise fx="code:@stripes_paint;bg:nike_vs_adidas_el_leather;go:Rudolf;n:47;lab:ADIDAS · 1949;sub:EMPLOYEES;in:right"
 Rudolf founds the company that becomes Puma. Adi registers his own in nineteen forty-nine, with forty-seven employees and three **stripes**.
 
 // CARD a1-06 · SEE: the real lakeside at Herzogenaurach; on "town" a dashed line draws along the water, one side tints blue ADIDAS, the other red PUMA · SEAM out right
@@ -39,7 +39,7 @@ The town splits with them, one factory on each side of the **river**.
 In nineteen sixty-four, in Oregon, a young runner, Phil Knight, and his coach, Bill Bowerman, start importing Japanese running **shoes**.
 
 // CARD a1-08 · SEE: a real Nike Cortez with its red swoosh; on "Nike" a pencil writes $35 across the picture and rings it · SEAM out right
-# cine act=rise fx="code:@price_pencil;pic:nike_vs_adidas_cortez_corsair_comparison;word:$35;go:Nike;x:.72;y:.45;lab:THE SWOOSH · 1971;src:designed by student Carolyn Davidson · Britannica;out:right"
+# cine act=rise fx="code:@price_pencil;pic:nike_vs_adidas_cortez_corsair_comparison;word:$35;go:they;x:.72;y:.45;lab:THE SWOOSH · 1971;src:designed by student Carolyn Davidson · Britannica;out:right"
 In nineteen seventy-one they become Nike. A design student draws the logo for thirty-five **dollars**. (J)
 
 // CARD a1-09 · SEE: a cast-iron waffle iron, lid open; on "Bowerman" black rubber is poured in, the lid shuts, steam rises, the lid opens and a sole covered in square nubs lifts out · SEAM in right

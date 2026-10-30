@@ -10,13 +10,13 @@ CAMERA     travel toward the face
 MOTION     card slides in on the name
 SEAM       in right
 SOUND      paper slide
-TEXT       MICHAEL JORDAN · 1984 / the rookie who wanted Adidas · photo 1987
+TEXT       MICHAEL JORDAN · 1984 / the rookie wanted Adidas · photo 1987
 EFFECT     REUSE (library) @name_strap
 
 ### a2-02 · "But Adidas didn't match Nike's offer. Nike gave him five years, two and a half million dollars, and his own shoe."
 MEANS      Adidas did not match; Nike offered 5 years, $2.5M, his own shoe
 SEE        two cheques on a dark desk; on "match" the ADIDAS one greys and slides away blank; on "gave" the NIKE one writes 5 YEARS, $2.5 MILLION, HIS OWN SHOE
-WORLD      nike_vs_adidas_art_basketball_court_1980s
+WORLD      stock_investigation_dark_desk_clipboard_01
 SECONDS
   0.0  two cheques on a dark desk
   on "match" the ADIDAS one greys and slides away blank
@@ -31,17 +31,17 @@ EFFECT     NEW @blank_cheque
 
 ### a2-03 · "That October, Jordan wore a black and red Nike in a preseason game, and the league flagged it."
 MEANS      the league flagged his black and red shoe
-SEE        an empty 1980s court at night (AI moment art); on "preseason" a yellow note slaps onto the picture: FLAGGED
-WORLD      nike_vs_adidas_scene_basketball_court_night_1984
+SEE        an empty 1980s arena (AI moment art, no people); on "October" a black-and-red shoe lands under a spotlight and a yellow note slaps on: FLAGGED · SHOES 51% WHITE
+WORLD      nike_vs_adidas_art_basketball_court_1980s · nva_cut_sneaker_red
 SECONDS
-  0.0  an empty 1980s court at night (AI moment art)
-  on "preseason" a yellow note slaps onto the picture: FLAGGED
+  0.0  an empty 1980s arena (AI moment art, no people)
+  on "October" a black-and-red shoe lands under a spotlight and a yellow note slaps on: FLAGGED · SHOES 51% WHITE
 LAYERS     picture · effect layer
 CAMERA     with intent
 MOTION     acted
 SEAM       in right
 SOUND      —
-TEXT       FLAGGED
+TEXT       BLACK AND RED · 18 OCT 1984 / FLAGGED/SHOES MUST BE/51% WHITE
 EFFECT     REUSE (library) @advice_note
 
 ### a2-04 · "The legend says Nike paid a fine every game. ESPN found no evidence it ever paid one."
@@ -62,12 +62,12 @@ EFFECT     NEW @receipt_void
 
 ### a2-05 · "It wasn't even the Air Jordan. It was a shoe called the Air Ship. So Nike turned the warning into an ad: banned."
 MEANS      it was the Air Ship; Nike made the warning an ad
-SEE        real black and red Air Jordan 1s; their label reads AIR JORDAN 1, struck and flipped on "even" to AIR SHIP · OCT 1984; on "warning" BANNED stamps across the top
-WORLD      nike_vs_adidas_air_jordan_1_banned
+SEE        real black and red Air Jordan 1s labelled AIR JORDAN 1; on "even" the label is struck and slides off them to a dark gap where a black shoe silhouette stands: THE SHOE WORN: AIR SHIP; on "So" BANNED stamps on
+WORLD      nike_vs_adidas_air_jordan_1_banned · nva_cut_sneaker_red
 SECONDS
-  0.0  real black and red Air Jordan 1s
-  their label reads AIR JORDAN 1, struck and flipped on "even" to AIR SHIP · OCT 1984
-  on "warning" BANNED stamps across the top
+  0.0  real black and red Air Jordan 1s labelled AIR JORDAN 1
+  on "even" the label is struck and slides off them to a dark gap where a black shoe silhouette stands: THE SHOE WORN: AIR SHIP
+  on "So" BANNED stamps on
 LAYERS     product photo · museum label · stamp
 CAMERA     slow push
 MOTION     label flips; BANNED stamps
@@ -94,11 +94,11 @@ EFFECT     REUSE (library) @gift_tag_flip
 
 ### a2-07 · "By the end of that year, its sales had passed one hundred million dollars."
 MEANS      first-year sales above $100M
-SEE        a real indoor game, dim; ticket stubs fly faster and faster while the total runs to $100M+
-WORLD      nike_vs_adidas_clip_basketball_jamboree
+SEE        a real Air Jordan wall in a shop, dim; on "By" shoe boxes drop and stack on both sides while the total runs to $100M+
+WORLD      nike_vs_adidas_sneaker_store_jordans · nva_cut_shoe_box
 SECONDS
-  0.0  a real indoor game, dim
-  ticket stubs fly faster and faster while the total runs to $100M+
+  0.0  a real Air Jordan wall in a shop, dim
+  on "By" shoe boxes drop and stack on both sides while the total runs to $100M+
 LAYERS     footage (dim) · flying ticket stubs · counter
 CAMERA     slow push
 MOTION     stubs fly faster; total runs and locks
@@ -109,11 +109,11 @@ EFFECT     REUSE (library) @box_office
 
 ### a2-08 · "That was Nike's real formula: a shoe people lined up for, on shelves everywhere."
 MEANS      the formula: a shoe people line up for, on shelves everywhere
-SEE        a real wall of sneakers in a shop, dark; on "formula" its shelf lights switch on row by row; A SHOE PEOPLE LINE UP FOR
-WORLD      nike_vs_adidas_flight_club_wall
+SEE        CARRIER of a2-07: the same real Air Jordan wall, dark; on "real" its stands light up row by row; A SHOE PEOPLE LINE UP FOR
+WORLD      nike_vs_adidas_sneaker_store_jordans
 SECONDS
-  0.0  a real wall of sneakers in a shop, dark
-  on "formula" its shelf lights switch on row by row
+  0.0  CARRIER of a2-07: the same real Air Jordan wall, dark
+  on "real" its stands light up row by row
   A SHOE PEOPLE LINE UP FOR
 LAYERS     shop wall photo · shelf lights · line
 CAMERA     track along the wall
@@ -125,16 +125,14 @@ EFFECT     NEW @shelf_light
 
 ### a2-09 · "Remember that shelf." · MOTIF
 MEANS      motif: remember the shelf
-SEE        MOTIF: the two shoes on the track; on "Remember" NIKE runs ahead of ADIDAS; REMEMBER THE SHELF
+SEE        MOTIF: on "Remember" the red shoe runs onto its plank while the blue one slides back off: NIKE ON EVERY SHELF
 WORLD      nike_vs_adidas_art_running_track · nva_cut_sneaker_blue · nva_cut_sneaker_red
 SECONDS
-  0.0  MOTIF: the two shoes on the track
-  on "Remember" NIKE runs ahead of ADIDAS
-  REMEMBER THE SHELF
+  0.0  MOTIF: on "Remember" the red shoe runs onto its plank while the blue one slides back off: NIKE ON EVERY SHELF
 LAYERS     track plate · two shoe cut-outs · lane names · verdict
 CAMERA     track with the shoes
 MOTION     shoes run to their positions (the motif)
 SEAM       in right
 SOUND      footsteps
-TEXT       NIKE / ADIDAS / REMEMBER THE SHELF
+TEXT       NIKE / ADIDAS / NIKE · ON EVERY SHELF
 EFFECT     motif @lane_race

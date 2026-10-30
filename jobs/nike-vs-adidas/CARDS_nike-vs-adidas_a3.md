@@ -1,10 +1,10 @@
-### a3-01 · "In June twenty twenty, Nike's chief executive, John Donahoe, changed the formula. He called it Consumer Direct Acceleration."
+### a3-01 · "For thirty-five years, that formula worked. Then, in June twenty twenty, Nike's chief executive, John Donahoe, changed it. He called it Consumer Direct Acceleration."
 MEANS      June 2020: Consumer Direct Acceleration
-SEE        an empty modern boardroom (AI moment art), framed on its blank screen; on "June", "Donahoe", "Acceleration" the lines write on the screen
-WORLD      nike_vs_adidas_art_boardroom_modern
+SEE        a real empty press-conference desk, the camera travelling in; the lines write across its backdrop on "June", "Donahoe" and "changed"
+WORLD      stock_news_press_desk_empty_01
 SECONDS
-  0.0  an empty modern boardroom (AI moment art), framed on its blank screen
-  on "June", "Donahoe", "Acceleration" the lines write on the screen
+  0.0  a real empty press-conference desk, the camera travelling in
+  the lines write across its backdrop on "June", "Donahoe" and "changed"
 LAYERS     picture · effect layer
 CAMERA     with intent
 MOTION     acted
@@ -13,7 +13,7 @@ SOUND      —
 TEXT       none
 EFFECT     REUSE (library) @board_marker
 
-### a3-02 · "Sell through Nike's own app and stores. Cut out the middlemen."
+### a3-02 · "The plan: sell through Nike's own app and stores, and cut out the middlemen."
 MEANS      sell direct, cut out the stores
 SEE        a real phone scrolling a shopping app, dim; three boxes NIKE → STORES → YOU; on "Cut" STORES is crossed out and falls, and a gold arrow draws from NIKE straight to YOU
 WORLD      stock_payment_shopping_app_01
@@ -61,28 +61,28 @@ SOUND      soft swing
 TEXT       none
 EFFECT     REUSE (library) @pie_on_photo
 
-### a3-05 · "The margin was higher. But it meant the shelf was gone."
-MEANS      margin up, shelf gone
-SEE        the same real sneaker wall from 1985's beat, now lit; on "margin" its shelves go dark row by row (callback); SHELF: GONE
-WORLD      nike_vs_adidas_flight_club_wall
+### a3-05 · "The margin was higher. But it meant the shelf was shrinking."
+MEANS      margin up, shelf shrinking
+SEE        CALLBACK of a0-06: the same shop shelf wall of sneakers; on "margin" two of its rows go dark and stand bare; THE SHELF · SHRINKING
+WORLD      nike_vs_adidas_art_store_shelf_wall
 SECONDS
-  0.0  the same real sneaker wall from 1985's beat, now lit
-  on "margin" its shelves go dark row by row (callback)
-  SHELF: GONE
+  0.0  CALLBACK of a0-06: the same shop shelf wall of sneakers
+  on "margin" two of its rows go dark and stand bare
+  THE SHELF · SHRINKING
 LAYERS     shop wall photo · darkness rows · word
 CAMERA     slow push
 MOTION     shelves go dark row by row
 SEAM       out right
 SOUND      lights off clicks
-TEXT       THE SHELF · GONE
+TEXT       THE SHELF · SHRINKING
 EFFECT     NEW @shelf_empty_out
 
 ### a3-06 · "And the app kept selling the same few classics: Dunks, Air Force Ones, Jordan retros."
 MEANS      the app sold the same few classics
-SEE        one real sneaker photo splits into 2, 4, 8 … tiles, always the same three classics
-WORLD      nike_vs_adidas_air_jordan_1_banned · nike_vs_adidas_nike_air_max_97_boxes · nike_vs_adidas_sneaker_store_jordans
+SEE        one real Jordan retro photo splits into 2, 4, 8 … tiles, always the same shoe
+WORLD      nike_vs_adidas_air_jordan_4_seafoam
 SECONDS
-  0.0  one real sneaker photo splits into 2, 4, 8 … tiles, always the same three classics
+  0.0  one real Jordan retro photo splits into 2, 4, 8 … tiles, always the same shoe
 LAYERS     part photos as tiles · counter panel
 CAMERA     locked, tiles split
 MOTION     one tile splits into 2, 4 … 64; counter runs and locks
@@ -91,13 +91,14 @@ SOUND      clicks doubling in speed
 TEXT       THE SAME FEW CLASSICS
 EFFECT     REUSE (library) @tile_multiply
 
-### a3-07 · "A Bloomberg profile of the era was titled "The Man Who Made Nike Uncool.""
+### a3-07 · "A Bloomberg profile of Donahoe was titled "The Man Who Made Nike Uncool.""
 MEANS      "The Man Who Made Nike Uncool"
-SEE        a real thrift-shop sneaker browse; a red news band slides in and the headline crawls into place: "THE MAN WHO MADE NIKE UNCOOL" · BLOOMBERG, SEPT 2024
-WORLD      nike_vs_adidas_sneakers_thrift_shopping
+SEE        real sneakers left against a wall, dim; a red news band slides in on "Bloomberg" and the headline crawls into place; on "Uncool" the picture drains to grey
+WORLD      nike_vs_adidas_sneakers_yellow_wall
 SECONDS
-  0.0  a real thrift-shop sneaker browse
-  a red news band slides in and the headline crawls into place: "THE MAN WHO MADE NIKE UNCOOL" · BLOOMBERG, SEPT 2024
+  0.0  real sneakers left against a wall, dim
+  a red news band slides in on "Bloomberg" and the headline crawls into place
+  on "Uncool" the picture drains to grey
 LAYERS     photo (dim) · news band · headline · source tab
 CAMERA     slow push
 MOTION     band slides in; headline crawls and holds
@@ -106,7 +107,7 @@ SOUND      news sting
 TEXT       “THE MAN WHO MADE NIKE UNCOOL”
 EFFECT     NEW @ticker_headline
 
-### a3-08 · "In fiscal twenty twenty-five, revenue fell ten percent, to forty-six point three billion dollars."
+### a3-08 · "In fiscal twenty twenty-five, revenue fell ten percent."
 MEANS      FY25 revenue −10% to $46.3B
 SEE        a stack of shoe boxes beside $51.4B; on "revenue" the floor jolts, the top boxes tumble out and the figure counts down to $46.3B; −10%
 WORLD      nike_vs_adidas_nike_hq_beaverton_wide · nva_cut_shoe_box
@@ -135,18 +136,18 @@ CAMERA     slight drift
 MOTION     print tears, fifth falls away, figures set in the gap
 SEAM       out right
 SOUND      paper tear
-TEXT       −44% / NET INCOME · FY25~$5.7B → $3.2B
+TEXT       −44% / NET INCOME · FY25~$5.7B TO $3.2B
 EFFECT     REUSE (2nd and last use in the film) @tear_fifth
 
-### a3-10 · "Donahoe left. Elliott Hill, who joined Nike as an intern in nineteen eighty-eight, came back to run it."
+### a3-10 · "Donahoe left. Elliott Hill, who started at Nike as an intern in nineteen eighty-eight and retired in twenty twenty, came back as chief executive."
 MEANS      Elliott Hill returns
-SEE        the real Nike campus across the lake; on "intern" a red stamp INTERN · 1988 slams on; on "back" CEO · OCT 2024 beside it; a pencil arc: 32 years at Nike
-WORLD      nike_vs_adidas_nike_hq_beaverton_campus
+SEE        the real Nike headquarters entrance; on "Hill" a solid red stamp INTERN · 1988 slams on; on "intern" CEO · OCT 2024 beside it; an arc: retired 2020, came back
+WORLD      nike_vs_adidas_nike_hq_entrance
 SECONDS
-  0.0  the real Nike campus across the lake
-  on "intern" a red stamp INTERN · 1988 slams on
-  on "back" CEO · OCT 2024 beside it
-  a pencil arc: 32 years at Nike
+  0.0  the real Nike headquarters entrance
+  on "Hill" a solid red stamp INTERN · 1988 slams on
+  on "intern" CEO · OCT 2024 beside it
+  an arc: retired 2020, came back
 LAYERS     photo (travel) · two rubber stamps · pencil arc · gap note
 CAMERA     dolly across
 MOTION     stamps slam on their words; the arc draws
@@ -156,17 +157,17 @@ TEXT       none
 EFFECT     REUSE (library) @stamp_dates
 
 ### a3-11 · "His first job: get Nike back on the shelves." · MOTIF
-MEANS      motif: back to the shelves?
-SEE        MOTIF: the two shoes on the track; on "first" NIKE has stopped, ADIDAS level with it; BACK TO THE SHELVES?
+MEANS      motif: Nike off its own shelf
+SEE        MOTIF: on "job" the red shoe steps back off its plank; both lanes stand short of the shelf; NIKE OFF ITS OWN SHELF
 WORLD      nike_vs_adidas_art_running_track · nva_cut_sneaker_blue · nva_cut_sneaker_red
 SECONDS
-  0.0  MOTIF: the two shoes on the track
-  on "first" NIKE has stopped, ADIDAS level with it
-  BACK TO THE SHELVES?
+  0.0  MOTIF: on "job" the red shoe steps back off its plank
+  both lanes stand short of the shelf
+  NIKE OFF ITS OWN SHELF
 LAYERS     track plate · two shoe cut-outs · lane names · verdict
 CAMERA     track with the shoes
 MOTION     shoes run to their positions (the motif)
 SEAM       out right
 SOUND      footsteps
-TEXT       NIKE / ADIDAS / BACK TO THE SHELVES?
+TEXT       NIKE / ADIDAS / NIKE · OFF ITS OWN SHELF
 EFFECT     motif @lane_race

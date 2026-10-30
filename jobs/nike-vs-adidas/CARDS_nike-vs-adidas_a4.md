@@ -1,16 +1,18 @@
 ### a4-01 · "But here's the part nobody saw coming. Adidas, meanwhile, had its own disaster."
 MEANS      Adidas had its own disaster
-SEE        the real Adidas outlet building at Herzogenaurach, the camera pushing toward it
+SEE        the real Adidas buildings at Herzogenaurach under a push-in; on "Adidas" the colour drains to grey; on "disaster" a crack runs across the picture
 WORLD      nike_vs_adidas_adidas_hq_herzogenaurach_2016
 SECONDS
-  0.0  the real Adidas outlet building at Herzogenaurach, the camera pushing toward it
-LAYERS     footage / photo · grade
-CAMERA     push or travel with intent
-MOTION     footage playing; ramp / freeze where marked
+  0.0  the real Adidas buildings at Herzogenaurach under a push-in
+  on "Adidas" the colour drains to grey
+  on "disaster" a crack runs across the picture
+LAYERS     picture · effect layer
+CAMERA     with intent
+MOTION     acted
 SEAM       in right
-SOUND      room tone of the shot
-TEXT       none
-EFFECT     REUSE footage treatment @reel
+SOUND      —
+TEXT       ITS OWN DISASTER
+EFFECT     NEW @crack_drain
 
 ### a4-02 · "In October twenty twenty-two, it ended its partnership with Ye, the rapper once known as Kanye West."
 MEANS      Oct 2022: the Ye partnership ended
@@ -72,7 +74,7 @@ CAMERA     print drifts
 MOTION     words light one by one with the quote voice; embers rise
 SEAM       in right
 SOUND      low fire crackle under the quote voice
-TEXT       “The numbers speak for themselves. We are currently not performing the way we should.” / BJORN GULDEN · ADIDAS CEO
+TEXT       “The numbers speak for themselves. We are currently not performing the way we should.” / BJORN GULDEN · CEO 2023
 EFFECT     REUSE (library) @ember_quote
 
 ### a4-06 · "Then he did something deeply unglamorous. He sold what Adidas already had."
@@ -107,17 +109,18 @@ EFFECT     REUSE (library) @catalogue_fan
 
 ### a4-08 · "The Samba was named shoe of the year, the brand's first since twenty fifteen."
 MEANS      Samba: shoe of the year 2023
-SEE        the real Adidas outlet at Herzogenaurach in winter; on "named" a red sash sweeps across its corner: SHOE OF THE YEAR
-WORLD      nike_vs_adidas_adidas_factory_outlet_herzogenaurach
+SEE        CARRIER of a4-07: the real black Samba card stays in the middle; on "Samba" a red sash sweeps across its corner: SHOE OF THE YEAR; FN 2023 · FIRST SINCE YEEZY 2015 under it
+WORLD      nike_vs_adidas_adidas_samba_black
 SECONDS
-  0.0  the real Adidas outlet at Herzogenaurach in winter
-  on "named" a red sash sweeps across its corner: SHOE OF THE YEAR
+  0.0  CARRIER of a4-07: the real black Samba card stays in the middle
+  on "Samba" a red sash sweeps across its corner: SHOE OF THE YEAR
+  FN 2023 · FIRST SINCE YEEZY 2015 under it
 LAYERS     photo (travel) · diagonal SOLD strip · terms
 CAMERA     dolly
 MOTION     banner sweeps across the corner
 SEAM       out right
 SOUND      banner slap
-TEXT       TOP SHOE / SAMBA · SHOE OF THE YEAR · FOOTWEAR NEWS 2023
+TEXT       SHOE OF THE YEAR / FOOTWEAR NEWS 2023 · FIRST SINCE YEEZY 2015
 EFFECT     REUSE (library) @corner_banner
 
 ### a4-09 · "And instead of writing the Yeezys off, Adidas sold them, for about one point four billion euros. It set aside two hundred and sixty million for charity."
@@ -151,3 +154,18 @@ SEAM       out right
 SOUND      clicks accelerating
 TEXT       2023 · €268M / 2025 · €2,056M / ×7.7
 EFFECT     REUSE (library) @growth_stack
+
+### a4-11 · "Adidas had climbed back onto the shelf." · MOTIF
+MEANS      motif: Adidas back on the shelf
+SEE        MOTIF: the red shoe stands short of its plank; on "Adidas" the blue one runs back up onto its own: ADIDAS · BACK ON THE SHELF
+WORLD      nike_vs_adidas_art_running_track · nva_cut_sneaker_blue · nva_cut_sneaker_red
+SECONDS
+  0.0  MOTIF: the red shoe stands short of its plank
+  on "Adidas" the blue one runs back up onto its own: ADIDAS · BACK ON THE SHELF
+LAYERS     track plate · two shoe cut-outs · lane names · verdict
+CAMERA     track with the shoes
+MOTION     shoes run to their positions (the motif)
+SEAM       in right
+SOUND      footsteps
+TEXT       NIKE / ADIDAS / ADIDAS · BACK ON THE SHELF
+EFFECT     motif @lane_race

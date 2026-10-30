@@ -13,12 +13,12 @@ motif: lane_race
 # cine act=rise fx="code:@pie_on_photo;pic:nike_vs_adidas_sneakers_hanging_wall;mid:61%~FY26;from:56;slices:WHOLESALE^61^1^#7fd1a8~NIKE DIRECT^39^0^#6d7380;go:Today;out:right"
 Today, wholesale is Nike's growing channel again: sixty-one percent of brand sales in fiscal twenty twenty-**six**.
 
-// CARD a6-02 · SEE: a real wall of sneakers in a shop; on "company" its rows go dark one by one and the shelves stand bare: NOT ON THE WALL · SEAM in right
-# cine act=lesson fx="code:@shelf_empty_out;pic:nike_vs_adidas_flight_club_wall;rows:.3~.52~.74;go:company;word:NOT ON THE WALL;in:right"
+// CARD a6-02 · SEE: a real wall of sneakers in a shop; on "company" one whole row goes dark and stands bare in the middle of the full wall: NOT ON THE WALL · SEAM in right
+# cine act=lesson fx="code:@shelf_empty_out;pic:nike_vs_adidas_flight_club_wall;rows:.52;dark:.6;go:company;word:NOT ON THE WALL;in:right"
 The company behind the world's most famous shoe forgot that people have to find it **first**.
 
 // CARD a6-03 · SEE: the wall of archive drawers again; on "saved" a drawer slides out and a real black Stan Smith rises in it: SAVED BY ITS OWN ARCHIVE · SEAM out right
-# cine act=lesson fx="code:@archive_drawer;pic:nike_vs_adidas_adidas_stan_smith_black;tag:ARCHIVE · STAN SMITH;go:saved;lab:SAVED BY ITS OWN ARCHIVE;out:right"
+# cine act=lesson fx="code:@archive_drawer;pic:nike_vs_adidas_adidas_stan_smith_black;tag:ARCHIVE · STAN SMITH;go:company;lab:SAVED BY ITS OWN ARCHIVE;out:right"
 And the company facing a seven-hundred-million-euro loss was saved by shoes from its own **archive**.
 
 // CARD a6-04 · SEE: BOOKEND of a0-06: the same shelf, red row empty and blue row full; the thesis lands line by line over it and holds still; "shelf" in gold · SEAM hard cut · HOLD
@@ -34,7 +34,7 @@ Nike shows investors its new plan on the seventeenth of **November**.
 {awe} The question is whether a company can win back a shelf it walked away **from**.
 
 // CARD a6-07 · SEE: CALLBACKS in hard cuts: the a2-08 Cortez wall lights up; on "decided" the a3-05 boutique shelves go dark; on "Adidas" the a0-06 shelf fills with blue; on "If" the red row slides halfway back; on "doesn't" it slides out again · SEAM in right
-# cine act=lesson fx="code:@callback_cuts;a:nva_cut_sneaker_red;b:nva_cut_sneaker_blue;cuts:nike_vs_adidas_nike_cortez^0^light^1985 · ON EVERY SHELF~nike_vs_adidas_streetwear_boutique^decided^dark^THEN OFF THE SHELF~nike_vs_adidas_art_store_shelf_wall^Adidas^fillb^ADIDAS · ON THE SHELF~nike_vs_adidas_art_store_shelf_wall^If^halfa^IF NIKE COMES BACK~nike_vs_adidas_art_store_shelf_wall^doesn't^outa^IF IT DOESN'T;in:right"
+# cine act=lesson fx="code:@callback_cuts;a:nva_cut_sneaker_red;b:nva_cut_sneaker_blue;cuts:nike_vs_adidas_sneaker_store_jordans^0^light^1985 · ON EVERY SHELF~nike_vs_adidas_streetwear_boutique^decided^dark^THEN OFF THE SHELF~nike_vs_adidas_art_store_shelf_wall^Adidas^fillb^ADIDAS · ON THE SHELF~nike_vs_adidas_adidas_flagship_nyc^wherever^light^WHEREVER PEOPLE SHOP~nike_vs_adidas_art_store_shelf_wall^If^halfa^IF NIKE COMES BACK~nike_vs_adidas_art_store_shelf_wall^doesn't^outa^IF IT DOESN'T;in:right"
 So remember that shelf from nineteen eighty-five, because Nike built an empire on being everywhere and then decided it didn't need to be, while Adidas simply showed up wherever people **shop**.
 If Nike gets its shoes back on those shelves, this was a bad two years, and if it doesn't, the brothers' old rival may be the one still **standing**.
 

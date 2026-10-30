@@ -12,7 +12,7 @@ endcard: off
 motif: lane_race
 
 // CARD a4-01 · SEE: the real Adidas buildings at Herzogenaurach under a push-in; on "Adidas" the colour drains to grey; on "disaster" a crack runs across the picture · SEAM in right
-# cine act=doubt fx="code:@crack_drain;pic:nike_vs_adidas_adidas_hq_herzogenaurach_2016;go:Adidas;go2:disaster;x0:.04;y0:.34;x1:.96;y1:.58;lab:ITS OWN DISASTER;in:right"
+# cine act=doubt fx="code:@crack_drain;pic:nike_vs_adidas_adidas_hq_herzogenaurach_2016;go:nobody;go2:Adidas;x0:.04;y0:.34;x1:.96;y1:.58;lab:ITS OWN DISASTER;in:right"
 But here's the part nobody saw coming. Adidas, meanwhile, had its own **disaster**.
 
 // CARD a4-02 · SEE: a real Adidas store front, dim; a card ADIDAS × YEEZY · 2013–2022; on "ended" it rips in two and ENDED · 25 OCT 2022 sets in the gap · SEAM out right
@@ -20,11 +20,11 @@ But here's the part nobody saw coming. Adidas, meanwhile, had its own **disaster
 In October twenty twenty-two, it ended its partnership with Ye, the rapper once known as Kanye **West**.
 
 // CARD a4-03 · SEE: the real Adidas flagship, dim; a white statement sheet slides up and the verbatim words type as the voice reads them; "antisemitism" underlined · SEAM in right · HOLD
-# cine act=fall fx="code:@quote_card_type;bg:nike_vs_adidas_adidas_flagship_nyc;q:“adidas does not tolerate antisemitism and any other sort of hate speech.”;span:4;h:.46;hl:antisemitism;by:adidas statement · 25 October 2022 · read by a voice actor;in:right"
+# cine act=fall fx="code:@quote_card_type;bg:nike_vs_adidas_adidas_flagship_nyc;q:“adidas does not tolerate antisemitism and any other sort of hate speech.”;span:4;h:.34;hl:antisemitism;by:adidas statement · 25 October 2022 · read by a voice actor;in:right"
 @adidas: adidas does not tolerate antisemitism and any other sort of hate speech.
 
 // CARD a4-04 · SEE: a real warehouse aisle of sealed boxes; a zero line; on "forecast" a dashed red bar drops below it to −€700M, labelled FORECAST · if unsold · SEAM out right
-# cine act=fall fx="code:@forecast_dashed;bg:stock_investigation_boxes_room_01;val:−€700M;go:forecast;lab:FORECAST · 2023;cond:if the Yeezy stock went unsold;out:right"
+# cine act=fall fx="code:@forecast_dashed;bg:stock_investigation_boxes_room_01;val:−€700M;go:left;lab:FORECAST · 2023;cond:if the Yeezy stock went unsold;out:right"
 It was left with a warehouse full of Yeezy **shoes**.
 And a forecast: a seven-hundred-million-euro operating loss in twenty twenty-three, if it couldn't sell **them**.
 
@@ -46,7 +46,7 @@ The Samba. The Gazelle. The Spezial. Old shoes, made in far bigger **numbers**.
 The Samba was named shoe of the year, the brand's first since twenty **fifteen**.
 
 // CARD a4-09 · SEE: a real paper-bag packing shot, dim; a long gold bar YEEZY STOCK SOLD · ABOUT €1.4B; on "set" its end peels off: €260M FOR CHARITY · SEAM in right
-# cine act=rise fx="code:@bar_slice;bg:stock_retail_shopping_bags_04;total:1400;part:260;go:set;tlab:YEEZY STOCK SOLD · ABOUT €1.4B · 2023–24;plab:€260M SET ASIDE FOR CHARITY;in:right"
+# cine act=rise fx="code:@bar_slice;bg:stock_retail_shopping_bags_04;total:1400;part:260;go:sold;tlab:YEEZY STOCK SOLD · ABOUT €1.4B · 2023–24;plab:€260M SET ASIDE FOR CHARITY;in:right"
 And instead of writing the Yeezys off, Adidas sold them, for about one point four billion **euros**.
 It set aside two hundred and sixty million for **charity**.
 

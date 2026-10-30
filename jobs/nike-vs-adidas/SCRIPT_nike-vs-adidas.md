@@ -67,19 +67,19 @@ Operating profit went from two hundred and sixty-eight million euros in twenty t
 Adidas had climbed back onto the **shelf**.
 
 ## a5 THE SAME WEEK · 2026
-So who actually won twenty twenty-six? Then came the World **Cup**.
+So who actually won twenty twenty-six? First came the World **Cup**.
 Nike's six-minute film, Rip the Script, passed sixty-six million YouTube views in under a week, the press **reported**.
 Adidas's ad stayed under seven **million**.
 {wry} Nike won the attention. Then it reported the **quarter**. (J)
-Revenue, down four percent. Direct sales, down nine. Greater China, down twenty-six, at constant **currency**.
+{grave} Revenue fell four percent. In Greater China, it fell twenty-**six**.
 Nike told investors to expect revenue to fall again this fiscal **year**.
-The next day, the stock hit its thirteen-year **low**.
+{tense} The next day, the stock hit its thirteen-year **low**.
+Nike's chief executive, Elliott Hill, put it this **way**.
 @hill: Our Nike performance business is not yet large enough to offset the pressure we are seeing in Nike sportswear, Jordan brand, and Greater China.
-Three weeks later, Adidas made one billion and eight million euros of operating profit in one **quarter**.
-It was its first billion-euro quarter **ever**.
-About two hundred million of it was a one-off tariff **refund**.
+Three weeks later, Adidas made just over a billion euros of operating profit in a single quarter, the first time in its **history**.
+About two hundred million euros of it was a one-off tariff **refund**.
 And its footwear sales were flat. Adidas grew on clothing and sports **gear**.
-So Adidas didn't beat Nike at shoes. Nike had stepped off the **shelf**.
+{wry} So Adidas didn't beat Nike at shoes. Nike had stepped off the **shelf**.
 
 ## a6 THE LESSON · the shelf
 Today, wholesale is Nike's growing channel again: sixty-one percent of brand sales in fiscal twenty twenty-**six**.

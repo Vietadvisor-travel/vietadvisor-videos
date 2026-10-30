@@ -11,7 +11,7 @@ endcard: off
 motif: lane_race
 
 // CARD a3-01 · SEE: a real empty press-conference desk, the camera travelling in; the lines write across its backdrop on "June", "Donahoe" and "changed" · SEAM out right
-# cine act=doubt fx="code:@board_marker;pic:stock_news_press_desk_empty_01;bx:.5;by:.3;bw:.5;lines:JUNE 2020^June~CEO JOHN DONAHOE^Donahoe~CONSUMER DIRECT ACCELERATION^changed;src:Nike · June 2020;out:right"
+# cine act=doubt fx="code:@board_marker;pic:stock_news_press_desk_empty_01;bx:.5;by:.3;bw:.5;ink:light;dim:.42;lines:JUNE 2020^thirty-five~CEO JOHN DONAHOE^June~CONSUMER DIRECT ACCELERATION^Donahoe;src:Nike · June 2020;out:right"
 For thirty-five years, that formula worked. Then, in June twenty twenty, Nike's chief executive, John Donahoe, changed it. He called it Consumer Direct **Acceleration**.
 
 // CARD a3-02 · SEE: a real phone scrolling a shopping app, dim; three boxes NIKE → STORES → YOU; on "Cut" STORES is crossed out and falls, and a gold arrow draws from NIKE straight to YOU · SEAM in right
@@ -26,8 +26,8 @@ Nike walked away from Belk, Dillard's, Zappos and other **stores**.
 # cine act=doubt fx="code:@pie_on_photo;pic:nike_vs_adidas_nike_flagship_nyc;mid:44%~FY24;slices:NIKE DIRECT^44^1^#ff6b5e~WHOLESALE^56^0^#6d7380;go:direct;in:right"
 By fiscal twenty twenty-four, direct sales were about forty-four percent of Nike brand **sales**.
 
-// CARD a3-05 · SEE: a real streetwear boutique with shoes on its shelves; on "margin" the shelves go dark row by row and stand bare; THE SHELF · SHRINKING · SEAM out right
-# cine act=fall fx="code:@shelf_empty_out;pic:nike_vs_adidas_streetwear_boutique;rows:.3~.52~.74;go:margin;word:THE SHELF · SHRINKING;out:right"
+// CARD a3-05 · SEE: CALLBACK of a0-06: the same shop shelf wall of sneakers; on "margin" two of its rows go dark and stand bare; THE SHELF · SHRINKING · SEAM out right
+# cine act=fall fx="code:@shelf_empty_out;pic:nike_vs_adidas_art_store_shelf_wall;rows:.3~.55;dark:.6;go:margin;word:THE SHELF · SHRINKING;out:right"
 The margin was higher. But it meant the shelf was **shrinking**.
 
 // CARD a3-06 · SEE: one real Jordan retro photo splits into 2, 4, 8 … tiles, always the same shoe · SEAM in right
@@ -39,7 +39,7 @@ And the app kept selling the same few classics: Dunks, Air Force Ones, Jordan **
 {wry} A Bloomberg profile of Donahoe was titled "The Man Who Made Nike **Uncool**."
 
 // CARD a3-08 · SEE: a stack of shoe boxes beside $51.4B; on "revenue" the floor jolts, the top boxes tumble out and the figure counts down to $46.3B; −10% · SEAM in right
-# cine act=fall fx="code:@box_stack_fall;bg:nike_vs_adidas_nike_hq_beaverton_wide;box:nva_cut_shoe_box;from:51.4;to:46.3;a:FY2024;b:FY2025;go:revenue;pct:−10%;unit:$;lab:NIKE REVENUE · US$;in:right"
+# cine act=fall fx="code:@box_stack_fall;bg:nike_vs_adidas_nike_hq_beaverton_wide;box:nva_cut_shoe_box;from:51.4;to:46.3;a:FY2024;b:FY2025;go:fiscal;pct:−10%;unit:$;lab:NIKE REVENUE · US$;in:right"
 {grave} In fiscal twenty twenty-five, revenue fell ten **percent**.
 
 // CARD a3-09 · SEE: a real Air Max 97 pair on Nike boxes as a print; on "Net" it tears and 44% of it falls away; −44% · NET INCOME · FY25 · SEAM out right

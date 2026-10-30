@@ -30,10 +30,10 @@ EFFECT     NEW @sign_zoom
 
 ### a1-03 · "In nineteen thirty-six, Jesse Owens wins four Olympic gold medals in their spikes."
 MEANS      Jesse Owens wins in Dassler spikes, 1936
-SEE        an old stone stadium in real footage; on "Jesse" four gold medals drop one by one onto a ribbon bar
-WORLD      nike_vs_adidas_clip_panathenaic_stadium
+SEE        the Dassler workshop of the 1930s (AI moment art, no person); on "Jesse" four gold medals drop one by one onto a ribbon bar
+WORLD      nike_vs_adidas_scene_dassler_workshop_1940s
 SECONDS
-  0.0  an old stone stadium in real footage
+  0.0  the Dassler workshop of the 1930s (AI moment art, no person)
   on "Jesse" four gold medals drop one by one onto a ribbon bar
 LAYERS     stadium footage (dim) · medals on ribbons · caption
 CAMERA     slow push
@@ -45,11 +45,11 @@ EFFECT     NEW @medal_drop
 
 ### a1-04 · "Then, in nineteen forty-eight, the brothers split."
 MEANS      1948, the brothers split
-SEE        the factory photo as a big print; on "split" it tears down the middle and half of it falls away; 1948 sets in the gap
+SEE        BOOKEND of a1-01: the same factory photo as a big print; on "Then" it tears down the middle and half of it falls away; 1948 sets in the gap
 WORLD      nike_vs_adidas_dassler_shoe_factory_1928
 SECONDS
-  0.0  the factory photo as a big print
-  on "split" it tears down the middle and half of it falls away
+  0.0  BOOKEND of a1-01: the same factory photo as a big print
+  on "Then" it tears down the middle and half of it falls away
   1948 sets in the gap
 LAYERS     desk · large print · torn piece · gap figures
 CAMERA     slight drift
@@ -107,11 +107,11 @@ EFFECT     REUSE (library) @print_slide
 
 ### a1-08 · "In nineteen seventy-one they become Nike. A design student draws the logo for thirty-five dollars."
 MEANS      1971: Nike, a $35 logo
-SEE        the real entrance of Nike headquarters, swoosh on the pillar; on "design" a pencil writes $35 across the picture and rings it
-WORLD      nike_vs_adidas_nike_hq_entrance
+SEE        a real Nike Cortez with its red swoosh; on "Nike" a pencil writes $35 across the picture and rings it
+WORLD      nike_vs_adidas_cortez_corsair_comparison
 SECONDS
-  0.0  the real entrance of Nike headquarters, swoosh on the pillar
-  on "design" a pencil writes $35 across the picture and rings it
+  0.0  a real Nike Cortez with its red swoosh
+  on "Nike" a pencil writes $35 across the picture and rings it
 LAYERS     photo (drift) · pencil cut-out · graphite figure · ring · source
 CAMERA     drift
 MOTION     pencil writes the figure and rings it
@@ -122,11 +122,11 @@ EFFECT     REUSE (library) @price_pencil
 
 ### a1-09 · "Bowerman makes a new sole by pouring rubber into a waffle iron."
 MEANS      the waffle sole
-SEE        black rubber under a hot grid; on "pouring" the grid presses down, steam rises, and the rubber comes up with a waffle tread that slides away as a sole
-WORLD      nike_vs_adidas_el_rubber_sole · nva_cut_sole
+SEE        a cast-iron waffle iron, lid open; on "Bowerman" black rubber is poured in, the lid shuts, steam rises, the lid opens and a sole covered in square nubs lifts out
+WORLD      nike_vs_adidas_el_rubber_sole
 SECONDS
-  0.0  black rubber under a hot grid
-  on "pouring" the grid presses down, steam rises, and the rubber comes up with a waffle tread that slides away as a sole
+  0.0  a cast-iron waffle iron, lid open
+  on "Bowerman" black rubber is poured in, the lid shuts, steam rises, the lid opens and a sole covered in square nubs lifts out
 LAYERS     rubber texture · iron grid · steam · sole cut-out
 CAMERA     locked
 MOTION     grid presses, steam, sole slides out
@@ -137,16 +137,15 @@ EFFECT     NEW @waffle_press
 
 ### a1-10 · "So Adidas was the giant. Nike was the upstart." · MOTIF
 MEANS      motif: Adidas the giant, Nike the upstart
-SEE        MOTIF: the two shoes on the track; on "giant" ADIDAS runs far ahead, NIKE lags; ADIDAS: THE GIANT sets above
+SEE        MOTIF: on "So" the blue shoe runs all the way onto its shelf plank; the red one stays far behind
 WORLD      nike_vs_adidas_art_running_track · nva_cut_sneaker_blue · nva_cut_sneaker_red
 SECONDS
-  0.0  MOTIF: the two shoes on the track
-  on "giant" ADIDAS runs far ahead, NIKE lags
-  ADIDAS: THE GIANT sets above
+  0.0  MOTIF: on "So" the blue shoe runs all the way onto its shelf plank
+  the red one stays far behind
 LAYERS     track plate · two shoe cut-outs · lane names · verdict
 CAMERA     track with the shoes
 MOTION     shoes run to their positions (the motif)
 SEAM       out right
 SOUND      footsteps
-TEXT       NIKE / ADIDAS / ADIDAS · THE GIANT
+TEXT       NIKE / ADIDAS / ADIDAS · ON THE SHELF FIRST
 EFFECT     motif @lane_race
