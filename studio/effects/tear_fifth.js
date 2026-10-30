@@ -7,7 +7,7 @@
 */
 ({ t, at, p, W, H, u, img, ctx, params: P, clamp, lerp, text, seam, paperDesk, rng, dur }) => {
   ctx.save(); seam(P.in || 'none', P.out || 'none'); paperDesk({ lx: .45, ly: .45 });
-  const im = img(P.pic), k = clamp(t / Math.max(1, dur)), t0 = at(P.go || 0), kt = clamp((t - t0) / 1.1), fr = +(P.frac || .2), pw = W * .74, ph = im ? Math.min(H * .7, pw * im.height / im.width) : H * .6, px = W * .07 + k * 8 * u, py = H * .46 - ph / 2, cutX = pw * (1 - fr);
+  const im = img(P.pic), k = clamp(t / Math.max(1, dur)), t0 = at(P.go || 0), kt = clamp((t - t0) / 1.1), fr = +(P.frac || .2), pw = W * .74, ph = im ? Math.min(H * .7, pw * im.height / im.width) : H * .6, px = W * .07 + (k - .5) * W * +(P.travel || .01), py = H * .46 - ph / 2, cutX = pw * (1 - fr);
   if (!im) { ctx.restore(); return; } const r = rng(21), pts = []; for (let y = 0; y <= ph; y += ph / 16) pts.push([cutX + (r() - .5) * 26 * u, y]);
   const piece = (left) => { ctx.beginPath(); if (left) { ctx.moveTo(0, 0); pts.forEach(q => ctx.lineTo(q[0], q[1])); ctx.lineTo(0, ph); } else { ctx.moveTo(pw, 0); pts.forEach(q => ctx.lineTo(q[0], q[1])); ctx.lineTo(pw, ph); } ctx.closePath(); };
   const sc = Math.max(pw / im.width, ph / im.height);

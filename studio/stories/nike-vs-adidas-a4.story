@@ -26,7 +26,7 @@ At Madison Square Garden, fans held up their Superstars, and Adidas signed the *
 Adidas calls it the birth of non-athletic promotion in sporting **goods**. (J)
 
 // CARD a4-04 · SEE: two framed prints: Phil Knight (NIKE) and a white sneaker (AI prop, REEBOK · 1987 · ABOUT $1.4B); on "Reebok" the Nike card sinks and greys while the Reebok card rises · SEAM in right
-# cine act=doubt fx="code:@rise_and_sink;push:.08;down:nike_vs_adidas_phil_knight_football_sideline;up:nike_vs_adidas_el_sneaker_white;dlab:NIKE;ulab:REEBOK · 1987 · AI IMAGE;dat:scare;uat:Reebok;in:right"
+# cine act=doubt fx="code:@rise_and_sink;bg:nike_vs_adidas_clip_outdoor_gym_demo;dim:.45;down:nike_vs_adidas_phil_knight_football_sideline;up:nike_vs_adidas_el_sneaker_white;dlab:NIKE;ulab:REEBOK · 1987 · AI IMAGE;dat:scare;uat:Reebok;in:right"
 Nike's real scare came from Reebok, which took the American lead in the late eighties on aerobics **shoes**.
 But Nike took the lead back in nineteen eighty-**eight**.
 

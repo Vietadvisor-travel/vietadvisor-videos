@@ -34,7 +34,7 @@ The new chief executive, Bjorn Gulden, came from **Puma**, where he had been chi
 @gulden: The numbers speak for themselves. We are currently not performing the way we should.
 
 // CARD a6-06 · SEE: a dark wall of archive drawers; on "sold" one drawer slides out and a real white Adidas Superstar rises in it · SEAM out right
-# cine act=rise fx="code:@archive_drawer;push:.08;pic:nike_vs_adidas_adidas_superstar_white;tag:ARCHIVE · SUPERSTAR;go:unglamorous;lab:WHAT ADIDAS ALREADY HAD;out:right"
+# cine act=rise fx="code:@archive_drawer;pic:nike_vs_adidas_adidas_superstar_white;tag:ARCHIVE · SUPERSTAR;go:unglamorous;lab:WHAT ADIDAS ALREADY HAD;out:right"
 Then he did something deeply unglamorous. He sold what Adidas already **had**. (J)
 
 // CARD a6-07 · SEE: real Adidas product photos dealt onto a dark table faster and faster; on "Samba" the real black Samba lands big in the middle · SEAM in right
@@ -42,7 +42,7 @@ Then he did something deeply unglamorous. He sold what Adidas already **had**. (
 The Samba. The Gazelle. The Spezial. Old shoes, made in far bigger **numbers**.
 
 // CARD a6-08 · SEE: CARRIER of a4-07: the real black Samba card stays in the middle; on "Samba" a red sash sweeps across its corner: SHOE OF THE YEAR; FN 2023 · FIRST SINCE YEEZY 2015 under it · SEAM out right
-# cine act=rise fx="code:@corner_banner;push:.08;pic:nike_vs_adidas_adidas_samba_black;card:1;bx:.66;by:.3;bl:.42;word:SHOE OF THE YEAR;terms:FOOTWEAR NEWS 2023 · FIRST SINCE YEEZY 2015;go:Samba;out:right"
+# cine act=rise fx="code:@corner_banner;pic:nike_vs_adidas_adidas_samba_black;card:1;bx:.66;by:.3;bl:.42;word:SHOE OF THE YEAR;terms:FOOTWEAR NEWS 2023 · FIRST SINCE YEEZY 2015;go:Samba;out:right"
 The Samba was named shoe of the year, the brand's first since twenty **fifteen**.
 
 // CARD a6-09 · SEE: the real photo of Bjorn Gulden on the left; his verbatim words light from grey to ink as the voice reads them; "godsend" in gold · SEAM in right · HOLD
