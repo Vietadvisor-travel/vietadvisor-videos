@@ -27,7 +27,7 @@ At the Berlin Olympics of nineteen thirty-six, Jesse Owens wins four gold medals
 Then, in nineteen forty-eight, the brothers **split**.
 
 // CARD a1-05 · SEE: a ruled index card on the desk: WHY THEY SPLIT; on "famous" the top line, THE BOMB-SHELTER STORY, is cut out and falls away; THE WAR, OLD GRUDGES and TWO WIVES stay · SEAM out right
-# cine act=doubt fx="code:@cut_out_word;title:WHY THEY SPLIT;lines:THE BOMB-SHELTER STORY~THE WAR~OLD GRUDGES~TWO WIVES;cut:0;go:famous;note:the shelter story is unproven · Adidas official history, Smit (2008);out:right"
+# cine act=doubt fx="code:@cut_out_word;bg:nike_vs_adidas_rudolf_dassler_tombstone;title:WHY THEY SPLIT;lines:THE BOMB-SHELTER STORY~THE WAR~OLD GRUDGES~TWO WIVES;cut:0;go:famous;note:the shelter story is unproven · Adidas official history, Smit (2008);out:right"
 Nobody agrees on exactly why. The famous bomb-shelter story is **unproven**.
 The records point to the war, to old grudges, and to two wives who did not get **along**.
 

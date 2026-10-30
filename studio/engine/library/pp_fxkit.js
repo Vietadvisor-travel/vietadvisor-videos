@@ -170,7 +170,9 @@
       [['#f00', -dx, -dy], ['#0f0', 0, 0], ['#00f', dx, dy]].forEach(([c, ox, oy]) => { const tmp = cv('chr' + c, snap.width, snap.height), tg = tmp.getContext('2d'); tg.globalCompositeOperation = 'source-over'; tg.clearRect(0, 0, tmp.width, tmp.height); tg.drawImage(snap, 0, 0); tg.globalCompositeOperation = 'multiply'; tg.fillStyle = c; tg.fillRect(0, 0, tmp.width, tmp.height); g.globalCompositeOperation = 'lighter'; g.drawImage(tmp, ox * sc, oy * sc); });
       ctx.drawImage(out, 0, 0, out.width, out.height, 0, 0, W, H); }
     function cover(src, o = {}) { // fill the frame edge to edge (no pillar-box), optional push z, drift ox/oy (fractions), filter
-      if (!src || !src.width) return; const z = o.z ?? 1, s = Math.max(W / src.width, H / src.height) * z; ctx.save(); ctx.globalAlpha *= o.a ?? 1; if (o.filter) ctx.filter = o.filter;
+      // v6.8 camera life: every plate keeps travelling for the whole beat (about 2.6 % of the width a second, up to 26 %, with a slow push),
+      // so a long sentence never sits on a still frame; o.lock keeps a plate fixed when marks are drawn on its contents
+      if (!src || !src.width) return; const Lf = o.lock ? 0 : Math.min(.26, dur * .026), kL = Math.min(1, Math.max(0, t / dur)), z = (o.z ?? 1) * (1 + Lf + (Lf ? .02 + .1 * kL : 0)), s = Math.max(W / src.width, H / src.height) * z; o = Object.assign({}, o, { ox: (o.ox || 0) + (Math.min(1, Math.max(0, t / dur)) - .5) * Lf }); ctx.save(); ctx.globalAlpha *= o.a ?? 1; if (o.filter) ctx.filter = o.filter;
       ctx.drawImage(src, W / 2 - src.width * s / 2 + (o.ox || 0) * W, H / 2 - src.height * s / 2 + (o.oy || 0) * H, src.width * s, src.height * s); ctx.restore(); }
     function block(src, x, y, w, h, o = {}) { // a solid block: the photo on its face, a lit top face in perspective, a dark side
       const d = (o.depth ?? .35) * h, sx = (o.skew ?? .35) * d; ctx.save(); ctx.globalAlpha *= o.a ?? 1;

@@ -5,10 +5,10 @@
    @tags: accounting,exclusion,list,paper,cut,trick
    @born: wework a3-06: community-adjusted EBITDA left out costs like rent
 */
-({ t, at, p, spring, W, H, u, img, ctx, params: P, clamp, lerp, text, seam, paper, drop, dur }) => {
+({ t, at, p, spring, W, H, u, img, clip, cover, ctx, params: P, clamp, lerp, text, seam, paper, drop, dur }) => {
   // a sheet of paper on the desk carries a short list under a title; on the word one line is cut out of the sheet and
   // falls away out of frame, leaving a dark slot where it was. params: title, lines (~), cut (line index), go, note, in, out
-  ctx.save(); seam(P.in || 'none', P.out || 'none');
+  ctx.save(); seam(P.in || 'none', P.out || 'none'); { const bg = clip(P.bg, 0, 1) || img(P.bg); if (bg) cover(bg, { z: 1.06, filter: `brightness(${P.dim || .45}) blur(2px)` }); }
   ctx.fillStyle = '#15110d'; ctx.fillRect(-W, -H, 3 * W, 3 * H); const lg = ctx.createRadialGradient(W * .5, H * .4, 0, W * .5, H * .4, W * .7); lg.addColorStop(0, 'rgba(255,214,150,.13)'); lg.addColorStop(1, 'rgba(0,0,0,.55)'); ctx.fillStyle = lg; ctx.fillRect(0, 0, W, H);
   const L = String(P.lines).split('~'), ci = +(P.cut || 1), pw = W * .56, lh = H * .12, ph = H * .2 + L.length * lh, x0 = W / 2 - pw / 2, y0 = H * .44 - ph / 2;
   const sheet = paper(Math.round(pw), Math.round(ph)); const k = clamp(p(P.go || 0, .25, 'out')), fall = Math.max(0, t - at(P.go || 0) - .25);

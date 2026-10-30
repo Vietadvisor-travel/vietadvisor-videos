@@ -7,7 +7,7 @@
 */
 ({ t, at, p, spring, W, H, u, img, clip, ctx, params: P, clamp, lerp, text, seam, cover, paperDesk, rng, dur }) => {
   ctx.save(); seam(P.in || 'none', P.out || 'none');
-  const bg = img(P.pic), k = clamp(t / Math.max(1, dur)); if (bg) cover(bg, { z: 1.12 + .1 * k, ox: (k - .5) * -.1, filter: 'brightness(.75) sepia(.3)' });
+  const bg = img(P.pic), k = clamp(t / Math.max(1, dur)); if (bg) cover(bg, { lock: 1, z: 1.12 + .1 * k, ox: (k - .5) * -.1, filter: 'brightness(.75) sepia(.3)' });
   const pts = (P.pts || '0,.62~.3,.58~.6,.64~1,.6').split('~').map(s => s.split(',').map(Number)), t0 = at(P.go || 0), kd = clamp((t - t0) / 1.2), ka = clamp(p(t0 + 1, .6));
   ctx.save(); ctx.globalAlpha = .28 * ka; ctx.fillStyle = '#3a6fd8'; ctx.beginPath(); ctx.moveTo(0, 0); pts.forEach(q => ctx.lineTo(q[0] * W, q[1] * H)); ctx.lineTo(W, 0); ctx.closePath(); ctx.fill(); ctx.fillStyle = '#d83a3a'; ctx.beginPath(); ctx.moveTo(0, H); pts.forEach(q => ctx.lineTo(q[0] * W, q[1] * H)); ctx.lineTo(W, H); ctx.closePath(); ctx.fill(); ctx.restore();
   ctx.strokeStyle = '#f2f4f8'; ctx.lineWidth = 7 * u; ctx.setLineDash([22 * u, 12 * u]); ctx.beginPath(); pts.forEach((q, i) => { const x = Math.min(q[0], kd) * W; i ? ctx.lineTo(x, q[1] * H) : ctx.moveTo(x, q[1] * H); }); ctx.stroke(); ctx.setLineDash([]);

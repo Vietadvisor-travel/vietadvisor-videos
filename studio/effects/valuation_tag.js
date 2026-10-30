@@ -5,13 +5,13 @@
    @tags: price,valuation,tag,repricing,strike,money
    @born: wework a1-16: at a valuation of forty-seven billion dollars
 */
-({ t, at, p, spring, W, H, u, img, clip, ctx, params: P, clamp, lerp, text, seam, dur }) => {
+({ t, at, p, spring, W, H, u, img, clip, ctx, params: P, clamp, lerp, text, seam, cover, dur }) => {
   // a paper price tag on a string swings into frame in front of a real building (or anything with a price) and a value is
   // written on it by hand; later values can strike the old one through and be written underneath, the tag swinging on each
   // change. params: bg, vals (v@word ~ …), lab (small line on the tag), sub, x, in, out
   ctx.save(); seam(P.in || 'none', P.out || 'none');
   const bg = clip(P.bg, 0, 1) || img(P.bg); ctx.fillStyle = '#0c0b0a'; ctx.fillRect(-W, -H, 3 * W, 3 * H);
-  if (bg && bg.width) { const s = Math.max(W / bg.width, H / bg.height) * (1.03 + .05 * clamp(t / dur)); ctx.save(); ctx.filter = 'brightness(.7) saturate(.85)'; ctx.drawImage(bg, W / 2 - bg.width * s / 2, H / 2 - bg.height * s / 2, bg.width * s, bg.height * s); ctx.restore(); }
+  if (bg && bg.width) cover(bg, { z: 1.03 + .05 * clamp(t / dur), filter: 'brightness(.7) saturate(.85)' });
   const vals = String(P.vals).split('~').map(s => { const [v, w] = s.split('@'); return { v, w }; }), hx = (+P.x || .64) * W, hy = -H * .02;
   const k0 = clamp(spring(vals[0].w ? at(vals[0].w) - .5 : .1, { stiff: 120, damp: 12 }), 0, 1.1); let sw = (1 - k0) * .9; vals.forEach((v, i) => { if (i && t > at(v.w)) { const x = t - at(v.w); sw += Math.exp(-3 * x) * Math.sin(x * 9) * .12; } });
   const len = H * .3, tw = W * .27, th = H * (.36 + .14 * (vals.length - 1)), ang = sw + Math.sin(t * 1.3) * .0;

@@ -7,7 +7,7 @@
 */
 ({ t, at, p, spring, W, H, u, img, clip, ctx, params: P, clamp, lerp, text, seam, cover, dur }) => {
   ctx.save(); seam(P.in || 'none', P.out || 'none');
-  const bg = img(P.pic) || clip(P.pic, 0, 1), k = clamp(t / Math.max(1, dur)), e = k * k * (3 - 2 * k); if (bg) cover(bg, { z: 1.1 + .25 * e, oy: -.04 * e, filter: 'brightness(.85)' });
+  const bg = img(P.pic) || clip(P.pic, 0, 1), k = clamp(t / Math.max(1, dur)), e = k * k * (3 - 2 * k); if (bg) cover(bg, { lock: 1, z: 1.1 + .25 * e, oy: -.04 * e, filter: 'brightness(.85)' });
   const [ax, ay] = (P.a || '.3,.62').split(',').map(Number), [bx, by] = (P.b || '.7,.7').split(',').map(Number), t0 = at(P.go || 0), ka = clamp(p(t0, .3)), km = clamp(spring(t0 + .4, { stiff: 140, damp: 15 }), 0, 1.05);
   const bw = W * .2, bh = bw * .38, mx = (ax + bx) / 2 * W, my = (ay + by) / 2 * H;
   const brick = (x, y, c) => { ctx.save(); ctx.globalAlpha = ka; ctx.strokeStyle = c; ctx.lineWidth = 5 * u; ctx.strokeRect(x - bw / 2, y - bh / 2, bw, bh); for (let i = 0; i < 4; i++) ctx.strokeRect(x - bw / 2 + bw * (i + .2) / 4, y - bh / 2 - bh * .28, bw * .14, bh * .28); ctx.restore(); };

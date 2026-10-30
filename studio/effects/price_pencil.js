@@ -7,7 +7,7 @@
 */
 ({ t, at, p, W, H, u, img, clip, ctx, params: P, clamp, lerp, text, seam, cover, dur }) => {
   ctx.save(); seam(P.in || 'none', P.out || 'none');
-  const bg = clip(P.pic, 0, 1) || img(P.pic), k = clamp(t / Math.max(1, dur)); if (bg) cover(bg, { z: 1.15 + .08 * k, ox: (k - .5) * -.08, filter: 'brightness(.62)' });
+  const bg = clip(P.pic, 0, 1) || img(P.pic), k = clamp(t / Math.max(1, dur)); if (bg) cover(bg, { lock: 1, z: 1.15 + .08 * k, ox: (k - .5) * -.08, filter: 'brightness(.62)' });
   const t0 = at(P.go || 0), kw = clamp((t - t0) / 1.1), x = (+P.x || .5) * W, y = (+P.y || .45) * H, sz = (+P.size || 170) * u, s = P.word || '';
   ctx.font = `${sz}px "Patrick Hand", "Comic Sans MS", cursive`; const fw = ctx.measureText(s).width, x0 = x - fw / 2;
   if (kw > 0) { ctx.save(); ctx.beginPath(); ctx.rect(x0 - 20 * u, y - sz, (fw + 40 * u) * kw, sz * 2); ctx.clip(); text(s, x, y, { size: sz, font: 'hand', col: 'rgba(245,240,230,.95)', lw: 0 }); ctx.restore(); }

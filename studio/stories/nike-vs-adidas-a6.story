@@ -62,7 +62,7 @@ Its finance chief, Harm Ohlmeyer, closed the **chapter**.
 @ohlmeyer: There is not one Yeezy shoe left, it has all been sold and that episode is behind us.
 
 // CARD a6-12 · SEE: a red bar hangs below a zero line: FORECAST 2023 · −€700M; on "never" it swings up through zero and stands at €268M: ACTUAL 2023 · SEAM in right
-# cine act=rise fx="code:@swing_bar;bg:nike_vs_adidas_doc_adidas_ar2024_ten_year_overview;a:-700;b:268;go:came;alab:FORECAST 2023 (€);blab:ACTUAL 2023 (€);unit:M;in:right"
+# cine act=rise fx="code:@swing_bar;bg:nike_vs_adidas_doc_adidas_ar2024_ten_year_overview;a:-700;b:268;go:came;dim:.55;alab:FORECAST 2023 (€);blab:ACTUAL 2023 (€);unit:M;in:right"
 The forecast loss never came. Adidas closed twenty twenty-three with an operating **profit**.
 On the bottom line, it still posted a net loss from continuing operations, its first since nineteen ninety-**two**.
 

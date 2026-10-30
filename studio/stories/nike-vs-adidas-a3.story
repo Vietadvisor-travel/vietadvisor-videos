@@ -28,7 +28,7 @@ On Thursday the eighteenth of October, nineteen eighty-four, Jordan wore a black
 The rule said a shoe had to be at least fifty-one percent **white**.
 
 // CARD a3-04 · SEE: the real 1985 dunk-contest photo, dim; a receipt prints THE LEGEND · NIKE FINED · EVERY GAME; on "ESPN" a red stamp slams on it: NO EVIDENCE IT WAS PAID · SEAM out right
-# cine act=doubt fx="code:@receipt_void;bg:nike_vs_adidas_michael_jordan_dunk_contest_1985;lines:THE LEGEND~NIKE FINED~EVERY GAME;stamp:NO EVIDENCE IT WAS PAID;go:ESPN;x:.62;sy:.42;src:ESPN, 2016;out:right"
+# cine act=doubt fx="code:@receipt_void;bg:nike_vs_adidas_michael_jordan_dunk_contest_1985;lines:THE LEGEND~NIKE FINED~EVERY GAME;stamp:NO EVIDENCE IT WAS PAID;dim:.55;go:ESPN;x:.62;sy:.42;src:ESPN, 2016;out:right"
 {wry} The legend says Nike paid a fine every game. ESPN found no evidence it ever paid **one**. (J)
 The black and red Air Jordan itself played just two preseason games.
 Then came the nineteen eighty-five dunk **contest**.

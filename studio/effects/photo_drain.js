@@ -8,7 +8,7 @@
 ({ t, at, p, W, H, u, img, clip, ctx, params: P, clamp, lerp, text, seam, dur }) => {
   // a framed portrait hangs on a dark wall with its title plate; on the word the photo drains to grey and slides down out of
   // its frame, leaving the frame empty and the plate still there; a date sets beside it. params: pic, plate, go, date, in, out
-  ctx.save(); seam(P.in || 'none', P.out || 'none');
+  ctx.save(); seam(P.in || 'none', P.out || 'none'); { const kc = Math.min(1, Math.max(0, t / Math.max(1, dur))); ctx.translate(W / 2, H * .45); ctx.scale(1 + .12 * kc, 1 + .12 * kc); ctx.translate(-W / 2 + (kc - .5) * -W * .04, -H * .45); }
   const wall = ctx.createLinearGradient(0, 0, 0, H); wall.addColorStop(0, '#1d1a16'); wall.addColorStop(1, '#0d0b09'); ctx.fillStyle = wall; ctx.fillRect(-W, -H, 3 * W, 3 * H);
   const lg = ctx.createRadialGradient(W * .4, H * .2, 0, W * .4, H * .2, W * .6); lg.addColorStop(0, 'rgba(255,220,170,.16)'); lg.addColorStop(1, 'rgba(0,0,0,0)'); ctx.fillStyle = lg; ctx.fillRect(0, 0, W, H);
   const im = clip(P.pic, 0, 1) || img(P.pic), fw = W * .3, fh = H * .6, fx = W * .4 - fw / 2, fy = H * .1, k = clamp(p(P.go || 0, 1.1, 'inOut')), dr = clamp(p(P.go || 0, .5, 'out'));

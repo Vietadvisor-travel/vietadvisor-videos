@@ -7,7 +7,7 @@
 */
 ({ t, at, p, spring, W, H, u, img, clip, ctx, params: P, clamp, lerp, text, seam, cover, rng, dur }) => {
   ctx.save(); seam(P.in || 'none', P.out || 'none');
-  const bg = clip(P.bg, 0, 1) || img(P.bg), k = clamp(t / Math.max(1, dur)); if (bg) cover(bg, { z: 1.08 + .12 * k, ox: (k - .5) * -.1, filter: `brightness(${P.dim || .3}) blur(2px)` }); else { ctx.fillStyle = '#0d0f14'; ctx.fillRect(-W, -H, 3 * W, 3 * H); }
+  const bg = clip(P.bg, 0, 1) || img(P.bg), k = clamp(t / Math.max(1, dur)); if (bg) cover(bg, { z: 1.08 + .12 * k, ox: (k - .5) * -.1, filter: `brightness(${P.dim || .3}) blur(1px)` }); else { ctx.fillStyle = '#0d0f14'; ctx.fillRect(-W, -H, 3 * W, 3 * H); }
   const B = (P.bars || '').split('~').filter(Boolean).map(s => s.split('^')), n = B.length, L = +(P.line || 1000), mx = Math.max(L, ...B.map(b => +b[1])) * 1.22, base = H * .78, top = H * .2, t0 = at(P.go || 0), kv = clamp(p(t0, .9, 'out')), bw = W * .16;
   const yOf = v => lerp(base, top, v / mx), yl = yOf(L), fmt = v => (P.unit || '') + Math.round(v).toLocaleString('en-US') + (P.suf || '');
   ctx.setLineDash([16 * u, 12 * u]); ctx.strokeStyle = '#f2f4f8'; ctx.lineWidth = 4 * u; ctx.beginPath(); ctx.moveTo(W * .12, yl); ctx.lineTo(W * .88, yl); ctx.stroke(); ctx.setLineDash([]);

@@ -7,7 +7,7 @@
 */
 ({ t, at, p, spring, W, H, u, img, clip, ctx, params: P, clamp, lerp, text, seam, cover, dur }) => {
   ctx.save(); seam(P.in || 'none', P.out || 'none');
-  const bg = clip(P.bg, 0, 1) || img(P.bg); ctx.fillStyle = '#0d0b09'; ctx.fillRect(-W, -H, 3 * W, 3 * H); if (bg) cover(bg, { z: 1.05 + .12 * clamp(t / Math.max(1, dur)), filter: 'brightness(.38)' });
+  const bg = clip(P.bg, 0, 1) || img(P.bg); ctx.fillStyle = '#0d0b09'; ctx.fillRect(-W, -H, 3 * W, 3 * H); if (bg) cover(bg, { z: 1.05 + .12 * clamp(t / Math.max(1, dur)), filter: `brightness(${P.dim || .38})` });
   const A = +(P.a || -1931), B = +(P.b || 505), mx = Math.max(Math.abs(A), Math.abs(B)), zy = H * .42, sc = H * .34 / mx, k0 = clamp(p(.1, .6)), k = clamp(spring(P.go || 0, { stiff: 90, damp: 12 }), -0.1, 1.1);
   const v = t < at(P.go || 0) ? A * k0 : lerp(A, B, k), h = -v * sc, x = W * .5, bw = W * .16;
   ctx.strokeStyle = 'rgba(243,236,220,.6)'; ctx.lineWidth = 3 * u; ctx.beginPath(); ctx.moveTo(W * .2, zy); ctx.lineTo(W * .8, zy); ctx.stroke(); text('0', W * .18, zy, { size: 34 * u, font: 'cond', col: '#d8ccb6', lw: 0 });

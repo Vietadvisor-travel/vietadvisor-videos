@@ -31,7 +31,7 @@ Nike's real scare came from Reebok, which took the American lead in the late eig
 But Nike took the lead back in nineteen eighty-**eight**.
 
 // CARD a4-05 · SEE: dark floor; three solid blocks rise one after another, each taller: FY1986 $1.07B, FY1996 $6.47B, FY2003 $10.7B · SEAM in right
-# cine act=rise fx="code:@blocks;vals:1.07,6.47,10.7;labs:FY1986,FY1996,FY2003;txts:$1.07B,$6.47B,$10.7B;go:yearly;gap:.7;note:Nike revenue · fiscal years to May · as reported;base:.8;notey:.085;in:right"
+# cine act=rise fx="code:@blocks;bg:stock_traffic_highway_multi_lane_05;vals:1.07,6.47,10.7;labs:FY1986,FY1996,FY2003;txts:$1.07B,$6.47B,$10.7B;go:yearly;gap:.7;note:Nike revenue · fiscal years to May · as reported;base:.8;notey:.085;in:right"
 Nike's yearly sales passed one billion dollars in the mid-eighties.
 They reached six and a half billion by nineteen ninety-six, and ten billion by two thousand **three**.
 

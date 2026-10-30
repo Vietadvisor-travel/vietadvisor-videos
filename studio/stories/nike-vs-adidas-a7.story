@@ -41,7 +41,7 @@ Then, on Thursday the first of October, after the market closed, it reported the
 Nike told investors to expect revenue to fall again this fiscal **year**.
 
 // CARD a7-07 · SEE: a sheet on the desk: PACE · 4 DIVISIONS BECOME 3 · $2.5B SAVINGS BY FY2031 · FEWER ROLES ACROSS NIKE; on "fewer" the last line is cut out and falls away · SEAM in right
-# cine act=fall fx="code:@cut_out_word;title:NIKE'S PLAN: PACE;lines:4 DIVISIONS BECOME 3~$2.5B OF SAVINGS BY FY2031~FEWER ROLES ACROSS NIKE;cut:2;go:fewer;note:Nike release and Reuters, 1 Oct 2026;in:right"
+# cine act=fall fx="code:@cut_out_word;bg:stock_startup_sketch_paper_hand_04;title:NIKE'S PLAN: PACE;lines:4 DIVISIONS BECOME 3~$2.5B OF SAVINGS BY FY2031~FEWER ROLES ACROSS NIKE;cut:2;go:fewer;note:Nike release and Reuters, 1 Oct 2026;in:right"
 It also announced a plan called Pace.
 It means about two and a half billion dollars of savings by twenty thirty-one, and fewer **roles**.
 Nike's four regions become **three**.
@@ -68,7 +68,7 @@ In September, Nike had dropped out of the S and P one hundred.
 It had been in that index since two thousand **eight**.
 
 // CARD a7-12 · SEE: an Adidas staff hall, dim and blurred; a grey Q3 2025 bar at €736M under a dashed €1,000M line; on "Three" the Q3 2026 bar grows and is the only one to crack through it; on "euros" FIRST EVER lands beside it · SEAM out right
-# cine act=rise fx="code:@quarter_bars;bg:nike_vs_adidas_adidas_hq_training_shed;bars:Q3 2025^736~Q3 2026^1008;line:1000;go:Tuesday;go2:euros;unit:€;suf:M;lab:ADIDAS · OPERATING PROFIT · THIRD QUARTER;tag:FIRST EVER;chg:+37%;out:right"
+# cine act=rise fx="code:@quarter_bars;bg:nike_vs_adidas_adidas_hq_training_shed;bars:Q3 2025^736~Q3 2026^1008;line:1000;go:Tuesday;go2:euros;unit:€;suf:M;lab:ADIDAS · OPERATING PROFIT · THIRD QUARTER;tag:FIRST EVER;chg:+37%;dim:.5;out:right"
 {tense} So had Adidas really won?
 On Tuesday the twentieth of October, Adidas put out its numbers early.
 It had made just over a billion euros of operating profit in a single quarter, the first time in its **history**.

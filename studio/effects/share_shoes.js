@@ -7,7 +7,7 @@
 */
 ({ t, at, p, spring, W, H, u, img, clip, ctx, params: P, clamp, lerp, text, seam, cover, rng, dur }) => {
   ctx.save(); seam(P.in || 'none', P.out || 'none');
-  const bg = clip(P.bg, 0, 1) || img(P.bg), k = clamp(t / Math.max(1, dur)); if (bg) cover(bg, { z: 1.1 + .12 * k, ox: (k - .5) * -.08, filter: 'brightness(.28) blur(3px)' }); else { ctx.fillStyle = '#0d0f14'; ctx.fillRect(-W, -H, 3 * W, 3 * H); }
+  const bg = clip(P.bg, 0, 1) || img(P.bg), k = clamp(t / Math.max(1, dur)); if (bg) cover(bg, { z: 1.1 + .12 * k, ox: (k - .5) * -.08, filter: 'brightness(.45) blur(1px)' }); else { ctx.fillStyle = '#0d0f14'; ctx.fillRect(-W, -H, 3 * W, 3 * H); }
   const G = (P.groups || '').split('~').filter(Boolean).map(s => s.split('^')), cols = 20, rows = 5, x0 = W * .08, x1 = W * .92, y0 = H * .27, cw = (x1 - x0) / cols, ch = H * .085;
   // the camera drifts along the grid for the whole beat
   ctx.save(); ctx.translate(W / 2, H * .45); ctx.scale(1 + .06 * k, 1 + .06 * k); ctx.translate(-W / 2 + (k - .5) * -W * .03, -H * .45);
