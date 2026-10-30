@@ -49,7 +49,7 @@ Analysts blamed the same shoes, dropped again and again in new **colours**.
 {grave} In fiscal twenty twenty-five, revenue fell ten **percent**.
 
 // CARD a5-09 · SEE: a real black Nike basketball shoe as a print; on "Net" it tears and 44% of it falls away; −44% · NET INCOME · FY25 · SEAM out right
-# cine act=fall fx="code:@tear_fifth;pic:nike_vs_adidas_nike_lebron_witness_black;go:Net;frac:.44;lab:−44%;sub:NET INCOME · FY25~$5.7B TO $3.2B;out:right"
+# cine act=fall fx="code:@tear_fifth;push:.08;pic:nike_vs_adidas_nike_lebron_witness_black;go:Net;frac:.44;lab:−44%;sub:NET INCOME · FY25~$5.7B TO $3.2B;out:right"
 {grave} Net income fell forty-four **percent**.
 And fiscal twenty twenty-six was **flat**. (J)
 

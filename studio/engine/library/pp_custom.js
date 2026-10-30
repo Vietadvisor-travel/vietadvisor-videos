@@ -52,7 +52,10 @@
   }
   EXT.code = { world: true, sfx: (e, at) => split(e.sfx, '~').map(s => { const [n, w] = s.split('@'); return [w ? at(w.trim(), e.t) : e.t, n.trim(), .5]; }).filter(x => x[1]),
     draw(e, lt, X) { const name = String(e.arg || '').replace(/^@/, ''); if (!REG[name] && window.PP_EFFECTS && window.PP_EFFECTS[name]) { try { REG[name] = (0, eval)('(' + window.PP_EFFECTS[name].trim().replace(/;\s*$/, '') + ')'); } catch (err) { REG[name] = () => { throw new Error('library effect does not compile: ' + err.message); }; } } e.arg = name; const fn = REG[name]; if (!fn) { T(`custom scene "${e.arg}" not defined`, W / 2, H / 2, { size: 40 * X.u, font: 'cond', fill: '#e5484d', lw: 0 }); return; }
-      try { ctx.save(); const A = api(e, lt, X); fn(A); A._flush(); ctx.restore(); } catch (err) { ctx.restore(); if (!e._warned) { console.error(`PP custom scene "${e.arg}": ${err.message}`); e._warned = 1; } T(`custom scene "${e.arg}": ${err.message}`.slice(0, 90), W / 2, H * .5, { size: 30 * X.u, font: 'cond', fill: '#e5484d', lw: 0 }); } } };
+      try { ctx.save(); const A = api(e, lt, X);
+        // v6.8 push: a whole-frame camera push for a beat that holds after its last event (fx param push:0.08 = 8 % over the beat)
+        if (+e.push) { const kp = A.clamp(lt / Math.max(1, X.dur)), sp = 1 + +e.push * kp; ctx.translate(A.W / 2, A.H * .5); ctx.scale(sp, sp); ctx.translate(-A.W / 2, -A.H * .5); }
+        fn(A); A._flush(); ctx.restore(); } catch (err) { ctx.restore(); if (!e._warned) { console.error(`PP custom scene "${e.arg}": ${err.message}`); e._warned = 1; } T(`custom scene "${e.arg}": ${err.message}`.slice(0, 90), W / 2, H * .5, { size: 30 * X.u, font: 'cond', fill: '#e5484d', lw: 0 }); } } };
   // story preprocessing: pull `#! scene <name> … #! end` blocks out of the story text and compile them
   window.PPCINE.extractScenes = text => text.replace(/^#!\s*scene\s+(\w+)\s*\n([\s\S]*?)^#!\s*end\s*$/gm, (m, name, code) => { try { REG[name] = (0, eval)('(' + code.trim().replace(/;\s*$/, '') + ')'); } catch (err) { console.error(`PP custom scene "${name}" does not compile: ${err.message}`); REG[name] = () => { throw new Error('does not compile: ' + err.message); }; } return ''; });
 })();

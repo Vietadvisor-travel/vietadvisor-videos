@@ -35,11 +35,11 @@ By the end of October, the stock was back above thirty-eight **dollars**.
 Nike shows investors its new plan on the seventeenth of **November**.
 
 // CARD a8-07 · SEE: MOTIF: the blue shoe on its plank; on "question" the red one runs up to its empty slot and stops just short · SEAM out right
-# cine act=lesson fx="code:@lane_race;bg:nike_vs_adidas_art_running_track;a:nva_cut_sneaker_red;b:nva_cut_sneaker_blue;alab:NIKE;blab:ADIDAS;ax0:0.42;ax:0.76;bx0:0.9;bx:0.9;go:question;lab:CAN NIKE WIN BACK THE SHELF?;out:right"
+# cine act=lesson fx="code:@lane_race;push:.08;bg:nike_vs_adidas_art_running_track;a:nva_cut_sneaker_red;b:nva_cut_sneaker_blue;alab:NIKE;blab:ADIDAS;ax0:0.42;ax:0.76;bx0:0.9;bx:0.9;go:question;lab:CAN NIKE WIN BACK THE SHELF?;out:right"
 {awe} The question is whether a company can win back a shelf it walked away **from**.
 
 // CARD a8-08 · SEE: CALLBACKS in hard cuts: the a2-08 Cortez wall lights up; on "decided" the a3-05 boutique shelves go dark; on "Adidas" the a0-06 shelf fills with blue; on "If" the red row slides halfway back; on "doesn't" it slides out again · SEAM in right
-# cine act=lesson fx="code:@callback_cuts;a:nva_cut_sneaker_red;b:nva_cut_sneaker_blue;cuts:nike_vs_adidas_sneaker_store_jordans^0^light^1985 · ON EVERY SHELF~nike_vs_adidas_streetwear_boutique^decided^dark^THEN OFF THE SHELF~nike_vs_adidas_art_store_shelf_wall^Adidas^fillb^ADIDAS · ON THE SHELF~nike_vs_adidas_adidas_flagship_nyc^wherever^light^WHEREVER PEOPLE SHOP~nike_vs_adidas_art_store_shelf_wall^If^halfa^IF NIKE COMES BACK~nike_vs_adidas_art_store_shelf_wall^doesn't^outa^IF IT DOESN'T;in:right"
+# cine act=lesson fx="code:@callback_cuts;push:.08;a:nva_cut_sneaker_red;b:nva_cut_sneaker_blue;cuts:nike_vs_adidas_sneaker_store_jordans^0^light^1985 · ON EVERY SHELF~nike_vs_adidas_streetwear_boutique^decided^dark^THEN OFF THE SHELF~nike_vs_adidas_art_store_shelf_wall^Adidas^fillb^ADIDAS · ON THE SHELF~nike_vs_adidas_adidas_flagship_nyc^wherever^light^WHEREVER PEOPLE SHOP~nike_vs_adidas_art_store_shelf_wall^If^halfa^IF NIKE COMES BACK~nike_vs_adidas_art_store_shelf_wall^doesn't^outa^IF IT DOESN'T~nike_vs_adidas_sneakers_hanging_wall^because^light^WHERE YOU SELL IS WHAT YOU SELL;in:right"
 So remember that shelf from nineteen eighty-five.
 Nike built an empire on being everywhere, and then decided it didn't need to be.
 Adidas simply showed up wherever people **shop**.

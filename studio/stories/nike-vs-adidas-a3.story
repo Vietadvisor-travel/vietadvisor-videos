@@ -23,7 +23,7 @@ And a share of every pair sold, not just a flat **fee**.
 That was five hundred thousand dollars a **year**.
 
 // CARD a3-03 · SEE: an empty 1980s arena (AI moment art, no people); on "October" a black-and-red shoe lands under a spotlight and a yellow note slaps on: FLAGGED · SHOES 51% WHITE · SEAM in right
-# cine act=doubt fx="code:@advice_note;pic:nike_vs_adidas_art_basketball_court_1980s;obj:nva_cut_sneaker_red;olab:BLACK AND RED · 18 OCT 1984;ox:.34;oy:.72;word:FLAGGED/SHOES MUST BE/51% WHITE;ns:.25;ofilter:saturate(1.2) brightness(.42) contrast(1.6);go:October;x:.7;y:.38;src:NBA uniform rule · letter of 25 Feb 1985;in:right"
+# cine act=doubt fx="code:@advice_note;push:.08;pic:nike_vs_adidas_art_basketball_court_1980s;obj:nva_cut_sneaker_red;olab:BLACK AND RED · 18 OCT 1984;ox:.34;oy:.72;word:FLAGGED/SHOES MUST BE/51% WHITE;ns:.25;ofilter:saturate(1.2) brightness(.42) contrast(1.6);go:October;x:.7;y:.38;src:NBA uniform rule · letter of 25 Feb 1985;in:right"
 On Thursday the eighteenth of October, nineteen eighty-four, Jordan wore a black and red Nike in a preseason game, and the league flagged **it**.
 The rule said a shoe had to be at least fifty-one percent **white**.
 
@@ -43,7 +43,7 @@ So Nike turned the warning into an ad: **banned**.
 The Air Jordan went on sale in nineteen eighty-five, at sixty-five **dollars**.
 
 // CARD a3-07 · SEE: a real Air Jordan wall in a shop, dim; on "By" shoe boxes drop and stack on both sides while the total runs to $100M+ · SEAM in right
-# cine act=rise fx="code:@box_office;pic:nike_vs_adidas_sneaker_store_jordans;brick:nva_cut_shoe_box;dec:0;to:100;go:0;span:1.2;pre:$;unit:M+;lab:AIR JORDAN · FIRST YEAR;sub:sales by the end of 1985 · Britannica;in:right"
+# cine act=rise fx="code:@box_office;push:.08;pic:nike_vs_adidas_sneaker_store_jordans;brick:nva_cut_shoe_box;dec:0;to:100;go:0;span:1.2;pre:$;unit:M+;lab:AIR JORDAN · FIRST YEAR;sub:sales by the end of 1985 · Britannica;in:right"
 By the end of that year, its sales had passed one hundred million **dollars**.
 
 // CARD a3-08 · SEE: CARRIER of a3-07: the same real Air Jordan wall, dark; on "real" its stands light up row by row; A SHOE PEOPLE LINE UP FOR · SEAM out right
