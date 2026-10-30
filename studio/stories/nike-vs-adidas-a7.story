@@ -44,7 +44,6 @@ Nike told investors to expect revenue to fall again this fiscal **year**.
 # cine act=fall fx="code:@cut_out_word;bg:stock_startup_sketch_paper_hand_04;dim:.75;title:NIKE'S PLAN: PACE;lines:4 DIVISIONS BECOME 3~$2.5B OF SAVINGS BY FY2031~FEWER ROLES ACROSS NIKE;cut:2;go:fewer;note:Nike release and Reuters, 1 Oct 2026;in:right"
 It also announced a plan called Pace.
 It means about two and a half billion dollars of savings by twenty thirty-one, and fewer **roles**.
-Nike's four regions become **three**.
 
 // CARD a7-08 · SEE: real market screens; the price line draws and plunges again; on "next" $31.97 snaps to the low: the cold open returns · SEAM out right
 # cine act=fall fx="code:@ticker_crash;bg:stock_screen_ticker_26;draw:1.3;pts:.7,.66,.6,.62,.5,.44,.3,.18,.06;low:$31.97;go:Friday;lab:NIKE (NKE) · THE DAY AFTER;sub:−81% from the Nov 2021 record;out:right"

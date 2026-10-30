@@ -7,7 +7,7 @@
 */
 ({ t, at, p, spring, W, H, u, img, clip, ctx, params: P, clamp, lerp, text, seam, cover, paperDesk, rng, dur }) => {
   ctx.save(); seam(P.in || 'none', P.out || 'none');
-  const bg = img(P.bg), k = clamp(t / Math.max(1, dur)); if (bg) cover(bg, { z: 1.12 + .08 * k, ox: (k - .5) * -.1, filter: 'brightness(.55) saturate(1.05)' });
+  const bg = img(P.bg), k = clamp(t / Math.max(1, dur)); if (bg) cover(bg, { z: 1.12 + .08 * k, ox: (k - .5) * -.1, filter: `brightness(${P.bright || .55}) saturate(1.05)` });
   const t0 = at(P.go || 0), km = clamp(p(t0, 1.1, 'inOut')), SX = .8 * W, SW = .17 * W, G = [H * .56, H * .84], sw = W * .14;
   // the shelf unit at the finish: back panel, a plank under each lane, a sign
   ctx.fillStyle = 'rgba(28,22,18,.92)'; ctx.fillRect(SX, H * .2, SW, H * .68); ctx.fillStyle = 'rgba(255,214,150,.10)'; ctx.fillRect(SX + 10 * u, H * .2 + 10 * u, SW - 20 * u, H * .68 - 20 * u);

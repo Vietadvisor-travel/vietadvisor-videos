@@ -35,7 +35,7 @@ By the end of October, the stock was back above thirty-eight **dollars**.
 Nike shows investors its new plan on the seventeenth of **November**.
 
 // CARD a8-07 · SEE: MOTIF: the blue shoe on its plank; on "question" the red one runs up to its empty slot and stops just short · SEAM out right
-# cine act=lesson fx="code:@lane_race;bg:nike_vs_adidas_art_running_track;a:nva_cut_sneaker_red;b:nva_cut_sneaker_blue;alab:NIKE;blab:ADIDAS;ax0:0.42;ax:0.76;bx0:0.9;bx:0.9;go:question;lab:CAN NIKE WIN BACK THE SHELF?;out:right"
+# cine act=lesson fx="code:@lane_race;bright:.75;bg:nike_vs_adidas_art_running_track;a:nva_cut_sneaker_red;b:nva_cut_sneaker_blue;alab:NIKE;blab:ADIDAS;ax0:0.42;ax:0.76;bx0:0.9;bx:0.9;go:question;lab:CAN NIKE WIN BACK THE SHELF?;out:right"
 {awe} The question is whether a company can win back a shelf it walked away **from**.
 
 // CARD a8-08 · SEE: CALLBACKS in hard cuts: the a2-08 Cortez wall lights up; on "decided" the a3-05 boutique shelves go dark; on "Adidas" the a0-06 shelf fills with blue; on "If" the red row slides halfway back; on "doesn't" it slides out again · SEAM in right

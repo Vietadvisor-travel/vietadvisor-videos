@@ -20,6 +20,6 @@
     else { if (i === ci) { ctx.save(); ctx.strokeStyle = 'rgba(80,70,55,.55)'; ctx.lineWidth = 2 * u; ctx.setLineDash([10 * u, 8 * u]); ctx.strokeRect(x0 + pw * .06, y - lh * .42, pw * .88, lh * .84); ctx.restore(); }
       text(l, W / 2, y, { size: 64 * u, font: 'cond', col: i === ci ? '#b3261e' : '#2a241c', lw: 0 }); } });
   ctx.restore();
-  if (P.note) text(P.note, W / 2, H * .8, { size: 40 * u, font: 'cond', col: '#b9ad97', lw: 0, a: clamp(t / .6) });
+  if (P.note) text(P.note, W / 2, H * .13, { size: 40 * u, font: 'cond', col: '#b9ad97', lw: 0, a: clamp(t / .6) });
   ctx.restore();
 }
