@@ -12,7 +12,7 @@
   // the shelf unit at the finish: back panel, a plank under each lane, a sign
   ctx.fillStyle = 'rgba(28,22,18,.92)'; ctx.fillRect(SX, H * .2, SW, H * .68); ctx.fillStyle = 'rgba(255,214,150,.10)'; ctx.fillRect(SX + 10 * u, H * .2 + 10 * u, SW - 20 * u, H * .68 - 20 * u);
   ctx.strokeStyle = '#8a6a48'; ctx.lineWidth = 6 * u; ctx.strokeRect(SX, H * .2, SW, H * .68);
-  text(P.shelf || 'THE SHELF', SX + SW / 2, H * .16, { size: 46 * u, font: 'cond', col: '#ffd9a0', lw: 0, ls: 5 * u });
+  text(P.shelf || 'THE SHELF', SX + SW / 2 - 16 * u, H * .165, { size: 42 * u, font: 'cond', col: '#ffd9a0', lw: 0, ls: 5 * u });
   G.forEach(g => { ctx.fillStyle = 'rgba(0,0,0,.28)'; ctx.fillRect(0, g - 3 * u, SX, 6 * u); ctx.fillStyle = 'rgba(255,255,255,.75)'; ctx.fillRect(0, g, SX, 4 * u); ctx.fillStyle = '#b08458'; ctx.fillRect(SX - 6 * u, g, SW + 12 * u, 18 * u); ctx.fillStyle = '#6e4f33'; ctx.fillRect(SX - 6 * u, g + 18 * u, SW + 12 * u, 8 * u); });
   [[img(P.a), +(P.ax0 ?? .3), +(P.ax ?? .5), G[0], P.alab, '#ff6b5e'], [img(P.b), +(P.bx0 ?? .3), +(P.bx ?? .5), G[1], P.blab, '#7fb2ff']].forEach(([im, x0, x1, g, lab, col]) => {
     const x = lerp(x0, x1, km), X = x * W, on = x > .84, slot = SX + SW / 2;

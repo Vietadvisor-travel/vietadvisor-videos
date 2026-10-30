@@ -1,49 +1,52 @@
-title: nike-vs-adidas a2 · the bet
+title: nike-vs-adidas a2 · the upstart
 channel: poisonpill
-look: broadcast
+look: vintage
 tone: playful
 voice: supertonic:M1
-delivery: lively
+delivery: warm
 music: auto
 captions: off
 autotrans: off
 endcard: off
 motif: lane_race
 
-// CARD a2-01 · SEE: Michael Jordan dunking in a Bulls jersey, the camera travelling to his face; on "rookie" his name card slides in at the top · SEAM in right
-# cine act=setup fx="code:@name_strap;pic:nike_vs_adidas_michael_jordan_dunk_1987;go:Adidas;name:MICHAEL JORDAN · 1984;role:the rookie wanted Adidas · photo 1987;fx:.5;fy:.14;in:right"
-By nineteen eighty-four, Adidas was the bigger company, and the rookie Michael Jordan wanted **Adidas**.
+// CARD a2-01 · SEE: the real 1958 photo of Phil Knight on the track, the camera travelling to his face; on "Phil" his name card slides in · SEAM out right
+# cine act=setup fx="code:@name_strap;pic:nike_vs_adidas_phil_knight_1958_track;go:Phil;name:PHIL KNIGHT;role:Oregon middle-distance runner · photo 1958;fx:.5;fy:.3;out:right"
+{tense} So how did a nobody from Oregon take that shelf? It starts with a **trip**.
+In nineteen sixty-two, a young American runner named Phil Knight tours a shoe factory in **Japan**.
 
-// CARD a2-02 · SEE: two cheques on a dark desk; on "match" the ADIDAS one greys and slides away blank; on "gave" the NIKE one writes 5 YEARS, $2.5 MILLION, HIS OWN SHOE · SEAM out right
-# cine act=rise fx="code:@blank_cheque;bg:stock_investigation_dark_desk_clipboard_01;a:NIKE;b:ADIDAS;lines:5 YEARS~$2.5 MILLION~HIS OWN SHOE;go:offer;go2:match;out:right"
-But Adidas didn't match Nike's **offer**.
-Nike gave him five years, two and a half million dollars, and his own **shoe**.
+// CARD a2-02 · SEE: a real Onitsuka Tiger beside a Nike Cortez; on "Onitsuka" gold outlines lock onto both shoes: THE SHOE HE IMPORTED · THE SHOE NIKE MADE · SEAM in right
+# cine act=setup fx="code:@interlock_overlay;pic:nike_vs_adidas_cortez_corsair_comparison;a:.3,.42;b:.72,.62;go:Onitsuka;lab:ONITSUKA TIGER, LEFT · NIKE CORTEZ, RIGHT;in:right"
+He makes a deal to sell its Onitsuka Tiger running shoes in the United **States**.
 
-// CARD a2-03 · SEE: an empty 1980s arena (AI moment art, no people); on "October" a black-and-red shoe lands under a spotlight and a yellow note slaps on: FLAGGED · SHOES 51% WHITE · SEAM in right
-# cine act=doubt fx="code:@advice_note;pic:nike_vs_adidas_art_basketball_court_1980s;obj:nva_cut_sneaker_red;olab:BLACK AND RED · 18 OCT 1984;ox:.34;oy:.72;word:FLAGGED/SHOES MUST BE/51% WHITE;ns:.25;ofilter:saturate(1.2) brightness(.42) contrast(1.6);go:October;x:.7;y:.38;src:NBA uniform rule · letter of 25 Feb 1985;in:right"
-That October, Jordan wore a black and red Nike in a preseason game, and the league flagged **it**.
+// CARD a2-03 · SEE: real wetlands at the edge of Eugene, Oregon; on "Phil" the real photo of Bowerman and Knight slides in as a print · SEAM in right
+# cine act=setup fx="code:@print_slide;clip:nike_vs_adidas_clip_west_eugene_wetlands;pic:nike_vs_adidas_knight_and_bowerman;go:Bill;side:left;cap:BILL BOWERMAN · PHIL KNIGHT;sub:Blue Ribbon Sports · 1964;in:right"
+In nineteen sixty-four, he and his old college coach, Bill Bowerman, start Blue Ribbon **Sports**.
+Knight had run for Bowerman at the University of **Oregon**.
 
-// CARD a2-04 · SEE: the real 1985 dunk-contest photo, dim; a receipt prints THE LEGEND · NIKE FINED · EVERY GAME; on "ESPN" a red stamp slams on it: NO EVIDENCE IT WAS PAID · SEAM out right
-# cine act=doubt fx="code:@receipt_void;bg:nike_vs_adidas_michael_jordan_dunk_contest_1985;lines:THE LEGEND~NIKE FINED~EVERY GAME;stamp:NO EVIDENCE IT WAS PAID;go:ESPN;x:.62;sy:.42;src:ESPN, 2016;out:right"
-{wry} The legend says Nike paid a fine every game. ESPN found no evidence it ever paid **one**. (J)
+// CARD a2-04 · SEE: a real Nike Cortez with its big red swoosh; on "Nike" a pencil writes $35 across the picture and rings it · SEAM out right
+# cine act=rise fx="code:@price_pencil;pic:nike_vs_adidas_nike_cortez;word:$35;go:they;x:.62;y:.3;lab:THE SWOOSH · 1971;src:designed by student Carolyn Davidson · Britannica;out:right"
+In nineteen seventy-one they become Nike. A design student draws the logo for thirty-five **dollars**. (J)
+It is trademarked that **June**.
 
-// CARD a2-05 · SEE: real black and red Air Jordan 1s labelled AIR JORDAN 1; on "even" the label is struck and slides off them to a dark gap where a black shoe silhouette stands: THE SHOE WORN: AIR SHIP; on "So" BANNED stamps on · SEAM in right
-# cine act=rise fx="code:@label_swap;pic:nike_vs_adidas_air_jordan_1_banned;sil:nva_cut_sneaker_red;front:AIR JORDAN 1;back:THE SHOE WORN: AIR SHIP;note:no photo shown · a Nike model of 1984;word:BANNED;go:even;go2:So;in:right"
-It wasn't even the Air Jordan. It was a shoe called the Air **Ship**.
-So Nike turned the warning into an ad: **banned**.
+// CARD a2-05 · SEE: a real hand sketching with a pencil; on "two" chalk tally marks scratch in, one per hour, to seventeen and a half: $2 AN HOUR; on "Twelve" 1983 · A GOLD SWOOSH RING + 500 SHARES · SEAM in right
+# cine act=rise fx="code:@years_tally;pic:stock_startup_sketch_pencil_close_10;n:17;go:two;span:1.4;lab:17.5 HOURS × $2 = $35;in:right"
+That is two dollars an hour, for seventeen and a half **hours**. (J)
+Twelve years later, Knight gives her a gold Swoosh ring and five hundred Nike **shares**.
 
-// CARD a2-06 · SEE: a real player rising to dunk; a red tag on a string reads 1985; on "sale" it spins round: $65 · SEAM out right
-# cine act=rise fx="code:@gift_tag_flip;clip:nike_vs_adidas_clip_dunk_demo;front:1985;back:$65;terms:AIR JORDAN~ON SALE APRIL 1985;go:sale;out:right"
-The Air Jordan went on sale in nineteen eighty-five, at sixty-five **dollars**.
+// CARD a2-06 · SEE: a cast-iron waffle iron, lid open; on "Bowerman" black rubber is poured in, the lid shuts, steam rises, the lid opens and a sole covered in square nubs lifts out · SEAM in right
+# cine act=rise fx="code:@waffle_press;bg:nike_vs_adidas_el_rubber_sole;go:Bowerman;lab:THE WAFFLE SOLE;sub:Bowerman · first raced at the 1972 Olympic Trials;in:right"
+Bowerman makes a new sole by pouring rubber into a waffle **iron**.
+The Waffle Trainer goes on sale in nineteen seventy-**four**.
 
-// CARD a2-07 · SEE: a real Air Jordan wall in a shop, dim; on "By" shoe boxes drop and stack on both sides while the total runs to $100M+ · SEAM in right
-# cine act=rise fx="code:@box_office;pic:nike_vs_adidas_sneaker_store_jordans;brick:nva_cut_shoe_box;dec:0;to:100;go:0;span:1.2;pre:$;unit:M+;lab:AIR JORDAN · FIRST YEAR;sub:sales by the end of 1985 · Britannica;in:right"
-By the end of that year, its sales had passed one hundred million **dollars**.
+// CARD a2-07 · SEE: the real 1966 photo of a meet at Hayward Field; on "Eugene" a pin drops on the track: HAYWARD FIELD, EUGENE · 1972 US OLYMPIC TRIALS · SEAM out right
+# cine act=rise fx="code:@place_pin;bg:nike_vs_adidas_bowerman_1966_hayward_meet;x:.5;y:.6;go:debut;lab:HAYWARD FIELD, EUGENE;sub:1972 Trials · Moon Shoe and Cortez;out:right"
+In nineteen seventy-two, the waffle-soled Moon Shoe and the Cortez make their debut at the US Olympic Trials in **Eugene**.
 
-// CARD a2-08 · SEE: CARRIER of a2-07: the same real Air Jordan wall, dark; on "real" its stands light up row by row; A SHOE PEOPLE LINE UP FOR · SEAM out right
-# cine act=rise fx="code:@shelf_light;pic:nike_vs_adidas_sneaker_store_jordans;go:real;rows:.3~.5~.72;lab:A SHOE PEOPLE LINE UP FOR;out:right"
-That was Nike's real formula: a shoe people lined up for, on shelves **everywhere**.
+// CARD a2-08 · SEE: a split-flap calendar runs from June 1971 and locks in gold on December 1980: NIKE GOES PUBLIC · SEAM in right
+# cine act=rise fx="code:@month_flip;from:1971-6;to:1980-12;bg:stock_screen_desk_08;go:December;lab:NIKE GOES PUBLIC;sub:from the Swoosh to the stock market;in:right"
+In December nineteen eighty, Nike goes **public**.
 
-// CARD a2-09 · SEE: MOTIF: on "Remember" the red shoe runs onto its plank while the blue one slides back off: NIKE ON EVERY SHELF · SEAM in right
-# cine act=lesson fx="code:@lane_race;bg:nike_vs_adidas_art_running_track;a:nva_cut_sneaker_red;b:nva_cut_sneaker_blue;alab:NIKE;blab:ADIDAS;ax0:0.4;ax:0.9;bx0:0.9;bx:0.62;go:Remember;lab:NIKE · ON EVERY SHELF;in:right"
-Remember that **shelf**.
+// CARD a2-09 · SEE: MOTIF: the blue shoe stands on its plank; on "So" the red one sets off from far behind · SEAM out right
+# cine act=lesson fx="code:@lane_race;bg:nike_vs_adidas_art_running_track;a:nva_cut_sneaker_red;b:nva_cut_sneaker_blue;alab:NIKE;blab:ADIDAS;ax0:0.12;ax:0.34;bx0:0.9;bx:0.9;go:So;lab:NIKE · THE UPSTART;out:right"
+So Adidas was the giant. Nike was the **upstart**.

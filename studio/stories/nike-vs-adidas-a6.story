@@ -1,43 +1,75 @@
-title: nike-vs-adidas a6 · the shelf is the strategy
+title: nike-vs-adidas a6 · the archive
 channel: poisonpill
 look: broadcast
 tone: playful
 voice: supertonic:M1
-delivery: warm
+delivery: wry
+voices: adidas=bf_emma; gulden=bm_george; ohlmeyer=bm_lewis
 music: auto
 captions: off
 autotrans: off
+endcard: off
 motif: lane_race
 
-// CARD a6-01 · SEE: real sneakers hanging on a wall; the a3-04 ring returns at 56/44; on "Today" it turns to 61% WHOLESALE, 39% NIKE DIRECT · SEAM out right
-# cine act=rise fx="code:@pie_on_photo;pic:nike_vs_adidas_sneakers_hanging_wall;mid:61%~FY26;from:56;slices:WHOLESALE^61^1^#7fd1a8~NIKE DIRECT^39^0^#6d7380;go:Today;out:right"
-Today, wholesale is Nike's growing channel again: sixty-one percent of brand sales in fiscal twenty twenty-**six**.
+// CARD a6-01 · SEE: the real Adidas buildings at Herzogenaurach under a push-in; on "Adidas" the colour drains to grey; on "disaster" a crack runs across the picture · SEAM in right
+# cine act=doubt fx="code:@crack_drain;pic:nike_vs_adidas_adidas_hq_herzogenaurach_2016;go:nobody;go2:Adidas;x0:.04;y0:.34;x1:.96;y1:.58;lab:ITS OWN DISASTER;in:right"
+But here's the part nobody saw coming. Adidas, meanwhile, had its own **disaster**.
 
-// CARD a6-02 · SEE: a real wall of sneakers in a shop; on "company" one whole row goes dark and stands bare in the middle of the full wall: NOT ON THE WALL · SEAM in right
-# cine act=lesson fx="code:@shelf_empty_out;pic:nike_vs_adidas_flight_club_wall;rows:.52;dark:.6;go:company;word:NOT ON THE WALL;in:right"
-The company behind the world's most famous shoe forgot that people have to find it **first**.
+// CARD a6-02 · SEE: a real Adidas store front, dim; a card ADIDAS × YEEZY · 2013–2022; on "ended" it rips in two and ENDED · 25 OCT 2022 sets in the gap · SEAM out right
+# cine act=fall fx="code:@contract_rip;bg:nike_vs_adidas_adidas_store_cologne_ehrenstrasse;title:ADIDAS × YEEZY;years:2013 – 2022;end:ENDED · 25 OCT 2022;go:ended;out:right"
+In October twenty twenty-two, it ended its partnership with Ye, the rapper once known as Kanye **West**.
 
-// CARD a6-03 · SEE: the wall of archive drawers again; on "saved" a drawer slides out and a real black Stan Smith rises in it: SAVED BY ITS OWN ARCHIVE · SEAM out right
-# cine act=lesson fx="code:@archive_drawer;pic:nike_vs_adidas_adidas_stan_smith_black;tag:ARCHIVE · STAN SMITH;go:company;lab:SAVED BY ITS OWN ARCHIVE;out:right"
-And the company facing a seven-hundred-million-euro loss was saved by shoes from its own **archive**.
+// CARD a6-03 · SEE: the real Adidas flagship, dim; a white statement sheet slides up and the verbatim words type as the voice reads them; "antisemitism" underlined · SEAM in right · HOLD
+# cine act=fall fx="code:@quote_card_type;bg:nike_vs_adidas_adidas_flagship_nyc;q:“adidas does not tolerate antisemitism and any other sort of hate speech.”;span:4;h:.34;hl:antisemitism;by:adidas statement · 25 October 2022 · read by a voice actor;in:right"
+@adidas: adidas does not tolerate antisemitism and any other sort of hate speech.
 
-// CARD a6-04 · SEE: BOOKEND of a0-06: the same shelf, red row empty and blue row full; the thesis lands line by line over it and holds still; "shelf" in gold · SEAM hard cut · HOLD
-# cine act=lesson fx="code:@shelf_swap;bg:nike_vs_adidas_art_store_shelf_wall;dim:.45;a:nva_cut_sneaker_red;b:nva_cut_sneaker_blue;final:1;lines:The shelf is the strategy.~Where you sell is part of what you sell.;go3:lesson;hi:strategy"
-{warm} Here's the lesson. The shelf is the strategy. Where you sell is part of what you **sell**.
+// CARD a6-04 · SEE: a real warehouse aisle of sealed boxes; a zero line; on "forecast" a dashed red bar drops below it to −€700M, labelled FORECAST · if unsold · SEAM out right
+# cine act=fall fx="code:@forecast_dashed;bg:stock_investigation_boxes_room_01;val:−€700M;go:left;lab:FORECAST · 2023;cond:if the Yeezy stock went unsold;out:right"
+It was left with a warehouse full of Yeezy **shoes**.
+And a forecast: a seven-hundred-million-euro operating loss in twenty twenty-three, if it couldn't sell **them**.
 
-// CARD a6-05 · SEE: a real magnifying glass travelling over a calendar; on "shows" a solid red stamp INVESTOR DAY slams on; on "investors" 17 NOV 2026 beside it · SEAM in right
-# cine act=doubt fx="code:@stamp_dates;pic:stock_documents_magnifying_02;y:.34;stamps:INVESTOR DAY^shows~17 NOV 2026^investors;gap:Nike's new plan;in:right"
-Nike shows investors its new plan on the seventeenth of **November**.
+// CARD a6-05 · SEE: Bjorn Gulden's real photo as a print on the left; his verbatim words light up on the right as the voice reads them · SEAM in right · HOLD
+# cine act=doubt fx="code:@ember_quote;pic:nike_vs_adidas_bjorn_gulden_portrait_2023;q:“The numbers speak for themselves. We are currently not performing the way we should.”;go:Puma;span:5;name:BJORN GULDEN · CEO 2023;src:2022 results statement, March 2023 · read by a voice actor;in:right"
+The new chief executive, Bjorn Gulden, came from **Puma**, where he had been chief executive since twenty **thirteen**.
+@gulden: The numbers speak for themselves. We are currently not performing the way we should.
 
-// CARD a6-06 · SEE: MOTIF: the blue shoe on its plank; on "question" the red one runs up to its empty slot and stops just short · SEAM out right
-# cine act=lesson fx="code:@lane_race;bg:nike_vs_adidas_art_running_track;a:nva_cut_sneaker_red;b:nva_cut_sneaker_blue;alab:NIKE;blab:ADIDAS;ax0:0.42;ax:0.76;bx0:0.9;bx:0.9;go:question;lab:CAN NIKE WIN BACK THE SHELF?;out:right"
-{awe} The question is whether a company can win back a shelf it walked away **from**.
+// CARD a6-06 · SEE: a dark wall of archive drawers; on "sold" one drawer slides out and a real white Adidas Superstar rises in it · SEAM out right
+# cine act=rise fx="code:@archive_drawer;pic:nike_vs_adidas_adidas_superstar_white;tag:ARCHIVE · SUPERSTAR;go:unglamorous;lab:WHAT ADIDAS ALREADY HAD;out:right"
+Then he did something deeply unglamorous. He sold what Adidas already **had**. (J)
 
-// CARD a6-07 · SEE: CALLBACKS in hard cuts: the a2-08 Cortez wall lights up; on "decided" the a3-05 boutique shelves go dark; on "Adidas" the a0-06 shelf fills with blue; on "If" the red row slides halfway back; on "doesn't" it slides out again · SEAM in right
-# cine act=lesson fx="code:@callback_cuts;a:nva_cut_sneaker_red;b:nva_cut_sneaker_blue;cuts:nike_vs_adidas_sneaker_store_jordans^0^light^1985 · ON EVERY SHELF~nike_vs_adidas_streetwear_boutique^decided^dark^THEN OFF THE SHELF~nike_vs_adidas_art_store_shelf_wall^Adidas^fillb^ADIDAS · ON THE SHELF~nike_vs_adidas_adidas_flagship_nyc^wherever^light^WHEREVER PEOPLE SHOP~nike_vs_adidas_art_store_shelf_wall^If^halfa^IF NIKE COMES BACK~nike_vs_adidas_art_store_shelf_wall^doesn't^outa^IF IT DOESN'T;in:right"
-So remember that shelf from nineteen eighty-five, because Nike built an empire on being everywhere and then decided it didn't need to be, while Adidas simply showed up wherever people **shop**.
-If Nike gets its shoes back on those shelves, this was a bad two years, and if it doesn't, the brothers' old rival may be the one still **standing**.
+// CARD a6-07 · SEE: real Adidas product photos dealt onto a dark table faster and faster; on "Samba" the real black Samba lands big in the middle · SEAM in right
+# cine act=rise fx="code:@catalogue_fan;cards:nike_vs_adidas_adidas_climacool_white~nike_vs_adidas_adidas_track_shoe_tying~nike_vs_adidas_adidas_sa_jersey~nike_vs_adidas_adidas_running_outfit~nike_vs_adidas_adidas_samba_black;go:Samba;keys:nike_vs_adidas_adidas_samba_black@Samba@SAMBA;in:right"
+The Samba. The Gazelle. The Spezial. Old shoes, made in far bigger **numbers**.
 
-// CARD a6-08 · SEE: two cards dealt onto a dark table: real Nike Vaporfly (THE NEW NIKE) and the real black Samba (THE OLD SAMBA); each lifts on its word · SEAM out right
-# cine act=lesson fx="code:@choice_cards;bg:nike_vs_adidas_art_boardroom_modern;a:nike_vs_adidas_nike_vaporfly_next;alab:NIKE;asub:the new Nike;b:nike_vs_adidas_adidas_samba_black;blab:SAMBA;bsub:the old classic;go:Nike;go2:Samba;lab:YOUR PICK;out:right"
-Tell us in the comments: the new Nike, or the old **Samba**?
+// CARD a6-08 · SEE: CARRIER of a4-07: the real black Samba card stays in the middle; on "Samba" a red sash sweeps across its corner: SHOE OF THE YEAR; FN 2023 · FIRST SINCE YEEZY 2015 under it · SEAM out right
+# cine act=rise fx="code:@corner_banner;pic:nike_vs_adidas_adidas_samba_black;card:1;bx:.66;by:.3;bl:.42;word:SHOE OF THE YEAR;terms:FOOTWEAR NEWS 2023 · FIRST SINCE YEEZY 2015;go:Samba;out:right"
+The Samba was named shoe of the year, the brand's first since twenty **fifteen**.
+
+// CARD a6-09 · SEE: the real photo of Bjorn Gulden on the left; his verbatim words light from grey to ink as the voice reads them; "godsend" in gold · SEAM in right · HOLD
+# cine act=rise fx="code:@quote_beside;pic:nike_vs_adidas_bjorn_gulden_media_day_ball;side:l;pw:.4;size:52;q:“I have to be very honest and confess that at the beginning of 2023, when the company's performance was not too good, it was a godsend to have the Samba and that they were in such demand.”;go:way;span:8;name:BJORN GULDEN · ADIDAS CEO;src:via Modaes (2026) · read by a voice actor;in:right"
+Gulden later put it this **way**.
+@gulden: I have to be very honest and confess that at the beginning of 2023, when the company's performance was not too good, it was a godsend to have the Samba and that they were in such demand.
+
+// CARD a6-10 · SEE: a real paper-bag packing shot, dim; a long gold bar YEEZY STOCK SOLD · ABOUT €1.4B; on "set" its end peels off: €260M FOR CHARITY · SEAM in right
+# cine act=rise fx="code:@bar_slice;bg:stock_retail_shopping_bags_04;total:1400;part:260;go:sold;tlab:YEEZY STOCK SOLD · ABOUT €1.4B · 2023–24;plab:€260M SET ASIDE FOR CHARITY;in:right"
+And instead of writing the Yeezys off, Adidas sold them, for about one point four billion **euros**.
+It set aside two hundred and sixty million for **charity**.
+The last pair went at the end of twenty twenty-**four**. (J)
+
+// CARD a6-11 · SEE: real empty shop shelves being cleared, dim; a paper card slides up and the CFO's verbatim words type as the voice reads them · SEAM out right · HOLD
+# cine act=rise fx="code:@quote_card_type;bg:stock_bankruptcy_empty_shop_01;q:“There is not one Yeezy shoe left, it has all been sold and that episode is behind us.”;span:3.5;h:.34;go:way;hl:sold;by:HARM OHLMEYER · ADIDAS CFO · via Reuters, 5 March 2025 · read by a voice actor;out:right"
+Its finance chief, Harm Ohlmeyer, put it this **way**.
+@ohlmeyer: There is not one Yeezy shoe left, it has all been sold and that episode is behind us.
+
+// CARD a6-12 · SEE: a red bar hangs below a zero line: FORECAST 2023 · −€700M; on "never" it swings up through zero and stands at €268M: ACTUAL 2023 · SEAM in right
+# cine act=rise fx="code:@swing_bar;bg:stock_office_whiteboard_14;a:-700;b:268;go:never;alab:FORECAST 2023 (€);blab:ACTUAL 2023 (€);unit:M;in:right"
+The forecast loss never came. Adidas closed twenty twenty-three with an operating **profit**.
+On the bottom line, it still lost money for the first time since nineteen ninety-**two**.
+
+// CARD a6-13 · SEE: the real Adidas staff restaurant by its pond, dim; one shoe box for 2023; on "Operating" a stack drops in box by box to ×7.7 · SEAM out right
+# cine act=rise fx="code:@growth_stack;bg:nike_vs_adidas_adidas_hq_staff_restaurant;a:1;b:7.7;go:Operating;alab:2023 · €268M;blab:2025 · €2,056M;brick:nva_cut_shoe_box;bh:.075;lab:×7.7;out:right"
+Operating profit went from two hundred and sixty-eight million euros in twenty twenty-three to over two billion in twenty twenty-**five**.
+
+// CARD a6-14 · SEE: MOTIF: the red shoe stands short of its plank; on "Adidas" the blue one runs back up onto its own: ADIDAS · BACK ON THE SHELF · SEAM in right
+# cine act=lesson fx="code:@lane_race;bg:nike_vs_adidas_art_running_track;a:nva_cut_sneaker_red;b:nva_cut_sneaker_blue;alab:NIKE;blab:ADIDAS;ax0:0.6;ax:0.6;bx0:0.62;bx:0.9;go:Adidas;lab:ADIDAS · BACK ON THE SHELF;in:right"
+Adidas had climbed back onto the **shelf**.

@@ -31,3 +31,6 @@ Muse fills these FIRST (before STOCK_PLAN gaps), then ticks the box and writes t
 - [ ] sneaker shop shelves being filled or emptied, wide  (nike-vs-adidas, 2026-10-30)
 - [ ] people queueing outside a sneaker store  (nike-vs-adidas, 2026-10-30)
 - [ ] close-up of sneakers on a store shelf  (nike-vs-adidas, 2026-10-30)
+- [ ] wet 1950s-style football match in rain, studs in mud  (nike-vs-adidas, 2026-10-30)
+- [ ] 1980s aerobics class, leotards and sneakers  (nike-vs-adidas, 2026-10-30)
+- [ ] sneaker store wall, customers browsing (modern)  (nike-vs-adidas, 2026-10-30)
