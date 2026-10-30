@@ -85,7 +85,7 @@ def imp(zp):
     if clips:
         sys.path.insert(0, os.path.join(ROOT, 'tools')); import pp_clip; tmpd = os.path.join(ROOT, 'out', '_packclips'); os.makedirs(tmpd, exist_ok=True)
         for i, m in clips.items():
-            f = m.get('file', '')
+            f = m.get('file', ''); i = i.replace('-', '_')   # Muse may slug ids with hyphens (nike-vs-adidas_clip_…)
             if not ID.match(i) or '..' in f or not f.lower().endswith(('.mp4', '.mov', '.webm', '.m4v')) or f not in z.namelist(): print('rejected clip:', i); continue
             src = os.path.join(tmpd, os.path.basename(f))
             with z.open(f) as a, open(src, 'wb') as b: shutil.copyfileobj(a, b)
