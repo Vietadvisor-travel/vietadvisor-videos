@@ -40,8 +40,8 @@ Then, on Thursday the first of October, after the market closed, it reported the
 # cine act=fall fx="code:@dashed_forward;bg:stock_office_whiteboard_14;pts:.9,.81,.81,.74;labs:FY24~FY25~FY26~FY27;glab:GUIDANCE · DOWN HIGH-SINGLE DIGITS;go:told;out:right"
 Nike told investors to expect revenue to fall again this fiscal **year**.
 
-// CARD a7-07 · SEE: a sheet on the desk: PACE · 4 DIVISIONS BECOME 3 · $2.5B SAVINGS BY FY2031 · FEWER ROLES ACROSS NIKE; on "fewer" the last line is cut out and falls away · SEAM in right
-# cine act=fall fx="code:@cut_out_word;bg:stock_startup_sketch_paper_hand_04;dim:.75;title:NIKE'S PLAN: PACE;lines:4 DIVISIONS BECOME 3~$2.5B OF SAVINGS BY FY2031~FEWER ROLES ACROSS NIKE;cut:2;go:fewer;note:Nike release and Reuters, 1 Oct 2026;in:right"
+// CARD a7-07 · SEE: hard cuts on the words: an empty office on "Pace", a hand drawing up a plan on "savings", a shop being emptied on "roles" · SEAM in right
+# cine act=fall fx="code:@word_cuts;items:stock_office_empty_office_day_17@Pace@.5@.5@1.12~stock_startup_sketch_paper_hand_04@savings@.5@.5@1.12~stock_bankruptcy_empty_shop_01@roles@.5@.5@1.12;in:right"
 It also announced a plan called Pace.
 It means about two and a half billion dollars of savings by twenty thirty-one, and fewer **roles**.
 
@@ -61,8 +61,8 @@ Only about a quarter of the analysts who cover Nike still said buy, the fewest i
 Nike's chief executive, Elliott Hill, put it this **way**.
 @hill: Our Nike performance business is not yet large enough to offset the pressure we are seeing in Nike sportswear, Jordan brand, and Greater China.
 
-// CARD a7-11 · SEE: the real Nike campus as a framed print on a dark wall above a plate S&P 100; on "dropped" it drains grey and slides out of the frame: DEC 2008 – SEPT 2026 · SEAM in right
-# cine act=fall fx="code:@photo_drain;pic:nike_vs_adidas_nike_hq_beaverton_campus;cap:NIKE;plate:S&P 100;date:2008–2026;stay:1;go:dropped;in:right"
+// CARD a7-11 · SEE: real stock-market monitors; on "September" they wipe to the real Nike campus: OUT OF THE S&P 100 · SEPT 2026 · SEAM in right
+# cine act=fall fx="code:@wipe_to_photo;clip:stock_screen_desk_08;pic:nike_vs_adidas_nike_hq_beaverton_campus;go:September;ty:.74;band:1;lab:OUT OF THE S&P 100 · SEPT 2026;sub:a member since December 2008;in:right"
 In September, Nike had dropped out of the S and P one hundred.
 It had been in that index since two thousand **eight**.
 
@@ -74,7 +74,7 @@ It had made just over a billion euros of operating profit in a single quarter, t
 It raised its outlook for the year to about two and a half billion euros of operating **profit**.
 
 // CARD a7-13 · SEE: real shipping containers being stacked at a port, dim; the €1,008M bar; on "About" its end peels away: ≈ €200M ONE-OFF TARIFF REFUND · SEAM in right
-# cine act=doubt fx="code:@bar_slice;bg:nike_vs_adidas_clip_a5_container_stacker;total:1008;part:200;go:About;tlab:Q3 2026 OPERATING PROFIT · €1,008M;plab:≈ €200M · ONE-OFF US TARIFF REFUND;in:right"
+# cine act=doubt fx="code:@bar_slice;bg:nike_vs_adidas_clip_a5_container_stacker;dim:.6;total:1008;part:200;go:About;tlab:Q3 2026 OPERATING PROFIT · €1,008M;plab:≈ €200M · ONE-OFF US TARIFF REFUND;in:right"
 About two hundred million euros of it was a one-off tariff **refund**.
 
 // CARD a7-14 · SEE: real Adidas World Cup shirts on store shelves, dim; on "footwear" three bars grow: FOOTWEAR stays flat, APPAREL +19%, PERFORMANCE +14% · SEAM out right
@@ -82,5 +82,5 @@ About two hundred million euros of it was a one-off tariff **refund**.
 And its footwear sales were flat. Adidas grew on clothing and sports **gear**.
 
 // CARD a7-15 · SEE: MOTIF: the blue shoe stands on its plank; on "So" the red one backs further away: ADIDAS ON · NIKE OFF · SEAM in right
-# cine act=lesson fx="code:@lane_race;bg:nike_vs_adidas_art_running_track;a:nva_cut_sneaker_red;b:nva_cut_sneaker_blue;alab:NIKE;blab:ADIDAS;ax0:0.6;ax:0.42;bx0:0.9;bx:0.9;go:So;lab:ADIDAS ON · NIKE OFF;in:right"
+# cine act=lesson fx="code:@lane_race;bright:.75;bg:nike_vs_adidas_art_running_track;a:nva_cut_sneaker_red;b:nva_cut_sneaker_blue;alab:NIKE;blab:ADIDAS;ax0:0.6;ax:0.42;bx0:0.9;bx:0.9;go:So;lab:ADIDAS ON · NIKE OFF;in:right"
 {wry} So Adidas didn't beat Nike at shoes. Nike had stepped off the **shelf**.

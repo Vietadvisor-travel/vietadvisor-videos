@@ -34,7 +34,7 @@ The new chief executive, Bjorn Gulden, came from **Puma**, where he had been chi
 @gulden: The numbers speak for themselves. We are currently not performing the way we should.
 
 // CARD a6-06 · SEE: a dark wall of archive drawers; on "sold" one drawer slides out and a real white Adidas Superstar rises in it · SEAM out right
-# cine act=rise fx="code:@archive_drawer;pic:nike_vs_adidas_adidas_superstar_white;tag:ARCHIVE · SUPERSTAR;go:unglamorous;lab:WHAT ADIDAS ALREADY HAD;out:right"
+# cine act=rise fx="code:@archive_drawer;pic:nike_vs_adidas_adidas_superstar_white;tag:ARCHIVE · SUPERSTAR;go:Then;lab:WHAT ADIDAS ALREADY HAD;out:right"
 Then he did something deeply unglamorous. He sold what Adidas already **had**. (J)
 
 // CARD a6-07 · SEE: real Adidas product photos dealt onto a dark table faster and faster; on "Samba" the real black Samba lands big in the middle · SEAM in right
