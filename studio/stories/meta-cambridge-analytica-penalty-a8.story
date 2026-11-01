@@ -18,8 +18,8 @@ motif: bill_tape
 Meta did not fall when the scandal broke, because the scandal was the business working as **designed**.
 The quiz used a permission Facebook gave every app. The data was valuable because Facebook made it **valuable**.
 
-// CARD a8-03 · SEE: a long gold bar, META REVENUE · 2025 · $201B; on "pile" its end peels off: THE FTC PENALTY · $5B · SEAM in right
-# cine act=lesson fx="code:@bar_slice;bg:meta_meta_campus_aerial_2023;total:201;part:5;go:fines;tlab:META REVENUE · 2025 · $201B;plab:THE FTC PENALTY · $5B;in:right"
+// CARD a8-03 · SEE: a long gold bar over the real Facebook campus from the air: FACEBOOK REVENUE · 2018, ONE YEAR; on "fines" its end peels off: THE $5B FTC PENALTY · 9 % · SEAM in right
+# cine act=lesson fx="code:@bar_slice;bg:meta_facebook_campus_aerial_marsh;total:100;part:9;go:fines;tlab:FACEBOOK REVENUE · 2018 · ONE YEAR;plab:THE $5B FTC PENALTY · 9%;unit:%;in:right"
 The fines were records, and the company paid them out of a growing **pile**. (J)
 
 // CARD a8-04 · SEE: the real pages of the judgment flick past and stop on page 19 on "arithmetic"; the camera reads in and the highlighter runs: The jury found those statements to be false as well: STATEMENT BY STATEMENT · SEAM out right
@@ -32,12 +32,12 @@ One state refused to settle, and counted the cost statement by **statement**.
 {awe} The bill is ordered. It is not **paid**.
 
 // CARD a8-06 · SEE: CALLBACKS in hard cuts: the real page 20 of the judgment lights on "fails"; the real Meta campus darkens row by row on "succeeds"; the blank paper stack lights on "paper" · SEAM out right
-# cine act=lesson fx="code:@callback_cuts;cuts:stock_law_courthouse_13^0^light^IF THE APPEAL FAILS~meta_meta_campus_aerial_2023^succeeds^dark^IF IT SUCCEEDS~meta_art_scene_penalty_boardroom^paper^light^A NUMBER ON PAPER;out:right"
+# cine act=lesson fx="code:@callback_cuts;cuts:stock_law_courthouse_13^0^light^IF THE APPEAL FAILS~meta_facebook_campus_courtyard^succeeds^dark^IF IT SUCCEEDS~meta_art_scene_penalty_boardroom^paper^light^A NUMBER ON PAPER;out:right"
 If the appeal fails, New Mexico will have shown that a broken promise can be priced one statement at a time, at a scale that even Meta has to **notice**.
 If it succeeds, then in the end the biggest bill in this story will stay exactly what it is today, a number on paper that nobody has ever paid, because the arithmetic behind it did not survive the **appeal**.
 
 // CARD a8-07 · SEE: NEW: a beam balance over a dim courtroom; on "misleading" a weight drops into the left pan, WHAT IT SAID; on "prove" into the right, WHAT IT DID; the question sets above · SEAM in right
-# cine act=lesson fx="code:@said_did_scale;bg:meta_zuckerberg_f8_2019_keynote;l:WHAT IT SAID;r:WHAT IT DID;lgo:misleading;rgo:prove;q:WHICH SHOULD A COMPANY PAY FOR?;in:right"
+# cine act=lesson fx="code:@said_did_scale;bg:meta_art_hearing_room_empty;l:WHAT IT SAID;r:WHAT IT DID;lgo:misleading;rgo:prove;q:WHICH SHOULD A COMPANY PAY FOR?;in:right"
 So tell us what you think: should a company pay for every misleading thing it tells its users, or only for what someone can prove it **did**?
 Tell us in the **comments**.
 

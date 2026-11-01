@@ -11,7 +11,7 @@ endcard: off
 motif: bill_tape
 
 // CARD a1-01 · SEE: two night desks side by side like two ledgers (stock footage, no faces): ZUCKERBERG and SAVERIN; $1,000 types into each account · SEAM in right
-# cine act=setup fx="code:@two_accounts;l:stock_ui_keyboard_dark_01;r:stock_screen_laptop_night_07;lt:ZUCKERBERG;rt:SAVERIN;lv:$1,000;rv:$1,000;ls:Harvard · 4 Feb 2004;rs:co-founder;lat:February;rat:Mark;open:started;in:right"
+# cine act=setup fx="code:@two_accounts;l:stock_ui_typing_topdown_01;r:stock_startup_office_laptop_model_02;lt:ZUCKERBERG;rt:SAVERIN;lv:$1,000;rv:$1,000;ls:Harvard · 4 Feb 2004;rs:co-founder;lat:February;rat:Mark;open:started;in:right"
 It started at Harvard, on the fourth of February, two thousand **four**.
 Mark Zuckerberg and Eduardo Saverin each put in a thousand **dollars**.
 

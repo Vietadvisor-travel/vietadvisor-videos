@@ -12,7 +12,7 @@ endcard: off
 motif: bill_tape
 
 // CARD a3-01 · SEE: a split-flap calendar over the real Facebook headquarters at 1 Hacker Way, dim; on "three" it flicks month by month from MAR 2015 and locks on MAR 2018: CAMBRIDGE ANALYTICA SUSPENDED · Friday 16 Mar 2018, late evening · SEAM out right
-# cine act=fall fx="code:@month_flip;bg:meta_facebook_hq_1_hacker_way;from:2015-03;to:2018-03;go:three;lab:CAMBRIDGE ANALYTICA SUSPENDED;sub:Friday 16 Mar 2018 · late evening;out:right"
+# cine act=fall fx="code:@month_flip;bg:meta_facebook_hq_1_hacker_way;from:2015-03;to:2018-03;go:happened;lab:CAMBRIDGE ANALYTICA SUSPENDED;sub:Friday 16 Mar 2018 · late evening;out:right"
 {tense} For three years, nothing happened. Then, on Friday the sixteenth of March, twenty eighteen, Facebook suspended Cambridge Analytica from its platform, late in the **evening**.
 
 // CARD a3-02 · SEE: real printing presses roll, dim; the real Guardian page of 17 March 2018 slides in as a clipping and a red marker underlines its headline · SEAM in right

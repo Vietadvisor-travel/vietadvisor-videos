@@ -22,7 +22,7 @@ In August twenty twenty-six, a group of other states signed a settlement with Me
 New Mexico refused to sign it. It took its case to a **jury**.
 
 // CARD a5-03 · SEE: a paper sheet, NEW MEXICO v. META: TWO CASES; on "separate" the second line, CASE 2 · 2023 · CHILDREN, is cut out of the sheet and falls away; CASE 1 · 2021 · PRIVACY stays: THIS FILM · SEAM out right
-# cine act=doubt fx="code:@cut_out_word;bg:meta_art_hearing_room_empty;title:NEW MEXICO v. META · TWO CASES;lines:CASE 1 · 2021 · PRIVACY · THIS FILM~CASE 2 · 2023 · CHILDREN · NOT THIS FILM;cut:1;go:separate;note:never add them together;out:right"
+# cine act=doubt fx="code:@cut_out_word;bg:meta_art_hearing_room_empty;title:NEW MEXICO v. META · TWO CASES;lines:CASE 1 · 2021 · PRIVACY · THIS FILM~CASE 2 · 2023 · CHILDREN;cut:1;go:separate;note:never add them together;out:right"
 One warning, because the headlines mix them up. New Mexico has a second, separate case against Meta, about children. This film is about the first **one**.
 
 // CARD a5-04 · SEE: NEW: on "twenty-nine" a wall of 29 paper slips flicks up one after another on the desk, one per statement; the subjects light above it as tabs on their words: PRIVACY, HATE SPEECH, MISINFORMATION, MODERATION · SEAM in right

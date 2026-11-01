@@ -20,7 +20,7 @@ Meta's position is simple. It says it does not sell user **data**.
 And it says the state never proved that anyone was actually **misled**.
 
 // CARD a7-03 · SEE: a stack of filing paper on the desk; on "filing" a paper slip rises out of it; on "aside" a question writes itself in pencil: HOW MUCH? · NOT DISCLOSED · SEAM in right
-# cine act=doubt fx="code:@question_on_box;box:meta_cut_document_stack_blank;go:filing;go2:aside;q:HOW MUCH? NOT DISCLOSED;in:right"
+# cine act=doubt fx="code:@question_on_box;box:meta_cut_document_stack_blank;go:filing;go2:aside;bs:.5;q:HOW MUCH? NOT DISCLOSED;in:right"
 In its quarterly filing, Meta set money aside for the penalty, without saying **how much**.
 
 // CARD a7-04 · SEE: the real Meta campus from the air; a ring of shares drawn on it: THE PENALTY 39 % lifts out of ONE QUARTER'S REVENUE, the rest 61 % in grey · SEAM out right
@@ -34,7 +34,7 @@ It is about thirty percent of the eighty-two billion dollars Meta holds in cash 
 Painful. But not **fatal**. In the same quarter, its revenue grew twenty-six percent, and three point six four billion people used its apps every **day**.
 
 // CARD a7-06 · SEE: a real Facebook headquarters building, dim; three bars drop below a zero line one after another: OPERATING INCOME −37 %, the note: includes a $9.89B charge for the separate teen settlement · SEAM out right
-# cine act=fall fx="code:@three_drops;bg:meta_facebook_hq_building_16;items:OPERATING INCOME^-37;go:pressure;note:includes a $9.89B teen-settlement charge;out:right"
+# cine act=fall fx="code:@three_drops;bg:meta_facebook_hq_building_16;items:OPERATING INCOME^-37;go:separate;note:includes a $9.89B teen-settlement charge;out:right"
 The real pressure in that same quarter came from somewhere **else**.
 Meta booked a nine point eight nine billion dollar charge for a separate settlement over teenagers' mental **health**.
 Its operating income fell thirty-seven **percent**.
@@ -45,7 +45,7 @@ It spent almost thirty-five billion dollars in three months, mostly on data cent
 So its free cash flow turned negative, minus two point one two billion **dollars**.
 
 // CARD a7-08 · SEE: the real Utah data-centre campus; a paper price tag swings in: $97.5B · NEW STOCK TO SELL · SEAM out right
-# cine act=rise fx="code:@valuation_tag;bg:meta_utah_datacenter_panorama;vals:$97.5B@sell;x:.64;lab:NEW STOCK TO SELL;sub:to pay for the AI build-out;out:right"
+# cine act=rise fx="code:@valuation_tag;bg:meta_utah_datacenter_panorama;vals:$97.5B@plans;x:.64;lab:NEW STOCK TO SELL;sub:to pay for the AI build-out;out:right"
 It plans to sell ninety-seven and a half billion dollars of new stock to pay for the **build-out**.
 
 // CARD a7-09 · SEE: the real Facebook campus entrance; on "negative" a red sash sweeps across its corner: OUTLOOK NEGATIVE; S&P GLOBAL RATINGS · 30 OCT 2026 · AA− AFFIRMED · SEAM in right
