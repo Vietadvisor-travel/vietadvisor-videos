@@ -12,7 +12,7 @@
   const n = +(P.n || 29), cols = Math.ceil(Math.sqrt(n * 2.2)), rows = Math.ceil(n / cols), sw = W * .072, sh = H * .1, gx = sw * 1.22, gy = sh * 1.25;
   const x0 = W / 2 - (cols - 1) * gx / 2, y0 = H * .47 - (rows - 1) * gy / 2, t0 = P.pre ? -9 : at(P.go || 0), tr = P.rgo ? at(P.rgo) : 1e9, nr = +(P.red || 0);
   // camera: a slow push toward the wall
-  ctx.save(); const z = 1 + .05 * k; ctx.translate(W / 2, H * .47); ctx.scale(z, z); ctx.translate(-W / 2, -H * .47);
+  ctx.save(); const z = 1 + .12 * k; ctx.translate(W / 2 + (k - .5) * -W * .04, H * .47); ctx.scale(z, z); ctx.translate(-W / 2, -H * .47);
   const order = Array.from({ length: n }, (_, i) => i).sort((a, b) => ((a * 7919) % 31) - ((b * 7919) % 31));
   const isRed = new Set(order.slice(0, nr));
   for (let i = 0; i < n; i++) {

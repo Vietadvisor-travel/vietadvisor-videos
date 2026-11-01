@@ -146,18 +146,17 @@
   "opening": null,
   "ending": null,
   "looks": [
-   "tech"
+   "dossier"
   ],
   "open": "code",
   "modes": {
-   "code": 13
+   "code": 6
   },
   "verbs": {},
   "trans": {},
   "tracks": [
-   "km_darkest_child",
-   "km_lightless_dawn",
-   "km_oppressive_gloom"
+   "km_fretless",
+   "km_thief_in_the_night"
   ],
   "date": "2026-11-01"
  }
