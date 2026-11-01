@@ -366,5 +366,11 @@ Tell us in the **comments**.
 ## 6. MOTION
 - Engine cover() camera life on every plate (drift ≈ 2.6 % width/s plus a push); held documents get a lens travel or a lift; stillness held only before the a6 judgment line and the a8 "not paid" line; titles land and stay still.
 
-## 7. DELIVERY
-(filled after render)
+## 7. DELIVERY (1 Nov 2026)
+- Final: out/meta-cambridge-analytica-penalty_16x9_FINAL.mp4 · 11:56 (716.4 s) · 1920×1080 H.264 · −14.1 LUFS, −2.8 dBTP · on Drive PoisonPill_Media/meta-cambridge-analytica-penalty/ (2,044 MB).
+- Subtitles: meta-cambridge-analytica-penalty_FULL.srt (217 cues). Upload guide: UPLOAD_GUIDE_meta-cambridge-analytica-penalty.txt (description 4,941 characters).
+- Script lint 8.9/10 (2,035 words, ≈12.1 min). pp_lint 10/10 and pp_layout 0 flags on all 9 acts.
+- Critic (fresh agent, sheets): round 1 — 34 % of beats ≥ 5/8, swap 70 %; round 2 — 44.7 % ≥ 5/8, swap 86.8 %. Ship gate (85 % / 90 %) NOT met after 2 rounds; shipped per rule with these scores. After round 2, 14 cheap faults were fixed without a third round: a true 2018 comparison for the $5B (9 % of 2018 revenue, not 2025), no graphics over faces (a4 b4, a8 b7), the 10-Q question slip readable, numbers keyed earlier (a3 b1, a4 b2, a4 b7, a7 b6, a7 b8), the TikTok-style feed replaced, overflowing card/sheet text shortened, a1 b1 hands-only plates.
+- Motion gate (pp_motion): PASS — 22 % nearly still, 0 still runs > 3 s outside HOLD (HOLD: a3-07 the Zuckerberg quote, a5-05 the verdict). Engine: the desk lamp now travels over a beat; push/pan for held beats; footage under several held cards.
+- Reused-library check: stock_screen_chart_down_01 (used in the last 3 episodes) replaced.
+- Open: appeal status must be rechecked before 10 Nov (guide §9). 22 CC BY images lack an author name in the pack (credited "via Wikimedia Commons").

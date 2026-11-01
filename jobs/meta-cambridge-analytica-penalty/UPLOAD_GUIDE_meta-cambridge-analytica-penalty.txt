@@ -1,0 +1,80 @@
+HƯỚNG DẪN ĐĂNG TẬP 8 · META: THE $25 BILLION BILL · POISON PILL
+Video: PoisonPill_EP08_Meta_25_Billion_Penalty_FULL_16x9.mp4 (11:56). Đổi tên meta-cambridge-analytica-penalty_16x9_FINAL.mp4 thành tên này trước khi tải lên: từ khoá trong tên file giúp SEO.
+Bản tải lên: meta-cambridge-analytica-penalty_16x9_FINAL.mp4 (bản gốc chất lượng cao nhất, bản duy nhất), có trên Google Drive: PoisonPill_Media/meta-cambridge-analytica-penalty/.
+Thumbnail: anh tự làm. Gợi ý: một tờ hoá đơn dài in "$25,000,000,000" với dấu đỏ "UNPAID", sau lưng là biển hiệu Meta.
+Phụ đề: meta-cambridge-analytica-penalty_FULL.srt (trong jobs/meta-cambridge-analytica-penalty/). Phim KHÔNG có chữ phụ đề in trên hình; người xem bật CC.
+Âm thanh: −14,1 LUFS, đỉnh −2,8 dBTP (chuẩn YouTube −14 LUFS).
+Lịch đăng: thứ Ba 10/11/2026 lúc 21:00 giờ Việt Nam (= 9:00 sáng ET; theo lịch tuần SCHEDULE_WEEK_2026-11-02). BẮT BUỘC đọc mục 9 trước khi đăng (kiểm tra kháng cáo).
+
+=== 1. TIÊU ĐỀ (dùng số 1) ===
+1. Meta Was Ordered to Pay $25 Billion. It Hasn't Paid a Cent.   ← dùng
+2. The Cambridge Analytica Bill Meta Still Hasn't Paid
+3. How Cambridge Analytica Became a $25 Billion Judgment
+(Sau 48 giờ nếu CTR < 4 %: đổi sang tiêu đề 2.)
+
+=== 2. MÔ TẢ (copy nguyên khối dưới đây) ===
+On Wednesday 21 October 2026, two documents about the same company came out on the same day. In California, Meta reported $64.6 billion of revenue in three months. In Santa Fe, a New Mexico judge ordered it to pay $25 billion. Everyone says Meta was finally punished for Cambridge Analytica. The record says something else: the penalty is ordered, not paid; Meta is appealing; and the case was never only about Cambridge Analytica.
+
+From a Harvard dorm and a $200,000 domain to one personality quiz that reached up to 87 million profiles; from the week the Cambridge Analytica scandal broke in March 2018 to the FTC's $5 billion penalty, the SEC, the UK's £500,000 fine and the $725 million class action; to New Mexico's refusal to settle, a jury that found 26 of 29 statements misleading, and the arithmetic that turned them into 43,899,725 violations and a $25 billion judgment. Why the scandal never broke Meta, and the only bill that still could.
+
+0:00 Two documents, one day (21 Oct 2026)
+0:49 The machine: free users, paying advertisers (2004–2012)
+1:51 One quiz, up to 87 million profiles (2014–2015)
+3:00 The week it broke (March–May 2018)
+4:31 The bills: every one survivable (2018–2025)
+6:37 The state that didn't settle
+7:31 The arithmetic: from $219.5 billion to $25 billion
+8:59 The bill vs the business (Q3 2026)
+10:37 Ordered, not paid
+
+Sources: New Mexico v. Meta Platforms, No. D-101-CV-2021-00132, judgment of 21 Oct 2026; Meta Q3 2026 results and 10-Q; FTC v. Facebook (D.D.C. 2019) complaint, order and press release; SEC v. Facebook (N.D. Cal. 2019); UK ICO penalty notice (24 Oct 2018); US Senate and House hearings (10–11 Apr 2018); UK DCMS Committee report (18 Feb 2019); The Guardian/Observer and The New York Times (17 Mar 2018); Channel 4 News (19 Mar 2018); Facebook (Schroepfer, 4 Apr 2018); FEC filings; UK Insolvency Service (2020); The Register (25 Oct 2018); Reuters and AP (2018–2026); S&P Global Ratings (30 Oct 2026); Top Class Actions (28 Oct 2026).
+Figures are as reported or as stated in the filings. The $25 billion judgment is ordered, not paid: Meta has said it will appeal. The jury's 43,899,725 violations are a legal counting method (statements multiplied by everyone in New Mexico who could have seen them), not a count of victims. New Mexico's separate 2023 case about children is a different case and is not covered here.
+
+Footage and photos: Pexels (Pexels License): Ahmed ؜, Alexander Wark Feeney, Andrey Kirievskiy, Atilla Kurt, Ben Garves, Constantino  Filmes, Geancarlo Peruzzolo, George Morina, Hamim Rony, Hugo Butery, Jonathan 8@, LayG Traveller, Luis Quintero, Paul Bill, Pietro Henricky, Pressmaster, Rafael Minguet Delgado, SHVETS production, Somogro Bangladesh, Vivianouk.
+Wikimedia Commons (photos): Richard Symonds (CC BY-SA 3.0); Unknown author (licence as listed on Wikimedia Commons); Basher Eyre (CC BY-SA 2.0); Austin McKinley (CC BY 3.0); Jitze Couperus from Los Altos Hills, California, USA (CC BY 2.0); victorgrigas (CC BY-SA 3.0); LPS.1 (CC0); Minette Lontsie (CC BY-SA 4.0); Mliu92 (CC BY-SA 4.0); Martinvl (CC BY-SA 4.0); InvadingInvader (CC BY-SA 4.0); Nokia621 (CC BY-SA 4.0); No Swan So Fine (CC BY-SA 4.0); Bill Boaden (CC BY-SA 2.0); NOIRLab/NSF/AURA/T. Slovinský (CC BY 4.0); Diliff (CC BY-SA 2.5); Chris Sampson (CC BY 2.0); The National Archives (UK) (CC BY 3.0); Swilsonmc (CC BY-SA 3.0); Simon Fraser University -  Communications &amp; Marketing (CC BY 2.0); Brian Solis (CC BY 2.0); Anthony Quintano from Honolulu, HI, United States (CC BY 2.0); Alessio Jacona from Rome, Italy (CC BY-SA 2.0).
+Court and agency filings shown on screen are public records: New Mexico First Judicial District Court; US District Court for the District of Columbia (FTC v. Facebook); US District Court for the Northern District of California (SEC v. Facebook); UK Information Commissioner's Office; US House of Representatives and Senate hearing records. News pages are shown as quoted records: The Guardian (17 Mar 2018), Top Class Actions (28 Oct 2026).
+Music by Kevin MacLeod (incompetech.com): Clean Soul, Darkest Child, Deep Haze, Fretless, Lightless Dawn, Marty Gots a Plan, Oppressive Gloom, Thief in the Night, Unseen Horrors, Volatile Reaction. Licensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/
+Some illustrations of places and objects (an empty courtroom, an empty hearing room, a phone harvesting data, an empty boardroom with paper stacks, a stack of documents, a server-light texture) are AI-generated and are not archival images. No real person is drawn by AI.
+The narration is an AI-generated (synthetic) voice. Mark Zuckerberg's words to the US Senate (10 April 2018) are real, read by a synthetic voice; this is marked on screen.
+Meta®, Facebook®, Instagram® and WhatsApp® are trademarks of Meta Platforms, Inc., which does not sponsor or endorse this video.
+
+#Meta #CambridgeAnalytica #BusinessDocumentary
+
+=== 3. THẺ (dán vào ô Tags) ===
+meta new mexico, meta 25 billion, meta ordered to pay new mexico, meta new mexico verdict, meta new mexico appeal, cambridge analytica, cambridge analytica scandal explained, cambridge analytica scandal timeline, facebook cambridge analytica, how did the cambridge analytica scandal affect facebook, mark zuckerberg, ftc 5 billion fine facebook, meta stock, business documentary, poison pill
+
+=== 4. CÁC Ô TRONG YOUTUBE STUDIO ===
+- Thumbnail: tải thumbnail anh tự làm. Nếu có nhiều bản, bật "Test & compare".
+- Audience: "No, it's not made for kids".
+- Language: Video language = English; Title and description language = English.
+- Subtitles: Subtitles → Add language → English → Upload file → "With timing" → meta-cambridge-analytica-penalty_FULL.srt → Publish.
+- Category: Education.
+- Playlist: "Scandals & Reckonings" (tạo mới nếu chưa có) + playlist chính của kênh.
+- License: Standard YouTube License. Allow embedding: bật. Publish to subscriptions feed: bật.
+- Comments: Allow all comments. Sort by: Top.
+- Altered or synthetic content: YES. Lý do: phim có giọng tổng hợp đọc nguyên văn lời của một người thật (Mark Zuckerberg trước Thượng viện Mỹ, 10/4/2018); người xem có thể tưởng đó là giọng thật. Trên hình đã ghi "read by a voice actor". Ngoài ra có 6 ảnh minh hoạ AI (phòng xử, phòng điều trần, điện thoại, phòng họp, chồng giấy, nền ánh sáng); không có người thật nào được vẽ bằng AI.
+- Paid promotion: không tích.
+
+=== 5. END SCREEN VÀ CARDS ===
+- End screen (20 giây cuối): "Best for viewer" + nút Subscribe.
+- Card 1 tại chương "The bills" (4:31): trỏ về tập 6 LEGO hoặc tập 4 WeWork (cùng chủ đề: phạt/giá trị công ty).
+- Card 2 tại chương "The arithmetic" (7:31): poll "Should a company pay per misleading statement?" (Yes / Only for proven harm).
+- Sau khi đăng: quay lại tập Nike vs Adidas, thêm card trỏ sang tập này ở chương cuối.
+
+=== 6. CHẾ ĐỘ HIỂN THỊ ===
+Schedule: thứ Ba 10/11/2026, 21:00 giờ Việt Nam.
+
+=== 7. PINNED COMMENT (dán rồi ghim) ===
+Should a company pay for every misleading thing it tells its users, or only for what someone can prove it did? And if Meta's appeal fails, is $25 billion enough to change how a platform talks about privacy?
+
+=== 8. 48 GIỜ ĐẦU ===
+- Trả lời 10 bình luận đầu tiên trong 2 giờ đầu (tín hiệu tương tác mạnh nhất).
+- Chia sẻ thật ở 1–2 cộng đồng đúng chủ đề (r/privacy, r/technology, r/law) nếu luật cho phép; không spam.
+- Sau 48 giờ, ghi vào jobs/nhat-ky.md: CTR, Average view duration, % viewed, nguồn traffic chính.
+- Ngưỡng: CTR < 4 % → đổi tiêu đề 2 hoặc để Test & compare chạy xong; retention phút 1 < 55 % → báo Claude để sửa hook tập sau.
+
+=== 9. VIỆC CẦN KIỂM TRA TRƯỚC KHI ĐĂNG (bắt buộc) ===
+- Kháng cáo: phim nói phán quyết $25 tỷ "ordered, not paid" và Meta "said it would appeal" (đúng tới 1/11/2026). Trước khi đăng, tìm "Meta New Mexico appeal" (Reuters/AP). Nếu đã có lệnh hoãn thi hành (stay), tiền bảo lãnh (bond) hoặc hồ sơ kháng cáo chính thức: thêm một dòng đầu mô tả "Update (date): …" và một bình luận ghim. Nếu Meta ĐÃ TRẢ tiền (rất khó trong 9 ngày): KHÔNG đăng, báo Claude để sửa câu "not paid".
+- Hai vụ New Mexico khác nhau: phim chỉ nói vụ 2021 (quyền riêng tư); vụ 2023 về trẻ em được nêu tên và để riêng. Nếu báo chí gộp hai vụ, đừng sửa mô tả theo họ.
+- Con số 43,899,725 là cách tính của bồi thẩm đoàn (số phát ngôn × số người có thể đã thấy), không phải số nạn nhân; phim nói rõ điều này.
+- 22 ảnh CC BY từ Wikimedia Commons chưa có tên tác giả trong gói (pp_publish cảnh báo): stock_law_jury_box_01, meta_coptic_new_oxford_junction, meta_facebook_campus_aerial, meta_facebook_campus_aerial_marsh, meta_facebook_campus_courtyard, meta_facebook_campus_entrance… Đã ghi "via Wikimedia Commons"; nếu muốn đủ chuẩn ghi công, nhắn Muse: "bổ sung tác giả ảnh meta-cambridge-analytica-penalty".

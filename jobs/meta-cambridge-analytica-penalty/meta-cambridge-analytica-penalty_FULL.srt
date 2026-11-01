@@ -1,0 +1,1027 @@
+1
+00:00:00,120 --> 00:00:03,555
+On Wednesday the twenty-first
+of October, twenty twenty-six,
+
+2
+00:00:03,622 --> 00:00:07,233
+two documents about the same
+company came out in the same day.
+
+3
+00:00:07,300 --> 00:00:08,053
+In California,
+
+4
+00:00:08,120 --> 00:00:12,683
+Meta reported sixty-four point six billion
+dollars of revenue in three months.
+
+5
+00:00:12,750 --> 00:00:17,210
+In Santa Fe, New Mexico, a judge ordered
+it to pay twenty-five billion dollars.
+
+6
+00:00:17,640 --> 00:00:22,169
+This is the story of how one personality
+quiz turned into eight years of bills,
+
+7
+00:00:22,236 --> 00:00:24,330
+and how one state refused to settle.
+
+8
+00:00:24,750 --> 00:00:28,143
+Everyone says Meta was finally
+punished for Cambridge Analytica.
+
+9
+00:00:28,210 --> 00:00:30,583
+But Meta has not paid
+a single dollar of it.
+
+10
+00:00:30,650 --> 00:00:34,600
+It has appealed. And the case was
+never only about Cambridge Analytica.
+
+11
+00:00:35,030 --> 00:00:39,387
+So how does a company survive the
+most famous data scandal of its time,
+
+12
+00:00:39,454 --> 00:00:40,943
+and keep growing anyway?
+
+13
+00:00:41,010 --> 00:00:45,070
+Because the scandal was not a bug. It was
+the business working exactly as designed.
+
+14
+00:00:45,500 --> 00:00:49,500
+Keep an eye on the bill. It is the only
+thing in this story that never gets paid.
+
+15
+00:00:49,920 --> 00:00:53,343
+It started at Harvard, on the fourth
+of February, two thousand four.
+
+16
+00:00:53,410 --> 00:00:56,940
+Mark Zuckerberg and Eduardo Saverin
+each put in a thousand dollars.
+
+17
+00:00:57,370 --> 00:00:57,966
+A year later,
+
+18
+00:00:58,033 --> 00:01:00,259
+the company paid two
+hundred thousand dollars
+
+19
+00:01:00,326 --> 00:01:02,110
+just for the name facebook dot com.
+
+20
+00:01:02,540 --> 00:01:06,850
+In May twenty twelve, Facebook went public
+and raised about sixteen billion dollars.
+
+21
+00:01:07,270 --> 00:01:10,202
+A month earlier, it had bought
+Instagram for about one billion.
+
+22
+00:01:10,269 --> 00:01:13,023
+Instagram had thirty million
+users and thirteen employees.
+
+23
+00:01:13,090 --> 00:01:16,889
+Two years later, it paid about
+nineteen billion dollars for WhatsApp,
+
+24
+00:01:16,956 --> 00:01:20,990
+which had four hundred and fifty
+million users and fifty-five employees.
+
+25
+00:01:21,420 --> 00:01:24,803
+The users never paid anything. The
+advertisers paid for the users.
+
+26
+00:01:24,870 --> 00:01:28,170
+And the more Facebook knew about each
+person, the more each advert was worth.
+
+27
+00:01:28,600 --> 00:01:29,302
+In those years,
+
+28
+00:01:29,369 --> 00:01:32,788
+an app on Facebook could read more
+than the person who installed it.
+
+29
+00:01:32,855 --> 00:01:34,290
+It could read their friends.
+
+30
+00:01:34,720 --> 00:01:36,146
+That same year, twenty twelve,
+
+31
+00:01:36,213 --> 00:01:39,133
+Facebook had made a promise to
+the Federal Trade Commission.
+
+32
+00:01:39,200 --> 00:01:41,533
+It would not mislead
+users about their privacy.
+
+33
+00:01:41,600 --> 00:01:44,420
+Remember that promise. It
+comes back with a price tag.
+
+34
+00:01:44,840 --> 00:01:49,107
+So how does one personality quiz end
+up costing twenty-five billion dollars?
+
+35
+00:01:49,174 --> 00:01:51,170
+It starts with that one permission.
+
+36
+00:01:51,587 --> 00:01:52,579
+In twenty fourteen,
+
+37
+00:01:52,646 --> 00:01:55,979
+a Cambridge University researcher
+named Aleksandr Kogan built
+
+38
+00:01:56,046 --> 00:01:59,057
+a personality quiz called
+"This is your digital life."
+
+39
+00:01:59,487 --> 00:02:02,180
+About two hundred and seventy
+thousand people downloaded it.
+
+40
+00:02:02,247 --> 00:02:05,240
+Through their friend lists, the app
+reached far more people than that.
+
+41
+00:02:05,307 --> 00:02:06,478
+Facebook's own estimate,
+
+42
+00:02:06,545 --> 00:02:09,936
+published by its chief technology
+officer in April twenty eighteen,
+
+43
+00:02:10,003 --> 00:02:12,067
+was up to eighty-seven million profiles.
+
+44
+00:02:12,487 --> 00:02:14,854
+Other counts say fifty
+million, or sixty-five.
+
+45
+00:02:14,921 --> 00:02:17,720
+Nobody outside the company
+has ever counted them all.
+
+46
+00:02:17,787 --> 00:02:21,877
+About eighty-two percent of those profiles
+belonged to people in the United States.
+
+47
+00:02:22,317 --> 00:02:24,191
+Kogan passed the data to a political
+
+48
+00:02:24,258 --> 00:02:27,100
+consulting firm in London
+called Cambridge Analytica.
+
+49
+00:02:27,167 --> 00:02:29,809
+It was bankrolled by the
+billionaire Robert Mercer,
+
+50
+00:02:29,876 --> 00:02:32,107
+and his daughter Rebekah sat on its board.
+
+51
+00:02:32,527 --> 00:02:36,987
+In twenty sixteen, the Trump campaign
+paid it five point nine million dollars,
+
+52
+00:02:37,054 --> 00:02:41,110
+and the Cruz campaign five point
+eight million, election filings show.
+
+53
+00:02:41,177 --> 00:02:44,057
+Whether any of it changed a
+single vote is still disputed.
+
+54
+00:02:44,487 --> 00:02:47,460
+In twenty fifteen, Facebook found
+out where the data had gone.
+
+55
+00:02:47,527 --> 00:02:51,860
+It asked for the data to be deleted, and
+it accepted signed letters saying it was.
+
+56
+00:02:51,927 --> 00:02:55,227
+It did not check. And it
+did not tell the users.
+
+57
+00:02:55,657 --> 00:02:58,072
+That decision, made
+quietly in twenty fifteen,
+
+58
+00:02:58,139 --> 00:03:00,297
+is the start of every bill in this film.
+
+59
+00:03:00,720 --> 00:03:05,097
+For three years, nothing happened. Then,
+on Friday the sixteenth of March,
+
+60
+00:03:05,164 --> 00:03:09,542
+twenty eighteen, Facebook suspended
+Cambridge Analytica from its platform,
+
+61
+00:03:09,609 --> 00:03:10,810
+late in the evening.
+
+62
+00:03:11,240 --> 00:03:12,042
+The next morning,
+
+63
+00:03:12,109 --> 00:03:15,833
+The Observer and The New York Times
+published within hours of each other.
+
+64
+00:03:15,900 --> 00:03:19,770
+Facebook had suspended Kogan and Wylie
+too, but the story was already out.
+
+65
+00:03:20,200 --> 00:03:21,911
+Their source was Christopher Wylie,
+
+66
+00:03:21,978 --> 00:03:24,670
+a former director of research
+at Cambridge Analytica.
+
+67
+00:03:25,100 --> 00:03:25,934
+Two days later,
+
+68
+00:03:26,001 --> 00:03:31,103
+Channel 4 News aired undercover footage of
+the firm's chief executive, Alexander Nix.
+
+69
+00:03:31,170 --> 00:03:32,841
+He talked about bribery stings,
+
+70
+00:03:32,908 --> 00:03:35,880
+honey traps and front
+companies as possible services.
+
+71
+00:03:36,310 --> 00:03:38,969
+His board suspended him
+the next day. The same day,
+
+72
+00:03:39,036 --> 00:03:41,214
+Britain's data regulator asked a court for
+
+73
+00:03:41,281 --> 00:03:43,740
+a warrant to search the
+firm's London offices.
+
+74
+00:03:44,160 --> 00:03:46,343
+Mark Zuckerberg said
+nothing for five days.
+
+75
+00:03:46,410 --> 00:03:49,290
+Then, on the twenty-first of
+March, he posted a statement.
+
+76
+00:03:49,720 --> 00:03:52,533
+In April, he sat in front
+of the United States Senate,
+
+77
+00:03:52,600 --> 00:03:54,673
+and the next day in front of the House.
+
+78
+00:03:54,740 --> 00:03:59,248
+ZUCK: It was my mistake, and I'm
+sorry. I started Facebook, I run it,
+
+79
+00:03:59,315 --> 00:04:02,100
+and I'm responsible for what happens here.
+
+80
+00:04:02,530 --> 00:04:06,053
+He also confirmed that his own data
+had been swept up with everyone else's.
+
+81
+00:04:06,120 --> 00:04:08,680
+And he promised to grow
+Facebook's security staff to
+
+82
+00:04:08,747 --> 00:04:11,070
+twenty thousand people
+by the end of the year.
+
+83
+00:04:11,500 --> 00:04:16,013
+On the second of May, Cambridge Analytica
+announced it was ceasing all operations.
+
+84
+00:04:16,080 --> 00:04:18,294
+It blamed a "siege of media coverage" that
+
+85
+00:04:18,361 --> 00:04:20,750
+had driven away almost
+all of its customers.
+
+86
+00:04:21,180 --> 00:04:23,783
+The firm that used the data
+was gone in about six weeks.
+
+87
+00:04:23,850 --> 00:04:27,970
+Two years later, Nix accepted a seven-year
+ban on running British companies.
+
+88
+00:04:28,400 --> 00:04:31,490
+But the company that gave the data
+away was just getting started.
+
+89
+00:04:31,920 --> 00:04:36,193
+So what does a scandal like that
+actually cost a company like this?
+
+90
+00:04:36,260 --> 00:04:38,633
+The first bill came from the stock market.
+
+91
+00:04:38,700 --> 00:04:41,201
+On the twenty-sixth of
+July, twenty eighteen,
+
+92
+00:04:41,268 --> 00:04:44,350
+Facebook shares fell nineteen
+percent in a single day.
+
+93
+00:04:44,780 --> 00:04:49,843
+About one hundred and nineteen billion
+dollars of market value disappeared,
+
+94
+00:04:49,910 --> 00:04:53,740
+the largest one-day loss for
+any US company at the time.
+
+95
+00:04:54,170 --> 00:04:58,443
+In October, Britain's data regulator
+fined it five hundred thousand pounds.
+
+96
+00:04:58,510 --> 00:05:02,360
+It found that at least one million
+British users had been put at risk.
+
+97
+00:05:02,790 --> 00:05:04,212
+That was the legal maximum.
+
+98
+00:05:04,279 --> 00:05:08,800
+One tech news site worked out it was about
+seventeen minutes of Facebook's profit.
+
+99
+00:05:09,230 --> 00:05:10,961
+In February twenty nineteen,
+
+100
+00:05:11,028 --> 00:05:13,338
+a committee of the British Parliament
+
+101
+00:05:13,405 --> 00:05:16,673
+called companies like
+Facebook "digital gangsters."
+
+102
+00:05:16,740 --> 00:05:20,760
+Zuckerberg had refused its invitations
+to give evidence three times.
+
+103
+00:05:21,180 --> 00:05:24,100
+Then, on the twenty-fourth
+of July, twenty nineteen,
+
+104
+00:05:24,167 --> 00:05:28,130
+the Federal Trade Commission announced
+a five billion dollar penalty.
+
+105
+00:05:28,560 --> 00:05:31,546
+It was the largest privacy
+penalty ever imposed at the time.
+
+106
+00:05:31,613 --> 00:05:34,920
+But it was about nine percent of
+Facebook's revenue for one year.
+
+107
+00:05:35,350 --> 00:05:38,876
+The order also put a new privacy
+committee on Facebook's board,
+
+108
+00:05:38,943 --> 00:05:42,650
+and made Zuckerberg personally
+sign off on privacy every quarter.
+
+109
+00:05:43,080 --> 00:05:46,945
+The same day, the SEC added
+one hundred million dollars,
+
+110
+00:05:47,012 --> 00:05:51,719
+because Facebook had told investors
+that user data "may be" misused,
+
+111
+00:05:51,786 --> 00:05:53,253
+when it already knew.
+
+112
+00:05:53,320 --> 00:05:54,970
+It had known for about two years.
+
+113
+00:05:55,400 --> 00:05:56,662
+In twenty twenty-two,
+
+114
+00:05:56,729 --> 00:06:00,208
+Meta agreed to pay seven
+hundred and twenty-five million
+
+115
+00:06:00,275 --> 00:06:03,433
+dollars to settle a class
+action brought by users.
+
+116
+00:06:03,500 --> 00:06:07,670
+Shared among up to eighty-seven million
+people, that was a few dollars each.
+
+117
+00:06:08,100 --> 00:06:11,953
+In other privacy cases, Texas got
+one point four billion dollars.
+
+118
+00:06:12,020 --> 00:06:15,323
+And Ireland's regulator fined
+it one point two billion euros.
+
+119
+00:06:15,390 --> 00:06:16,749
+In twenty twenty-five,
+
+120
+00:06:16,816 --> 00:06:20,703
+shareholders who had sued
+Zuckerberg and other executives for
+
+121
+00:06:20,770 --> 00:06:24,398
+eight billion dollars settled
+in the middle of the trial,
+
+122
+00:06:24,465 --> 00:06:26,150
+on terms nobody disclosed.
+
+123
+00:06:26,580 --> 00:06:29,850
+Every one of these was a record. But
+every one of them was survivable.
+
+124
+00:06:30,280 --> 00:06:32,683
+In twenty twenty-one,
+Facebook renamed itself Meta.
+
+125
+00:06:32,750 --> 00:06:36,760
+By twenty twenty-five, its yearly revenue
+had passed two hundred billion dollars.
+
+126
+00:06:37,187 --> 00:06:39,120
+One state did not settle.
+
+127
+00:06:39,187 --> 00:06:40,248
+In twenty twenty-one,
+
+128
+00:06:40,315 --> 00:06:43,480
+New Mexico sued Facebook under
+its consumer protection law.
+
+129
+00:06:43,547 --> 00:06:46,998
+The attorney general who filed it
+was Hector Balderas. His successor,
+
+130
+00:06:47,065 --> 00:06:48,697
+Raul Torrez, took the case over.
+
+131
+00:06:49,127 --> 00:06:50,589
+In August twenty twenty-six,
+
+132
+00:06:50,656 --> 00:06:54,200
+a group of other states signed a
+settlement with Meta in Oakland.
+
+133
+00:06:54,267 --> 00:06:57,147
+New Mexico refused to sign it.
+It took its case to a jury.
+
+134
+00:06:57,577 --> 00:07:01,494
+One warning, because the headlines
+mix them up. New Mexico has a second,
+
+135
+00:07:01,561 --> 00:07:03,874
+separate case against
+Meta, about children.
+
+136
+00:07:03,941 --> 00:07:05,767
+This film is about the first one.
+
+137
+00:07:06,197 --> 00:07:08,137
+But the case was bigger than one quiz app.
+
+138
+00:07:08,207 --> 00:07:12,592
+It was about twenty-nine public
+statements Meta and its leaders had made,
+
+139
+00:07:12,659 --> 00:07:16,197
+about privacy, hate speech,
+misinformation and moderation.
+
+140
+00:07:16,627 --> 00:07:20,510
+On Friday the twenty-fifth of
+September, twenty twenty-six,
+
+141
+00:07:20,577 --> 00:07:22,980
+a jury in Santa Fe gave its verdict.
+
+142
+00:07:23,047 --> 00:07:26,257
+Twenty-six of those twenty-nine
+statements were misleading.
+
+143
+00:07:26,687 --> 00:07:30,837
+And then the jury did something no
+headline explained well. It counted.
+
+144
+00:07:31,253 --> 00:07:34,676
+New Mexico's law sets a penalty
+for every single violation.
+
+145
+00:07:34,743 --> 00:07:39,293
+So the question became: how many
+violations is one misleading statement?
+
+146
+00:07:39,723 --> 00:07:42,351
+The answer used in court
+was each statement,
+
+147
+00:07:42,418 --> 00:07:46,086
+multiplied by everyone in New
+Mexico who could have seen it.
+
+148
+00:07:46,153 --> 00:07:49,043
+Not everyone who did see
+it. Everyone who could.
+
+149
+00:07:49,473 --> 00:07:52,224
+The jury's total came
+to forty-three million,
+
+150
+00:07:52,291 --> 00:07:57,356
+eight hundred and ninety-nine thousand,
+seven hundred and twenty-five violations.
+
+151
+00:07:57,423 --> 00:08:01,975
+Five of those were for something the
+law treats as worse than misleading:
+
+152
+00:08:02,042 --> 00:08:03,616
+unconscionable practices.
+
+153
+00:08:03,683 --> 00:08:07,324
+That is not forty-three million
+victims. It is a counting method,
+
+154
+00:08:07,391 --> 00:08:09,843
+and Meta's appeal will
+attack exactly that.
+
+155
+00:08:10,273 --> 00:08:12,458
+At five thousand dollars a violation,
+
+156
+00:08:12,525 --> 00:08:16,656
+the law allowed two hundred and
+nineteen point five billion dollars.
+
+157
+00:08:16,723 --> 00:08:19,548
+At the penalty hearing
+on the first of October,
+
+158
+00:08:19,615 --> 00:08:23,176
+the state's lawyer asked for
+thirty-five to forty billion.
+
+159
+00:08:23,243 --> 00:08:26,703
+Meta asked the court to stop at
+three point four five billion.
+
+160
+00:08:27,133 --> 00:08:28,556
+So the judge had a range,
+
+161
+00:08:28,623 --> 00:08:32,906
+from about three and a half billion
+to two hundred and nineteen billion.
+
+162
+00:08:32,973 --> 00:08:37,123
+Three weeks later, Judge Francis
+Mathew signed a twenty-page judgment.
+
+163
+00:08:37,553 --> 00:08:40,353
+Judge Mathew wrote that
+Facebook's wrongdoing "goes
+
+164
+00:08:40,420 --> 00:08:43,343
+to the heart of Facebook's
+core business practices."
+
+165
+00:08:43,773 --> 00:08:47,119
+Then the judge cut the penalty
+to twenty-five billion dollars.
+
+166
+00:08:47,186 --> 00:08:49,333
+The law allowed almost nine times more.
+
+167
+00:08:49,763 --> 00:08:53,123
+Interest runs at fifteen
+percent a year until it is paid.
+
+168
+00:08:53,190 --> 00:08:54,933
+More orders could still come.
+
+169
+00:08:55,353 --> 00:08:59,523
+And the money goes to the State of
+New Mexico. Not to a single user.
+
+170
+00:08:59,953 --> 00:09:01,695
+Meta said it would appeal,
+
+171
+00:09:01,762 --> 00:09:06,143
+and its chief legal officer said
+he was confident it would win.
+
+172
+00:09:06,573 --> 00:09:10,376
+Meta's position is simple. It
+says it does not sell user data.
+
+173
+00:09:10,443 --> 00:09:14,313
+And it says the state never proved
+that anyone was actually misled.
+
+174
+00:09:14,743 --> 00:09:18,468
+In its quarterly filing, Meta
+set money aside for the penalty,
+
+175
+00:09:18,535 --> 00:09:20,003
+without saying how much.
+
+176
+00:09:20,433 --> 00:09:23,986
+So how big is twenty-five
+billion dollars for this company?
+
+177
+00:09:24,053 --> 00:09:27,023
+It is about thirty-nine percent
+of one quarter's revenue.
+
+178
+00:09:27,453 --> 00:09:30,167
+It is about thirty
+percent of the eighty-two
+
+179
+00:09:30,234 --> 00:09:33,386
+billion dollars Meta holds
+in cash and securities.
+
+180
+00:09:33,453 --> 00:09:36,891
+Painful. But not fatal.
+In the same quarter,
+
+181
+00:09:36,958 --> 00:09:39,759
+its revenue grew twenty-six percent,
+
+182
+00:09:39,826 --> 00:09:44,923
+and three point six four billion
+people used its apps every day.
+
+183
+00:09:45,353 --> 00:09:48,976
+The real pressure in that same
+quarter came from somewhere else.
+
+184
+00:09:49,043 --> 00:09:52,038
+Meta booked a nine point
+eight nine billion dollar
+
+185
+00:09:52,105 --> 00:09:55,956
+charge for a separate settlement
+over teenagers' mental health.
+
+186
+00:09:56,023 --> 00:09:58,773
+Its operating income fell
+thirty-seven percent.
+
+187
+00:09:59,203 --> 00:10:03,142
+It spent almost thirty-five
+billion dollars in three months,
+
+188
+00:10:03,209 --> 00:10:06,606
+mostly on data centres for
+artificial intelligence.
+
+189
+00:10:06,673 --> 00:10:11,593
+So its free cash flow turned negative,
+minus two point one two billion dollars.
+
+190
+00:10:12,023 --> 00:10:14,852
+It plans to sell ninety-seven
+and a half billion
+
+191
+00:10:14,919 --> 00:10:17,693
+dollars of new stock to
+pay for the build-out.
+
+192
+00:10:18,123 --> 00:10:19,838
+On the thirtieth of October,
+
+193
+00:10:19,905 --> 00:10:23,716
+the ratings agency S and P moved
+Meta's outlook to negative.
+
+194
+00:10:23,783 --> 00:10:26,533
+Meta replied that it
+"respectfully" disagreed.
+
+195
+00:10:26,963 --> 00:10:32,274
+So the company that can absorb a
+twenty-five billion dollar penalty is,
+
+196
+00:10:32,341 --> 00:10:37,113
+at the same time, selling new
+shares to pay for its own future.
+
+197
+00:10:37,553 --> 00:10:42,153
+So here is the lesson. And it goes back
+to that promise from twenty twelve.
+
+198
+00:10:42,583 --> 00:10:45,135
+Meta did not fall when the scandal broke,
+
+199
+00:10:45,202 --> 00:10:48,836
+because the scandal was the
+business working as designed.
+
+200
+00:10:48,903 --> 00:10:51,958
+The quiz used a permission
+Facebook gave every app.
+
+201
+00:10:52,025 --> 00:10:55,453
+The data was valuable because
+Facebook made it valuable.
+
+202
+00:10:55,883 --> 00:11:00,273
+The fines were records, and the company
+paid them out of a growing pile.
+
+203
+00:11:00,703 --> 00:11:05,796
+What changed in twenty twenty-six was
+not the scandal. It was the arithmetic.
+
+204
+00:11:05,863 --> 00:11:10,443
+One state refused to settle, and
+counted the cost statement by statement.
+
+205
+00:11:10,873 --> 00:11:14,813
+The bill is ordered. It is not paid.
+
+206
+00:11:15,243 --> 00:11:16,613
+If the appeal fails,
+
+207
+00:11:16,680 --> 00:11:19,487
+New Mexico will have shown that a broken
+
+208
+00:11:19,554 --> 00:11:22,792
+promise can be priced
+one statement at a time,
+
+209
+00:11:22,859 --> 00:11:25,726
+at a scale that even Meta has to notice.
+
+210
+00:11:25,793 --> 00:11:26,822
+If it succeeds,
+
+211
+00:11:26,889 --> 00:11:32,811
+then in the end the biggest bill in this
+story will stay exactly what it is today,
+
+212
+00:11:32,878 --> 00:11:36,024
+a number on paper that
+nobody has ever paid,
+
+213
+00:11:36,091 --> 00:11:40,473
+because the arithmetic behind
+it did not survive the appeal.
+
+214
+00:11:40,903 --> 00:11:42,855
+So tell us what you think:
+
+215
+00:11:42,922 --> 00:11:48,056
+should a company pay for every
+misleading thing it tells its users,
+
+216
+00:11:48,123 --> 00:11:51,376
+or only for what someone can prove it did?
+
+217
+00:11:51,443 --> 00:11:52,893
+Tell us in the comments.
+
