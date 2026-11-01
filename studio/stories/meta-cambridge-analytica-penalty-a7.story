@@ -15,16 +15,16 @@ motif: bill_tape
 {tense} Meta said it would appeal, and its chief legal officer said he was confident it would **win**.
 
 // CARD a7-02 · SEE: two typed index cards on the desk: the verdict card (26 of 29 statements misleading · the jury, 25 Sep 2026) lies there; on "sell" Meta's position lands beside it: it does not sell user data, and nobody was proven misled · via Reuters · SEAM out right
-# cine act=doubt fx="code:@claim_vs_denial;claim:26 of 29 statements were misleading.^THE JURY · 25 SEP 2026^-;reply:Meta does not sell user data, and nobody was proven misled.^META'S POSITION · via Reuters, Oct 2026^sell;out:right"
+# cine act=doubt fx="code:@claim_vs_denial;claim:26 of 29 statements were misleading.^THE JURY · 25 SEP 2026^-;reply:Meta does not sell user data, and nobody was proven misled.^META'S POSITION · via Reuters, Oct 2026^sell;out:right;push:.008"
 Meta's position is simple. It says it does not sell user **data**.
 And it says the state never proved that anyone was actually **misled**.
 
 // CARD a7-03 · SEE: a stack of filing paper on the desk; on "filing" a paper slip rises out of it; on "aside" a question writes itself in pencil: HOW MUCH? · NOT DISCLOSED · SEAM in right
-# cine act=doubt fx="code:@question_on_box;box:meta_cut_document_stack_blank;go:filing;go2:aside;bs:.5;q:HOW MUCH? NOT DISCLOSED;in:right"
+# cine act=doubt fx="code:@question_on_box;box:meta_cut_document_stack_blank;go:filing;go2:aside;bs:.5;q:HOW MUCH? NOT DISCLOSED;in:right;push:.018;pan:.005"
 In its quarterly filing, Meta set money aside for the penalty, without saying **how much**.
 
 // CARD a7-04 · SEE: the real Meta campus from the air; a ring of shares drawn on it: THE PENALTY 39 % lifts out of ONE QUARTER'S REVENUE, the rest 61 % in grey · SEAM out right
-# cine act=doubt fx="code:@pie_on_photo;pic:meta_facebook_campus_aerial;mid:39%~Q3 2026;slices:THE PENALTY^39^1^#e5332a~THE REST^61^0^#6d7380;go:big;out:right"
+# cine act=doubt fx="code:@pie_on_photo;pic:meta_facebook_campus_aerial;mid:39%~Q3 2026;slices:THE PENALTY^39^1^#e5332a~THE REST^61^0^#6d7380;go:big;out:right;push:.008"
 So how big is twenty-five billion dollars for this **company**?
 It is about thirty-nine percent of one quarter's **revenue**.
 
@@ -34,22 +34,22 @@ It is about thirty percent of the eighty-two billion dollars Meta holds in cash 
 Painful. But not **fatal**. In the same quarter, its revenue grew twenty-six percent, and three point six four billion people used its apps every **day**.
 
 // CARD a7-06 · SEE: a real Facebook headquarters building, dim; three bars drop below a zero line one after another: OPERATING INCOME −37 %, the note: includes a $9.89B charge for the separate teen settlement · SEAM out right
-# cine act=fall fx="code:@three_drops;bg:meta_facebook_hq_building_16;items:OPERATING INCOME^-37;go:separate;note:includes a $9.89B teen-settlement charge;out:right"
+# cine act=fall fx="code:@three_drops;bg:meta_facebook_hq_building_16;items:OPERATING INCOME^-37;go:separate;note:includes a $9.89B teen-settlement charge;out:right;push:.008"
 The real pressure in that same quarter came from somewhere **else**.
 Meta booked a nine point eight nine billion dollar charge for a separate settlement over teenagers' mental **health**.
 Its operating income fell thirty-seven **percent**.
 
 // CARD a7-07 · SEE: real data-centre racks; a green bar stands above a zero line, FREE CASH FLOW Q3 2025 +$10.6B; on "So" it swings down through zero to −$2.1B, Q3 2026 · SEAM in right
-# cine act=fall fx="code:@swing_bar;bg:meta_server_aisle_archives;a:10.63;b:-2.12;go:mostly;zy:.52;alab:Q3 2025;blab:Q3 2026;unit:B;dim:.5;in:right"
+# cine act=fall fx="code:@swing_bar;bg:meta_server_aisle_archives;a:10.63;b:-2.12;go:mostly;zy:.52;alab:Q3 2025;blab:Q3 2026;unit:B;dim:.5;in:right;push:.018;pan:.005"
 It spent almost thirty-five billion dollars in three months, mostly on data centres for artificial **intelligence**.
 So its free cash flow turned negative, minus two point one two billion **dollars**.
 
 // CARD a7-08 · SEE: the real Utah data-centre campus; a paper price tag swings in: $97.5B · NEW STOCK TO SELL · SEAM out right
-# cine act=rise fx="code:@valuation_tag;bg:meta_utah_datacenter_panorama;vals:$97.5B@plans;x:.64;lab:NEW STOCK TO SELL;sub:to pay for the AI build-out;out:right"
+# cine act=rise fx="code:@valuation_tag;bg:meta_utah_datacenter_panorama;vals:$97.5B@plans;x:.64;lab:NEW STOCK TO SELL;sub:to pay for the AI build-out;out:right;push:.018;pan:-.005"
 It plans to sell ninety-seven and a half billion dollars of new stock to pay for the **build-out**.
 
 // CARD a7-09 · SEE: the real Facebook campus entrance; on "negative" a red sash sweeps across its corner: OUTLOOK NEGATIVE; S&P GLOBAL RATINGS · 30 OCT 2026 · AA− AFFIRMED · SEAM in right
-# cine act=fall fx="code:@corner_banner;pic:meta_facebook_campus_entrance;bx:.66;by:.3;bl:.5;word:OUTLOOK NEGATIVE;terms:S&P GLOBAL RATINGS · 30 OCT 2026 · AA− AFFIRMED;go:outlook;in:right"
+# cine act=fall fx="code:@corner_banner;pic:meta_facebook_campus_entrance;bx:.66;by:.3;bl:.5;word:OUTLOOK NEGATIVE;terms:S&P GLOBAL RATINGS · 30 OCT 2026 · AA− AFFIRMED;go:outlook;in:right;push:.018;pan:.005"
 On the thirtieth of October, the ratings agency S and P moved Meta's outlook to **negative**.
 {wry} Meta replied that it "respectfully" **disagreed**. (J)
 

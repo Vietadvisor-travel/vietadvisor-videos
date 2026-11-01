@@ -19,11 +19,11 @@ Meta did not fall when the scandal broke, because the scandal was the business w
 The quiz used a permission Facebook gave every app. The data was valuable because Facebook made it **valuable**.
 
 // CARD a8-03 · SEE: a long gold bar over the real Facebook campus from the air: FACEBOOK REVENUE · 2018, ONE YEAR; on "fines" its end peels off: THE $5B FTC PENALTY · 9 % · SEAM in right
-# cine act=lesson fx="code:@bar_slice;bg:meta_facebook_campus_aerial_marsh;total:100;part:9;go:fines;tlab:FACEBOOK REVENUE · 2018 · ONE YEAR;plab:THE $5B FTC PENALTY · 9%;unit:%;in:right"
+# cine act=lesson fx="code:@bar_slice;bg:meta_facebook_campus_aerial_marsh;total:100;part:9;go:fines;tlab:FACEBOOK REVENUE · 2018 · ONE YEAR;plab:THE $5B FTC PENALTY · 9%;unit:%;in:right;push:.018;pan:.005"
 The fines were records, and the company paid them out of a growing **pile**. (J)
 
 // CARD a8-04 · SEE: the real pages of the judgment flick past and stop on page 19 on "arithmetic"; the camera reads in and the highlighter runs: The jury found those statements to be false as well: STATEMENT BY STATEMENT · SEAM out right
-# cine act=lesson fx="code:@page_turn;pages:meta_doc_nm_judgment_2026_p2,meta_doc_nm_judgment_2026_p17,meta_doc_nm_judgment_2026_p19;stop:arithmetic;marks:.422,.408,.821,.426@refused;zoom:refused;z:.8;lab:STATEMENT BY STATEMENT;out:right"
+# cine act=lesson fx="code:@page_turn;pages:meta_doc_nm_judgment_2026_p2,meta_doc_nm_judgment_2026_p17,meta_doc_nm_judgment_2026_p19;stop:arithmetic;marks:.422,.408,.821,.426@refused;zoom:refused;z:.8;lab:STATEMENT BY STATEMENT;out:right;push:.008"
 What changed in twenty twenty-six was not the scandal. It was the **arithmetic**.
 One state refused to settle, and counted the cost statement by **statement**.
 

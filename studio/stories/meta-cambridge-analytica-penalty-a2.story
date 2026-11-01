@@ -11,11 +11,11 @@ endcard: off
 motif: bill_tape
 
 // CARD a2-01 · SEE: the real Kings College Chapel in Cambridge across the river; on "researcher" a pin drops: CAMBRIDGE UNIVERSITY · THE QUIZ, 2014 (no photo of Kogan exists in free sources) · SEAM in right
-# cine act=setup fx="code:@place_pin;bg:meta_kings_chapel_river;x:.5;y:.45;go:researcher;lab:CAMBRIDGE UNIVERSITY;sub:Aleksandr Kogan's quiz · 2014;in:right"
+# cine act=setup fx="code:@place_pin;bg:meta_kings_chapel_river;x:.5;y:.45;go:researcher;lab:CAMBRIDGE UNIVERSITY;sub:Aleksandr Kogan's quiz · 2014;in:right;push:.018;pan:.005"
 In twenty fourteen, a Cambridge University researcher named Aleksandr Kogan built a personality quiz called "This is your digital **life**."
 
 // CARD a2-02 · SEE: NEW: a small square of gold dots, 270,000 DOWNLOADED; on "Through" it bursts into a field of blue dots that fills the frame: UP TO 87 MILLION PROFILES (FACEBOOK'S ESTIMATE) · SEAM out right
-# cine act=rise fx="code:@cascade_field;bg:meta_art_scene_data_harvest;a:270,000;alab:DOWNLOADED THE QUIZ;b:UP TO 87 MILLION;blab:PROFILES · FACEBOOK'S OWN ESTIMATE;go:Through;src:about 82% in the United States;out:right"
+# cine act=rise fx="code:@cascade_field;bg:meta_art_scene_data_harvest;a:270,000;alab:DOWNLOADED THE QUIZ;b:UP TO 87 MILLION;blab:PROFILES · FACEBOOK'S OWN ESTIMATE;go:Through;src:about 82% in the United States;out:right;push:.008"
 About two hundred and seventy thousand people downloaded **it**.
 Through their friend lists, the app reached far more people than that.
 Facebook's own estimate, published by its chief technology officer in April twenty eighteen, was up to eighty-seven million **profiles**.
