@@ -29,7 +29,7 @@ So how big is twenty-five billion dollars for this **company**?
 It is about thirty-nine percent of one quarter's **revenue**.
 
 // CARD a7-05 · SEE: NEW: a wall of 82 gold bars, one per billion, CASH AND SECURITIES; on "thirty" 25 of them slide out to the right into their own red pile: THE PENALTY · 30 % · SEAM in right
-# cine act=doubt fx="code:@stack_bite;bg:meta_el_texture_glass_reflection;total:82;part:25;go:thirty;alab:CASH + SECURITIES · $82.4B;blab:THE PENALTY · $25B;lab:PAINFUL. NOT FATAL.;note:30%;in:right"
+# cine act=doubt fx="code:@stack_bite;bg:stock_finance_exchange_floor_06;total:82;part:25;go:thirty;alab:CASH + SECURITIES · $82.4B;blab:THE PENALTY · $25B;lab:PAINFUL. NOT FATAL.;note:30%;in:right"
 It is about thirty percent of the eighty-two billion dollars Meta holds in cash and **securities**.
 Painful. But not **fatal**. In the same quarter, its revenue grew twenty-six percent, and three point six four billion people used its apps every **day**.
 

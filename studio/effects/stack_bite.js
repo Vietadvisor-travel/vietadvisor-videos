@@ -7,7 +7,7 @@
 */
 ({ t, at, p, spring, W, H, u, img, clip, ctx, params: P, clamp, lerp, text, seam, cover, rng, dur }) => {
   ctx.save(); seam(P.in || 'none', P.out || 'none');
-  const bg = clip(P.bg, 0, 1) || img(P.bg), k = clamp(t / Math.max(1, dur)); if (bg) cover(bg, { z: 1.08, filter: 'brightness(.3) blur(2px)' }); else { ctx.fillStyle = '#0b0d12'; ctx.fillRect(-W, -H, 3 * W, 3 * H); }
+  const bg = clip(P.bg, 0, 1) || img(P.bg), k = clamp(t / Math.max(1, dur)); if (bg) cover(bg, { z: 1.1 + .3 * Math.min(1, t / Math.max(1, dur)), ox: (Math.min(1, t / Math.max(1, dur)) - .5) * -.2, filter: 'brightness(.45) blur(1px)' }); else { ctx.fillStyle = '#0b0d12'; ctx.fillRect(-W, -H, 3 * W, 3 * H); }
   const N = +(P.total || 82), M = +(P.part || 25), t0 = at(P.go || 0), cols = 10, bw = 58 * u, bh = 26 * u, gx = W * .12, base = H * .8;
   const bar = (x, y, red) => { ctx.fillStyle = red ? '#e5332a' : '#d9a93a'; ctx.fillRect(x, y, bw, bh); ctx.fillStyle = red ? '#ff8a80' : '#f6d27a'; ctx.fillRect(x, y, bw, 5 * u); ctx.strokeStyle = 'rgba(0,0,0,.35)'; ctx.lineWidth = 2 * u; ctx.strokeRect(x, y, bw, bh); };
   for (let i = 0; i < N; i++) { const c = i % cols, r = Math.floor(i / cols), x = gx + c * (bw + 6 * u), y = base - (r + 1) * (bh + 4 * u), bite = i >= N - M, j = i - (N - M), ki = bite ? clamp((t - t0 - j * .04) / .5) : 0;

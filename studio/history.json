@@ -146,17 +146,18 @@
   "opening": null,
   "ending": null,
   "looks": [
-   "dossier"
+   "tech"
   ],
   "open": "code",
   "modes": {
-   "code": 9
+   "code": 10
   },
   "verbs": {},
   "trans": {},
   "tracks": [
-   "km_deep_haze",
-   "km_lightless_dawn"
+   "km_unseen_horrors",
+   "km_volatile_reaction",
+   "km_darkest_child"
   ],
   "date": "2026-11-01"
  }
