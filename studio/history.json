@@ -150,12 +150,13 @@
   ],
   "open": "code",
   "modes": {
-   "code": 8
+   "code": 5
   },
   "verbs": {},
   "trans": {},
   "tracks": [
-   "km_fretless"
+   "km_unseen_horrors",
+   "km_volatile_reaction"
   ],
   "date": "2026-11-01"
  }
