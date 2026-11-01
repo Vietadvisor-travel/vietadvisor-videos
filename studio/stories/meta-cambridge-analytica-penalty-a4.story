@@ -26,7 +26,7 @@ In October, Britain's data regulator fined it five hundred thousand **pounds**.
 It found that at least one million British users had been put at **risk**.
 
 // CARD a4-04 · SEE: a real office, dim; chalk tally marks scratch themselves, one a minute, to seventeen: ≈ 17 MINUTES OF PROFIT; £500,000 per The Register · SEAM out right
-# cine act=doubt fx="code:@years_tally;pic:meta_art_office_night;n:17;go:maximum;span:1.4;lab:≈ 17 MINUTES OF PROFIT;lab2:£500,000 · per The Register, 2018;at2:tech;out:right;push:.008"
+# cine act=doubt fx="code:@years_tally;pic:stock_office_desks_night_15;n:17;go:maximum;span:1.4;lab:≈ 17 MINUTES OF PROFIT;lab2:£500,000 · per The Register, 2018;at2:tech;out:right;push:.008"
 That was the legal maximum. One tech news site worked out it was about seventeen minutes of Facebook's **profit**. (J)
 
 // CARD a4-05 · SEE: the real Palace of Westminster at dusk; a paper card rises and the verbatim line of the committee report types on it, "digital gangsters" underlined · SEAM in right
@@ -43,7 +43,7 @@ Then, on the twenty-fourth of July, twenty nineteen, the Federal Trade Commissio
 It was the largest privacy penalty ever imposed at the time. But it was about nine percent of Facebook's revenue for one **year**.
 
 // CARD a4-08 · SEE: the pages of the real 2019 FTC order flick past and stop on page 24, CERTIFICATIONS; the camera reads in and the highlighter runs: the Independent Privacy Committee on "committee", each full fiscal quarter on "personally", signed by the Principal Executive Officer on "sign" · SEAM out right
-# cine act=rise fx="code:@page_turn;pages:meta_doc_ftc_order_2019_p1,meta_doc_ftc_order_2019_p3,meta_doc_ftc_order_2019_p24;stop:order;marks:.34,.847,.594,.861@committee~.518,.83,.694,.844@personally~.389,.882,.715,.896@sign;zoom:committee;z:.8;lab:EVERY QUARTER;out:right;push:.008"
+# cine act=rise fx="code:@page_turn;pages:meta_doc_ftc_order_2019_p1,meta_doc_ftc_order_2019_p3,meta_doc_ftc_order_2019_p24;stop:order;marks:.34,.847,.594,.861@committee~.518,.83,.694,.844@personally~.389,.882,.715,.896@sign;zoom:committee;z:.8;lab:EVERY QUARTER;out:right;push:.013"
 The order also put a new privacy committee on Facebook's board, and made Zuckerberg personally sign off on privacy every **quarter**.
 
 // CARD a4-09 · SEE: the real SEC complaint of 24 July 2019 on a dark desk; on "may" a red line strikes the words "may be"; KNEW FOR ABOUT TWO YEARS · SEAM in right
