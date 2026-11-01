@@ -4,6 +4,7 @@ Scan date: Sun 01 Nov 2026. This file covers Tue 03 Nov, Thu 05 Nov and Sat 07 N
 Tue and Thu are already produced or researched, so they are marked DONE and are not re-picked.
 Sat 07 Nov 2026 is the first slot chosen purely by the Sunday trend scan.
 No retired 30-day pool topic was picked in this scan. Nike vs Adidas has no publish date in this file: it is owner triggered separately and is not a slot here.
+Owner decision Sun 01 Nov 2026: the owner locked three topics from this scan. Getty Images takes Sat 07 Nov 2026, replacing Weil. Meta takes Tue 10 Nov 2026. Anthropic takes Thu 12 Nov 2026. Weil returns to the idea pool, not lost. The Sun 08 Nov 2026 scan must honour the Meta and Anthropic locks and must not re-pick them.
 
 ## Slots
 
@@ -13,30 +14,50 @@ Produced by Claude Code. Film on Claude's side. Not re-picked.
 ### Thu 05 Nov 2026: wework (WeWork / Adam Neumann). DONE
 Research pack pushed 27 Oct 2026 (jobs/wework/ plus Drive wework/). Awaiting the owner's "lam tap wework" to Claude. Not re-picked.
 
-### Sat 07 Nov 2026: weil-gotshal-bank-run (Weil, Gotshal and Manges). OPEN PICK
+### Sat 07 Nov 2026: getty-images-bankruptcy (Getty Images). OPEN PICK, owner locked 01 Nov 2026 (replaces Weil, which returns to the idea pool)
 
-- Topic: Weil, Gotshal and Manges, the 95 year old law firm that collapsed like a bank run.
-- Slug: weil-gotshal-bank-run
+- Topic: Getty Images, the photo empire that went from a 2022 valuation near USD 4.8 billion to Chapter 11.
+- Slug: getty-images-bankruptcy
 - Publish date: Sat 07 Nov 2026
-- Why now, with dates: On 28 Oct 2026 the firm's management committee recommended an orderly wind-down after failed merger talks with Willkie Farr and Gallagher. Bloomberg Law, Reuters, the ABA Journal and Fortune covered it on 29 and 30 Oct 2026. Partners were expected to vote on the recommendation in the coming days, which puts the vote in the week of 02 Nov 2026, right before this publish date. On 29 Oct 2026, 9fin reported AlixPartners had been hired to manage the dissolution. Research pack must recheck the vote result before scripting: if the vote does not confirm the wind-down, this slot must be rechecked, not published as a collapse.
-- Angle: Not a fraud story and not a bankruptcy caused by debt. A profitable, famous firm died because its only real asset walked out of the building. Each partner who left gave the next partner a reason to leave.
-- Thesis: A law firm is not a company with assets. It is a promise among partners, and when belief in that promise breaks, the collapse runs faster than any balance sheet problem can explain.
-- Hook: "The firm that buried Enron, Lehman Brothers and General Motors just buried itself, and it was still making money when it did."
-- Archetype: Partner run (structural collapse, no single villain, no fraud at the centre).
+- Why now, with dates: Restructuring announced 12 Oct 2026. Chapter 11 filed 21 Oct 2026 in Delaware, about USD 2.1 billion in debt. Market value down about 99 percent from a 2022 valuation near USD 4.8 billion. Next court peg: hearing reported for 14 Dec 2026. Research pack must recheck the filing details and the prepackaged plan terms before scripting.
+- Angle: Not a story about photography dying. A story about the photo stopping being scarce: free stock, AI generators, and a debt loaded balance sheet from the merger era. The gap angle the existing videos missed: the Getty family oil fortune origin, the editorial versus stock split, and the photographer human cost.
+- Thesis: Getty did not die because photography died. It died because the photo stopped being scarce and the debt stayed.
+- Hook: "The most famous photo archive on earth is worth 99 percent less than it was four years ago, and it just filed for bankruptcy."
+- Archetype: Debt collapse under disruption (AI and free stock versus a leveraged empire).
 - 3 signature shots:
-  1. A partner office at dusk, nameplate removed, boxes packed, the chair still warm.
-  2. Elevator doors closing on an empty floor, the visual version of the line that a firm's assets go down the elevator every night.
-  3. A table stacked with the bankruptcy files Weil itself handled, Enron, Lehman, GM, and then one more file placed on top: Weil's own.
-- Main keyword: Weil Gotshal collapse
+  1. Archive shelves of film negatives, the physical weight of a century of images.
+  2. A working photographer on assignment, cut against an AI image prompt screen.
+  3. A court filing stamp landing on a balance sheet, then the same balance sheet with the debt figure circled.
+- Main keyword: Getty Images bankruptcy
 - Search volume: Not pulled in this scan. Do not invent a number. The research pack must verify volume with Ubersuggest before scripting.
 - Top 3 existing videos and the gap they missed:
-  1. TalksOnLaw, "Why Weil Gotshal Collapsed?" with Prof John Morley, recorded 28 Oct 2026, about 1 hour. A podcast interview about partner run theory. It has no animated narrative, no Weil history arc, and no mainstream story structure.
-  2. Bloomberg Law's Dewey and LeBoeuf documentary, revisited in a LinkedIn post on 30 Oct 2026. It explains the precedent, not Weil, and it is about 2012, not the 2026 succession failure.
-  3. The Lawyer Podcast emergency episode, 29 Oct 2026. An audio news explainer. It has no visuals, no rise arc from 1931, and no irony of the bankruptcy practice itself collapsing.
-  Gap: No short animated documentary tells the full Weil story for a general audience: the rise as the firm that invented modern bankruptcy practice, the slow relative decline, the botched succession, the summer 2026 exodus, the failed merger, and the bank run mechanism in plain language.
-- Asset feasibility: Medium high. Real photos and documents exist: New York headquarters exterior, London offices, courtrooms, and public filings for the bankruptcies Weil advised. The stock library already covers court, office, bankruptcy and protest categories, so the film does not need product shots or invented faces. Use empty offices, documents and exteriors, not AI portraits of real partners.
-- Rise-fall clarity: High. Founded 1931, about 1,200 lawyers, nearly USD 2.1 billion in revenue last year, adviser to Enron (2001), Lehman (2008) and GM, then a partner exodus in summer and autumn 2026, a failed Willkie merger, a successor who declined the top job, and a wind-down recommendation on 28 Oct 2026. The paradox is the story: still profitable, yet finished.
-- Score: 89 out of 100 (trend heat 34, rise-fall clarity 33, asset feasibility 22).
+  1. "Getty Images' USD 2.1 Billion Bankruptcy" (announcement based, mid October 2026).
+  2. "How Did a USD 4.8 Billion Photo Empire Go Bankrupt?" (late October 2026).
+  3. "Getty Images: The USD 2.1 Billion Debt That Wiped Out Its Owners" (crawled 25 Oct 2026, covering the 21 Oct 2026 filing).
+  Gap: All three cover the same debt, merger and AI chain. None covers the Getty family oil fortune origin, the editorial versus stock split, or the photographer human cost.
+- Asset feasibility: Medium. Real documents exist: Chapter 11 filings, court records, news headlines. Office exteriors and photographer stock exist as free footage. Getty's own catalogue images are rights managed and must not be used as free assets. Use filings, headlines, exteriors and generic photographer footage, never watermarked Getty images.
+- Rise-fall clarity: Medium high. Rise from family fortune to global photo empire, 2022 valuation near USD 4.8 billion, then debt and AI disruption to Chapter 11. Muddied by the prepackaged plan: the business continues, so the fall is not a clean shutdown.
+- Score: 88 out of 100.
+
+## Owner-locked for the week of 09 Nov 2026 (owner decision 01 Nov 2026, the Sun 08 Nov scan must honour these and must not re-pick them)
+
+### Tue 10 Nov 2026: meta-cambridge-analytica-penalty (Meta, Cambridge Analytica penalty). OWNER LOCKED
+
+- Topic: Meta and the Cambridge Analytica penalty.
+- Slug: meta-cambridge-analytica-penalty
+- Publish date: Tue 10 Nov 2026
+- Why now, with dates: New Mexico judge ordered a USD 25 billion penalty on 21 Oct 2026, after a September 2026 jury finding of more than 43 million violations.
+- Caveat from the scan: Meta itself has not fallen, so rise-fall clarity is capped. This is a scandal inside an empire still standing, not a collapse.
+- Score: 82 out of 100.
+
+### Thu 12 Nov 2026: anthropic-ipo (Anthropic IPO). OWNER LOCKED
+
+- Topic: Anthropic IPO.
+- Slug: anthropic-ipo
+- Publish date: Thu 12 Nov 2026
+- Why now, with dates: Public S-1 filed 26 Oct 2026, Nasdaq ticker ANT, reported roadshow from 09 Nov 2026 and listing in the week of 16 Nov 2026, reported valuation USD 1.5 to 2 trillion against a May 2026 private valuation of USD 965 billion.
+- Caveat from the scan: Rise only so far, no fall, and the listing date is not confirmed. Research pack must recheck the listing date before scripting.
+- Score: 79 out of 100.
 
 ## Candidates scored (scan of 25 to 31 Oct 2026)
 
