@@ -57,7 +57,7 @@ In twenty twenty-two, Meta agreed to pay seven hundred and twenty-five million d
 Shared among up to eighty-seven million people, that was a few dollars **each**.
 
 // CARD a4-11 · SEE: index cards drop onto a dark desk one per sentence: TEXAS / facial recognition / $1.4B · 2024, IRELAND / data transfers / €1.2B · 2023, SHAREHOLDERS / sought $8B / SETTLED · 2025 · SEAM in right
-# cine act=fall fx="code:@case_cards;rows:TEXAS/biometrics · 2024/$1.4 BILLION~IRELAND/data to the US · 2023/€1.2 BILLION~SHAREHOLDERS/sought $8B/SETTLED;gos:Texas,Ireland,shareholders;title:OTHER PRIVACY BILLS;in:right"
+# cine act=fall fx="code:@case_cards;bg:stock_finance_exchange_floor_07;rows:TEXAS/biometrics · 2024/$1.4 BILLION~IRELAND/data to the US · 2023/€1.2 BILLION~SHAREHOLDERS/sought $8B/SETTLED;gos:Texas,Ireland,shareholders;title:OTHER PRIVACY BILLS;in:right"
 In other privacy cases, Texas got one point four billion **dollars**.
 And Ireland's regulator fined it one point two billion **euros**.
 In twenty twenty-five, shareholders who had sued Zuckerberg and other executives for eight billion dollars settled in the middle of the trial, on terms nobody **disclosed**.
