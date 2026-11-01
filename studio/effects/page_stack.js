@@ -9,9 +9,9 @@
   // a real document's first page drops onto a desk with weight, then the rest of the filing builds up under it as a thick
   // stack (its page count made physical); a filing label types beside it. params: doc, crop (x0,y0,x1,y1), land, grow, pages, lab, sub, in, out
   ctx.save(); seam(P.in || 'none', P.out || 'none');
-  ctx.fillStyle = '#15110d'; ctx.fillRect(-W, -H, 3 * W, 3 * H); const lg = ctx.createRadialGradient(W * .42, H * .42, 0, W * .42, H * .42, W * .7); lg.addColorStop(0, 'rgba(255,214,150,.14)'); lg.addColorStop(1, 'rgba(0,0,0,.55)'); ctx.fillStyle = lg; ctx.fillRect(0, 0, W, H);
+  ctx.fillStyle = '#15110d'; ctx.fillRect(-W, -H, 3 * W, 3 * H); const lg = ctx.createRadialGradient(W * (.42 + (Math.min(1, t / Math.max(1, dur)) - .5) * .7), H * .42, 0, W * (.42 + (Math.min(1, t / Math.max(1, dur)) - .5) * .7), H * .42, W * .7); lg.addColorStop(0, 'rgba(255,214,150,.22)'); lg.addColorStop(1, 'rgba(0,0,0,.55)'); ctx.fillStyle = lg; ctx.fillRect(0, 0, W, H);
   const im = img(P.doc); if (!im || !im.width) { ctx.restore(); return; }
-  const [c0, c1, c2, c3] = String(P.crop || '0,0,1,1').split(',').map(Number), sw = (c2 - c0) * im.width, sh = (c3 - c1) * im.height, s = Math.min(W * .5 / sw, H * .66 / sh), pw = sw * s, ph = sh * s;
+  const [c0, c1, c2, c3] = String(P.crop || '0,0,1,1').split(',').map(Number), sw = (c2 - c0) * im.width, sh = (c3 - c1) * im.height, s = Math.min(W * .5 / sw, H * .66 / sh) * (1 + .12 * Math.min(1, t / Math.max(1, dur))), pw = sw * s, ph = sh * s;
   const cx = W * .38, cy = H * .44, n = +(P.pages || 30), g = clamp(p(P.grow || P.land || 0, 1.4, 'inOut')), thick = n * .9 * u * g;
   for (let i = Math.floor(n * g); i > 0; i--) { const off = i * .9 * u; ctx.fillStyle = i % 3 ? '#e9e3d6' : '#d6cfbf'; ctx.fillRect(cx - pw / 2 + off * .6, cy - ph / 2 + off, pw, ph); }
   const k = clamp(spring(P.land || 0, { stiff: 130, damp: 17 }), 0, 1.05), z = lerp(1.6, 1, Math.min(1, k)), a = clamp(k * 3);

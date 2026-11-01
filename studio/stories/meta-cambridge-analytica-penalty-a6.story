@@ -21,7 +21,7 @@ The answer used in court was each statement, multiplied by everyone in New Mexic
 Not everyone who did see it. Everyone who **could**. (J)
 
 // CARD a6-03 · SEE: NEW: the sum builds on a dark slate: 43,899,720 UNFAIR OR DECEPTIVE, + 5 UNCONSCIONABLE; the result counts in gold: = 43,899,725 VIOLATIONS; A COUNTING METHOD, NOT A HEADCOUNT · SEAM out right
-# cine act=fall fx="code:@equation_cut;bg:stock_law_courthouse_17;rows:43,899,720 UNFAIR OR DECEPTIVE^total~+ 5 UNCONSCIONABLE^Five;result:= 43,899,725 VIOLATIONS;rgo:total;lab:THE JURY'S COUNT · 25 SEP 2026;note:a counting method, not 43 million victims;out:right"
+# cine act=fall fx="code:@equation_cut;bg:stock_law_courthouse_09;rows:43,899,720 UNFAIR OR DECEPTIVE^total~+ 5 UNCONSCIONABLE^Five;result:= 43,899,725 VIOLATIONS;rgo:total;lab:THE JURY'S COUNT · 25 SEP 2026;note:a counting method, not 43 million victims;out:right"
 The jury's total came to forty-three million, eight hundred and ninety-nine thousand, seven hundred and twenty-five **violations**.
 Five of those were for something the law treats as worse than misleading: unconscionable **practices**.
 That is not forty-three million victims. It is a counting **method**, and Meta's appeal will attack exactly that.
