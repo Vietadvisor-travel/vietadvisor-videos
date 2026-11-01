@@ -8,7 +8,7 @@
 ({ t, at, p, W, H, u, img, ctx, params: P, clamp, lerp, text, seam, dur }) => {
   ctx.save(); seam(P.in || 'none', P.out || 'none');
   ctx.fillStyle = '#15110d'; ctx.fillRect(-W, -H, 3 * W, 3 * H); const im = img(P.doc); if (!im || !im.width) { ctx.restore(); return; }
-  const s0 = Math.max(W / im.width, H / im.height) * 1.1; ctx.save(); ctx.filter = 'blur(7px) brightness(.32)'; ctx.drawImage(im, W / 2 - im.width * s0 / 2, H * .3 - im.height * s0 * .2, im.width * s0, im.height * s0); ctx.restore();
+  const kq = Math.min(1, t / Math.max(1, dur)), s0 = Math.max(W / im.width, H / im.height) * (1.1 + .25 * kq); ctx.save(); ctx.filter = 'blur(4px) brightness(.42)'; ctx.drawImage(im, W / 2 - im.width * s0 / 2, H * .3 - im.height * s0 * (.2 + .12 * kq), im.width * s0, im.height * s0); ctx.restore();
   const segs = String(P.line).split('+').map(q => q.split(',').map(Number)), k = clamp(p(0, .7, 'out5'));
   const sc = Math.min(W * .86 / Math.max(...segs.map(q => (q[2] - q[0]) * im.width)), H * .12 / Math.max(...segs.map(q => (q[3] - q[1]) * im.height)));
   const rows = segs.map(q => ({ q, w: (q[2] - q[0]) * im.width * sc, h: (q[3] - q[1]) * im.height * sc })), gap = 14 * u, tot = rows.reduce((a, r) => a + r.h + gap, -gap), pw = Math.max(...rows.map(r => r.w)), x0 = W / 2 - pw / 2;

@@ -7,7 +7,7 @@
 */
 ({ t, at, p, spring, W, H, u, img, clip, ctx, params: P, clamp, lerp, text, seam, cover, paperDesk, rng, dur }) => {
   ctx.save(); seam(P.in || 'none', P.out || 'none');
-  const bg = clip(P.bg, 0, 1) || img(P.bg), k = clamp(t / Math.max(1, dur)); if (bg) cover(bg, { z: 1.08 + .14 * k, ox: (k - .5) * -.1, filter: `brightness(${P.dim || .38})` }); else { ctx.fillStyle = '#0d0f14'; ctx.fillRect(-W, -H, 3 * W, 3 * H); }
+  const bg = clip(P.bg, 0, 1) || img(P.bg), k = clamp(t / Math.max(1, dur)); if (bg) cover(bg, { z: 1.1 + .3 * k, ox: (k - .5) * -.22, filter: `brightness(${P.dim || .5})` }); else { ctx.fillStyle = '#0d0f14'; ctx.fillRect(-W, -H, 3 * W, 3 * H); }
   const t0 = at(P.go || 0), kx = clamp((t - t0) / .4), kd = clamp((t - t0 - .3) / .6), ka = clamp((t - t0 - .6) / .7), y = H * .46, xs = [W * .2, W * .5, W * .8], bw = W * .2, bh = H * .16;
   const box = (x, y, lab, col, a) => { ctx.save(); ctx.globalAlpha = a; ctx.fillStyle = 'rgba(12,14,20,.85)'; ctx.fillRect(x - bw / 2, y - bh / 2, bw, bh); ctx.strokeStyle = col; ctx.lineWidth = 4 * u; ctx.strokeRect(x - bw / 2, y - bh / 2, bw, bh); text(lab, x, y, { size: 52 * u, font: 'cond', col, lw: 0, ls: 5 * u }); ctx.restore(); };
   const arrow = (x0, y0, x1, y1, f, col) => { const x = lerp(x0, x1, f), yy = lerp(y0, y1, f); ctx.strokeStyle = col; ctx.lineWidth = 6 * u; ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(x, yy); ctx.stroke(); if (f > .95) { const an = Math.atan2(y1 - y0, x1 - x0); ctx.fillStyle = col; ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x1 - 26 * u * Math.cos(an - .4), y1 - 26 * u * Math.sin(an - .4)); ctx.lineTo(x1 - 26 * u * Math.cos(an + .4), y1 - 26 * u * Math.sin(an + .4)); ctx.fill(); } };

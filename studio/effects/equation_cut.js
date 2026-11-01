@@ -7,7 +7,7 @@
 */
 ({ t, at, p, spring, W, H, u, img, clip, ctx, params: P, clamp, lerp, text, seam, cover, rng, dur }) => {
   ctx.save(); seam(P.in || 'none', P.out || 'none');
-  const bg = clip(P.bg, 0, 1) || img(P.bg), k = clamp(t / Math.max(1, dur)); if (bg) cover(bg, { z: 1.08, filter: 'brightness(.28) blur(3px)' }); else { ctx.fillStyle = '#0b0d12'; ctx.fillRect(-W, -H, 3 * W, 3 * H); }
+  const bg = clip(P.bg, 0, 1) || img(P.bg), k = clamp(t / Math.max(1, dur)); if (bg) cover(bg, { z: 1.1 + .26 * Math.min(1, t / Math.max(1, dur)), ox: (Math.min(1, t / Math.max(1, dur)) - .5) * -.18, filter: 'brightness(.4) blur(1px)' }); else { ctx.fillStyle = '#0b0d12'; ctx.fillRect(-W, -H, 3 * W, 3 * H); }
   const R = (P.rows || '').split('~').filter(Boolean).map(s => s.split('^')), x0 = W * .14;
   ctx.save(); ctx.translate(W / 2, H / 2); ctx.scale(1 + .05 * k, 1 + .05 * k); ctx.translate(-W / 2, -H / 2);
   R.forEach(([s, w], i) => { const kr = clamp(p(at(w || 0), .45)); if (kr <= 0) return; text(s, x0 + (1 - kr) * 40 * u, H * (.24 + i * .12), { size: 62 * u, font: 'cond', col: '#e8ebf0', lw: 0, align: 'left', a: kr, ls: 2 * u }); });

@@ -8,7 +8,7 @@
 ({ t, at, p, spring, W, H, u, img, clip, ctx, params: P, clamp, lerp, text, seam, cover, dur }) => {
   ctx.save(); seam(P.in || 'none', P.out || 'none');
   const k = clamp(t / Math.max(1, dur)), bg = P.bg ? (clip(P.bg, 0, 1) || img(P.bg)) : null;
-  ctx.fillStyle = '#0c0b0a'; ctx.fillRect(-W, -H, 3 * W, 3 * H); if (bg) cover(bg, { z: 1.08 + .1 * k, ox: (k - .5) * -.08, filter: 'brightness(.3) saturate(.6)' });
+  ctx.fillStyle = '#0c0b0a'; ctx.fillRect(-W, -H, 3 * W, 3 * H); if (bg) cover(bg, { z: 1.1 + .26 * k, ox: (k - .5) * -.2, filter: 'brightness(.42) saturate(.6)' });
   const mx = +(P.max || 100), fy = H * .84, top = H * .2, bh = fy - top, bx = W * .3, bw = W * .13, g = clamp(p(P.go || 0, 1.0, 'out5')), y = v => fy - bh * v / mx;
   // camera: drifts down the bar toward the small asks as they land
   const marks = String(P.marks || '').split('~').filter(Boolean).map(s => s.split('^')), last = marks.length ? clamp(p(marks[marks.length - 1][3] || 0, 1.4, 'inOut')) : 0;

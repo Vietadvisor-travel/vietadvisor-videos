@@ -5,14 +5,14 @@
    @tags: time,calendar,countdown,gap,dates,flap
    @born: wework a0-13: WeWork only filed for bankruptcy fifteen months later
 */
-({ t, at, p, W, H, u, img, clip, ctx, params: P, clamp, lerp, text, seam, ease }) => {
+({ t, at, p, W, H, u, img, clip, ctx, params: P, clamp, lerp, text, seam, ease, dur}) => {
   // a split-flap calendar tile runs from one month to another on the word, flicking fast then slowing and locking on the
   // end month; the gap sets under it. Footage of the place it is about sits behind, dimmed. params: from, to (YYYY-MM), go, lab, sub, bg, in, out
   const M = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
   const [y0, m0] = String(P.from).split('-').map(Number), [y1, m1] = String(P.to).split('-').map(Number), n = (y1 - y0) * 12 + (m1 - m0);
   ctx.save(); seam(P.in || 'none', P.out || 'none');
   const bg = clip(P.bg, 0, 1) || img(P.bg); ctx.fillStyle = '#0c0b0a'; ctx.fillRect(-W, -H, 3 * W, 3 * H);
-  if (bg && bg.width) { const s = Math.max(W / bg.width, H / bg.height) * 1.08; ctx.save(); ctx.filter = 'blur(6px) brightness(.38) grayscale(.4)'; ctx.drawImage(bg, W / 2 - bg.width * s / 2, H / 2 - bg.height * s / 2, bg.width * s, bg.height * s); ctx.restore(); }
+  if (bg && bg.width) { const kb = Math.min(1, t / Math.max(1, dur)), s = Math.max(W / bg.width, H / bg.height) * (1.12 + .3 * kb); ctx.save(); ctx.filter = 'blur(2px) brightness(.5) grayscale(.4)'; ctx.drawImage(bg, W / 2 + (kb - .5) * -W * .16 - bg.width * s / 2, H / 2 - bg.height * s / 2, bg.width * s, bg.height * s); ctx.restore(); }
   const k = clamp((t - at(P.go || 0)) / 1.6), e = 1 - Math.pow(1 - k, 3), i = Math.min(n, Math.floor(e * n + .0001)), fr = e * n - i;
   const mm = (m0 - 1 + i) % 12, yy = y0 + Math.floor((m0 - 1 + i) / 12), lab = M[mm] + ' ' + yy;
   const tw = W * .46, th = H * .3, cx = W / 2, cy = H * .4;

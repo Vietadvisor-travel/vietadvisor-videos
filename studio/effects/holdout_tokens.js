@@ -7,7 +7,7 @@
 */
 ({ t, at, p, spring, W, H, u, img, clip, ctx, params: P, clamp, lerp, text, seam, cover, rng, dur }) => {
   ctx.save(); seam(P.in || 'none', P.out || 'none');
-  const bg = clip(P.bg, 0, 1) || img(P.bg), k = clamp(t / Math.max(1, dur)); if (bg) cover(bg, { z: 1.08, filter: 'brightness(.32) blur(2px)' }); else { ctx.fillStyle = '#0b0d12'; ctx.fillRect(-W, -H, 3 * W, 3 * H); }
+  const bg = clip(P.bg, 0, 1) || img(P.bg), k = clamp(t / Math.max(1, dur)); if (bg) cover(bg, { z: 1.1 + .26 * Math.min(1, t / Math.max(1, dur)), ox: (Math.min(1, t / Math.max(1, dur)) - .5) * -.18, filter: 'brightness(.45) blur(1px)' }); else { ctx.fillStyle = '#0b0d12'; ctx.fillRect(-W, -H, 3 * W, 3 * H); }
   const n = +(P.n || 9), t0 = at(P.go || 0), t1 = at(P.go2 || 0) || t0 + 1.6, dx = W * .3, dy = H * .52, dw = W * .3, dh = H * .46;
   ctx.save(); ctx.shadowColor = 'rgba(0,0,0,.6)'; ctx.shadowBlur = 30 * u; ctx.fillStyle = '#f2ead9'; ctx.fillRect(dx - dw / 2, dy - dh / 2, dw, dh); ctx.restore();
   text('SETTLEMENT', dx, dy - dh / 2 + 60 * u, { size: 52 * u, font: 'impact', col: '#1c1c20', lw: 0, ls: 4 * u }); text(P.doc || '', dx, dy - dh / 2 + 112 * u, { size: 40 * u, font: 'cond', col: '#4a4a50', lw: 0 });
