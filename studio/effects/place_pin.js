@@ -11,7 +11,7 @@
   ctx.save(); seam(P.in || 'none', P.out || 'none');
   const bg = clip(P.bg, 0, 1) || img(P.bg); ctx.fillStyle = '#0c0b0a'; ctx.fillRect(-W, -H, 3 * W, 3 * H);
   const px = (+P.x || .5) * W, py = (+P.y || .5) * H, z = 1.04 + .06 * clamp(t / dur);
-  if (bg && bg.width) { const s = Math.max(W / bg.width, H / bg.height) * 1.02; ctx.save(); ctx.translate(px, py); ctx.scale(z, z); ctx.translate(-px, -py); ctx.drawImage(bg, W / 2 - bg.width * s / 2, H / 2 - bg.height * s / 2, bg.width * s, bg.height * s); ctx.restore(); }
+  if (bg && bg.width) { const s = Math.max(W / bg.width, H / bg.height) * 1.16, kd = Math.min(1, t / Math.max(1, dur)), dx = (kd - .5) * -W * .12; ctx.save(); ctx.translate(px, py); ctx.scale(z, z); ctx.translate(-px, -py); ctx.drawImage(bg, W / 2 + dx - bg.width * s / 2, H / 2 - bg.height * s / 2, bg.width * s, bg.height * s); ctx.restore(); }
   const g = ctx.createRadialGradient(px, py, H * .1, px, py, W * .7); g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, 'rgba(0,0,0,.55)'); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
   const d = clamp(spring(P.go || .3, { stiff: 190, damp: 15 }), 0, 1.15), y = py - (1 - Math.min(1, d)) * H * .5;
   if (d > 0) { const r = clamp(p(P.go || .3, 1.2, 'out')); ctx.strokeStyle = `rgba(242,193,78,${(1 - r) * .8})`; ctx.lineWidth = 4 * u; ctx.beginPath(); ctx.ellipse(px, py, 20 * u + 90 * u * r, (20 * u + 90 * u * r) * .35, 0, 0, 7); ctx.stroke();

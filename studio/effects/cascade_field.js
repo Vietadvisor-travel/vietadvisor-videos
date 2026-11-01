@@ -7,7 +7,7 @@
 */
 ({ t, at, p, spring, W, H, u, img, clip, ctx, params: P, clamp, lerp, text, seam, cover, rng, dur }) => {
   ctx.save(); seam(P.in || 'none', P.out || 'none');
-  const bg = clip(P.bg, 0, 1) || img(P.bg); if (bg) cover(bg, { z: 1.08, filter: 'brightness(.32) blur(2px)' }); else { ctx.fillStyle = '#0b0d12'; ctx.fillRect(-W, -H, 3 * W, 3 * H); }
+  const bg = clip(P.bg, 0, 1) || img(P.bg); if (bg) cover(bg, { z: 1.1 + .2 * Math.min(1, t / Math.max(1, dur)), ox: (Math.min(1, t / Math.max(1, dur)) - .5) * -.16, filter: 'brightness(.5)' }); else { ctx.fillStyle = '#0b0d12'; ctx.fillRect(-W, -H, 3 * W, 3 * H); }
   const t0 = at(P.go || 0), T = t - t0, ox = W * .2, oy = H * .55, r = rng(31);
   // the small block: 6 x 6 lit dots
   for (let i = 0; i < 36; i++) { const x = ox + (i % 6 - 2.5) * 18 * u, y = oy + (Math.floor(i / 6) - 2.5) * 18 * u; ctx.fillStyle = '#f2c14e'; ctx.fillRect(x - 6 * u, y - 6 * u, 12 * u, 12 * u); }
