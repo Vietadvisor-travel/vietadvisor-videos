@@ -10,8 +10,8 @@ autotrans: off
 endcard: off
 motif: bill_tape
 
-// CARD a1-01 · SEE: young Mark Zuckerberg on a conference stage, the camera travelling to his face; on "Harvard" his name card slides in · SEAM in right
-# cine act=setup fx="code:@name_strap;pic:meta_zuckerberg_dld;go:Harvard;name:MARK ZUCKERBERG · HARVARD, 2004;role:co-founder · $1,000 in, with Eduardo Saverin · photo later;fx:.5;fy:.3;in:right"
+// CARD a1-01 · SEE: two night desks side by side like two ledgers (stock footage, no faces): ZUCKERBERG and SAVERIN; $1,000 types into each account · SEAM in right
+# cine act=setup fx="code:@two_accounts;l:stock_ui_keyboard_dark_01;r:stock_screen_laptop_night_07;lt:ZUCKERBERG;rt:SAVERIN;lv:$1,000;rv:$1,000;ls:Harvard · 4 Feb 2004;rs:co-founder;lat:February;rat:Mark;open:started;in:right"
 It started at Harvard, on the fourth of February, two thousand **four**.
 Mark Zuckerberg and Eduardo Saverin each put in a thousand **dollars**.
 
@@ -19,8 +19,8 @@ Mark Zuckerberg and Eduardo Saverin each put in a thousand **dollars**.
 # cine act=rise fx="code:@price_pencil;pic:meta_facebook_like_sign_full;word:$200,000;go:year;x:.6;y:.36;lab:FACEBOOK.COM · 2005;src:the domain alone;out:right"
 A year later, the company paid two hundred thousand dollars just for the name facebook dot **com**. (J)
 
-// CARD a1-03 · SEE: the real Zuckerberg on the F8 stage under a giant screen; the camera travels into the screen behind him and a gold frame draws round it on "public": IPO · MAY 2012 · ABOUT $16B RAISED · SEAM in right
-# cine act=rise fx="code:@sign_zoom;pic:meta_zuckerberg_stage_facebook_screen;x0:.25;y0:.08;x1:.8;y1:.55;go:public;lab:IPO · MAY 2012 · $16B RAISED;in:right"
+// CARD a1-03 · SEE: real trading screens, dim; a black LED board hangs over them; on "May" FB · IPO clicks up and MAY 2012 · ABOUT $16 BILLION RAISED lights word by word · SEAM in right
+# cine act=rise fx="code:@led_quote;bg:stock_finance_exchange_floor_05;head:FB · IPO;q:MAY 2012 · ABOUT $16 BILLION RAISED;go:May;span:2;by:Facebook goes public;in:right"
 In May twenty twelve, Facebook went public and raised about sixteen billion **dollars**.
 
 // CARD a1-04 · SEE: two solid blocks rise out of a dark floor one after the other: INSTAGRAM · 2012 $1B, then WHATSAPP · 2014 $19B, nineteen times taller · SEAM out right
@@ -38,7 +38,7 @@ And the more Facebook knew about each person, the more each advert was **worth**
 In those years, an app on Facebook could read more than the person who installed it. It could read their **friends**.
 
 // CARD a1-07 · SEE: the real FTC building in Washington; on "promise" a placard is planted in front of it: 2012 · A PROMISE TO THE FTC · SEAM in right
-# cine act=setup fx="code:@sign_on_footage;clip:meta_ftc_apex_building_front;sign:A PROMISE · 2012;sub:no misleading users about privacy;go:promise;x:.5;y:.42;in:right"
+# cine act=setup fx="code:@sign_on_footage;clip:meta_ftc_apex_building_front;sign:A PROMISE;sub:to the FTC · 2012;go:promise;x:.5;y:.42;in:right"
 That same year, twenty twelve, Facebook had made a promise to the Federal Trade Commission. It would not mislead users about their **privacy**.
 Remember that promise. It comes back with a price **tag**.
 

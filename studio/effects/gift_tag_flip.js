@@ -12,6 +12,6 @@
   ctx.save(); ctx.strokeStyle = '#efe6d2'; ctx.lineWidth = 3 * u; ctx.beginPath(); ctx.moveTo(cx, 0); ctx.lineTo(cx, cy - h / 2); ctx.stroke(); ctx.translate(cx, cy - h / 2); ctx.rotate(sway); ctx.scale(Math.max(.02, Math.abs(sx)), 1);
   ctx.shadowColor = 'rgba(0,0,0,.5)'; ctx.shadowBlur = 30 * u; ctx.fillStyle = back ? '#f2ead9' : '#c8322a'; ctx.beginPath(); ctx.moveTo(-w / 2 + 40 * u, 0); ctx.lineTo(w / 2 - 40 * u, 0); ctx.lineTo(w / 2, 50 * u); ctx.lineTo(w / 2, h); ctx.lineTo(-w / 2, h); ctx.lineTo(-w / 2, 50 * u); ctx.closePath(); ctx.fill(); ctx.shadowColor = 'transparent';
   ctx.fillStyle = '#1b1712'; ctx.beginPath(); ctx.arc(0, 34 * u, 10 * u, 0, Math.PI * 2); ctx.fill();
-  if (!back) text(P.front || 'GIFT', 0, h * .52, { size: 120 * u, font: 'impact', col: '#f6efe2', lw: 0 }); else { text(P.back || 'LOAN', 0, h * .38, { size: 120 * u, font: 'impact', col: '#c8322a', lw: 0 }); (P.terms || '').split('~').forEach((s, i) => text(s, 0, h * .6 + i * 52 * u, { size: 38 * u, font: 'cond', col: '#2a2219', lw: 0, ls: 2 * u })); }
+  if (!back) text(P.front || 'GIFT', 0, h * .52, { size: 120 * u, font: 'impact', col: '#f6efe2', lw: 0 }); else { text(P.back || 'LOAN', 0, h * .38, { size: Math.min(120 * u, w * .9 / (String(P.back || 'LOAN').length * .5)), font: 'impact', col: '#c8322a', lw: 0 }); (P.terms || '').split('~').forEach((s, i) => text(s, 0, h * .6 + i * 52 * u, { size: 38 * u, font: 'cond', col: '#2a2219', lw: 0, ls: 2 * u })); }
   ctx.restore(); ctx.restore();
 }

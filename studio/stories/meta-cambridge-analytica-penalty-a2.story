@@ -21,12 +21,12 @@ Through their friend lists, the app reached far more people than that.
 Facebook's own estimate, published by its chief technology officer in April twenty eighteen, was up to eighty-seven million **profiles**.
 
 // CARD a2-03 · SEE: three blocks rise on a dark floor: FIRST REPORTS 50M, FTC COMPLAINT 65M, FACEBOOK 87M; on "eighty-two" the note sets: about 82 % in the United States · SEAM in right
-# cine act=doubt fx="code:@blocks;vals:50,65,87;labs:FIRST REPORTS · 2018,FTC · 2019,FACEBOOK · 2018;txts:50M,65M,87M;go:Other;gap:.6;note:about 82% of profiles in the United States;in:right"
+# cine act=doubt fx="code:@blocks;vals:50,65,87;labs:FIRST REPORTS · 2018,FTC · 2019,FACEBOOK · 2018;txts:50M,65M,87M;go:Other;gap:.6;in:right"
 {wry} Other counts say fifty million, or sixty-five. Nobody outside the company has ever counted them **all**.
 About eighty-two percent of those profiles belonged to people in the United **States**.
 
-// CARD a2-04 · SEE: the real New Oxford Street in London, the camera travelling; on "London" a pin drops: CAMBRIDGE ANALYTICA · LONDON (street view) · SEAM out right
-# cine act=setup fx="code:@place_pin;bg:meta_new_oxford_street_wide;x:.55;y:.5;go:London;lab:CAMBRIDGE ANALYTICA · LONDON;sub:New Oxford Street · backed by Robert Mercer;out:right"
+// CARD a2-04 · SEE: looking up at a real building on New Oxford Street, London; on "London" a name card drops at street level: CAMBRIDGE ANALYTICA; on "Mercer" a second card drops high on the facade: THE MERCERS · Robert funded it, Rebekah on the board · SEAM out right
+# cine act=setup fx="code:@landlord_tenant;bg:meta_coptic_new_oxford_junction;bot:CAMBRIDGE ANALYTICA^political consultants · London;top:THE MERCERS^Robert funded it · Rebekah on the board;botat:London;topat:Mercer;out:right"
 Kogan passed the data to a political consulting firm in London called Cambridge **Analytica**.
 It was bankrolled by the billionaire Robert Mercer, and his daughter Rebekah sat on its **board**.
 

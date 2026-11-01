@@ -1,6 +1,6 @@
 /* @effect folder_reveal
    @does: a closed kraft folder marked PRIVATE lies on the desk; on the word its flap lifts and a real document slides out of it toward the camera, so a private record becomes public
-   @params: doc, crop, stamp, go, in, out
+   @params: doc, crop, stamp, go, after (a stamp that lands on the document once it is out), go2, in, out
    @uses: any document id
    @tags: private,public,disclosure,folder,document,reveal
    @born: wework a2-09: one day, someone else gets to read it
@@ -13,5 +13,6 @@
   if (im && im.width && k > 0) { const [c0, c1, c2, c3] = String(P.crop || '0,0,1,1').split(',').map(Number), sw = (c2 - c0) * im.width, sh = (c3 - c1) * im.height, s = Math.min(fw * .9 / sw, fh * .9 / sh) * lerp(1, 1.35, k), pw = sw * s, ph = sh * s, y = lerp(fy + fh * .5, H * .44, k);
     ctx.save(); ctx.shadowColor = 'rgba(0,0,0,.5)'; ctx.shadowBlur = 30 * u; ctx.fillStyle = '#f7f5ef'; ctx.fillRect(W / 2 - pw / 2 - 10 * u, y - ph / 2 - 10 * u, pw + 20 * u, ph + 20 * u); ctx.shadowColor = 'transparent'; ctx.drawImage(im, c0 * im.width, c1 * im.height, sw, sh, W / 2 - pw / 2, y - ph / 2, pw, ph); ctx.restore(); }
   const fl = clamp(k * 1.6); ctx.save(); ctx.globalAlpha = 1 - fl; ctx.fillStyle = '#c69a62'; ctx.fillRect(fx, fy, fw, fh); ctx.strokeStyle = '#8a1e1a'; ctx.lineWidth = 6 * u; ctx.strokeRect(W / 2 - W * .12, H * .44 - H * .07, W * .24, H * .14); text(P.stamp || 'PRIVATE', W / 2, H * .44, { size: 84 * u, font: 'impact', col: '#8a1e1a', lw: 0 }); ctx.restore();
+  if (P.after) { const ka = clamp(p(P.go2 || P.go || 0, .35, 'out')), sc = lerp(1.6, 1, ka); if (ka > 0) { ctx.save(); ctx.translate(W * .5, H * .7); ctx.rotate(-.06); ctx.scale(sc, sc); ctx.globalAlpha = ka; ctx.fillStyle = 'rgba(246,239,226,.92)'; const tw = String(P.after).length * 34 * u + 80 * u; ctx.fillRect(-tw / 2, -58 * u, tw, 116 * u); ctx.strokeStyle = '#a8231d'; ctx.lineWidth = 7 * u; ctx.strokeRect(-tw / 2 + 8 * u, -50 * u, tw - 16 * u, 100 * u); text(P.after, 0, 0, { size: 64 * u, font: 'impact', col: '#a8231d', lw: 0 }); ctx.restore(); } }
   ctx.restore();
 }

@@ -10,8 +10,8 @@ autotrans: off
 endcard: off
 motif: bill_tape
 
-// CARD a5-01 · SEE: the real first page of the New Mexico case on the desk; the camera travels to the caption, STATE OF NEW MEXICO, ex rel. RAUL TORREZ, and the case number No. D-101-CV-2021-00132 is highlighted · SEAM out right
-# cine act=setup fx="code:@retype_line;doc:meta_doc_nm_judgment_2026_p1;fx:.71;fy:.29;line:No. D-101-CV-2021-00132 · filed 2021;hl:2021;go:sued;src:Balderas filed it · Torrez took it over;out:right"
+// CARD a5-01 · SEE: the real page 2 of the New Mexico judgment; the camera travels down to one line and it is retyped large on a paper strip: “Penalties, consent agreements and decrees have not deterred Meta” · SEAM out right
+# cine act=setup fx="code:@retype_line;doc:meta_doc_nm_judgment_2026_p2;fx:.49;fy:.487;line:“consent agreements and decrees have not deterred Meta”;hl:deterred;go:settle;src:judgment, p. 2 · case filed 2021 by Hector Balderas;out:right"
 {tense} One state did not settle.
 In twenty twenty-one, New Mexico sued Facebook under its consumer protection **law**.
 The attorney general who filed it was Hector Balderas. His successor, Raul Torrez, took the case **over**.
@@ -22,16 +22,16 @@ In August twenty twenty-six, a group of other states signed a settlement with Me
 New Mexico refused to sign it. It took its case to a **jury**.
 
 // CARD a5-03 · SEE: a paper sheet, NEW MEXICO v. META: TWO CASES; on "separate" the second line, CASE 2 · 2023 · CHILDREN, is cut out of the sheet and falls away; CASE 1 · 2021 · PRIVACY stays: THIS FILM · SEAM out right
-# cine act=doubt fx="code:@cut_out_word;bg:meta_art_courtroom;title:NEW MEXICO v. META · TWO CASES;lines:CASE 1 · 2021 · PRIVACY · THIS FILM~CASE 2 · 2023 · CHILDREN · NOT THIS FILM;cut:1;go:separate;note:never add them together;out:right"
+# cine act=doubt fx="code:@cut_out_word;bg:meta_art_hearing_room_empty;title:NEW MEXICO v. META · TWO CASES;lines:CASE 1 · 2021 · PRIVACY · THIS FILM~CASE 2 · 2023 · CHILDREN · NOT THIS FILM;cut:1;go:separate;note:never add them together;out:right"
 One warning, because the headlines mix them up. New Mexico has a second, separate case against Meta, about children. This film is about the first **one**.
 
-// CARD a5-04 · SEE: index cards drop onto the desk, one per subject: PRIVACY, THIRD-PARTY ACCESS, HATE SPEECH, MISINFORMATION, MODERATION; title 29 PUBLIC STATEMENTS · SEAM in right
-# cine act=doubt fx="code:@case_cards;rows:PRIVACY/what users control/STATEMENTS~THIRD-PARTY ACCESS/what apps could take/STATEMENTS~HATE SPEECH/what the platform allowed/STATEMENTS~MISINFORMATION/and moderation/STATEMENTS;show:0;go:twenty-nine;title:29 PUBLIC STATEMENTS ON TRIAL;in:right"
+// CARD a5-04 · SEE: NEW: on "twenty-nine" a wall of 29 paper slips flicks up one after another on the desk, one per statement; the subjects light above it as tabs on their words: PRIVACY, HATE SPEECH, MISINFORMATION, MODERATION · SEAM in right
+# cine act=doubt fx="code:@slip_wall;n:29;go:twenty-nine;tabs:PRIVACY^privacy~HATE SPEECH^hate~MISINFORMATION^misinformation~MODERATION^moderation;in:right"
 But the case was bigger than one quiz **app**.
 It was about twenty-nine public statements Meta and its leaders had made, about privacy, hate speech, misinformation and **moderation**.
 
-// CARD a5-05 · SEE: a real empty jury box, the camera panning; on "verdict" a solid stamp VERDICT · 25 SEP 2026; on "Twenty-six" 26 OF 29 MISLEADING beside it · SEAM out right
-# cine act=fall fx="code:@stamp_dates;pic:stock_law_courtroom_11;y:.32;stamps:VERDICT · 25 SEP 2026^verdict~26 OF 29 MISLEADING^Twenty-six;gap:a Santa Fe jury;out:right"
+// CARD a5-05 · SEE: the same wall of 29 slips; on "Friday" a date card drops: VERDICT · 25 SEP 2026; on "jury" 26 slips flip red one after another, 3 stay grey: 26 OF 29 MISLEADING · SEAM out right
+# cine act=fall fx="code:@slip_wall;n:29;pre:1;rgo:jury;red:26;rlab:26 OF 29 MISLEADING;date:VERDICT · 25 SEP 2026;dgo:Friday;out:right"
 {grave} On Friday the twenty-fifth of September, twenty twenty-six, a jury in Santa Fe gave its **verdict**.
 Twenty-six of those twenty-nine statements were **misleading**.
 

@@ -11,8 +11,8 @@ autotrans: off
 endcard: off
 motif: bill_tape
 
-// CARD a3-01 · SEE: a calendar runs from 2015 and locks on MAR 2018; on "suspended" a news band crosses the real Facebook headquarters: FACEBOOK SUSPENDS CAMBRIDGE ANALYTICA · 16 MAR 2018, LATE EVENING · SEAM out right
-# cine act=fall fx="code:@ticker_headline;bg:meta_facebook_hq_street;head:CAMBRIDGE ANALYTICA SUSPENDED;src:16 MAR 2018~LATE EVENING;go:Friday;y:.3;out:right"
+// CARD a3-01 · SEE: a split-flap calendar over the real Facebook headquarters at 1 Hacker Way, dim; on "three" it flicks month by month from MAR 2015 and locks on MAR 2018: CAMBRIDGE ANALYTICA SUSPENDED · Friday 16 Mar 2018, late evening · SEAM out right
+# cine act=fall fx="code:@month_flip;bg:meta_facebook_hq_1_hacker_way;from:2015-03;to:2018-03;go:three;lab:CAMBRIDGE ANALYTICA SUSPENDED;sub:Friday 16 Mar 2018 · late evening;out:right"
 {tense} For three years, nothing happened. Then, on Friday the sixteenth of March, twenty eighteen, Facebook suspended Cambridge Analytica from its platform, late in the **evening**.
 
 // CARD a3-02 · SEE: real printing presses roll, dim; the real Guardian page of 17 March 2018 slides in as a clipping and a red marker underlines its headline · SEAM in right
@@ -24,8 +24,8 @@ Facebook had suspended Kogan and Wylie too, but the story was already **out**.
 # cine act=doubt fx="code:@name_strap;pic:meta_wylie_portrait_bw;go:source;name:CHRISTOPHER WYLIE;role:former director of research, Cambridge Analytica;fx:.5;fy:.35;out:right"
 Their source was Christopher Wylie, a former director of research at Cambridge **Analytica**.
 
-// CARD a3-04 · SEE: real press photographers in a dark room; three items land as a list and each is struck on its word: BRIBERY STINGS · HONEY TRAPS · FRONT COMPANIES; CHANNEL 4 NEWS · 19 MAR 2018 · SEAM in right
-# cine act=fall fx="code:@roll_call_strike;bg:stock_media_press_cameras_04;names:BRIBERY STINGS~HONEY TRAPS~FRONT COMPANIES;go:bribery;span:1.4;lab:Alexander Nix on Channel 4 News undercover footage · 19 Mar 2018;in:right"
+// CARD a3-04 · SEE: an empty TV studio, cameras on tripods (no faces); three items land as a list and each is struck on its word: BRIBERY STINGS · HONEY TRAPS · FRONT COMPANIES; CHANNEL 4 NEWS · 19 MAR 2018 · SEAM in right
+# cine act=fall fx="code:@roll_call_strike;bg:stock_media_tv_studio_04;names:BRIBERY STINGS~HONEY TRAPS~FRONT COMPANIES;go:bribery;span:1.4;lab:Alexander Nix on Channel 4 News undercover footage · 19 Mar 2018;in:right"
 Two days later, Channel 4 News aired undercover footage of the firm's chief executive, Alexander **Nix**.
 He talked about bribery stings, honey traps and front companies as possible **services**.
 
@@ -43,8 +43,8 @@ Then, on the twenty-first of March, he posted a **statement**.
 In April, he sat in front of the United States **Senate**, and the next day in front of the **House**.
 @zuck: It was my mistake, and I'm sorry. I started Facebook, I run it, and I'm responsible for what happens here.
 
-// CARD a3-08 · SEE: the real House hearing record, page 12, on a dark desk; the camera travels to the line where he says it was his mistake and a highlighter runs across it; then 20,000 SECURITY STAFF lands · SEAM in right
-# cine act=doubt fx="code:@doc_read;doc:meta_doc_house_hearing_2018_p12;crop:0,.3,1,.75;marks:.3,.545,.7,.575@swept;zoom:swept;z:.5;in:right"
+// CARD a3-08 · SEE: real server racks, dim; HIS OWN DATA WAS SWEPT UP TOO sets low; on "And" a field of gold points pours out from one point: 20,000 SECURITY STAFF · promised by the end of 2018 · SEAM in right
+# cine act=doubt fx="code:@dots;bg:meta_noirlab_server_racks;n:12000;go:And;lab:20,000 SECURITY STAFF;sub:promised by the end of 2018;sub2:HIS OWN DATA WAS SWEPT UP TOO;at2:swept;in:right"
 He also confirmed that his own data had been swept up with everyone **else's**. (J)
 And he promised to grow Facebook's security staff to twenty thousand people by the end of the **year**.
 
@@ -53,8 +53,8 @@ And he promised to grow Facebook's security staff to twenty thousand people by t
 On the second of May, Cambridge Analytica announced it was ceasing all **operations**.
 It blamed a "siege of media coverage" that had driven away almost all of its **customers**.
 
-// CARD a3-10 · SEE: a solid wooden ruler slides in over the London street, 2018 to 2020; on "weeks" a red line runs six weeks long at its start; on "Nix" BANNED AS A DIRECTOR FOR 7 YEARS sets on 2020 · SEAM in right
-# cine act=fall fx="code:@year_ruler;bg:meta_routemaster_new_oxford;y0:2018;y1:2020;go:Nix;span:1.2;lab:NIX · 7-YEAR DIRECTOR BAN · 2020;in:right"
+// CARD a3-10 · SEE: the split-flap calendar returns over a London street: on "gone" it flicks MAR 2018 to MAY 2018 and locks: GONE IN ABOUT SIX WEEKS; then: 2020 · Nix accepts a 7-year director ban · SEAM in right
+# cine act=fall fx="code:@month_flip;bg:meta_routemaster_new_oxford;from:2018-03;to:2018-05;go:gone;lab:GONE IN ABOUT SIX WEEKS;sub:2020 · Nix accepts a 7-year director ban;in:right"
 The firm that used the data was gone in about six **weeks**.
 Two years later, Nix accepted a seven-year ban on running British **companies**.
 
