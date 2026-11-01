@@ -11,7 +11,7 @@
   [[P.a, 0, P.alab, P.aval, P.apre, P.asuf, P.ago, '#7fb2ff'], [P.b, 1, P.blab, P.bval, P.bpre, P.bsuf, P.bgo, '#ff6b5e']].forEach(([id, side, lab, val, pre, suf, go, col]) => {
     const im = clip(id, 0, 1) || img(id); const x0 = side ? W / 2 + 6 * u : 0, w = W / 2 - 6 * u;
     ctx.save(); ctx.beginPath(); ctx.rect(lerp(side ? W : -w, x0, split), 0, w, H); ctx.clip();
-    if (im) { const s = Math.max(w / im.width, H / im.height) * (1.12 + .1 * k); ctx.filter = 'brightness(.55)'; ctx.drawImage(im, lerp(side ? W : -w, x0, split) + w / 2 - im.width * s / 2 + (k - .5) * (side ? -1 : 1) * 40 * u, H / 2 - im.height * s / 2, im.width * s, im.height * s); ctx.filter = 'none'; }
+    if (im) { const s = Math.max(w / im.width, H / im.height) * (1.14 + .3 * k); ctx.filter = 'brightness(.55)'; ctx.drawImage(im, lerp(side ? W : -w, x0, split) + w / 2 - im.width * s / 2 + (k - .5) * (side ? -1 : 1) * W * .22, H / 2 - im.height * s / 2, im.width * s, im.height * s); ctx.filter = 'none'; }
     ctx.restore();
     const cx = x0 + w / 2, a = clamp(split * 2 - 1); if (lab) text(lab, cx, H * .3, { size: 46 * u, font: 'cond', col: '#f2f4f8', lw: 0, ls: 4 * u, a });
     if (val && go) { const kv = clamp(p(at(go), .5, 'out')); if (kv > 0) { const v = +val * kv, s = (pre || '') + (Number.isInteger(+val) ? Math.round(v) : v.toFixed(1)) + (suf || ''); ctx.save(); ctx.fillStyle = 'rgba(8,9,12,.7)'; ctx.fillRect(cx - 300 * u, H * .45, 600 * u, 190 * u); ctx.restore(); text(s, cx, H * .45 + 98 * u, { size: 128 * u, font: 'impact', col, lw: 0, a: clamp(kv * 3) }); } } });
