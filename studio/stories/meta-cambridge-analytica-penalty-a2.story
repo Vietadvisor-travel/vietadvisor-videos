@@ -15,7 +15,7 @@ motif: bill_tape
 In twenty fourteen, a Cambridge University researcher named Aleksandr Kogan built a personality quiz called "This is your digital **life**."
 
 // CARD a2-02 · SEE: NEW: a small square of gold dots, 270,000 DOWNLOADED; on "Through" it bursts into a field of blue dots that fills the frame: UP TO 87 MILLION PROFILES (FACEBOOK'S ESTIMATE) · SEAM out right
-# cine act=rise fx="code:@cascade_field;bg:meta_art_scene_data_harvest;a:270,000;alab:DOWNLOADED THE QUIZ;b:UP TO 87 MILLION;blab:PROFILES · FACEBOOK'S OWN ESTIMATE;go:Through;src:about 82% in the United States;out:right;push:.008"
+# cine act=rise fx="code:@cascade_field;bg:stock_surveillance_control_desk_01;a:270,000;alab:DOWNLOADED THE QUIZ;b:UP TO 87 MILLION;blab:PROFILES · FACEBOOK'S OWN ESTIMATE;go:Through;src:about 82% in the United States;out:right;push:.008"
 About two hundred and seventy thousand people downloaded **it**.
 Through their friend lists, the app reached far more people than that.
 Facebook's own estimate, published by its chief technology officer in April twenty eighteen, was up to eighty-seven million **profiles**.
@@ -36,7 +36,7 @@ In twenty sixteen, the Trump campaign paid it five point nine million dollars, a
 Whether any of it changed a single vote is still **disputed**.
 
 // CARD a2-06 · SEE: a receipt prints CERTIFICATION · DATA DELETED · SIGNED; on "check" a red stamp slams across it: NOT CHECKED · SEAM out right
-# cine act=fall fx="code:@receipt_void;bg:meta_art_office_night;lines:CERTIFICATION~DATA DELETED~SIGNED;stamp:NOT CHECKED;go:check;sy:.5;src:Facebook · 2015 · users not told until 2018;out:right"
+# cine act=fall fx="code:@receipt_void;bg:stock_office_desks_night_08;lines:CERTIFICATION~DATA DELETED~SIGNED;stamp:NOT CHECKED;go:check;sy:.5;src:Facebook · 2015 · users not told until 2018;out:right"
 In twenty fifteen, Facebook found out where the data had **gone**.
 It asked for the data to be deleted, and it accepted signed letters saying it **was**.
 It did not check. And it did not tell the users. [BEAT]
