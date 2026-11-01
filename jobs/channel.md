@@ -1,5 +1,5 @@
 # POISON PILL: channel bible (Project file)
-- **Promise:** "Why great companies rise, and why they fall." Business and history case studies, 8–10 min, 16:9, English.
+- **Promise:** "Why great companies rise, and why they fall." Business and history case studies, 11–14 min (rule v6.8, 30 Oct 2026), 16:9, English.
 - **Audience:** curious adults 18–45 (founders, investors, students) who want the real reason, not a summary.
 - **Voice:**
   - a sharp analyst: dry, specific, a little ironic;

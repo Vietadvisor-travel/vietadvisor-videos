@@ -53,6 +53,14 @@ The 5 already-produced episodes KEEP their dates, because the work is done:
 The first slot chosen purely by the new system is 07 Nov 2026, picked by
 the trend scan of Sun 01 Nov 2026.
 
+Owner decision, 30 Oct 2026: Nike vs Adidas (research ordered 30 Oct
+2026) is the LAST episode taken from the retired 30-day list. From the
+week of 02 Nov 2026 onward, the idea pool is CLOSED as a source for the
+Sunday scan: picks come only from fresh trend findings of that week. A
+retired pool topic is no longer eligible even if it trends. This does not
+limit owner orders: if the owner names any topic by name, the owner's
+words still win.
+
 ## How "làm tập <slug>" works now
 
 When the owner writes "làm tập <slug>" to Claude, Claude reads:

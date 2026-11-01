@@ -1,0 +1,920 @@
+[
+  {
+    "id": "meta_clip_briefing_podium_01",
+    "file": "clips/meta_clip_briefing_podium_01.mp4",
+    "description": "A government press briefing room: a speaker at a podium with microphones, journalists and cameras in front. Generic press footage, not a Meta or Facebook event. A small WH.gov bug appears in the corner of the source frame.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a0",
+    "duration": 4.99
+  },
+  {
+    "id": "meta_clip_briefing_podium_02",
+    "file": "clips/meta_clip_briefing_podium_02.mp4",
+    "description": "A government press briefing room: a speaker at a podium with microphones, journalists and cameras in front. Generic press footage, not a Meta or Facebook event. A small WH.gov bug appears in the corner of the source frame.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a0",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_briefing_podium_03",
+    "file": "clips/meta_clip_briefing_podium_03.mp4",
+    "description": "Journalists seated in the audience at a government press briefing, listening. Generic press footage, not a Meta or Facebook event. A small WH.gov bug appears in the corner of the source frame.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a0",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_briefing_podium_04",
+    "file": "clips/meta_clip_briefing_podium_04.mp4",
+    "description": "A government press briefing room: a speaker at a podium with microphones, journalists and cameras in front. Generic press footage, not a Meta or Facebook event. A small WH.gov bug appears in the corner of the source frame.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a0",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_briefing_podium_05",
+    "file": "clips/meta_clip_briefing_podium_05.mp4",
+    "description": "A government press briefing room: a speaker at a podium with microphones, journalists and cameras in front. Generic press footage, not a Meta or Facebook event. A small WH.gov bug appears in the corner of the source frame.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a0",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_dc_capitol_01",
+    "file": "clips/meta_clip_dc_capitol_01.mp4",
+    "description": "Black and white 1940s archive film of the US Capitol dome in Washington, DC. Establishing shot only, not the 2018 hearings.",
+    "credit": "TheLBJLibrary",
+    "license": "CC BY 3.0",
+    "act": "a0",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_dc_capitol_02",
+    "file": "clips/meta_clip_dc_capitol_02.mp4",
+    "description": "Black and white 1940s archive film of a neoclassical federal building with columns and a lamp post in Washington, DC. Establishing shot only, not the 2018 hearings.",
+    "credit": "TheLBJLibrary",
+    "license": "CC BY 3.0",
+    "act": "a0",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_dc_capitol_03",
+    "file": "clips/meta_clip_dc_capitol_03.mp4",
+    "description": "Black and white 1940s archive film of men in overcoats and hats on steps outside a federal building in Washington, DC. Establishing shot only, not the 2018 hearings.",
+    "credit": "TheLBJLibrary",
+    "license": "CC BY 3.0",
+    "act": "a0",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_protest_hannover_01",
+    "file": "clips/meta_clip_protest_hannover_01.mp4",
+    "description": "A street protest march in Hannover, Germany: crowds walking with banners. Generic protest footage, not a Meta event.",
+    "credit": "C.Suthorn",
+    "license": "CC BY-SA 4.0",
+    "act": "a0",
+    "duration": 5.03
+  },
+  {
+    "id": "meta_clip_protest_hannover_02",
+    "file": "clips/meta_clip_protest_hannover_02.mp4",
+    "description": "A street protest march in Hannover, Germany: crowds walking with banners. Generic protest footage, not a Meta event.",
+    "credit": "C.Suthorn",
+    "license": "CC BY-SA 4.0",
+    "act": "a0",
+    "duration": 5.03
+  },
+  {
+    "id": "meta_clip_march_nyc_01",
+    "file": "clips/meta_clip_march_nyc_01.mp4",
+    "description": "A protester speaking through a megaphone at a New York march, wearing a BLACK LIVES shirt; a small MAL MERO watermark is visible in the source frame. Generic protest footage, not a Meta event.",
+    "credit": "Spielie Studio",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a0",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_march_nyc_02",
+    "file": "clips/meta_clip_march_nyc_02.mp4",
+    "description": "A march passing a large equestrian statue monument. Generic protest footage, not a Meta event.",
+    "credit": "Spielie Studio",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a0",
+    "duration": 2.0
+  },
+  {
+    "id": "meta_clip_sunset_timelapse_01",
+    "file": "clips/meta_clip_sunset_timelapse_01.mp4",
+    "description": "A time lapse of the sun setting over a horizon, sky turning orange. Generic mood shot.",
+    "credit": "Johann Mynhardt",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a0",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_sunset_timelapse_02",
+    "file": "clips/meta_clip_sunset_timelapse_02.mp4",
+    "description": "A time lapse of the sun setting over a horizon, sky turning orange. Generic mood shot.",
+    "credit": "Johann Mynhardt",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a0",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_parade_wiesbaden_01",
+    "file": "clips/meta_clip_parade_wiesbaden_01.mp4",
+    "description": "A crowd at a street parade in Wiesbaden, Germany, walking down a city street. Generic crowd footage, not a Meta event.",
+    "credit": "C.Suthorn",
+    "license": "CC BY-SA 4.0",
+    "act": "a0",
+    "duration": 3.96
+  },
+  {
+    "id": "meta_clip_workspace_desk_01",
+    "file": "clips/meta_clip_workspace_desk_01.mp4",
+    "description": "A desk workstation with monitors and a keyboard in a home office, camera panning across the setup. Generic office footage, not a Meta office.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a1",
+    "duration": 4.99
+  },
+  {
+    "id": "meta_clip_workspace_desk_02",
+    "file": "clips/meta_clip_workspace_desk_02.mp4",
+    "description": "A desk workstation with monitors and a keyboard in a home office, camera panning across the setup. Generic office footage, not a Meta office.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a1",
+    "duration": 4.99
+  },
+  {
+    "id": "meta_clip_tech_event_badge_01",
+    "file": "clips/meta_clip_tech_event_badge_01.mp4",
+    "description": "A close-up of a small electronic badge with a glowing screen, held up at a technology event in Berlin. Generic tech event footage.",
+    "credit": "Mitch Altman",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a1",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_early_computer_01",
+    "file": "clips/meta_clip_early_computer_01.mp4",
+    "description": "A history slideshow frame showing a 1957 IBM building exterior, captioned about the $2.7 million IBM 704 computer. Early computing material, not Facebook.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a1",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_early_computer_02",
+    "file": "clips/meta_clip_early_computer_02.mp4",
+    "description": "A history slideshow frame showing the IBM 704 computer room with operators, captioned about the installation marking an important moment in computation history. Early computing material, not Facebook.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a1",
+    "duration": 4.97
+  },
+  {
+    "id": "meta_clip_desk_evolution_01",
+    "file": "clips/meta_clip_desk_evolution_01.mp4",
+    "description": "An animation of a 1987 work desk with a laptop, phone and papers. Generic illustration of office change.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a1",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_desk_evolution_02",
+    "file": "clips/meta_clip_desk_evolution_02.mp4",
+    "description": "An animation of a 2013 work desk with a laptop. Generic illustration of office change.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a1",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_hackathon_stage_01",
+    "file": "clips/meta_clip_hackathon_stage_01.mp4",
+    "description": "A Wikimania conference stage in Katowice: a presenter inset on a large content screen showing maps and photos. Generic tech conference footage, not a Meta event.",
+    "credit": "Deb Tankersley",
+    "license": "CC BY-SA 4.0",
+    "act": "a1",
+    "duration": 4.97
+  },
+  {
+    "id": "meta_clip_hackathon_stage_02",
+    "file": "clips/meta_clip_hackathon_stage_02.mp4",
+    "description": "A Wikimania conference stage in Katowice: a presenter at a podium inset on a large screen. Generic tech conference footage, not a Meta event.",
+    "credit": "Deb Tankersley",
+    "license": "CC BY-SA 4.0",
+    "act": "a1",
+    "duration": 4.97
+  },
+  {
+    "id": "meta_clip_hackathon_stage_03",
+    "file": "clips/meta_clip_hackathon_stage_03.mp4",
+    "description": "A Wikimania conference stage in Katowice: two presenters inset beside a screen of code. Generic tech conference footage, not a Meta event.",
+    "credit": "Deb Tankersley",
+    "license": "CC BY-SA 4.0",
+    "act": "a1",
+    "duration": 4.97
+  },
+  {
+    "id": "meta_clip_hackathon_stage_04",
+    "file": "clips/meta_clip_hackathon_stage_04.mp4",
+    "description": "A Wikimania conference stage in Katowice: a presenter inset beside a screen of text. Generic tech conference footage, not a Meta event.",
+    "credit": "Deb Tankersley",
+    "license": "CC BY-SA 4.0",
+    "act": "a1",
+    "duration": 4.97
+  },
+  {
+    "id": "meta_clip_robotics_lab_01",
+    "file": "clips/meta_clip_robotics_lab_01.mp4",
+    "description": "A robotics laboratory: a mechanical arm moving on a bench among lab equipment. Generic research footage.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a1",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_robotics_lab_02",
+    "file": "clips/meta_clip_robotics_lab_02.mp4",
+    "description": "A robotics laboratory: a mechanical arm moving on a bench among lab equipment. Generic research footage.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a1",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_robotics_lab_03",
+    "file": "clips/meta_clip_robotics_lab_03.mp4",
+    "description": "A robotics laboratory: a mechanical arm moving on a bench among lab equipment. Generic research footage.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a1",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_datacenter_row_01",
+    "file": "clips/meta_clip_datacenter_row_01.mp4",
+    "description": "A technology presenter talking to camera in a studio, introducing a data center tour. Generic presenter footage, not a Meta data center.",
+    "credit": "Lawrence Systems",
+    "license": "CC BY 3.0",
+    "act": "a2",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_datacenter_row_02",
+    "file": "clips/meta_clip_datacenter_row_02.mp4",
+    "description": "Inside a data center infrastructure room: pipes, cable conduits and concrete walls. Generic stand-in footage, not a Meta data center.",
+    "credit": "Lawrence Systems",
+    "license": "CC BY 3.0",
+    "act": "a2",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_datacenter_row_03",
+    "file": "clips/meta_clip_datacenter_row_03.mp4",
+    "description": "Exterior of a data center building with water tanks, with a burned-in caption about million-gallon tanks. Generic stand-in footage, not a Meta data center.",
+    "credit": "Lawrence Systems",
+    "license": "CC BY 3.0",
+    "act": "a2",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_datacenter_row_04",
+    "file": "clips/meta_clip_datacenter_row_04.mp4",
+    "description": "Interior of a data center: long rows of server racks with blinking lights. Generic stand-in footage, not a Meta data center.",
+    "credit": "Lawrence Systems",
+    "license": "CC BY 3.0",
+    "act": "a2",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_datacenter_row_05",
+    "file": "clips/meta_clip_datacenter_row_05.mp4",
+    "description": "Interior of a data center: long rows of server racks with blinking lights. Generic stand-in footage, not a Meta data center.",
+    "credit": "Lawrence Systems",
+    "license": "CC BY 3.0",
+    "act": "a2",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_datacenter_row_06",
+    "file": "clips/meta_clip_datacenter_row_06.mp4",
+    "description": "Shelves of labeled parts storage bins inside a data center facility. Generic stand-in footage, not a Meta data center.",
+    "credit": "Lawrence Systems",
+    "license": "CC BY 3.0",
+    "act": "a2",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_computer_workings_02",
+    "file": "clips/meta_clip_computer_workings_02.mp4",
+    "description": "An educational animation table of logic gates: OR, AND, XOR, NOR, NAND, XNOR. Generic explainer visuals.",
+    "credit": "Improbable Matter",
+    "license": "CC BY 3.0",
+    "act": "a2",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_computer_workings_03",
+    "file": "clips/meta_clip_computer_workings_03.mp4",
+    "description": "An educational animation slide with Cycle buttons and a Turing complete explanation beside a portrait of Alan Turing. Generic explainer visuals.",
+    "credit": "Improbable Matter",
+    "license": "CC BY 3.0",
+    "act": "a2",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_computer_workings_04",
+    "file": "clips/meta_clip_computer_workings_04.mp4",
+    "description": "A science presenter talking to camera in a room with shelves. Generic explainer footage.",
+    "credit": "Improbable Matter",
+    "license": "CC BY 3.0",
+    "act": "a2",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_how_computers_compute_01",
+    "file": "clips/meta_clip_how_computers_compute_01.mp4",
+    "description": "A science presenter explaining how computers compute, with graphics and props. Generic explainer footage.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a2",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_how_computers_compute_02",
+    "file": "clips/meta_clip_how_computers_compute_02.mp4",
+    "description": "Close-up of a mechanical computing model prop from a science explainer. Generic explainer footage.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a2",
+    "duration": 4.97
+  },
+  {
+    "id": "meta_clip_tiny_computer_01",
+    "file": "clips/meta_clip_tiny_computer_01.mp4",
+    "description": "Close-up of a tiny computer chip on a board. Generic technology footage.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a2",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_tiny_computer_02",
+    "file": "clips/meta_clip_tiny_computer_02.mp4",
+    "description": "Close-up of a tiny computer chip from another angle. Generic technology footage.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a2",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_terminal_ui_01",
+    "file": "clips/meta_clip_terminal_ui_01.mp4",
+    "description": "A futuristic terminal interface on screen with a MAIN SHELL panel and a clock reading 23:15. Generic screen footage, not a Meta system.",
+    "credit": "NairobiPapel",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a2",
+    "duration": 4.7
+  },
+  {
+    "id": "meta_clip_terminal_ui_02",
+    "file": "clips/meta_clip_terminal_ui_02.mp4",
+    "description": "A futuristic terminal interface on screen with a MAIN SHELL panel and a clock reading 23:16. Generic screen footage, not a Meta system.",
+    "credit": "NairobiPapel",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a2",
+    "duration": 4.37
+  },
+  {
+    "id": "meta_clip_typing_huntpeck_01",
+    "file": "clips/meta_clip_typing_huntpeck_01.mp4",
+    "description": "Close-up of hands typing with two index fingers on a laptop keyboard during a typing test. Generic typing footage.",
+    "credit": "C40115",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a3",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_typing_huntpeck_02",
+    "file": "clips/meta_clip_typing_huntpeck_02.mp4",
+    "description": "Close-up of hands typing with two index fingers on a laptop keyboard during a typing test. Generic typing footage.",
+    "credit": "C40115",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a3",
+    "duration": 4.99
+  },
+  {
+    "id": "meta_clip_keyboard_butterfly_01",
+    "file": "clips/meta_clip_keyboard_butterfly_01.mp4",
+    "description": "A laptop with a fold-out butterfly keyboard opening and closing. Generic hardware footage.",
+    "credit": "SMCH",
+    "license": "CC BY 3.0",
+    "act": "a3",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_phone_screen_01",
+    "file": "clips/meta_clip_phone_screen_01.mp4",
+    "description": "A presenter holding up a smartphone to camera. Generic phone footage, not a Meta product.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a3",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_phone_screen_02",
+    "file": "clips/meta_clip_phone_screen_02.mp4",
+    "description": "Close-up of hands positioning a smartphone with guide stickers on a table. Generic phone footage, not a Meta product.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a3",
+    "duration": 4.97
+  },
+  {
+    "id": "meta_clip_phone_screen_03",
+    "file": "clips/meta_clip_phone_screen_03.mp4",
+    "description": "Close-up of hands fitting a protective glass screen cover onto a smartphone. Generic phone footage, not a Meta product.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a3",
+    "duration": 4.97
+  },
+  {
+    "id": "meta_clip_phone_screen_04",
+    "file": "clips/meta_clip_phone_screen_04.mp4",
+    "description": "Close-up of hands fitting a protective glass screen cover onto a smartphone. Generic phone footage, not a Meta product.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a3",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_phone_display_01",
+    "file": "clips/meta_clip_phone_display_01.mp4",
+    "description": "Close-up of a smartphone display showing a settings screen. Generic phone footage, not a Meta product.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a3",
+    "duration": 4.99
+  },
+  {
+    "id": "meta_clip_phone_display_02",
+    "file": "clips/meta_clip_phone_display_02.mp4",
+    "description": "Close-up of a finger touching a smartphone screen. Generic phone footage, not a Meta product.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a3",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_phone_vibrate_01",
+    "file": "clips/meta_clip_phone_vibrate_01.mp4",
+    "description": "An iPhone lying on a table showing an incoming call screen, in a vibration demo. Generic phone footage; a phone number is visible on screen, avoid freeze-frame.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a3",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_phone_vibrate_02",
+    "file": "clips/meta_clip_phone_vibrate_02.mp4",
+    "description": "An iPhone lying on a table showing an incoming call screen, in a vibration demo. Generic phone footage; a phone number is visible on screen, avoid freeze-frame.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a3",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_phone_parts_01",
+    "file": "clips/meta_clip_phone_parts_01.mp4",
+    "description": "An illustration from a smartphone components explainer: a world map with a cargo ship, showing where phone materials come from. Generic explainer visuals, not a Meta product.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a3",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_phone_parts_02",
+    "file": "clips/meta_clip_phone_parts_02.mp4",
+    "description": "An illustration from a smartphone components explainer: a hand holding a phone labeled TANTAL over a world map. Generic explainer visuals, not a Meta product.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a3",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_code_server_01",
+    "file": "clips/meta_clip_code_server_01.mp4",
+    "description": "A screen recording of a developer writing server code in an editor. Generic coding footage, not Meta code.",
+    "credit": "Renepick",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a3",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_code_server_02",
+    "file": "clips/meta_clip_code_server_02.mp4",
+    "description": "A screen recording of a developer writing server code in an editor. Generic coding footage, not Meta code.",
+    "credit": "Renepick",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a3",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_code_server_03",
+    "file": "clips/meta_clip_code_server_03.mp4",
+    "description": "A screen recording of a developer writing server code in an editor. Generic coding footage, not Meta code.",
+    "credit": "Renepick",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a3",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_briefing_podium_06",
+    "file": "clips/meta_clip_briefing_podium_06.mp4",
+    "description": "A government press briefing room: a speaker at a podium with microphones, journalists and cameras in front. Generic press footage, not a Meta or Facebook event. A small WH.gov bug appears in the corner of the source frame.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a4",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_briefing_podium_07",
+    "file": "clips/meta_clip_briefing_podium_07.mp4",
+    "description": "A government press briefing room: a speaker at a podium with microphones, journalists and cameras in front. Generic press footage, not a Meta or Facebook event. A small WH.gov bug appears in the corner of the source frame.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a4",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_briefing_podium_08",
+    "file": "clips/meta_clip_briefing_podium_08.mp4",
+    "description": "Journalists seated in the audience at a government press briefing, listening. Generic press footage, not a Meta or Facebook event. A small WH.gov bug appears in the corner of the source frame.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a4",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_briefing_podium_09",
+    "file": "clips/meta_clip_briefing_podium_09.mp4",
+    "description": "A government press briefing room: a speaker at a podium with microphones, journalists and cameras in front. Generic press footage, not a Meta or Facebook event. A small WH.gov bug appears in the corner of the source frame.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a4",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_dc_archive_03",
+    "file": "clips/meta_clip_dc_archive_03.mp4",
+    "description": "Black and white 1940s film of a man in a coat and hat walking on a Washington street. Archive footage, not the 2018 hearings.",
+    "credit": "TheLBJLibrary",
+    "license": "CC BY 3.0",
+    "act": "a4",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_dc_archive_04",
+    "file": "clips/meta_clip_dc_archive_04.mp4",
+    "description": "Black and white 1940s street scene with vintage cars and a woman walking. Archive footage, not the 2018 hearings.",
+    "credit": "TheLBJLibrary",
+    "license": "CC BY 3.0",
+    "act": "a4",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_london_street_01",
+    "file": "clips/meta_clip_london_street_01.mp4",
+    "description": "A London street scene outside Liverpool Street Station with an EATALY storefront and pedestrians. Real London location, generic street footage, not a Cambridge Analytica event.",
+    "credit": "Acabashi",
+    "license": "CC BY-SA 4.0",
+    "act": "a4",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_london_street_02",
+    "file": "clips/meta_clip_london_street_02.mp4",
+    "description": "A London street scene outside Liverpool Street Station, pedestrians and bollards. Real London location, generic street footage, not a Cambridge Analytica event.",
+    "credit": "Acabashi",
+    "license": "CC BY-SA 4.0",
+    "act": "a4",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_london_street_03",
+    "file": "clips/meta_clip_london_street_03.mp4",
+    "description": "The front of Liverpool Street Station in London with a stone pillar and pedestrians. Real London location, generic street footage, not a Cambridge Analytica event.",
+    "credit": "Acabashi",
+    "license": "CC BY-SA 4.0",
+    "act": "a4",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_march_nyc_03",
+    "file": "clips/meta_clip_march_nyc_03.mp4",
+    "description": "A street protest march in New York: crowds walking down a city street with signs. Generic protest footage, not a Meta event.",
+    "credit": "Spielie Studio",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a4",
+    "duration": 4.96
+  },
+  {
+    "id": "meta_clip_march_nyc_04",
+    "file": "clips/meta_clip_march_nyc_04.mp4",
+    "description": "Close-up of a red, black and green flag at a street march. Generic protest footage, not a Meta event.",
+    "credit": "Spielie Studio",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a4",
+    "duration": 4.96
+  },
+  {
+    "id": "meta_clip_protest_hannover_03",
+    "file": "clips/meta_clip_protest_hannover_03.mp4",
+    "description": "A march in Hannover with red flags and an AMNESTY INTERNATIONAL banner. Generic protest footage, not a Meta event.",
+    "credit": "C.Suthorn",
+    "license": "CC BY-SA 4.0",
+    "act": "a4",
+    "duration": 5.03
+  },
+  {
+    "id": "meta_clip_protest_hannover_04",
+    "file": "clips/meta_clip_protest_hannover_04.mp4",
+    "description": "A street protest march in Hannover, Germany: crowds walking with banners. Generic protest footage, not a Meta event.",
+    "credit": "C.Suthorn",
+    "license": "CC BY-SA 4.0",
+    "act": "a4",
+    "duration": 4.99
+  },
+  {
+    "id": "meta_clip_parade_wiesbaden_02",
+    "file": "clips/meta_clip_parade_wiesbaden_02.mp4",
+    "description": "A crowd at a street parade in Wiesbaden, Germany, walking down a city street. Generic crowd footage, not a Meta event.",
+    "credit": "C.Suthorn",
+    "license": "CC BY-SA 4.0",
+    "act": "a4",
+    "duration": 4.0
+  },
+  {
+    "id": "meta_clip_briefing_podium_10",
+    "file": "clips/meta_clip_briefing_podium_10.mp4",
+    "description": "A journalist asking a question at a government press briefing. Generic press footage, not a Meta or Facebook event. A small WH.gov bug appears in the corner of the source frame.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a5",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_briefing_podium_11",
+    "file": "clips/meta_clip_briefing_podium_11.mp4",
+    "description": "A journalist asking a question at a government press briefing. Generic press footage, not a Meta or Facebook event. A small WH.gov bug appears in the corner of the source frame.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a5",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_briefing_podium_12",
+    "file": "clips/meta_clip_briefing_podium_12.mp4",
+    "description": "A government press briefing room: a speaker at a podium with microphones, journalists and cameras in front. Generic press footage, not a Meta or Facebook event. A small WH.gov bug appears in the corner of the source frame.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a5",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_briefing_podium_13",
+    "file": "clips/meta_clip_briefing_podium_13.mp4",
+    "description": "A government press briefing room: a speaker at a podium with microphones, journalists and cameras in front. Generic press footage, not a Meta or Facebook event. A small WH.gov bug appears in the corner of the source frame.",
+    "credit": "FLAG: no individual byline",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a5",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_dc_archive_05",
+    "file": "clips/meta_clip_dc_archive_05.mp4",
+    "description": "Black and white 1940s film of the Washington Monument in snow, seen down a long reflecting pool. Establishing shot only, not the 2018 hearings.",
+    "credit": "TheLBJLibrary",
+    "license": "CC BY 3.0",
+    "act": "a5",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_dc_archive_06",
+    "file": "clips/meta_clip_dc_archive_06.mp4",
+    "description": "Black and white 1940s archive film of a neoclassical federal building with tall columns in Washington, DC. Establishing shot only, not the 2018 hearings.",
+    "credit": "TheLBJLibrary",
+    "license": "CC BY 3.0",
+    "act": "a5",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_dc_archive_07",
+    "file": "clips/meta_clip_dc_archive_07.mp4",
+    "description": "Black and white 1940s archive film of a federal building with a flagpole and trees in Washington, DC. Establishing shot only, not the 2018 hearings.",
+    "credit": "TheLBJLibrary",
+    "license": "CC BY 3.0",
+    "act": "a5",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_london_street_04",
+    "file": "clips/meta_clip_london_street_04.mp4",
+    "description": "A London street with modern towers and older buildings, people walking. Real London location, generic street footage, not a Cambridge Analytica event.",
+    "credit": "Acabashi",
+    "license": "CC BY-SA 4.0",
+    "act": "a5",
+    "duration": 4.97
+  },
+  {
+    "id": "meta_clip_london_street_05",
+    "file": "clips/meta_clip_london_street_05.mp4",
+    "description": "A London street looking up at tall towers. Real London location, generic street footage, not a Cambridge Analytica event.",
+    "credit": "Acabashi",
+    "license": "CC BY-SA 4.0",
+    "act": "a5",
+    "duration": 4.97
+  },
+  {
+    "id": "meta_clip_software_demo_01",
+    "file": "clips/meta_clip_software_demo_01.mp4",
+    "description": "A screen recording of a Wiki.js home page with a blue sidebar. Generic software footage, not a Meta product.",
+    "credit": "junicast",
+    "license": "CC BY 3.0",
+    "act": "a5",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_software_demo_02",
+    "file": "clips/meta_clip_software_demo_02.mp4",
+    "description": "A screen recording of a Wiki.js editor page with an illustration. Generic software footage, not a Meta product.",
+    "credit": "junicast",
+    "license": "CC BY 3.0",
+    "act": "a5",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_demo_amsterdam_01",
+    "file": "clips/meta_clip_demo_amsterdam_01.mp4",
+    "description": "A demonstration in Amsterdam with yellow umbrellas marked with red hearts, dated 2020 on screen. Generic protest footage, not a Meta event.",
+    "credit": "Karen Eliot",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a5",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_demo_amsterdam_02",
+    "file": "clips/meta_clip_demo_amsterdam_02.mp4",
+    "description": "A demonstration in Amsterdam with yellow umbrellas, seen from inside the crowd. Generic protest footage, not a Meta event.",
+    "credit": "Karen Eliot",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a5",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_march_nyc_05",
+    "file": "clips/meta_clip_march_nyc_05.mp4",
+    "description": "Marchers' feet walking down a city street. Generic protest footage, not a Meta event.",
+    "credit": "Spielie Studio",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a5",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_march_nyc_06",
+    "file": "clips/meta_clip_march_nyc_06.mp4",
+    "description": "A protester speaking through a megaphone at a street march. Generic protest footage, not a Meta event.",
+    "credit": "Spielie Studio",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a5",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_march_nyc_07",
+    "file": "clips/meta_clip_march_nyc_07.mp4",
+    "description": "Marchers with raised fists at a street protest. Generic protest footage, not a Meta event.",
+    "credit": "Spielie Studio",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a5",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_dc_archive_08",
+    "file": "clips/meta_clip_dc_archive_08.mp4",
+    "description": "Black and white 1940s film of a woman in a dress walking outside a building. Archive footage, not the 2018 hearings.",
+    "credit": "TheLBJLibrary",
+    "license": "CC BY 3.0",
+    "act": "a6",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_march_nyc_08",
+    "file": "clips/meta_clip_march_nyc_08.mp4",
+    "description": "Close-up of marchers wearing BLACK LIVES shirts. Generic protest footage, not a Meta event.",
+    "credit": "Spielie Studio",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a6",
+    "duration": 4.96
+  },
+  {
+    "id": "meta_clip_march_nyc_09",
+    "file": "clips/meta_clip_march_nyc_09.mp4",
+    "description": "A crowd crossing a street at a march, carrying flags. Generic protest footage, not a Meta event.",
+    "credit": "Spielie Studio",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a6",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_protest_hannover_05",
+    "file": "clips/meta_clip_protest_hannover_05.mp4",
+    "description": "A street protest march in Hannover, Germany: crowds walking with banners. Generic protest footage, not a Meta event.",
+    "credit": "C.Suthorn",
+    "license": "CC BY-SA 4.0",
+    "act": "a6",
+    "duration": 5.03
+  },
+  {
+    "id": "meta_clip_protest_hannover_06",
+    "file": "clips/meta_clip_protest_hannover_06.mp4",
+    "description": "A street protest march in Hannover, Germany: crowds walking with banners. Generic protest footage, not a Meta event.",
+    "credit": "C.Suthorn",
+    "license": "CC BY-SA 4.0",
+    "act": "a6",
+    "duration": 4.99
+  },
+  {
+    "id": "meta_clip_parade_wiesbaden_03",
+    "file": "clips/meta_clip_parade_wiesbaden_03.mp4",
+    "description": "A crowd at a street parade in Wiesbaden, Germany, walking down a city street. Generic crowd footage, not a Meta event.",
+    "credit": "C.Suthorn",
+    "license": "CC BY-SA 4.0",
+    "act": "a6",
+    "duration": 4.0
+  },
+  {
+    "id": "meta_clip_parade_wiesbaden_04",
+    "file": "clips/meta_clip_parade_wiesbaden_04.mp4",
+    "description": "A crowd at a street parade in Wiesbaden, Germany, walking down a city street. Generic crowd footage, not a Meta event.",
+    "credit": "C.Suthorn",
+    "license": "CC BY-SA 4.0",
+    "act": "a6",
+    "duration": 4.0
+  },
+  {
+    "id": "meta_clip_demo_amsterdam_03",
+    "file": "clips/meta_clip_demo_amsterdam_03.mp4",
+    "description": "A water cannon spraying over yellow umbrellas at a demonstration in Amsterdam. Generic protest footage, not a Meta event.",
+    "credit": "Karen Eliot",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a6",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_demo_amsterdam_04",
+    "file": "clips/meta_clip_demo_amsterdam_04.mp4",
+    "description": "A water cannon spraying over yellow umbrellas at a demonstration in Amsterdam, another angle. Generic protest footage, not a Meta event.",
+    "credit": "Karen Eliot",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a6",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_sunset_timelapse_03",
+    "file": "clips/meta_clip_sunset_timelapse_03.mp4",
+    "description": "A time lapse of the sun setting over a horizon, sky turning orange. Generic mood shot.",
+    "credit": "Johann Mynhardt",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a6",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_sunset_timelapse_04",
+    "file": "clips/meta_clip_sunset_timelapse_04.mp4",
+    "description": "A time lapse of the sun setting over a horizon, sky turning orange. Generic mood shot.",
+    "credit": "Johann Mynhardt",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a6",
+    "duration": 5.0
+  },
+  {
+    "id": "meta_clip_conference_speaker_01",
+    "file": "clips/meta_clip_conference_speaker_01.mp4",
+    "description": "A speaker on stage in a lecture hall, presenting to an audience. Generic conference footage, not a Meta event.",
+    "credit": "Denver Gingerich",
+    "license": "FLAG: licence name not shown in crawled page text",
+    "act": "a6",
+    "duration": 5.0
+  }
+]
