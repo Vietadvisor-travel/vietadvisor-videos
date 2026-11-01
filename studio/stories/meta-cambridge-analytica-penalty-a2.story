@@ -15,7 +15,7 @@ motif: bill_tape
 In twenty fourteen, a Cambridge University researcher named Aleksandr Kogan built a personality quiz called "This is your digital **life**."
 
 // CARD a2-02 · SEE: NEW: a small square of gold dots, 270,000 DOWNLOADED; on "Through" it bursts into a field of blue dots that fills the frame: UP TO 87 MILLION PROFILES (FACEBOOK'S ESTIMATE) · SEAM out right
-# cine act=rise fx="code:@cascade_field;bg:stock_surveillance_control_desk_01;a:270,000;alab:DOWNLOADED THE QUIZ;b:UP TO 87 MILLION;blab:PROFILES · FACEBOOK'S OWN ESTIMATE;go:Through;src:about 82% in the United States;out:right;push:.008"
+# cine act=rise fx="code:@cascade_field;bg:meta_art_scene_data_harvest;a:270,000;alab:DOWNLOADED THE QUIZ;b:UP TO 87 MILLION;blab:PROFILES · FACEBOOK'S OWN ESTIMATE;go:thousand;src:about 82% in the United States;out:right;push:.01"
 About two hundred and seventy thousand people downloaded **it**.
 Through their friend lists, the app reached far more people than that.
 Facebook's own estimate, published by its chief technology officer in April twenty eighteen, was up to eighty-seven million **profiles**.
