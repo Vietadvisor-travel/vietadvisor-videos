@@ -24,12 +24,12 @@ A year later, the company paid two hundred thousand dollars just for the name fa
 In May twenty twelve, Facebook went public and raised about sixteen billion **dollars**.
 
 // CARD a1-04 · SEE: two solid blocks rise out of a dark floor one after the other: INSTAGRAM · 2012 $1B, then WHATSAPP · 2014 $19B, nineteen times taller · SEAM out right
-# cine act=rise fx="code:@blocks;vals:1,19;labs:INSTAGRAM · 2012,WHATSAPP · 2014;txts:$1B,$19B;go:Instagram;gap:2.2;note:13 employees and 55 employees;out:right"
+# cine act=rise fx="code:@blocks;bg:stock_tech_startup_office_03;vals:1,19;labs:INSTAGRAM · 2012,WHATSAPP · 2014;txts:$1B,$19B;go:Instagram;gap:2.2;note:13 employees and 55 employees;out:right"
 A month earlier, it had bought Instagram for about one billion. Instagram had thirty million users and thirteen **employees**. (J)
 Two years later, it paid about nineteen billion dollars for WhatsApp, which had four hundred and fifty million users and fifty-five **employees**.
 
 // CARD a1-05 · SEE: a closed ring of stations over real phone users: USERS → ATTENTION → ADVERTISERS → MONEY; arrows draw on their words and the ring closes in gold · SEAM in right
-# cine act=rise fx="code:@money_loop;bg:meta_phone_walkers_hong_kong;nodes:USERS@users~DATA@knew~ADVERTISERS@advertisers~MONEY@worth;in:right"
+# cine act=rise fx="code:@money_loop;bg:stock_phone_street_phone_01;nodes:USERS@users~DATA@knew~ADVERTISERS@advertisers~MONEY@worth;in:right"
 The users never paid anything. The advertisers paid for the **users**.
 And the more Facebook knew about each person, the more each advert was **worth**.
 

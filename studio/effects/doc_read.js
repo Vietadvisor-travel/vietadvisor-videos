@@ -10,7 +10,7 @@
   // highlighter runs across each marked figure on the word that says it. Coordinates are fractions of the page image.
   // params: doc, crop (x0,y0,x1,y1 of the page to show), marks (x0,y0,x1,y1@word ~ …), zoom (word), z (zoom amount), rot, in, out
   const im = img(P.doc); ctx.save(); seam(P.in || 'none', P.out || 'none');
-  ctx.fillStyle = '#16120e'; ctx.fillRect(-W, -H, 3 * W, 3 * H); const lg = ctx.createRadialGradient(W * .5, H * .4, 0, W * .5, H * .4, W * .7); lg.addColorStop(0, 'rgba(255,214,150,.12)'); lg.addColorStop(1, 'rgba(0,0,0,.5)'); ctx.fillStyle = lg; ctx.fillRect(0, 0, W, H);
+  ctx.fillStyle = '#16120e'; ctx.fillRect(-W, -H, 3 * W, 3 * H); const lg = ctx.createRadialGradient(W * (.5 + (Math.min(1, t / Math.max(1, dur)) - .5) * .7), H * .4, 0, W * (.5 + (Math.min(1, t / Math.max(1, dur)) - .5) * .7), H * .4, W * .7); lg.addColorStop(0, 'rgba(255,214,150,.12)'); lg.addColorStop(1, 'rgba(0,0,0,.5)'); ctx.fillStyle = lg; ctx.fillRect(0, 0, W, H);
   if (!im || !im.width) { ctx.restore(); return; }
   const [c0, c1, c2, c3] = String(P.crop || '0,0,1,1').split(',').map(Number), sw = (c2 - c0) * im.width, sh = (c3 - c1) * im.height;
   const marks = String(P.marks || '').split('~').filter(Boolean).map(s => { const [r, w] = s.split('@'); const [a, b, c, d] = r.split(',').map(Number); return { a, b, c, d, w }; });

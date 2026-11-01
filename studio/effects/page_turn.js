@@ -10,7 +10,7 @@
   // word; then the camera reads into it and a highlighter runs over the marked line(s). params: pages (ids, the last is the
   // stop page), stop (word), marks (x0,y0,x1,y1@word ~ …, on the stop page), zoom (word), z, in, out
   ctx.save(); seam(P.in || 'none', P.out || 'none');
-  ctx.fillStyle = '#15110d'; ctx.fillRect(-W, -H, 3 * W, 3 * H); const lg = ctx.createRadialGradient(W * .5, H * .42, 0, W * .5, H * .42, W * .7); lg.addColorStop(0, 'rgba(255,214,150,.13)'); lg.addColorStop(1, 'rgba(0,0,0,.55)'); ctx.fillStyle = lg; ctx.fillRect(0, 0, W, H);
+  ctx.fillStyle = '#15110d'; ctx.fillRect(-W, -H, 3 * W, 3 * H); const lg = ctx.createRadialGradient(W * (.5 + (Math.min(1, t / Math.max(1, dur)) - .5) * .7), H * .42, 0, W * (.5 + (Math.min(1, t / Math.max(1, dur)) - .5) * .7), H * .42, W * .7); lg.addColorStop(0, 'rgba(255,214,150,.2)'); lg.addColorStop(1, 'rgba(0,0,0,.55)'); ctx.fillStyle = lg; ctx.fillRect(0, 0, W, H);
   const ids = String(P.pages).split(','), n = ids.length, ts = P.stop ? at(P.stop) : 0, f = P.stop ? clamp(t / Math.max(.4, ts)) : 1, e = 1 - Math.pow(1 - f, 2.2), i = Math.min(n - 1, Math.floor(e * (n - 1) + .0001)), fr = e * (n - 1) - i;
   const last = img(ids[n - 1]); if (!last || !last.width) { ctx.restore(); return; }
   const marks = String(P.marks || '').split('~').filter(Boolean).map(s => { const [r, w] = s.split('@'); const [a, b, c, d] = r.split(',').map(Number); return { a, b, c, d, w }; });

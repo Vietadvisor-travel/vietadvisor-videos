@@ -7,7 +7,7 @@
 */
 ({ t, at, p, W, H, u, img, ctx, params: P, clamp, lerp, seam, dur }) => {
   ctx.save(); seam(P.in || 'none', P.out || 'none');
-  ctx.fillStyle = '#15110d'; ctx.fillRect(-W, -H, 3 * W, 3 * H); const lg = ctx.createRadialGradient(W * .5, H * .42, 0, W * .5, H * .42, W * .7); lg.addColorStop(0, 'rgba(255,214,150,.13)'); lg.addColorStop(1, 'rgba(0,0,0,.55)'); ctx.fillStyle = lg; ctx.fillRect(0, 0, W, H);
+  ctx.fillStyle = '#15110d'; ctx.fillRect(-W, -H, 3 * W, 3 * H); const lg = ctx.createRadialGradient(W * (.5 + (Math.min(1, t / Math.max(1, dur)) - .5) * .7), H * .42, 0, W * (.5 + (Math.min(1, t / Math.max(1, dur)) - .5) * .7), H * .42, W * .7); lg.addColorStop(0, 'rgba(255,214,150,.2)'); lg.addColorStop(1, 'rgba(0,0,0,.55)'); ctx.fillStyle = lg; ctx.fillRect(0, 0, W, H);
   const im = img(P.doc); if (!im || !im.width) { ctx.restore(); return; }
   const [c0, c1, c2, c3] = String(P.crop || '0,0,1,1').split(',').map(Number), sw = (c2 - c0) * im.width, sh = (c3 - c1) * im.height, s = Math.min(W * .86 / sw, H * .74 / sh) * (1 + .04 * clamp(t / dur)), pw = sw * s, ph = sh * s, x0 = W / 2 - pw / 2, y0 = H * .45 - ph / 2;
   ctx.save(); ctx.shadowColor = 'rgba(0,0,0,.55)'; ctx.shadowBlur = 40 * u; ctx.shadowOffsetY = 16 * u; ctx.fillStyle = '#f7f5ef'; ctx.fillRect(x0 - 16 * u, y0 - 16 * u, pw + 32 * u, ph + 32 * u); ctx.restore(); ctx.drawImage(im, c0 * im.width, c1 * im.height, sw, sh, x0, y0, pw, ph);

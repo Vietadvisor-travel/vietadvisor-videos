@@ -7,7 +7,7 @@
 */
 ({ t, at, p, W, H, u, img, ctx, params: P, clamp, lerp, text, seam, dur }) => {
   ctx.save(); seam(P.in || 'none', P.out || 'none');
-  ctx.fillStyle = '#15110d'; ctx.fillRect(-W, -H, 3 * W, 3 * H); const lg = ctx.createRadialGradient(W * .5, H * .45, 0, W * .5, H * .45, W * .7); lg.addColorStop(0, 'rgba(255,214,150,.14)'); lg.addColorStop(1, 'rgba(0,0,0,.55)'); ctx.fillStyle = lg; ctx.fillRect(0, 0, W, H);
+  ctx.fillStyle = '#15110d'; ctx.fillRect(-W, -H, 3 * W, 3 * H); const lg = ctx.createRadialGradient(W * (.5 + (Math.min(1, t / Math.max(1, dur)) - .5) * .7), H * .45, 0, W * (.5 + (Math.min(1, t / Math.max(1, dur)) - .5) * .7), H * .45, W * .7); lg.addColorStop(0, 'rgba(255,214,150,.14)'); lg.addColorStop(1, 'rgba(0,0,0,.55)'); ctx.fillStyle = lg; ctx.fillRect(0, 0, W, H);
   const fw = W * .5, fh = H * .56, fx = W / 2 - fw / 2, fy = H * .22, k = clamp(p(P.go || 0, 1.2, 'inOut')), im = img(P.doc);
   ctx.save(); ctx.shadowColor = 'rgba(0,0,0,.55)'; ctx.shadowBlur = 40 * u; ctx.shadowOffsetY = 16 * u; ctx.fillStyle = '#b48a55'; ctx.fillRect(fx, fy, fw, fh); ctx.restore();
   if (im && im.width && k > 0) { const [c0, c1, c2, c3] = String(P.crop || '0,0,1,1').split(',').map(Number), sw = (c2 - c0) * im.width, sh = (c3 - c1) * im.height, s = Math.min(fw * .9 / sw, fh * .9 / sh) * lerp(1, 1.35, k), pw = sw * s, ph = sh * s, y = lerp(fy + fh * .5, H * .44, k);

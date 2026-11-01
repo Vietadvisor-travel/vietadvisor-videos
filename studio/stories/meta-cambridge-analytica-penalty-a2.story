@@ -21,7 +21,7 @@ Through their friend lists, the app reached far more people than that.
 Facebook's own estimate, published by its chief technology officer in April twenty eighteen, was up to eighty-seven million **profiles**.
 
 // CARD a2-03 · SEE: three blocks rise on a dark floor: FIRST REPORTS 50M, FTC COMPLAINT 65M, FACEBOOK 87M; on "eighty-two" the note sets: about 82 % in the United States · SEAM in right
-# cine act=doubt fx="code:@blocks;vals:50,65,87;labs:FIRST REPORTS · 2018,FTC · 2019,FACEBOOK · 2018;txts:50M,65M,87M;go:Other;gap:.6;in:right"
+# cine act=doubt fx="code:@blocks;bg:stock_people_night_crowd_06;vals:50,65,87;labs:FIRST REPORTS · 2018,FTC · 2019,FACEBOOK · 2018;txts:50M,65M,87M;go:Other;gap:.6;in:right"
 {wry} Other counts say fifty million, or sixty-five. Nobody outside the company has ever counted them **all**.
 About eighty-two percent of those profiles belonged to people in the United **States**.
 
