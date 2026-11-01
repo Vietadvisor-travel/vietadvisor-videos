@@ -150,12 +150,14 @@
   ],
   "open": "code",
   "modes": {
-   "code": 7
+   "code": 13
   },
   "verbs": {},
   "trans": {},
   "tracks": [
-   "km_clean_soul"
+   "km_darkest_child",
+   "km_lightless_dawn",
+   "km_oppressive_gloom"
   ],
   "date": "2026-11-01"
  }
