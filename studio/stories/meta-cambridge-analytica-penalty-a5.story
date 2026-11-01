@@ -30,7 +30,7 @@ One warning, because the headlines mix them up. New Mexico has a second, separat
 But the case was bigger than one quiz **app**.
 It was about twenty-nine public statements Meta and its leaders had made, about privacy, hate speech, misinformation and **moderation**.
 
-// CARD a5-05 · SEE: the same wall of 29 slips; on "Friday" a date card drops: VERDICT · 25 SEP 2026; on "jury" 26 slips flip red one after another, 3 stay grey: 26 OF 29 MISLEADING · SEAM out right
+// CARD a5-05 · SEE: the same wall of 29 slips; on "Friday" a date card drops: VERDICT · 25 SEP 2026; on "jury" 26 slips flip red one after another, 3 stay grey: 26 OF 29 MISLEADING · SEAM out right · HOLD
 # cine act=fall fx="code:@slip_wall;n:29;pre:1;rgo:jury;red:26;rlab:26 OF 29 MISLEADING;date:VERDICT · 25 SEP 2026;dgo:Friday;out:right"
 {grave} On Friday the twenty-fifth of September, twenty twenty-six, a jury in Santa Fe gave its **verdict**.
 Twenty-six of those twenty-nine statements were **misleading**.
