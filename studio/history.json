@@ -146,16 +146,17 @@
   "opening": null,
   "ending": null,
   "looks": [
-   "tech"
+   "dossier"
   ],
   "open": "code",
   "modes": {
-   "code": 7
+   "code": 9
   },
   "verbs": {},
   "trans": {},
   "tracks": [
-   "km_clean_soul"
+   "km_deep_haze",
+   "km_lightless_dawn"
   ],
   "date": "2026-11-01"
  }
