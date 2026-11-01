@@ -1,7 +1,7 @@
 # EPISODE 08 · meta-cambridge-analytica-penalty · The bill nobody has paid
 
 ## 0. META
-- slug: meta-cambridge-analytica-penalty · publish slot Tue 10 Nov 2026 (week file SCHEDULE_WEEK_2026-11-02.md) · length ≈ 12–13 min (2,016 words, 76 beats; rule v6.8: 11–14 min) · acts a0 … a8 · 16:9 only
+- slug: meta-cambridge-analytica-penalty · publish slot Tue 10 Nov 2026 (week file SCHEDULE_WEEK_2026-11-02.md) · length ≈ 12–13 min (2,035 words, 76 beats; rule v6.8: 11–14 min) · acts a0 … a8 · 16:9 only
 - archetype: scandal → aftermath → reckoning, with an arithmetic twist · look: `tech` (a0–a4, a7, a8), `dossier` for the court acts a5–a6; not `broadcast`, which Nike used
 - tone: playful-grave (dry irony at the scale of fines, never at users) · narrator `voice: supertonic:M1`; one quote voice, verbatim only: `zuck=am_michael~bm_george*.2` (Senate hearing, 10 Apr 2018, research Q01; the same opening line is on p.12 of the House record, Serial No. 115-114, shown in a3), attributed on screen "read by a voice actor"
 - format: **the running bill** — a till receipt `@bill_tape` (motif) grows one line per act: every bill Meta got, and its status; the 25,000,000,000 line never gets a PAID stamp · opening: two documents on one day (21 Oct 2026) · ending: the thesis, the two outcomes of the appeal, a viewer question
@@ -24,7 +24,7 @@
 - narrator: supertonic:M1 (all lines but one)
 - zuck (a3, one line, verbatim, Senate 10 Apr 2018, Q01/F14): am_michael~bm_george*.2, on screen with the document page and "read by a voice actor"
 
-## 3. SCRIPT (A/V, hit words in bold; ≈ 12.5 min by pp_scriptlint --long)
+## 3. SCRIPT (A/V, hit words in bold; ≈ 12.1 min by pp_scriptlint --long, 2,035 words)
 THESIS: Meta survived its data scandal because the scandal was the business working; one state counted the cost, and that bill is still unpaid.
 
 ## a0 · the same day
@@ -137,10 +137,11 @@ That is not forty-three million victims. It is a counting **method**, and Meta's
 At five thousand dollars a violation, the law allowed two hundred and nineteen point five billion **dollars**.
 At the penalty hearing on the first of October, the state's lawyer asked for thirty-five to forty **billion**.
 Meta asked the court to stop at three point four five **billion**.
+So the judge had a range, from about three and a half billion to two hundred and nineteen **billion**.
 Three weeks later, Judge Francis Mathew signed a twenty-page **judgment**.
-He wrote that Facebook's wrongdoing "goes to the heart of Facebook's core business **practices**."
-Then he cut the penalty to twenty-five billion dollars. The law allowed almost nine times **more**.
-Interest runs at fifteen percent a year until it is paid. Further orders were left for later **briefing**.
+Judge Mathew wrote that Facebook's wrongdoing "goes to the heart of Facebook's core business **practices**."
+Then the judge cut the penalty to twenty-five billion dollars. The law allowed almost nine times **more**.
+Interest runs at fifteen percent a year until it is paid. More orders could still **come**.
 {wry} And the money goes to the State of New Mexico. Not to a single **user**. (J)
 
 ## a7 · the bill and the business
@@ -182,22 +183,22 @@ Tell us in the **comments**.
 - CARD a0-01 · SEE: the frame splits under one date, WED 21 OCT 2026: the real Meta sign in Menlo Park on the left, the real first page of the New Mexico judgment on the right; on "sixty-four" $64.6B counts up on the left; on "twenty-five" $25B on the right · SEAM out right
   - FX `@same_day_split` · plates: meta_doc_nm_judgment_2026_p1, meta_meta_sign_1_hacker_way
 - CARD a0-02 · SEE: three dark frames; pictures open in them on their words: a phone harvesting data (AI) on "quiz", the real FTC building on "bills", an empty courtroom (AI) on "state" · SEAM in right
-  - FX `@three_windows` · plates: meta_art_courtroom, meta_art_scene_data_harvest, meta_ftc_apex_building_front
-- CARD a0-03 · SEE: real press photographers at work, dim; META PAID FOR CAMBRIDGE ANALYTICA types over them; on "single" a red line strikes it and ORDERED · APPEALED · NOT PAID sets under it · SEAM out right
-  - FX `@myth_strike` · plates: stock_media_press_cameras_05
-- CARD a0-04 · SEE: a phone leaking streams of data (AI moment art) labelled A BUG?; on "bug" the label is struck and slides to a dark gap: THE BUSINESS, WORKING; on "designed" a stamp: BY DESIGN · SEAM in right
-  - FX `@label_swap` · plates: meta_art_scene_data_harvest, meta_cut_phone_blank
+  - FX `@three_windows` · plates: meta_apex_building_constitution_ave, meta_art_courtroom, meta_art_scene_data_harvest
+- CARD a0-03 · SEE: the real news headline of 28 Oct 2026, NEW MEXICO JUDGE ORDERS META TO PAY $25 BILLION, lies as a clipping over dim press cameras; META PAID $25 BILLION types under it; on "single" a red line strikes it and ORDERED · APPEALED · NOT PAID sets under it · SEAM out right
+  - FX `@myth_strike` · plates: meta_doc_nm_press_headline_2026_p1, stock_media_press_cameras_05
+- CARD a0-04 · SEE: the real Zuckerberg on the F8 2011 stage under a giant screen for apps (Open Graph); the museum label under it reads A BUG?; on "bug" it flips: A FEATURE · SEAM in right
+  - FX `@label_swap` · plates: meta_zuckerberg_f8_2011_open_graph
 - CARD a0-05 · SEE: MOTIF: a paper bill headed THE BILL feeds out on the right; on "bill" it prints NEW MEXICO · $25,000,000,000; on "never" a red stamp lands: UNPAID · SEAM out right
   - FX `@bill_tape` · plates: meta_el_texture_server_bokeh
 
 ### a1 · the machine
 
-- CARD a1-01 · SEE: young Mark Zuckerberg on a conference stage, the camera travelling to his face; on "Harvard" his name card slides in · SEAM in right
-  - FX `@name_strap` · plates: meta_zuckerberg_dld
+- CARD a1-01 · SEE: two night desks side by side like two ledgers (stock footage, no faces): ZUCKERBERG and SAVERIN; $1,000 types into each account · SEAM in right
+  - FX `@two_accounts` · plates: stock_screen_laptop_night_07, stock_ui_keyboard_dark_01
 - CARD a1-02 · SEE: the real Facebook like sign by the road; on "year" a pencil writes $200,000 next to the word facebook and rings it · SEAM out right
   - FX `@price_pencil` · plates: meta_facebook_like_sign_full
-- CARD a1-03 · SEE: the real Zuckerberg on the F8 stage under a giant screen; the camera travels into the screen behind him and a gold frame draws round it on "public": IPO · MAY 2012 · ABOUT $16B RAISED · SEAM in right
-  - FX `@sign_zoom` · plates: meta_zuckerberg_stage_facebook_screen
+- CARD a1-03 · SEE: real trading screens, dim; a black LED board hangs over them; on "May" FB · IPO clicks up and MAY 2012 · ABOUT $16 BILLION RAISED lights word by word · SEAM in right
+  - FX `@led_quote` · plates: stock_finance_exchange_floor_05
 - CARD a1-04 · SEE: two solid blocks rise out of a dark floor one after the other: INSTAGRAM · 2012 $1B, then WHATSAPP · 2014 $19B, nineteen times taller · SEAM out right
   - FX `@blocks` · plates: drawn graphic only
 - CARD a1-05 · SEE: a closed ring of stations over real phone users: USERS → ATTENTION → ADVERTISERS → MONEY; arrows draw on their words and the ring closes in gold · SEAM in right
@@ -217,8 +218,8 @@ Tell us in the **comments**.
   - FX `@cascade_field` · plates: meta_art_scene_data_harvest
 - CARD a2-03 · SEE: three blocks rise on a dark floor: FIRST REPORTS 50M, FTC COMPLAINT 65M, FACEBOOK 87M; on "eighty-two" the note sets: about 82 % in the United States · SEAM in right
   - FX `@blocks` · plates: drawn graphic only
-- CARD a2-04 · SEE: the real New Oxford Street in London, the camera travelling; on "London" a pin drops: CAMBRIDGE ANALYTICA · LONDON (street view) · SEAM out right
-  - FX `@place_pin` · plates: meta_new_oxford_street_wide
+- CARD a2-04 · SEE: looking up at a real building on New Oxford Street, London; on "London" a name card drops at street level: CAMBRIDGE ANALYTICA; on "Mercer" a second card drops high on the facade: THE MERCERS · Robert funded it, Rebekah on the board · SEAM out right
+  - FX `@landlord_tenant` · plates: meta_coptic_new_oxford_junction
 - CARD a2-05 · SEE: a real phone feed, dim; two bars race: TRUMP CAMPAIGN 2016 to $5.9M, CRUZ CAMPAIGN to $5.8M; the source line: FEC filings · effect on votes disputed · SEAM in right
   - FX `@views_race` · plates: stock_ui_phone_night_01
 - CARD a2-06 · SEE: a receipt prints CERTIFICATION · DATA DELETED · SIGNED; on "check" a red stamp slams across it: NOT CHECKED · SEAM out right
@@ -228,35 +229,35 @@ Tell us in the **comments**.
 
 ### a3 · the week it broke
 
-- CARD a3-01 · SEE: a calendar runs from 2015 and locks on MAR 2018; on "suspended" a news band crosses the real Facebook headquarters: FACEBOOK SUSPENDS CAMBRIDGE ANALYTICA · 16 MAR 2018, LATE EVENING · SEAM out right
-  - FX `@ticker_headline` · plates: meta_facebook_hq_street
+- CARD a3-01 · SEE: a split-flap calendar over the real Facebook headquarters at 1 Hacker Way, dim; on "three" it flicks month by month from MAR 2015 and locks on MAR 2018: CAMBRIDGE ANALYTICA SUSPENDED · Friday 16 Mar 2018, late evening · SEAM out right
+  - FX `@month_flip` · plates: meta_facebook_hq_1_hacker_way
 - CARD a3-02 · SEE: real printing presses roll, dim; the real Guardian page of 17 March 2018 slides in as a clipping and a red marker underlines its headline · SEAM in right
   - FX `@clipping_over_footage` · plates: meta_doc_guardian_headline_2018_p1, stock_news_press_rollers_01
 - CARD a3-03 · SEE: the real black and white portrait of Christopher Wylie, the camera travelling to his face; on "source" his name card slides in · SEAM out right
   - FX `@name_strap` · plates: meta_wylie_portrait_bw
-- CARD a3-04 · SEE: real press photographers in a dark room; three items land as a list and each is struck on its word: BRIBERY STINGS · HONEY TRAPS · FRONT COMPANIES; CHANNEL 4 NEWS · 19 MAR 2018 · SEAM in right
-  - FX `@roll_call_strike` · plates: stock_media_press_cameras_04
+- CARD a3-04 · SEE: an empty TV studio, cameras on tripods (no faces); three items land as a list and each is struck on its word: BRIBERY STINGS · HONEY TRAPS · FRONT COMPANIES; CHANNEL 4 NEWS · 19 MAR 2018 · SEAM in right
+  - FX `@roll_call_strike` · plates: stock_media_tv_studio_04
 - CARD a3-05 · SEE: the real Centre Point and New Oxford Street; on "suspended" a solid stamp NIX SUSPENDED; on "warrant" WARRANT SOUGHT beside it · SEAM out right
   - FX `@stamp_dates` · plates: meta_new_oxford_street_centrepoint
 - CARD a3-06 · SEE: NEW: a desk tear-off calendar, MAR 2018; on "nothing" its pages tear off one a day, 16, 17, 18, 19, 20, the count running to 5 DAYS; it stops on 21, ringed in red: STATEMENT · SEAM in right
   - FX `@day_tearoff` · plates: meta_zuckerberg_profile_bw
 - CARD a3-07 · SEE: the real Zuckerberg on the F8 2018 stage as a print on the left; his verbatim words to the Senate light up on the right as the voice reads them · SEAM out right · HOLD
   - FX `@ember_quote` · plates: meta_zuckerberg_f8_2018_keynote
-- CARD a3-08 · SEE: the real House hearing record, page 12, on a dark desk; the camera travels to the line where he says it was his mistake and a highlighter runs across it; then 20,000 SECURITY STAFF lands · SEAM in right
-  - FX `@doc_read` · plates: meta_doc_house_hearing_2018_p12
+- CARD a3-08 · SEE: real server racks, dim; HIS OWN DATA WAS SWEPT UP TOO sets low; on "And" a field of gold points pours out from one point: 20,000 SECURITY STAFF · promised by the end of 2018 · SEAM in right
+  - FX `@dots` · plates: meta_noirlab_server_racks
 - CARD a3-09 · SEE: the real 43-45 New Oxford Street; on "ceasing" its colour drains, a black border draws round it and CAMBRIDGE ANALYTICA · CEASED OPERATIONS · 2 MAY 2018 types under it · SEAM out right
   - FX `@mourning_frame` · plates: meta_new_oxford_street_43_45
-- CARD a3-10 · SEE: a solid wooden ruler slides in over the London street, 2018 to 2020; on "weeks" a red line runs six weeks long at its start; on "Nix" BANNED AS A DIRECTOR FOR 7 YEARS sets on 2020 · SEAM in right
-  - FX `@year_ruler` · plates: meta_routemaster_new_oxford
+- CARD a3-10 · SEE: the split-flap calendar returns over a London street: on "gone" it flicks MAR 2018 to MAY 2018 and locks: GONE IN ABOUT SIX WEEKS; then: 2020 · Nix accepts a 7-year director ban · SEAM in right
+  - FX `@month_flip` · plates: meta_routemaster_new_oxford
 - CARD a3-11 · SEE: MOTIF: the bill; on "company" it prints CAMBRIDGE ANALYTICA · 2018: CLOSED; THE FIRM IS GONE · the platform is not · SEAM out right
   - FX `@bill_tape` · plates: meta_el_texture_server_bokeh
 
 ### a4 · the bills
 
 - CARD a4-01 · SEE: real stock monitors; the price line draws and plunges; on "nineteen" a red tag −19% snaps to the low: FACEBOOK · 26 JULY 2018 · SEAM in right
-  - FX `@ticker_crash` · plates: stock_screen_chart_down_01
-- CARD a4-02 · SEE: a real crowd crossing a London station, dim; a counter tag on a string reads $630B and on "billion" is struck and rewritten $511B: ONE DAY · SEAM out right
-  - FX `@valuation_tag` · plates: stock_people_crowdwalk_09
+  - FX `@ticker_crash` · plates: stock_screen_chart_up_15
+- CARD a4-02 · SEE: real trading screens, dim; one long bar, FACEBOOK MARKET VALUE $630B; on "About" its end peels off and drops: −$119B IN ONE DAY · SEAM out right
+  - FX `@bar_slice` · plates: stock_finance_exchange_floor_04
 - CARD a4-03 · SEE: a closed folder on the desk; on "fined" its flap lifts and the real UK Monetary Penalty Notice of 24 Oct 2018 slides out; a stamp lands on it: £500,000 · THE LEGAL MAXIMUM · SEAM in right
   - FX `@folder_reveal` · plates: meta_doc_ico_mpn_2018_p1
 - CARD a4-04 · SEE: a real office, dim; chalk tally marks scratch themselves, one a minute, to seventeen: ≈ 17 MINUTES OF PROFIT; £500,000 per The Register · SEAM out right
@@ -267,8 +268,8 @@ Tell us in the **comments**.
   - FX `@doc_read` · plates: meta_doc_ftc_order_2019_p3
 - CARD a4-07 · SEE: NEW: two long bars, ONE YEAR OF REVENUE · 2018 and ONE YEAR OF PROFIT · 2018; on "nine" the penalty lights red from the end of each: 9 % and 23 % · SEAM in right
   - FX `@revenue_strip` · plates: stock_screen_spreadsheet_10
-- CARD a4-08 · SEE: the real FTC entrance relief; the order terms are written across it on their words: A PRIVACY COMMITTEE ON THE BOARD, THE CEO SIGNS OFF EVERY QUARTER · SEAM out right
-  - FX `@board_marker` · plates: meta_ftc_entrance_relief
+- CARD a4-08 · SEE: the pages of the real 2019 FTC order flick past and stop on page 24, CERTIFICATIONS; the camera reads in and the highlighter runs: the Independent Privacy Committee on "committee", each full fiscal quarter on "personally", signed by the Principal Executive Officer on "sign" · SEAM out right
+  - FX `@page_turn` · plates: meta_doc_ftc_order_2019_p1, meta_doc_ftc_order_2019_p24, meta_doc_ftc_order_2019_p3
 - CARD a4-09 · SEE: the real SEC complaint of 24 July 2019 on a dark desk; on "may" a red line strikes the words "may be"; KNEW FOR ABOUT TWO YEARS · SEAM in right
   - FX `@redact_bars` · plates: meta_doc_sec_complaint_2019_p9
 - CARD a4-10 · SEE: a real hand scrolling a phone, dim; a red price tag on a string reads $725M; on "Shared" it spins round: A FEW DOLLARS EACH · SEAM out right
@@ -277,34 +278,34 @@ Tell us in the **comments**.
   - FX `@case_cards` · plates: drawn graphic only
 - CARD a4-12 · SEE: MOTIF: the bill feeds out and prints five new lines one after another: STOCK MARKET −$119B, UK £500,000, FTC $5,000,000,000, SEC $100,000,000, USERS $725,000,000; on "survivable" a stamp: ALL SURVIVED · SEAM out right
   - FX `@bill_tape` · plates: meta_el_texture_server_bokeh
-- CARD a4-13 · SEE: real footage wipes to the real Meta sign at 1 Hacker Way: FACEBOOK BECOMES META · 2021; 2025 REVENUE: $200.97B · SEAM in right
-  - FX `@wipe_to_photo` · plates: meta_facebook_like_sign_willow_road, meta_meta_sign_1_hacker_way
+- CARD a4-13 · SEE: the back of the real Facebook sign, still reading Sun Microsystems, wipes to the real Meta sign at 1 Hacker Way: FACEBOOK BECOMES META · 2021; 2025 REVENUE: $200.97B · SEAM in right
+  - FX `@wipe_to_photo` · plates: meta_facebook_sign_reverse_sun, meta_meta_sign_1_hacker_way
 
 ### a5 · the holdout
 
-- CARD a5-01 · SEE: the real first page of the New Mexico case on the desk; the camera travels to the caption, STATE OF NEW MEXICO, ex rel. RAUL TORREZ, and the case number No. D-101-CV-2021-00132 is highlighted · SEAM out right
-  - FX `@retype_line` · plates: meta_doc_nm_judgment_2026_p1
+- CARD a5-01 · SEE: the real page 2 of the New Mexico judgment; the camera travels down to one line and it is retyped large on a paper strip: “Penalties, consent agreements and decrees have not deterred Meta” · SEAM out right
+  - FX `@retype_line` · plates: meta_doc_nm_judgment_2026_p2
 - CARD a5-02 · SEE: NEW: a settlement lies on the desk, OAKLAND · AUG 2026; on "group" grey state seals slide onto it one after another and it is stamped SIGNED; on "refused" one seal, NEW MEXICO, lights gold and moves the other way to a box marked JURY · SEAM in right
   - FX `@holdout_tokens` · plates: stock_law_jury_box_01
 - CARD a5-03 · SEE: a paper sheet, NEW MEXICO v. META: TWO CASES; on "separate" the second line, CASE 2 · 2023 · CHILDREN, is cut out of the sheet and falls away; CASE 1 · 2021 · PRIVACY stays: THIS FILM · SEAM out right
-  - FX `@cut_out_word` · plates: meta_art_courtroom
-- CARD a5-04 · SEE: index cards drop onto the desk, one per subject: PRIVACY, THIRD-PARTY ACCESS, HATE SPEECH, MISINFORMATION, MODERATION; title 29 PUBLIC STATEMENTS · SEAM in right
-  - FX `@case_cards` · plates: drawn graphic only
-- CARD a5-05 · SEE: a real empty jury box, the camera panning; on "verdict" a solid stamp VERDICT · 25 SEP 2026; on "Twenty-six" 26 OF 29 MISLEADING beside it · SEAM out right
-  - FX `@stamp_dates` · plates: stock_law_courtroom_11
+  - FX `@cut_out_word` · plates: meta_art_hearing_room_empty
+- CARD a5-04 · SEE: NEW: on "twenty-nine" a wall of 29 paper slips flicks up one after another on the desk, one per statement; the subjects light above it as tabs on their words: PRIVACY, HATE SPEECH, MISINFORMATION, MODERATION · SEAM in right
+  - FX `@slip_wall` · plates: drawn graphic only
+- CARD a5-05 · SEE: the same wall of 29 slips; on "Friday" a date card drops: VERDICT · 25 SEP 2026; on "jury" 26 slips flip red one after another, 3 stay grey: 26 OF 29 MISLEADING · SEAM out right
+  - FX `@slip_wall` · plates: drawn graphic only
 - CARD a5-06 · SEE: MOTIF: the bill; on "counted" it prints NEW MEXICO · 2026: NO SETTLEMENT; IT COUNTED · SEAM in right
   - FX `@bill_tape` · plates: meta_el_texture_server_bokeh
 
 ### a6 · the arithmetic
 
-- CARD a6-01 · SEE: a real courthouse door, the camera pushing in; on "law" a pencil writes $5,000 across the door and rings it: PER VIOLATION · SEAM out right
-  - FX `@price_pencil` · plates: stock_news_courthouse_door_01
+- CARD a6-01 · SEE: the real page 20 of the judgment lies dim and blurred; its own line is lifted out as a paper strip: the highest level of penalty allowed by the New Mexico Unfair Practices Act - $5,000 per violation found by the jury; on "law" $5,000 per violation is highlighted · SEAM out right
+  - FX `@doc_quote_line` · plates: meta_doc_nm_judgment_2026_p20
 - CARD a6-02 · SEE: one gold block of dots, ONE STATEMENT; on "multiplied" it bursts into a field that fills the frame: EVERYONE IN NEW MEXICO WHO COULD HAVE SEEN IT; on "could" NOT WHO DID · SEAM in right
   - FX `@cascade_field` · plates: stock_law_courthouse_18
 - CARD a6-03 · SEE: NEW: the sum builds on a dark slate: 43,899,720 UNFAIR OR DECEPTIVE, + 5 UNCONSCIONABLE; the result counts in gold: = 43,899,725 VIOLATIONS; A COUNTING METHOD, NOT A HEADCOUNT · SEAM out right
   - FX `@equation_cut` · plates: stock_law_courthouse_17
-- CARD a6-04 · SEE: the sum continues: 43,899,720 × $5,000 = $219,498,600,000 in gold; then STATE ASKED $35–40B and META ASKED A $3.45B CAP set under it on their words · SEAM in right
-  - FX `@equation_cut` · plates: stock_law_courthouse_19
+- CARD a6-04 · SEE: NEW: one tall gold bar rises from the floor: THE LAW ALLOWED $219.5B; on "penalty" a bracket marks $35–40B on it to scale: THE STATE ASKED; on "Meta" a thin red line at the very bottom: META ASKED $3.45B; the camera sinks toward the floor · SEAM in right
+  - FX `@range_bar` · plates: stock_law_courthouse_19
 - CARD a6-05 · SEE: the real 20-page judgment drops on the desk, its first page carrying the filing stamp 10/21/2026 10:51 AM, and the rest of the filing builds up under it: 20 PAGES · SIGNED BY JUDGE FRANCIS J. MATHEW · SEAM out right
   - FX `@page_stack` · plates: meta_doc_nm_judgment_2026_p1
 - CARD a6-06 · SEE: the real page 17 of the judgment; the camera travels to the line "goes to the heart of Facebook's core business practices" and it is retyped large on a paper strip · SEAM in right
@@ -314,28 +315,28 @@ Tell us in the **comments**.
 - CARD a6-08 · SEE: MOTIF: the bill prints three lines: JURY 43,899,725 VIOLATIONS, LAW ALLOWED $219,498,600,000, JUDGE ORDERED $25,000,000,000; on "fifteen" a stamp: 15 % A YEAR UNTIL PAID · SEAM in right
   - FX `@bill_tape` · plates: meta_el_texture_server_bokeh
 - CARD a6-09 · SEE: three boxes over a real courtroom: META → USERS → STATE OF NEW MEXICO; on "Not" USERS is crossed out and falls, and a gold arrow draws from META straight to the STATE · SEAM out right
-  - FX `@arrow_bypass` · plates: meta_art_courtroom
+  - FX `@arrow_bypass` · plates: stock_law_courthouse_14
 
 ### a7 · the bill and the business
 
 - CARD a7-01 · SEE: a red news band crosses the real Meta campus from the air: META TO APPEAL $25B PENALTY · REUTERS, 22 OCT 2026 · SEAM in right
   - FX `@ticker_headline` · plates: meta_meta_campus_aerial_2023
-- CARD a7-02 · SEE: an empty boardroom at dusk with stacks of blank paper (AI moment art); on "sell" WE DO NOT SELL USER DATA is written across the dark window; on "proved" NOBODY WAS PROVEN MISLED under it · SEAM out right
-  - FX `@board_marker` · plates: meta_art_scene_penalty_boardroom
-- CARD a7-03 · SEE: a closed folder; on "aside" its flap lifts and a blank page slides out; a stamp lands across it: AMOUNT NOT DISCLOSED · SEAM in right
-  - FX `@folder_reveal` · plates: meta_el_document_stack_blank
+- CARD a7-02 · SEE: two typed index cards on the desk: the verdict card (26 of 29 statements misleading · the jury, 25 Sep 2026) lies there; on "sell" Meta's position lands beside it: it does not sell user data, and nobody was proven misled · via Reuters · SEAM out right
+  - FX `@claim_vs_denial` · plates: drawn graphic only
+- CARD a7-03 · SEE: a stack of filing paper on the desk; on "filing" a paper slip rises out of it; on "aside" a question writes itself in pencil: HOW MUCH? · NOT DISCLOSED · SEAM in right
+  - FX `@question_on_box` · plates: meta_cut_document_stack_blank
 - CARD a7-04 · SEE: the real Meta campus from the air; a ring of shares drawn on it: THE PENALTY 39 % lifts out of ONE QUARTER'S REVENUE, the rest 61 % in grey · SEAM out right
   - FX `@pie_on_photo` · plates: meta_facebook_campus_aerial
 - CARD a7-05 · SEE: NEW: a wall of 82 gold bars, one per billion, CASH AND SECURITIES; on "thirty" 25 of them slide out to the right into their own red pile: THE PENALTY · 30 % · SEAM in right
   - FX `@stack_bite` · plates: meta_el_texture_glass_reflection
-- CARD a7-06 · SEE: real people walking with phones in Hong Kong, dim; three bars drop below a zero line one after another: OPERATING INCOME −37 %, the note: includes a $9.89B charge for the separate teen settlement · SEAM out right
-  - FX `@three_drops` · plates: meta_phone_user_kolkata
+- CARD a7-06 · SEE: a real Facebook headquarters building, dim; three bars drop below a zero line one after another: OPERATING INCOME −37 %, the note: includes a $9.89B charge for the separate teen settlement · SEAM out right
+  - FX `@three_drops` · plates: meta_facebook_hq_building_16
 - CARD a7-07 · SEE: real data-centre racks; a green bar stands above a zero line, FREE CASH FLOW Q3 2025 +$10.6B; on "So" it swings down through zero to −$2.1B, Q3 2026 · SEAM in right
   - FX `@swing_bar` · plates: meta_server_aisle_archives
 - CARD a7-08 · SEE: the real Utah data-centre campus; a paper price tag swings in: $97.5B · NEW STOCK TO SELL · SEAM out right
   - FX `@valuation_tag` · plates: meta_utah_datacenter_panorama
-- CARD a7-09 · SEE: a real data-centre campus in haze; on "negative" a red sash sweeps across its corner: OUTLOOK NEGATIVE; S&P GLOBAL RATINGS · 30 OCT 2026 · AA− AFFIRMED · SEAM in right
-  - FX `@corner_banner` · plates: meta_cnpc_datacenter_campus
+- CARD a7-09 · SEE: the real Facebook campus entrance; on "negative" a red sash sweeps across its corner: OUTLOOK NEGATIVE; S&P GLOBAL RATINGS · 30 OCT 2026 · AA− AFFIRMED · SEAM in right
+  - FX `@corner_banner` · plates: meta_facebook_campus_entrance
 - CARD a7-10 · SEE: MOTIF: the bill prints APPEAL · OCT 2026: PENDING; on "future" a stamp: APPEALED; STILL STANDING · STILL SPENDING · SEAM out right
   - FX `@bill_tape` · plates: meta_el_texture_server_bokeh
 
@@ -347,17 +348,18 @@ Tell us in the **comments**.
   - FX `@friend_fan` · plates: stock_ui_app_grid_01
 - CARD a8-03 · SEE: a long gold bar, META REVENUE · 2025 · $201B; on "pile" its end peels off: THE FTC PENALTY · $5B · SEAM in right
   - FX `@bar_slice` · plates: meta_meta_campus_aerial_2023
-- CARD a8-04 · SEE: real hearing-room footage slows on "arithmetic" and freezes on "statement", draining to grey: STATEMENT BY STATEMENT · SEAM out right
-  - FX `@ramp_freeze` · plates: stock_court_hearing_11
+- CARD a8-04 · SEE: the real pages of the judgment flick past and stop on page 19 on "arithmetic"; the camera reads in and the highlighter runs: The jury found those statements to be false as well: STATEMENT BY STATEMENT · SEAM out right
+  - FX `@page_turn` · plates: meta_doc_nm_judgment_2026_p17, meta_doc_nm_judgment_2026_p19, meta_doc_nm_judgment_2026_p2
 - CARD a8-05 · SEE: MOTIF: the whole bill feeds past, every line it ever printed; on "paid" the final stamp: ORDERED · NOT PAID · SEAM in right
   - FX `@bill_tape` · plates: meta_el_texture_server_bokeh
 - CARD a8-06 · SEE: CALLBACKS in hard cuts: the real page 20 of the judgment lights on "fails"; the real Meta campus darkens row by row on "succeeds"; the blank paper stack lights on "paper" · SEAM out right
-  - FX `@callback_cuts` · plates: meta_art_scene_penalty_boardroom, meta_doc_nm_judgment_2026_p20, meta_meta_campus_aerial_2023
+  - FX `@callback_cuts` · plates: meta_art_scene_penalty_boardroom, meta_meta_campus_aerial_2023, stock_law_courthouse_13
 - CARD a8-07 · SEE: NEW: a beam balance over a dim courtroom; on "misleading" a weight drops into the left pan, WHAT IT SAID; on "prove" into the right, WHAT IT DID; the question sets above · SEAM in right
-  - FX `@said_did_scale` · plates: meta_art_courtroom
+  - FX `@said_did_scale` · plates: meta_zuckerberg_f8_2019_keynote
 
 ## 5. EFFECTS
-- NEW this film (saved to studio/effects/, generic, content in params): bill_tape (motif), same_day_split, friend_fan, cascade_field, day_tearoff, revenue_strip, holdout_tokens, equation_cut, stack_bite, said_did_scale. Every act adds at least one NEW or ADAPTed effect.
+- NEW this film (saved to studio/effects/, generic, content in params): bill_tape (motif), same_day_split, friend_fan, cascade_field, day_tearoff, revenue_strip, holdout_tokens, equation_cut, stack_bite, said_did_scale, slip_wall, range_bar.
+- Critic round 1 (34 % of beats ≥ 5/8) → redesign of 33 beats: real headline (Top Class Actions) instead of stock press, FTC order p.24 certifications, judgment pp.2/19/20 lines, no stranger's face for Nix, no CNPC/Texas/London plates for US/NM beats, numbers keyed earlier, case_cards and folder_reveal fixed, listen-only fixes in a6. Every act adds at least one NEW or ADAPTed effect.
 - ADAPT: three_drops (note line), ramp_freeze (lab/sub), years_tally (second label), tile_multiply (hue, count off, push), quote_card_type (rise, by-line breaks), cut_out_word (bg plate), rise_and_sink (bg), tear_fifth (travel), archive_drawer (push), callback_cuts (moving light bands), corner_banner (card mode), lane_race (brightness), shelf_switch, valuation_tag (cover camera), photo_drain (push), swing_bar (dim).
 - Repeat audit: no effect more than 2× in the film except the motif bill_tape (once per act, 9).
 
