@@ -33,7 +33,7 @@ At the penalty hearing on the first of October, the state's lawyer asked for thi
 Meta asked the court to stop at three point four five **billion**.
 
 // CARD a6-05 · SEE: the real 20-page judgment drops on the desk, its first page carrying the filing stamp 10/21/2026 10:51 AM, and the rest of the filing builds up under it: 20 PAGES · SIGNED BY JUDGE FRANCIS J. MATHEW · SEAM out right
-# cine act=fall fx="code:@page_stack;doc:meta_doc_nm_judgment_2026_p1;crop:0,0,1,.6;pages:20;land:Three;lab:20 PAGES;sub:21 Oct 2026 · Judge Mathew;out:right"
+# cine act=fall fx="code:@page_stack;doc:meta_doc_nm_judgment_2026_p1;crop:0,0,1,.6;pages:20;land:judge;grow:Three;lab:20 PAGES;sub:21 Oct 2026 · Judge Mathew;out:right"
 So the judge had a range, from about three and a half billion to two hundred and nineteen **billion**.
 Three weeks later, Judge Francis Mathew signed a twenty-page **judgment**.
 
