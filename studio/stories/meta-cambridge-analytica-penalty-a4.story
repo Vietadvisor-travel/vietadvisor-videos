@@ -11,7 +11,7 @@ endcard: off
 motif: bill_tape
 
 // CARD a4-01 · SEE: real stock monitors; the price line draws and plunges; on "nineteen" a red tag −19% snaps to the low: FACEBOOK · 26 JULY 2018 · SEAM in right
-# cine act=fall fx="code:@ticker_crash;bg:stock_screen_chart_down_01;draw:1.4;pts:.8,.82,.86,.84,.88,.9,.86,.4,.32;low:−19%;go:nineteen;lab:FACEBOOK (FB) · 26 JULY 2018;sub:about $119B of market value in one day;in:right"
+# cine act=fall fx="code:@ticker_crash;bg:stock_screen_chart_up_15;draw:1.4;pts:.8,.82,.86,.84,.88,.9,.86,.4,.32;low:−19%;go:nineteen;lab:FACEBOOK (FB) · 26 JULY 2018;sub:about $119B of market value in one day;in:right"
 {tense} So what does a scandal like that actually cost a company like this?
 {grave} The first bill came from the stock **market**.
 On the twenty-sixth of July, twenty eighteen, Facebook shares fell nineteen percent in a single **day**.
