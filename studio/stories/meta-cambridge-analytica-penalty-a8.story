@@ -37,7 +37,7 @@ If the appeal fails, New Mexico will have shown that a broken promise can be pri
 If it succeeds, then in the end the biggest bill in this story will stay exactly what it is today, a number on paper that nobody has ever paid, because the arithmetic behind it did not survive the **appeal**.
 
 // CARD a8-07 · SEE: NEW: a beam balance over a dim courtroom; on "misleading" a weight drops into the left pan, WHAT IT SAID; on "prove" into the right, WHAT IT DID; the question sets above · SEAM in right
-# cine act=lesson fx="code:@said_did_scale;bg:stock_people_lone_figure_08;l:WHAT IT SAID;r:WHAT IT DID;lgo:misleading;rgo:prove;q:WHICH SHOULD A COMPANY PAY FOR?;in:right"
+# cine act=lesson fx="code:@said_did_scale;bg:stock_people_crowdwalk_09;l:WHAT IT SAID;r:WHAT IT DID;lgo:misleading;rgo:prove;q:WHICH SHOULD A COMPANY PAY FOR?;in:right"
 So tell us what you think: should a company pay for every misleading thing it tells its users, or only for what someone can prove it **did**?
 Tell us in the **comments**.
 
