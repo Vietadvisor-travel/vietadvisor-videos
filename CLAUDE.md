@@ -1,34 +1,8 @@
-# THE IF MACHINE (channel 2, from 3 Nov 2026) — read jobs/THE_IF_MACHINE_BRIEF.md first
+# THE IF MACHINE moved to its own repo (3 Nov 2026)
 
-The brief `jobs/THE_IF_MACHINE_BRIEF.md` is the single source of truth for this channel; it wins over everything below
-unless the owner says otherwise. The Poison Pill sections further down do NOT apply to The If Machine.
-
-- **Engine: the CANVAS cartoon engine in `studio/` (Vietadvisor Motion Studio, `studio/SKILL.md` and `studio/references/`),
-  never the Poison Pill footage add-on** (`pp_*`, stock library, `make.mjs` act workflow). If the canvas engine cannot run,
-  say so plainly and stop — do not fall back to the Poison Pill engine.
-- **Split:** Muse writes the light research pack `jobs/the-if-machine/research/<topic-slug>.md` and later posts everything
-  after the owner approves. Claude does all production (script, storyboard, scenes, voice, render, critic) and posts
-  nothing anywhere. The owner only approves (and makes the YouTube thumbnail himself).
-- **Trigger:** "làm tập If Machine <topic-slug>" (or the brief's activation sentence). No slug → the highest-scoring topic in
-  brief §6 not yet delivered (check `jobs/the-if-machine/DELIVERY_*.md`). If the research pack is missing, stop and tell
-  the owner the line for Muse: `nghiên cứu nhẹ The If Machine: <topic-slug>`.
-- **Product (brief §2):** long 16:9, 5–6 min · vertical 9:16, 60–90 s cut from the long one with its own hook and captions ·
-  1 cover still · English .srt for the long video · the .story files. Hook in the first 3 s; one question, one twist
-  answer; branded end frame. The main picture of each beat draws the SUBJECT of that line; talking head ≤ 35 % of beats
-  and never two in a row; small fixed captions in the bottom band.
-- **Facts:** actionable claims verified from real sources, heavy claims need 2 sources, no invented numbers. No AI images
-  of real people, real documents, logos or fake headlines as evidence; the animation illustrates, never poses as record.
-- **Voices:** only the approved set in `jobs/VOICE_MODELS.md` (Kokoro, Chatterbox Turbo, Supertonic 3). Kitten is banned.
-  If Supertonic 3 is used, the delivery note must say the audio is machine-generated (OpenRAIL-M).
-- **Quality gates (engine's own):** `node tools/lint.mjs` clean, `node tools/review.mjs` ≥ 85, `python3 tools/qa.py`
-  per-second QA at least 2 rounds; frames checked in both formats. No compression below 30 MB.
-- **Delivery (brief §7):** upload long MP4, vertical MP4, cover, .srt, .story with `python3 tools/pp_drive.py put … --to
-  the-if-machine` (Drive folder `the-if-machine/`); commit `jobs/the-if-machine/DELIVERY_<topic-slug>.md` with file names,
-  Drive file IDs, durations, resolutions, voices used, honest notes. Never commit video or zip files.
-- **Long sessions:** keep state in the repo (stories, DELIVERY notes, `jobs/the-if-machine/LOG.md`), so a new session can
-  pick up without the old chat.
-- The ONE COMMAND rule below applies here too: run each episode end to end, talk to the owner only at the start and in the
-  final report.
+The If Machine lives in **github.com/Vietadvisor-travel/the-if-machine** (engine v11 in `studio/`, `PROTOCOL.md`,
+`CLAUDE.md`, `MUSE.md`, brief, jobs, Drive folder `TheIfMachine_Media`). Nothing for that channel is made in this repo.
+This repo is Poison Pill only.
 
 ---
 
