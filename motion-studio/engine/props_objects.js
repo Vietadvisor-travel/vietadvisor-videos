@@ -1,0 +1,60 @@
+/* PROPS — OBJECTS & CULTURE. Origin = bottom-centre. */
+'use strict';
+defProp('nonla', 'object', 'Nón lá (conical hat)', 240, 110, (o) => {
+  shaded(() => { ctx.moveTo(-120, -10); ctx.quadraticCurveTo(0, 14, 120, -10); ctx.lineTo(0, -100); ctx.closePath(); }, o.color || '#ecd59a', { sx: 14, sy: 4, inner: () => { for (let i = 1; i < 6; i++) { const yy = lerp(-100, -10, i / 6), xx = lerp(0, 120, i / 6); ctx.beginPath(); ctx.moveTo(-xx, yy); ctx.quadraticCurveTo(0, yy + 14 * (i / 6), xx, yy); ctx.lineWidth = 2.5; ctx.strokeStyle = 'rgba(150,110,50,.55)'; ctx.stroke(); } } });
+});
+defProp('stool', 'object', 'Ghế nhựa đỏ (red plastic stool)', 120, 120, (o) => {
+  const c = o.color || '#e0302a';
+  sPoly([[-56, -100], [56, -100], [46, 0], [30, 0], [24, -60], [-24, -60], [-30, 0], [-46, 0]], c);
+  sRR(-62, -112, 124, 18, 8, shade(c, .05), { lw: 5 }); for (let i = -2; i <= 2; i++) rr(i * 20 - 6, -108, 12, 8, 3, shade(c, -.2), 0);
+});
+defProp('table_low', 'object', 'Bàn thấp (low street table)', 260, 120, (o) => {
+  const c = o.color || '#4a8fd0'; sPoly([[-110, -96], [110, -96], [96, 0], [80, 0], [80, -76], [-80, -76], [-80, 0], [-96, 0]], c); sRR(-124, -110, 248, 22, 8, shade(c, .08), { lw: 5 });
+});
+defProp('lantern', 'object', 'Đèn lồng Hội An (silk lantern)', 110, 190, (o, t) => {
+  const c = o.color || '#e8402a', sw = Math.sin(t * 2 + (o.ph || 0)) * .06; ctx.rotate(sw);
+  line(0, -190, 0, -160, 4, C.ink);
+  ctx.save(); if (o.glow !== false) { const g = ctx.createRadialGradient(0, -90, 0, 0, -90, 120); g.addColorStop(0, rgba(c, .5)); g.addColorStop(1, rgba(c, 0)); ctx.fillStyle = g; ctx.fillRect(-130, -220, 260, 260); } ctx.restore();
+  sRR(-16, -166, 32, 12, 4, C.gold, { lw: 4 });
+  sSmooth([[-12, -154], [-46, -130], [-52, -90], [-44, -50], [-12, -28], [12, -28], [44, -50], [52, -90], [46, -130], [12, -154]], c, { hi: lightOf(lightOf(c)), inner: () => { for (let i = -2; i <= 2; i++) { ctx.beginPath(); ctx.moveTo(i * 8, -154); ctx.quadraticCurveTo(i * 22, -90, i * 8, -28); ctx.lineWidth = 2.5; ctx.strokeStyle = 'rgba(80,20,10,.35)'; ctx.stroke(); } } });
+  sRR(-16, -32, 32, 12, 4, C.gold, { lw: 4 }); for (let i = -2; i <= 2; i++) line(i * 5, -20, i * 6 + Math.sin(t * 3 + i) * 2, 6, 3, C.gold);
+}, { anchor: 'top' });
+defProp('lantern_star', 'object', 'Đèn ông sao (Mid-Autumn star lantern)', 200, 220, (o, t) => { line(0, -100, 70, 10, 6, '#8a5a32'); ctx.save(); ctx.translate(0, -110); ctx.rotate(Math.sin(t * 2) * .1); const g = ctx.createRadialGradient(0, 0, 0, 0, 0, 110); g.addColorStop(0, 'rgba(255,200,80,.5)'); g.addColorStop(1, 'rgba(255,200,80,0)'); ctx.fillStyle = g; ctx.fillRect(-120, -120, 240, 240); star(0, 0, 80, '#e8302a', 6, 0); star(0, 0, 40, '#ffd35a', 4, 0); for (let i = -1; i <= 1; i++) line(i * 8, 60, i * 10, 96, 3, C.gold); ctx.restore(); });
+defProp('incense', 'object', 'Nhang (incense sticks)', 100, 220, (o, t) => {
+  sRR(-34, -50, 68, 50, 10, '#c9a33a', { inner: () => line(-34, -36, 34, -36, 4, '#9a7a22') });
+  for (let i = -2; i <= 2; i++) { line(i * 8, -50, i * 12, -170, 4, '#c0302a'); circ(i * 12, -170, 3.5, '#ff8a3a', 0); const p = (t * .4 + i * .2) % 1; ctx.save(); ctx.globalAlpha = (1 - p) * .5; ctx.beginPath(); ctx.moveTo(i * 12, -172); ctx.quadraticCurveTo(i * 12 + Math.sin(t * 2 + i) * 20, -172 - p * 80, i * 12 + Math.sin(t + i) * 10, -172 - p * 140); ctx.lineWidth = 4; ctx.strokeStyle = '#ddd'; ctx.stroke(); ctx.restore(); }
+});
+defProp('flag_vn', 'object', 'Cờ Việt Nam (flag, waving)', 260, 300, (o, t) => {
+  line(-110, 0, -110, -300, 9, C.ink); line(-110, 0, -110, -300, 4, '#ddd'); circ(-110, -304, 8, C.gold, 4);
+  const w = 220, h = 146, x = -106, y = -290, N = 20, top = [], bot = [];
+  for (let i = 0; i <= N; i++) { const u = i / N, dy = Math.sin(u * 5 - t * 6) * 12 * u; top.push([x + u * w, y + dy]); bot.push([x + u * w, y + h + dy]); }
+  ctx.beginPath(); top.forEach((p, i) => i ? ctx.lineTo(...p) : ctx.moveTo(...p)); for (let i = N; i >= 0; i--) ctx.lineTo(...bot[i]); ctx.closePath(); fs(C.red, 5);
+  star(x + w / 2, y + h / 2 + Math.sin(2.5 - t * 6) * 6, h * .3, C.gold, 0);
+});
+defProp('backpack', 'object', 'Ba lô (backpack)', 140, 170, (o) => { const c = o.color || C.orange; sRR(-60, -160, 120, 160, 30, c); sRR(-44, -80, 88, 60, 14, shade(c, -.05), { lw: 5 }); line(-30, -160, -30, -190, 8); line(30, -160, 30, -190, 8); line(-30, -190, 30, -190, 8); rr(-20, -130, 40, 10, 4, '#fff', 3); });
+defProp('helmet', 'object', 'Mũ bảo hiểm (helmet)', 160, 110, (o) => { const c = o.color || C.yel; shaded(() => { ctx.arc(0, -10, 74, Math.PI, 0); ctx.closePath(); }, c); rr(-80, -18, 160, 18, 8, shade(c, -.15), 5); });
+defProp('camera', 'object', 'Máy ảnh (camera)', 150, 110, (o) => { sRR(-70, -96, 140, 92, 16, '#3a3a40'); sRR(-50, -112, 40, 20, 6, '#55555c', { lw: 5 }); sCirc(10, -50, 34, '#22222a'); sCirc(10, -50, 20, '#5a8ab0', { lw: 4 }); circ(4, -56, 6, '#fff', 0); circ(52, -80, 7, C.brand, 3); });
+defProp('phone', 'object', 'Điện thoại (phone)', 70, 130, (o) => { sRR(-32, -128, 64, 128, 12, '#26262c'); rr(-26, -118, 52, 104, 6, o.screen || '#5ab8e6', 0); if (o.map) { line(-20, -40, 0, -80, 4, C.brand); circ(0, -84, 7, C.brand, 3); } }, { gripY: 50 });
+defProp('passport', 'object', 'Hộ chiếu (passport)', 100, 130, (o) => { sRR(-44, -124, 88, 124, 8, o.color || '#7a1f2a'); circ(0, -76, 18, null, 4, C.gold); T('PASSPORT', 0, -30, { size: 13, font: 'body', fill: C.gold, lw: 0 }); }, { gripY: 50 });
+defProp('map_paper', 'object', 'Bản đồ giấy (paper map)', 220, 150, (o) => { sPoly([[-100, -140], [-34, -128], [34, -140], [100, -128], [100, 0], [34, -12], [-34, 0], [-100, -12]], '#f4ead0', { inner: () => { pline([[-80, -40], [-40, -90], [10, -60], [60, -110]], 5, C.brand); circ(60, -110, 8, C.brand, 3); for (const x of [-34, 34]) line(x, -134, x, -6, 2, 'rgba(0,0,0,.2)'); } }); }, { gripY: 70 });
+defProp('ticket', 'object', 'Vé (ticket)', 180, 90, (o) => { sRR(-84, -80, 168, 80, 8, '#f8e6b0', { inner: () => { ctx.setLineDash([6, 6]); line(40, -80, 40, 0, 3, C.inkSoft); ctx.setLineDash([]); } }); T(o.text || 'TICKET', -20, -40, { size: 26, fill: C.brand, lw: 0 }); });
+defProp('money', 'object', 'Tiền (stylised VND notes — not a real design)', 200, 110, (o) => { for (let i = 0; i < 3; i++) { ctx.save(); ctx.translate(i * 14 - 14, -i * 8); ctx.rotate(-.06 + i * .05); sRR(-84, -90, 168, 84, 6, ['#6fb3d8', '#e0a0b8', '#8acb7a'][i], { inner: () => { circ(40, -48, 22, null, 3, 'rgba(0,0,0,.25)'); } }); T(o.text || 'VND', -30, -48, { size: 30, fill: '#fff', lw: 6 }); ctx.restore(); } });
+defProp('suitcase', 'object', 'Vali (suitcase)', 140, 220, (o) => { const c = o.color || '#3f8fd0'; sRR(-60, -190, 120, 174, 16, c, { inner: () => { for (let i = -1; i <= 1; i++) line(i * 30, -186, i * 30, -20, 4, shade(c, -.15)); } }); rr(-26, -214, 52, 24, 10, null, 7); circ(-40, -6, 10, '#333', 4); circ(40, -6, 10, '#333', 4); });
+defProp('umbrella', 'object', 'Ô (umbrella)', 220, 220, (o) => { line(0, 0, 0, -190, 7, '#5a3b26'); const c = o.color || C.brand; shaded(() => { ctx.moveTo(-110, -150); ctx.quadraticCurveTo(0, -270, 110, -150); for (let i = 4; i >= 0; i--) ctx.quadraticCurveTo(-110 + (i + .5) * 44, -168, -110 + i * 44, -150); ctx.closePath(); }, c); });
+defProp('donganh', 'object', 'Đòn gánh (shoulder pole with baskets)', 360, 200, (o) => {
+  line(-170, -180, 170, -180, 10, '#9a6a35');
+  for (const sd of [-1, 1]) { const x = sd * 150; line(x - 30, -180, x - 40, -90, 3); line(x + 30, -180, x + 40, -90, 3); sPoly([[x - 54, -90], [x + 54, -90], [x + 42, -10], [x - 42, -10]], '#c99a5b', { inner: () => { for (let i = 0; i < 4; i++) line(x - 60, -78 + i * 18, x + 60, -78 + i * 18, 2.5, '#8a6235'); } }); for (let k = 0; k < 4; k++) sCirc(x - 30 + k * 20, -98, 16, (o.fill || ['#f6b62e', '#e8337a', '#7cb53c', '#e0303a'])[k % 4], { lw: 4 }); }
+});
+defProp('basket', 'object', 'Rổ (woven basket)', 160, 90, (o) => { sPoly([[-74, -70], [74, -70], [56, 0], [-56, 0]], '#c99a5b', { inner: () => { for (let i = 0; i < 4; i++) line(-80, -60 + i * 16, 80, -60 + i * 16, 2.5, '#8a6235'); for (let i = -6; i <= 6; i++) line(i * 12, -70, i * 9, 0, 2, '#a27a45'); } }); });
+defProp('chopsticks', 'object', 'Đũa (chopsticks)', 200, 40, (o) => { line(-90, -10, 90, -24, 8, '#c58a4a'); line(-90, -20, 90, -40, 8, '#b07a3c'); });
+defProp('fan', 'object', 'Quạt giấy (paper fan)', 200, 140, (o) => { for (let i = 0; i < 9; i++) { const a = -Math.PI * .9 + i * Math.PI * .8 / 8; ctx.save(); ctx.rotate(a + Math.PI / 2); sPoly([[0, 0], [-14, -130], [14, -130]], i % 2 ? C.brand : '#f8e6b0', { lw: 3, hi: null }); ctx.restore(); } circ(0, 0, 8, C.gold, 4); });
+defProp('sign', 'object', 'Biển hiệu (shop sign, text param)', 300, 140, (o) => { const c = o.color || '#e8402a'; sRR(-140, -130, 280, 100, 10, c); T(o.text || 'PHỞ', 0, -80, { size: 56, fill: o.textColor || C.gold, lw: 8 }); line(-110, -30, -110, 0, 8); line(110, -30, 110, 0, 8); });
+defProp('streetsign', 'object', 'Biển tên phố (Hà Nội street plate)', 300, 120, (o) => { sRR(-140, -110, 280, 90, 8, '#2f5fb0', { lw: 6 }); rr(-128, -100, 256, 70, 5, null, 3, '#fff'); T(o.text || 'PHỐ HÀNG BẠC', 0, -64, { size: 34, font: 'body', fill: '#fff', lw: 0 }); });
+defProp('altar', 'object', 'Bàn thờ (ancestral altar, simplified)', 300, 260, (o, t) => { sRR(-140, -150, 280, 150, 6, '#8a2a1a', { inner: () => { for (let i = 0; i < 6; i++) circ(-100 + i * 40, -60, 8, C.gold, 2); } }); sRR(-150, -164, 300, 20, 6, '#a8382a', { lw: 5 }); drawProp('incense', 0, -164, .6, {}, t); for (const x of [-90, 90]) { sRR(x - 20, -230, 40, 66, 6, '#f2c13a', { lw: 4 }); } });
+defProp('firecracker', 'object', 'Câu đối & đỏ Tết decoration', 120, 260, (o, t) => { line(0, -260, 0, -230, 4); for (let i = 0; i < 8; i++) { ctx.save(); ctx.translate(Math.sin(t * 3 + i) * 3, -220 + i * 26); sRR(-20, -10, 40, 22, 6, '#e0302a', { lw: 4 }); ctx.restore(); } star(0, -240, 16, C.gold, 3); });
+defProp('maibranch', 'object', 'Cành mai / đào (Tết blossom branch)', 260, 260, (o, t) => { const c = o.color || '#ffd23a'; pline([[0, 0], [10, -100], [-40, -180], [-70, -230]], 9, '#5a3b26'); pline([[10, -100], [70, -160], [110, -200]], 7, '#5a3b26'); pline([[-40, -180], [10, -230]], 5, '#5a3b26'); for (const [x, y] of [[-70, -230], [10, -230], [110, -200], [70, -160], [-40, -180], [30, -130], [-20, -140], [90, -180], [-56, -205]]) { for (let k = 0; k < 5; k++) { const a = k * TAU / 5 + t * .2; sCirc(x + Math.cos(a) * 9, y + Math.sin(a) * 9, 8, c, { lw: 3 }); } circ(x, y, 4, '#e86a2a', 0); } });
+defProp('net', 'object', 'Lưới (fishing net)', 220, 160, (o) => { ctx.beginPath(); ctx.moveTo(-100, -150); ctx.quadraticCurveTo(0, -60, 100, -150); ctx.lineTo(60, 0); ctx.lineTo(-60, 0); ctx.closePath(); ctx.save(); ctx.clip(); for (let i = -10; i < 10; i++) { line(i * 20, -160, i * 20 + 80, 10, 2, '#8a7a5a'); line(i * 20, -160, i * 20 - 80, 10, 2, '#8a7a5a'); } ctx.restore(); ctx.beginPath(); ctx.moveTo(-100, -150); ctx.quadraticCurveTo(0, -60, 100, -150); fs(null, 5); });
+defProp('compass', 'object', 'La bàn (compass)', 120, 120, (o, t) => { sCirc(0, -60, 56, '#c9a33a'); sCirc(0, -60, 44, '#fbf8ef', { lw: 4 }); ctx.save(); ctx.translate(0, -60); ctx.rotate(Math.sin(t * 2) * .3); poly([[0, -36], [8, 0], [-8, 0]], C.red, 3); poly([[0, 36], [8, 0], [-8, 0]], '#666', 3); ctx.restore(); });
+defProp('sim', 'object', 'SIM card', 80, 100, (o) => { sPoly([[-34, -96], [20, -96], [34, -82], [34, 0], [-34, 0]], '#f2f2f2'); sRR(-18, -60, 36, 30, 4, C.gold, { lw: 3 }); });
+defProp('bag_shopping', 'object', 'Túi ni lông (market bag)', 120, 150, (o) => { sPoly([[-50, -110], [50, -110], [56, 0], [-56, 0]], o.color || '#ff6f9a', { hi: '#fff' }); ctx.beginPath(); ctx.arc(-24, -110, 16, Math.PI, 0); fs(null, 6); ctx.beginPath(); ctx.arc(24, -110, 16, Math.PI, 0); fs(null, 6); }, { gripY: 125 });
+defProp('bucket_ice', 'object', 'Xô đá (ice bucket)', 140, 120, (o) => { sPoly([[-60, -100], [60, -100], [48, 0], [-48, 0]], '#e8e2d6'); for (let i = 0; i < 6; i++) rr(-46 + i * 16, -114 + (i % 2) * 6, 18, 16, 4, 'rgba(220,240,250,.9)', 3); });
