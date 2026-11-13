@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "updated": "2026-11-13T19:30:00+07:00",
+  "note": "Photo list for Vietadvisor Paste Helper. Eye-checked Vietnamese food photos for the dish question post. Updated by Muse; the extension fetches this file, so photos change here, never in the extension.",
+  "posts": [
+    {
+      "id": "dish-question-2026-11-13",
+      "caption": "What's the one Vietnamese dish you could eat every single day and never get bored of?",
+      "photos": [
+        "https://lh3.googleusercontent.com/grass-cs/AABkmLcxhJpfcOOkAflcMxm778ewio9VwILDorWU6pAH2KUQzVjyNJVlfm1CFCcgzf-DVI7o42xyOyPvMHaxuRwvPqyleA_N3ah6XwfX9zcmApGCfLpG0N4pIaWhNZekkZxLvrtJ8STpAd71YYI=s0",
+        "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q-oihvs_0xFB2wuArbLpoUkitufwAE6CW-qeWcs3M8J7TFyiIewbM-K7H9ZFSjSG2ymZe92fOAO2780rmCtN0lFoi15Mt5K5QxJinrQIIPIiulVVWptggcWYu9drfCIcL2JF8nk0qo2OV0=w1024",
+        "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q1l13ho7fvtHSHtIcDxf2qQ7p1TddV9j83VlUbwG9HY80-J49c-UVSsmpDUI_YsfWeMlphLLp6gdUepulg_guHspxUHk6q9SMP5pRCtNcZoRsb9XYbNNDCkzgHkagUMatuxexYGj_YQ74=w1024"
+      ]
+    }
+  ],
+  "current_post_id": "dish-question-2026-11-13"
+}
