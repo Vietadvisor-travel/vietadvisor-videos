@@ -1,17 +1,93 @@
 {
   "version": 1,
-  "updated": "2026-11-13T19:30:00+07:00",
-  "note": "Photo list for Vietadvisor Paste Helper. Eye-checked Vietnamese food photos for the dish question post. Updated by Muse; the extension fetches this file, so photos change here, never in the extension.",
+  "updated": "2026-11-13T20:08:00+07:00",
+  "note": "Photo list for Vietadvisor Paste Helper (own group 14/11/2026, max 7 posts). Photos are the FINAL eye-checked files (faces blurred, source stamp). Updated by Muse; the extension fetches this file, so photos change here, never in the extension.",
   "posts": [
     {
-      "id": "dish-question-2026-11-13",
-      "caption": "What's the one Vietnamese dish you could eat every single day and never get bored of?",
+      "id": "hon-son-2026-11-14",
+      "time": "08:00",
+      "kind": "short",
+      "caption": "A small island off Rach Gia with white-sand beaches, a swing out over the water and a peak you can hike for the view over the sea. The fast ferry takes about 1h15 to 1h30 and costs around 160-200k one way, best in the dry season from November to April.",
       "photos": [
-        "https://lh3.googleusercontent.com/grass-cs/AABkmLcxhJpfcOOkAflcMxm778ewio9VwILDorWU6pAH2KUQzVjyNJVlfm1CFCcgzf-DVI7o42xyOyPvMHaxuRwvPqyleA_N3ah6XwfX9zcmApGCfLpG0N4pIaWhNZekkZxLvrtJ8STpAd71YYI=s0",
-        "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q-oihvs_0xFB2wuArbLpoUkitufwAE6CW-qeWcs3M8J7TFyiIewbM-K7H9ZFSjSG2ymZe92fOAO2780rmCtN0lFoi15Mt5K5QxJinrQIIPIiulVVWptggcWYu9drfCIcL2JF8nk0qo2OV0=w1024",
-        "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q1l13ho7fvtHSHtIcDxf2qQ7p1TddV9j83VlUbwG9HY80-J49c-UVSsmpDUI_YsfWeMlphLLp6gdUepulg_guHspxUHk6q9SMP5pRCtNcZoRsb9XYbNNDCkzgHkagUMatuxexYGj_YQ74=w1024"
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/hon-son/01.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/hon-son/02.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/hon-son/03.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/hon-son/04.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/hon-son/05.jpg"
+      ]
+    },
+    {
+      "id": "phu-lang-2026-11-14",
+      "time": "09:00",
+      "kind": "short",
+      "caption": "A pottery village in Bac Ninh that has been firing clay for about 700 years, since the 13th century. The reddish clay, wood-fired kilns and eel-skin glaze are the giveaway, about 60km from Hanoi.",
+      "photos": [
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/phu-lang/01.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/phu-lang/02.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/phu-lang/03.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/phu-lang/04.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/phu-lang/05.jpg"
+      ]
+    },
+    {
+      "id": "poll-ha-giang-2026-11-14",
+      "time": "10:00",
+      "kind": "poll",
+      "caption": "Ha Giang loop: 3 days or 4 days? Options: 3 days / 4 days / 5 days or more / Haven't decided yet",
+      "photos": []
+    },
+    {
+      "id": "bun-thang-2026-11-14",
+      "time": "11:00",
+      "kind": "short",
+      "caption": "Hanoi's bun thang packs around 20 ingredients into one bowl, shredded chicken, egg ribbons and pork over a clear broth made from chicken bones, dried shrimp and squid. Ba Duc at 48 Cau Go has been doing it for 30-plus years, 40-60k a bowl, evenings only.",
+      "photos": [
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/bun-thang/01.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/bun-thang/02.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/bun-thang/03.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/bun-thang/04.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/bun-thang/05.jpg"
+      ]
+    },
+    {
+      "id": "tuyen-lam-2026-11-14",
+      "time": "17:00",
+      "kind": "short",
+      "caption": "Tuyen Lam lake in Da Lat, about 350 hectares of pine forest and still water 6km south of the centre. Kayaks go for 100-150k an hour, SUP 150-200k, best at 5-9am or after 2:30pm.",
+      "photos": [
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/tuyen-lam/01.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/tuyen-lam/02.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/tuyen-lam/03.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/tuyen-lam/04.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/tuyen-lam/05.jpg"
+      ]
+    },
+    {
+      "id": "ho-thi-ky-2026-11-14",
+      "time": "18:00",
+      "kind": "short",
+      "caption": "Saigon's biggest wholesale flower market, going since 1987 in the alley at 52 Ho Thi Ky. It is busiest from midnight to 3am, and the food street next to it runs 3pm to 11pm.",
+      "photos": [
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/ho-thi-ky/01.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/ho-thi-ky/02.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/ho-thi-ky/03.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/ho-thi-ky/04.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/ho-thi-ky/05.jpg"
+      ]
+    },
+    {
+      "id": "hop-on-hop-off-2026-11-14",
+      "time": "20:00",
+      "kind": "long",
+      "caption": "# Hop-On Hop-Off Hanoi Review: Route Map & Is It Worth It?\n\nHanoi has two hop-on hop-off bus companies, and their buses look almost identical. Same red, same open top, same route around the Old Quarter and the French Quarter. The trap is that a ticket from one does not work on the other, so if you buy the wrong one at the stop, you are standing there waving at a bus that will not take you.\n\nThe one most people end up on is the City Sightseeing / Hanoi City Tour loop. A single loop costs 150k, a 4-hour pass 300k and a 24-hour pass 450k. The 24-hour pass only makes sense if you actually use it twice, once in the afternoon and once the next morning, otherwise the single loop is the honest buy.\n\nThe route itself is worth it for one thing: seeing the city from the top deck without a motorbike in your face. You get the Opera House, the Temple of Literature, West Lake and the Old Quarter in about an hour, and the audio guide is good enough to tell you what you are looking at.\n\nGo before 10am or after 5pm. Midday in Hanoi the top deck is an oven, and the traffic moves so slowly that the loop takes twice as long. Sit a row or two back from the front of the top deck, the front row gets the full wind and the full sun, and the second row gets the same view with a bit of shade from the roof edge.\n\nThe practical version: buy the single loop, 150k, go early, sit second row, and treat it as a sightseeing ride, not transport. If you want to actually get somewhere, walk or grab a bike, the bus is too slow for that.\n\nFull guide, with the route map, stops and ticket details: https://vietadvisor.travel/hanoi/hanoi-hop-on-hop-off-bus",
+      "photos": [
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/dai-bai/01.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/dai-bai/02.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/dai-bai/03.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/dai-bai/04.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/dai-bai/05.jpg"
       ]
     }
   ],
-  "current_post_id": "dish-question-2026-11-13"
+  "current_post_id": "hon-son-2026-11-14"
 }
