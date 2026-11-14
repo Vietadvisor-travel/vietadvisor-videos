@@ -1,80 +1,145 @@
 {
- "version": 1,
- "updated": "2026-11-14T20:00:00+07:00",
- "note": "Photo list for Vietadvisor Paste Helper (own group 15/11/2026, max 7 posts). Photos are the FINAL eye-checked files (faces blurred, source stamp). Updated by Muse; the extension fetches this file, so photos change here, never in the extension.",
- "posts": [
-  {
-   "id": "cat-ba-2026-11-15",
-   "time": "08:00",
-   "kind": "short",
-   "caption": "Cat Ba is the big island at the edge of Ha Long Bay, with Lan Ha Bay on its far side and a national park covering about half of it. The day boats leave from Ben Beo pier, and the water stays a lot quieter than Ha Long itself.",
-   "photos": [
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/cat-ba/01.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/cat-ba/02.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/cat-ba/03.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/cat-ba/04.jpg"
-   ]
-  },
-  {
-   "id": "bun-cha-huong-lien-2026-11-15",
-   "time": "09:00",
-   "kind": "short",
-   "caption": "Bun Cha Huong Lien at 24 Le Van Huu is the place Obama ate at in 2016, and it has been packed ever since. Grilled pork patties and sliced pork in a warm fish sauce broth, with vermicelli and a pile of herbs on the side. Around 40-60k a portion.",
-   "photos": [
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/bun-cha-huong-lien/01.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/bun-cha-huong-lien/02.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/bun-cha-huong-lien/03.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/bun-cha-huong-lien/04.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/bun-cha-huong-lien/05.jpg"
-   ]
-  },
-  {
-   "id": "poll-ha-long-2026-11-15",
-   "time": "10:00",
-   "kind": "poll",
-   "caption": "Ha Long Bay: overnight cruise or day cruise? Options: Overnight cruise / Day cruise / Skip the bay, go to Lan Ha / Haven't decided yet",
-   "photos": []
-  },
-  {
-   "id": "phong-nha-2026-11-15",
-   "time": "11:00",
-   "kind": "short",
-   "caption": "Phong Nha is the cave you reach by boat up the Son River, about 25 minutes through limestone cliffs before the river runs straight into the mountain. Inside, the boat drifts 1.5 km past stalactites, and the cave itself runs 7,729 metres with an underground river. It sits in Phong Nha-Ke Bang National Park, a UNESCO site since 2003.",
-   "photos": [
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/phong-nha/01.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/phong-nha/02.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/phong-nha/03.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/phong-nha/04.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/phong-nha/05.jpg"
-   ]
-  },
-  {
-   "id": "mon-viet-2026-11-15",
-   "time": "17:00",
-   "kind": "text",
-   "caption": "Mon Viet nao ban van mo ve?",
-   "photos": []
-  },
-  {
-   "id": "sapa-bus-train-2026-11-15",
-   "time": "18:00",
-   "kind": "question",
-   "caption": "Sleeper bus or overnight train to Sapa, which one would you pick? The bus is about $20 and drops you right in Sapa town. The train is smoother but stops at Lao Cai.",
-   "photos": []
-  },
-  {
-   "id": "ninh-binh-rainy-2026-11-15",
-   "time": "20:00",
-   "kind": "long",
-   "caption": "# Ninh Binh on Rainy Days: What to Do When It Pours\n\nRain in Ninh Binh is usually a hard afternoon downpour, not a day-long washout. It rolls in around 2 or 3pm, lasts under an hour, and by dinner you would barely know it happened. So the move is simple: outdoor stuff in the morning, rain plan for the afternoon.\nThe boat still runs. Trang An and Tam Coc go out in light to moderate rain and only stop for a real typhoon. Trang An handles it better, the caves give you shelter for part of the route, and the limestone under grey sky looks like an ink painting. Go before 11am, ahead of the usual downpour window. A poncho beats an umbrella on a boat.\nBai Dinh Pagoda is the best dry backup. Covered corridors connect the halls, so you can see a lot without getting soaked, and the electric buggy cuts the walking between sections.\nHoa Lu Ancient Capital works too. The temples for King Dinh and King Le sit close together, so a guide can keep you moving between covered spots, and the old stone photographs well in flat grey light.\nA cooking class shifts indoors when the farm part cannot happen. Message the operator instead of assuming it is cancelled.\nSkip Mua Cave in heavy rain. Five hundred slippery steps are not worth it.\nFull guide, with the details: https://vietadvisor.travel/ninh-binh/ninh-binh-on-rainy-days",
-   "photos": [
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/ninh-binh-rainy/01.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/ninh-binh-rainy/02.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/ninh-binh-rainy/03.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/ninh-binh-rainy/04.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/ninh-binh-rainy/05.jpg"
-   ]
-  }
- ],
- "current_post_id": "cat-ba-2026-11-15"
+  "version": 1,
+  "updated": "2026-11-14T20:30:00+07:00",
+  "note": "Photo list for Vietadvisor Paste Helper: 7 posts for own group 15/11/2026 (scheduled) + 5 seed posts for outside groups tonight 14/11 (ids seed-*, no time). Photos are the FINAL eye-checked files (faces blurred, source stamp). Updated by Muse; the extension fetches this file, so photos change here, never in the extension.",
+  "posts": [
+    {
+      "id": "cat-ba-2026-11-15",
+      "time": "08:00",
+      "kind": "short",
+      "caption": "Cat Ba is the big island at the edge of Ha Long Bay, with Lan Ha Bay on its far side and a national park covering about half of it. The day boats leave from Ben Beo pier, and the water stays a lot quieter than Ha Long itself.",
+      "photos": [
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/cat-ba/01.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/cat-ba/02.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/cat-ba/03.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/cat-ba/04.jpg"
+      ]
+    },
+    {
+      "id": "bun-cha-huong-lien-2026-11-15",
+      "time": "09:00",
+      "kind": "short",
+      "caption": "Bun Cha Huong Lien at 24 Le Van Huu is the place Obama ate at in 2016, and it has been packed ever since. Grilled pork patties and sliced pork in a warm fish sauce broth, with vermicelli and a pile of herbs on the side. Around 40-60k a portion.",
+      "photos": [
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/bun-cha-huong-lien/01.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/bun-cha-huong-lien/02.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/bun-cha-huong-lien/03.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/bun-cha-huong-lien/04.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/bun-cha-huong-lien/05.jpg"
+      ]
+    },
+    {
+      "id": "poll-ha-long-2026-11-15",
+      "time": "10:00",
+      "kind": "poll",
+      "caption": "Ha Long Bay: overnight cruise or day cruise? Options: Overnight cruise / Day cruise / Skip the bay, go to Lan Ha / Haven't decided yet",
+      "photos": []
+    },
+    {
+      "id": "phong-nha-2026-11-15",
+      "time": "11:00",
+      "kind": "short",
+      "caption": "Phong Nha is the cave you reach by boat up the Son River, about 25 minutes through limestone cliffs before the river runs straight into the mountain. Inside, the boat drifts 1.5 km past stalactites, and the cave itself runs 7,729 metres with an underground river. It sits in Phong Nha-Ke Bang National Park, a UNESCO site since 2003.",
+      "photos": [
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/phong-nha/01.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/phong-nha/02.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/phong-nha/03.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/phong-nha/04.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/phong-nha/05.jpg"
+      ]
+    },
+    {
+      "id": "mon-viet-2026-11-15",
+      "time": "17:00",
+      "kind": "text",
+      "caption": "Mon Viet nao ban van mo ve?",
+      "photos": []
+    },
+    {
+      "id": "sapa-bus-train-2026-11-15",
+      "time": "18:00",
+      "kind": "question",
+      "caption": "Sleeper bus or overnight train to Sapa, which one would you pick? The bus is about $20 and drops you right in Sapa town. The train is smoother but stops at Lao Cai.",
+      "photos": []
+    },
+    {
+      "id": "ninh-binh-rainy-2026-11-15",
+      "time": "20:00",
+      "kind": "long",
+      "caption": "# Ninh Binh on Rainy Days: What to Do When It Pours\n\nRain in Ninh Binh is usually a hard afternoon downpour, not a day-long washout. It rolls in around 2 or 3pm, lasts under an hour, and by dinner you would barely know it happened. So the move is simple: outdoor stuff in the morning, rain plan for the afternoon.\nThe boat still runs. Trang An and Tam Coc go out in light to moderate rain and only stop for a real typhoon. Trang An handles it better, the caves give you shelter for part of the route, and the limestone under grey sky looks like an ink painting. Go before 11am, ahead of the usual downpour window. A poncho beats an umbrella on a boat.\nBai Dinh Pagoda is the best dry backup. Covered corridors connect the halls, so you can see a lot without getting soaked, and the electric buggy cuts the walking between sections.\nHoa Lu Ancient Capital works too. The temples for King Dinh and King Le sit close together, so a guide can keep you moving between covered spots, and the old stone photographs well in flat grey light.\nA cooking class shifts indoors when the farm part cannot happen. Message the operator instead of assuming it is cancelled.\nSkip Mua Cave in heavy rain. Five hundred slippery steps are not worth it.\nFull guide, with the details: https://vietadvisor.travel/ninh-binh/ninh-binh-on-rainy-days",
+      "photos": [
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/ninh-binh-rainy/01.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/ninh-binh-rainy/02.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/ninh-binh-rainy/03.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/ninh-binh-rainy/04.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-15/ninh-binh-rainy/05.jpg"
+      ]
+    },
+    {
+      "id": "seed-ta-pa-2026-11-14",
+      "time": "",
+      "kind": "short",
+      "caption": "An old quarry lake in Tri Ton that locals call a \"tuyet tinh coc\", the water shifts colour with the light and the season. Best from October to April, and the rice fields around it turn gold from September to November.",
+      "photos": [
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/ta-pa/01.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/ta-pa/02.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/ta-pa/03.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/ta-pa/04.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/ta-pa/05.jpg"
+      ]
+    },
+    {
+      "id": "seed-bun-nuoc-leo-2026-11-14",
+      "time": "",
+      "kind": "short",
+      "caption": "Soc Trang's bun nuoc leo is a Kinh-Hoa-Khmer mix built on mam bo hoc, with snakehead fish, shrimp and roast pork. Cay Nhan at 18 Vo Dinh Sam has been at it for over 40 years, 10-33k a bowl.",
+      "photos": [
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/bun-nuoc-leo/01.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/bun-nuoc-leo/02.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/bun-nuoc-leo/03.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/bun-nuoc-leo/04.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/bun-nuoc-leo/05.jpg"
+      ]
+    },
+    {
+      "id": "seed-tuong-ban-2026-11-14",
+      "time": "",
+      "kind": "short",
+      "caption": "Tuong Ban from My Hao, Hung Yen, fermented sticky rice and soybean aged in clay jars under the sun. Around 1,000 households make it, over 11 million litres a year, bottles go for 25-40k.",
+      "photos": [
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/tuong-ban/01.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/tuong-ban/02.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/tuong-ban/03.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/tuong-ban/04.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/tuong-ban/05.jpg"
+      ]
+    },
+    {
+      "id": "seed-xoi-yen-2026-11-14",
+      "time": "",
+      "kind": "short",
+      "caption": "Xoi Yen at 35B Nguyen Huu Huan does sticky rice with shredded chicken, Chinese sausage, a young egg and crispy fried shallots, plus pickled cucumber on the side. 35-72k a portion, open 6am to midnight.",
+      "photos": [
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/xoi-yen/01.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/xoi-yen/02.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/xoi-yen/03.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/xoi-yen/04.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/xoi-yen/05.jpg"
+      ]
+    },
+    {
+      "id": "seed-banh-canh-nguyen-du-2026-11-14",
+      "time": "",
+      "kind": "short",
+      "caption": "Banh Canh Nguyen Du at 55 Nguyen Du, Quy Nhon, fish-cake noodle soup for 25-40k, open 3pm to 9pm. Order a spring roll on the side, the way the locals do.",
+      "photos": [
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/banh-canh-nguyen-du/01.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/banh-canh-nguyen-du/02.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/banh-canh-nguyen-du/03.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/banh-canh-nguyen-du/04.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/banh-canh-nguyen-du/05.jpg"
+      ]
+    }
+  ],
+  "current_post_id": "cat-ba-2026-11-15"
 }
