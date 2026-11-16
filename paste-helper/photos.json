@@ -1,69 +1,46 @@
 {
  "version": 1,
- "updated": "2026-11-14T20:30:00+07:00",
- "note": "Photo list for Vietadvisor Paste Helper: 7 posts for own group 15/11/2026 (scheduled) + 5 seed posts for outside groups tonight 14/11 (ids seed-*, no time). Photos are the FINAL eye-checked files (faces blurred, source stamp). Updated by Muse; the extension fetches this file, so photos change here, never in the extension.",
+ "updated": "2026-11-16T20:15:30+07:00",
+ "note": "Photo list for Vietadvisor Paste Helper: 3 quality posts for own group 17/11/2026 (egg coffee showdown 08:00, scored Ninh Binh 11:00, cost guide 17:00) + 5 seed posts for outside groups 14/11 (ids seed-*). Photos are the FINAL eye-checked files (faces blurred, no source stamp). Updated by Muse; the extension fetches this file, so photos change here, never in the extension.",
  "posts": [
   {
-   "id": "quiz-hai-van-2026-11-16",
+   "id": "egg-coffee-showdown-2026-11-17",
    "time": "08:00",
-   "kind": "quiz",
-   "caption": "Quiz time. This road winds between Da Nang and Hue, sea on one side, mountains on the other. Where is this? No Googling, just guess.",
+   "kind": "comparison",
+   "caption": "Hanoi has two egg coffee legends and people fight over which one is better, so here is the honest comparison. Cafe Giang, 9/10. The original. Nguyen Van Giang invented egg coffee here in 1946, when milk was scarce and he whisked egg yolk with sugar instead, and his family still serves the same recipe at 39 Nguyen Huu Huan in the Old Quarter. 2026 is the 80th year. Hot egg coffee is about 35,000 VND, the shop opens 07:00 to 22:00, and it is mostly cash, so carry dong. The cup comes sitting in a small bowl of hot water, that keeps it warm while you drink. Go mid-morning after 10:00 or in the evening after 19:00, because 10:00 to noon and 17:00 to 19:00 the queue never stops. The alley entrance is easy to miss and the sign is small. Cafe Dinh, 8/10. The challenger, at 13 Dinh Tien Hoang, up on the second floor of an old building with a balcony over Hoan Kiem Lake. Egg coffee here runs 25,000 to 35,000 VND. For me, Giang wins on the coffee itself and Dinh wins on the view, and that is the whole argument. Which one are you picking, the original in the alley or the balcony over the lake? Save this for your first Hanoi morning.",
    "photos": [
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-16/hai-van/01.jpg"
+    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-17/cafe-giang/01.jpg",
+    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-17/cafe-giang/02.jpg",
+    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-17/cafe-giang/03.jpg",
+    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-17/cafe-giang/04.jpg",
+    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-17/cafe-giang/05.jpg"
    ]
   },
   {
-   "id": "marble-mountains-2026-11-16",
-   "time": "09:00",
-   "kind": "short",
-   "caption": "Marble Mountains is five limestone hills just south of Da Nang, each one named after an element. You climb stone steps past pagodas and into caves, and from the top you get the whole coastline in one view. The cave temples inside are the quiet part most people skip.",
-   "photos": [
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-16/ngu-hanh-son/01.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-16/ngu-hanh-son/02.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-16/ngu-hanh-son/03.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-16/ngu-hanh-son/04.jpg"
-   ]
-  },
-  {
-   "id": "banh-mi-phuong-2026-11-16",
-   "time": "10:00",
-   "kind": "short",
-   "caption": "Banh Mi Phuong in Hoi An is the little shop Anthony Bourdain made famous. Crusty baguette, pate, grilled pork and herbs, wrapped in that brown paper bag you see everywhere in the old town. The queue moves fast, and it is worth it.",
-   "photos": [
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-16/banh-mi-phuong/01.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-16/banh-mi-phuong/02.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-16/banh-mi-phuong/03.jpg"
-   ]
-  },
-  {
-   "id": "dragon-bridge-2026-11-16",
+   "id": "ninh-binh-scored-2026-11-17",
    "time": "11:00",
-   "kind": "detail",
-   "caption": "Small thing if you are in Da Nang on a Saturday night. The Dragon Bridge breathes fire at 9pm. Get to the riverfront a bit early, it fills up fast.",
+   "kind": "scored",
+   "caption": "One day in Ninh Binh, three things everyone tells you to do. Here is how I would score them, and I know people will disagree with me, that is the point. Mua Cave, 9/10. Nearly 500 stone steps up a limestone peak, and from the top the whole Tam Coc valley opens up at once, river, rice fields, karsts, and a stone dragon on the summit. The ticket is 150,000 VND now, up from 100,000 in April 2026, so any guide still saying 100k is out of date. Open 06:00 to 19:00, the climb takes 20 to 30 minutes, allow 1.5 to 2 hours for the whole visit. Go 07:00 to 09:00 or 16:00 to 18:00, because between 10:00 and 15:00 those steps are in full sun with no shade at all. Trang An, 8/10. The UNESCO boat ride, 300,000 VND per adult, 2.5 to 3.5 hours through caves and hidden valleys with temple stops, Route 2 is the one most people book. It loses points for eating half your day and for being the priciest ticket of the three. Tam Coc, 7/10. The classic ride through rice paddies and three caves, 250,000 VND per adult, 1.5 to 2 hours, and the boatwomen row with their feet. It loses points for being the shortest ride and for the crowds between 09:00 and 11:00 and on weekends. Go when the rice is green in May and June, or golden in late September and October. All three sit within 5 to 7 km of each other, so one day really is enough. Save this for your Ninh Binh day. What score would you give Mua Cave, and which order would you do them in?",
    "photos": [
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-16/cau-rong/01.jpg"
+    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-17/mua-cave/01.jpg",
+    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-17/mua-cave/02.jpg",
+    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-17/mua-cave/03.jpg",
+    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-17/mua-cave/04.jpg",
+    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-17/mua-cave/05.jpg"
    ]
   },
   {
-   "id": "text-beach-mountain-2026-11-16",
-   "time": "14:00",
-   "kind": "text",
-   "caption": "Beach morning or mountain morning? Which one wins for you in Vietnam?",
-   "photos": []
-  },
-  {
-   "id": "debate-da-nang-hoi-an-2026-11-16",
+   "id": "cost-guide-2026-11-17",
    "time": "17:00",
-   "kind": "question",
-   "caption": "Da Nang or Hoi An as your base in central Vietnam? Da Nang has the beaches and the city buzz. Hoi An has the old town and the lanterns. Which side are you on, and why?",
-   "photos": []
-  },
-  {
-   "id": "poll-da-nang-2026-11-16",
-   "time": "20:00",
-   "kind": "poll",
-   "caption": "You land in Da Nang tomorrow. First stop? Options: Ba Na Hills, Marble Mountains, My Khe Beach, Son Tra Peninsula",
-   "photos": []
+   "kind": "article",
+   "caption": "Two weeks in Vietnam, what does it actually cost in 2026? Save this, the numbers surprise everyone. Backpacker, $1,300 to $1,700 all in from the US or Europe. Mid-range, $2,500 to $3,500. Luxury, $4,500 to $7,000 and up. That covers flights, e-visa, insurance, and everything on the ground. The budget is decided by 4 big items, and together they eat 40 to 50 percent of a mid-range trip. One, a Halong Bay cruise, $95 to $450, mid-range $135 to $200. Two, a Sapa tour, $80 to $550, mid-range $140 to $220. Three, two domestic flights, $80 to $200. Four, a tailored suit in Hoi An, $200 to $700, skip it if you do not want one. The e-visa is $25 single entry or $50 multiple, insurance $40 to $80. Everything else, a bowl of pho, a bed, a Grab, is fixed cheap. Which of the 4 would you spend the most on, and which would you skip?",
+   "photos": [
+    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-17/cost-guide-2-weeks/01.jpg",
+    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-17/cost-guide-2-weeks/02.jpg",
+    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-17/cost-guide-2-weeks/03.jpg",
+    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-17/cost-guide-2-weeks/04.jpg",
+    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-17/cost-guide-2-weeks/05.jpg"
+   ]
   },
   {
    "id": "seed-ta-pa-2026-11-14",
@@ -131,5 +108,5 @@
    ]
   }
  ],
- "current_post_id": "quiz-hai-van-2026-11-16"
+ "current_post_id": "egg-coffee-showdown-2026-11-17"
 }
