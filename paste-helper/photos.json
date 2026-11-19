@@ -1,8 +1,31 @@
 {
  "version": 1,
- "updated": "2026-11-19T08:43:10+07:00",
- "note": "Photo list for Vietadvisor Paste Helper: 1 personal post for Astrid 19/11 (Hoan Kiem Lake, 1 photo) + 2 group posts 19/11 + 4 posts 18/11 + 5 seed posts for outside groups 14/11. Captions for 19/11 use Markdown (**bold** titles) for Paste Helper v18 caption paste. Photos are the FINAL eye-checked files (faces blurred, no source stamp). Updated by Muse; the extension fetches this file, so photos change here, never in the extension.",
+ "updated": "2026-11-19T20:03:45+07:00",
+ "note": "Photo list for Vietadvisor Paste Helper: 2 group posts 20/11 + 1 personal post for Astrid 19/11 + 2 group posts 19/11 + 4 posts 18/11 + 5 seed posts for outside groups 14/11. Captions for 20/11 use Markdown (**bold** titles) for Paste Helper v18 caption paste. Photos are the FINAL eye-checked files (faces blurred, no source stamp). Updated by Muse; the extension fetches this file, so photos change here, never in the extension.",
  "posts": [
+  {
+   "id": "famous-dishes-2026-11-20",
+   "time": "08:00",
+   "kind": "food-scored",
+   "caption": "My friend from London came to Vietnam with a list of three dishes. Banh mi, pho, bun cha. One week later we had eaten all three, and we spent the whole flight home arguing about the ranking. So here is mine, and I am ready to be told I am wrong.\n\n**Bun Cha Huong Lien, 24 Le Van Huu, Hanoi. 9/10.** The grilled pork comes off charcoal, the broth is warm and sour-sweet, and the pile of herbs on the side is not decoration, it is half the dish. A set is about 50,000 to 70,000 VND, the Obama combo is about 100,000, and the shop is open about 8:00 to 20:30. Go at 10:00 or after 14:30, the lunch rush from 11:30 is real. It loses one point because the room upstairs feels like a canteen, and I like that, but not everyone will.\n\n**Banh Mi Phuong, 2B Phan Chu Trinh, Hoi An. 8/10.** The bread cracks, the pate is thick, and the mixed banh mi at about 25,000 to 50,000 VND is still the best value on this list. Open 6:30 to 21:00 daily, and the queue at lunch can eat 20 to 30 minutes of your morning. It loses two points for that queue, and because the second branch on Tieu La street confuses everyone, including me the first time.\n\n**Pho Thin Lo Duc, 13 Lo Duc, Hanoi. 7/10.** The beef is stir-fried with garlic and ginger before it hits the bowl, so the broth tastes like nothing else in Hanoi. A bowl is about 70,000 to 90,000 VND, open about 6:00 to 21:00, and you pay at the door before you sit down. It loses points on price and on the small metal tables, and the broth is so rich that half my table loved it and the other half asked for a plainer bowl next door.\n\nBun cha wins for me because it is the only one of the three where everything on the table matters. Which one would you defend?",
+   "photos": [
+    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-20/famous-dishes-2026-11-20/01.jpg",
+    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-20/famous-dishes-2026-11-20/02.jpg",
+    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-20/famous-dishes-2026-11-20/03.jpg"
+   ]
+  },
+  {
+   "id": "danang-free-2026-11-20",
+   "time": "11:00",
+   "kind": "list",
+   "caption": "Da Nang has a way of emptying your wallet if you let it. Ba Na Hills, the cable car, the beach clubs. But some of the best hours I have spent there cost almost nothing, and these four are the ones I send people to first. Save this for your Da Nang days.\n\n**Linh Ung Pagoda, Son Tra Peninsula. Free.** The 67-metre Lady Buddha stands on the hill about 10 km from the centre, looking out over the bay. Open about 6:00 to 21:00 every day, and an hour is enough if you go early, before the tour buses. Cover your shoulders and knees, it is a working temple, and the small parking fee for a scooter is the only money you will spend.\n\n**Marble Mountains, 81 Huyen Tran Cong Chua. 40,000 VND.** The ticket covers the caves and pagodas of Thuy Son, and the glass elevator is 15,000 VND one way if your knees ask for it. Open 7:00 to 17:30, allow 2 to 3 hours, and take the steps slowly on the way down, the stone is worn smooth. Go at 7:00, the light in the caves is best before the crowds.\n\n**Hai Van Pass. Free, except the gate.** The old coast road runs 21 km over the pass, about 30 km from the centre, and the ride itself costs nothing. The restored Hai Van Gate at the summit is 70,000 VND. Allow 2 to 4 hours for a round trip with stops, and go early morning or late afternoon, the clouds sit on the road by midday in the wet months.\n\n**Dragon Bridge, Han River. Free.** The dragon breathes fire and water at 21:00 on Friday, Saturday and Sunday, for about 10 to 15 minutes. Tomorrow is Friday, so tomorrow night is a show night. Get to the riverfront by 20:30, stand on the Bach Dang side, and do not stand under the head unless you want the water.\n\nFour stops, one ticket between them. Which one would you do first?",
+   "photos": [
+    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-20/danang-free-2026-11-20/01.jpg",
+    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-20/danang-free-2026-11-20/02.jpg",
+    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-20/danang-free-2026-11-20/03.jpg",
+    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-20/danang-free-2026-11-20/04.jpg"
+   ]
+  },
   {
    "id": "astrid-personal-2026-11-19",
    "time": "09:00",
@@ -150,5 +173,5 @@
    ]
   }
  ],
- "current_post_id": "astrid-personal-2026-11-19"
+ "current_post_id": "famous-dishes-2026-11-20"
 }
