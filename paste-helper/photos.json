@@ -1,8 +1,17 @@
 {
  "version": 1,
- "updated": "2026-11-18T20:05:27+07:00",
- "note": "Photo list for Vietadvisor Paste Helper: 2 quality posts for own group 19/11/2026 (Ninh Binh quiet corners 08:00, scored old Ninh Binh 11:00) + 4 posts 18/11 + 5 seed posts for outside groups 14/11. Captions for 19/11 use Markdown (**bold** titles) for Paste Helper v18 caption paste. Photos are the FINAL eye-checked files (faces blurred, no source stamp). Updated by Muse; the extension fetches this file, so photos change here, never in the extension.",
+ "updated": "2026-11-19T08:43:10+07:00",
+ "note": "Photo list for Vietadvisor Paste Helper: 1 personal post for Astrid 19/11 (Hoan Kiem Lake, 1 photo) + 2 group posts 19/11 + 4 posts 18/11 + 5 seed posts for outside groups 14/11. Captions for 19/11 use Markdown (**bold** titles) for Paste Helper v18 caption paste. Photos are the FINAL eye-checked files (faces blurred, no source stamp). Updated by Muse; the extension fetches this file, so photos change here, never in the extension.",
  "posts": [
+  {
+   "id": "astrid-personal-2026-11-19",
+   "time": "09:00",
+   "kind": "personal",
+   "caption": "hoan kiem lake on a blue sky day. the little red bridge to ngoc son temple is still my favourite 2 minutes in hanoi. what's the one spot in your city you never get tired of?",
+   "photos": [
+    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-19/astrid-personal/01.jpg"
+   ]
+  },
   {
    "id": "ninh-binh-quiet-2026-11-19",
    "time": "08:00",
@@ -141,5 +150,5 @@
    ]
   }
  ],
- "current_post_id": "ninh-binh-quiet-2026-11-19"
+ "current_post_id": "astrid-personal-2026-11-19"
 }
