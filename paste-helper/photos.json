@@ -1,177 +1,177 @@
 {
- "version": 1,
- "updated": "2026-11-19T20:03:45+07:00",
- "note": "Photo list for Vietadvisor Paste Helper: 2 group posts 20/11 + 1 personal post for Astrid 19/11 + 2 group posts 19/11 + 4 posts 18/11 + 5 seed posts for outside groups 14/11. Captions for 20/11 use Markdown (**bold** titles) for Paste Helper v18 caption paste. Photos are the FINAL eye-checked files (faces blurred, no source stamp). Updated by Muse; the extension fetches this file, so photos change here, never in the extension.",
- "posts": [
-  {
-   "id": "famous-dishes-2026-11-20",
-   "time": "08:00",
-   "kind": "food-scored",
-   "caption": "My friend from London came to Vietnam with a list of three dishes. Banh mi, pho, bun cha. One week later we had eaten all three, and we spent the whole flight home arguing about the ranking. So here is mine, and I am ready to be told I am wrong.\n\n**Bun Cha Huong Lien, 24 Le Van Huu, Hanoi. 9/10.** The grilled pork comes off charcoal, the broth is warm and sour-sweet, and the pile of herbs on the side is not decoration, it is half the dish. A set is about 50,000 to 70,000 VND, the Obama combo is about 100,000, and the shop is open about 8:00 to 20:30. Go at 10:00 or after 14:30, the lunch rush from 11:30 is real. It loses one point because the room upstairs feels like a canteen, and I like that, but not everyone will.\n\n**Banh Mi Phuong, 2B Phan Chu Trinh, Hoi An. 8/10.** The bread cracks, the pate is thick, and the mixed banh mi at about 25,000 to 50,000 VND is still the best value on this list. Open 6:30 to 21:00 daily, and the queue at lunch can eat 20 to 30 minutes of your morning. It loses two points for that queue, and because the second branch on Tieu La street confuses everyone, including me the first time.\n\n**Pho Thin Lo Duc, 13 Lo Duc, Hanoi. 7/10.** The beef is stir-fried with garlic and ginger before it hits the bowl, so the broth tastes like nothing else in Hanoi. A bowl is about 70,000 to 90,000 VND, open about 6:00 to 21:00, and you pay at the door before you sit down. It loses points on price and on the small metal tables, and the broth is so rich that half my table loved it and the other half asked for a plainer bowl next door.\n\nBun cha wins for me because it is the only one of the three where everything on the table matters. Which one would you defend?",
-   "photos": [
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-20/famous-dishes-2026-11-20/01.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-20/famous-dishes-2026-11-20/02.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-20/famous-dishes-2026-11-20/03.jpg"
-   ]
-  },
-  {
-   "id": "danang-free-2026-11-20",
-   "time": "11:00",
-   "kind": "list",
-   "caption": "Da Nang has a way of emptying your wallet if you let it. Ba Na Hills, the cable car, the beach clubs. But some of the best hours I have spent there cost almost nothing, and these four are the ones I send people to first. Save this for your Da Nang days.\n\n**Linh Ung Pagoda, Son Tra Peninsula. Free.** The 67-metre Lady Buddha stands on the hill about 10 km from the centre, looking out over the bay. Open about 6:00 to 21:00 every day, and an hour is enough if you go early, before the tour buses. Cover your shoulders and knees, it is a working temple, and the small parking fee for a scooter is the only money you will spend.\n\n**Marble Mountains, 81 Huyen Tran Cong Chua. 40,000 VND.** The ticket covers the caves and pagodas of Thuy Son, and the glass elevator is 15,000 VND one way if your knees ask for it. Open 7:00 to 17:30, allow 2 to 3 hours, and take the steps slowly on the way down, the stone is worn smooth. Go at 7:00, the light in the caves is best before the crowds.\n\n**Hai Van Pass. Free, except the gate.** The old coast road runs 21 km over the pass, about 30 km from the centre, and the ride itself costs nothing. The restored Hai Van Gate at the summit is 70,000 VND. Allow 2 to 4 hours for a round trip with stops, and go early morning or late afternoon, the clouds sit on the road by midday in the wet months.\n\n**Dragon Bridge, Han River. Free.** The dragon breathes fire and water at 21:00 on Friday, Saturday and Sunday, for about 10 to 15 minutes. Tomorrow is Friday, so tomorrow night is a show night. Get to the riverfront by 20:30, stand on the Bach Dang side, and do not stand under the head unless you want the water.\n\nFour stops, one ticket between them. Which one would you do first?",
-   "photos": [
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-20/danang-free-2026-11-20/01.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-20/danang-free-2026-11-20/02.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-20/danang-free-2026-11-20/03.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-20/danang-free-2026-11-20/04.jpg"
-   ]
-  },
-  {
-   "id": "astrid-personal-2026-11-19",
-   "time": "09:00",
-   "kind": "personal",
-   "caption": "hoan kiem lake on a blue sky day. the little red bridge to ngoc son temple is still my favourite 2 minutes in hanoi. what's the one spot in your city you never get tired of?",
-   "photos": [
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-19/astrid-personal/01.jpg"
-   ]
-  },
-  {
-   "id": "ninh-binh-quiet-2026-11-19",
-   "time": "08:00",
-   "kind": "list",
-   "caption": "Everyone does the same three things in Ninh Binh, then complains it was crowded. These four are the ones I send friends to when they want the same landscape without the queue. Save this for your Ninh Binh day.\n\n**Van Long Wetland, Ninh Binh.** The boat is about 100,000 VND a person and the ride takes around 1 to 1.5 hours. It is about 25 km from Tam Coc, all reeds and still water and limestone, and on a good morning you might spot Delacour's langurs on the cliffs. Go early, before the day heats up, and bring patience, the wildlife does not run on a schedule.\n\n**Bich Dong Pagoda, 2 to 3 km from Tam Coc pier.** Free entry, open about 07:30 to 16:30, and the three temple tiers climb straight into the cliff above a lotus pond. Allow about 1 hour, and wear shoes that grip, the stone steps get slippery after rain. One warning: people near the gate will try to sell you a ticket. There is no ticket, walk straight in and pay only parking, about 10,000 VND.\n\n**Thung Nham Bird Park, about 7 km from Tam Coc.** The ticket is 250,000 VND for an adult and it includes the boats to the bird garden and But Cave. The park opens about 07:00 to 18:00 in summer, and the whole point is the last hour, from about 16:30 the egrets and herons come back in flocks to roost. Allow 3 to 4 hours if you want the gardens too, or just come late for the birds.\n\n**Thai Vi Temple, about 1 km from Tam Coc.** Free entry, open about 07:00 to 17:00, a 13th-century temple to the Tran kings sitting in the middle of rice fields. Twenty minutes is enough, and that is the point, it is quiet in a way the big sites never are. Cycle there from Tam Coc, it is an easy flat ride.\n\nWhich one would you pick first, the birds or the pagoda?",
-   "photos": [
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-19/ninh-binh-quiet/01.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-19/ninh-binh-quiet/02.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-19/ninh-binh-quiet/03.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-19/ninh-binh-quiet/04.jpg"
-   ]
-  },
-  {
-   "id": "ninh-binh-old-2026-11-19",
-   "time": "11:00",
-   "kind": "scored",
-   "caption": "I went to Bai Dinh expecting the highlight of the day. It was not. The cheapest place on this list was.\n\n**Hoa Lu Ancient Capital, 9/10.** This was Vietnam's capital from 968 to 1010, and the temples to kings Dinh Tien Hoang and Le Dai Hanh sit in a valley walled by limestone. Entry is 20,000 VND for an adult, open 07:00 to 17:00, and an hour is enough if you walk slowly. It loses one point because there is almost nothing left of the capital itself, you come for the temples and the setting, not ruins.\n\n**Phat Diem Cathedral, 8/10.** About 30 km southeast of Ninh Binh city, a stone cathedral built between 1875 and 1898 with curved Vietnamese pagoda roofs on a Gothic frame. Free entry, open roughly 07:30 to 11:30 and 13:30 to 17:00, allow about 1 hour. It loses points for the distance, it is a half-day detour on its own, but nothing else in Vietnam looks like it. Skip Sunday morning, mass runs until 10:00.\n\n**Bai Dinh Pagoda, 7/10.** The biggest Buddhist complex in Vietnam, 539 hectares, a 100-metre stupa and a corridor of 500 arhat statues. Entry is free, but the electric car is 150,000 VND return and you need it, the site is too spread out to walk. Allow 2 to 3 hours. It loses points because it feels new and enormous, and the older, smaller corners of the site are better than the giant halls. Go for the scale, not for atmosphere.\n\nSo my ranking: Hoa Lu first, Phat Diem second, Bai Dinh last. Which order would you put them in?",
-   "photos": [
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-19/ninh-binh-old/01.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-19/ninh-binh-old/02.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-19/ninh-binh-old/03.jpg"
-   ]
-  },
-  {
-   "id": "pho-thin-2026-11-18",
-   "time": "08:00",
-   "kind": "review",
-   "caption": "I queued out the door for a bowl of pho that costs twice the normal price, and I would do it again tomorrow.\n\nPho Thin Lo Duc, 13 Lo Duc, Hanoi. The shop has been here since 1979, and it serves one thing: pho tai lan. The beef is stir-fried first, then dropped into the bowl, so the broth tastes smoky and the green onions come piled high. A bowl is about 70,000 to 90,000 VND, and you pay cash at the counter before you sit down. The shop opens around 06:00 and closes around 21:00.\n\nGo before 08:00 or after 19:00. Between 10:00 and 12:00 the queue runs out the door and the tables are shared with strangers, which is half the experience anyway. Order the quay on the side, the fried dough sticks, for dunking.\n\nMy score is 9/10. It loses one point for the price and for the rush, nobody lingers here, you eat and you go. And here is the part people argue about: this is the best beef pho in Hanoi, but it is not classic pho. If you want a clear, quiet broth, go somewhere else. If you want smoke and onions and a full bowl, this is the one.\n\nHave you tried it, and did it live up to the queue for you?",
-   "photos": [
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/pho-thin/01.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/pho-thin/02.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/pho-thin/03.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/pho-thin/04.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/pho-thin/05.jpg"
-   ]
-  },
-  {
-   "id": "da-nang-scored-2026-11-18",
-   "time": "11:00",
-   "kind": "scored",
-   "caption": "Da Nang gives you three completely different days in one city, and I keep changing my mind about which one wins.\n\nMy Khe Beach, 9/10. Free, no ticket, no queue, just walk down from the hotels and the sand is already there. I go early, before 08:00, or after 16:00, because midday the sun is brutal and the sand burns your feet. Swim between the flags. When the red flag is up, stay out, the waves here are stronger than they look.\n\nSon Tra Peninsula, 8/10. Free as well, 10 km northeast of the centre, and the road up gives you the best view in Da Nang. Ban Co Peak is 696 m up, and on a clear morning you see the whole bay. The red-shanked douc langurs live here, about 1,000 to 1,300 of them, and your best chance is 06:00 to 09:00 on the forest road. A motorbike loop takes 2 to 3 hours, but automatic scooters are barred on the steep parts, so rent a manual bike or take a car. It loses points because you need luck and a vehicle, the beach just needs your feet.\n\nBa Na Hills, 7/10. The Golden Bridge is as good as the photos, the cable car ride is the real highlight, and the ticket is 1,000,000 VND for an adult from outside Da Nang. Since January 2026 the same ticket works for 3 consecutive days, which softens the price a bit. The cable car runs 08:00 to 22:00, and a full visit takes 6 to 8 hours. It loses points for the price and for the fog. On a cloudy day the bridge disappears completely, and the cable car has been suspended before for bad weather.\n\nSo my ranking is beach first, mountain second, Ba Na third. I know most people would flip it. What is your order, and would you still pay 1,000,000 VND for Ba Na on a foggy day?",
-   "photos": [
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/da-nang-scored/01.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/da-nang-scored/02.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/da-nang-scored/03.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/da-nang-scored/04.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/da-nang-scored/05.jpg"
-   ]
-  },
-  {
-   "id": "old-quarter-morning-2026-11-18",
-   "time": "14:00",
-   "kind": "route",
-   "caption": "One day in Hanoi Old Quarter, hour by hour. Save this, it costs less than you think.\n\n07:00, Hoan Kiem Lake. Free. Start here while the lake is still quiet, walk the loop, cross the red bridge to Ngoc Son Temple. The streets around the lake are car-free from Friday evening to Sunday night, but on a weekday morning it is just locals starting their day.\n\n08:30, Dong Xuan Market. Free entry, open 06:00 to 18:00 daily. It is about 900 m north of the lake, a 12 to 15 minute walk up Hang Dao. Three floors of fabric, dried food and souvenirs, and the food alleys outside stay busy until 22:00.\n\n10:00, Temple of Literature. 58 Quoc Tu Giam, 70,000 VND for an adult, open 08:00 to 17:00, last entry 16:30. Founded in 1070, home to Vietnam's first university from 1076. Allow 1.5 to 2 hours, and go before the tour buses arrive around 11:00.\n\n11:30, Cha Ca La Vong. 14 Cha Ca, the original shop since 1871, and the street is named after the dish. A portion is about 180,000 VND, hours 11:00 to 14:00 and 16:00 to 20:30. Go at 11:00 and you walk straight in. After noon the queue runs down the street.\n\n17:00, Ta Hien. The beer street. Plastic stools, cold beer, and the whole Old Quarter spilling out onto the pavement. No ticket, no plan needed, just sit down and watch the street.\n\nTotal for the day: 250,000 VND for the temple and lunch, plus whatever you drink on Ta Hien. Which stop would you skip, and what would you do instead?",
-   "photos": [
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/old-quarter-morning/01.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/old-quarter-morning/02.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/old-quarter-morning/03.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/old-quarter-morning/04.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/old-quarter-morning/05.jpg"
-   ]
-  },
-  {
-   "id": "asia-park-2026-11-18",
-   "time": "17:00",
-   "kind": "question",
-   "caption": "Asia Park opens at 15:00 and the Sun Wheel lights up the whole riverfront. Entry to the park is free. The wheel is 140,000 to 150,000 VND, 115 m up, and the all-in-one wristband is about 200,000 VND.\n\nI paid for the wheel once, and the view at sunset was worth it. The second time I just walked the grounds, ate at the stalls, and watched the lights for free, and honestly I had just as much fun.\n\nSo would you pay for the wheel, or is the free walk enough?",
-   "photos": [
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/asia-park/01.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/asia-park/02.jpg"
-   ]
-  },
-  {
-   "id": "seed-ta-pa-2026-11-14",
-   "time": "",
-   "kind": "short",
-   "caption": "An old quarry lake in Tri Ton that locals call a \"tuyet tinh coc\", the water shifts colour with the light and the season. Best from October to April, and the rice fields around it turn gold from September to November.",
-   "photos": [
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/ta-pa/01.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/ta-pa/02.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/ta-pa/03.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/ta-pa/04.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/ta-pa/05.jpg"
-   ]
-  },
-  {
-   "id": "seed-bun-nuoc-leo-2026-11-14",
-   "time": "",
-   "kind": "short",
-   "caption": "Soc Trang's bun nuoc leo is a Kinh-Hoa-Khmer mix built on mam bo hoc, with snakehead fish, shrimp and roast pork. Cay Nhan at 18 Vo Dinh Sam has been at it for over 40 years, 10-33k a bowl.",
-   "photos": [
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/bun-nuoc-leo/01.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/bun-nuoc-leo/02.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/bun-nuoc-leo/03.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/bun-nuoc-leo/04.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/bun-nuoc-leo/05.jpg"
-   ]
-  },
-  {
-   "id": "seed-tuong-ban-2026-11-14",
-   "time": "",
-   "kind": "short",
-   "caption": "Tuong Ban from My Hao, Hung Yen, fermented sticky rice and soybean aged in clay jars under the sun. Around 1,000 households make it, over 11 million litres a year, bottles go for 25-40k.",
-   "photos": [
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/tuong-ban/01.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/tuong-ban/02.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/tuong-ban/03.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/tuong-ban/04.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/tuong-ban/05.jpg"
-   ]
-  },
-  {
-   "id": "seed-xoi-yen-2026-11-14",
-   "time": "",
-   "kind": "short",
-   "caption": "Xoi Yen at 35B Nguyen Huu Huan does sticky rice with shredded chicken, Chinese sausage, a young egg and crispy fried shallots, plus pickled cucumber on the side. 35-72k a portion, open 6am to midnight.",
-   "photos": [
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/xoi-yen/01.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/xoi-yen/02.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/xoi-yen/03.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/xoi-yen/04.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/xoi-yen/05.jpg"
-   ]
-  },
-  {
-   "id": "seed-banh-canh-nguyen-du-2026-11-14",
-   "time": "",
-   "kind": "short",
-   "caption": "Banh Canh Nguyen Du at 55 Nguyen Du, Quy Nhon, fish-cake noodle soup for 25-40k, open 3pm to 9pm. Order a spring roll on the side, the way the locals do.",
-   "photos": [
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/banh-canh-nguyen-du/01.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/banh-canh-nguyen-du/02.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/banh-canh-nguyen-du/03.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/banh-canh-nguyen-du/04.jpg",
-    "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/banh-canh-nguyen-du/05.jpg"
-   ]
-  }
- ],
- "current_post_id": "famous-dishes-2026-11-20"
+  "version": 1,
+  "updated": "2026-11-19T20:03:45+07:00",
+  "note": "Photo list for Vietadvisor Paste Helper: 2 group posts 20/11 + 1 personal post for Astrid 19/11 + 2 group posts 19/11 + 4 posts 18/11 + 5 seed posts for outside groups 14/11. Captions for 20/11 use Markdown (**bold** titles) for Paste Helper v18 caption paste. Photos are the FINAL eye-checked files (faces blurred, no source stamp). Updated by Muse; the extension fetches this file, so photos change here, never in the extension.",
+  "posts": [
+    {
+      "id": "famous-dishes-2026-11-20",
+      "time": "08:00",
+      "kind": "food-scored",
+      "caption": "My friend from London came to Vietnam with a list of three dishes. Banh mi, pho, bun cha. One week later we had eaten all three, and we spent the whole flight home arguing about the ranking. So here is mine, and I am ready to be told I am wrong.\n\n**Bun Cha Huong Lien, 24 Le Van Huu, Hanoi. 9/10.** The grilled pork comes off charcoal, the broth is warm and sour-sweet, and the pile of herbs on the side is not decoration, it is half the dish. A set is about 50,000 to 70,000 VND, the Obama combo is about 100,000, and the shop is open about 8:00 to 20:30. Go at 10:00 or after 14:30, the lunch rush from 11:30 is real. It loses one point because the room upstairs feels like a canteen, and I like that, but not everyone will.\n\n**Banh Mi Phuong, 2B Phan Chu Trinh, Hoi An. 8/10.** The bread cracks, the pate is thick, and the mixed banh mi at about 25,000 to 50,000 VND is still the best value on this list. Open 6:30 to 21:00 daily, and the queue at lunch can eat 20 to 30 minutes of your morning. It loses two points for that queue, and because the second branch on Tieu La street confuses everyone, including me the first time.\n\n**Pho Thin Lo Duc, 13 Lo Duc, Hanoi. 7/10.** The beef is stir-fried with garlic and ginger before it hits the bowl, so the broth tastes like nothing else in Hanoi. A bowl is about 70,000 to 90,000 VND, open about 6:00 to 21:00, and you pay at the door before you sit down. It loses points on price and on the small metal tables, and the broth is so rich that half my table loved it and the other half asked for a plainer bowl next door.\n\nBun cha wins for me because it is the only one of the three where everything on the table matters. Which one would you defend?",
+      "photos": [
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-20/famous-dishes-2026-11-20/01.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-20/famous-dishes-2026-11-20/02.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-20/famous-dishes-2026-11-20/03.jpg"
+      ]
+    },
+    {
+      "id": "danang-free-2026-11-20",
+      "time": "11:00",
+      "kind": "list",
+      "caption": "Da Nang has a way of emptying your wallet if you let it. Ba Na Hills, the cable car, the beach clubs. But some of the best hours I have spent there cost almost nothing, and these four are the ones I send people to first. Save this for your Da Nang days.\n\n**Linh Ung Pagoda, Son Tra Peninsula. Free.** The 67-metre Lady Buddha stands on the hill about 10 km from the centre, looking out over the bay. Open about 6:00 to 21:00 every day, and an hour is enough if you go early, before the tour buses. Cover your shoulders and knees, it is a working temple, and the small parking fee for a scooter is the only money you will spend.\n\n**Marble Mountains, 81 Huyen Tran Cong Chua. 40,000 VND.** The ticket covers the caves and pagodas of Thuy Son, and the glass elevator is 15,000 VND one way if your knees ask for it. Open 7:00 to 17:30, allow 2 to 3 hours, and take the steps slowly on the way down, the stone is worn smooth. Go at 7:00, the light in the caves is best before the crowds.\n\n**Hai Van Pass. Free, except the gate.** The old coast road runs 21 km over the pass, about 30 km from the centre, and the ride itself costs nothing. The restored Hai Van Gate at the summit is 70,000 VND. Allow 2 to 4 hours for a round trip with stops, and go early morning or late afternoon, the clouds sit on the road by midday in the wet months.\n\n**Dragon Bridge, Han River. Free.** The dragon breathes fire and water at 21:00 on Friday, Saturday and Sunday, for about 10 to 15 minutes. Tonight is Friday, so tonight is a show night. Get to the riverfront by 20:30, stand on the Bach Dang side, and do not stand under the head unless you want the water.\n\nFour stops, one ticket between them. Which one would you do first?",
+      "photos": [
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-20/danang-free-2026-11-20/01.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-20/danang-free-2026-11-20/02.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-20/danang-free-2026-11-20/03.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-20/danang-free-2026-11-20/04.jpg"
+      ]
+    },
+    {
+      "id": "astrid-personal-2026-11-19",
+      "time": "09:00",
+      "kind": "personal",
+      "caption": "hoan kiem lake on a blue sky day. the little red bridge to ngoc son temple is still my favourite 2 minutes in hanoi. what's the one spot in your city you never get tired of?",
+      "photos": [
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-19/astrid-personal/01.jpg"
+      ]
+    },
+    {
+      "id": "ninh-binh-quiet-2026-11-19",
+      "time": "08:00",
+      "kind": "list",
+      "caption": "Everyone does the same three things in Ninh Binh, then complains it was crowded. These four are the ones I send friends to when they want the same landscape without the queue. Save this for your Ninh Binh day.\n\n**Van Long Wetland, Ninh Binh.** The boat is about 100,000 VND a person and the ride takes around 1 to 1.5 hours. It is about 25 km from Tam Coc, all reeds and still water and limestone, and on a good morning you might spot Delacour's langurs on the cliffs. Go early, before the day heats up, and bring patience, the wildlife does not run on a schedule.\n\n**Bich Dong Pagoda, 2 to 3 km from Tam Coc pier.** Free entry, open about 07:30 to 16:30, and the three temple tiers climb straight into the cliff above a lotus pond. Allow about 1 hour, and wear shoes that grip, the stone steps get slippery after rain. One warning: people near the gate will try to sell you a ticket. There is no ticket, walk straight in and pay only parking, about 10,000 VND.\n\n**Thung Nham Bird Park, about 7 km from Tam Coc.** The ticket is 250,000 VND for an adult and it includes the boats to the bird garden and But Cave. The park opens about 07:00 to 18:00 in summer, and the whole point is the last hour, from about 16:30 the egrets and herons come back in flocks to roost. Allow 3 to 4 hours if you want the gardens too, or just come late for the birds.\n\n**Thai Vi Temple, about 1 km from Tam Coc.** Free entry, open about 07:00 to 17:00, a 13th-century temple to the Tran kings sitting in the middle of rice fields. Twenty minutes is enough, and that is the point, it is quiet in a way the big sites never are. Cycle there from Tam Coc, it is an easy flat ride.\n\nWhich one would you pick first, the birds or the pagoda?",
+      "photos": [
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-19/ninh-binh-quiet/01.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-19/ninh-binh-quiet/02.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-19/ninh-binh-quiet/03.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-19/ninh-binh-quiet/04.jpg"
+      ]
+    },
+    {
+      "id": "ninh-binh-old-2026-11-19",
+      "time": "11:00",
+      "kind": "scored",
+      "caption": "I went to Bai Dinh expecting the highlight of the day. It was not. The cheapest place on this list was.\n\n**Hoa Lu Ancient Capital, 9/10.** This was Vietnam's capital from 968 to 1010, and the temples to kings Dinh Tien Hoang and Le Dai Hanh sit in a valley walled by limestone. Entry is 20,000 VND for an adult, open 07:00 to 17:00, and an hour is enough if you walk slowly. It loses one point because there is almost nothing left of the capital itself, you come for the temples and the setting, not ruins.\n\n**Phat Diem Cathedral, 8/10.** About 30 km southeast of Ninh Binh city, a stone cathedral built between 1875 and 1898 with curved Vietnamese pagoda roofs on a Gothic frame. Free entry, open roughly 07:30 to 11:30 and 13:30 to 17:00, allow about 1 hour. It loses points for the distance, it is a half-day detour on its own, but nothing else in Vietnam looks like it. Skip Sunday morning, mass runs until 10:00.\n\n**Bai Dinh Pagoda, 7/10.** The biggest Buddhist complex in Vietnam, 539 hectares, a 100-metre stupa and a corridor of 500 arhat statues. Entry is free, but the electric car is 150,000 VND return and you need it, the site is too spread out to walk. Allow 2 to 3 hours. It loses points because it feels new and enormous, and the older, smaller corners of the site are better than the giant halls. Go for the scale, not for atmosphere.\n\nSo my ranking: Hoa Lu first, Phat Diem second, Bai Dinh last. Which order would you put them in?",
+      "photos": [
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-19/ninh-binh-old/01.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-19/ninh-binh-old/02.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-19/ninh-binh-old/03.jpg"
+      ]
+    },
+    {
+      "id": "pho-thin-2026-11-18",
+      "time": "08:00",
+      "kind": "review",
+      "caption": "I queued out the door for a bowl of pho that costs twice the normal price, and I would do it again tomorrow.\n\nPho Thin Lo Duc, 13 Lo Duc, Hanoi. The shop has been here since 1979, and it serves one thing: pho tai lan. The beef is stir-fried first, then dropped into the bowl, so the broth tastes smoky and the green onions come piled high. A bowl is about 70,000 to 90,000 VND, and you pay cash at the counter before you sit down. The shop opens around 06:00 and closes around 21:00.\n\nGo before 08:00 or after 19:00. Between 10:00 and 12:00 the queue runs out the door and the tables are shared with strangers, which is half the experience anyway. Order the quay on the side, the fried dough sticks, for dunking.\n\nMy score is 9/10. It loses one point for the price and for the rush, nobody lingers here, you eat and you go. And here is the part people argue about: this is the best beef pho in Hanoi, but it is not classic pho. If you want a clear, quiet broth, go somewhere else. If you want smoke and onions and a full bowl, this is the one.\n\nHave you tried it, and did it live up to the queue for you?",
+      "photos": [
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/pho-thin/01.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/pho-thin/02.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/pho-thin/03.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/pho-thin/04.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/pho-thin/05.jpg"
+      ]
+    },
+    {
+      "id": "da-nang-scored-2026-11-18",
+      "time": "11:00",
+      "kind": "scored",
+      "caption": "Da Nang gives you three completely different days in one city, and I keep changing my mind about which one wins.\n\nMy Khe Beach, 9/10. Free, no ticket, no queue, just walk down from the hotels and the sand is already there. I go early, before 08:00, or after 16:00, because midday the sun is brutal and the sand burns your feet. Swim between the flags. When the red flag is up, stay out, the waves here are stronger than they look.\n\nSon Tra Peninsula, 8/10. Free as well, 10 km northeast of the centre, and the road up gives you the best view in Da Nang. Ban Co Peak is 696 m up, and on a clear morning you see the whole bay. The red-shanked douc langurs live here, about 1,000 to 1,300 of them, and your best chance is 06:00 to 09:00 on the forest road. A motorbike loop takes 2 to 3 hours, but automatic scooters are barred on the steep parts, so rent a manual bike or take a car. It loses points because you need luck and a vehicle, the beach just needs your feet.\n\nBa Na Hills, 7/10. The Golden Bridge is as good as the photos, the cable car ride is the real highlight, and the ticket is 1,000,000 VND for an adult from outside Da Nang. Since January 2026 the same ticket works for 3 consecutive days, which softens the price a bit. The cable car runs 08:00 to 22:00, and a full visit takes 6 to 8 hours. It loses points for the price and for the fog. On a cloudy day the bridge disappears completely, and the cable car has been suspended before for bad weather.\n\nSo my ranking is beach first, mountain second, Ba Na third. I know most people would flip it. What is your order, and would you still pay 1,000,000 VND for Ba Na on a foggy day?",
+      "photos": [
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/da-nang-scored/01.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/da-nang-scored/02.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/da-nang-scored/03.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/da-nang-scored/04.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/da-nang-scored/05.jpg"
+      ]
+    },
+    {
+      "id": "old-quarter-morning-2026-11-18",
+      "time": "14:00",
+      "kind": "route",
+      "caption": "One day in Hanoi Old Quarter, hour by hour. Save this, it costs less than you think.\n\n07:00, Hoan Kiem Lake. Free. Start here while the lake is still quiet, walk the loop, cross the red bridge to Ngoc Son Temple. The streets around the lake are car-free from Friday evening to Sunday night, but on a weekday morning it is just locals starting their day.\n\n08:30, Dong Xuan Market. Free entry, open 06:00 to 18:00 daily. It is about 900 m north of the lake, a 12 to 15 minute walk up Hang Dao. Three floors of fabric, dried food and souvenirs, and the food alleys outside stay busy until 22:00.\n\n10:00, Temple of Literature. 58 Quoc Tu Giam, 70,000 VND for an adult, open 08:00 to 17:00, last entry 16:30. Founded in 1070, home to Vietnam's first university from 1076. Allow 1.5 to 2 hours, and go before the tour buses arrive around 11:00.\n\n11:30, Cha Ca La Vong. 14 Cha Ca, the original shop since 1871, and the street is named after the dish. A portion is about 180,000 VND, hours 11:00 to 14:00 and 16:00 to 20:30. Go at 11:00 and you walk straight in. After noon the queue runs down the street.\n\n17:00, Ta Hien. The beer street. Plastic stools, cold beer, and the whole Old Quarter spilling out onto the pavement. No ticket, no plan needed, just sit down and watch the street.\n\nTotal for the day: 250,000 VND for the temple and lunch, plus whatever you drink on Ta Hien. Which stop would you skip, and what would you do instead?",
+      "photos": [
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/old-quarter-morning/01.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/old-quarter-morning/02.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/old-quarter-morning/03.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/old-quarter-morning/04.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/old-quarter-morning/05.jpg"
+      ]
+    },
+    {
+      "id": "asia-park-2026-11-18",
+      "time": "17:00",
+      "kind": "question",
+      "caption": "Asia Park opens at 15:00 and the Sun Wheel lights up the whole riverfront. Entry to the park is free. The wheel is 140,000 to 150,000 VND, 115 m up, and the all-in-one wristband is about 200,000 VND.\n\nI paid for the wheel once, and the view at sunset was worth it. The second time I just walked the grounds, ate at the stalls, and watched the lights for free, and honestly I had just as much fun.\n\nSo would you pay for the wheel, or is the free walk enough?",
+      "photos": [
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/asia-park/01.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/asia-park/02.jpg"
+      ]
+    },
+    {
+      "id": "seed-ta-pa-2026-11-14",
+      "time": "",
+      "kind": "short",
+      "caption": "An old quarry lake in Tri Ton that locals call a \"tuyet tinh coc\", the water shifts colour with the light and the season. Best from October to April, and the rice fields around it turn gold from September to November.",
+      "photos": [
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/ta-pa/01.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/ta-pa/02.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/ta-pa/03.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/ta-pa/04.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/ta-pa/05.jpg"
+      ]
+    },
+    {
+      "id": "seed-bun-nuoc-leo-2026-11-14",
+      "time": "",
+      "kind": "short",
+      "caption": "Soc Trang's bun nuoc leo is a Kinh-Hoa-Khmer mix built on mam bo hoc, with snakehead fish, shrimp and roast pork. Cay Nhan at 18 Vo Dinh Sam has been at it for over 40 years, 10-33k a bowl.",
+      "photos": [
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/bun-nuoc-leo/01.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/bun-nuoc-leo/02.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/bun-nuoc-leo/03.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/bun-nuoc-leo/04.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/bun-nuoc-leo/05.jpg"
+      ]
+    },
+    {
+      "id": "seed-tuong-ban-2026-11-14",
+      "time": "",
+      "kind": "short",
+      "caption": "Tuong Ban from My Hao, Hung Yen, fermented sticky rice and soybean aged in clay jars under the sun. Around 1,000 households make it, over 11 million litres a year, bottles go for 25-40k.",
+      "photos": [
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/tuong-ban/01.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/tuong-ban/02.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/tuong-ban/03.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/tuong-ban/04.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/tuong-ban/05.jpg"
+      ]
+    },
+    {
+      "id": "seed-xoi-yen-2026-11-14",
+      "time": "",
+      "kind": "short",
+      "caption": "Xoi Yen at 35B Nguyen Huu Huan does sticky rice with shredded chicken, Chinese sausage, a young egg and crispy fried shallots, plus pickled cucumber on the side. 35-72k a portion, open 6am to midnight.",
+      "photos": [
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/xoi-yen/01.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/xoi-yen/02.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/xoi-yen/03.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/xoi-yen/04.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/xoi-yen/05.jpg"
+      ]
+    },
+    {
+      "id": "seed-banh-canh-nguyen-du-2026-11-14",
+      "time": "",
+      "kind": "short",
+      "caption": "Banh Canh Nguyen Du at 55 Nguyen Du, Quy Nhon, fish-cake noodle soup for 25-40k, open 3pm to 9pm. Order a spring roll on the side, the way the locals do.",
+      "photos": [
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/banh-canh-nguyen-du/01.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/banh-canh-nguyen-du/02.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/banh-canh-nguyen-du/03.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/banh-canh-nguyen-du/04.jpg",
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-14/banh-canh-nguyen-du/05.jpg"
+      ]
+    }
+  ],
+  "current_post_id": "famous-dishes-2026-11-20"
 }
