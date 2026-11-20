@@ -4,6 +4,13 @@
   "note": "Photo list for Vietadvisor Paste Helper: 2 group posts 20/11 + 1 personal post for Astrid 19/11 + 2 group posts 19/11 + 4 posts 18/11 + 5 seed posts for outside groups 14/11. Captions for 20/11 use Markdown (**bold** titles) for Paste Helper v18 caption paste. Photos are the FINAL eye-checked files (faces blurred, no source stamp). Updated by Muse; the extension fetches this file, so photos change here, never in the extension.",
   "posts": [
     {
+      "id": "astrid-personal-2026-11-20",
+      "caption": "van mieu on a blue sky morning. the red pavilion, the old trees, the quiet. some corners of hanoi never get old.",
+      "photos": [
+        "https://raw.githubusercontent.com/Vietadvisor-travel/vietadvisor-videos/claude/cowork-chat-reading-me8z1v/paste-helper/2026-11-18/old-quarter-morning/03.jpg"
+      ]
+    },
+    {
       "id": "famous-dishes-2026-11-20",
       "time": "08:00",
       "kind": "food-scored",
@@ -173,5 +180,5 @@
       ]
     }
   ],
-  "current_post_id": "famous-dishes-2026-11-20"
+  "current_post_id": "astrid-personal-2026-11-20"
 }
